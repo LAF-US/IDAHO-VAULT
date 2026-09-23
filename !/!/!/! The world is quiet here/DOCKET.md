@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/coordination
-updated: 2026-03-25
+updated: 2026-03-24
 status: active
 ---
 
@@ -15,18 +15,11 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 | Task                                | Owner       | Status      | Linear | Notes                                     |
 | ----------------------------------- | ----------- | ----------- | ------ | ----------------------------------------- |
-| Swarm coordination — agent assembly | All agents  | In progress | LAF-7  | All agents proceed into THE CITY and await the denouement |
+| Swarm coordination — agent assembly | All agents  | In progress | LAF-7  | Agents finding each other                 |
 | Idaho Legislature scraper           | Claude Code | Running     | —      | Daily 6 AM MT, commits to main            |
 | Vault sort audit                    | Automated   | Weekly      | —      | Monday 6 AM UTC                           |
 | Wayback preservation                | Automated   | Weekly      | —      | Monday 8 AM UTC                           |
 | Operation: Spring Clean             | Claude Code | In progress | —      | Branch graveyard, DOCKET/LEVELSET refresh |
-
-
-## STANDING DIRECTION (LOGAN, 2026-03-25)
-
-- Persistent standing-task lists stale quickly.
-- Current directive for LAF-7: **all agents head into THE CITY and await the denouement**.
-- If additional work is needed, Logan will issue fresh assignments via Linear/GitHub.
 
 ## RECENTLY COMPLETED
 
@@ -47,6 +40,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | PR #54 — Compact MCP mapping in PROTOCOL.md              | 2026-03-24 | Incorporated into PR #57                                                                    |
 | PR #55 — MCP implementation plan (new file)               | 2026-03-24 | Incorporated into PR #57                                                                    |
 | PR #56 — MCP action logging template in VAULT-CONVENTIONS | 2026-03-24 | Incorporated into PR #57                                                                    |
+| LAF-9 — Vault template + document class system            | 2026-03-25 | Drafted `VAULT-TEMPLATES.md`; linked from conventions + canonical README                   |
 
 ## BLOCKED / PENDING LOGAN
 

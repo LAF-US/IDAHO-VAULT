@@ -1,7 +1,7 @@
 ---
 tags:
   - administration/canonical
-updated: 2026-03-25
+updated: 2026-03-23
 status: active
 ---
 # `IDAHO-VAULT/!` canonical anchor
@@ -23,7 +23,8 @@ It is a pointer, not a separate constitution or duplicate governance layer.
 - `LEVELSET.md` — current living ecosystem status
 - `DECISIONS.md` — structural decision log
 - `VAULT-CONVENTIONS.md` — shared naming, frontmatter, and structure for all agents
-- `VAULT-ZONES.md` — defines `!`, `!/!`, and `!/!/!` routing grammar (canonical, routing workbench, live operations board)
+- `VAULT-TEMPLATES.md` — canonical document class and template system
+- `!/` — ephemeral layer: session logs, contexts, historical records
 
 ## Stability note
 
