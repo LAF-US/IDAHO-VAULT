@@ -13,6 +13,7 @@ This is the record that travels (committed, signed, fleet-wide); the local shelf
 ## Session anchors (chamber-private, pre-existing)
 
 - `SESSION-2026-05-22.md`, `SESSION-2026-06-03.md` — prior session memory anchors.
+- `SESSION-2026-09-23.md` — branch census on origin with deletion tiers for Logan, six Dependabot merges, and the session's failures.
 
 ## Related doctrine (vault root)
 
