@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
         with:
           python-version: '3.11'
 
@@ -29,16 +29,13 @@ jobs:
       - name: Publish summary
         run: cat large-file-watchdog.md >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Open or update issue when findings exist
-        if: steps.report.outputs.has_findings == 'true'
+      - name: Sync recurring issue
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ISSUE_NUMBER=$(gh issue list --state open --search "\"[Large File Watchdog] Weekly report\" in:title" --json number --jq '.[0].number')
-          if [ -z "$ISSUE_NUMBER" ] || [ "$ISSUE_NUMBER" = "null" ]; then
-            gh issue create \
-              --title "[Large File Watchdog] Weekly report" \
-              --body-file large-file-watchdog.md
-          else
-            gh issue comment "$ISSUE_NUMBER" --body-file large-file-watchdog.md
-          fi
+          python .github/scripts/issue_reconciler.py \
+            --title "[Large File Watchdog] Weekly report" \
+            --body-file large-file-watchdog.md \
+            --has-findings "${{ steps.report.outputs.has_findings }}" \
+            --resolved-comment "Resolved automatically: the latest large-file watchdog run found no current findings."
+
