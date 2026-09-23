@@ -9,7 +9,7 @@ date modified: Tuesday, April 21st 2026, 5:58:29 pm
 
 This is the live **Pending-Logan agenda unit**. Any agent arriving at THE COURTROOM reads the top of this file to orient to what presently needs Logan's eyes, decision, approval, or unblock.
 
-## COURTROOM BOUNDARY
+## Matters Before The Court
 
 Use this board to surface only live Logan-facing motion.
 

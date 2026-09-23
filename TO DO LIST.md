@@ -4,17 +4,17 @@ linter-yaml-title-alias: TO DO LIST
 date created: Friday, March 27th 2026, 10:09:45 am
 date modified: Tuesday, April 21st 2026, 7:45:31 pm
 related:
-  - DAILY NOTE
-  - DAILY NOTE TEMPLATE
+- DAILY NOTE
+- Data Centers
+- FIX
+- PKG
 authority: LOGAN
 ---
-
-# TO DO LIST
-
-Persistent list. Incomplete items carry forward daily.
+*Persistent list — incomplete items carry forward daily. Link daily notes here.*
 
 ## Active
 
+- [ ] [[YESTERDAY]]
 - WORK
 - [ ] FMLA PAPERWORK
 - VAULT

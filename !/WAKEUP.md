@@ -44,8 +44,7 @@ or scattered branch residue.
 
 Use this precedence order:
 
-1. Logan's direct instruction in the current thread or explicit governance
-   decision
+1. Logan's direct instruction in the current thread or explicit governance decision
 2. `CONSTITUTION.md`
 3. `!/WAKEUP.md` and `!/AGENTS.md`
 4. `swarm.json`
@@ -53,6 +52,8 @@ Use this precedence order:
 6. historical notes, branch artifacts, handoff drafts, and exploratory docs
 
 Historical or exploratory material is not automatically live doctrine.
+
+Google Gemini is banned from making decisions unless Logan is present.
 
 ## Current Orientation
 

@@ -1,34 +1,32 @@
 ---
-title: "STARTUP"
+tags:
+  - administration/canonical
+updated: 2026-03-23
 status: active
-authority: LOGAN
-date created: 2026-04-16
-related:
-  - AGENTS
-  - WAKEUP
-  - CONSTITUTION
-  - VAULT-CONVENTIONS
-  - VAULT-METADATA-STANDARD
-  - VAULT-TEMPLATES
-  - SIGNALS
-  - INBOX
-  - CREWAI
-  - swarm
 ---
+# `IDAHO-VAULT/!` canonical anchor
 
-# STARTUP
+This folder is the canonical anchor for orientation inside the vault.
+It is a pointer, not a separate constitution or duplicate governance layer.
 
-This file is the explicit startup surface for agents entering `IDAHO-VAULT`.
+## Meaning
 
-Its job is simple:
+- Canonical reference form: `IDAHO-VAULT/!`
+- Use this path as the top-level orientation marker when describing where the vault "starts"
+- Do not assume older path language (`!ADMINISTRATION/`) is still authoritative
 
-1. clear stale assumptions
-2. establish the live boot path
-3. send the agent into the smallest orientation branch needed for the task
+## Current adjacent anchors
 
-This is a routing surface, not a replacement for governance.
+- `CONSTITUTION.md` — canonical constitution
+- `PROTOCOL.md` — swarm operational vocabulary
+- `AGENTS.md` — agent registry and boundary rules
+- `LEVELSET.md` — current living ecosystem status
+- `DECISIONS.md` — structural decision log
+- `VAULT-CONVENTIONS.md` — shared naming, frontmatter, and structure for all agents
+- `VAULT-TEMPLATES.md` — canonical document class and template system
+- `!/` — ephemeral layer: session logs, contexts, historical records
 
-## Touchstone Rule
+## Stability note
 
 The Touchstone Tree is not disposable flavor text.
 
