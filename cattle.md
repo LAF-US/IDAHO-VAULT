@@ -4,4 +4,4 @@ related:
 - agriculture
 ---
 
-agriculture
+agriculture 

@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Gem County courthouse
+magistrate court Gem County courthouse 

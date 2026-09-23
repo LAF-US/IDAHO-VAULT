@@ -48,7 +48,7 @@ related:
 - school board
 authority: LOGAN
 ---
-<https://idahocapitalsun.com/2022/10/14/no-action-on-election-related-publication-idaho-secretary-of-state-decides/>
+https://idahocapitalsun.com/2022/10/14/no-action-on-election-related-publication-idaho-secretary-of-state-decides/
 
 ## Invoices showing payment from North Idaho political committee not strong enough to proceed with a case, deputy secretary says
 
@@ -59,17 +59,13 @@ No charges or fines will be levied against the Kootenai County Republican Centra
 Deputy Secretary of State Chad Houck said while there was one invoice entirely paid by the Kootenai County Republican Central Committee, the office determined the rest of the evidence discovered through the course of an investigation was not strong enough to prove the committee controls and pays for the publication, which would be a violation of Idaho campaign finance law.
 
 Secretary of State Lawerence Denney sent a letter on Sept. 13 to Sandra Patano saying the office was closing the investigation. Patano, who is a co-founder of North Idaho Republicans, filed the complaint on May 13 alleging the publication is an electioneering piece that should be reported as such.
-
 ## What does Idaho law say about electioneering communications?
-
 Under Idaho law, newspapers are exempt from what is considered electioneering communications or independent expenditures during elections, meaning a news outlet can publish editorials and endorsements or other commentary about candidates and the communications do not need to be reported to the secretary of state’s office. Electioneering communications are ads or other messages meant to support or oppose candidates that must be declared with the Idaho Secretary of State’s office within 30 days of a primary election.
 
 However, Idaho law says a newspaper is not exempt if it is owned or controlled by a political party or candidate.
 
 Houck said because the central committee disclosed all of its expenditures, the office made the decision not to proceed with a court case as a matter of practicality.
-
 ## Complaint is part of back-and-forth between Republican organizations
-
 Sandy Patano, the person who filed the complaint, founded North Idaho Republicans with her husband, Jack Riggs. Patano has lived in North Idaho for most of her life and worked as a staffer to former U.S. Sen. Larry Craig for 18 years. Riggs is a former lieutenant governor of Idaho, and he and Patano started the group in March to counter what they call an extremist takeover by libertarian groups calling themselves Republicans in the Coeur d’Alene area. The group has spoken out against the Kootenai County Republican Central Committee and its tactics, saying they don’t represent real Republicans.
 
 Kootenai County Republican Central Committee Chairman Brent Regan filed his own complaint with the secretary of state’s office against North Idaho Republicans in early May because the organization had not registered as a political action committee before purchasing an ad in the Coeur d’Alene Press’ voter guide. The group was fined $2,500, the maximum penalty under Idaho law. Regan called Patano’s complaint retaliatory and politically motivated.
@@ -79,10 +75,8 @@ Kootenai County Republican Central Committee Chairman Brent Regan filed his own 
 At best, Houck said, a successful case would have merely resulted in requiring future publications to explicitly say on the front cover that it was paid for by the Kootenai County Republican Central Committee. And at worst, it might have cost thousands of taxpayer dollars in attorney’s fees, he said.
 
 “The case strategy that (the attorney general’s office) ultimately presented to us was not a case that we were comfortable advising them or requesting that they pursue,” Houck said.
-
 ## Invoice amounts match independent expenditures from Idaho central committee
-
-Five issues of the People’s Pen have been published since October 2021, and the editions include in-depth interviews with candidates endorsed by the Kootenai County Republican Central Committee, a description of the committee’s candidate vetting process for endorsements, and endorsements for school board and city elections.
+Five issues of the People’s Pen have been published since October 2021, and the editions include in-depth interviews with candidates endorsed by the Kootenai County Republican Central Committee, a description of the committee’s candidate vetting process for endorsements, and endorsements for school board and city elections. 
 
 Houck said the committee leadership’s explanation for paying nearly the entire October 2021 invoice was that the publisher asked them to do so, “because that was the only way to get it done and on the street on time. … So it was just an anomaly in terms of the procedure the publisher was doing.”
 
@@ -105,9 +99,7 @@ The invoice in April reflects 74,000 copies of a 20-page edition plus postage, f
 The amount doubled for the May edition, with 125,844 copies of the 24-page issue plus postage, for a total of $41,631. It again does not reflect who paid the invoice, but the central committee reported the exact expenditure total in May.
 
 The Sun requested further public records related to the investigation, but Houck said many of the documents are protected by attorney-client privilege with the Idaho Attorney General’s office.
-
 ## Registered agent for Idaho entity is a former legislative candidate
-
 Although the People’s Pen is now registered as a foreign business entity in Idaho with its main operations in Wyoming, it was not registered in Idaho until May — nearly seven months after the first edition was distributed to Idaho households. Under Idaho law, there is no penalty for doing business without registering as a foreign entity.
 
 “As a result of the investigation, the Attorney General’s Office sent a letter to the People’s Pen’s

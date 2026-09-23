@@ -4,4 +4,4 @@ related:
 - white supremacist
 authority: LOGAN
 ---
-Scott Rhodes white supremacist podcast
+Scott Rhodes white supremacist podcast 

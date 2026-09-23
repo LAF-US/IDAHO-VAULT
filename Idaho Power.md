@@ -6,4 +6,4 @@ related:
 - utility
 ---
 
-major energy utility that serves Idaho and Oregon
+major energy utility that serves Idaho and Oregon 

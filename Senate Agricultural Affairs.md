@@ -22,10 +22,9 @@ authority: LOGAN
 ---
 Meets Tues & Thurs @ 8am in WW53
 
+
 # Roster
-
 ## 2023 Members
-
 - Linda Wright Hartgen - Chair
 - Tammy Nichols - Vice Chair
 - Dan Foreman
@@ -35,9 +34,7 @@ Meets Tues & Thurs @ 8am in WW53
 - Glenneda Zuiderveld
 - Carrie Semmelroth
 - Ron Taylor
-
 ### 2022 Members
-
 - Van Burtenshaw - Chair
 - Regina Bayer - Vice Chair
 - Jim Patrick
@@ -47,9 +44,7 @@ Meets Tues & Thurs @ 8am in WW53
 - Doug Ricks
 - David Nelson
 - Carrie Semmelroth
-
 ### 2021 Members
-
 - Van Burtenshaw - Chair
 - Regina Bayer - Vice Chair
 - Jim Patrick
@@ -59,3 +54,4 @@ Meets Tues & Thurs @ 8am in WW53
 - Doug Ricks
 - David Nelson
 - Ali Rabe
+

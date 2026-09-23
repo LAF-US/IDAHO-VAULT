@@ -5,6 +5,5 @@ related:
 - Meridian
 authority: LOGAN
 ---
-Residence: Meridian
-
-- Former House member from Legislative District 14
+Residence: Meridian 
+- Former House member from Legislative District 14 

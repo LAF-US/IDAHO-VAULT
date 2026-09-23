@@ -5,4 +5,4 @@ related:
 - Mackay
 authority: LOGAN
 ---
-Mackay, Custer County
+Mackay, Custer County 

@@ -4,4 +4,4 @@ related:
 - Rockland
 authority: LOGAN
 ---
-Rockland, Power County
+Rockland, Power County 

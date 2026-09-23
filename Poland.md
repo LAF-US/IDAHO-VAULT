@@ -3,4 +3,4 @@ related:
 - Europe
 authority: LOGAN
 ---
-Europe
+Europe 

@@ -4,4 +4,4 @@ related:
 - U.S. House
 authority: LOGAN
 ---
-former Democratic U.S. House member for CD1
+former Democratic U.S. House member for CD1 

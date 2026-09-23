@@ -6,4 +6,4 @@ related:
 - political action committee
 authority: LOGAN
 ---
-Idaho Freedom Foundation political action committee
+Idaho Freedom Foundation political action committee 

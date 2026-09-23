@@ -10,4 +10,4 @@ authority: LOGAN
 ---
 Seat: Rexburg
 Municipalities: Sugar City
-Communities: Archer, Burton, Thornton, Hibbard
+Communities: Archer, Burton, Thornton, Hibbard 

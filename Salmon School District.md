@@ -5,4 +5,4 @@ related:
 - Salmon
 authority: LOGAN
 ---
-Salmon, Lemhi County
+Salmon, Lemhi County 

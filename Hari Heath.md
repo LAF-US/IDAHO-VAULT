@@ -18,13 +18,12 @@ related:
 - self
 authority: LOGAN
 ---
-Residence: Santa
+Residence: Santa 
+- former candidate for Idaho House in Legislative District 5 
+	- 2020 primary endorsed by Lt. Gov. Janice McGeachin, lost to Brandon Mitchell
+	- 2018 primary lost to Bill Goesling 
 
-- former candidate for Idaho House in Legislative District 5
-  - 2020 primary endorsed by Lt. Gov. Janice McGeachin, lost to Brandon Mitchell
-  - 2018 primary lost to Bill Goesling
-
-## Bio from <https://hariheath.com/about-hari/>
+## Bio from https://hariheath.com/about-hari/ 
 
 Living in rural North Idaho, Hari Heath has been an Idaho logger for a third of a century. Specializing in salvage logging, which makes useful products from forest mortality, and Stand Improvement Forestry, creating a more healthy and productive forest through active management with a focus on what we leave.
 

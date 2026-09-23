@@ -3,8 +3,13 @@ title: TO DO LIST
 linter-yaml-title-alias: TO DO LIST
 date created: Friday, March 27th 2026, 10:09:45 am
 date modified: Monday, March 30th 2026, 10:33:24 am
+related:
+- DAILY NOTE
+- Data Centers
+- FIX
+- PKG
+authority: LOGAN
 ---
-
 *Persistent list — incomplete items carry forward daily. Link daily notes here.*
 
 ## Active

@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Nez Perce County courthouse
+magistrate court Nez Perce County courthouse 

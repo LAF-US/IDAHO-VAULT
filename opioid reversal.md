@@ -5,4 +5,4 @@ related:
 - opioids
 ---
 
-reverses drug overdoses symptoms from opioids
+reverses drug overdoses symptoms from opioids 

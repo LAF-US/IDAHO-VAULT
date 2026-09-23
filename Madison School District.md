@@ -4,4 +4,4 @@ related:
 - Rexburg
 authority: LOGAN
 ---
-Rexburg, Madison County
+Rexburg, Madison County 

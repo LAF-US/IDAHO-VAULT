@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Kootenai County courthouse
+magistrate court Kootenai County courthouse 

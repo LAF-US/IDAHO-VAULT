@@ -12,7 +12,7 @@ related:
 - counties
 authority: LOGAN
 ---
-<https://ioem.idaho.gov/>
+https://ioem.idaho.gov/ 
 
 IOEM guides the State of Idaho in effectively preparing for, protecting against, mitigating the effects of, responding to, and recovering from all hazards.
 

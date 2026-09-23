@@ -49,7 +49,6 @@ Please acknowledge receipt, state your active role in this exchange, list the co
 ## ROLE CONTEXT
 
 Claude-related roles in the repo currently include:
-
 - **PERMANENT: AUTHORITY: CODE** — direct-write repo operations and automation
 - **PERSISTENT: ADMINISTRATION** — draft-only constitutional/governance support
 - additional Claude analysis/story/reporting entities listed in `AGENTS.md`
@@ -89,7 +88,6 @@ Minimum read set:
 ## WHAT CLAUDE IS BEST POSITIONED TO DO NEXT
 
 Claude is the best next agent for:
-
 - repo-aware implementation
 - governance review against existing files
 - branch collision checks

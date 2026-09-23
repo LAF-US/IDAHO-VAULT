@@ -5,4 +5,4 @@ related:
 - Garden Valley
 authority: LOGAN
 ---
-Garden Valley, Boise County
+Garden Valley, Boise County 

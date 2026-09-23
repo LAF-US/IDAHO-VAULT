@@ -11,7 +11,6 @@ related:
 authority: LOGAN
 ---
 # Plan, ask questions, and iterate on code with Copilot coding agent
-
 Copilot coding agent can now plan, answer questions about your codebase, and make code changes, all from a single conversation.
 
 You can now ask Copilot coding agent to plan or ask questions about your codebase. This feature is available from:

@@ -4,4 +4,4 @@ related:
 - Idaho Republican Party
 authority: LOGAN
 ---
-Idaho Republican Party women's affinity group
+Idaho Republican Party women's affinity group 

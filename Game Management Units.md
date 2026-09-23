@@ -122,9 +122,9 @@ related:
 - species
 authority: LOGAN
 ---
-Administrative boundaries for Department of Fish and Game game species hunting rules
+Administrative boundaries for Department of Fish and Game game species hunting rules 
 
-!Wildlife Management Units.png
+!Wildlife Management Units.png 
 
 - Panhandle Zone (red)
 - Palouse-Hell's Canyon Zone (orange)
@@ -237,4 +237,4 @@ Administrative boundaries for Department of Fish and Game game species hunting r
 - Game Management Unit 75
 - Game Management Unit 76
 - Game Management Unit 77
-- Game Management Unit 78
+- Game Management Unit 78 

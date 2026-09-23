@@ -5,4 +5,4 @@ related:
 - Hagerman
 authority: LOGAN
 ---
-Hagerman, Gooding County
+Hagerman, Gooding County 

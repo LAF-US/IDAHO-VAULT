@@ -12,9 +12,7 @@ related:
 authority: LOGAN
 ---
 # Roster
-
 ## 2023 Members
-
 - Dave Lent Chair
 - Ben Toews Vice Chair
 - Lori Den Hartog

@@ -7,4 +7,4 @@ related:
 - voting
 authority: LOGAN
 ---
-primary election, presidential primary, general election, Election Day, voting
+primary election, presidential primary, general election, Election Day, voting 

@@ -30,9 +30,9 @@ related:
 - teachers
 authority: LOGAN
 ---
-<https://www.idahoednews.org/news/majority-of-educators-support-english-standards-during-packed-common-core-hearing/>
+https://www.idahoednews.org/news/majority-of-educators-support-english-standards-during-packed-common-core-hearing/
 
-Clark Corbin, Idaho Education News
+Clark Corbin, Idaho Education News 
 
 Dozens of educators and parents packed the Statehouse Wednesday for a highly anticipated showdown over Common Core-aligned academic standards.
 

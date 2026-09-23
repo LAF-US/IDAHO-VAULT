@@ -5,4 +5,4 @@ related:
 - Kuna
 authority: LOGAN
 ---
-Kuna, Ada County/Canyon County
+Kuna, Ada County/Canyon County 

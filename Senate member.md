@@ -76,7 +76,7 @@ related:
 - Van Burtenshaw
 authority: LOGAN
 ---
-Membership of the Idaho Senate.
+Membership of the Idaho Senate. 
 
 | Officer | Senator |
 | ----- | ----- |
@@ -87,11 +87,9 @@ Membership of the Idaho Senate.
 | Senate Minority Leader | Melissa Wintrow |  
 | Senate Assistant Minority Leader | James Ruchti |  
 | Senate Minority Caucus Chair | Janie Ward-Engelking |  
-
 ### **2023-2024**
-
-| District | Senator |
-| ----- | ----- |
+| District | Senator | 
+| ----- | ----- | 
 | District 1 | Scott Herndon |
 | District 2 | Phil Hart |
 | District 3 | Doug Okuniewicz |
@@ -99,7 +97,7 @@ Membership of the Idaho Senate.
 | District 5 | Carl Bjerke |
 | District 6 | Dan Foreman |
 | District 7 | Cindy Carlson |
-| District 8 | Geoff Schroeder |
+| District 8 | Geoff Schroeder | 
 | District 9 | Abby Lee |
 | District 10 | Tammy Nichols |
 | District 11 | Chris Trakel |
@@ -127,11 +125,9 @@ Membership of the Idaho Senate.
 | District 33 | Dave Lent |
 | District 34 | Doug Ricks |
 | District 35 | Mark Harris |
-
 ## **2021-2022**
-
-| District | Senator |
-| ----- | ----- |
+| District | Senator | 
+| ----- | ----- | 
 | District 1 | Jim Woodward |
 | District 2 | Steve Vick |
 | District 3 | Peter Riggs |
@@ -139,7 +135,7 @@ Membership of the Idaho Senate.
 | District 5 | David Nelson |
 | District 6 | Dan Johnson |
 | District 7 | Carl Crabtree |
-| District 8 | Steven Thayn |
+| District 8 | Steven Thayn | 
 | District 9 | Abby Lee |
 | District 10 | Jim Rice |
 | District 11 | Patti Anne Lodge |
@@ -167,11 +163,9 @@ Membership of the Idaho Senate.
 | District 33 | Dave Lent |
 | District 34 | Doug Ricks |
 | District 35 | Van Burtenshaw |
-
 ### 2019-2020
-
-| District | Senator |
-| ----- | ----- |
+| District | Senator | 
+| ----- | ----- | 
 | District 1 | Jim Woodward |
 | District 2 | Steve Vick |
 | District 3 | Don Cheatham |
@@ -179,7 +173,7 @@ Membership of the Idaho Senate.
 | District 5 | David Nelson |
 | District 6 | Dan Johnson |
 | District 7 | Carl Crabtree |
-| District 8 | Steven Thayn |
+| District 8 | Steven Thayn | 
 | District 9 | Abby Lee |
 | District 10 | Jim Rice |
 | District 11 | Patti Anne Lodge |

@@ -10,4 +10,4 @@ related:
 - water
 authority: LOGAN
 ---
-naturally occurring lake enlarged by Jackson Lake dam in the Teton range of Wyoming, with water for irrigation in Idaho
+naturally occurring lake enlarged by Jackson Lake dam in the Teton range of Wyoming, with water for irrigation in Idaho 

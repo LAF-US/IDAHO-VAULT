@@ -4,4 +4,4 @@ related:
 - city administrator
 authority: LOGAN
 ---
-city administrator for Sandpoint
+city administrator for Sandpoint 

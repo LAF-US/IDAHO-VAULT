@@ -5,4 +5,4 @@ related:
 - nicotine
 ---
 
-can be used for nicotine or THC
+can be used for nicotine or THC 

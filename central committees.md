@@ -161,10 +161,8 @@ related:
 - precinct committeemen
 authority: LOGAN
 ---
-Controlling committees of precinct committeemen for political parties
-
+Controlling committees of precinct committeemen for political parties 
 ## Idaho Republican Party County Central Committees
-
 - Ada County Republican Central Committee
 - Adams County Republican Central Committee
 - Bannock County Republican Central Committee
@@ -211,7 +209,6 @@ Controlling committees of precinct committeemen for political parties
 - Washington County Republican Central Committee
 
 ## Idaho Democratic Party County Central Committees
-
 - Ada County Democratic Central Committee
 - Adams County Democratic Central Committee
 - Bannock County Democratic Central Committee
@@ -255,14 +252,10 @@ Controlling committees of precinct committeemen for political parties
 - Teton County Democratic Central Committee
 - Twin Falls County Democratic Central Committee
 - Valley County Democratic Central Committee
-- Washington County Democratic Central Committee
-
+- Washington County Democratic Central Committee 
 ## Idaho Libertarian Party County Central Committees
-
 - Ada County
--
-
+- 
 ## Idaho Constitution Party County Central Committees
-
 - Ada County
--
+- 

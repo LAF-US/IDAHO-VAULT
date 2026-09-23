@@ -6,5 +6,4 @@ related:
 authority: LOGAN
 ---
 Residence: Weiser
-
-- House member for LD9 after redistricting
+- House member for LD9 after redistricting 

@@ -6,4 +6,4 @@ related:
 - Lincoln County
 authority: LOGAN
 ---
-Local Idaho Democratic Party precinct committee for Lincoln County
+Local Idaho Democratic Party precinct committee for Lincoln County 

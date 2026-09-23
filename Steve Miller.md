@@ -10,6 +10,6 @@ authority: LOGAN
 Residence: Fairfield
 
 Camas County House member
-JFAC vice chair
+JFAC vice chair 
 
-unseated by Muffy Davis, re-elected in different district after redistricting
+unseated by Muffy Davis, re-elected in different district after redistricting 

@@ -5,4 +5,4 @@ related:
 - administrative rules
 authority: LOGAN
 ---
-administrative rules management for Governor within Bureau of Regulatory & Legislative Affairs
+administrative rules management for Governor within Bureau of Regulatory & Legislative Affairs 

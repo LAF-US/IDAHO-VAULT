@@ -4,4 +4,4 @@ related:
 - Moscow
 authority: LOGAN
 ---
-Moscow, Latah County
+Moscow, Latah County 

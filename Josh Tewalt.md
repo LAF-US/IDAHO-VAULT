@@ -4,4 +4,4 @@ related:
 - Department of Correction
 authority: LOGAN
 ---
-Department of Correction director appointed by Brad Little
+Department of Correction director appointed by Brad Little 

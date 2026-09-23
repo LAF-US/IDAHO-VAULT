@@ -4,4 +4,4 @@ related:
 - religion
 ---
 
-religion
+religion 

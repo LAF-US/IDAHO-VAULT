@@ -7,6 +7,5 @@ related:
 - redistricting
 authority: LOGAN
 ---
-Residence: Hailey
-
-- Senate member for LD26, replaced Michelle Stennett after redistricting
+Residence: Hailey 
+- Senate member for LD26, replaced Michelle Stennett after redistricting 

@@ -5,4 +5,4 @@ related:
 - Riggins
 authority: LOGAN
 ---
-Riggins, Idaho County
+Riggins, Idaho County 

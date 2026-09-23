@@ -7,6 +7,5 @@ related:
 authority: LOGAN
 ---
 Residence: Boise
-
 - House member for Legislative District 20
-- House Transportation and Defense chairman
+- House Transportation and Defense chairman 

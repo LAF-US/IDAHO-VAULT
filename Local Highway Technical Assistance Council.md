@@ -6,6 +6,6 @@ related:
 - transportation
 authority: LOGAN
 ---
-within ITD for roads
+within ITD for roads 
 
-state transportation partner for Pacific NorthWest Economic Region
+state transportation partner for Pacific NorthWest Economic Region 

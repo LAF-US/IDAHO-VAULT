@@ -9,8 +9,7 @@ related:
 - species
 ---
 
-trophy species for mammals hunting
-
+trophy species for mammals hunting 
 - moose
 - bighorn sheep
 - mountain goat

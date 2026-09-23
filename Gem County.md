@@ -7,4 +7,4 @@ related:
 authority: LOGAN
 ---
 Seat: Emmett
-Communities: Letha, Ola, Sweet
+Communities: Letha, Ola, Sweet 

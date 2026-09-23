@@ -3,7 +3,7 @@ related:
 - syntax
 authority: LOGAN
 ---
-individual
+individual 
 
 syntax
 

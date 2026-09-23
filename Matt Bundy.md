@@ -6,6 +6,6 @@ authority: LOGAN
 ---
 Residence: Mountain Home
 
-High school teacher
+High school teacher 
 
-JFAC member
+JFAC member 

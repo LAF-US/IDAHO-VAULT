@@ -7,4 +7,4 @@ related:
 - Shoshone County
 authority: LOGAN
 ---
-Bonner County southeast of Lake Pend Oreille to Shoshone County
+Bonner County southeast of Lake Pend Oreille to Shoshone County 

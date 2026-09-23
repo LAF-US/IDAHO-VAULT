@@ -55,11 +55,11 @@ related:
 - voice
 authority: LOGAN
 ---
-<https://www.idahoednews.org/news/mcgeachin-announces-indoctrination-task-force-members/>
+https://www.idahoednews.org/news/mcgeachin-announces-indoctrination-task-force-members/
 
 Blake Jones, Idaho Education News
 
-The makeup of Lt. Gov. Janice McGeachin’s “Task Force to Examine Indoctrination in Idaho Education” has changed shape slightly since its membership was announced in May as more details have emerged about its members.
+The makeup of Lt. Gov. Janice McGeachin’s “Task Force to Examine Indoctrination in Idaho Education” has changed shape slightly since its membership was announced in May as more details have emerged about its members. 
 
 A representative from the Idaho School Boards Association, ISBA President-elect Jason Knopp, withdrew from the task force after its first meeting, objecting to its “lack of education professionals.” After the task force completed its summer meetings, Knopp’s replacement died of COVID-19. Previously unidentified, five other task force members introduced themselves at the task force’s inaugural meeting.
 

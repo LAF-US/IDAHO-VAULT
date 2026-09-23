@@ -3,4 +3,4 @@ related:
 - health care
 authority: LOGAN
 ---
-health care
+health care 

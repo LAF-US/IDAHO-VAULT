@@ -6,5 +6,4 @@ related:
 authority: LOGAN
 ---
 Residence: Caribou County
-
-- former Idaho Republican Party chair
+- former Idaho Republican Party chair 

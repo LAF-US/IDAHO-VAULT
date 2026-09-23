@@ -114,13 +114,10 @@ related:
 - Washington County Democratic Central Committee
 authority: LOGAN
 ---
-State of Idaho affiliate of the U.S. Democratic Party
-
-- Idaho Democratic Party Platform
-Chair: Lauren Necochea
-
+State of Idaho affiliate of the U.S. Democratic Party 
+- Idaho Democratic Party Platform 
+Chair: Lauren Necochea 
 ### County Central Committees
-
 - Ada County Democratic Central Committee
 - Adams County Democratic Central Committee
 - Bannock County Democratic Central Committee

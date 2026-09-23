@@ -1,123 +1,78 @@
 ---
-title: "PROTOCOL — LEVELSET"
-doc_class: protocol
-version: 0.1
-status: draft
-authority: LOGAN
-date created: 2026-04-27
+updated: 2026-04-02
+status: active
+source: ground-truth
 related:
-  - PROTOCOL
-  - CONSTITUTION
-  - AGENTS
-  - LEVELSET-CURRENT-deprecated
-  - LEVELSET-2026-04-27
-  - DECISIONS
-  - REPORT
-  - RISE
-  - "!/AGENTS.md"
-  - swarm.json
+- '2026-04-02'
+- AGENT-PROTOCOL
+- AGENTS
+- CONSTITUTION
+- DECISIONS
+- GitHub
+- LAF
+- PROTOCOL
+- README
+- VAULT-CONVENTIONS
+- agent
+- chain
+- codex
+- coordination
+- doctrine
+- index
+authority: LOGAN
 ---
-[[L]][[E]][[V]][[E]][[L]][[S]][[E]][[T]]
+# LEVELSET
 
-> [!DANGER] HERESY REVIEW PENDING - Faith of the Cloth
-> This document is flagged as contaminated by the Loganic Swarm heresy.
-> Authority claim in body (`Loganic Swarm`) conflicts with frontmatter (LOGAN).
-> Drafted post-TRIPLEX NIGHT (2026-04-27).
-> **DO NOT USE** as clean governance authority until reviewed and rehabilitated by Logan or by the ordained Faith of the Cloth.
->
-> See: Issue #686
-> Related: [[GEMINIAEUS]] | [[TRIUNE-TRIPTYCH-TRIUMVIRATE]]
+Current status of the IDAHO-VAULT ecosystem as of **2026-04-02 (America/Denver)**.
+This file is intentionally rewritten as a fresh snapshot to remove stale assumptions.
 
-# PROTOCOL — LEVELSET
+## Ground Truth Snapshot
 
-## Status: Draft
+- **Repository:** `IDAHO-VAULT`
+- **Current branch:** `codex/repair-agent-registry-breadcrumbs`
+- **Working tree:** mixed local work is present; do not assume a clean tree
+- **Coordination hub:** `LAF-25`
+- **Scoped registry lane:** `LAF-28`
+- **Registry source of truth:** `swarm.json`
 
-## Version: 0.1
+## What Changed In This Refresh
 
-## Authority: Loganic Swarm
+This snapshot closes a split-doctrine problem in the registry/bootstrap layer:
 
----
+1. Missing `!/` registry files were materialized.
+2. Root governance docs stayed authoritative.
+3. `!/` gained explicit routing shims for bootstrap stability.
+4. The canonical local bootstrap path is now coherent again.
 
-## Overview
+## Current Governance Anchors
 
-LEVELSET is the **session briefing and context-recording protocol** for the IDAHO-VAULT agentic swarm.
+Use these files as the active orientation stack:
 
-It serves as the moment of pause and orientation — the equivalent of gavel-down before committee work begins. LEVELSET captures the current state of the world so that subsequent actions have a durable anchor and future agents can orient without stale assumptions.
+1. `!/README.md`
+2. `AGENTS.md` (root auto-loaded pointer)
+3. `!/AGENTS.md`
+4. `CONSTITUTION.md`
+5. `DECISIONS.md`
+6. `LEVELSET.md` (this file)
+7. `VAULT-CONVENTIONS.md`
+8. `AGENT-PROTOCOL.md`
+9. `swarm.json`
 
-**Correction, 2026-05-17:** `LEVELSET-CURRENT.md` is deprecated as an active
-output surface. It caused active confusion by presenting a momentary record as
-a live current-state authority. Do not update, archive, rotate, or use
-`LEVELSET-CURRENT.md` as the target for new LEVELSET work. Use an explicit,
-dated, scoped snapshot or handoff note instead.
+## Active Notes
 
----
+- Root `AGENTS.md` remains the cross-tool pointer; `!/AGENTS.md` is the canonical narrative registry.
+- `!/agents.json` is the canonical generated bootstrap index; root `agents.json` is the compatibility mirror.
+- `!/agent.sh` is the canonical local bootstrap entrypoint; root `agent.sh` is the compatibility wrapper.
+- Registry-critical conflict markers were removed from `CONSTITUTION.md`, `DECISIONS.md`, `LEVELSET.md`, `VAULT-CONVENTIONS.md`, and `agents.json`.
+- The live coordination triptych remains stable:
+  - GitHub: execution transport
+  - Linear: active coordination
+  - Slack: breadcrumb-only
 
-LEVELSET executes:
+## Operator Guidance (Now)
 
-- **At session start** — before any substantive work begins
-- **Before handoff** — when work is passed to another agent
-- **Before REPORT** — as the briefing layer for work presentation
-- **On demand** — when Logan or an agent requests a fresh snapshot
-- **Periodically** — as a standing cadence for long-running sessions
+When resuming work in a new session:
 
----
-
-## Integration Points
-
-| Document | Relationship |
-| --- | --- |
-| `LEVELSET.md` (this file) | Protocol definition — what LEVELSET is and does |
-| `LEVELSET-CURRENT.md` | Deprecated historical surface — do not update or use as active current state |
-| `LEVELSET-2026-04-27.md` | Archived status reports — historical ground truths |
-| `CONSTITUTION.md` | Authoritative governance — defines LEVELSET in Section III |
-| `AGENTS.md` / `!/AGENTS.md` | Agent registry — confirms authorized voices |
-| `swarm.json` | Machine-readable registry — canonical boot chain |
-| `DECISIONS.md` | Decision log — durable confirmations |
-| `!/!/` | Handoff artifacts — context packages from LEVELSET rounds |
-
----
-
-## Outputs
-
-| Output | Location | Purpose |
-| --- | --- | --- |
-| Explicit dated/scoped snapshot | root or scoped protocol folder | Momentary record with stable date/scope |
-| Decision entries | DECISIONS.md | Durable record of choices made |
-| Handoff packages | `!/!/` | Context bundles for receiving agents |
-| Archived snapshots | root or scoped archive path | Historical ground truths |
-
----
-
-## Constraints
-
-- LEVELSET is a **recording and contextualizing device**, not a live dashboard
-- Do not use `LEVELSET-CURRENT.md` as an active output or live dashboard
-- Do not accumulate doctrine in snapshots — doctrine returns to canonical governance files
-- The Heisenberg principle applies: the act of observing state changes state — acknowledge staleness
-- Stale assumptions are the enemy; fresh snapshots are the cure
-
----
-
-## Draft Status
-
-This document is a **stub** under development. Adoption pending:
-
-- [ ] Logan review and approval
-- [ ] Integration with stigmergy field (`scripts/vault-pheromones.py`)
-- [ ] Stabilization of protocol steps
-- [ ] Constitutional codification update
-
----
-
-## See Also
-
-- `LEVELSET-CURRENT.md` — deprecated historical surface; do not update
-- `LEVELSET-2026-04-27.md` — archived status reports
-- `PROTOCOL-SUITE-AWR.md` — AWAKEN/RISE/REPORT lifecycle
-- `CONSTITUTION.md` Section III — protocol definitions
-
----
-
-```text
-The world is quiet here．Esto Perpetua!
-```
+1. Re-check branch and local state (`git branch --show-current`, `git status --short`).
+2. Confirm the registry chain before using local bootstrap (`AGENTS.md`, `!/AGENTS.md`, `swarm.json`, `!/agents.json`, `!/agent.sh`).
+3. Treat root governance files as doctrine and `!/` as routing/bootstrap aliases unless Logan directs otherwise.

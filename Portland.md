@@ -4,4 +4,4 @@ related:
 - Oregon
 authority: LOGAN
 ---
-Multnomah County, Oregon
+Multnomah County, Oregon 

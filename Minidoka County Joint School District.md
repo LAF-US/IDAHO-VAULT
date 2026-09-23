@@ -5,4 +5,4 @@ related:
 - Rupert
 authority: LOGAN
 ---
-Rupert, Minidoka County
+Rupert, Minidoka County 

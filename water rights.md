@@ -4,4 +4,4 @@ related:
 - water
 authority: LOGAN
 ---
-right to water for beneficial use
+right to water for beneficial use 

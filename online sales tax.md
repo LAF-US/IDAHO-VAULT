@@ -4,6 +4,6 @@ related:
 - sales tax
 authority: LOGAN
 ---
-sales tax paid on Internet purchases
+sales tax paid on Internet purchases 
 
-marketplace facilitators
+marketplace facilitators 

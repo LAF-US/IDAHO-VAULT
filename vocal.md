@@ -5,5 +5,5 @@ related:
 - voiced
 ---
 
-verbal
-voiced
+verbal 
+voiced 

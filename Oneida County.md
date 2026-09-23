@@ -10,4 +10,4 @@ related:
 authority: LOGAN
 ---
 Seat: Malad City
-Communities: Cherry Creek, Holbrook, Pleasantview, Samaria, Stone, Woodruff
+Communities: Cherry Creek, Holbrook, Pleasantview, Samaria, Stone, Woodruff 

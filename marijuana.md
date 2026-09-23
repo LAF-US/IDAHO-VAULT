@@ -7,7 +7,6 @@ related:
 - recreational marijuana
 ---
 
-cannabis that contains THC
-
+cannabis that contains THC 
 - recreational marijuana
-- medical marijuana
+- medical marijuana 

@@ -38,7 +38,6 @@ Identified by Grok as a peer system to the IDAHO-VAULT agentic swarm. Logan appr
 - **March 16, 2026:** Nvidia expected to unveil NemoClaw, a security-first alternative, at GTC 2026
 
 ## The Lethal Trifecta
-
 Security researcher Simon Willison identified a "lethal trifecta" of architectural risks in OpenClaw:
 
 1. **Over-Privilege:** Users routinely granted full read/write access to root directories and sensitive API keys. Plaintext credential files stored at `~/.openclaw/credentials/`

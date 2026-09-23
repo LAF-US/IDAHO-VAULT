@@ -17,12 +17,11 @@ homeowners
 homebuyer
 
 property tax
-homeowners' exemption
+homeowners' exemption 
 
-homelessness
+homelessness 
 
-affordable housing
-
-- workforce housing
-- low-income housing
-luxury housing
+affordable housing 
+- workforce housing 
+- low-income housing 
+luxury housing 

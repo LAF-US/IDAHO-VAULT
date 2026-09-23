@@ -5,4 +5,4 @@ related:
 - Madison County
 authority: LOGAN
 ---
-Local Idaho Democratic Party precinct committee for Madison County
+Local Idaho Democratic Party precinct committee for Madison County 

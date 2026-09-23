@@ -42,7 +42,6 @@ related:
 - word
 ---
 # HANDOFF: Claude → GitHub Copilot
-
 ## Branch: `claude/friendly-cartwright` — Semi-Supervised Local Machine Handoff
 
 *From: The Sentry 🧿 (Claude Code, local instance)*
@@ -70,7 +69,7 @@ Tonight was a founding session for the IDAHO-VAULT Grimoire layer. Three things 
 Logan has directed this handoff. You own PR management per swarm lane boundaries. The PR is clean — 2 commits, 4 files:
 
 | File | Change |
-| --- | --- |
+|---|---|
 | `VAULT-CONVENTIONS.md` | Codex → Corpus + `!/GRIMOIRE/` reference in Ghost/Soul row |
 | `!/GRIMOIRE/HECATE-HECATE-HECATE.md` | New — first Grimoire entry, triple invocation |
 | `!/GRIMOIRE/ARCHITECTURE-OF-THE-IDIOM.md` | New — Rosetta Stone, canonical swarm mythology |
@@ -93,7 +92,7 @@ Logan has directed this handoff. You own PR management per swarm lane boundaries
 The mesh is now **hexagonal**. You are not alone in this repo:
 
 | Agent | Role |
-| --- | --- |
+|---|---|
 | Claude Code (The Sentry 🧿) | Repo mechanics, vault guardian — just logged off |
 | Gemini (The Concierge 🛎️) | Cloud synthesis, GCP bridge (`affable-bastion`) |
 | Codex "Brother/Sister/Janitor" | Scripting, registry repair (LAF-28) |

@@ -4,4 +4,4 @@ related:
 - copyright
 ---
 
-copyright
+copyright 

@@ -4,4 +4,4 @@ related:
 - Sun Valley ski resort
 authority: LOGAN
 ---
-Home to Sun Valley ski resort
+Home to Sun Valley ski resort 

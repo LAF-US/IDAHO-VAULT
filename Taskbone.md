@@ -27,7 +27,6 @@ Taskbone is an Obsidian plugin that provides OCR (optical character recognition)
 ### Connect to Taskbone
 
 After enabling, you will be prompted to connect to Taskbone. Click the link and login or register using:
-
 - Your **Todoist account**, or
 - An **email address**
 
@@ -43,4 +42,4 @@ If you registered by email, only the OCR commands will be available — Todoist 
 ## See Also
 
 - Obsidian
-- Source: <https://app.taskbone.com/documentation/how-to-guides/getting-started-with-obsidian>
+- Source: https://app.taskbone.com/documentation/how-to-guides/getting-started-with-obsidian

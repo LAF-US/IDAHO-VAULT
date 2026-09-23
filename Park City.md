@@ -4,4 +4,4 @@ related:
 - Utah
 authority: LOGAN
 ---
-Summit County, Utah
+Summit County, Utah 

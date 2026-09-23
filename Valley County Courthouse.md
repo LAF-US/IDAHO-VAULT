@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Valley County courthouse
+magistrate court Valley County courthouse 

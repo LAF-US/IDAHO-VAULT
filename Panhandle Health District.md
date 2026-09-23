@@ -16,10 +16,9 @@ Director: Don Duffy
 Hayden, ID 83835  
 1-208-415-5100
 
-North Idaho public health district
+North Idaho public health district 
 
 Counties:
-
 - Boundary
 - Bonner
 - Kootenai

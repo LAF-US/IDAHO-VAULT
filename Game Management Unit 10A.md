@@ -7,4 +7,4 @@ related:
 - Shoshone County
 authority: LOGAN
 ---
-central Clearwater County, southern Shoshone County and northern Idaho County
+central Clearwater County, southern Shoshone County and northern Idaho County 

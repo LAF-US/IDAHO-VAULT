@@ -5,4 +5,4 @@ related:
 - Power County
 authority: LOGAN
 ---
-Local Idaho Republican Party precinct committee for Power County
+Local Idaho Republican Party precinct committee for Power County 

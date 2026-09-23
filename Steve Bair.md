@@ -5,5 +5,4 @@ related:
 authority: LOGAN
 ---
 Residence: Blackfoot
-
-- former Senate member, JFAC chair
+- former Senate member, JFAC chair 

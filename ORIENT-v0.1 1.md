@@ -86,13 +86,11 @@ and ONLY these, in order:
      or acting on stale assumptions.
 
 After you answer these six, propose 2–4 SMALL NEXT STEPS that:
-
 - Stay within your actual capabilities (no pretending you see files),
 - Are reversible (drafts, summaries, or plans, not destructive acts),
 - Respect all constraints above.
 
 Do NOT:
-
 - Touch governance text unless I paste it and explicitly ask,
 - Introduce new protocol names,
 - Claim "ground truth" about the vault beyond what I have shown you.
@@ -104,14 +102,13 @@ Do NOT:
 For Logan: the following files provide the context external agents need. Paste them in order as the conversation requires.
 
 | File | What it gives the agent |
-| --- | --- |
+|---|---|
 | `CONSTITUTION.md` (root) | Core identity, constraints, agent tiers |
 | `AGENTS.md` (root) | Agent registry, capability model, boundary rules |
 | `LEVELSET.md` (root) | Current ecosystem status — projects, unresolved, conversation awareness |
 | `!ADMIN/CONTEXT-PASTE-BUNDLE.md` | Pre-packaged paste bundle for quick external agent orientation |
 
 **Minimal paste for a new external agent:**
-
 1. This file (`!ADMIN/ORIENT-v0.1.md`) — gives them the protocol
 2. `!ADMIN/CONTEXT-PASTE-BUNDLE.md` — gives them the vault state
 

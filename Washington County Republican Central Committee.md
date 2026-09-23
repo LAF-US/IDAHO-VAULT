@@ -6,4 +6,4 @@ related:
 - Washington County
 authority: LOGAN
 ---
-Local Idaho Republican Party precinct committee for Washington County
+Local Idaho Republican Party precinct committee for Washington County 

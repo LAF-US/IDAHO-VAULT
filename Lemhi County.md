@@ -15,4 +15,4 @@ authority: LOGAN
 ---
 Seat: Salmon
 Municipalities: Leadore
-Communities: Carmen, Cobalt, Elk Bend, Gibbonsville, Lemhi, May, North Fork, Patterson, Shoup, Tendoy
+Communities: Carmen, Cobalt, Elk Bend, Gibbonsville, Lemhi, May, North Fork, Patterson, Shoup, Tendoy 

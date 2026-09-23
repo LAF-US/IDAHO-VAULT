@@ -4,4 +4,4 @@ related:
 - Spokane
 authority: LOGAN
 ---
-Faith and Values Spokane
+Faith and Values Spokane 

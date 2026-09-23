@@ -3,4 +3,4 @@ related:
 - Boise
 authority: LOGAN
 ---
-Boise military
+Boise military 

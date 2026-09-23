@@ -4,4 +4,4 @@ related:
 - redistricting
 authority: LOGAN
 ---
-Only Republican elected from Legislative District 26 after redistricting
+Only Republican elected from Legislative District 26 after redistricting 

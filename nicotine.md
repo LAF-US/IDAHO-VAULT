@@ -4,4 +4,4 @@ related:
 - tobacco
 ---
 
-addictive chemical in tobacco
+addictive chemical in tobacco 

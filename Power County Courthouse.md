@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Power County courthouse
+magistrate court Power County courthouse 

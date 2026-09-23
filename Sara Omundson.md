@@ -5,4 +5,4 @@ related:
 authority: LOGAN
 ---
 - administrator for Administrative Office of the Courts  
-- former State Appellate Public Defender
+- former State Appellate Public Defender 

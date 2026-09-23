@@ -5,4 +5,4 @@ related:
 - Wendell
 authority: LOGAN
 ---
-Wendell, Gooding County
+Wendell, Gooding County 

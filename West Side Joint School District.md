@@ -5,4 +5,4 @@ related:
 - Franklin County
 authority: LOGAN
 ---
-Dayton, Franklin County
+Dayton, Franklin County 

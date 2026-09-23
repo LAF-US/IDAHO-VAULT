@@ -8,5 +8,5 @@ related:
 authority: LOGAN
 ---
 Seat: Shoshone
-Municipalities: Dietrich, Richfield
-Communities: Hidden Valley, Kimama
+Municipalities: Dietrich, Richfield 
+Communities: Hidden Valley, Kimama 

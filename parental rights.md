@@ -5,4 +5,4 @@ related:
 - parents
 ---
 
-rights of parents to oversee their minors
+rights of parents to oversee their minors 

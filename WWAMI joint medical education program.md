@@ -10,6 +10,6 @@ related:
 - medical school
 authority: LOGAN
 ---
-joint medical school program between University of Idaho and University of Washington
+joint medical school program between University of Idaho and University of Washington 
 
-Washington, Wyoming, Alaska, Montana, and Idaho medical students
+Washington, Wyoming, Alaska, Montana, and Idaho medical students 

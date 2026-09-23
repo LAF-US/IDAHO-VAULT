@@ -8,8 +8,8 @@ related:
 - single-subject rule
 authority: LOGAN
 ---
-fundamental right
+fundamental right 
 
-single-subject rule
+single-subject rule 
 
-balanced budget
+balanced budget 

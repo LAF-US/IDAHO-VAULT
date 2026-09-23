@@ -4,4 +4,4 @@ related:
 - County Sheriff
 authority: LOGAN
 ---
-Ada County Sheriff
+Ada County Sheriff 

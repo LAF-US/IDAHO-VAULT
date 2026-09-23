@@ -4,4 +4,4 @@ related:
 - Payette County
 authority: LOGAN
 ---
-Payette County
+Payette County 

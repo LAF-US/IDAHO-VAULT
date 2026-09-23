@@ -7,5 +7,4 @@ related:
 authority: LOGAN
 ---
 Former Senate member from Kootenai County
-
-- Son of former Lt. Gov. Jack Riggs
+- Son of former Lt. Gov. Jack Riggs 

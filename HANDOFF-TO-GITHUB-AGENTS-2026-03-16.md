@@ -35,7 +35,6 @@ Copilot — two documents exist for you. Logan will paste whichever is appropria
 
 **File:** `!ADMIN/LEVELSET-TRANSMISSION-2026-03-16.md` — Section B
 **What it contains:**
-
 - Your role definition (ADMIN GitHub, Tier 2)
 - Full swarm table (5 agents + 8 known entities)
 - Repo state (20 commits ahead of main on mothership branch)
@@ -51,7 +50,6 @@ Copilot — two documents exist for you. Logan will paste whichever is appropria
 
 **File:** `CONTEXT-PASSOVER-COPILOT-2026-03-16.md` on branch `claude/public-conversation-setup-zl2oe`
 **What it contains:**
-
 - Ground-truth verified repo state (11 branches audited)
 - Branch cleanup recommendations (1 merge, 8 deletes)
 - All confirmed decisions with commit SHAs
@@ -59,7 +57,6 @@ Copilot — two documents exist for you. Logan will paste whichever is appropria
 - Produced by PUBLIC: CONVERSATION after independent verification
 
 **Logan: this file lives on a different branch. To view:**
-
 ```
 git show origin/claude/public-conversation-setup-zl2oe:!ADMINISTRATION/CONTEXT-PASSOVER-COPILOT-2026-03-16.md
 ```
@@ -73,7 +70,7 @@ Or view on GitHub: navigate to branch `claude/public-conversation-setup-zl2oe`, 
 From both documents, consolidated:
 
 | # | Task | Owner | Notes |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | 1 | Draft `copilot-instructions.md` | Copilot | Must reference Constitution.md, declare tier, no !ADMIN/ write access |
 | 2 | Branch cleanup | Copilot (with Logan approval) | 8 dead branches identified for deletion |
 | 3 | Merge mothership to main | Logan | 20 commits on `claude/levelset-multi-conversation-zWxJc` — PR needed |
@@ -93,7 +90,6 @@ Remaining unverified: 6 files that exist only in conversation contexts (not in r
 ## ROUTING NOTE
 
 After Copilot responds, Logan relays the response to CODE AUTHORITY for:
-
 1. Registry update in AGENTS.md
 2. LEVELSET.md update
 3. Any follow-up actions

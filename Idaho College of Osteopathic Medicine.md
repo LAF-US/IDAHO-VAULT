@@ -4,4 +4,4 @@ related:
 - medical school
 authority: LOGAN
 ---
-medical school in Meridian
+medical school in Meridian 

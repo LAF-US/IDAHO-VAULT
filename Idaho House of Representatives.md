@@ -38,7 +38,6 @@ The House of Representatives is the lower chamber of the Idaho Legislature. It h
 Its presiding officer is the Speaker of the House.
 
 Officers:
-
 - Speaker of the House: Mike Moyle
 - House Majority Leader: Megan Blanksma
 - House Assistant Majority Leader: Sage Dixon
@@ -47,15 +46,14 @@ Officers:
 - House Assistant Minority Leader: Lauren Necochea
 - House Minority Caucus Chair: Ned Burns
 
-Standing Committees:
-
+Standing Committees: 
 - House Agricultural Affairs
 - House Appropriations
 - House Business
 - House Commerce and Human Resources
 - House Education
 - House Environment, Energy and Technology
-- House Ethics and Policy
+- House Ethics and Policy 
 - House Health and Welfare
 - House Judiciary, Rules and Administration
 - House Local Government

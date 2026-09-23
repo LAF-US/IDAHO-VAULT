@@ -20,9 +20,7 @@ related:
 authority: LOGAN
 ---
 # Roster
-
 ## 2023 Members
-
 - Joe Palmer Chair
 - Brandon Mitchell
 - Sage Dixon

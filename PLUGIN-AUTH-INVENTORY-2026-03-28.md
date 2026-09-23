@@ -41,7 +41,7 @@ Enabled plugin surfaces were checked for identity, minimal read access, and near
 ## Inventory Matrix
 
 | plugin | auth_state | identity | read_probe | write_surface_summary | vault_workflow_fit | risks_or_notes | recommended_next_action |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+|---|---|---|---|---|---|---|---|
 | GitHub | `verified` | `loganfinney27` (`id` `136375980`) | Authenticated profile returned; installation `118136039` present; `IDAHO-VAULT` visible in owned repositories; no org installs surfaced | Issues, PRs, reviews, labels, repo metadata, Actions-adjacent workflows | Core repo coordination surface; already canonical for branches, PRs, and Issues | App currently appears installed only on Logan's personal GitHub user account; `IDAHO-VAULT` visibility confirmed | Keep as a core coordination surface; do not use as the first MCP write pilot |
 | Linear | `verified` | Logan Finney (`loganfinney27@gmail.com`) | Authenticated profile returned; team list returned one workspace team: `Logan Finney` (`58085b2c-f6e6-49e4-8ad3-04fc10d09f6c`) | Issues, comments, status updates, projects, milestones, documents | Best fit for SWARM execution tracking and the cleanest first write target | Workspace surface is live and readable; aligns with prior vault discovery recommending Linear-first | Use as **Phase 1** write pilot once live-write guardrails are explicitly scoped |
 | Slack | `verified-read-only` | User `U0ALJEJMJM9`; username `loganfinney27`; real name Logan Finney; workspace/org `Logan Finney` | Current user profile returned with timezone `America/Denver`; owner/admin flags visible | Draft/send message and coordination surfaces exist, but Slack remains ephemeral by doctrine | Breadcrumbs, notifications, transient coordination only | Doctrine still applies: durable decisions must be promoted to Vault or Linear | Keep Slack breadcrumb-only for now; no pilot writes before Linear is stable |
@@ -55,7 +55,7 @@ Enabled plugin surfaces were checked for identity, minimal read access, and near
 ## Acceptance Check
 
 | Criterion | Status | Notes |
-| --- | --- | --- |
+|---|---|---|
 | Every enabled plugin is classified in the matrix | Complete | GitHub, Linear, Slack, Google Calendar, Google Drive, Hugging Face, Cloudflare all included |
 | Identity captured for GitHub, Linear, Slack, Google Calendar, Google Drive, and Hugging Face | Complete | All six returned valid identity information |
 | `IDAHO-VAULT` visibility confirmed in GitHub | Complete | Repository visible in owned repo listing |

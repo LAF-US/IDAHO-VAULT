@@ -9,5 +9,5 @@ related:
 authority: LOGAN
 ---
 Seat: Nezperce
-Municipalities: Kamiah, Craigmont, Reubens, Winchester
+Municipalities: Kamiah, Craigmont, Reubens, Winchester 
 Communities: Slickpoo

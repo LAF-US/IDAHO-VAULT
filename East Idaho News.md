@@ -7,4 +7,4 @@ related:
 - Idaho Falls
 authority: LOGAN
 ---
-Eastern Idaho online news outlet based in Idaho Falls
+Eastern Idaho online news outlet based in Idaho Falls 

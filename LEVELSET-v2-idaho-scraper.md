@@ -41,7 +41,7 @@ authority: LOGAN
 ### Files Committed
 
 | File | Type | Commit | Description |
-| ------ | ------ | -------- | ------------- |
+|------|------|--------|-------------|
 | `.github/scripts/idaho_leg_scraper.py` | Python | `449d365` + `ebd9df6` | Core bill scraper |
 | `.github/workflows/idaho-leg-scraper.yml` | YAML | `449d365` + `ebd9df6` | GitHub Actions workflow |
 | `.github/scripts/post_digest.py` | Python | `ebd9df6` | GitHub Issues daily digest poster |

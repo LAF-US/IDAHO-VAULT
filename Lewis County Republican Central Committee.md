@@ -5,4 +5,4 @@ related:
 - Lewis County
 authority: LOGAN
 ---
-Local Idaho Republican Party precinct committee for Lewis County
+Local Idaho Republican Party precinct committee for Lewis County 

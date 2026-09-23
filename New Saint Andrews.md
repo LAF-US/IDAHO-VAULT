@@ -4,4 +4,4 @@ related:
 - Moscow
 authority: LOGAN
 ---
-Christ Church of Moscow college in downtown Moscow
+Christ Church of Moscow college in downtown Moscow 

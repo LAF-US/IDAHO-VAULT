@@ -49,10 +49,9 @@ related:
 - wolf
 ---
 
-hunting animals, mostly mammals and birds
+hunting animals, mostly mammals and birds 
 
-big game species:
-
+big game species: 
 - deer
 - elk
 - pronghorn
@@ -61,20 +60,17 @@ big game species:
 - wolf
 
 trophy species:
-
 - moose
 - bighorn sheep
 - mountain goat
 
 waterfowl species:
-
 - geese
 - ducks
 - coots
 - snipe
 
 upland species:
-
 - turkey
 - pheasant
 - grouse
@@ -86,7 +82,6 @@ upland species:
 - rabbit
 
 furbearer species:
-
 - badger
 - beaver
 - bobcat
@@ -97,7 +92,6 @@ furbearer species:
 - river otter
 
 predatory species:
-
 - coyote
 - skunk
 - weasel

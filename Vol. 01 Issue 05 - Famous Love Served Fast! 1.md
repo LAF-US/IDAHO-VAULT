@@ -4,9 +4,6 @@ date modified: Thursday, April 2nd 2026, 10:39:31 pm
 ---
 
 !INLAY-01-05.jpg
-
-# Famous Love Served Fast
-
+# Famous Love Served Fast!
 ## Placing People on Pedestals
-
 ## Almost famous meaningful relationships have taken yet another hit

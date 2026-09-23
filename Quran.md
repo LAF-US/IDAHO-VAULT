@@ -4,4 +4,4 @@ related:
 - holy book
 ---
 
-Muslim holy book
+Muslim holy book 

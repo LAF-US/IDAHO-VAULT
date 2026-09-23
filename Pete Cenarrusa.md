@@ -3,4 +3,4 @@ related:
 - Secretary of State
 authority: LOGAN
 ---
-former Secretary of State
+former Secretary of State 

@@ -8,5 +8,4 @@ authority: LOGAN
 Residence: Hammett
 
 House Majority Leader
-
-- Former House Majority Caucus Chair
+- Former House Majority Caucus Chair 

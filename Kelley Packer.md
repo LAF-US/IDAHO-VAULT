@@ -5,8 +5,7 @@ related:
 - Idaho
 authority: LOGAN
 ---
-Residence:
+Residence: 
 
 Association of Idaho Cities executive director
-
-- Former House member
+- Former House member 

@@ -6,4 +6,4 @@ related:
 - Montpelier
 authority: LOGAN
 ---
-newspaper based in Montpelier owned by Adams Publishing Group
+newspaper based in Montpelier owned by Adams Publishing Group 

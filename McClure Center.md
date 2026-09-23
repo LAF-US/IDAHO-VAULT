@@ -5,4 +5,4 @@ related:
 - University of Idaho
 ---
 
-University of Idaho James A. and Louise McClure Center for Public Policy Research
+University of Idaho James A. and Louise McClure Center for Public Policy Research 

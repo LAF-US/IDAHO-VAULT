@@ -4,4 +4,4 @@ related:
 - hospitals
 authority: LOGAN
 ---
-hospitals emergency care
+hospitals emergency care 

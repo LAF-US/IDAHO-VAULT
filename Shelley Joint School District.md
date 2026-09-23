@@ -5,4 +5,4 @@ related:
 - Shelley
 authority: LOGAN
 ---
-Shelley, Bingham County/Bonneville County
+Shelley, Bingham County/Bonneville County 

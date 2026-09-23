@@ -10,9 +10,7 @@ related:
 authority: LOGAN
 ---
 # Roster
-
 ## 2023 Members
-
 - Julie VanOrden Chair
 - Glenneda Zuiderveld ~~Vice Chair~~
 - Abby Lee

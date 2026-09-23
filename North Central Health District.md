@@ -14,10 +14,9 @@ Director: Carol Moehrle
 Lewiston, ID 83501  
 1-208-799-3100
 
-North-Central Idaho public health district
+North-Central Idaho public health district 
 
 Counties:
-
 - Idaho
 - Clearwater
 - Lewis

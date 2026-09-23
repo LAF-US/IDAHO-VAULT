@@ -5,5 +5,4 @@ related:
 authority: LOGAN
 ---
 State Treasurer
-
-- former House member
+- former House member 

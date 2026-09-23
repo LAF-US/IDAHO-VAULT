@@ -6,6 +6,5 @@ related:
 authority: LOGAN
 ---
 Residence: Meridian
-
-- former Senate member
-- mother of Clifford Bayer
+- former Senate member 
+- mother of Clifford Bayer 

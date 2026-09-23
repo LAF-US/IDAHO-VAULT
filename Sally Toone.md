@@ -7,7 +7,6 @@ related:
 authority: LOGAN
 ---
 Residence: Gooding
-
-- Retired teacher
+- Retired teacher 
 - Former House Minority Caucus Chair
-- Former House member from Legislative District 26
+- Former House member from Legislative District 26 

@@ -11,9 +11,7 @@ related:
 authority: LOGAN
 ---
 # Roster
-
 ## 2023 Members
-
 - Kevin Cook Chair
 - Brian Lenney ~~Vice Chair~~
 - Todd Lakey

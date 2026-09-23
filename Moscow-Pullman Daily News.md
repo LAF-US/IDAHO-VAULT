@@ -5,4 +5,4 @@ related:
 - Moscow
 authority: LOGAN
 ---
-Moscow newspaper
+Moscow newspaper 

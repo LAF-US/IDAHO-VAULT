@@ -23,9 +23,7 @@ related:
 authority: LOGAN
 ---
 # Roster
-
 ## 2023 Members
-
 - Ron Mendive Chair
 - Charlie Shepherd Vice Chair
 - Judy Boyle
@@ -44,3 +42,4 @@ authority: LOGAN
 - Ned Burns
 - Lauren Necochea
 - Soñia Galaviz
+

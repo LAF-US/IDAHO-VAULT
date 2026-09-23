@@ -4,4 +4,4 @@ related:
 - Orofino
 authority: LOGAN
 ---
-Orofino, Clearwater County
+Orofino, Clearwater County 

@@ -6,4 +6,4 @@ related:
 - Shoshone County
 authority: LOGAN
 ---
-northern Shoshone County and eastern Kootenai County
+northern Shoshone County and eastern Kootenai County 

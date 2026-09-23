@@ -11,9 +11,7 @@ related:
 authority: LOGAN
 ---
 # Roster
-
 ## 2023 Members
-
 - Todd Lakey Chair
 - Dan Foreman Vice Chair
 - Abby Lee

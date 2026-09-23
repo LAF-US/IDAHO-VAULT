@@ -39,6 +39,7 @@ foregone taxes
 circuit breaker
 Payments in Lieu of Taxes
 
+
 income tax
 child tax credit
 Low-Income Housing Tax Credit

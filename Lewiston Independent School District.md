@@ -4,4 +4,4 @@ related:
 - Nez Perce County
 authority: LOGAN
 ---
-Lewiston, Nez Perce County
+Lewiston, Nez Perce County 

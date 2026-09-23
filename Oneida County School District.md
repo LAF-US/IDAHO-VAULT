@@ -4,4 +4,4 @@ related:
 - Oneida County
 authority: LOGAN
 ---
-Malad City, Oneida County
+Malad City, Oneida County 

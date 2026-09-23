@@ -10,4 +10,4 @@ related:
 - Worley
 authority: LOGAN
 ---
-Plummer/Worley/Tensed/De Smet, Benewah County/Kootenai County
+Plummer/Worley/Tensed/De Smet, Benewah County/Kootenai County 

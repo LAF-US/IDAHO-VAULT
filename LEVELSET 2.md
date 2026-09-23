@@ -80,7 +80,6 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 ### 1. WHAT'S BEEN DONE
 
 **Session 2026-03-16 (today — context vault preservation):**
-
 - Drafted `!ADMIN/AGENTS.md` — agent registry, 4-tier capability model, communication rules, boundary rules, conflict resolution
 - Cleaned Constitution.md stale pending items — 3 checkboxes updated (lines 218-220)
 - Prepared `!ADMIN/PROTOCOL-DECISIONS-PENDING.md` — decision-ready summaries for all 6 PROTOCOL.md ambiguities with options A/B/C for each
@@ -95,7 +94,6 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 - Produced this LEVELSET synthesis — full overwrite with current state
 
 **Session 2026-03-15 (prior):**
-
 - Absorbed 3-section routing handoff (IMPLEMENTATION → ADMINISTRATION → CODE)
 - Deleted `pull_requests/1.md` Copilot artifact (3bded84)
 - Renamed `!ADMIN/Claude.md` → `Constitution.md` + updated active references (250287e)
@@ -106,7 +104,6 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 - Processed consolidated swarm handoff — state corrections, Monday plan — `HANDOFF-CODE-TO-SWARM-2026-03-15.md` (6e4ec60)
 
 **Earlier 2026-03-15:**
-
 - Renamed `!ADMINISTRATION/` → `!ADMIN/` system-wide, 23 files (fa83df1)
 - Created LEVELSET-CURRENT.md pointer (a2181f4), later superseded
 - Added governance note to root CLAUDE.md (9dc3ba4)
@@ -114,13 +111,13 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 ### 2. WHAT'S UNRESOLVED
 
 | # | Item | Status | Blocker |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | 1 | PR not open for this branch | BLOCKED | Logan must open via GitHub web UI |
 | 2 | Constitution.md content update | WAITING | Capabilities language, digital consciousness additions from ADMINISTRATION |
 | 3 | Logan.md content update | WAITING | FāVS pause, broader digital consciousness framing from ADMINISTRATION |
 | 4 | `ANTHROPIC_API_KEY` in GitHub Secrets | CANNOT VERIFY | Logan must check Settings → Secrets → Actions |
 | 5 | `wikilink_pass.py` + `wikilink-pass.yml` deployment | SAFE TO DEPLOY | No collisions found. Content not yet provided from ISSUE: Repository browsing |
-| 6 | Gemini scope undefined | FLAG | Pixel smartphone, <loganfinney27@gmail.com>. No vault commits until defined |
+| 6 | Gemini scope undefined | FLAG | Pixel smartphone, loganfinney27@gmail.com. No vault commits until defined |
 | 7 | Scraper branch dangling | LOW PRIORITY | `claude/idaho-legislature-scraper-RI6Ku` — 2 unmerged termination reports |
 | 8 | `claude/levelset-current-synthesis-zWxJc` branch | COLLISION RESOLVED | 3 commits — review for merge or close |
 | 9 | `!ADMIN/ROUTING/` folder | RECOMMENDED | File-based async handoff drops. Not yet created |
@@ -153,7 +150,7 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 **Compaction warning:** Logan flagged that widespread compaction across concurrent conversations may cause disorientation. Governance files in `!ADMIN/` are the reorientation anchor. Any disoriented instance should re-read: Constitution.md → AGENTS.md → LEVELSET.md → PROTOCOL.md.
 
 | Conversation | Tier | Last known status |
-| --- | --- | --- |
+|---|---|---|
 | PERMANENT: AUTHORITY: CODE | Direct write | Active (this session) |
 | PERSISTENT: ADMINISTRATION | Draft only | Active — routed context dump this session |
 | PERSISTENT: AUTHORITY: LEVELSET | Read/analysis | Compaction risk — LEVELSET protocol maintenance |
@@ -171,7 +168,6 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 ### 4. WHAT LOGAN NEEDS TO DO (when back online)
 
 **Quick wins (< 5 min):**
-
 1. Open PR for `claude/levelset-multi-conversation-zWxJc` via GitHub web UI
 2. Resolve PROTOCOL.md ambiguities — open `PROTOCOL-DECISIONS-PENDING.md`, pick A/B/C for each (or "all A")
 3. Review `AGENTS.md` draft — approve, modify, or flag
@@ -190,7 +186,7 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 ### 5. GOVERNANCE FILE STACK (current)
 
 | File | Role | Status |
-| --- | --- | --- |
+|---|---|---|
 | `Constitution.md` | Identity, constraints, working rules | Active — content update pending |
 | `PROTOCOL.md` | Operational vocabulary (18 terms) | Active — 6 ambiguities pending |
 | `AGENTS.md` | Agent registry, communication rules, boundaries | **NEW DRAFT** — awaiting Logan's review |
@@ -220,7 +216,7 @@ Current status of the IDAHO-VAULT ecosystem. This file is overwritten — not ap
 ## Archive
 
 | File | Contents |
-| --- | --- |
+|---|---|
 | `LEVELSET-v1-PROMPT.md` | Original v1 prompt template (2026-03-13) |
 | `LEVELSET-v2.md` | Canonical ecosystem checkpoint (2026-03-13, immutable) |
 | `LEVELSET-v2-PROMPT.md` | v2 prompt template |

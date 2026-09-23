@@ -33,12 +33,10 @@ authority: LOGAN
 **Note:** This synthesis document was created by the Sunset agent (2026-03-15) based on LEVELSET v3.2.6 protocol awareness. The actual LEVELSET reports task should update this document with complete details of synthesis work completed.
 
 **Known Role (from v3.2.6):**
-
 - Tier 3 task for synthesis and reporting across conversations
 - Status: On hold (per v3.2.6)
 
 **Placeholder Details:**
-
 - Branch name: Unknown from sunset agent's perspective (no inter-agent visibility)
 - Commits: Unknown — awaiting LEVELSET reports agent's input
 - Synthesis artifacts: Unknown — awaiting complete documentation
@@ -65,13 +63,11 @@ This agent has no visibility into other conversations' work per LEVELSET protoco
 **Two possible paths:**
 
 **Path A: If work is complete and "on hold" means awaiting approval:**
-
 - Agent should finalize synthesis document
 - Document all LEVELSET-related work completed
 - Logan should review and approve deletion
 
 **Path B: If "on hold" means unfinished work:**
-
 - Agent should either:
   - Complete pending synthesis work and remove from sunset queue, OR
   - Formally hand off unfinished work and approve sunset

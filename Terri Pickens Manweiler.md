@@ -4,4 +4,4 @@ related:
 - Lieutenant Governor
 authority: LOGAN
 ---
-former candidate for Lieutenant Governor
+former candidate for Lieutenant Governor 

@@ -5,4 +5,4 @@ related:
 - tobacco
 ---
 
-tobacco & opioids
+tobacco & opioids 

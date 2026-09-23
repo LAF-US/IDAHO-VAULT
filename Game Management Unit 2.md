@@ -5,4 +5,4 @@ related:
 - Kootenai County
 authority: LOGAN
 ---
-southern Bonner County and northern Kootenai County
+southern Bonner County and northern Kootenai County 

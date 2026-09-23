@@ -4,4 +4,4 @@ related:
 - Grace
 authority: LOGAN
 ---
-Grace, Caribou County
+Grace, Caribou County 

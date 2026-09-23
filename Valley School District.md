@@ -5,4 +5,4 @@ related:
 - Jerome County
 authority: LOGAN
 ---
-Hazelton, Jerome County
+Hazelton, Jerome County 
