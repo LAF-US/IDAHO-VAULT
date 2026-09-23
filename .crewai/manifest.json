@@ -1,13 +1,11 @@
 {
-  "// note": "Machine-readable registry for the CrewAI layer in IDAHO-VAULT.",
-  "// status": "CrewAI is active as a re-foundation with a live bootstrap-validation shard. Internal topology and doctrine live in .crewai/MANIFEST.md.",
-  "version": "0.3.0",
-  "vault": "github.com/LAF-US/IDAHO-VAULT",
-  "status": "retired",
-  "manifest_path": ".crewai/MANIFEST.md",
+  "// note": "Machine-readable scaffold for the CrewAI Python layer in IDAHO-VAULT.",
+  "// status": "The initial demo harbor was retired pending redesign.",
+  "version": "0.2.0",
+  "crewai_version": "1.12.2",
+  "vault": "github.com/loganfinney27/IDAHO-VAULT",
+  "status": "scaffold",
   "output_dir": "!/CREWAI/",
-  "runtime_class": "none",
-  "authority_boundary": "Historical design material does not establish a live agent topology or promotion path.",
   "active_runners": [],
   "crews": []
 }

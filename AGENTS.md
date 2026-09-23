@@ -1,100 +1,106 @@
 ---
 authority: LOGAN
 related:
-- CONSTITUTION
+- API
 - CLAUDE
-- CHATGPT
-- CODEX
-- COPILOT
-- OPENCODE
+- CLI
+- CONSTITUTION
+- ChatGPT
+- Copilot
+- CrewAI
+- DECISIONS
 - GEMINI
-- GITHUB
+- Gemini CLI
+- GitHub
+- Idaho
+- Idaho Public Television
+- Idaho Reports
 - LEVELSET
 - Logan Finney
+- MCP
+- OpenAI
+- SDK
+- The world is quiet here
+- VAULT-CONVENTIONS
+- 'Yes'
+- agent
+- blocked
+- chain
+- codex
 ---
-[[A]][[G]][[E]][[N]][[T]][[S]]
 
 # AGENTS.md — IDAHO-VAULT
 
 > [!IMPORTANT]
-> This file exists at repo root because certain tools, like OpenAI Codex CLI, GitHub Copilot, and Qodo auto-load `AGENTS.md` from the repository root.
+> **This is a cross-tool pointer.** The canonical narrative registry now lives at [!/AGENTS.md](!/AGENTS.md).
+> This file exists at repo root because OpenAI Codex CLI, GitHub Copilot, and Qodo auto-load `AGENTS.md` from the repository root.
 
-**Owner:** Logan Finney — professional journalist and documentarian
-**VAULT Repository:** github.com/LAF-US/IDAHO-VAULT (public)
+**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
+**Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
 
 ---
 
 ## Canonical Registry
 
-If you wake up disoriented, read `CONSTITUTION.md` and [!/WAKEUP.md](!/WAKEUP.md)
-before interpreting lore, historical notes, or older branch residue.
+Root `AGENTS.md` is the auto-loaded cross-tool entrypoint.
+See [!/AGENTS.md](!/AGENTS.md) for the canonical narrative registry: capability tiers, boundary rules, bootstrap rules, and the master agent roster.
 
-Tree logic governs orientation: `!/*` is the Nest/Hive of the Unified Swarm personae, while `.*/` dotfolders are the persona chambers of individual agents.
+The machine-readable source of truth remains `swarm.json`.
+The canonical local bootstrap chain is `!/AGENTS.md` -> `swarm.json` -> `!/agents.json` -> `!/agent.sh`.
 
-This repository sits inside the broader `LAF-US` organization structure. The
-larger model includes both chambered repo anchors and separate GitHub team
-topology; this root file remains only a pointer into that fuller picture.
+---
 
-Immediate wakeup facts:
+## Agent Dotfolders (Quick Reference)
 
-- `IDAHO-VAULT` is one repo inside `LAF-US`, not the whole universe.
-- Repo topology and GitHub team topology are related, but not identical.
-- Historical harbor notes, abandoned branches, and exploratory scaffolds are
-  non-live. Any surface claiming to be live is explicitly instantly outdated.
-- Startup is OS-agnostic. No local Bash, WSL, Sparkseed, or launcher execution
-  is required to read, inspect, or contribute to this repository.
+| Agent | Dotfolder | Governance shim | Auto-loaded? | Role |
+| --- | --- | --- | --- | --- |
+| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes | **The Abhorsen** (Code Authority) |
+| Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes | **The Vault Advisor** (Support) |
+| OpenAI Codex | `.codex/` | `.codex/CODEX.md` | Yes | **The Lexicographer** (Scripting) |
+| GitHub Copilot | `.github/` | `.github/copilot-instructions.md` | Yes | **The Clerk** (Admin) |
 
-## Discovery Before Construction
+*Full roster including **Grok**, **Perplexity**, **DeepSeek**, **Serena**, and the **Cartographer** available in the [!/AGENTS.md](!/AGENTS.md) ledger.*
 
-Before proposing builds, new packages, or invention: discover and read existing documentation first. Do not assume tooling is missing or scaffolding is required without checking what's present in the vault or on the machine.
+---
 
-## Fix Errors - Do NOT Disable
+## CrewAI Layer (Quick Reference)
 
-When code throws errors, the error means something needs fixed. Do not disable security checks, linters, or validators to silence errors. Fix the underlying issue that is causing the fire rather than lazily turn off the smoke detector.
+| Surface | Path | Status | Notes |
+| --- | --- | --- | --- |
+| **CrewAI Python Layer** | `.crewai/` | Scaffold only | Demo crews were retired pending redesign; no active runners are registered |
 
-When governing surfaces disagree, follow this order:
+---
 
-1. Logan's direct instruction
-2. `CONSTITUTION.md` file
-3. `!/WAKEUP.md`
-4. `swarm.json` manifest
-5. WITNESS documents
-6. generated discovery surfaces
-7. historical and exploratory notes
+## Codex Thread Status
+
+For Codex threads, use status signals instead of prompt-driven archival.
+
+- `CODEX ACTIVE` while work is in progress
+- `CODEX PAUSED: awaiting Logan` when Logan action is required
+- `CODEX COMPLETE: work finished, no further action pending in this thread. Ready for termination or archive.` when the thread is done
+
+Thread archiving is a manual Logan action. See `.codex/CODEX.md` for the
+Codex-specific completion guidance.
+
+---
+
+## OpenAI Docs MCP
+
+Always use the OpenAI developer documentation MCP server if you need to work
+with the OpenAI API, ChatGPT Apps SDK, Codex, or OpenAI tooling without Logan
+having to explicitly ask.
+
+Codex project config for this lives in `.codex/config.toml`. VS Code agent-mode
+config lives in `.vscode/mcp.json`.
 
 ---
 
 ## Governance & Coordination
 
-Root governance files remain authoritative: `CONSTITUTION.md`, `LEVELSET.md`, and `VAULT-CONVENTIONS.md`, and others.
+Root governance files remain authoritative: `CONSTITUTION.md`, `DECISIONS.md`, `LEVELSET.md`, and `VAULT-CONVENTIONS.md`.
 
-**NETWEB Path Standard:** All filenames must respect cross-platform path portability for Linux, macOS, and Windows.
-
----
-
-## LAF-US Organization & IDAHO-VAULT Placement
-
-### Five Cores Model
-
-The `LAF-US` organization uses a **Five Cores model** for repository and team topology in a Venn Diagram arrangement, with PRIVATE and PUBLIC containing SECRET, PUBLISH, and PERSONAL:
-
-```text
-LAF-US (Organization)
-├── PRIVATE
-│   ├── SECRET
-│   └── PERSONAL
-├── PUBLIC
-|   ├── PUBLISH
-|   └── PERSONAL
-└── MISCELLANEOUS
-```
+**NETWEB Path Standard:** All filenames must respect cross-platform path portability. See `VAULT-CONVENTIONS.md` for reserved name rules.
 
 ---
 
-Manually revised by Logan A. Finney on 05/25/2026
-
----
-
-```text
-The world is quiet here．Esto Perpetua!
-```
+###### [["The world is quiet here."]]

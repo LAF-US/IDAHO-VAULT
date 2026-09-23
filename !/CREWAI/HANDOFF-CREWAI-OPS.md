@@ -3,25 +3,17 @@ title: "CrewAI Operations Handoff"
 date created: "2026-04-04"
 authority: crewai
 doc_class: handoff
-status: historical
-superseded_by: ".crewai/MANIFEST.md"
 ---
 
 # CrewAI Operations Handoff
 
 Historical note for the retired demo harbor. Do not use this file as the current runbook for the redesigned CrewAI Python layer.
 
-> [!IMPORTANT]
-> This document records the retired April 4 demo harbor. It references files,
-> runners, and assumptions that no longer define the live CrewAI layer.
-> Current CrewAI doctrine and topology live in `.crewai/MANIFEST.md`.
-
 ---
 
 ## Prerequisites
 
 1. **Python 3.13+** with venv active:
-
    ```bash
    cd /path/to/IDAHO-VAULT
    source .venv/bin/activate  # Linux/macOS
@@ -29,19 +21,15 @@ Historical note for the retired demo harbor. Do not use this file as the current
    ```
 
 2. **Dependencies installed:**
-
    ```bash
    pip install -r requirements.txt
    ```
-
    Key packages: `crewai[tools,anthropic]>=1.12.0`, `python-dotenv>=1.0.0`, `op` (1Password CLI)
 
 3. **API key via `op run`** (local-only — never committed):
-
-   ```text
+   ```
    ANTHROPIC_API_KEY=op://YOUR_VAULT/YOUR_ITEM/YOUR_FIELD
    ```
-
    Fetch from [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys).
    Account must have API credits loaded at [console.anthropic.com/settings/plans](https://console.anthropic.com/settings/plans).
 
@@ -49,7 +37,7 @@ Historical note for the retired demo harbor. Do not use this file as the current
 
 ## Running a Crew
 
-### JFAC Parser (Retired Demo Harbor)
+### JFAC Parser (Active)
 
 ```bash
 # From vault root
@@ -57,14 +45,12 @@ scripts/op-run-jfac.ps1
 ```
 
 **What happens:**
-
 1. Loads API key from the environment, ideally provisioned by `op run`
 2. Instantiates 3 agents (Budget Scout, Legislative Tracker, H911 Parser)
 3. Runs 5 sequential tasks (WHO, WHAT, WHEN, WHERE, WHY)
 4. Writes output to `!/CREWAI/jfac-analysis-{run_id}.md`
 
 **Inputs consumed:**
-
 - `minidata-*.csv` — dated JFAC minidata snapshots (vault root)
 - `legislature.idaho.gov` — live bill status (scraped by bill_status_checker tool)
 
@@ -95,7 +81,7 @@ crew_run_id: "{run_id}"
 ## Ephemeral vs. Durable
 
 | Surface | Persisted? | Location |
-| --- | --- | --- |
+|---|---|---|
 | Crew output (analysis files) | **Yes** — committed to vault | `!/CREWAI/` |
 | Runtime cache | No — gitignored | `.crewai_cache/` |
 | Execution logs | No — gitignored | `.crewai/logs/` |
@@ -122,8 +108,7 @@ crew_run_id: "{run_id}"
 4. **Update the manifest** at `.crewai/MANIFEST.md`
    - Add the crew, its agents, tasks, tools, inputs, and outputs
 
-5. **Historical boundary note:** the retired harbor kept CrewAI internals out of `swarm.json`.
-   - Current doctrine is narrower: `swarm.json` registers the CrewAI layer only, while CrewAI topology lives in `.crewai/MANIFEST.md`.
+5. **Do NOT** modify `swarm.json` — CrewAI crews are instruments within the swarm, not registry entries.
 
 ---
 
@@ -138,10 +123,10 @@ crew_run_id: "{run_id}"
 
 ## Architecture
 
-```text
+```
 .crewai/                    ← Code/config (committed)
   crews/                    ← Crew definitions
-    jfac_crew.py            ← JFAC Parser (retired harbor reference)
+    jfac_crew.py            ← JFAC Parser (active)
     task_to_code_crew.py    ← Task-to-Code Bridge (stub)
     vault_custodian_crew.py ← Vault Custodian (stub)
   tools/                    ← Tool wrappers
@@ -162,4 +147,4 @@ _private/idaho-vault.env.tpl ← 1Password secret refs (gitignored)
 - `.crewai/MANIFEST.md` — full crew/agent/task/tool registry
 - `!/GRIMOIRE/BARTIMAEUS-CREWAI-ALIGNMENT-BRIEF.md` — architectural directive
 - `!/GRIMOIRE/NETWEB-CREWAI-ALIGNMENT.md` — strategy document
-- `swarm.json` — upstream machine registry for layer metadata only
+- `swarm.json` — upstream machine registry (DO NOT MODIFY)
