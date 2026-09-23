@@ -73,7 +73,7 @@ typing-extensions==4.16.0
     # via posthog
 tzdata==2026.4
     # via icalendar
-urllib3==2.7.0
+urllib3==2.8.0
     # via requests
 werkzeug==3.1.8
     # via flask
