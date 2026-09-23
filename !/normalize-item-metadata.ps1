@@ -9,6 +9,12 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+. (Join-Path $PSScriptRoot "1password-policy.ps1")
+$Policy = Get-1PasswordPolicy
+
+if ($PSBoundParameters.ContainsKey("MaxEdits") -eq $false) {
+    $MaxEdits = [int]$Policy.safety_limits.max_edits
+}
 
 function Ensure-OpSession {
     if (-not (Get-Command op -ErrorAction SilentlyContinue)) {
@@ -75,7 +81,7 @@ function Get-ImportArtifactTags {
     $artifactTags = New-Object System.Collections.Generic.List[string]
     foreach ($tag in @($Tags)) {
         if (-not $tag) { continue }
-        if ($tag -match '^(Imported .+|CSV Import .+|Starter Kit)$') {
+        if (Test-PatternListMatch -Text $tag -Patterns $Policy.import_tag_patterns) {
             $artifactTags.Add($tag)
         }
     }
@@ -93,27 +99,7 @@ function Get-ServiceHints {
     $text = (($Title, $Username, $PrimaryHost) -join " ").ToLowerInvariant()
     $hints = New-Object System.Collections.Generic.List[string]
 
-    $patterns = @(
-        "openrouter",
-        "anthropic",
-        "claude",
-        "openai",
-        "github",
-        "gitlab",
-        "linear",
-        "vertex",
-        "google",
-        "slack",
-        "figma",
-        "mistral",
-        "huggingface",
-        "qodo",
-        "what3words",
-        "stripe",
-        "coinbase",
-        "discord",
-        "idahoptv"
-    )
+    $patterns = @($Policy.managed_service_hints + $Policy.broad_service_hints + @("idahoptv"))
 
     foreach ($pattern in $patterns) {
         if ($text -match [regex]::Escape($pattern)) {
@@ -207,11 +193,11 @@ function Get-SuggestedTags {
         $tags.Add($hint)
     }
 
-    if ((Normalize-Value (($ItemMeta.title, $username, $primaryHost) -join " ")) -match '@idahoptv\.org\b|\bidahoptv\b') {
+    if (Test-PatternListMatch -Text (Normalize-Value (($ItemMeta.title, $username, $primaryHost) -join " ")) -Patterns $Policy.idahoptv_patterns) {
         $tags.Add("idahoptv")
     }
 
-    if ($primaryHost -match '(creditkarma|venmo|pay\.gov|stlukesbillpay|upstart|personalcapital|freetaxusa|coinbase|stripe|moneylion|moneykey|creditfresh|usbank|bankofamerica|chime|gobank|intuit|turbotax|potlatchno1federalcreditunion)') {
+    if (Test-PatternListMatch -Text $primaryHost -Patterns $Policy.financial_host_patterns) {
         $tags.Add("financial")
     }
 

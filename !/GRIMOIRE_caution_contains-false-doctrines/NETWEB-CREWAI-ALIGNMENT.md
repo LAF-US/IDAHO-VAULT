@@ -6,6 +6,8 @@ authority: LOGAN
 superseded_by: ".crewai/MANIFEST.md"
 ---
 
+# DEEMED *HISTORICAL* BY THE FAITH OF THE CLOTH
+
 # NETWEB-CrewAI Alignment Protocol
 
 ## *Historical Ignition Sequence*

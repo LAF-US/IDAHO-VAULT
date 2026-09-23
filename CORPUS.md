@@ -1,19 +1,20 @@
 ---
+title: "CORPUS"
+created: 2026-05-04
+updated: 2026-05-04
+status: active
 authority: LOGAN
+type: tree-noun-anchor
 related:
-- CHARTER
-- CONSTITUTION
-- Codex
-- The world is quiet here
+  - "!README"
+  - CORE
+  - MIND
+  - CONSTITUTION
+  - CHARTER
 ---
 
 # CORPUS
 
-Touchstone structural noun for the body of records.
+Tree noun anchor for the Touchstone Tree.
 
-Use `CORPUS` for the structural branch.
-Use `Codex` for the OpenAI agent and tool lane.
-
-See `codex.md` for the compatibility pointer.
-
-###### [["The world is quiet here."]]
+In `!README.md`, CORPUS sits under CORE: MIND with CONSTITUTION and CHARTER.

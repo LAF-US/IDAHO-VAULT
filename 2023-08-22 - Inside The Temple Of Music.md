@@ -24,7 +24,7 @@ The bell tower was locked, I’d been told, to prevent the public going up into 
 
 Lights on, and he was brightly revealed: presiding like a judge over an open book, with large moustache and ruff. But this was also a mundane scene of casual storage – odds and ends cluttered a bench constructed around his pedestal. An undignified state, for one of Bearsted’s most illustrious sons.
 
-![](https://corymbus.co.uk/wp-content/uploads/2024/12/70811-img_4979-2.jpg)
+![alt text needed](https://corymbus.co.uk/wp-content/uploads/2024/12/70811-img_4979-2.jpg)
 
 I carefully shifted a few things aside (I would put them back before I left). I could now see the lengthy Latin inscription. In the recesses on either side, running up from the floor, were faintly etched staffs with winding snakes: the Rod of Asclepius, ancient symbol of medicine. And in the left-hand recess were two smaller books with words inscribed. Looking closely, one was marked ‘Misterium Cabalisticum’, the other ‘Philosophia Sacra’.
 

@@ -24,21 +24,27 @@ def run_syntax_checks() -> bool:
         full_path = REPO_ROOT / file_path
         try:
             py_compile.compile(str(full_path), doraise=True)
-            print(f"✓ {file_path} - PASSED")
+            print(f"[OK] {file_path} - PASSED")
         except py_compile.PyCompileError as exc:
-            print(f"✗ {file_path} - FAILED")
+            print(f"[FAIL] {file_path} - FAILED")
             print(f"  Error: {exc}")
             all_passed = False
     return all_passed
 
 
 def run_unittests(python_executable: str = sys.executable) -> int:
-    result = subprocess.run(
-        [python_executable, "-m", "unittest", UNITTEST_TARGET, "-v"],
-        cwd=REPO_ROOT,
-        capture_output=True,
-        text=True,
-    )
+    try:
+        result = subprocess.run(
+            [python_executable, "-m", "unittest", UNITTEST_TARGET, "-v"],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=300,
+            check=False,
+        )
+    except subprocess.TimeoutExpired:
+        print("ERROR: unittest run timed out after 300s")
+        return 1
     print(result.stdout)
     if result.stderr:
         print(result.stderr)

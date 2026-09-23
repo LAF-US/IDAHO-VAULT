@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import argparse
 import shutil
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 import sys
 from pathlib import Path
 

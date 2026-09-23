@@ -54,4 +54,5 @@ workflow or registry without a ledger entry and manual review.
 
 | Date | Surface | Transition | Purpose / Compatibility Boundary | Verification | Authority |
 | --- | --- | --- | --- | --- | --- |
+| 2026-06-04 | GitHub Actions signing proof | no agent signing proof workflow -> `actions/create-github-app-token@v3` App-token proof harness | Test GitHub App landing provenance without relaxing required signatures, required checks, or reviewer gates | `actionlint .github/workflows/agent-swarm-signing-proof.yml`; local version-transition policy reproduction | Logan review required |
 | 2026-05-26 | Version-governance control | unrecorded transition behavior -> staged guard | Prevent task-local version edits from breaking coupled runtime and dependency requirements; no package/runtime version changed by this entry | History review of `3cf73fab`, `0eab6bdf`, `bc19e3f1`, `d0fb10d5`; failures on PRs #359, #363, #364 | Logan review required |

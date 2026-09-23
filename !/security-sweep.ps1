@@ -31,9 +31,13 @@ foreach ($entry in $patterns) {
     }
 
     foreach ($line in $matches) {
+        $parts = $line -split ':', 4
+        $path = if ($parts.Length -ge 1) { $parts[0] } else { "" }
+        $lineNumber = if ($parts.Length -ge 2) { $parts[1] } else { "" }
         $results.Add([pscustomobject]@{
-            rule  = $entry.name
-            match = $line
+            rule = $entry.name
+            path = $path
+            line = $lineNumber
         })
     }
 }
@@ -57,16 +61,16 @@ $lines.Add("# Security Sweep")
 $lines.Add("")
 $lines.Add("Generated: $(Get-Date -Format s)")
 $lines.Add("")
-$lines.Add("This report is path-and-line oriented. Review findings before treating them as leaks.")
+$lines.Add("This report is sanitized. It records file paths and line numbers only, never matched secret content.")
 $lines.Add("")
-$lines.Add("| Rule | Match |")
-$lines.Add("|---|---|")
+$lines.Add("| Rule | Path | Line |")
+$lines.Add("|---|---|---|")
 foreach ($finding in $results) {
-    $safe = $finding.match -replace '\|', '\|'
-    $lines.Add("| $($finding.rule) | $safe |")
+    $safePath = $finding.path -replace '\|', '\|'
+    $lines.Add("| $($finding.rule) | $safePath | $($finding.line) |")
 }
 if ($results.Count -eq 0) {
-    $lines.Add("| none | no findings |")
+    $lines.Add("| none | no findings | |")
 }
 
 Set-Content -Path $mdPath -Value ($lines -join "`r`n")

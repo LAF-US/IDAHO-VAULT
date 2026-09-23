@@ -11,6 +11,12 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+. (Join-Path $PSScriptRoot "1password-policy.ps1")
+$Policy = Get-1PasswordPolicy
+
+if ($PSBoundParameters.ContainsKey("MaxMoves") -eq $false) {
+    $MaxMoves = [int]$Policy.safety_limits.max_moves
+}
 
 function Ensure-OpSession {
     if (-not (Get-Command op -ErrorAction SilentlyContinue)) {
@@ -75,26 +81,7 @@ function Get-ServiceHints {
     $text = (($Title, $Username, $PrimaryHost) -join " ").ToLowerInvariant()
     $hints = New-Object System.Collections.Generic.List[string]
 
-    $patterns = @(
-        "openrouter",
-        "anthropic",
-        "claude",
-        "openai",
-        "github",
-        "gitlab",
-        "linear",
-        "vertex",
-        "google",
-        "slack",
-        "figma",
-        "mistral",
-        "huggingface",
-        "qodo",
-        "what3words",
-        "stripe",
-        "coinbase",
-        "discord"
-    )
+    $patterns = @($Policy.managed_service_hints + $Policy.broad_service_hints)
 
     foreach ($pattern in $patterns) {
         if ($text -match [regex]::Escape($pattern)) {
@@ -127,7 +114,7 @@ function Get-VaultRecommendation {
         $reasons.Add("API credentials and SSH keys are managed centrally in Vault.")
     }
 
-    if ($text -match '@idahoptv\.org\b' -or $text -match '\bidahoptv\b') {
+    if (Test-PatternListMatch -Text $text -Patterns $Policy.idahoptv_patterns) {
         $targetVault = "Work"
         $confidence = "high"
         $reasons.Add("Uses an idahoptv.org identity or org-specific handle.")
@@ -139,7 +126,7 @@ function Get-VaultRecommendation {
             $confidence = "low"
         }
         $reasons.Add("Already stored in Wallet; leave unless there is a stronger signal.")
-    } elseif ($primaryHost -match '(creditkarma|venmo|pay\.gov|stlukesbillpay|upstart|personalcapital|freetaxusa|coinbase|stripe|moneylion|moneykey|creditfresh|usbank|bankofamerica|chime|gobank|intuit|turbotax|potlatchno1federalcreditunion)') {
+    } elseif (Test-PatternListMatch -Text $primaryHost -Patterns $Policy.financial_host_patterns) {
         $targetVault = "Wallet"
         if ($confidence -ne "high") {
             $confidence = "high"
@@ -147,13 +134,13 @@ function Get-VaultRecommendation {
         $reasons.Add("Financial/billing service belongs in Wallet.")
     }
 
-    if (-not $targetVault -and ($hints | Where-Object { $_ -in @("openrouter","anthropic","claude","openai","github","gitlab","linear","vertex","figma","mistral","huggingface","qodo","what3words") }).Count -gt 0) {
+    if (-not $targetVault -and ($hints | Where-Object { $_ -in @($Policy.managed_service_hints) }).Count -gt 0) {
         $targetVault = "Vault"
         $confidence = "medium"
         $reasons.Add("Developer/tooling credential matches managed services tracked in Vault.")
     }
 
-    if (-not $targetVault -and ($text -match '@gmail\.com\b' -or $text -match '@imaxmail\.net\b' -or $text -match '@outlook\.com\b' -or $text -match '@hotmail\.com\b' -or $text -match '@yahoo\.com\b')) {
+    if (-not $targetVault -and (Test-PatternListMatch -Text $text -Patterns $Policy.personal_email_patterns)) {
         $targetVault = "Personal"
         $confidence = "medium"
         $reasons.Add("Personal email identity.")
