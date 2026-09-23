@@ -7,7 +7,7 @@ authority: LOGAN
 authors:
   - "Claude Code CLI, cloud session (session_01MthFdsNfRK8S4gUivqV9XY)"
 doc_class: report
-source: "`.github/scripts/branch_census.py` against origin (LAF-US/IDAHO-VAULT), fetched and pruned 2026-09-23; GitHub pull-request history per branch"
+source: "git census of origin (LAF-US/IDAHO-VAULT), fetched and pruned 2026-09-23; GitHub pull-request history per branch"
 related:
   - "[[!/ARBORSCAPING-REPORT-2026-04-16]]"
   - "[[!-ARBORSCAPING-REPORT-2026-05-25]]"
@@ -27,10 +27,15 @@ reported three vault branches where origin holds 170. Filed in the series of
 [[!/ARBORSCAPING-REPORT-2026-04-16]] and [[!-ARBORSCAPING-REPORT-2026-05-25]], under the
 ARBORSCAPING protocol with the ARCHIPELAGO visibility and risk classes.
 
-A dated census is stale the moment a branch moves. So the census is a command,
-`.github/scripts/branch_census.py`, and this note is one run of it plus the readings a
-human still has to make on top. The block between the two marker comments below is
-written by the script and refreshed by rerunning it; nothing in it is edited by hand.
+A dated census is stale the moment a branch moves, and nobody reads a long one. This
+note is therefore short: the readings a human has to make, then the tables from one
+run of the commands in the Method, kept as evidence for the deletions Logan decides.
+The vault's standing generator for branch reports is
+`scripts_scripts/branch_garden_report.py` (ahead/behind and open-PR classes); this
+census is a one-off deeper cut by own commits and paths, not a new tool. A second
+generator was added to `.github/scripts/` earlier on this branch and removed again the
+same day: Logan cleaned that folder out on 2026-08-21 (063cdaa24) and one generator is
+enough.
 
 The census records what origin holds and what each branch holds that `main` does not.
 It does not delete a branch, move a ref, close a pull request, rewrite history, or
@@ -44,33 +49,32 @@ Mac's `develop` and unified the Windows base on the full-history line; neither t
 reached origin, both gated on the history rewrite that note describes. This census
 cannot see them and does not speak for them (`*`).
 
-## How to regenerate
+## Method
 
-```text
-gh api --paginate "repos/LAF-US/IDAHO-VAULT/pulls?state=all&per_page=100" \
-  --jq '.[] | {head: .head.ref, number: .number, state: .state, merged: (.merged_at != null)}' \
-  > prs.jsonl
-python3 .github/scripts/branch_census.py --fetch --prs prs.jsonl --since 2026-08-01 \
-  --history-before 2026-03-01 --update '!/ARBORSCAPING-REPORT-2026-09-23.md'
-```
+Commands run against a full clone after `git fetch --prune origin` on 2026-09-23 (the
+ARCHIPELAGO protocol asks for the commands, so they are here):
 
-Per branch the script measures: the merge base with `main`, or none (an island: per the
-ARCHIPELAGO protocol, not "ahead" or "behind"); own commits, `git rev-list --no-merges
-<branch> --not origin/main <every other branch>`; the paths those commits touched and,
-for each, whether `main` lacks it, holds it identical, or holds a different version; the
-whole tree against `main`'s (`git diff --name-status`); root commits and oldest date;
-last commit; pull-request history from the export; the ARCHIPELAGO classes. `--json`
-writes every row with its full path lists. The script's docstring carries the rest.
+- `git merge-base origin/main <branch>` — the fork point, or none. No merge base means
+  an island: per the protocol, not "ahead" or "behind".
+- `git rev-list --no-merges <branch> --not origin/main <every other branch>` — the
+  branch's own commits, the ones no other ref reaches.
+- `git diff-tree --stdin --root --no-commit-id -r --name-only -z` over those commits,
+  one per line — the paths that work touched, as a union.
+- `git ls-tree -r -z <branch>` against `git ls-tree -r -z origin/main` — for each such
+  path, whether `main` lacks it, holds it identical, or holds a different version.
+- `git diff --name-status -z origin/main <branch>` — the whole tree against `main`'s.
+- `gh api --paginate "repos/LAF-US/IDAHO-VAULT/pulls?state=all&per_page=100"` — the
+  pull-request history, joined by head branch.
 
 ## Correction to the first filing
 
-The first filing of this note (commit 5a4b64782, earlier the same day) was produced from
-scratch commands outside the vault. One of them handed several commits to a single
-`git diff-tree` call; git reads the third argument onward as paths, so every branch with
-more than one own commit came out with no paths at all. The salvage list read 79
-branches; it is 107. The own-commit column also counted merge commits while the Method
-said non-merge. Porting the generator into the vault surfaced both. The generated block
-is the script's; the first filing's counts are superseded.
+The first filing of this note (commit 5a4b64782, earlier the same day) handed several
+commits to a single `git diff-tree` call; git reads the third argument onward as paths,
+so every branch with more than one own commit came out with no paths at all. The
+salvage list read 79 branches; it is 107. The own-commit column also counted merge
+commits while the Method said non-merge. Re-running the census the way the Method
+states surfaced both. The tables below are from that rerun; the first filing's counts
+are superseded.
 
 ## Readings a human still has to make
 
@@ -145,14 +149,15 @@ Raised by Logan in the same session. The block at the top of `VAULT-CONVENTIONS.
   `VAULT-TEMPLATES.md`, `!README.md` and `!/WAKEUP.md` carry one or both.
 - No script in the repository writes `related:`. `scripts_scripts/metadata_survey.py`
   counts it; `scripts_scripts/laf_usb_manifest.py` validates it; `daily_rollover.py`
-  writes `date created`/`date modified` for daily notes only. The generator is on the
-  Obsidian side, and plugin settings are gitignored by design (`VAULT-CONVENTIONS.md`
-  § "Obsidian Sync / Git Boundary"), so this census cannot name the plugin: `*`.
-- Not done here: rewriting that block on `main`. It would be regenerated at the next
-  machine-side pass while the generator runs, and `coord/MAC-STATUS.md` (2026-09-09)
+  writes `date created`/`date modified` for daily notes only. What wrote the block is
+  not in the repository and this census cannot name it: `*`. The first filing guessed
+  an Obsidian plugin from the date format; Logan says that is wrong, and the guess is
+  withdrawn. The standards the block fails, `VAULT-METADATA-STANDARD.md` and
+  `VAULT-TEMPLATES.md`, carry `authors: ChatGPT Codex` in their own frontmatter; Logan
+  calls them agent-written and not authority. This note stops citing them as such.
+- Not done here: rewriting that block on `main`. `coord/MAC-STATUS.md` (2026-09-09)
   records a pared, scar-cleaned `VAULT-CONVENTIONS.md` on the Mac's `develop` that has
-  not reached origin; an edit here would collide with it. Disposition is Logan's: switch
-  the generator off on the devices, or accept the fields and let the standard say so.
+  not reached origin; an edit here would collide with it. Logan's call which copy wins.
 
 ## Proposed next actions
 
@@ -171,17 +176,11 @@ All pending Logan; verbs per the ARCHIPELAGO protocol.
 
 No branch is deleted by this note, and none should be until Logan enters the endings.
 
-## Census
+## Census: one run, 2026-09-23
 
-<!-- branch-census:begin -->
+Tables from the Method above, run once against the clone on 2026-09-23. Not hand-edited.
 
-Generated 2026-09-23 14:10 UTC by `.github/scripts/branch_census.py` from `origin`, base `origin/main` at `2abe7f79b` (2026-09-23). Do not edit between the markers; rerun instead:
-
-```text
-python3 .github/scripts/branch_census.py --prs prs.jsonl --since 2026-08-01 --history-before 2026-03-01 --update '!/ARBORSCAPING-REPORT-2026-09-23.md'
-```
-
-## Headline
+### Headline
 
 | Measure | Value |
 |---|---|
@@ -197,7 +196,7 @@ python3 .github/scripts/branch_census.py --prs prs.jsonl --since 2026-08-01 --hi
 | Branches whose PRs closed unmerged | 94 |
 | Branches that never had a PR | 59 |
 
-## Two populations
+### Two populations
 
 An island carries a whole lineage `main` does not share, so its ahead/behind count measures that lineage, not work waiting to land. What an island contributed is its own commits, isolated below.
 
@@ -206,7 +205,7 @@ An island carries a whole lineage `main` does not share, so its ahead/behind cou
 | Islands | 106 | 93 | 6 | 7 | 0 |
 | Forks | 65 | 1 | 11 | 52 | 1 |
 
-## Recent: forked or committed since 2026-08-01
+### Recent: forked or committed since 2026-08-01
 
 | Branch | Lineage | Own commits | `main` lacks | Differ | Last commit | PR |
 |---|---|---|---|---|---|---|
@@ -227,7 +226,7 @@ An island carries a whole lineage `main` does not share, so its ahead/behind cou
 | `claude/research-attestation` | forks 2026-07-28 | 2 | 0 | 5 | 2026-08-04 Logan A. Finney | merged PR |
 | `wayback-audit-20260615143859-clean` | forks 2026-08-04 | 2 | 0 | 2 | 2026-08-04 Vibe Nuage Agent | no PR |
 
-## Forks whose whole tree holds 1,000 or more paths `main` lacks
+### Forks whose whole tree holds 1,000 or more paths `main` lacks
 
 A fork that carries a lineage rather than a diff shows few own commits above; this measures forks tree against tree. "Only here" is a path the branch has and `main` lacks; "only base" the reverse. Islands are left out: their whole tree predates the replant and differs wholesale. "Only here" also counts every path `main` has deleted since the fork point, so ordinary forks share a baseline below the threshold.
 
@@ -238,7 +237,7 @@ A fork that carries a lineage rather than a diff shows few own commits above; th
 | `claude/reunify-mac-win-6c80a94c` | 52,239 | 2,863 | 1,423 | 6,728 | 7 | 2026-05-25 |
 | `logan/obsidian/android` | 3,730 | 8,985 | 1,103 | 237 | 22 | 2026-05-25 |
 
-## History older than anything `main` reaches
+### History older than anything `main` reaches
 
 `main` reaches nothing dated before 2026-05-25. Across `origin` there are 5,702 commits dated earlier, by month:
 
@@ -253,7 +252,7 @@ A fork that carries a lineage rather than a diff shows few own commits above; th
 | 2026-04 | 1,286 |
 | 2026-05 | 1,299 |
 
-Dated before 2026-03-01 (`--history-before`), one row per date and subject, 42 commits:
+Dated before 2026-03-01, one row per date and subject, 42 commits:
 
 | Date | Commits | Subject |
 |---|---|---|
@@ -265,7 +264,7 @@ Dated before 2026-03-01 (`--history-before`), one row per date and subject, 42 c
 | 2025-07-01 | 6 | generic update |
 | 2026-01-05 | 6 | .obsidian |
 
-## By family
+### By family
 
 | Family | Branches | Islands | With paths `main` lacks | With paths that differ | Own paths all identical, or nothing own |
 |---|---|---|---|---|---|
@@ -287,9 +286,9 @@ Dated before 2026-03-01 (`--history-before`), one row per date and subject, 42 c
 | `hyperagent/` | 1 | 0 | 1 | 0 | 0 |
 | `review/` | 1 | 0 | 1 | 1 | 0 |
 
-## Salvage candidates: own commits hold paths `main` lacks
+### Salvage candidates: own commits hold paths `main` lacks
 
-Ranked by that count. It counts paths, not worth: a path the base lacks may be a note worth keeping, a file removed on purpose, or generated residue. Up to 3 paths are shown per branch; `--json` carries them all.
+Ranked by that count. It counts paths, not worth: a path the base lacks may be a note worth keeping, a file removed on purpose, or generated residue. Up to 3 paths are shown per branch; the rest are one `git diff-tree` away by the Method.
 
 | Branch | Lineage | Own commits | `main` lacks | Differ | Last commit | PR | Paths `main` lacks |
 |---|---|---|---|---|---|---|---|
@@ -401,14 +400,14 @@ Ranked by that count. It counts paths, not worth: a path the base lacks may be a
 | `ingest-2026-05-17T125448Z` | island | 1 | 1 | 1 | 2026-05-17 github-actions[bot] | closed PR, unmerged (#340 closed) | `!/ingest-2026-05-17T125448Z.md` |
 | `review/pr-471-agent-swarm-signing` | forks 2026-06-04 | 1 | 1 | 3 | 2026-06-16 Logan Finney | no PR | `VERSION-TRANSITIONS.md` |
 
-## Own paths all in `main`, identical
+### Own paths all in `main`, identical
 
 Nothing to salvage by content. Under ARBORSCAPE these are PRUNE candidates once Logan says so; nothing is pruned by this census.
 
 - `agent/mcp-probe` — forks 2026-07-01, own commits 2, paths 1, last 2026-07-02, no PR
 - `codex/example-high-risk-pr-flow-2026-04-23` — island, own commits 1, paths 1, last 2026-04-23, closed PR, unmerged
 
-## No non-merge commit of their own
+### No non-merge commit of their own
 
 Every non-merge commit each reaches is reachable from another ref, so the branch adds at most a merge. ANCESTRAL means the tip itself is reachable from `main`.
 
@@ -424,7 +423,7 @@ Every non-merge commit each reaches is reachable from another ref, so the branch
 - `orphancry/pr-388-original-automation-sync-dependencies` — forks 2026-06-23, ANCESTRAL, last 2026-06-23, no PR
 - `recovered/pr-353` — island, ORPHAN-LINEAGE, last 2026-05-22, no PR
 
-## Merge-queue leftovers
+### Merge-queue leftovers
 
 `gh-readonly-queue/*` refs are the temporary branches GitHub's merge queue builds each candidate on and normally deletes.
 
@@ -435,7 +434,7 @@ Every non-merge commit each reaches is reachable from another ref, so the branch
 - `gh-readonly-queue/main/pr-727-e8d6ab4cb6acc1e8c49f3d562218f7eb8b97ab4f` — own commits 0, `main` lacks 0, differ 0, last 2026-07-02
 - `gh-readonly-queue/main/pr-728-747bc74aeb2b107b9cbb4cbcc5e2ee7c7bfe2669` — own commits 0, `main` lacks 0, differ 0, last 2026-07-02
 
-## Full census
+### Full census
 
 One row per branch. Own commits are non-merge commits no other ref reaches. Classes per `!/ARCHIPELAGO-ISLAND-CENSUS-PROTOCOL-v0-2026-06-02.md`; SECRET-RISK and DOCTRINE-RISK need a reader and are not assigned here.
 
@@ -613,13 +612,12 @@ One row per branch. Own commits are non-merge commits no other ref reaches. Clas
 | `wayback-audit-20260420100033` | forks 2026-08-19 | 1 | 2 | 2 | 0 | 0 | 31 | 2026-08-20 | loganfinney27 | closed PR, unmerged | BRANCH-ONLY | EVIDENCE-CANDIDATE |
 | `wayback-audit-20260615143859-clean` | forks 2026-08-04 | 2 | 3 | 0 | 2 | 1 | 145 | 2026-08-04 | Vibe Nuage Agent | no PR | BRANCH-ONLY | EVIDENCE-CANDIDATE |
 
-<!-- branch-census:end -->
 
 ## Reservation
 
 No ref was created, moved or deleted, no pull request touched, no history rewritten.
 Historical censuses remain evidence of what they recorded when filed. The counts in the
-block are reproducible with the script against the same clone; the readings of file
+tables are reproducible from the Method against the same clone; the readings of file
 content that the salvage decisions need have not been made here and are not implied.
 `claude/new-session-0riz1k`, this note's own branch, appears in the census because it
 is on origin.
@@ -633,4 +631,4 @@ is on origin.
 - **Status:** Draft
 - **Authority:** LOGAN
 - **Authors:** Claude Code CLI, cloud session (session_01MthFdsNfRK8S4gUivqV9XY)
-- **Change Note:** Second filing: the generator moved into the vault as `.github/scripts/branch_census.py`; the first filing's path counts corrected (79 → 107 salvage candidates); the census is now the script's block, refreshed by rerunning it.
+- **Change Note:** Second filing: the first filing's path counts corrected (79 → 107 salvage candidates); the note cut to the readings plus one run's tables; the Obsidian attribution withdrawn; no new generator (the vault has `scripts_scripts/branch_garden_report.py`).
