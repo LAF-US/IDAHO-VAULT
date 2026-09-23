@@ -19,11 +19,10 @@ related:
   - idpol
 ---
 
-I love doing #idleg/#idpol research.
+I love doing #idleg/#idpol research. 
 <https://t.co/jfsduX3zQj> <https://t.co/b3ILqBR9JM>
 
 ## Links
-
 - <https://www.snopes.com/fact-check/my-dynamite-idaho/>
 
 ## Media

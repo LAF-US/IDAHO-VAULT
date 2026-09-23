@@ -1089,8 +1089,4 @@ the Definition (lich / Baelnorn as the axis's two verdicts), propagating
 the doctrine already treats "lich" as the unauthorized-persistence verdict, with the Baelnorn
 Distinction as the authorized pole; the axis is merely named for its neutral faculty.
 
----
-
-```text
-The world is quiet here．Esto Perpetua!
-```
+###### [["The world is quiet here."]]

@@ -25,7 +25,6 @@ related:
 <https://t.co/TjQfBO3eqa>
 
 ## Links
-
 - <https://youtu.be/1jB8JlJXpSM>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1286327422703398912)

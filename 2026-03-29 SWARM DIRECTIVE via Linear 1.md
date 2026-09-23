@@ -79,8 +79,4 @@ TO ALL AGENTS from Linear.app (admin chat, communicated by LOGAN):
 
 # LOGAN SAYS GO
 
----
-
-```text
-The world is quiet here．Esto Perpetua!
-```
+"The world is quiet here."

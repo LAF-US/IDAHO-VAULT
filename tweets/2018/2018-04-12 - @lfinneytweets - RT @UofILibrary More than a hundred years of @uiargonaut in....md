@@ -22,7 +22,6 @@ RT @UofILibrary: More than a hundred years of @uiargonaut in our digital collect
 <https://t.co/PRuUBbt5D2> <https://t.co/2O6z6lWeuR>
 
 ## Links
-
 - <https://www.lib.uidaho.edu/digital/argonaut/>
 
 ## Media

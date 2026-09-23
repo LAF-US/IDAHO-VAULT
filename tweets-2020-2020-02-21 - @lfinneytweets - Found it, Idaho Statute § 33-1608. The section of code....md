@@ -25,7 +25,7 @@ related:
 
 ## Media
 
-- ![alt text needed](https://pbs.twimg.com/media/ERURvzCU4AAjk3j.png)
+- ![](https://pbs.twimg.com/media/ERURvzCU4AAjk3j.png)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

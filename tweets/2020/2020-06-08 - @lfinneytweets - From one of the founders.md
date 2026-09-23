@@ -15,11 +15,10 @@ related:
   - lfinneytweets
 ---
 
-From one of the founders:
+From one of the founders: 
 <https://t.co/pDdUSxsmKb>
 
 ## Links
-
 - <https://x.com/lukemayville/status/1270023192703143936>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

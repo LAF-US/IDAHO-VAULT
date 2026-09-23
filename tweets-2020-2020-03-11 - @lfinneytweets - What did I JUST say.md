@@ -18,7 +18,7 @@ What did I JUST say <https://t.co/yyMkNbTC6d>
 
 ## Media
 
-- ![alt text needed](https://pbs.twimg.com/media/ESzXJ_UUwAEht8D.jpg)
+- ![](https://pbs.twimg.com/media/ESzXJ_UUwAEht8D.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

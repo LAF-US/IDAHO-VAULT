@@ -17,7 +17,6 @@ related:
 <https://t.co/ipTQcMwcUk> <https://t.co/7Z81uixcCX>
 
 ## Links
-
 - <https://x.com/washingtonpost/status/1253718170411708416>
 
 ## Media

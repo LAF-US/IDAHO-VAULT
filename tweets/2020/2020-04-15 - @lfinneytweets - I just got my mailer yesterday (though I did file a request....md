@@ -20,7 +20,6 @@ related:
 I just got my mailer yesterday (though I did file a request on <https://t.co/tvHdKSuSTw> last month) #idpol <https://t.co/1VsFnIJaqJ>
 
 ## Links
-
 - <http://idahovotes.gov>
 - <https://t.co/1VsFnIJaqJ>
 

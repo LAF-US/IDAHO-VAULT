@@ -121,7 +121,7 @@ Logan names:
 
 Participants acknowledge:
 
-```text
+```
 CONVENE RECEIVED
 AGENT: [Name + persona]
 ARISE: [status]

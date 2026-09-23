@@ -19,7 +19,6 @@ related:
 RT @GovernorLittle: Let’s get property tax relief done right. Read my full statement here: <https://t.co/wOwpkXsCCe> <https://t.co/piAOhh8k7u>
 
 ## Links
-
 - <https://gov.idaho.gov/pressrelease/gov-little-lets-get-property-tax-relief-done-right/>
 
 ## Media

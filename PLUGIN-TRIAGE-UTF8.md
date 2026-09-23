@@ -1,7 +1,9 @@
 ---
 title: PLUGIN-TRIAGE-UTF8
 authority: LOGAN
-status: "OPEN — awaiting Logan's decisions at Checkpoints 1–4"
+
+status: OPEN — awaiting Logan's decisions at Checkpoints 1–4
+
 date: 2026-04-06
 updated: 2026-04-07
 branch: claude/obsidian-plugins-triage-YDJ6Z
@@ -157,7 +159,7 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 ## Triage Route
 
-```text
+```
 
 START
 

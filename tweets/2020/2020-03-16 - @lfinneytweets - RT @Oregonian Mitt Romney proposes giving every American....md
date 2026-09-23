@@ -19,7 +19,6 @@ related:
 RT @Oregonian: Mitt Romney proposes giving every American $1,000 during coronavirus outbreak <https://t.co/ODXO8I0ymz> <https://t.co/6vF21gt3sT>
 
 ## Links
-
 - <https://trib.al/3oBQpWX>
 
 ## Media

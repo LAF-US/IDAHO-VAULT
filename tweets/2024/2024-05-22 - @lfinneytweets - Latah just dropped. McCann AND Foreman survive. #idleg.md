@@ -17,11 +17,10 @@ related:
   - idleg
 ---
 
-Latah just dropped. McCann AND Foreman survive. #idleg
+Latah just dropped. McCann AND Foreman survive. #idleg 
 <https://t.co/6yujdbtLlo>
 
 ## Links
-
 - <https://www.livevoterturnout.com/ENR/idaho/132/1/en/Index_132.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1793205111881363654)

@@ -20,7 +20,6 @@ related:
 @slfisher <https://t.co/db6iV7Yldr>
 
 ## Links
-
 - <http://blog.idahoreports.idahoptv.org>
 
 *In reply to [@slfisher](https://twitter.com/slfisher)*

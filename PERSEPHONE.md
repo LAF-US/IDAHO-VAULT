@@ -19,7 +19,4 @@ QUEEN of THE UNDERWORLD
 TOTEM [ : ] POMEGRANATES
 
 ---
-
-```text
-The world is quiet here．Esto Perpetua!
-```
+"The world is quiet here."

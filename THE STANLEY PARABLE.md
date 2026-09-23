@@ -15,7 +15,4 @@ related:
 THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END...
 
 ---
-
-```text
-The world is quiet here．Esto Perpetua!
-```
+"The world is quiet here."

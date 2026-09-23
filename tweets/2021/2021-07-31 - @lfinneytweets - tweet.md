@@ -18,7 +18,6 @@ related:
 <https://t.co/PMj0elfWiB>
 
 ## Links
-
 - <https://blog.idahoreports.idahoptv.org/2021/07/16/governor-statewide-law-enforcement-say-growing-meth-and-fentanyl-trade-threatens-idaho-way-of-life/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

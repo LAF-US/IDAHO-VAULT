@@ -21,7 +21,6 @@ Both chambers of the Idaho Legislature approved their last appropriations Thursd
 <https://t.co/qph8HYcioe> <https://t.co/KvmSwxTzTR>
 
 ## Links
-
 - <https://blog.idahoreports.idahoptv.org/2025/04/03/outstanding-budgets-extend-the-2025-session/>
 
 ## Media

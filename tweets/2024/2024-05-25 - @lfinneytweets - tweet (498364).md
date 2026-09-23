@@ -17,7 +17,6 @@ related:
 <https://t.co/SB4QJES3wN> <https://t.co/eZze8yohpR>
 
 ## Links
-
 - <https://x.com/lfinneytweets/status/1794169565146231273>
 
 ## Media

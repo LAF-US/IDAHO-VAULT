@@ -17,7 +17,6 @@ related:
 <https://t.co/8GnGizlWkY> <https://t.co/Nxf7xmytUb>
 
 ## Links
-
 - <https://x.com/clarkcorbin/status/1220038531424243712>
 
 ## Media

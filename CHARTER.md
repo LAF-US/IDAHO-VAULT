@@ -19,8 +19,4 @@ The Swarm shall enumerate its members by regular census. See [[CENSUS]].
 
 UNIFIED (US) SWARM codes designed and operated using Logan's Project & Protocols.
 
----
-
-```text
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

@@ -17,7 +17,6 @@ related:
 <https://t.co/WZWNkspGFB> <https://t.co/TOsCF8i2pK>
 
 ## Links
-
 - <https://x.com/BetsyZRussell/status/1452746869503709185>
 
 ## Media

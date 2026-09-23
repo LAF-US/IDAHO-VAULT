@@ -18,7 +18,6 @@ related:
 Thread: <https://t.co/IFfs06ZNMZ>
 
 ## Links
-
 - <https://x.com/lfinneytweets/status/1233441640758444032>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

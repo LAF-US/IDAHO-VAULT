@@ -18,7 +18,6 @@ related:
 <https://t.co/SgURxryNZC>
 
 ## Links
-
 - <https://x.com/HerndonforIdaho/status/1768397765762273607?t=5GSP7sEIDBRJwA7JAprPGQ>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

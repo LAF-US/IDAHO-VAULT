@@ -21,7 +21,6 @@ RT @IdahoNews6: The Northern Lights might be visible in parts of the United Stat
 <https://t.co/cYD4qFW4WS>
 
 ## Links
-
 - <https://buff.ly/3gC08mj>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1337187739976966146)

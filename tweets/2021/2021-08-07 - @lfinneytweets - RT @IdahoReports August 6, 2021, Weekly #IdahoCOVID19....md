@@ -20,11 +20,10 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: August 6, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV
+RT @IdahoReports: August 6, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV 
 <https://t.co/WMoVEPmwfv>
 
 ## Links
-
 - <https://youtu.be/GKZlJvPNaOQ>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1423817009112834048)

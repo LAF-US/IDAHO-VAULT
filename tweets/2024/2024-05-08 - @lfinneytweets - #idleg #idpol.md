@@ -22,7 +22,6 @@ related:
 \#idleg #idpol <https://t.co/LiuCAg4xmQ>
 
 ## Links
-
 - <https://x.com/AndrewBaertlein/status/1788005681359986710>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1788302446705648098)

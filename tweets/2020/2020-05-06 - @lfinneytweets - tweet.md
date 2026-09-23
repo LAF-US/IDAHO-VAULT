@@ -17,7 +17,6 @@ related:
 <https://t.co/JbtnNF8MtF> <https://t.co/HfO77q9msc>
 
 ## Links
-
 - <https://x.com/Oregonian/status/1257838432547737601>
 
 ## Media

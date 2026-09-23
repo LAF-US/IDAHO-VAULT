@@ -18,7 +18,6 @@ related:
 <https://t.co/NxrpUBzSOI>
 
 ## Links
-
 - <https://cdapress.com/news/2024/may/21/defamation-trial-begins-for-blogger-sued-by-drag-performer/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -29,7 +29,6 @@ Read my latest coverage from @IdahoPubRadio @DailyBee!
 <https://t.co/MOV7SzsecG>
 
 ## Links
-
 - <https://www.bonnercountydailybee.com/local_news/20200218/house_mulls_tax_freeze_and_more>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1229832075479408640)

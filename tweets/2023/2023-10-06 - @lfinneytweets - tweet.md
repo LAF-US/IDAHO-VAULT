@@ -17,7 +17,6 @@ related:
 <https://t.co/YHEkcwCIEU> <https://t.co/ZGf8OledpS>
 
 ## Links
-
 - <https://x.com/IdahoStatesman/status/1710236022271881339>
 
 ## Media

@@ -17,7 +17,6 @@ related:
 Take a few minutes to fill out the Argonaut's 2018 Best of Moscow survey! <https://t.co/n6ARW7pHpQ>
 
 ## Links
-
 - <https://www.surveymonkey.com/r/39DF2LQ>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/972307483711627264)

@@ -22,7 +22,6 @@ related:
 \#idpol @BLMBoise <https://t.co/nq4rY48igz>
 
 ## Links
-
 - <https://x.com/KirkSiegler/status/1285250196125835264>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1285252445086441472)

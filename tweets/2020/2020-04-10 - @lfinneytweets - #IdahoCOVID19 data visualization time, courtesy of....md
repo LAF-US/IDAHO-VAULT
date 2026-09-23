@@ -21,11 +21,10 @@ related:
   - idpol
 ---
 
-\#IdahoCOVID19 data visualization time, courtesy of @BoiseState_HCRI. Two threads: Cases & Deaths #idpol
+\#IdahoCOVID19 data visualization time, courtesy of @BoiseState_HCRI. Two threads: Cases & Deaths #idpol 
 <https://t.co/U8hHfjuf0H> <https://t.co/lZhxQkxNOf>
 
 ## Links
-
 - <https://boisestate.maps.arcgis.com/apps/opsdashboard/index.html#/2d27bfd0cb8144438679cb1d0fade2f4>
 
 ## Media

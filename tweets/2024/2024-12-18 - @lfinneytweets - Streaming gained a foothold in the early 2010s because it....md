@@ -19,7 +19,6 @@ That's no longer the case, as the cost of programming — and particularly live 
 <https://t.co/BD5cl4SoF2>
 
 ## Links
-
 - <https://www.axios.com/2024/12/12/youtube-tv-price-increase-netflix>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1869448220977619171)

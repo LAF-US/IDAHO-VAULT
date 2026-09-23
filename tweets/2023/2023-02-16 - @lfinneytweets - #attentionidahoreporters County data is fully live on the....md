@@ -23,11 +23,10 @@ related:
   - idpol
 ---
 
-\#attentionidahoreporters: County data is fully live on the @IdahoController Transparent Idaho site! #idleg #idpol
+\#attentionidahoreporters: County data is fully live on the @IdahoController Transparent Idaho site! #idleg #idpol 
 <https://t.co/WWux3LpSWj>
 
 ## Links
-
 - <https://localtransparency.idaho.gov/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1626318446555430912)

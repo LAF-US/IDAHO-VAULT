@@ -1518,7 +1518,7 @@ From the patterns we've built:
 
 ## Your Architecture (The Vault)
 
-```text
+```
 ┌────────────────────────────────────────────────────────────Ŀ
 │                    ARCHITECT'S VAULT                        │
 ├─────────────────┬──────────────────────────────────────────Ĵ
@@ -1618,7 +1618,7 @@ Given our thread (agentic workflows → blockchain → GCP → 1Password), **LAF
 
 ## Proposed LAF-US Architecture
 
-```text
+```
 ┌─ LAF-US (Local Agent Framework) ─────────────────────────Ŀ
 │  Boise, ID | Agentic Blockchain Research Vault           │
 ├─ Agents ──────────────────┬─ Storage ──────────────────Ĵ

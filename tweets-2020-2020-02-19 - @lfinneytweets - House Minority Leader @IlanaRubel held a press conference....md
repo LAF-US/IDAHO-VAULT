@@ -25,6 +25,6 @@ House Minority Leader @IlanaRubel held a press conference this afternoon on the 
 
 ## Media
 
-- ![alt text needed](https://pbs.twimg.com/media/ERK0QtQUwAAmz55.jpg)
+- ![](https://pbs.twimg.com/media/ERK0QtQUwAAmz55.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230243855124983809)

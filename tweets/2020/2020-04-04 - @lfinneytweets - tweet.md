@@ -20,7 +20,6 @@ related:
 @highcountrynews <https://t.co/EOXXWaRdp9>
 
 ## Links
-
 - <https://idfg.idaho.gov/species/roadkill>
 
 *In reply to [@highcountrynews](https://twitter.com/highcountrynews)*

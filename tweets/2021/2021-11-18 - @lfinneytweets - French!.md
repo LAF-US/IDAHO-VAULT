@@ -17,7 +17,6 @@ related:
 French! <https://t.co/IbwPHZAIBf>
 
 ## Links
-
 - <https://t.co/IbwPHZAIBf>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1461197888847966209)

@@ -18,7 +18,6 @@ related:
 <https://t.co/H8w3EDYcFk>
 
 ## Links
-
 - <https://x.com/wendyhorman/status/1907952085901127806>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

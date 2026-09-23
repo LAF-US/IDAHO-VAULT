@@ -20,7 +20,6 @@ related:
 @IdahoController <https://t.co/alxKjVDneM>
 
 ## Links
-
 - <https://x.com/josephfcox/status/1237097731178369024>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

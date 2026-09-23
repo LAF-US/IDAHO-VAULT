@@ -19,7 +19,6 @@ related:
 Check out the @UofILibrary 1918 Flu Pandemic Collection  <https://t.co/CLPySxAaNY> <https://t.co/aOHKCi43vB>
 
 ## Links
-
 - <https://www.lib.uidaho.edu/digital/1918flu/>
 
 ## Media

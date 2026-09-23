@@ -27,7 +27,6 @@ Rapidly rising property taxes have been a top priority for constituents an
 <https://t.co/z9PYv5U0gj>
 
 ## Links
-
 - <https://idahopublicradio.wordpress.com/2020/01/25/house-committee-hears-tax-proposals/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1221486538392911872)

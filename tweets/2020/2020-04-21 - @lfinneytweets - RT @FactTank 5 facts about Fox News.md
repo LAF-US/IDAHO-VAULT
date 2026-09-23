@@ -19,7 +19,6 @@ related:
 RT @FactTank: 5 facts about Fox News <https://t.co/uyZNZb8XoD> <https://t.co/yQwIV4dngl>
 
 ## Links
-
 - <https://pewrsr.ch/3e2EGFf>
 
 ## Media

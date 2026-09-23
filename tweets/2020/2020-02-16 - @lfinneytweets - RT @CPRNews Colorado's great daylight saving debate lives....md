@@ -25,7 +25,6 @@ RT @CPRNews: Colorado's great daylight saving debate lives on...and on and on an
 <https://t.co/Xgnmmg1PdT> via @AndyKnny #copolitics
 
 ## Links
-
 - <https://buff.ly/2OHuPJQ>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1229156884038352897)

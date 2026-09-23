@@ -5,7 +5,8 @@ published: 2022-07-11
 created: 2026-04-20
 ---
 [Skip to content](#content) [Skip to footer](#footer)- - [Our Mission
-  Learn more about our mission as a nonprofit](https://fundjournalism.org/about/)
+  Learn more about our mission as a nonprofit
+](https://fundjournalism.org/about/)
 
 - [Impact
   Learn about our industry impact and collaborations](https://fundjournalism.org/impact/)
@@ -21,7 +22,8 @@ created: 2026-04-20
   - [Case Studies
   Providing newsrooms with measurable impact](https://fundjournalism.org/case-studies/)
   - [Newsletter
-  Stay up-to-date on best practices and key learnings](https://fundjournalism.org/newsletter-sign-up/)
+  Stay up-to-date on best practices and key learnings
+](https://fundjournalism.org/newsletter-sign-up/)
 - [Pricing](https://fundjournalism.org/pricing/)
 - [News](https://fundjournalism.org/news/)
 - [Donate](https://newsrevenuehub.fundjournalism.org/contribute)

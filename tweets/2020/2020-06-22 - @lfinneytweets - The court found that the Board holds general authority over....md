@@ -22,7 +22,6 @@ Full opinion: <https://t.co/cWJZdzipnO>
 Summary: <https://t.co/SmQA9K9h3O>
 
 ## Links
-
 - <https://isc.idaho.gov/opinions/47991.pdf>
 - <https://isc.idaho.gov/opinions/47991summ.pdf>
 

@@ -24,7 +24,6 @@ related:
 The Idaho House approves a bill that would establish a new maternal mortality review committee. #idleg #idpol Here's our @IdahoReports committee coverage: <https://t.co/Ab9357ETYT> <https://t.co/6yJ3Hh9JOu>
 
 ## Links
-
 - <https://blog.idahoreports.idahoptv.org/2024/02/05/house-committee-passes-bill-to-re-establish-maternal-mortality-review-committee/>
 
 ## Media

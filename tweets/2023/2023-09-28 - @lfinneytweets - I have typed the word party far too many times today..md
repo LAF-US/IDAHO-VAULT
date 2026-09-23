@@ -17,7 +17,6 @@ related:
 I have typed the word "party" far too many times today. <https://t.co/CFUuTXTu68>
 
 ## Links
-
 - <https://x.com/lfinneytweets/status/1707520857319620675>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1707521018699591796)

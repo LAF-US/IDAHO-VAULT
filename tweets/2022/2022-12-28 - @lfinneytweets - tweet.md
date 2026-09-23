@@ -17,7 +17,6 @@ related:
 <https://t.co/SPdPDYHfxz> <https://t.co/EXSrWV65KQ>
 
 ## Links
-
 - <https://x.com/emdrums/status/1607779429731766274>
 
 ## Media

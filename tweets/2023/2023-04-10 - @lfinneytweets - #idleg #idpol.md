@@ -22,7 +22,6 @@ related:
 \#idleg #idpol <https://t.co/LsVvWhWfvw> <https://t.co/9bWb95nDyC>
 
 ## Links
-
 - <https://x.com/stopidahorinos/status/1644069512248176640>
 
 ## Media

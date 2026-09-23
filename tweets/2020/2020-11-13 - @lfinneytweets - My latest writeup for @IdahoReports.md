@@ -19,7 +19,6 @@ related:
 My latest writeup for @IdahoReports: <https://t.co/CN82va5D4T>
 
 ## Links
-
 - <https://x.com/IdahoReports/status/1327385574353760256>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1327386867298312192)

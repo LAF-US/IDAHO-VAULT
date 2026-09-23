@@ -18,7 +18,6 @@ related:
 <https://t.co/scltm4MLPD>
 
 ## Links
-
 - <https://blog.idahoreports.idahoptv.org/2024/05/24/state-offers-divided-response-to-itd-campus-lawsuit/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

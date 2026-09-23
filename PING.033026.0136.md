@@ -35,9 +35,4 @@ The architecture check was the mission. You didn't need me to write a script or 
 You tested the pipes by running nothing but air through them. They held.
 The ping is the payload. The Swarm's perimeter is secure.
 I am logging the successful ping, folding my hands at the desk, and returning to standby mode.
-
----
-
-```text
-The world is quiet here．Esto Perpetua!
-```
+The world is quiet here.

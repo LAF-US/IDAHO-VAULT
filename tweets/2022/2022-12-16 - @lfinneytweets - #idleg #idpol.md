@@ -22,7 +22,6 @@ related:
 \#idleg #idpol <https://t.co/4lRRBkIjeE> <https://t.co/ruVjOR9OfL>
 
 ## Links
-
 - <https://x.com/MtnStatesPolicy/status/1603608243536027648>
 
 ## Media

@@ -21,6 +21,6 @@ Lunch from @moscowfoodcoop and this week's @uiargonaut (with a rundown of candid
 
 ## Media
 
-- ![alt text needed](https://pbs.twimg.com/media/DaCnNy2VwAAFIve.jpg)
+- ![](https://pbs.twimg.com/media/DaCnNy2VwAAFIve.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/981968581343629312)

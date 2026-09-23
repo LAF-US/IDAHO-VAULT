@@ -21,7 +21,6 @@ related:
 <https://t.co/mmLmhELies>
 
 ## Links
-
 - <https://boisedev.com/news/2023/09/12/boise-police-mayor/>
 
 *In reply to [@mlcarmel](https://twitter.com/mlcarmel)*

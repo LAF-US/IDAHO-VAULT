@@ -19,8 +19,6 @@ related:
   - VAULT-CONVENTIONS
 ---
 
-# CLAUDE.md — IDAHO-VAULT
-
 ## Start Here — Plain Words Before the Lore
 
 If you are a Claude Code session waking in this vault, read this before the doctrine below:

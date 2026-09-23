@@ -52,13 +52,13 @@ Previous session (GUI Claude, retiring 2026-03-29) prepared ~23 staged files on 
 
 →
 
-```markdown
+```
 | Budget Bill Tracker Normalization    | Gemini CLI   | Blocked     | LAF-16   | First-pass normalization script + deliverables doc ready for PR. Blocked on scraper mods (LAF-16). |
 ```
 
 **Change 2 — BLOCKED / PENDING LOGAN table, add row:**
 
-```markdown
+```
 | LAF-16 — Budget Bill Tracker Normalization PR | Gemini LAF-16 artifacts on wrong branch (`claude/resolve-pr-conflicts`); scraper mods needed before merge | Logan / Copilot |
 ```
 

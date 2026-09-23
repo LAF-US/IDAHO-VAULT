@@ -26,7 +26,6 @@ related:
 RT @madisonhardy05: The higher education budget passes the House 43-26. #idleg #idpol #idedu <https://t.co/IAFuMR3gM5> <https://t.co/SyZXJMD5eT>
 
 ## Links
-
 - <https://x.com/madisonhardy05/status/1240021708322385920>
 
 ## Media

@@ -20,7 +20,6 @@ related:
 The second phase of the #IdahoCOVID19 distribution timeline has been updated. The full timeline is available here: <https://t.co/zLfZuSCT28> <https://t.co/P3hctoh28B>
 
 ## Links
-
 - <https://coronavirus.idaho.gov/wp-content/uploads/2021/01/When-can-I-get-a-COVID-vaccine-in-Idaho-011221-5.pdf>
 
 ## Media

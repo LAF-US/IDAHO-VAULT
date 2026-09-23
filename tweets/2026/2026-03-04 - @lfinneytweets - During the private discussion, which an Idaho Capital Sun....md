@@ -21,7 +21,6 @@ related:
 <https://t.co/boOqJch8ZD>
 
 ## Links
-
 - <https://idahocapitalsun.com/2026/03/03/republicans-on-idaho-budget-committee-reject-funding-to-comply-with-some-trump-initiatives/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/2029008584156299333)

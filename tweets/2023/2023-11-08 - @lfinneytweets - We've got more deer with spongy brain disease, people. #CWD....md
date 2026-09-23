@@ -23,11 +23,10 @@ related:
   - idleg
 ---
 
-We've got more deer with spongy brain disease, people. #CWD #idpol #idleg (h/t @IDFG)
+We've got more deer with spongy brain disease, people. #CWD #idpol #idleg (h/t @IDFG) 
 <https://t.co/OgSUh8NKpF> <https://t.co/ExDmaE4doh>
 
 ## Links
-
 - <https://blog.idahoreports.idahoptv.org/2023/11/08/chronic-wasting-disease-detected-in-new-meadows-mule-deer/>
 
 ## Media

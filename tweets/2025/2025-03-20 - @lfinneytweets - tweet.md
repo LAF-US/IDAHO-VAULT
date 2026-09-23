@@ -17,7 +17,6 @@ related:
 ? <https://t.co/fPTYrfy2Rz> <https://t.co/8SceEEA9Ue>
 
 ## Links
-
 - <https://x.com/freedomcaucusID/status/1902551653783630053>
 
 ## Media

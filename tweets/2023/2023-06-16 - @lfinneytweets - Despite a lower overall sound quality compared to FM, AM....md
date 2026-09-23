@@ -20,7 +20,6 @@ related:
 <https://t.co/9qV4dhfK80>
 
 ## Links
-
 - <https://www.boisestatepublicradio.org/news/2023-06-15/congress-looks-to-save-am-radio-in-cars-as-ev-manufacturers-phase-it-out>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1669780376762580992)

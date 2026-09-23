@@ -20,7 +20,6 @@ RT @CBS2Boise: Idaho residents asked to 'pay back' unemployment relief funds
 <https://t.co/gvThNzgrOq> <https://t.co/8KmRXIcXws>
 
 ## Links
-
 - <https://bit.ly/39TRGwe>
 
 ## Media

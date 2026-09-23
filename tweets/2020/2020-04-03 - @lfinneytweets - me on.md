@@ -17,7 +17,6 @@ related:
 me on <https://t.co/nxIWTF7aiy> <https://t.co/nV7kQ9zWlG>
 
 ## Links
-
 - <http://coronavirus.idaho.gov>
 
 ## Media

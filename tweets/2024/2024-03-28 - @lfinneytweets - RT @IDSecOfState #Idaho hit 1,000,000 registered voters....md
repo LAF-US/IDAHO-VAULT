@@ -22,7 +22,6 @@ related:
 RT @IDSecOfState: #Idaho hit 1,000,000 registered voters this week! Not registered yet? Visit <https://t.co/TyqDVGlcQr> to register online an…
 
 ## Links
-
 - <http://VoteIdaho.gov>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1773153131808935951)

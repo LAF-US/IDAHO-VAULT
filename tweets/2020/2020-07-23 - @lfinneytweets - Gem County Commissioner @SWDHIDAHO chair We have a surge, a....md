@@ -24,7 +24,6 @@ Gem County Commissioner/@SWDHIDAHO chair: We have a surge, a spike, in all of ou
 SW District Health covers Owyhee, Canyon, Gem, Payette, Washington and Adams counties. #IdahoCOVID19 <https://t.co/7OS6OLvMzb>
 
 ## Links
-
 - <https://x.com/heersinkolivia/status/1286334274522607616>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1286339117912031232)

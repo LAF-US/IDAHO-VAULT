@@ -24,7 +24,6 @@ related:
 <https://t.co/EQ1SO9gMTe>
 
 ## Links
-
 - <https://x.com/bendreyfuss/status/1447608691440570372?t=8SzNmqPGPY6ivGJCcrUyUQ>
 
 *In reply to [@EmilyDreyfuss](https://twitter.com/EmilyDreyfuss)*

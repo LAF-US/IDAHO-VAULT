@@ -17,7 +17,6 @@ related:
 <https://t.co/iJinORFRFG> <https://t.co/4dhXORsTVp>
 
 ## Links
-
 - <https://t.co/iJinORFRFG>
 
 ## Media

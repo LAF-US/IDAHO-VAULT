@@ -17,7 +17,6 @@ related:
 <https://t.co/ltVsrVBrkx> <https://t.co/QQXS7WrgVc>
 
 ## Links
-
 - <https://x.com/NBCNews/status/1711815143607152939>
 
 ## Media

@@ -22,7 +22,6 @@ related:
 It appears the Idaho Senate will not take up the veto vote tonight, leaving the property tax bill hanging. Expect more politics tomorrow. #idleg #idpol <https://t.co/nyYUqVGMdz> <https://t.co/cHNnOJFLWT>
 
 ## Links
-
 - <https://x.com/IdahoReports/status/1640847766099296260>
 
 ## Media

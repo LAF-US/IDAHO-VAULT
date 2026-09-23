@@ -18,7 +18,7 @@ related:
   - idleg
 ---
 
-CORRECTION: Clocks would match statewide during the 4 winter months.
+CORRECTION: Clocks would match statewide during the 4 winter months. 
 I got the switch mixed up. #idleg <https://t.co/FIBwqvoY3c>
 
 ## Media

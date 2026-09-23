@@ -17,7 +17,6 @@ related:
 Lol <https://t.co/4cEjMObWBp>
 
 ## Links
-
 - <https://x.com/starsandstripes/status/1448546614323433481>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1448662535356366851)

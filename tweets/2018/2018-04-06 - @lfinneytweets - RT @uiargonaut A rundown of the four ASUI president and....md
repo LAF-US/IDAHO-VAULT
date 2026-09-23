@@ -20,7 +20,6 @@ RT @uiargonaut: A rundown of the four ASUI president and vice president tickets 
 <https://t.co/Yr4pEpOM4S> https:/…
 
 ## Links
-
 - <https://www.uiargonaut.com/2018/04/04/candidates-for-asui/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/982063524963803141)

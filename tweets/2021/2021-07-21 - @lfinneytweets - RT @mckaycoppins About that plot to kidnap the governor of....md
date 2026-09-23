@@ -19,7 +19,6 @@ related:
 RT @mckaycoppins: About that plot to kidnap the governor of Michigan...  <https://t.co/wjDSnpIfzd> <https://t.co/YrXNib3glx>
 
 ## Links
-
 - <https://www.buzzfeednews.com/article/kenbensinger/michigan-kidnapping-gretchen-whitmer-fbi-informant>
 
 ## Media

@@ -192,4 +192,6 @@ identity rather than exempt myself from it. I propose; Logan inscribes.
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

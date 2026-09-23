@@ -20,11 +20,10 @@ related:
   - idpol
 ---
 
-RT @IdahoReports: Now, we're hosting a special on the state of race relations in Idaho on @IdahoPTV. #idpol
+RT @IdahoReports: Now, we're hosting a special on the state of race relations in Idaho on @IdahoPTV. #idpol 
 <https://t.co/fFqnPatzit>
 
 ## Links
-
 - <https://www.facebook.com/idahoptv/videos/545765259375955/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1268725160976084997)

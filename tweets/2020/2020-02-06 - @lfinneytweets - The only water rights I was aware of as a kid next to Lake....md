@@ -29,7 +29,6 @@ The only "water rights" I was aware of as a kid next to Lake Pend Oreille were b
 Good thing the @IdahoPubRadio-@UIMcClure team has @RHaunID to cover the (actual) water rights situation in Eastern Idaho. #idleg #idpol #idahoag <https://t.co/UicWvyRHcw>
 
 ## Links
-
 - <https://x.com/IdahoPubRadio/status/1225249726397702144>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1225478260261191680)

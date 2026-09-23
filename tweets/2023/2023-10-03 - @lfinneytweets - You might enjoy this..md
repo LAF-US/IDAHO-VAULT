@@ -17,11 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@AndrewBaertlein You might enjoy this.
+@AndrewBaertlein You might enjoy this. 
 <https://t.co/zmwsHOfhqQ>
 
 ## Links
-
 - <https://youtu.be/IBum4BroMKU>
 
 *In reply to [@AndrewBaertlein](https://twitter.com/AndrewBaertlein)*

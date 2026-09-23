@@ -17,7 +17,6 @@ related:
 I just updated my portfolio website for the summer! <https://t.co/jpBkMdaojs>
 
 ## Links
-
 - <http://www.loganfinney.com>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1136439245059395584)

@@ -21,7 +21,6 @@ related:
 @tucker_id @brandendurst <https://t.co/NV9hJV9dEe>
 
 ## Links
-
 - <https://idahocapitalsun.com/2022/09/21/political-payback-one-wealthy-donor-may-have-influenced-gop-primary-defeats/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

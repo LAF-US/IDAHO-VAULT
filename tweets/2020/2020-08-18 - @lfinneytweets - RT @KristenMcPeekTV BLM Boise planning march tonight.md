@@ -19,7 +19,6 @@ related:
 RT @KristenMcPeekTV: BLM Boise planning march tonight <https://t.co/l8iLmKwx4O>
 
 ## Links
-
 - <https://idahonews.com/news/local/blm-boise-planning-march-tonight>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1295782340514312192)
