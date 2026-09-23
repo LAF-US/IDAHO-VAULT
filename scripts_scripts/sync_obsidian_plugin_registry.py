@@ -19,7 +19,6 @@ import argparse
 import copy
 import fnmatch
 import json
-import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -71,38 +70,34 @@ def read_enabled(path: Path) -> list[str]:
 
 
 def tracked_plugin_manifest_paths() -> list[Path]:
-    result = subprocess.run(
-        ["git", "ls-files", "-z", "--cached", "--", ".obsidian/plugins"],
-        cwd=REPO_ROOT,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        capture_output=True,
-        check=False,
-        timeout=30,
+    """List plugin manifests Git actually tracks, not whatever sits on disk.
+
+    A filesystem glob over PLUGIN_DIR picks up locally-installed, gitignored
+    plugin directories (e.g. `.obsidian/plugins/obsidianclaw/`) that only
+    exist on some workstations/worktrees. Reading Git's index directly
+    instead means every checkout of the same commit -- main worktree, linked
+    worktree, or CI runner -- derives the identical manifest list, because it
+    reads the tracked index rather than ambient local state. See #514.
+
+    Uses pygit2 (libgit2 bindings) rather than shelling out to the `git`
+    binary: no subprocess involved, so there's no command-construction
+    surface to review for injection risk in the first place.
+    """
+    repo = pygit2.Repository(str(REPO_ROOT))
+    index = repo.index
+    index.read()
+    relative_paths = sorted(
+        entry.path
+        for entry in index
+        if fnmatch.fnmatch(entry.path, ".obsidian/plugins/*/manifest.json")
     )
-    if result.returncode != 0:
-        raise RuntimeError(result.stderr.strip() or "git ls-files failed")
-
-    paths = []
-    for relative_path in result.stdout.split("\0"):
-        normalized = relative_path.replace("\\", "/")
-        if not normalized.endswith("/manifest.json"):
-            continue
-        manifest_path = REPO_ROOT / relative_path
-        if not manifest_path.is_file():
-            raise RuntimeError(f"Tracked plugin manifest is missing: {normalized}")
-        paths.append(manifest_path)
-    return sorted(paths)
+    return [REPO_ROOT / p for p in relative_paths]
 
 
-def read_plugin_manifests(
-    manifest_paths: list[Path] | None = None,
-) -> dict[str, dict[str, Any]]:
+def read_plugin_manifests() -> dict[str, dict[str, Any]]:
     installed: dict[str, dict[str, Any]] = {}
 
-    paths = tracked_plugin_manifest_paths() if manifest_paths is None else manifest_paths
-    for manifest_path in paths:
+    for manifest_path in tracked_plugin_manifest_paths():
         data = load_json(manifest_path, {})
         plugin_id = str(data.get("id") or manifest_path.parent.name)
         installed[plugin_id] = {
@@ -127,13 +122,10 @@ def build_state() -> dict[str, Any]:
         "manifest_doc": plugin_registry_path(),
         "status": "active",
         "source_of_truth": "tracked_obsidian_config",
-        "inventory_scope": "git_index",
-        "runtime_claim": "none",
         "generated_by": ".github/scripts/sync_obsidian_plugin_registry.py",
         "authority_boundary": (
-            "Tracked Obsidian config defines the committed interface inventory; "
-            "the plugin registry document defines doctrine and promotion rules; "
-            "device-local runtime presence must be observed separately."
+            "Obsidian config files define interface state; the plugin registry "
+            "document defines doctrine and promotion rules."
         ),
         "current_state": {
             "enabled_community_count": len(enabled_community),
