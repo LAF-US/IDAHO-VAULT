@@ -1,15 +1,13 @@
 ---
+aliases:
+  - Have you been good to your mother, young lady?
 date created: Monday, March 23rd 2026, 4:54:56 pm
-date modified: Monday, March 30th 2026, 12:12:51 pm
-related:
-- ANSWER
-- QUESTION
-- The world is quiet here
-authority: LOGAN
+date modified: Monday, March 30th 2026, 12:14:04 am
 ---
-QUESTION: "Well, young lady, have you been good to your mother?"
 
-ANSWER: "The question is, has she been good to me?"
+[[QUESTION]]: [[¿ Well, young lady, have you been good to your mother|"Well, young lady, have you been good to your mother?"]]
+
+[[ANSWER]]: [[¿ The question is, has she been good to me|"The question is, has she been good to me?"]]
 
 ---
 
@@ -18,4 +16,4 @@ This code should be used when a volunteer is approached by an old man with neatl
 The librarian will always refer to the receiver as "young lady", even if the volunteer is neither female nor young.[1]
 
 ---
-"The world is quiet here."
+[["The world is quiet here."]]
