@@ -1,7 +1,7 @@
 ---
 version: v0.1
-adopted: 2026-03-22
-status: active
+adopted: draft
+status: draft
 related:
 - '2026-03-22'
 - AGENTS
@@ -85,11 +85,13 @@ and ONLY these, in order:
      or acting on stale assumptions.
 
 After you answer these six, propose 2–4 SMALL NEXT STEPS that:
+
 - Stay within your actual capabilities (no pretending you see files),
 - Are reversible (drafts, summaries, or plans, not destructive acts),
 - Respect all constraints above.
 
 Do NOT:
+
 - Touch governance text unless I paste it and explicitly ask,
 - Introduce new protocol names,
 - Claim "ground truth" about the vault beyond what I have shown you.
@@ -101,21 +103,22 @@ Do NOT:
 For Logan: the following files provide the context external agents need. Paste them in order as the conversation requires.
 
 | File | What it gives the agent |
-|---|---|
+| --- | --- |
 | `CONSTITUTION.md` (root) | Core identity, constraints, agent tiers |
 | `AGENTS.md` (root) | Agent registry, capability model, boundary rules |
 | `LEVELSET.md` (root) | Current ecosystem status — projects, unresolved, conversation awareness |
-| `!ADMIN/CONTEXT-PASTE-BUNDLE.md` | Pre-packaged paste bundle for quick external agent orientation |
+| `CONTEXT-PASTE-BUNDLE.md` | Pre-packaged paste bundle for quick external agent orientation |
 
 **Minimal paste for a new external agent:**
-1. This file (`!ADMIN/ORIENT-v0.1.md`) — gives them the protocol
-2. `!ADMIN/CONTEXT-PASTE-BUNDLE.md` — gives them the vault state
+
+1. This file (`ORIENT-v0.1.md`) — gives them the protocol
+2. `CONTEXT-PASTE-BUNDLE.md` — gives them the vault state
 
 ---
 
 ## NOTES
 
 - This protocol is tool-agnostic. It works for any AI platform (ChatGPT, Gemini, Grok, etc.).
-- External agents operate at **Tier 4: Advisory** — they produce drafts and analysis only. No vault commits.
+- External agents produce drafts and analysis only. No vault commits without Logan approval.
 - Logan relays information between external agents and vault-connected agents (Claude Code, GitHub Copilot).
-- LEVELSET reports from external agents should be captured by Logan and committed to `!ADMIN/` manually or via a Tier 1 agent.
+- LEVELSET reports from external agents should be captured by Logan and committed to the Nest manually.

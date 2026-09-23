@@ -4,4 +4,4 @@ related:
 - civil commitments
 ---
 
-24 hour civil commitments for mental health treatment 
+24 hour civil commitments for mental health treatment

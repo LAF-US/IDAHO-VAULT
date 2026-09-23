@@ -7,4 +7,4 @@ related:
 - Melba
 authority: LOGAN
 ---
-newspaper based in Kuna and Melba owned by Adams Publishing Group 
+newspaper based in Kuna and Melba owned by Adams Publishing Group

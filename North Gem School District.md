@@ -4,4 +4,4 @@ related:
 - Caribou County
 authority: LOGAN
 ---
-Bancroft, Caribou County 
+Bancroft, Caribou County

@@ -10,4 +10,3 @@ RIGHT
 UP
 
 DOWN
-

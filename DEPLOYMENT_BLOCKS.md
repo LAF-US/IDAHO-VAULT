@@ -10,7 +10,6 @@ date modified: Monday, March 30th 2026, 10:16:53 am
 
 Here are the three blocks required to move the "Nest Bridge" from code to infrastructure.
 
-
 ### 1. The `requirements.txt`
 
 The service requires the following Python dependencies, with pinned versions as specified in `requirements.txt`:

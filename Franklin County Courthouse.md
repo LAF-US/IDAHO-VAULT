@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Franklin County courthouse 
+magistrate court Franklin County courthouse

@@ -20,7 +20,9 @@ related:
 authority: LOGAN
 ---
 # Roster
+
 ## 2023 Members
+
 - Julie Yamamoto Chair
 - Lori McCann Vice Chair
 - Judy Boyle

@@ -6,4 +6,5 @@ related:
 authority: LOGAN
 ---
 Secretary of State
-- former Ada County Clerk 
+
+- former Ada County Clerk

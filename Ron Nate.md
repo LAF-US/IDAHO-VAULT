@@ -17,4 +17,4 @@ Former House member, primary opponent of Britt Raybould in Legislative District 
 
 Brigham Young University-Idaho economics professor
 
-Idaho Freedom Foundation senior policy analyst 
+Idaho Freedom Foundation senior policy analyst

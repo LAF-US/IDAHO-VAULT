@@ -4,4 +4,4 @@ related:
 - Twin Falls County
 authority: LOGAN
 ---
-Twin Falls, Twin Falls County 
+Twin Falls, Twin Falls County

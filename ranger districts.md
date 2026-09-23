@@ -4,4 +4,4 @@ related:
 - national forests
 authority: LOGAN
 ---
-U.S. Forest Service administrative units within national forests 
+U.S. Forest Service administrative units within national forests

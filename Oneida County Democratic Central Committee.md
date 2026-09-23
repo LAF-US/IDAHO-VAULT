@@ -5,4 +5,4 @@ related:
 - Oneida County
 authority: LOGAN
 ---
-Local Idaho Democratic Party precinct committee for Oneida County 
+Local Idaho Democratic Party precinct committee for Oneida County

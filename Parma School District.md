@@ -4,4 +4,4 @@ related:
 - Parma
 authority: LOGAN
 ---
-Parma, Canyon County 
+Parma, Canyon County

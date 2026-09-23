@@ -49,12 +49,14 @@ Concur. Three reasons:
 ### 2. .github/copilot-instructions.md — NO CONFLICTS, WITH GUARDRAILS
 
 **Current `.github/` contents:**
+
 - `workflows/` — 5 YMLs (scraper, sort-audit, propose-moves, wayback-audit, wayback-preserve)
 - `scripts/` — 6 Python scripts + 1 requirements.txt
 
 No `copilot-instructions.md` exists. No collision risk.
 
 **Guardrails the file must include:**
+
 - Must reference `!ADMIN/Constitution.md` as governing authority (same structure as root `CLAUDE.md`)
 - Must not grant Copilot direct-write to `!ADMIN/` governance files (Constitution, PROTOCOL, LEVELSET, DECISIONS) — those are CODE AUTHORITY's domain under Logan's direction
 - Must declare Copilot's capability tier explicitly (draft-only? direct-write to `.github/` only? Logan decides)
@@ -70,6 +72,7 @@ No `copilot-instructions.md` exists. No collision risk.
 **Placement:** `!ADMIN/AGENTS.md`
 
 **Should contain:**
+
 - **Agent registry** — name, platform, capability tier, scope, contact point/channel
 - **Communication rules** — how agents HANDOFF to each other (references PROTOCOL.md terms)
 - **Boundary rules** — what each agent can and cannot touch in the repo
@@ -77,6 +80,7 @@ No `copilot-instructions.md` exists. No collision risk.
 - **Logan's supervisory role** — all inter-agent communication flows through or is visible to Logan
 
 **Should NOT contain:**
+
 - Operational term definitions (that's PROTOCOL.md)
 - Identity/constraint rules (that's Constitution.md)
 - Instance-specific instructions (that's CLAUDE.md / copilot-instructions.md per agent)
@@ -84,7 +88,7 @@ No `copilot-instructions.md` exists. No collision risk.
 **How it fits the existing governance stack:**
 
 | File | Role |
-|---|---|
+| --- | --- |
 | `!ADMIN/Constitution.md` | Identity, constraints, working rules |
 | `!ADMIN/PROTOCOL.md` | Operational vocabulary (18 terms) |
 | `!ADMIN/AGENTS.md` | Inter-agent registry and communication rules |
@@ -106,6 +110,7 @@ Process: Logan or ADMINISTRATION provides the updated content → CODE AUTHORITY
 The vault's governance requires audit trails for significant operations (DESTROY, DELETE, SUNSET, FLAG, HANDOFF — per PROTOCOL.md). If a decision happens in Slack, it must be captured in a file. Slack is where the conversation happens; `!ADMIN/` is where decisions land. This mirrors how a newsroom works — the discussion happens in the room, but the story goes in the system.
 
 **If Slack webhook notifications are desired for GitHub Actions:**
+
 - Add `SLACK_WEBHOOK_URL` to GitHub Secrets
 - Add a notification step to existing workflows (~5 lines per workflow, low risk)
 - This gives Logan real-time visibility into workflow runs without checking the Actions tab
@@ -117,7 +122,7 @@ The vault's governance requires audit trails for significant operations (DESTROY
 ## CURRENT LEVELSET FRONT MATTER
 
 | Field | Value |
-|---|---|
+| --- | --- |
 | **Branch** | `claude/levelset-multi-conversation-zWxJc` |
 | **HEAD** | `842e1a0` |
 | **Commits ahead of main** | 11 |
@@ -130,7 +135,7 @@ The vault's governance requires audit trails for significant operations (DESTROY
 ## NEW PENDING ITEMS
 
 | # | Item | Status | Owner |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | Review `copilot-instructions.md` before merge | PENDING | CODE AUTHORITY (after Copilot drafts) |
 | 2 | Create `!ADMIN/AGENTS.md` | PENDING | Logan's direction on content scope |
 | 3 | Define Copilot capability tier | DECISION NEEDED | Logan |
@@ -145,6 +150,7 @@ The vault's governance requires audit trails for significant operations (DESTROY
 **Logan:** Relay this document to GitHub Copilot via PERSISTENT: ADMINISTRATION. You will need to paste this content into that conversation.
 
 **Copilot should respond with:**
+
 1. HANDSHAKE acknowledgment (per PROTOCOL.md)
 2. Draft `copilot-instructions.md` for CODE AUTHORITY review
 3. Its proposed `AGENTS.md` content or input

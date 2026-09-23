@@ -4,4 +4,4 @@ related:
 - white supremacy
 ---
 
-white supremacy 
+white supremacy

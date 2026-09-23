@@ -4,4 +4,4 @@ related:
 - transportation
 authority: LOGAN
 ---
-transportation for emergency medical services 
+transportation for emergency medical services

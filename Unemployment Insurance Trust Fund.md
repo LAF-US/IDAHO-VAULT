@@ -4,4 +4,4 @@ related:
 - unemployment insurance
 ---
 
-unemployment insurance 
+unemployment insurance

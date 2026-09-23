@@ -4,4 +4,4 @@ related:
 - jails
 ---
 
-residents of jails and prisons 
+residents of jails and prisons

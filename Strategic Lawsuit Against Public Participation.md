@@ -4,4 +4,4 @@ related:
 - anti-SLAPP
 ---
 
-anti-SLAPP 
+anti-SLAPP

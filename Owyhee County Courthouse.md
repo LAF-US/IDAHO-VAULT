@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Owyhee County courthouse 
+magistrate court Owyhee County courthouse

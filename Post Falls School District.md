@@ -5,4 +5,4 @@ related:
 - Post Falls
 authority: LOGAN
 ---
-Post Falls, Kootenai County 
+Post Falls, Kootenai County

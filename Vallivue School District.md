@@ -5,4 +5,4 @@ related:
 - Nampa
 authority: LOGAN
 ---
-Caldwell/Nampa, Canyon County 
+Caldwell/Nampa, Canyon County

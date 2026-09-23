@@ -23,13 +23,8 @@ tags:
   - today
   - ${d.format("YYYY/MM/DD")}
   - dailynote
-related:
-  - TO DO LIST
-date created: {{date:dddd, MMMM Do YYYY, [12:00:00 am]}}
-date modified: {{date:dddd, MMMM Do YYYY, [12:00:00 am]}}
----
-
-# {{date:dddd, MMMM D, YYYY}}
+date created: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
+date modified: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
 
 ## Daily Queue
 

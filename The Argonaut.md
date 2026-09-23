@@ -6,4 +6,4 @@ related:
 - University of Idaho
 authority: LOGAN
 ---
-University of Idaho student newspaper 
+University of Idaho student newspaper

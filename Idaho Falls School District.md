@@ -5,4 +5,4 @@ related:
 - Idaho Falls
 authority: LOGAN
 ---
-Idaho Falls, Bonneville County 
+Idaho Falls, Bonneville County

@@ -8,7 +8,8 @@ related:
 - fire
 authority: LOGAN
 ---
-fire district in Shoshone County 
-- Calder 
+fire district in Shoshone County
+
+- Calder
 - Herrick
-- Erlmo 
+- Erlmo

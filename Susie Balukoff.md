@@ -3,4 +3,4 @@ related:
 - AJ Balukoff
 authority: LOGAN
 ---
-wife of AJ Balukoff 
+wife of AJ Balukoff

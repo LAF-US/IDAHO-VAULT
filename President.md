@@ -6,7 +6,6 @@ related:
 - United States of America
 authority: LOGAN
 ---
-Chief executive of the United States of America 
+Chief executive of the United States of America
 
-
-Joe Biden, Donald Trump, Barack Obama 
+Joe Biden, Donald Trump, Barack Obama

@@ -6,4 +6,4 @@ related:
 - Idaho
 authority: LOGAN
 ---
-Boise newspaper 
+Boise newspaper

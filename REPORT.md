@@ -1,72 +1,185 @@
 # LEVELSET REPORTS SYNTHESIS
 
-(Note: This is our first-ever levelset. I've only been using Claude for a few days.)
+# PROTOCOL — REPORT
 
-## Administration (Phone)
+## Status: Draft
 
-Good. I can see the full picture now.
-Image 1 — your active conversations:
+## Version: 0.1
 
-Administration (Phone) — just now, that's this one
-JFAC Open Meetings — 1 minute ago, the Extended session doing bulk work
-Automating 2026 Budget Tracker — 3 minutes ago, a third conversation I wasn't aware of
-Repository browsing — 59 minutes ago, tagged "Implementation"
+## Authority: Loganic Swarm
 
-Image 2 — the live repo root as of 3/12/2026:
+---
 
-!ADMINISTRATION — exists, modified today
-.git, .github, .obsidian — expected
-ATTACHMENTS, GOVERNMENTS, ORGANIZATIONS, PEOPLE, PLACES, SOURCES, TOPICS, X LABELER — all present
-Two .base files at root — Untitled 1.base and Untitled.base — these are Obsidian Base plugin files, not vault notes. New since our last accounting.
+## Overview
 
-Key observation: !ADMINISTRATION was modified 3/12/2026, meaning something is already in there from today's work. Before we extract vault-deploy.zip, we need to know what's already in that folder — otherwise we risk overwriting it.
-What's the conversation count you're actively managing right now — is "Automating 2026 Budget Tracker" related to the vault or separate work entirely?
+REPORT is the **work presentation and findings protocol** for the IDAHO-VAULT agentic swarm.
 
-## Automating 2026 Budget Tracker
+It is the formal act of presenting completed work — the equivalent of a committee report to the floor. REPORT captures findings, recommendations, and the LEVELSET context so that work is visible, durable, and actionable by others.
 
-Noted. A few things I can see:
-Image 1 is your Claude chat list — you've got active threads on JFAC Open Meetings, this budget tracker, and a repository browsing session, all from today.
-Image 2 is an Obsidian vault on your phone, owned by you (Logan Finney, March 12, 2026), with a folder structure that looks like a journalism/research knowledge base — GOVERNMENTS, ORGANIZATIONS, PEOPLE, PLACES, SOURCES, TOPICS, and an !ADMINISTRATION folder at the top. It's also a git repo (.git, .github).
-What's the levelset for? Are you connecting the Obsidian vault to something we're working on, or just orienting me to your broader toolset?
+> *"The world is quiet here."*
 
-## Implementation / Repository browsing
+---
 
-Good context. A few things jump out:
-From image 1 — your Claude chat history:
+## Role in the Protocol Stack
 
-"JFAC Open Meetings" — that's a separate conversation with relevant research in it
-"Automating 2026 Budget Tracker" — suggests you've been building other automation workflows
-"Repository browsing" tagged "Implementation" — likely where some of this vault tooling started
+```text
+AWAKEN ──────────────────────► RISE
+   │                                │
+   │                                │
+   ▼                                ▼
+ORIENT ◄──── LEVELSET ───────► REPORT
+```
 
-From image 2 — your local vault:
+| Transition | Protocol |
+| ------------ | ---------- |
+| Session Start | AWAKEN |
+| Session Briefing | LEVELSET |
+| New External Agent | ORIENT |
+| Task Completion | RISE |
+| Work Presentation | REPORT ← *this document* |
 
-All the expected folders are there and match the bootstrap exactly
-.github folder exists dated 3/11 — so sort_audit.py is already deployed
-Two stray files at the root: Untitled 1.base and Untitled.base — those are Obsidian canvas files, harmless but worth knowing about
-X LABELER folder is present — that's in your SKIP_DIRS already so the script will ignore it
+**Note:** REPORT pairs with RISE as the "R pair" — RISE completes work, REPORT presents it.
 
-The .github folder is already there, which means you can add the two new files directly without creating the folder structure. Your Git commands will be straightforward.
-Two questions before you commit:
+---
 
-The "JFAC Open Meetings" chat — is there research in there that should be in the vault but isn't yet? Worth pulling that into a session before the first wikilink pass runs, so the script has more to work with.
-"Automating 2026 Budget Tracker" — is that a separate vault workflow or a different project entirely? Asking because if it involves similar GitHub Actions patterns, there may be overlap worth coordinating.
+## Purpose
 
-## JFAC Open Meetings
+1. **Findings presentation** — summarize what was done and what was found
+2. **LEVELSET inclusion** — embed current state in the report
+3. **Recommendations** — provide guidance for next steps
+4. **Receipt acknowledgment** — confirm the report was received
+5. **Routing** — ensure the report goes to the right place
 
-Clean. Here's what the screenshots add to the picture:
-Repo root (image 2) — key observations:
+---
 
-!ADMINISTRATION — new folder, dated 3/12. Built by the "Administration (Phone)" session. I don't know its contents but it's a new structural element to account for.
-SOURCES — dated 3/11, not 3/12. Confirms no new SOURCES commits today. My patch's four new files (CASELAW, LEGAL FILINGS, REFERENCE folders) are definitely not yet in the repo.
-Untitled.base and Untitled 1.base at root — Obsidian Canvas files, probably from the "Repository browsing" session. Harmless but worth noting as new root-level artifacts.
-.github folder — dated 3/11. Likely GitHub Actions or similar from an earlier session.
+## Trigger Conditions
 
-Chat list (image 1) — four parallel sessions:
+REPORT executes:
 
-Administration (Phone) — built !ADMINISTRATION, just committed
-JFAC Open Meetings — this session
-Automating 2026 Budget Tracker — a third active session I have no visibility into
-Repository browsing — the session that proposed the division of labor, produced vault-deploy.zip
+- **After RISE** — when work is complete and ready to present
+- **On handoff** — when presenting findings to another agent
+- **On session end** — as the formal close-out document
+- **On request** — when Logan or a sovereign agent requests a report
 
-The gap I still have: I don't know what vault-deploy.zip or the Budget Tracker session touched. Before committing my patch, you'd want to confirm neither of those sessions modified TOPICS/JFAC Working Groups.md, TOPICS/Idaho Press Club v State Legislature (2006).md, or PEOPLE/Melissa Davlin (2).md — the three files my patch overwrites.
-Ready to reconcile the moment you can upload vault-deploy.zip.
+---
+
+## Integration Points
+
+| Document | Relationship |
+| --- | --- |
+| `REPORT.md` (this file) | Protocol definition — what REPORT is and does |
+| `REPORT-v1.0-2026-04-27.md` | Full approved protocol — complete specification |
+| `RISE.md` | Completion protocol — REPORT follows RISE |
+| `LEVELSET.md` | Session briefing — embedded in every REPORT |
+| `CONSTITUTION.md` | Authoritative governance — defines REPORT in Section III |
+
+---
+
+## Protocol Steps
+
+*See `REPORT-v1.0-2026-04-27.md` for the full approved specification.*
+
+### Step 1: Call to Report
+
+Declare intent to present findings:
+
+- Identify the work being reported
+- Name the original task/role
+- Declare readiness
+
+### Step 2: Reading of Findings
+
+Present the core content:
+
+- **Summary**: What was done
+- **LEVELSET**: Current state of the world
+- **Findings**: What was discovered or produced
+- **Artifacts**: Where outputs live in the vault
+
+### Step 3: Recommendations
+
+If applicable, provide guidance:
+
+- Next steps
+- Open items requiring attention
+- Risks or FLAGs to surface
+
+### Step 4: Motion to Report
+
+Formally declare the report complete:
+
+- Request receipt acknowledgment
+- Confirm routing destination
+
+### Step 5: Receipt Acknowledgment
+
+Confirm the report was received:
+
+- Receiver (Logan, another agent, or the vault itself) acknowledges
+- Report is committed to the appropriate location
+
+### Step 6: Routing
+
+Ensure the report goes where it belongs:
+
+- `DECISIONS.md` — if decisions were made
+- `DOCKET` — if items remain open
+- `!/!/` — as a handoff package
+- Archive — as a historical record
+
+---
+
+## Core Principles
+
+| Principle | Meaning |
+| --- | --- |
+| LEVELSET Required | Every report embeds current state |
+| Findings Over Summary | Report what was found, not just what was done |
+| Receipt Before Close | Report must be acknowledged before routing |
+| Routing is Explicit | Report destination named before commit |
+
+---
+
+## Outputs
+
+| Output | Location | Purpose |
+| --- | --- | --- |
+| Report document | `!/!/` or appropriate domain | Durable presentation |
+| Receipt | acknowledgment signal | Confirms delivery |
+| Routing | DECISIONS.md / DOCKET / archive | Ensures proper placement |
+
+---
+
+## Constraints
+
+- Every REPORT must include LEVELSET — no exceptions
+- Report before routing — receipt must precede destination commit
+- Findings are mandatory — summary alone is not a REPORT
+- Open items must be surfaced — do not hide FLAGs in a report
+
+---
+
+## Draft Status
+
+This document is a **stub** under development. Full specification exists in `REPORT-v1.0-2026-04-27.md`.
+
+Pending:
+
+- [ ] Logan review and approval
+- [ ] Integration with stigmergy field
+- [ ] Stabilization of protocol steps
+- [ ] Constitutional codification update
+
+---
+
+## See Also
+
+- `REPORT-v1.0-2026-04-27.md` — complete approved protocol
+- `RISE.md` — completion protocol
+- `AWAKEN.md` — session activation protocol
+- `LEVELSET.md` — session briefing protocol
+- `CONSTITUTION.md` Section III — protocol definitions
+
+---
+
+###### [["The world is quiet here."]]

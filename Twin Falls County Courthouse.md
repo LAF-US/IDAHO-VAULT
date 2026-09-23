@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Twin Falls County courthouse 
+magistrate court Twin Falls County courthouse

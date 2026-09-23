@@ -4,4 +4,4 @@ related:
 - Patriot Front
 authority: LOGAN
 ---
-Patriot Front member, Colorado resident 
+Patriot Front member, Colorado resident

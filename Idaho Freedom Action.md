@@ -6,4 +6,4 @@ related:
 - Idaho Freedom Foundation
 ---
 
-Idaho Freedom Foundation campaign apparatus 
+Idaho Freedom Foundation campaign apparatus

@@ -4,4 +4,4 @@ related:
 - budget
 authority: LOGAN
 ---
-Yearly comprehensive budget document prepared by LSO for JFAC. 
+Yearly comprehensive budget document prepared by LSO for JFAC.

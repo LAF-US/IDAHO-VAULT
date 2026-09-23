@@ -4,4 +4,4 @@ related:
 - Latah County
 authority: LOGAN
 ---
-Kendrick, Latah County 
+Kendrick, Latah County

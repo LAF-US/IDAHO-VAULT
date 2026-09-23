@@ -5,6 +5,6 @@ related:
 - Idaho Supreme Court
 authority: LOGAN
 ---
-Idaho Supreme Court 
+Idaho Supreme Court
 
-from somewhere in Eastern Idaho 
+from somewhere in Eastern Idaho

@@ -4,5 +4,5 @@ related:
 - Senate member
 authority: LOGAN
 ---
-- Former Division of Veterans Services chief administrator 
-- Former Senate member 
+- Former Division of Veterans Services chief administrator
+- Former Senate member

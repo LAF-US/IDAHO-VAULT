@@ -4,4 +4,4 @@ related:
 - magistrate court
 authority: LOGAN
 ---
-magistrate court Fremont County courthouse 
+magistrate court Fremont County courthouse

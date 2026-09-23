@@ -5,4 +5,4 @@ related:
 - tribes
 ---
 
-legislative branches of tribes 
+legislative branches of tribes

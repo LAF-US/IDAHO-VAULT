@@ -4,4 +4,4 @@ related:
 - Washington
 authority: LOGAN
 ---
-Patriot Front member, Washington resident 
+Patriot Front member, Washington resident

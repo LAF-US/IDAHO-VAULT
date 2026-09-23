@@ -4,4 +4,4 @@ related:
 - mayor
 authority: LOGAN
 ---
-Meridian mayor 
+Meridian mayor

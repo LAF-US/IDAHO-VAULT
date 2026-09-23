@@ -34,7 +34,7 @@ If you want the fully explicit path, follow the dedicated [Termux guide](https:/
 
 > [!-warning] -warning
 > Windows
-> 
+>
 > Native Windows is **not supported**. Please install [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) and run Hermes Agent from there. The install command above works inside WSL2.
 
 ### What the Installer Does
@@ -74,12 +74,12 @@ The only prerequisite is **Git**. The installer automatically handles everything
 
 > [!-info] -info
 > info
-> 
+>
 > You do **not** need to install Python, Node.js, ripgrep, or ffmpeg manually. The installer detects what's missing and installs it for you. Just make sure `git` is available (`git --version`).
 
 > [!-success] -success
 > Nix users
-> 
+>
 > If you use Nix (on NixOS, macOS, or Linux), there's a dedicated setup path with a Nix flake, declarative NixOS module, and optional container mode. See the **[Nix & NixOS Setup](https://hermes-agent.nousresearch.com/docs/getting-started/nix-setup)** guide.
 
 ---

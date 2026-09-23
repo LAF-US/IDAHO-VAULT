@@ -4,4 +4,4 @@ related:
 - Ririe
 authority: LOGAN
 ---
-Ririe, Jefferson County 
+Ririe, Jefferson County

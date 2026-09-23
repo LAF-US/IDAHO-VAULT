@@ -5,6 +5,6 @@ related:
 - Office of Broadband
 ---
 
-Office of Broadband 
+Office of Broadband
 
-Broadband Advisory Board 
+Broadband Advisory Board

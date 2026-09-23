@@ -4,4 +4,4 @@ related:
 - holy book
 ---
 
-Jewish holy book 
+Jewish holy book

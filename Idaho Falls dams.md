@@ -6,4 +6,4 @@ related:
 - dams
 authority: LOGAN
 ---
-eponymous dams on the Snake River in Idaho Falls 
+eponymous dams on the Snake River in Idaho Falls

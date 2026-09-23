@@ -7,6 +7,6 @@ authority: LOGAN
 ---
 syntax
 
-CODEX 
+CODEX
 
 The world is quiet here. -LAF

@@ -6,4 +6,4 @@ related:
 - Owyhee County
 authority: LOGAN
 ---
-Local Idaho Democratic Party precinct committee for Owyhee County 
+Local Idaho Democratic Party precinct committee for Owyhee County

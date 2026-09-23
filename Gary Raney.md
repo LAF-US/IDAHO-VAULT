@@ -9,5 +9,5 @@ related:
 - law enforcement
 authority: LOGAN
 ---
-- former Ada County Sheriff, law enforcement 
+- former Ada County Sheriff, law enforcement
 - founder of Idaho Leaders United & Defend and Protect Idaho PAC

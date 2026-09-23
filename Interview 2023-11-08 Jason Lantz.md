@@ -39,7 +39,7 @@ related:
 - teachers
 authority: LOGAN
 ---
-Interview for 2023-11-15 - IR Podcast - Finding Financing to Support Building Homes with Jason Lantz, marketing director for the Idaho Housing and Finance Association 
+Interview for 2023-11-15 - IR Podcast - Finding Financing to Support Building Homes with Jason Lantz, marketing director for the Idaho Housing and Finance Association
 
 Logan Finney
 
@@ -91,7 +91,7 @@ In simplest terms, our mission is to expand housing opportunities and to support
 
 Logan Finney
 
-And so when it comes to housing specifically. How much need do you as an agency see for affordable housing across the state? 
+And so when it comes to housing specifically. How much need do you as an agency see for affordable housing across the state?
 
 Jason Lantz
 

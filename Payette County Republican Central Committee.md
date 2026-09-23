@@ -6,4 +6,4 @@ related:
 - Payette County
 authority: LOGAN
 ---
-Local Idaho Republican Party precinct committee for Payette County 
+Local Idaho Republican Party precinct committee for Payette County

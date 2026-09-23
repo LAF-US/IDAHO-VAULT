@@ -5,4 +5,4 @@ related:
 - ONE
 authority: LOGAN
 ---
-THREE-IN-ONE 
+THREE-IN-ONE

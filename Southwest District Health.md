@@ -18,7 +18,8 @@ Caldwell, ID 83607
 
 Treasure Valley & Central Idaho public health district  
 
-Counties: 
+Counties:
+
 - Canyon
 - Owyhee
 - Payette

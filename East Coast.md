@@ -18,18 +18,19 @@ related:
 - Virginia
 ---
 
-American coast on the Atlantic Ocean 
-- Maine 
-- New Hampshire 
-- Massachusetts 
-- Rhode Island 
-- Connecticut 
-- New York 
-- New Jersey 
-- Delaware 
-- Maryland 
-- Virginia 
-- North Carolina 
-- South Carolina 
-- Georgia 
-- Florida 
+American coast on the Atlantic Ocean
+
+- Maine
+- New Hampshire
+- Massachusetts
+- Rhode Island
+- Connecticut
+- New York
+- New Jersey
+- Delaware
+- Maryland
+- Virginia
+- North Carolina
+- South Carolina
+- Georgia
+- Florida

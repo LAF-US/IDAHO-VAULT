@@ -11,7 +11,7 @@ related:
 - format
 authority: LOGAN
 ---
-![](https://d3gn0r3afghep.cloudfront.net/news_photos/2016/06/03/api.jpg)
+![alt text needed](https://d3gn0r3afghep.cloudfront.net/news_photos/2016/06/03/api.jpg)
 
 ## The MuckRock API
 

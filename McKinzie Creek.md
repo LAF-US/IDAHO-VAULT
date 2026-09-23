@@ -5,4 +5,4 @@ related:
 - Slate Creek
 authority: LOGAN
 ---
-Idaho County watershed north of Slate Creek 
+Idaho County watershed north of Slate Creek

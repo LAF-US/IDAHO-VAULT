@@ -61,4 +61,3 @@ Rotate exposed credentials first. After rotation, remove credential files from
 git tracking, strengthen `.gitignore`, and run the full tracked-file scan
 again. Removing a file from the current tree does not purge it from git
 history.
-

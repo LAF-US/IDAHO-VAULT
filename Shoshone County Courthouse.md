@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Shoshone County courthouse 
+magistrate court Shoshone County courthouse

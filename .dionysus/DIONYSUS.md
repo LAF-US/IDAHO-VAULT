@@ -1,4 +1,5 @@
 ---
+title: DIONYSUS
 authority: LOGAN
 role: Undefined (Stub)
 status: undefined stub

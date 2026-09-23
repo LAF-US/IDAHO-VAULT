@@ -5,4 +5,4 @@ related:
 - Wyoming
 authority: LOGAN
 ---
-Teton County, Wyoming 
+Teton County, Wyoming

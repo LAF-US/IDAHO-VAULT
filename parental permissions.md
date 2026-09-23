@@ -5,7 +5,7 @@ related:
 - parents
 authority: LOGAN
 ---
-parental rights 
-families 
-children 
-parents 
+parental rights
+families
+children
+parents

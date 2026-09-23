@@ -7,7 +7,7 @@ related:
 - temples
 ---
 
-churches 
-temples 
-synagogues 
-mosques 
+churches
+temples
+synagogues
+mosques

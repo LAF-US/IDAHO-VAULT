@@ -8,4 +8,4 @@ related:
 
 Canada
 United States of America
-Mexico 
+Mexico

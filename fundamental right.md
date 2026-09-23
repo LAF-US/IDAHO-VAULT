@@ -7,4 +7,4 @@ related:
 - strict scrutiny
 ---
 
-subject to strict scrutiny under U.S. Constitution and Idaho Constitution 
+subject to strict scrutiny under U.S. Constitution and Idaho Constitution

@@ -4,4 +4,4 @@ related:
 - Gooding County
 authority: LOGAN
 ---
-Gooding, Gooding County 
+Gooding, Gooding County

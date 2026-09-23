@@ -27,10 +27,10 @@ authority: LOGAN
 _Ruth Brown, Idaho Reports_
 
 Sen. Peter Riggs thanks for joining me i wanted to talk to you today about Senate Bill 1327 which came from the idaho Behavioral Health Council
-thanks for being here 
+thanks for being here
 
 thanks for having
-me 
+me
 
 sure
 uh can you walk me through

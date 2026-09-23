@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Teton County courthouse 
+magistrate court Teton County courthouse

@@ -1,3 +1,6 @@
+---
+title: GEMINI
+---
 # GEMINI.md — IDAHO-VAULT
 
 **Load mechanism:** Auto-loaded by Gemini CLI from `.gemini/GEMINI.md` (official path).

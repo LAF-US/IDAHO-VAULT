@@ -6,4 +6,4 @@ related:
 - Shoshone County
 authority: LOGAN
 ---
-eastern Benewah County and southwestern Shoshone County 
+eastern Benewah County and southwestern Shoshone County

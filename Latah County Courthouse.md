@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Latah County courthouse 
+magistrate court Latah County courthouse

@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Lewis County courthouse 
+magistrate court Lewis County courthouse

@@ -4,24 +4,25 @@ date created: "2026-04-04"
 date updated: "2026-04-09"
 authority: crewai
 doc_class: manifest
-status: active
-phase: refoundation
+status: retired
+phase: dependency-removal
 ---
 
 # CrewAI Python Layer Manifest
 
-This file is the single live doctrine and topology surface for the CrewAI
-Python layer in IDAHO-VAULT.
+> **Current disposition:** IDAHO-VAULT has no installed, registered, or runnable CrewAI runtime. The prior experimental Council and bootstrap surfaces were removed when CrewAI's mandatory ChromaDB dependency introduced an unpatched critical finding. This record preserves the decision boundary; it does not reserve a live authority or runner.
 
 Current phase: a fresh re-foundation from scaffold. The initial demo harbor is
 retired and historical. No legacy crew, runner, tool, or workflow claim
 survives unless it is reintroduced here on purpose.
 
-**Control-plane registration:** `swarm.json` (layer metadata only)
-**Live staging/output surface:** `!/CREWAI/`
-**Historical harbor records:** `!/CREWAI/HANDOFF-CREWAI-OPS.md`,
-`!/GRIMOIRE/NETWEB-CREWAI-ALIGNMENT.md`,
-`!/GRIMOIRE/HANDOFF-CREWAI-IGNITION-2026-04-04.md`
+| Surface | Former purpose | Current disposition |
+| --- | --- | --- |
+| `src/idaho_vault/crew.py` and `src/idaho_vault/main.py` | Bounded 5Wizards CrewAI inquiry entrypoint | Removed |
+| `src/idaho_vault/config/` | CrewAI agent and task configuration | Removed |
+| `src/idaho_vault/runtime.py` | CrewAI-local runtime path containment | Removed with runtime |
+| `pyproject.toml` CrewAI dependency | Role/task orchestration package | Removed |
+| `.crewai/manifest.json` | Machine-readable CrewAI registry | Retained as an empty retired registry |
 
 ---
 

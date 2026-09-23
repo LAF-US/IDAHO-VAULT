@@ -4,4 +4,4 @@ related:
 - Meridian
 authority: LOGAN
 ---
-Meridian, Ada County 
+Meridian, Ada County

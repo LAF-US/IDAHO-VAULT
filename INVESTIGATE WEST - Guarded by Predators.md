@@ -56,7 +56,7 @@ OCT. 12, 2025
 
 ### Key Findings: Staff sexual abuse in Idaho women’s prisons goes largely unchecked
 
-![](https://www.investigatewest.org/content/images/2025/09/Corporal-Qa.jpg)
+![alt text needed](https://www.investigatewest.org/content/images/2025/09/Corporal-Qa.jpg)
 
 ---
 
@@ -66,7 +66,7 @@ OCT. 13
 
 ### In Idaho women’s prisons, guards get away with sexual abuse and victims are blamed
 
-![](https://www.investigatewest.org/content/images/2025/09/Prison-Failures--1-a-2.jpg)
+![alt text needed](https://www.investigatewest.org/content/images/2025/09/Prison-Failures--1-a-2.jpg)
 
 ---
 
@@ -76,7 +76,7 @@ OCT. 14
 
 ### Case closed: Inside Idaho State Police’s handling of prison sexual abuse complaints
 
-![](https://www.investigatewest.org/content/images/2025/09/Police-Shortcomingsa.jpg)
+![alt text needed](https://www.investigatewest.org/content/images/2025/09/Police-Shortcomingsa.jpg)
 
 ---
 
@@ -86,7 +86,7 @@ OCT. 15
 
 ### Idaho law challenges prosecutors seeking to penalize prison guards for sexual abuse
 
-![](https://www.investigatewest.org/content/images/2025/09/Court-Systema.jpg)
+![alt text needed](https://www.investigatewest.org/content/images/2025/09/Court-Systema.jpg)
 
 ---
 
@@ -96,7 +96,7 @@ OCT. 16
 
 ### From one voice to many: Women speak out on Idaho prison abuse
 
-![](https://www.investigatewest.org/content/images/2025/09/Speaking-Outa.jpg)
+![alt text needed](https://www.investigatewest.org/content/images/2025/09/Speaking-Outa.jpg)
 
 ### Fallout from Our Investigation
 
@@ -171,9 +171,8 @@ The Idaho prison system withheld reports of officer sexual misconduct and would 
 
 The “Guarded by Predators” series was fueled by women who shared their experiences behind bars and by prison workers who exposed systemic failures that allowed the abuse to occur. And we’re not done. If you have information, documents or a story to share, we want to hear from you.  
   
-
 - **Phone:** Call or text [208-918-2458](tel:2089182458).
-- **Email:** [tips@investigatewest.org](mailto:tips@investigatewest.org); or to reach the project reporters directly, email [whitney@investigatewest.org](mailto: whitney@investigatewest.org) and [wilson@investigatewest.org](mailto: wilson@investigatewest.org).
+- **Email:** [tips@investigatewest.org](mailto:tips@investigatewest.org); or to reach the project reporters directly, email [whitney@investigatewest.org](mailto: <whitney@investigatewest.org>) and [wilson@investigatewest.org](mailto: <wilson@investigatewest.org>).
 - **Mail:** InvestigateWest, P.O. Box 266, Boise, ID 83701
 - **Signal:** You can securely contact InvestigateWest reporters on Signal, the app with end-to-end encryption: Whitney Bryen at 208-918-2458; and Wilson Criscione at 509-999-8885.
 

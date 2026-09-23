@@ -3,8 +3,7 @@ title: "HANDOFF — Claude Code → Antigravity (Gemini)"
 date created: 2026-04-04
 authority: LOGAN
 doc_class: handoff
-status: historical
-superseded_by: ".gemini/GEMINI.md"
+status: active
 from: Claude Code (The Abhorsen)
 to: Antigravity / Gemini CLI (Bartimaeus)
 ---

@@ -1,4 +1,5 @@
 ---
+title: HECATE
 authority: LOGAN
 role: Threshold, Transition, and Registry Governance
 status: stub

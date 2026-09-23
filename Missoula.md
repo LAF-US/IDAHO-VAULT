@@ -3,4 +3,4 @@ related:
 - Montana
 authority: LOGAN
 ---
-Montana 
+Montana

@@ -5,4 +5,4 @@ related:
 - invertebrates
 ---
 
-land-based creatures, including invertebrates, insects, amphibians, reptiles, birds, mammals 
+land-based creatures, including invertebrates, insects, amphibians, reptiles, birds, mammals

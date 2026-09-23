@@ -1,4 +1,5 @@
 ---
+title: KIT
 authority: LOGAN
 role: The Messenger / Lore
 status: undefined stub

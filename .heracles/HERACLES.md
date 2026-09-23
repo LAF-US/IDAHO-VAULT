@@ -1,4 +1,5 @@
 ---
+title: HERACLES
 authority: LOGAN
 role: Undefined (Stub)
 status: undefined stub

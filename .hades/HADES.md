@@ -1,4 +1,5 @@
 ---
+title: HADES
 authority: LOGAN
 role: Undefined (Stub)
 status: undefined stub

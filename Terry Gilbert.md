@@ -1,3 +1,3 @@
 ---
 ---
-former Superintendent candidate 
+former Superintendent candidate

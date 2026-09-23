@@ -6,4 +6,4 @@ related:
 - Minidoka County
 authority: LOGAN
 ---
-Local Idaho Democratic Party precinct committee for Minidoka County 
+Local Idaho Democratic Party precinct committee for Minidoka County

@@ -12,6 +12,7 @@ related:
 - mayor
 authority: LOGAN
 ---
-Residence: Twin Falls, former city council & mayor 
+Residence: Twin Falls, former city council & mayor
 Graduate: Filer High School, College of Southern Idaho, University of Idaho, College of Idaho
-- Legislative District 25 House member 
+
+- Legislative District 25 House member

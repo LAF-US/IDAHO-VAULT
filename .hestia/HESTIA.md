@@ -1,4 +1,5 @@
 ---
+title: HESTIA
 authority: LOGAN
 role: Undefined (Stub)
 status: stub

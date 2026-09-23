@@ -12,6 +12,7 @@ related:
 - LEVELSET
 - Logan Finney
 ---
+[[A]][[G]][[E]][[N]][[T]][[S]]
 
 # AGENTS.md — IDAHO-VAULT
 
@@ -74,7 +75,7 @@ The narrow exception is an authenticated Dependabot pull request changing only
 `requirements.txt`: its PR metadata and required dependency-resolution check
 provide the record, and a failed compatibility check must remain blocking.
 
-When live surfaces disagree, follow this order:
+When governing surfaces disagree, follow this order:
 
 1. Logan's direct instruction
 2. `CONSTITUTION.md` file
@@ -97,9 +98,10 @@ Root governance files remain authoritative: `CONSTITUTION.md`, `LEVELSET.md`, an
 ## LAF-US Organization & IDAHO-VAULT Placement
 
 ### Five Cores Model
+
 The `LAF-US` organization uses a **Five Cores model** for repository and team topology in a Venn Diagram arrangement, with PRIVATE and PUBLIC containing SECRET, PUBLISH, and PERSONAL:
 
-```
+```text
 LAF-US (Organization)
 ├── PRIVATE
 │   ├── SECRET
@@ -114,4 +116,8 @@ LAF-US (Organization)
 
 Manually revised by Logan A. Finney on 05/25/2026
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

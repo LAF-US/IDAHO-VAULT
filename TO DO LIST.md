@@ -34,4 +34,4 @@ authority: LOGAN
 - WORK
 - []
 - PERSONAL
-- VAULT
+- [ ] BANKING AND YNAB

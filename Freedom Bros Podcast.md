@@ -8,4 +8,4 @@ related:
 - Podcast
 authority: LOGAN
 ---
-Greg Pruett and Dustin Hurst 
+Greg Pruett and Dustin Hurst

@@ -4,4 +4,4 @@ related:
 - Utah
 authority: LOGAN
 ---
-Park City, Utah 
+Park City, Utah

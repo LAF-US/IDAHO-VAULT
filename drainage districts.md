@@ -4,4 +4,4 @@ related:
 - taxing districts
 authority: LOGAN
 ---
-taxing districts for irrigation 
+taxing districts for irrigation

@@ -112,7 +112,7 @@ _Generated 2026-03-23 07:18 UTC by GitHub Actions — v2_
 ## Summary
 
 | Check | Count |
-|---|---|
+| --- | --- |
 | Likely misplaced files | 75 |
 | Files in parent folders with subfolders (potential orphans) | 5 |
 | Naming convention issues | 0 |
@@ -122,7 +122,7 @@ _Generated 2026-03-23 07:18 UTC by GitHub Actions — v2_
 ## Likely Misplaced Files
 
 | File | Current Folder | Suggested Folder | Reason |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `Ada County.md` | `(root)` | `PLACES/COUNTIES` | looks like an Idaho county |
 | `Adams County.md` | `(root)` | `PLACES/COUNTIES` | looks like an Idaho county |
 | `Alabama.md` | `(root)` | `PLACES/OTHER/STATES` | looks like a US state |
@@ -206,7 +206,7 @@ _Generated 2026-03-23 07:18 UTC by GitHub Actions — v2_
 Files in folders with subfolders that are not designated as intentionally flat.
 
 | File | Folder | Available Subfolders |
-|---|---|---|
+| --- | --- | --- |
 | `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` | `!` | `!` |
 | `!/!/BRANCH-TRIAGE-2026-03-22.md` | `!/!` | `!` |
 | `!/!/LEVELSET-CURRENT.md` | `!/!` | `!` |

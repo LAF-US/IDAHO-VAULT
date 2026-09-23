@@ -6,6 +6,6 @@ related:
 - tobacco cessation
 authority: LOGAN
 ---
-tobacco settlement funds for tobacco cessation 
+tobacco settlement funds for tobacco cessation
 
-oversight by Joint Millennium Fund Committee 
+oversight by Joint Millennium Fund Committee

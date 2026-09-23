@@ -4,4 +4,4 @@ related:
 - Los Angeles
 authority: LOGAN
 ---
-Los Angeles, California 
+Los Angeles, California
