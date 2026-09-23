@@ -1,10 +1,8 @@
 ---
 title: KIT
 authority: LOGAN
-role: The Messenger / Lore
-status: undefined stub
+related:
+- The world is quiet here
 ---
 
-# Kit
-
-This is a persona stub file for "Kit" to ensure bidirectional anchoring.
+[ ? ]

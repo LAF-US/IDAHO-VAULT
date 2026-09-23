@@ -1,10 +1,8 @@
 ---
 title: LEMONY
 authority: LOGAN
-role: Undefined (Stub)
-status: undefined stub
+related:
+- The world is quiet here
 ---
 
-# Lemony
-
-This is a persona stub file for "Lemony" to ensure bidirectional anchoring.
+[ ? ]

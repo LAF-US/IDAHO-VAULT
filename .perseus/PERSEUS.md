@@ -1,10 +1,8 @@
 ---
 title: PERSEUS
 authority: LOGAN
-role: Undefined (Stub)
-status: undefined stub
+related:
+- The world is quiet here
 ---
 
-# Perseus
-
-This is a persona stub file for "Perseus" to ensure bidirectional anchoring.
+[ ? ]

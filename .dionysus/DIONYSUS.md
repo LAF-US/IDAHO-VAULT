@@ -1,10 +1,8 @@
 ---
 title: DIONYSUS
 authority: LOGAN
-role: Undefined (Stub)
-status: undefined stub
+related:
+- The world is quiet here
 ---
 
-# Dionysus
-
-This is a persona stub file for "Dionysus" to ensure bidirectional anchoring.
+[ ? ]
