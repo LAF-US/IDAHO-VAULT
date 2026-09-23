@@ -58,6 +58,11 @@ class ValidateContentTest(unittest.TestCase):
         )
         self.assertEqual(errors, [])
 
+    def test_version_transition_ledger_is_governed_root_content(self) -> None:
+        target = Path("VERSION-TRANSITIONS.md")
+        errors = validate_content.validate_governed_metadata(target, None, "all")
+        self.assertEqual(errors, [f"{target}: Governed note missing YAML frontmatter"])
+
     def test_inbox_scope_accepts_inbox_markdown(self) -> None:
         errors = validate_content.validate_directory(
             Path("INBOX/SWARM-MVP/process-document-123-1.md"),
@@ -72,6 +77,25 @@ class ValidateContentTest(unittest.TestCase):
             errors,
             [f"{target}: File outside allowed directories for scope 'inbox': ['INBOX/']"],
         )
+
+    def test_deletion_of_live_governance_requires_human_review(self) -> None:
+        target = Path("!/WAKEUP.md")
+        errors = validate_content.validate_deleted_path(target, "all")
+        self.assertEqual(
+            errors,
+            [f"{target}: Deletion of governed content requires explicit human review"],
+        )
+
+    def test_deletion_of_version_transition_ledger_requires_human_review(self) -> None:
+        target = Path("VERSION-TRANSITIONS.md")
+        errors = validate_content.validate_deleted_path(target, "all")
+        self.assertEqual(
+            errors,
+            [f"{target}: Deletion of governed content requires explicit human review"],
+        )
+
+    def test_non_governed_deletion_is_not_blocked(self) -> None:
+        self.assertEqual(validate_content.validate_deleted_path(Path("draft.md"), "all"), [])
 
 
 if __name__ == "__main__":
