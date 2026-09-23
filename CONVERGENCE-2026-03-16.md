@@ -152,7 +152,7 @@ Logan operates multiple AI agents concurrently. They do not talk to each other d
 
 | Workflow | Status | Schedule |
 | --- | --- | --- |
-| Sort Audit (`so***REMOVED***audit.py`) | Operational | Manual dispatch |
+| Sort Audit (`sort_audit.py`) | Operational | Manual dispatch |
 | Wayback Audit (`wayback_audit.py`) | Operational | Manual dispatch |
 | Wayback Preserve | Operational | Push to main (SOURCES, GOVERNMENTS, TOPICS) |
 | Idaho Leg Scraper (`idaho_leg_scraper.py`) | Operational | Daily 6 AM MT + manual |

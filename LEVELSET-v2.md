@@ -77,7 +77,7 @@ IDAHO-VAULT/
 
 | Asset | Type | Commit | Branch |
 | --- | --- | --- | --- |
-| `so***REMOVED***audit.py` | Python | `4754d08` | main |
+| `sort_audit.py` | Python | `4754d08` | main |
 | `sort-audit.yml` (GitHub Action) | YAML | `4754d08` | main |
 | `sort-audit-2026-03-12.md` | Markdown (output) | `f7089f9` | main |
 | `idaho_leg_scraper.py` | Python | `449d365` | feature branch |
