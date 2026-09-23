@@ -117,7 +117,7 @@ huggingface-hub==1.14.0
     # via
     #   idaho-vault (pyproject.toml)
     #   tokenizers
-idna==3.16
+idna==3.15
     # via
     #   anyio
     #   httpx
@@ -258,7 +258,7 @@ pybase64==1.4.3
     # via chromadb
 pycparser==3.0
     # via cffi
-pydantic==2.13.4
+pydantic==2.11.10
     # via
     #   chromadb
     #   crewai
@@ -364,7 +364,7 @@ tokenizers==0.23.1
     #   crewai
 tomli==2.0.2
     # via crewai
-tomli-w==1.2.0
+tomli-w==1.1.0
     # via crewai
 tqdm==4.67.3
     # via
