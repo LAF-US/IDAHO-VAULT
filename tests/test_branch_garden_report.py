@@ -40,7 +40,7 @@ class BranchGardenReportTest(unittest.TestCase):
                 return "500"
             raise AssertionError(f"unexpected git call: {cmd}")
 
-        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parent) as tempdir:
+        with tempfile.TemporaryDirectory() as tempdir:
             report_path = Path(tempdir) / "branch-garden-report.md"
             with (
                 mock.patch.object(branch_garden, "run_text", side_effect=run_text),
