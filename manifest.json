@@ -1,6 +1,6 @@
 {
   "manifest_version": "1.0.0",
-  "generated_at": "2026-04-19T12:43:14.324266Z",
+  "generated_at": "2026-07-30T12:23:16.000000Z",
   "authority": {
     "canonical_system": "vault",
     "execution_system": "github",
@@ -17,7 +17,7 @@
   },
   "mcp": {
     "enabled": false,
-    "mode": "transpo***REMOVED***only",
+    "mode": "transport_only",
     "server": null,
     "notes": "Enable after Obsidian MCP Tools endpoint and write controls are validated."
   },
@@ -63,8 +63,8 @@
     "current_state": {
       "enabled_community_count": 44,
       "enabled_core_count": 31,
-      "installed_community_count": 76,
-      "dormant_installed_count": 32,
+      "installed_community_count": 74,
+      "dormant_installed_count": 30,
       "enabled_missing_manifest_count": 0
     },
     "entrypoints": [
@@ -114,7 +114,6 @@
       "obsidian-day-planner",
       "dataview",
       "obsidian-tasks-plugin",
-      "calendar",
       "obsidian-folder-index",
       "obsidian-icon-folder",
       "oz-image-plugin",
@@ -133,7 +132,8 @@
       "quickadd",
       "obsidian-tidy-footnotes",
       "time-ruler",
-      "translate"
+      "translate",
+      "calendarium"
     ],
     "enabled_core_plugins": [
       "file-explorer",
@@ -243,7 +243,6 @@
         {
           "id": "calendar_date",
           "plugins": [
-            "calendar",
             "calendarium",
             "keep-the-rhythm"
           ]
@@ -386,12 +385,6 @@
         "name": "Breadcrumbs",
         "version": "4.4.4",
         "path": ".obsidian/plugins/breadcrumbs/manifest.json"
-      },
-      {
-        "id": "calendar",
-        "name": "Calendar",
-        "version": "1.5.10",
-        "path": ".obsidian/plugins/calendar/manifest.json"
       },
       {
         "id": "calendarium",
@@ -688,12 +681,6 @@
         "path": ".obsidian/plugins/omnisearch/manifest.json"
       },
       {
-        "id": "openclaw",
-        "name": "OpenClaw",
-        "version": "0.41.1",
-        "path": ".obsidian/plugins/obsidianclaw/manifest.json"
-      },
-      {
         "id": "oz-image-plugin",
         "name": "Image in Editor",
         "version": "2.2.6",
@@ -819,7 +806,6 @@
       "ai-templater",
       "beautiful-contact-cards",
       "bmo-chatbot",
-      "calendarium",
       "cmdr",
       "dataview-autocompletion",
       "dataview-properties",
@@ -842,7 +828,6 @@
       "obsidian-git",
       "obsidian-leaflet-plugin",
       "obsidian42-brat",
-      "openclaw",
       "pdf-plus",
       "table-editor-obsidian",
       "taskbone-ocr-plugin",
@@ -855,7 +840,7 @@
     "signal_root": "!/SIGNALS/",
     "live_board": "!/__!__/!/! The world is quiet here/DOCKET.md",
     "status": "active",
-    "transpo***REMOVED***model": "vault_native_async_signal_bus",
+    "transport_model": "vault_native_async_signal_bus",
     "authority_boundary": "Signal protocol lives in !/SIGNALS/README.md; live visibility lives in the Courtroom DOCKET; execution state remains in GitHub and Linear.",
     "entrypoints": [
       {
@@ -995,11 +980,19 @@
       "state": "released"
     },
     {
-      "lock_id": "507b3c87-9a9d-48fe-a166-375ab1d0c212",
-      "file_path": "!/ingest-2026-04-19T124314Z.md",
+      "lock_id": "414eaeaa-0500-4b49-b99e-c9dcdf140b81",
+      "file_path": "!/ingest-2026-04-18T124356Z.md",
       "agent_id": "github-actions[bot]",
-      "created_at": "2026-04-19T12:43:14.274414Z",
-      "expires_at": "2026-04-19T12:58:14.274414Z",
+      "created_at": "2026-04-18T12:43:56.662934Z",
+      "expires_at": "2026-04-18T12:58:56.662934Z",
+      "state": "released"
+    },
+    {
+      "lock_id": "6154cc28-bf40-49e6-864f-f9cc39ba2706",
+      "file_path": "!/ingest-2026-04-23T130830Z.md",
+      "agent_id": "github-actions[bot]",
+      "created_at": "2026-04-23T13:08:30.960776Z",
+      "expires_at": "2026-04-23T13:23:30.960776Z",
       "state": "released"
     }
   ],
@@ -1103,13 +1096,22 @@
       "lock_id": "c8ea37ee-8c2d-4ade-82fa-8581536a2866",
       "version": 1
     },
-    "!/ingest-2026-04-19T124314Z.md": {
-      "content_hash": "sha256:e41cd10a40402fbf7990cefec1808b1f2b4e0b7a5d4ae9f93132f0fd991eeafd",
+    "!/ingest-2026-04-18T124356Z.md": {
+      "content_hash": "sha256:6d945975fb55b6383b9f76b307ab67146e011a71266be936f27c8d28864806c9",
       "last_writer": "github-actions[bot]",
-      "last_write_at": "2026-04-19T12:43:14.324266Z",
-      "last_read_at": "2026-04-19T12:43:14.324266Z",
+      "last_write_at": "2026-04-18T12:43:56.724080Z",
+      "last_read_at": "2026-04-18T12:43:56.724080Z",
       "status": "active",
-      "lock_id": "507b3c87-9a9d-48fe-a166-375ab1d0c212",
+      "lock_id": "414eaeaa-0500-4b49-b99e-c9dcdf140b81",
+      "version": 1
+    },
+    "!/ingest-2026-04-23T130830Z.md": {
+      "content_hash": "sha256:c5d18f54dec72ce1be736830643ec36067db607d4880343b257c092ef941d30e",
+      "last_writer": "github-actions[bot]",
+      "last_write_at": "2026-04-23T13:08:31.029228Z",
+      "last_read_at": "2026-04-23T13:08:31.029228Z",
+      "status": "active",
+      "lock_id": "6154cc28-bf40-49e6-864f-f9cc39ba2706",
       "version": 1
     }
   }

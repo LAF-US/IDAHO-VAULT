@@ -1,5 +1,13 @@
 name: Agent Review Gate
 
+# PARKED — this file sits at the repository ROOT, not in .github/workflows/.
+# Actions only reads that directory, so nothing under `on:` below can fire from
+# here, whatever it says. Position is the switch, not a key inside the file:
+# parked by 063cdaa24 ("`.github` cleaned", 2026-08-21) along with the rest of
+# the suite, and activated only by moving the file back — see e280d8d03,
+# "restore opencode.yml to .github/workflows so its triggers fire". Editing the
+# triggers while the file is here changes nothing.
+#
 # Reconcile/backlog sweep (reconcile-open-prs) — ENGINE REBUILT, CLOCK RESERVED.
 #
 # What it does per run: restamps every open PR's risk labels from the classifier
@@ -51,7 +59,7 @@ jobs:
       issues: write
     steps:
       - name: Checkout trusted workflow surfaces
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.repository.default_branch }}
 

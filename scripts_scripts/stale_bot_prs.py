@@ -12,7 +12,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -53,6 +53,12 @@ def run_json(cmd: list[str]) -> object:
 
 def run_text(cmd: list[str]) -> str:
     return _run(cmd).strip()
+
+
+CLOSE_COMMENT = (
+    "Closing automatically: stale bot PR, not merge-clean, and older than the allowed age threshold. "
+    "A fresh bot PR can be regenerated later if the update is still desired."
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -148,7 +154,7 @@ def main() -> int:
                     "close",
                     str(pr["number"]),
                     "--comment",
-                    args.comment,
+                    CLOSE_COMMENT,
                 ]
             )
 
