@@ -81,7 +81,7 @@ This layer map is still under revision, but the control principle is stable: cap
 
 Orientation protocol for instances awakening inside the vault. Current approved version:
 
-- **Location:** `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md`
+- **Location:** `LEVELSET-STEP-0-EXTERNAL-AGENT.md` *(repo root — not under `!/`)*
 - **Key principle:** Automation is the end state; manual bridge is an interim fallback. Failure is natural but advances change.
 
 ### ARISE v(0.0)

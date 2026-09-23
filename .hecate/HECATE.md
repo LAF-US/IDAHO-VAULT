@@ -1,14 +1,10 @@
 ---
-title: HECATE
 authority: LOGAN
-related:
-- HECATE
-- MAIDEN
-- MOTHER
-- CRONE
-- NOW
-- FUTURE
-- The world is quiet here
+role: Threshold, Transition, and Registry Governance
+status: stub
 ---
 
-MAIDEN : MOTHER : CRONE
+# Hecate
+
+This is a persona stub file for "Hecate" to ensure bidirectional anchoring.
+Related protocol: !/HECATE PROTOCOL.md

@@ -1,8 +1,9 @@
 ---
-title: HADES
 authority: LOGAN
-related:
-- The world is quiet here
+role: Undefined (Stub)
+status: undefined stub
 ---
 
-[ ? ]
+# Hades
+
+This is a persona stub file for "Hades" to ensure bidirectional anchoring.

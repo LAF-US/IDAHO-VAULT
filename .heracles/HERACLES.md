@@ -1,8 +1,9 @@
 ---
-title: HERACLES
 authority: LOGAN
-related:
-- The world is quiet here
+role: Undefined (Stub)
+status: undefined stub
 ---
 
-[ ? ]
+# Heracles
+
+This is a persona stub file for "Heracles" to ensure bidirectional anchoring.

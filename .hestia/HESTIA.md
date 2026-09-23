@@ -1,8 +1,9 @@
 ---
-title: HESTIA
 authority: LOGAN
-related:
-- The world is quiet here
+role: Undefined (Stub)
+status: stub
 ---
 
-[ ? ]
+# Hestia
+
+This is a persona stub file for "Hestia" to ensure bidirectional anchoring.
