@@ -170,8 +170,4 @@ This document is the "sole source of truth" for vault governance. Amendments req
 
 Unified (US) Swarm designed and written in Logan's Project & Protocols syntaxic code.
 
----
-
-```text
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

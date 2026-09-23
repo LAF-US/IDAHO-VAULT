@@ -134,8 +134,4 @@ carry execution only after policy permits the command.
 - Resolve remaining Windows-side hardening: Discord allowlist, plugin pinning,
   and coordinated update policy.
 
----
-
-```text
-The world is quiet here．Esto Perpetua!
-```
+###### The world is quiet here

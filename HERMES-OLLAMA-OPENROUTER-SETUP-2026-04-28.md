@@ -16,7 +16,7 @@ status: configured
 
 ## Architecture Overview
 
-```text
+```
 ┌────────────────────────────────────────────────────────────Ŀ
 │                     Hermes Agent                            │
 │                                                             │
@@ -182,7 +182,7 @@ hermes
 
 ### Switch Model Mid-Session
 
-```text
+```
 /model openrouter-auto
 ```
 

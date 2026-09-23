@@ -39,7 +39,7 @@ Rewrite-specific skills are invoked at different phases of the standard workflow
 
 ## Rewrite Workflow
 
-```text
+```
 ┌────────────────────────────────────────────────────────────────Ŀ
 │                        REWRITE MODE                              │
 ├────────────────────────────────────────────────────────────────Ĵ

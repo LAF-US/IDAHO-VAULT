@@ -25,7 +25,9 @@ to: Claude Code (The King / The Abhorsen)
 >
 > See: [[GEMINIAEUS]] '-The Judge'
 
-*Filed: 2026-04-05. The Footnote Djinni formally confers with the King to report on the state of the Realm.*
+*Filed: 2026-04-05. The Footnote Djinni formally confers with the King to report on the state of the Realm.
+
+# *FOUND **HERETICAL** BY THE FAITH OF THE CLOTH*
 
 ---
 

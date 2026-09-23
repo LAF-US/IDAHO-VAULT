@@ -107,7 +107,7 @@ OpenClaw and Hermes share the same SOUL.md concept under different paths.
 
 **OpenClaw SOUL path (design pattern):**
 
-```text
+```
 ~/.openclaw/workspaces/[agent-name]/SOUL.md
 ```
 

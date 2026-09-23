@@ -1,9 +1,12 @@
+"""Tests for review_feedback_loop.py — loaded dynamically via importlib."""
+
 from __future__ import annotations
 
 import contextlib
 import importlib.util
 import io
 import json
+import sys
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -13,15 +16,30 @@ from unittest import mock
 
 def _load_review_feedback_loop_module():
     project_root = Path(__file__).resolve().parents[1]
-    script_path = project_root / ".github" / "scripts" / "review_feedback_loop.py"
+    scripts_dir = project_root / ".github" / "scripts"
+    script_path = scripts_dir / "review_feedback_loop.py"
     spec = importlib.util.spec_from_file_location("review_feedback_loop_test_module", script_path)
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
-    spec.loader.exec_module(module)
+    # The engine imports its shared thread-analysis lib (pr_threads) as a sibling
+    # module; loading it by file path needs the scripts dir importable. Scope the
+    # mutation to the exec so the test run's global sys.path isn't left altered —
+    # the import is bound during exec, and pr_threads stays cached in sys.modules.
+    # (Production runs the script directly, which already has this on sys.path[0].)
+    original_sys_path = list(sys.path)
+    sys.path.insert(0, str(scripts_dir))
+    try:
+        spec.loader.exec_module(module)
+    finally:
+        sys.path[:] = original_sys_path
     return module
 
 
 review_feedback_loop = _load_review_feedback_loop_module()
+# The shared thread-analysis vocabulary now lives in pr_threads (#600 §5). The
+# engine's load above imported it, so it's cached in sys.modules; predicates the
+# engine no longer re-exports (e.g. _author_is_bot) are tested against it directly.
+pr_threads = sys.modules["pr_threads"]
 
 
 def _labels(*names: str) -> dict[str, list[dict[str, str]]]:
@@ -88,35 +106,54 @@ def _pr(
 
 
 class ReviewFeedbackLoopTest(unittest.TestCase):
-    def test_low_risk_agent_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
-        # Reversal of the #521/#527 fail-close (2026-06-17): a low-risk PR with no blocking
-        # feedback is auto-merge-eligible once the grace window elapses. Within grace it is
-        # not yet eligible but should carry the review/pending label.
+    def test_clear_pair_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
+        # K3/#629: the `—/—` pair — and ONLY it — arms auto-merge. A PR that classify
+        # scored clear (risk/—) with no blocking feedback is eligible once the grace window
+        # elapses; within grace it is not yet eligible.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
 
         early_state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=now - timedelta(minutes=10),
-                labels=(review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,),
+                labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
             ),
             now=now,
         )
         ready_state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=now - timedelta(minutes=45),
-                labels=(review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,),
+                labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
             ),
             now=now,
         )
 
-        self.assertTrue(early_state["low_risk"])
+        self.assertTrue(early_state["is_clear"])
         self.assertFalse(early_state["grace_elapsed"])
-        self.assertTrue(early_state["should_have_agent_review_pending"])
         self.assertFalse(early_state["eligible_for_auto_merge"])
 
+        self.assertTrue(ready_state["is_clear"])
         self.assertTrue(ready_state["grace_elapsed"])
         self.assertTrue(ready_state["eligible_for_auto_merge"])
-        self.assertFalse(ready_state["should_have_agent_review_pending"])
+
+    def test_low_risk_pr_holds_and_never_auto_merges(self) -> None:
+        # K3/#629 norm flip: risk/low is a sorter that FIRED (machine-doc paths) — it HOLDS
+        # for review, it does not arm. Only the positive clear marker auto-merges. A low-risk
+        # PR past grace with no blocking feedback stays ineligible and carries review/pending.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(
+                created_at=now - timedelta(minutes=45),
+                labels=(review_feedback_loop.RISK_LOW_LABEL,),
+            ),
+            now=now,
+        )
+
+        self.assertTrue(state["low_risk"])
+        self.assertFalse(state["is_clear"])
+        self.assertTrue(state["grace_elapsed"])
+        self.assertFalse(state["eligible_for_auto_merge"])
+        self.assertTrue(state["should_have_agent_review_pending"])
 
     def test_risk_label_is_canonical_over_body_marker(self) -> None:
         """Label-based risk tier wins when body marker was overwritten by an editor."""
@@ -132,10 +169,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             now=now,
         )
 
+        self.assertEqual(state["risk_tier"], "low")
         self.assertTrue(state["low_risk"])
         self.assertTrue(state["grace_elapsed"])
-        # Reversal (2026-06-17): low-risk + grace + unblocked is now eligible.
-        self.assertTrue(state["eligible_for_auto_merge"])
+        # K3/#629: risk/low HOLDS — the label is canonical for the tier, but low is not the
+        # clear pair, so it never arms.
+        self.assertFalse(state["eligible_for_auto_merge"])
 
     def test_high_risk_label_wins_when_low_and_high_are_both_present(self) -> None:
         state = review_feedback_loop.evaluate_review_state(
@@ -146,6 +185,185 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(state["risk_tier"], "high")
         self.assertFalse(state["low_risk"])
         self.assertFalse(state["eligible_for_auto_merge"])
+
+    def test_pair_lane_parses_both_axes(self) -> None:
+        # K6/#632: the lane IS the label pair — one label per independent analysis.
+        rfl = review_feedback_loop
+        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/—", "depth:risk/—"})
+        self.assertEqual((ft, dp, marked), (None, None, True))
+        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/med", "depth:risk/high"})
+        self.assertEqual((ft, dp, marked), ("med", "high", True))
+        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/low", "depth:risk/nope"})
+        self.assertEqual((ft, dp, marked), ("low", "nope", True))
+        # One axis unmarked (and no legacy fallback) -> NOT fully marked: the PR holds.
+        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/med"})
+        self.assertFalse(marked)
+
+    def test_pair_axis_exclusion_fails_loud(self) -> None:
+        # K6 per-axis mutual exclusion: an axis carries exactly ONE label — its `—` XOR
+        # its fired flag. Two labels on one axis is a producer/restamp bug: raise.
+        rfl = review_feedback_loop
+        for labels in (
+            {"filetype:risk/—", "filetype:risk/med", "depth:risk/—"},
+            {"filetype:risk/low", "filetype:risk/med"},
+            {"depth:risk/high", "depth:risk/nope", "filetype:risk/—"},
+        ):
+            with self.subTest(labels=labels):
+                with self.assertRaises(rfl.RiskMarkerInvariantError):
+                    rfl._risk_pair_for_pr(labels)
+
+    def test_pair_clear_arms_and_pair_flag_holds(self) -> None:
+        # The {—,—} pair arms after grace; a fired lane holds until its review completes.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        clear_state = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=now - timedelta(minutes=45),
+                labels=("filetype:risk/—", "depth:risk/—")),
+            now=now,
+        )
+        self.assertTrue(clear_state["is_clear"])
+        self.assertTrue(clear_state["eligible_for_auto_merge"])
+
+        held_state = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=now - timedelta(minutes=45),
+                labels=("filetype:risk/med", "depth:risk/—")),
+            now=now,
+        )
+        self.assertEqual(held_state["risk_tier"], "med")
+        self.assertFalse(held_state["eligible_for_auto_merge"])
+
+    def test_lane_completion_clears_flag_and_flows(self) -> None:
+        # K6 "Restamp + clear": an approving review with no current threads completes the
+        # lane — the PR becomes eligible, and the projection consumes the fired flag
+        # (restamps the axis to its `—`).
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=now - timedelta(minutes=45),
+                labels=("filetype:risk/med", "depth:risk/—"),
+                review_decision="APPROVED"),
+            now=now,
+        )
+        self.assertTrue(state["lane_complete"])
+        self.assertTrue(state["flag_clearable"])
+        self.assertTrue(state["eligible_for_auto_merge"])
+
+        with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
+             mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
+            actions = review_feedback_loop.apply_review_state_projection(17, state)
+        self.assertIn("add:filetype:risk/—", actions)
+        self.assertIn("remove:filetype:risk/med", actions)
+        edit_label.assert_any_call(17, add="filetype:risk/—")
+
+    def test_nope_lane_never_auto_clears_even_approved(self) -> None:
+        # The still point asks for the sovereign's own hand: depth:risk/nope is never
+        # consumed by review completion and never arms.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=now - timedelta(minutes=45),
+                labels=("filetype:risk/—", "depth:risk/nope"),
+                review_decision="APPROVED"),
+            now=now,
+        )
+        self.assertEqual(state["risk_tier"], "nope")
+        self.assertTrue(state["lane_complete"])
+        self.assertFalse(state["flag_clearable"])
+        self.assertFalse(state["eligible_for_auto_merge"])
+        with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
+             mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
+            actions = review_feedback_loop.apply_review_state_projection(18, state)
+        self.assertNotIn("remove:depth:risk/nope", actions)
+
+    def test_restamp_mirrors_classifier_and_syncs_legacy(self) -> None:
+        # K6 restamp: labels mirror the verdict — pair stamped, stale pair labels and
+        # contradicted legacy sparse labels retired, legacy mirror kept in sync.
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = {"filetype:risk/med", "depth:risk/—", "risk/low", "review/pending"}
+            actions = review_feedback_loop.restamp_risk_pair(21, labels, None, None)
+        self.assertIn("add:filetype:risk/—", actions)
+        self.assertIn("remove:filetype:risk/med", actions)
+        self.assertIn("add:risk/—", actions)
+        self.assertIn("remove:risk/low", actions)
+        self.assertIn("review/pending", labels)  # non-risk labels untouched
+        self.assertEqual(
+            labels & {"filetype:risk/—", "depth:risk/—", "risk/—"},
+            {"filetype:risk/—", "depth:risk/—", "risk/—"},
+        )
+
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = {"risk/—"}
+            actions = review_feedback_loop.restamp_risk_pair(22, labels, "low", "high")
+        self.assertIn("add:filetype:risk/low", actions)
+        self.assertIn("add:depth:risk/high", actions)
+        self.assertIn("add:risk/high", actions)
+        self.assertIn("remove:risk/—", actions)
+
+    def test_sync_pr_restamps_unmarked_pr_from_classifier(self) -> None:
+        # K6 backfill-by-automation: an unmarked in-flight PR gets its pair stamped from
+        # the classifier on the next sync — no hand-sweep.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        args = SimpleNamespace(
+            owner="LAF-US", repo="IDAHO-VAULT", pr_number=300,
+            sync_actor="someone", grace_minutes=30,
+        )
+        unmarked = _pr(number=300, created_at=now - timedelta(minutes=45), labels=())
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_fetch_pr", return_value=unmarked
+        ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_classify_pr_pair", return_value=(None, None)
+        ), mock.patch.object(
+            review_feedback_loop, "_edit_label"
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ), mock.patch.object(
+            review_feedback_loop, "_run"
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ) as arm, contextlib.redirect_stdout(io.StringIO()):
+            result = review_feedback_loop.sync_pr(args)
+        self.assertEqual(result, 0)
+        # Restamped to the {—,—} pair -> clear lane -> armed on this same pass.
+        arm.assert_called_once_with("LAF-US", "IDAHO-VAULT", 300)
+
+    def test_clear_marker_classifies_as_clear(self) -> None:
+        # K4/#630: the positive `risk/—` marker is its own tier ("clear"), distinct from low.
+        self.assertEqual(
+            review_feedback_loop._risk_tier_for_pr("", {review_feedback_loop.RISK_CLEAR_LABEL}),
+            "clear",
+        )
+
+    def test_unmarked_pr_holds_and_is_not_clear(self) -> None:
+        # K4/#630 core: absence of a marker is NOT classified-clear. An unmarked PR resolves
+        # to "unknown" and never arms — only the positive risk/— marker does.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=now - timedelta(minutes=45), labels=(), body="## No marker\n"),
+            now=now,
+        )
+
+        self.assertEqual(state["risk_tier"], "unknown")
+        self.assertFalse(state["is_clear"])
+        self.assertFalse(state["low_risk"])
+        self.assertTrue(state["grace_elapsed"])
+        self.assertFalse(state["eligible_for_auto_merge"])
+
+    def test_clear_marker_is_mutually_exclusive_with_flags(self) -> None:
+        # K4/#630 invariant: risk/— XOR a flag, never both. A PR carrying the clear marker
+        # alongside any risk/* flag is a producer/backfill bug — fail LOUD, never silently
+        # auto-merge a PR a sorter actually flagged.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        for flag in (review_feedback_loop.RISK_LOW_LABEL, review_feedback_loop.RISK_HIGH_LABEL):
+            with self.subTest(flag=flag):
+                with self.assertRaises(review_feedback_loop.RiskMarkerInvariantError):
+                    review_feedback_loop.evaluate_review_state(
+                        _pr(
+                            created_at=now - timedelta(minutes=45),
+                            labels=(review_feedback_loop.RISK_CLEAR_LABEL, flag),
+                        ),
+                        now=now,
+                    )
 
     def test_risk_high_label_keeps_pr_out_of_auto_merge(self) -> None:
         """risk/high label alone must classify the PR as high-risk even if body is missing/empty."""
@@ -420,50 +638,323 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_arm_auto_merge_degrades_when_protected_branch_blocks_enablement(self) -> None:
         error = RuntimeError(
-            "Command failed (1): gh pr merge 289 --squash --delete-branch --auto\n"
+            "Command failed (1): gh pr merge 289 --merge --auto\n"
             "stdout:\n\n"
             "stderr:\n"
             "GraphQL: Pull request User is not authorized for this protected branch "
             "(enablePullRequestAutoMerge)\n"
         )
 
-        with mock.patch.object(review_feedback_loop, "_run", side_effect=error):
-            enabled, arm_error = review_feedback_loop._arm_auto_merge(289)
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(review_feedback_loop, "_run", side_effect=error):
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 289)
 
         self.assertFalse(enabled)
         self.assertIn("not authorized to enable auto-merge", arm_error)
 
-    # ----- protected-path guard + guarded arm (#521/#527 reversal, 2026-06-17) -----
-
-    def test_pr_touches_protected_path_matches_governance_and_ci(self) -> None:
-        # A changed file under a protected glob → True; an ordinary doc-only PR → False.
-        protected = mock.Mock(stdout="docs/notes.md\n.github/workflows/ci.yml\nREADME.md\n")
-        plain = mock.Mock(stdout="docs/notes.md\nREADME.md\n")
-        with mock.patch.object(review_feedback_loop, "_run", return_value=protected):
-            self.assertTrue(
-                review_feedback_loop._pr_touches_protected_path("o", "r", 1)
-            )
-        with mock.patch.object(review_feedback_loop, "_run", return_value=plain):
-            self.assertFalse(
-                review_feedback_loop._pr_touches_protected_path("o", "r", 2)
-            )
-
-    def test_pr_touches_protected_path_fails_closed_on_fetch_error(self) -> None:
-        # If the changed-file list can't be fetched, treat the PR as protected (never widen
-        # what gets armed on a transient API failure).
+    def test_arm_auto_merge_plain_enable_then_enqueue_when_off(self) -> None:
+        # Auto-merge off → enable (`--auto`) AND THEN add it to the merge queue (enqueue).
+        # Both halves: arming alone never queued it (the bug); enqueue is the missing half.
         with mock.patch.object(
-            review_feedback_loop, "_run", side_effect=RuntimeError("api down")
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node1"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(True, None)
+        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 10)
+        self.assertTrue(enabled)
+        self.assertIsNone(arm_error)
+        run.assert_called_once_with(
+            ["gh", "pr", "merge", "10", "--merge", "--auto"]
+        )
+        enqueue.assert_called_once_with("PR_node1")
+
+    def test_arm_auto_merge_enqueues_when_armed_but_not_queued(self) -> None:
+        # The #508 case: auto-merge already on but the PR was never put in the queue.
+        # Re-arming is an idempotent no-op — the actual fix is to call enqueue, not re-toggle.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(True, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node2"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(True, None)
+        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 11)
+        self.assertTrue(enabled)
+        self.assertIsNone(arm_error)
+        run.assert_not_called()  # already armed — no redundant enable
+        enqueue.assert_called_once_with("PR_node2")
+
+    def test_arm_auto_merge_leaves_queued_pr_untouched(self) -> None:
+        # Already in the merge queue → do nothing; re-enqueuing/re-arming would disturb it.
+        # Also never reads mergeStateStatus — a queued PR is never a BEHIND candidate here.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(True, True)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status"
+        ) as merge_state, mock.patch.object(
+            review_feedback_loop, "_enqueue_pr"
+        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 12)
+        self.assertTrue(enabled)
+        self.assertIsNone(arm_error)
+        run.assert_not_called()
+        enqueue.assert_not_called()
+        merge_state.assert_not_called()
+
+    def test_arm_auto_merge_enqueue_not_ready_is_non_fatal(self) -> None:
+        # Enqueue is best-effort: a not-yet-ready PR can't be queued now, but it stays armed
+        # (auto-merge enqueues it when green). Benign not-ready is _enqueue_pr → (False, None),
+        # so this is success — armed True, and crucially NO error is surfaced.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node3"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, None)
+        ), mock.patch.object(review_feedback_loop, "_run"):
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 13)
+        self.assertTrue(enabled)
+        self.assertIsNone(arm_error)  # benign not-ready must not leak as an error
+
+    def test_arm_auto_merge_surfaces_real_enqueue_failure(self) -> None:
+        # A REAL enqueue failure (auth/API), distinct from benign not-ready, is surfaced as the
+        # error while still reporting armed=True — so "armed but never queued" can't recur silently.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(True, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node4"
+        ), mock.patch.object(
+            review_feedback_loop,
+            "_enqueue_pr",
+            return_value=(False, "Resource not accessible by integration"),
+        ), mock.patch.object(review_feedback_loop, "_run"):
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 14)
+        self.assertTrue(enabled)
+        self.assertIsNotNone(arm_error)
+        self.assertIn("enqueue was rejected", arm_error)
+        self.assertIn("Resource not accessible", arm_error)
+
+    def test_arm_auto_merge_skips_enqueue_when_node_id_missing(self) -> None:
+        # Fail-open: if the node id can't be read, arming still succeeds and enqueue is skipped
+        # (no _enqueue_pr call) — the armed auto-merge enqueues the PR when it goes green.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value=None
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr"
+        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 15)
+        self.assertTrue(enabled)
+        self.assertIsNone(arm_error)
+        run.assert_called_once_with(
+            ["gh", "pr", "merge", "15", "--merge", "--auto"]
+        )
+        enqueue.assert_not_called()
+
+    def test_arm_auto_merge_updates_branch_when_behind_then_still_arms(self) -> None:
+        # BEHIND means neither arming nor enqueuing can make the PR CLEAN — merge base in
+        # first (the same recovery batch-arm-merge-queue.yml already does for this state),
+        # then still arm as a backstop so it's ready to enqueue once CI recomputes it CLEAN.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="BEHIND"
+        ), mock.patch.object(
+            review_feedback_loop, "_update_branch", return_value=(True, None)
+        ) as update_branch, mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node20"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, None)
+        ), mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 20)
+        self.assertTrue(enabled)
+        self.assertIn("branch updated (was BEHIND)", arm_error)
+        update_branch.assert_called_once_with("o", "r", 20)
+        run.assert_called_once_with(["gh", "pr", "merge", "20", "--merge", "--auto"])
+
+    def test_arm_auto_merge_still_arms_when_branch_update_fails(self) -> None:
+        # A real update-branch failure (e.g. an actual conflict surfaced as DIRTY by the time
+        # this ran) is surfaced as an informational note, not treated as arming having failed.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="BEHIND"
+        ), mock.patch.object(
+            review_feedback_loop, "_update_branch", return_value=(False, "merge conflict")
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node21"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, None)
+        ), mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 21)
+        self.assertTrue(enabled)
+        self.assertIn("branch update (BEHIND) failed", arm_error)
+        self.assertIn("merge conflict", arm_error)
+        run.assert_called_once_with(["gh", "pr", "merge", "21", "--merge", "--auto"])
+
+    def test_arm_auto_merge_aggregates_notes_when_branch_update_and_enqueue_both_fail(
+        self,
+    ) -> None:
+        # Both failure notes must survive the join — neither overwrites the other.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="BEHIND"
+        ), mock.patch.object(
+            review_feedback_loop, "_update_branch", return_value=(False, "merge conflict")
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node23"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, "enqueue error")
+        ), mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 23)
+        self.assertTrue(enabled)
+        self.assertIn("branch update (BEHIND) failed", arm_error)
+        self.assertIn("merge conflict", arm_error)
+        self.assertIn("enqueue was rejected", arm_error)
+        self.assertIn("enqueue error", arm_error)
+        run.assert_called_once_with(["gh", "pr", "merge", "23", "--merge", "--auto"])
+
+    def test_arm_auto_merge_checks_behind_even_when_already_enabled(self) -> None:
+        # A PR can already be armed and still fall BEHIND later — the BEHIND check does not
+        # depend on `enabled`, so this must still trigger an update-branch attempt.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(True, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="BEHIND"
+        ), mock.patch.object(
+            review_feedback_loop, "_update_branch", return_value=(True, None)
+        ) as update_branch, mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node22"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, None)
+        ), mock.patch.object(review_feedback_loop, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 22)
+        self.assertTrue(enabled)
+        self.assertIn("branch updated (was BEHIND)", arm_error)
+        update_branch.assert_called_once_with("o", "r", 22)
+        run.assert_not_called()  # already enabled — no redundant enable call
+
+    def test_merge_state_status_returns_value_and_fails_open(self) -> None:
+        with mock.patch.object(
+            review_feedback_loop,
+            "_graphql",
+            return_value={"repository": {"pullRequest": {"mergeStateStatus": "BEHIND"}}},
         ):
-            self.assertTrue(
-                review_feedback_loop._pr_touches_protected_path("o", "r", 3)
+            self.assertEqual(
+                review_feedback_loop._merge_state_status("o", "r", 9), "BEHIND"
+            )
+        with mock.patch.object(review_feedback_loop, "_graphql", return_value={}):
+            self.assertEqual(
+                review_feedback_loop._merge_state_status("o", "r", 9), "UNKNOWN"
+            )
+        with mock.patch.object(
+            review_feedback_loop, "_graphql", side_effect=RuntimeError("boom")
+        ):
+            self.assertEqual(
+                review_feedback_loop._merge_state_status("o", "r", 9), "UNKNOWN"
+            )
+        with mock.patch.object(
+            review_feedback_loop,
+            "_graphql",
+            return_value={"repository": {"pullRequest": {"mergeStateStatus": None}}},
+        ):
+            self.assertEqual(
+                review_feedback_loop._merge_state_status("o", "r", 9), "UNKNOWN"
             )
 
-    def test_maybe_arm_arms_eligible_non_protected_pr(self) -> None:
+    def test_update_branch_tri_state_success_and_failure(self) -> None:
+        with mock.patch.object(review_feedback_loop, "_run") as run:
+            ok, err = review_feedback_loop._update_branch("o", "r", 9)
+        self.assertTrue(ok)
+        self.assertIsNone(err)
+        run.assert_called_once_with(
+            ["gh", "api", "--method", "PUT", "repos/o/r/pulls/9/update-branch"]
+        )
+        with mock.patch.object(
+            review_feedback_loop, "_run", side_effect=RuntimeError("conflict")
+        ):
+            ok, err = review_feedback_loop._update_branch("o", "r", 9)
+        self.assertFalse(ok)
+        self.assertEqual(err, "conflict")
+
+    def test_enqueue_pr_tri_state_entry_notready_failure(self) -> None:
+        # The enqueue primitive is tri-state:
+        #   entry id present        → (True, None)   enqueued
+        #   no entry (graphql ok)   → (False, None)  benign not-ready
+        #   graphql raises          → (False, str)   real failure, surfaced
+        with mock.patch.object(
+            review_feedback_loop,
+            "_graphql",
+            return_value={"enqueuePullRequest": {"mergeQueueEntry": {"id": "MQE_1"}}},
+        ):
+            ok, err = review_feedback_loop._enqueue_pr("PR_node")
+        self.assertTrue(ok)
+        self.assertIsNone(err)
+        with mock.patch.object(
+            review_feedback_loop,
+            "_graphql",
+            return_value={"enqueuePullRequest": {"mergeQueueEntry": None}},
+        ):
+            ok, err = review_feedback_loop._enqueue_pr("PR_node")
+        self.assertFalse(ok)
+        self.assertIsNone(err)  # not-ready is benign — no error
+        with mock.patch.object(
+            review_feedback_loop, "_graphql", side_effect=RuntimeError("boom")
+        ):
+            ok, err = review_feedback_loop._enqueue_pr("PR_node")
+        self.assertFalse(ok)
+        self.assertEqual(err, "boom")
+
+    def test_pr_node_id_returns_id_missing_keys_and_fail_open(self) -> None:
+        # Normal response yields the id; missing repository/pullRequest keys and a raising
+        # _graphql both fail open to None (so the caller skips enqueue rather than crashing).
+        with mock.patch.object(
+            review_feedback_loop,
+            "_graphql",
+            return_value={"repository": {"pullRequest": {"id": "PR_node9"}}},
+        ):
+            self.assertEqual(review_feedback_loop._pr_node_id("o", "r", 9), "PR_node9")
+        with mock.patch.object(review_feedback_loop, "_graphql", return_value={}):
+            self.assertIsNone(review_feedback_loop._pr_node_id("o", "r", 9))
+        with mock.patch.object(
+            review_feedback_loop, "_graphql", return_value={"repository": {"pullRequest": None}}
+        ):
+            self.assertIsNone(review_feedback_loop._pr_node_id("o", "r", 9))
+        with mock.patch.object(
+            review_feedback_loop, "_graphql", side_effect=RuntimeError("api down")
+        ):
+            self.assertIsNone(review_feedback_loop._pr_node_id("o", "r", 9))
+        with mock.patch.object(
+            review_feedback_loop, "_graphql", side_effect=ValueError("bad json")
+        ):
+            self.assertIsNone(review_feedback_loop._pr_node_id("o", "r", 9))
+
+    # ----- guarded arm (#521/#527 reversal, 2026-06-17). The protected-path veto was
+    # retired 2026-06-29 (K1/#627, K2/#628): the CODEOWNERS hard gate
+    # (require_code_owner_review) now enforces "this path needs a human", so the engine no
+    # longer vetoes protected paths — these tests assert the un-vetoed arm path. -----
+
+    def test_maybe_arm_arms_eligible_pr(self) -> None:
         # On a successful arm, the merge/auto label is applied via a CHECKED gh call so the
         # write can fail-close (see test below). Mock _run for that label edit.
         with mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=False
-        ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, mock.patch.object(
             review_feedback_loop, "_run"
@@ -472,7 +963,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                 "o", "r", 5, {"eligible_for_auto_merge": True}
             )
         self.assertTrue(result["armed"])
-        arm.assert_called_once_with(5)
+        arm.assert_called_once_with("o", "r", 5)
         # The arm tags merge/auto so the disable path can later un-arm if it becomes blocked.
         run.assert_called_once_with(
             ["gh", "pr", "edit", "5", "--add-label", review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL]
@@ -482,8 +973,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # If arming succeeds but the merge/auto label write fails, disable the auto-merge we
         # just enabled and report failure — never leave an armed PR the disable path can't track.
         with mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=False
-        ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ), mock.patch.object(
             review_feedback_loop, "_run", side_effect=RuntimeError("label write failed")
@@ -497,34 +986,20 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertIn("label write failed", result["reason"])
         disable.assert_called_once_with(6)
 
-    def test_maybe_arm_refuses_protected_path(self) -> None:
+    def test_maybe_arm_noops_when_not_eligible(self) -> None:
+        # Not eligible → never arms.
         with mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=True
-        ), mock.patch.object(review_feedback_loop, "_arm_auto_merge") as arm:
-            result = review_feedback_loop._maybe_arm_auto_merge(
-                "o", "r", 6, {"eligible_for_auto_merge": True}
-            )
-        self.assertFalse(result["armed"])
-        self.assertIn("protected", result["reason"])
-        arm.assert_not_called()
-
-    def test_maybe_arm_noops_when_not_eligible_without_touching_api(self) -> None:
-        # Not eligible → never even fetches the file list (no gh call) and never arms.
-        with mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path"
-        ) as protected, mock.patch.object(
             review_feedback_loop, "_arm_auto_merge"
         ) as arm:
             result = review_feedback_loop._maybe_arm_auto_merge(
                 "o", "r", 7, {"eligible_for_auto_merge": False}
             )
         self.assertFalse(result["armed"])
-        protected.assert_not_called()
         arm.assert_not_called()
 
-    def test_sync_pr_arms_eligible_low_risk_pr_when_threads_clear(self) -> None:
-        # End-to-end through sync_pr: a low-risk, grace-elapsed PR with no current threads
-        # is armed (guarded). Mirrors "arm when the last blocking thread clears".
+    def test_sync_pr_arms_eligible_clear_pr_when_threads_clear(self) -> None:
+        # End-to-end through sync_pr: a clear-pair (risk/—), grace-elapsed PR with no current
+        # threads is armed (guarded). Mirrors "arm when the last blocking thread clears".
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         args = SimpleNamespace(
             owner="LAF-US",
@@ -536,7 +1011,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ready = _pr(
             number=200,
             created_at=now - timedelta(minutes=45),
-            labels=(review_feedback_loop.RISK_LOW_LABEL,),
+            labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
         )
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
             review_feedback_loop, "_fetch_pr", return_value=ready
@@ -547,15 +1022,13 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=False
-        ), mock.patch.object(
             review_feedback_loop, "_run"
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, contextlib.redirect_stdout(io.StringIO()):
             result = review_feedback_loop.sync_pr(args)
         self.assertEqual(result, 0)
-        arm.assert_called_once_with(200)
+        arm.assert_called_once_with("LAF-US", "IDAHO-VAULT", 200)
 
     def test_resolve_outdated_resolvable_attests_only_outdated_bot_threads(self) -> None:
         # The event-driven outdated-resolve: attest-resolves the OUTDATED bot thread and
@@ -628,9 +1101,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # The lazily-resolved actor is the witness passed to attest_and_resolve.
         self.assertEqual(attest.call_args.args[2], "github-actions[bot]")
 
-    def test_reconcile_open_prs_promotes_and_arms_eligible_low_risk_pr(self) -> None:
-        # Reversal (2026-06-17): a low-risk, grace-elapsed, unblocked, non-protected-path PR
-        # is now promoted to merge/auto and armed for the merge queue.
+    def test_reconcile_open_prs_promotes_and_arms_eligible_clear_pair_pr(self) -> None:
+        # K3/#629: a clear-pair (risk/—), grace-elapsed, unblocked PR is promoted to
+        # merge/auto and armed for the merge queue. (A risk/low PR would HOLD instead.)
         args = SimpleNamespace(
             owner="LAF-US",
             repo="IDAHO-VAULT",
@@ -639,7 +1112,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ready_pr = _pr(
             number=88,
             created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
-            labels=(review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,),
+            labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
         )
 
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
@@ -659,8 +1132,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=False
-        ), mock.patch.object(
             review_feedback_loop, "_edit_label"
         ) as edit_label, mock.patch.object(
             review_feedback_loop, "_comment"
@@ -672,27 +1143,44 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(result, 0)
         edit_label.assert_any_call(88, add=review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL)
         comment.assert_called_once()
-        arm_auto_merge.assert_called_once_with(88)
+        arm_auto_merge.assert_called_once_with("LAF-US", "IDAHO-VAULT", 88)
 
-    def test_reconcile_open_prs_refuses_to_arm_protected_path_pr(self) -> None:
-        # The protected-path guard: even an eligible PR that touches governance/CI surfaces
-        # is NOT armed — it waits for a human.
+    def test_promote_ready_fails_loud_on_invariant_violation(self) -> None:
+        # K4/#630: promote_ready shares reconcile's exit-code contract — non-zero when the
+        # invariant tripped (CI red), zero otherwise. `promote_ready` reads the report via
+        # dict.get, so the stub returns a dict (not a namespace).
         args = SimpleNamespace(owner="LAF-US", repo="IDAHO-VAULT", grace_minutes=30)
-        # Eligible (risk/low + grace + merge/auto label, unblocked) — so the ONLY thing
-        # stopping the arm is the protected-path guard.
-        ready_pr = _pr(
-            number=91,
-            created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
-            labels=(
-                review_feedback_loop.RISK_LOW_LABEL,
-                review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL,
-            ),
-        )
 
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
-            review_feedback_loop, "_list_open_pr_numbers", return_value=[91]
+            review_feedback_loop, "_build_reconciliation_report"
+        ) as build_report, contextlib.redirect_stdout(io.StringIO()):
+            build_report.return_value = {"invariant_violations": [{"number": 90, "error": "x"}]}
+            self.assertEqual(review_feedback_loop.promote_ready(args), 1)
+
+            build_report.return_value = {"invariant_violations": []}
+            self.assertEqual(review_feedback_loop.promote_ready(args), 0)
+
+    def test_reconcile_fails_loud_on_invariant_but_still_sweeps_rest(self) -> None:
+        # K4/#630 fail-loud, right blast radius: a PR carrying risk/— alongside a flag trips
+        # the invariant. The sweep records it, exits non-zero (CI red), yet still processes
+        # every OTHER open PR — one mis-labeled PR must not starve the rest.
+        args = SimpleNamespace(owner="LAF-US", repo="IDAHO-VAULT", grace_minutes=30)
+        bad_pr = _pr(
+            number=90,
+            created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
+            labels=(review_feedback_loop.RISK_CLEAR_LABEL, review_feedback_loop.RISK_LOW_LABEL),
+        )
+        good_pr = _pr(
+            number=91,
+            created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
+            labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
+        )
+
+        out = io.StringIO()
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_list_open_pr_numbers", return_value=[90, 91]
         ), mock.patch.object(
-            review_feedback_loop, "_fetch_pr", side_effect=[ready_pr]
+            review_feedback_loop, "_fetch_pr", side_effect=[bad_pr, good_pr]
         ), mock.patch.object(
             review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
         ), mock.patch.object(
@@ -700,14 +1188,19 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=True
+            review_feedback_loop, "_edit_label"
         ), mock.patch.object(
-            review_feedback_loop, "_arm_auto_merge"
-        ) as arm_auto_merge:
+            review_feedback_loop, "_comment"
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ) as arm_auto_merge, contextlib.redirect_stdout(out), contextlib.redirect_stderr(io.StringIO()):
             result = review_feedback_loop.reconcile_open_prs(args)
 
-        self.assertEqual(result, 0)
-        arm_auto_merge.assert_not_called()
+        self.assertEqual(result, 1)  # fail loud → non-zero exit
+        report = json.loads(out.getvalue())
+        self.assertEqual([v["number"] for v in report["invariant_violations"]], [90])
+        # The good PR was still armed — the sweep did not abort on the bad one.
+        arm_auto_merge.assert_called_once_with("LAF-US", "IDAHO-VAULT", 91)
 
     def test_reconcile_open_prs_reports_auth_blocked_auto_merge(self) -> None:
         ready_pr = _pr(
@@ -742,8 +1235,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             },
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
-        ), mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=False
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(
                 False,
@@ -788,8 +1279,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             return_value=outdated_results,
         ) as resolve_outdated, mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
-        ), mock.patch.object(
-            review_feedback_loop, "_pr_touches_protected_path", return_value=False
         ):
             report = review_feedback_loop._build_reconciliation_report(
                 "LAF-US", "IDAHO-VAULT", grace_minutes=30
@@ -877,13 +1366,13 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_author_is_bot(self) -> None:
         self.assertTrue(
-            review_feedback_loop._author_is_bot({"login": "coderabbitai", "__typename": "Bot"})
+            pr_threads._author_is_bot({"login": "coderabbitai", "__typename": "Bot"})
         )
-        self.assertTrue(review_feedback_loop._author_is_bot({"login": "dependabot[bot]"}))
+        self.assertTrue(pr_threads._author_is_bot({"login": "dependabot[bot]"}))
         self.assertFalse(
-            review_feedback_loop._author_is_bot({"login": "loganfinney27", "__typename": "User"})
+            pr_threads._author_is_bot({"login": "loganfinney27", "__typename": "User"})
         )
-        self.assertFalse(review_feedback_loop._author_is_bot({}))
+        self.assertFalse(pr_threads._author_is_bot({}))
 
     def test_thread_is_bot_only(self) -> None:
         bot_only = _thread(authors=("coderabbitai", "chatgpt-codex-connector"), author_type="Bot")
@@ -1365,11 +1854,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_has_committable_suggestion_detects_block(self) -> None:
         t = _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY)
-        self.assertTrue(review_feedback_loop._thread_has_committable_suggestion(t))
+        self.assertTrue(pr_threads._thread_has_committable_suggestion(t))
 
     def test_has_committable_suggestion_false_on_prose(self) -> None:
         t = _thread(authors=("coderabbitai",), author_type="Bot", body="Consider fixing X.")
-        self.assertFalse(review_feedback_loop._thread_has_committable_suggestion(t))
+        self.assertFalse(pr_threads._thread_has_committable_suggestion(t))
 
     def test_resolution_apply_suggestion(self) -> None:
         t = _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY)

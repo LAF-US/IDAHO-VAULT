@@ -70,7 +70,7 @@
 
 ### Components of a Swarm Agent
 
-```text
+```
 ┌────────────────────────────────Ŀ
 │           SWARM AGENT             │
 ├────────────────────────────────Ĵ
@@ -200,7 +200,7 @@ Based on research from Milvus and swarm intelligence literature:
 
 **Structure:**
 
-```text
+```
           Master Agent
          /    |    \
    Coordinator  Coordinator  Coordinator

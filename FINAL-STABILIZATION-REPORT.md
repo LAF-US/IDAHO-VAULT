@@ -91,7 +91,7 @@ graph TD
 
 ### Stabilization Infrastructure
 
-```text
+```
 !/
 ├── STABILIZATION-PLAN.md        # Original plan (2026-05-06)
 ├── STABILIZATION-REPORT.md      # Detailed report
@@ -282,7 +282,7 @@ $session = New-StabilizationSession -SessionId "agent-swarm-001" -InitialContext
 
 ### Metrics
 
-```markdown
+```
 Overall Health: 75% (Core operational, services need configuration)
 
 Component Health:

@@ -30,6 +30,6 @@ The four presidents of Idaho’s four-year universities present to JFAC this mor
 
 ## Media
 
-- ![alt text needed](https://pbs.twimg.com/media/EOvMoRTU8AIMbna.jpg)
+- ![](https://pbs.twimg.com/media/EOvMoRTU8AIMbna.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1219293894984134659)

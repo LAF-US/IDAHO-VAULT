@@ -59,4 +59,4 @@ It also works on mobile devices.
 
 ==Download Cornell Notes Learning Vault for free at:== [GitHub](https://github.com/TfTHacker/cornell-notes-learning-vault)
 
-![alt text needed](https://www.youtube.com/watch?v=jb_ifELEbjQ)
+![](https://www.youtube.com/watch?v=jb_ifELEbjQ)

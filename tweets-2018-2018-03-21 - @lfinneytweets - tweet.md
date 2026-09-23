@@ -21,7 +21,7 @@ related:
 
 ## Media
 
-- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/DYzEfNgV4AEY7CO.jpg)
+- ![](https://pbs.twimg.com/tweet_video_thumb/DYzEfNgV4AEY7CO.jpg)
 
 *In reply to [@gretelkauffman](https://twitter.com/gretelkauffman)*
 

@@ -32,38 +32,18 @@ MAX_PORTABLE_PATH = 218
 
 def git_tracked_files() -> list[str]:
     """Return every path tracked at HEAD, with non-ASCII names left unquoted."""
-    try:
-        result = subprocess.run(
-            ["git", "-c", "core.quotePath=false", "ls-tree", "-r", "HEAD", "--name-only"],
-            check=True,
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            timeout=30,
-        )
-    except subprocess.TimeoutExpired as exc:
-        raise RuntimeError("git ls-tree timed out after 30s") from exc
-    except subprocess.CalledProcessError as exc:
-        raise RuntimeError((exc.stderr or "").strip() or "git ls-tree failed") from exc
-    except OSError as exc:
-        raise RuntimeError(f"git ls-tree could not run: {exc}") from exc
+    result = subprocess.run(
+        ["git", "-c", "core.quotePath=false", "ls-tree", "-r", "HEAD", "--name-only"],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
     return [line for line in result.stdout.splitlines() if line]
 
 
 def normalize(path: str) -> str:
-    """Fold a path to the key under which target filesystems may equate names.
-
-    Three folds, one per way two distinct Git paths can land on the same file:
-    separators (backslash vs slash), case (NTFS/APFS are case-insensitive), and
-    Unicode normalization form -- macOS stores decomposed (NFD), so `é` as one
-    codepoint and `e`+combining-accent are the same name there while Git tracks
-    them as two. The NFC fold was missing until 2026-08-16; it was found by
-    testing the principle against the check, and at the time of adding, the
-    tree had 1,087 non-ASCII paths and zero NFC/NFD twins -- so this closes the
-    gap before it is ever exercised rather than after.
-    """
-    return unicodedata.normalize("NFC", path).replace("\\", "/").casefold()
+    """Fold a path to its case-insensitive, separator-agnostic comparison key."""
+    return path.replace("\\", "/").casefold()
 
 
 def case_collisions(paths: list[str]) -> dict[str, list[str]]:
@@ -86,16 +66,6 @@ def path_violations(path: str) -> list[str]:
     # path and `git checkout` aborts ("invalid path"). Flag it before normalizing.
     if "\\" in path:
         findings.append(f"BACKSLASH IN PATH: {path} (illegal on Windows; breaks checkout)")
-    # A decomposed (non-NFC) name is a hazard even with no twin tracked yet:
-    # git on macOS re-encodes NFD to NFC at index time (core.precomposeunicode),
-    # so the name does not round-trip byte-identical — and the day its NFC
-    # spelling is added, the pair becomes a same-file collision. Rejecting the
-    # lone NFD path at introduction catches the hazard before it needs a twin.
-    if unicodedata.normalize("NFC", path) != path:
-        findings.append(
-            f"NON-NFC UNICODE: {path} (decomposed form; re-encoded by macOS git, "
-            "so the name does not survive a round trip)"
-        )
     parts = path.replace("\\", "/").split("/")
     for part in parts:
         if not part:

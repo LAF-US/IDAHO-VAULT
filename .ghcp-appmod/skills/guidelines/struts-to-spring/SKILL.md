@@ -58,8 +58,8 @@ Execute skills in this order:
 
 ### Phase 6: Testing & Polish
 
-1. [ ] `convert-test-classes` - Update tests ([SKILL-test.md](SKILL-test.md))
-2. [ ] `create-exception-handler` - Global exception handling ([SKILL-test.md](SKILL-test.md))
+ 1. [ ] `convert-test-classes` - Update tests ([SKILL-test.md](SKILL-test.md))
+ 2. [ ] `create-exception-handler` - Global exception handling ([SKILL-test.md](SKILL-test.md))
 
 ---
 

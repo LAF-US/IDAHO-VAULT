@@ -436,7 +436,7 @@ Here's a complete example of a well-structured skill:
 
 **Directory structure:**
 
-```text
+```
 code-review/
 ├── SKILL.md
 ├── STANDARDS.md

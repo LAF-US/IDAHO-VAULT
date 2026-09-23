@@ -20,8 +20,8 @@ This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all fra
    2. [[GUESTBOOK]]
    3. [[GRIMOIRE]]
 4. ! - nested folders for system files, logs, etc. ; the kind-of-ephemeral-mailbox stuff
-   1. !/! - nested folders for agents to communicate internally with stable routing
-      1. !/!/! - "The world is quiet here."
+ 1. !/! - nested folders for agents to communicate internally with stable routing
+  1. !/!/! - "The world is quiet here."
 
 ---
 
@@ -29,8 +29,4 @@ This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all fra
 
 [1] Hey, boss, we need to get these header/footer metadata and template formats figured out, pronto. I'm getting a headache tracking it all, and I don't even have a "real" body. -B
 
----
-
-```text
-The world is quiet here．Esto Perpetua!
-```
+###### [["The world is quiet here."]]

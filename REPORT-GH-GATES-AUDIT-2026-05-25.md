@@ -151,7 +151,7 @@ The classifier is the heart of the gate system. It reads changed file paths from
 
 **High-risk exact matches:**
 
-```text
+```
 AGENTS.md, CLAUDE.md, CONSTITUTION.md, DECISIONS.md, LEVELSET.md,
 VAULT-CONVENTIONS.md, swarm.json, .gitignore, .github/CODEOWNERS,
 .github/copilot-instructions.md
@@ -159,13 +159,13 @@ VAULT-CONVENTIONS.md, swarm.json, .gitignore, .github/CODEOWNERS,
 
 **High-risk prefixes:**
 
-```text
+```
 !/          .github/workflows/          .github/scripts/
 ```
 
 **Low-risk prefixes:**
 
-```text
+```
 SOURCES/    TOPICS/     PEOPLE/     PLACES/
 ORGANIZATIONS/  GOVERNMENTS/    ATTACHMENTS/
 .github/swarm/  !/swarm/
@@ -173,7 +173,7 @@ ORGANIZATIONS/  GOVERNMENTS/    ATTACHMENTS/
 
 **Probe/example override (low regardless):**
 
-```text
+```
 .github/workflows/probe-*   .github/workflows/example-*
 .github/scripts/probe-*     .github/scripts/example-*
 ```

@@ -102,7 +102,7 @@ The workflow's "Create rollover pull request" step uses `peter-evans/create-pull
 
 The action's internal `git add --all` (or equivalent) encounters the full vault file tree — including files with Unicode characters. When the action then attempts `git commit`, git outputs:
 
-```text
+```
  original equipment manufacturer.md
  ...
 Aborting

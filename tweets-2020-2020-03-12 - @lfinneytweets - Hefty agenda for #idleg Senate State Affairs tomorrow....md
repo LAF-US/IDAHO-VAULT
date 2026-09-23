@@ -22,6 +22,6 @@ Hefty agenda for #idleg Senate State Affairs tomorrow morning. New property tax 
 
 ## Media
 
-- ![alt text needed](https://pbs.twimg.com/media/ES7WUokUYAEOVTE.jpg)
+- ![](https://pbs.twimg.com/media/ES7WUokUYAEOVTE.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1238163459046379520)

@@ -119,6 +119,4 @@ Vault Advisor (Gemini) maintains the DOCKET and should update this count each se
 
 ---
 
-```text
-The world is quiet here．Esto Perpetua!
-```
+###### The world is quiet here

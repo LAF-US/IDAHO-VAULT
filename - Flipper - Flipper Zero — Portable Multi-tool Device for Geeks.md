@@ -145,4 +145,4 @@ Flipper Zero has a built-in 1-Wire connector to read iButton contact keys. This 
   
 Flipper Zero has a unique iButton contact pad design — its shape works both as a reader and a probe to connect to iButton sockets.
 
-![alt text needed](https://cdn.flipper.net/zero_landing_ibutton_emulating.jpg) ![alt text needed](https://cdn.flipper.net/zero_landing_ibutton_pins.png) ![alt text needed](https://cdn.flipper.net/zero_landing_whats-inside.jpg)
+![](https://cdn.flipper.net/zero_landing_ibutton_emulating.jpg) ![](https://cdn.flipper.net/zero_landing_ibutton_pins.png) ![](https://cdn.flipper.net/zero_landing_whats-inside.jpg)

@@ -231,8 +231,4 @@ Needs: reformatting and simplification - vault-wide survey and census and scanni
 
 UNIFIED (US) SWARM designed and written in Logan's Project & Protocols syntaxic codes.
 
----
-
-```text
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

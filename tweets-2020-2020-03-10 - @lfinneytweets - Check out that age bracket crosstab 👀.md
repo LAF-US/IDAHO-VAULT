@@ -20,7 +20,7 @@ related:
 
 ## Media
 
-- ![alt text needed](https://pbs.twimg.com/media/EStwQqeUMAAo6sv.jpg)
+- ![](https://pbs.twimg.com/media/EStwQqeUMAAo6sv.jpg)
 
 *In reply to [@danielwreporter](https://twitter.com/danielwreporter)*
 

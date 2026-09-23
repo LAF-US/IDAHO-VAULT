@@ -231,6 +231,4 @@ Aim for 3-5 iterations minimum once a crew is truly training-ready.
 
 ---
 
-```text
-The world is quiet here．Esto Perpetua!
-```
+###### The world is quiet here

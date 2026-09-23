@@ -58,7 +58,7 @@ This document defines the structured process for managing the lifecycle of non-p
 
 **Output:**
 
-- `LEVELSET-SUNSET-<agent-name>.md` synthesis document
+- LEVELSET-SUNSET-<agent-name>.md synthesis document
 - Updated AGENT-REGISTRY.md entry
 - Commit in git history with session tracking
 
@@ -82,7 +82,7 @@ This document defines the structured process for managing the lifecycle of non-p
 
 **Input:**
 
-- `LEVELSET-SUNSET-<agent-name>.md` reports
+- LEVELSET-SUNSET-<agent-name>.md reports
 - AGENT-REGISTRY.md
 - Git history and branch state
 
@@ -102,7 +102,7 @@ This document defines the structured process for managing the lifecycle of non-p
 1. Logan reviews all flagged agents in AGENT-REGISTRY.md
 2. Logan issues deletion order in format:
 
-   ```text
+   ```
    DELETE: <Agent Name>
    Reason: [brief rationale]
    Approved: Logan
@@ -154,7 +154,7 @@ This document defines the structured process for managing the lifecycle of non-p
 
 **Steps:**
 
-1. Create `LEVELSET-DELETE-<agent>.md` report (template provided below)
+1. Create LEVELSET-DELETE-<agent>.md report (template provided below)
 2. Document:
    - Agent identity and dates of operation
    - All commits/branches created
@@ -169,7 +169,7 @@ This document defines the structured process for managing the lifecycle of non-p
 
 **Output:**
 
-- `LEVELSET-DELETE-<agent>.md` report in git history
+- LEVELSET-DELETE-<agent>.md report in git history
 - AGENT-REGISTRY.md marked DELETED
 - Immutable audit trail
 

@@ -47,7 +47,7 @@ Swarm agents need a governed, auditable, single-choke-point interface to Linear.
 
 ## 2. Architecture
 
-```text
+```
                          ┌────────────────────────────────Ŀ
                          │         LINEAR (GraphQL)         │
                          │  api.linear.app/graphql          │

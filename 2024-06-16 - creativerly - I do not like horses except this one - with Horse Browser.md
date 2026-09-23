@@ -106,4 +106,4 @@ For now, I enjoy a cozy rainy evening, a cup of tea, a hoodie, and a blanket, si
 
 **Support:** Do you have a friend who is looking for inspiration, news about design, and useful tools and apps? Forward this newsletter to a friend or simply share this issue and show some support. You can also show some love by simply clicking the button down below and keep this newsletter a sustainable side-project by [**buying me a coffee**](https://buymeacoffee.com/creativerly?ref=creativerly.com). ☕️ 🥰
 
-[![alt text needed](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=%F0%9F%A4%A9&slug=creativerly&button_colour=5F7FFF&font_colour=ffffff&font_family=Inter&outline_colour=000000&coffee_colour=FFDD00)](https://www.buymeacoffee.com/creativerly?ref=creativerly.com)
+[![](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=%F0%9F%A4%A9&slug=creativerly&button_colour=5F7FFF&font_colour=ffffff&font_family=Inter&outline_colour=000000&coffee_colour=FFDD00)](https://www.buymeacoffee.com/creativerly?ref=creativerly.com)

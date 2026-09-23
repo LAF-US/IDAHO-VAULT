@@ -80,7 +80,7 @@ Bessie Mary Adele Bonner
 
 ## Sources (39)
 
-- ![alt text needed](https://ancestors.familysearch.org/service/tree/tree-data/published/sources/KZ6L-63V/images/t/0/image.jpg)
+- ![](https://ancestors.familysearch.org/service/tree/tree-data/published/sources/KZ6L-63V/images/t/0/image.jpg)
  Edward L Bonner, "United States Census, 1860"
 - Montana, U.S., Birth Records, 1897-1988
 - ![alt text needed](https://ancestors.familysearch.org/service/tree/tree-data/published/sources/KZ6L-63V/images/t/2/image.jpg)

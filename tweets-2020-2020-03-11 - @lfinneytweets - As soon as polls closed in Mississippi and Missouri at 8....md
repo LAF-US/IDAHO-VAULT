@@ -23,6 +23,6 @@ related:
 
 ## Media
 
-- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/ESyuTsUU4AAv9V5.jpg)
+- ![](https://pbs.twimg.com/tweet_video_thumb/ESyuTsUU4AAv9V5.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237555660121751553)

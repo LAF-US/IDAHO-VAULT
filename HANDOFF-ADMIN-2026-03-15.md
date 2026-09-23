@@ -58,7 +58,7 @@ Describes Monday UTC schedule (sort audit 6am, propose moves 7am, wayback audit 
 
 Partially resolved:
 
-- [x] `sort_audit.py` v2 — delivered to main (no longer needs `vault_push.py`)
+- [x] `so***REMOVED***audit.py` v2 — delivered to main (no longer needs `vault_push.py`)
 - [x] Re-run sort audit — v2 report not yet generated but script is deployed
 - [ ] Action genuine sort issues from v1 — still pending
 - [ ] Wayback audit `--limit 20` — still pending

@@ -183,7 +183,7 @@ LEVELSET (session start)
     │
     └─▶ REPORT ──▶ Emit verified state ──▶ DISMISS
 
-```text
+```
 
 ### Distributed Verification Command Reference
 

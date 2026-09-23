@@ -23,7 +23,7 @@ Passed the House today #idleg #idpol <https://t.co/CMKdqY8r59>
 
 ## Media
 
-- ![alt text needed](https://pbs.twimg.com/media/EP9T_q6UEAA1yhO.png)
+- ![](https://pbs.twimg.com/media/EP9T_q6UEAA1yhO.png)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

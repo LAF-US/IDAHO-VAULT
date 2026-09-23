@@ -43,7 +43,7 @@ related:
 
 **SBP Enhancement:**
 
-```text
+```
 EMIT vault.signal.new      intensity=1.0  payload={sig_id, from, to, subject}
 EMIT vault.signal.pending   intensity=N    payload={count}
 ```
@@ -72,7 +72,7 @@ REGISTER_SCENT vault.docket.pending >= 1 → wake_agent
 
 **SBP Enhancement:**
 
-```text
+```
 Every 5 min: EMIT vault.agent.claude.heartbeat intensity=0.8
 If no reinforcement for 15 min: evaporation → agent presumed dead
 ```
@@ -173,6 +173,6 @@ The vault already has the **blackboard concept** — it's the file system + git 
 
 ---
 
-```text
-The world is quiet here．Esto Perpetua!
-```
+###### [["The world is quiet here."]]
+
+###### [ Maiden : Mother : Crone ]

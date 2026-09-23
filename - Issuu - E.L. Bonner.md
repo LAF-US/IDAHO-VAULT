@@ -53,4 +53,4 @@ The Bonner County History Museum at 611 S. Ella Ave., Sandpoint, welcomes visito
 
 ![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/37d7bad84f91a005095e2823d324c95e.jpeg?width=720&quality=85%2C50)
 
-![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/bd82521c1e3c3e50dd5c5b3e5b487929.jpeg?width=720&quality=85%2C50)
+![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/bd82521c1e3c3e50dd5c5b3e5b487929.jpeg?width=720&quality=85%2C50)

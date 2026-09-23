@@ -1,3 +1,5 @@
+<%* const d = moment(tp.file.title, "YYYY-MM-DD") -%>
+
 ---
 title: <% moment(tp.file.title, "YYYY-MM-DD").format("YYYY-MM-DD") %>
 aliases:
@@ -18,8 +20,9 @@ tags:
   - today
   - <% moment(tp.file.title, "YYYY-MM-DD").format("YYYY/MM/DD") %>
   - dailynote
-date created: <% moment(tp.file.title, "YYYY-MM-DD").format("dddd, MMMM Do YYYY, h:mm:ss a") %>
-date modified: <% moment(tp.file.title, "YYYY-MM-DD").format("dddd, MMMM Do YYYY, h:mm:ss a") %>
+date created: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
+date modified: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
+
 ---
 
 ## Daily Queue
