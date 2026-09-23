@@ -19,7 +19,9 @@ from html import unescape
 import zipfile
 
 VAULT_ROOT = Path(r"c:\Users\loganf\Documents\IDAHO-VAULT")
-TEMP_DIR = Path(os.environ.get("TEMP") or os.environ.get("TMP") or tempfile.gettempdir()) / "twitter-extract"
+# Use a private, securely created directory rather than an environment-controlled
+# extraction root. Archive metadata is always written beneath this directory.
+TEMP_DIR = Path(tempfile.mkdtemp(prefix="twitter-extract-"))
 OUTPUT_DIR = VAULT_ROOT / "tweets"
 
 # --- Helpers ---

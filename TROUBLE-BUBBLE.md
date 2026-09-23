@@ -10,7 +10,7 @@ related:
 - The world is quiet here
 ---
 
-Mr. Trouble-Bubble — white poodle pup of the GONZALEZ-FINNEY house; Logan and Aurora's canine companion.
+# Mr. Trouble-Bubble Curtis Gonzalez-Finney the Doodle
 
 Mr. Trouble-Bubble Curtis Gonzalez-Finney the Doodle — white poodle pup of the GONZALEZ-FINNEY house.
 

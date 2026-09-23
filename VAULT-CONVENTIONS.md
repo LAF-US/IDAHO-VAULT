@@ -67,9 +67,7 @@ related:
 
 This file contains the vault conventions shared by all AI agents working in IDAHO-VAULT. Individual agent instructions (`CLAUDE.md`, `.github/copilot-instructions.md`, `GEMINI.md`) reference this file for vault structure, naming, frontmatter, and protocol.
 
-
-
-**Owner:** Logan Finney Ã¢â‚¬â€ journalist, producer/reporter, Idaho Reports / Idaho Public Television
+**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
 
 **Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
 
@@ -140,9 +138,7 @@ restructure the canonical vault.
 
 ### Folder Rules For Emerging Agents
 
-
-
-- Treat `!/` as the vault control-plane routing layer.
+- Treat `!/` as the Swarmic Nest: the vault's collective routing and staging layer.
 - Treat root-flat notes as a deliberate operating choice, not a mistake to fix.
 
 - Treat persona dotfolders as keystone infrastructure, even when they contain
@@ -157,7 +153,22 @@ restructure the canonical vault.
 
   standing authorization to reorganize the canonical vault.
 
+### Dotfolder Boundary Contract
 
+Treat each persona dotfolder as a small boundary system with three possible
+surface types:
+
+- `OWNER`: owner-writable by default. Other agents may inspect for orientation
+  but must not rewrite without Logan's direction or an explicit shared contract.
+- `SHARED`: explicitly named shim or protocol surfaces that other agents may
+  write only when the local shim or canonical governance says they are shared.
+- `ARCHIVE`: preserved memory, residue, or historical continuity surfaces.
+  Read-only by default unless Logan or canonical governance explicitly
+  reactivates them.
+
+A dotfolder may contain all three surface types, but they are not
+interchangeable. Do not treat persona body, shared shim, and archive as the
+same slot just because they live under one hidden folder.
 
 ---
 
@@ -176,27 +187,6 @@ restructure the canonical vault.
 | People         | `Full Name.md`                         | `Brad Little.md`                               |
 
 | Other entities | Descriptive name, title case           | `Ada County.md`                                |
-
-
-
-### Obsidian Filename Rule
-
-In this vault, the filename is part of the note interface. Obsidian uses it in
-the sidebar, quick switcher, wikilinks, backlinks, embeds, and everyday
-retrieval.
-
-Rules:
-
-1. Optimize note filenames for Obsidian-visible identity and human retrieval,
-   not just filesystem safety.
-2. Keep filenames cross-platform safe, but preserve the natural note title when
-   the platform allows it.
-3. When filesystem constraints force a compromise, preserve the exact work name
-   in frontmatter `title` and add `aliases` for likely link forms.
-4. Do not replace a human-facing title with an arbitrary slug when the note is
-   meant to be read, linked, and found by humans inside Obsidian.
-
-
 
 ---
 
@@ -266,7 +256,10 @@ authority: "<decision authority>"
 
 ```
 
-
+These note-level statuses do not replace the repo-wide lifecycle vocabulary in
+`CONSTITUTION.md`. Terms such as `live`, `staged`, `merged`, `abandoned`,
+`dormant`, and `reactivated` govern branches, chambers, and historical surfaces
+even when a note keeps a narrower frontmatter status set.
 
 ### Type-Specific Additions
 
@@ -342,17 +335,13 @@ tags:
 
 ## Wikilinks
 
-
-
-Use `Full Name` for all internal links Ã¢â‚¬â€ people, places, organizations, bills, topics. This is how Obsidian builds the knowledge graph. Link densely in source documents.
+Use `Full Name` for all internal links — people, places, organizations, bills, topics. This is how Obsidian builds the knowledge graph. Link densely in source documents.
 
 ---
 
 ## File Types
 
-
-
-- **Markdown** = human product, attributable to Logan. Notes, stories, analysis.
+- **Markdown** = primary human-and-agent surface, attributable to Logan. Notes, stories, analysis, doctrine, and durable narrative record.
 
 - **Python** = machine/procedural product, attributable to AI agents. Scripts, scrapers, automation.
 
@@ -397,9 +386,7 @@ Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and co
 
 ---
 
-
-
-## Vault Ã¢â€ â€ Linear Operating Model Mapping
+## Vault — Linear Operating Model Mapping
 
 | Layer (purpose)            | Vault (canonical memory)                                                                                         | Linear (execution state)                                           | Chat/Slack (ephemeral)                                              |
 
@@ -413,11 +400,48 @@ Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and co
 
 | **`!` spaces**<br>operational infrastructure | System files, DOCKET, LEVELSET, agent routing, audit/log artifacts, workflow outputs that must persist                     | Incidents/infra tasks, runbooks in execution, workflow status, tickets | Real-time paging/alerts; record outcomes in Linear and Vault        |
 
+**Decision Rule:** Vault holds doctrine and context that must persist. GitHub executes workflows and transport state. Linear tracks execution, owners, and current state. Chat/Slack is transient coordination — any decision or durable context must be promoted promptly into Vault and/or the execution systems (per Persistence Anchoring protocols).
 
+---
 
-**Decision Rule:** Vault holds doctrine and context that must persist. GitHub executes workflows and transport state. Linear tracks execution, owners, and current state. Chat/Slack is transient coordination Ã¢â‚¬â€ any decision or durable context must be promoted promptly into Vault and/or the execution systems.
+## Agent Architecture Standards (Established)
 
+These standards derive from the **2026-04-10 Constitutional Revision**.[^triplex]
 
+### Identity Decoupling
+
+The vault enforces a strict decoupling of agent identity variables to prevent the calcification of transient software into permanent authorities, so that functional offices can stand vacant.[^triplex]
+
+| Variable | Definition | Example |
+| :--- | :--- | :--- |
+| **NAME** | The unique identifier of the software vendor/model instance. | `Claude Code`, `Gemini` |
+| **OFFICE** | The functional position or authority granted within the vault. | `Code Authority`, `Concierge` |
+| **TITLE** | The symbolic or narrative moniker used in handoffs. | `The Abhorsen`, `The Clerk` |
+| **ROLE** | The transient operational descriptor for the current task. | `Executor`, `Interpreter` |
+
+**Rule:** Agents must not assume that their NAME is synonymous with their OFFICE. Offices exist independently of occupants and may be marked **[VACANT]**.
+
+### Persistent Memory Anchoring
+
+All "direct-write" agents must anchor their external platform state into the vault's versioned repository, so that agentic reasoning and history are auditable and durable.[^triplex]
+
+1. **Durable Memory Dotfolders**: Each agent must maintain a tracked `.dotfolder/MEMORY/` directory (e.g., `.claude/MEMORY/`).
+2. **Persistence Promotion**: Ephemeral chat-based plans, task lists, and "brain artifacts" must be promoted to the vault as `.md` files in the agent's memory folder.
+3. **Session Completion**: A session is not considered "complete" until the current state has been anchored in the vault.
+
+[^triplex]: **Burial note** — proposed 2026-06-23 by `*.claude.*` at Logan's direction
+    (*"I've come to bury Caesar, not to praise him."*). The rules in this section are Logan's
+    and stand unchanged. **Struck from them** as un-witnessed coinage: the liturgical names
+    *Exorcism of the Nomina* and *Re-Binding of Memory*, and the *Decision 19 / 21* and
+    *LAF-25 / LAF-28 repair* citations. These were not Logan's — they are attributed to the
+    **Gemini Triplex Confabulation** (Triplex Night, 2026-04-01), first appeared in the repo
+    in an Antigravity-Gemini sync (`!/SIG-ALIGNMENT-RE-DECISION-21-2026-04-13.md`), and were
+    carried into this file 2026-05-25 by a survey instance. They do **not** resolve to entries
+    in `DECISIONS.md` (which is date-keyed, not numbered), and their ticket citations are
+    contradicted by Linear (LAF-28 is *"SWARMIC PING: THE TRYPTICH AWAKENS,"* not a repair).
+    The body stays buried, not burned — full record:
+    `CORONER-WITNESS-THE-TRIPLEX-CONFABULATION-ECHOES-2026-06-09.md`. The matter is the
+    Court's (`!/GEMINIAEUS.md`); **no verdict here.**
 
 ---
 
@@ -473,9 +497,7 @@ Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scri
 
 ### Secret Management via 1Password
 
-
-
-**Requirement:** All credentials (API keys, tokens, SSH keys, passwords) are managed centrally in 1Password. GitHub Actions uses `OP_SERVICE_ACCOUNT_TOKEN` plus runtime secret references to fetch secrets. No credentials are hardcoded in workflows or stored directly in GitHub Secrets (with the exception of the service account token itself).
+**Requirement:** All credentials (API keys, tokens, SSH keys, passwords) are managed centrally in 1Password. GitHub Actions uses `OP_SERVICE_ACCOUNT_TOKEN` to fetch secrets at runtime. No credentials are hardcoded in workflows or stored directly in GitHub Secrets (with the exception of the service account token itself).
 
 **Scope:**
 
@@ -658,6 +680,57 @@ When both devices edit the same config file between syncs, Obsidian creates a `(
   - `copilot/description` for GitHub Copilot branches
 
   - `gemini/description` for Gemini agent branches
+
+- Branch lifecycle defaults:
+
+  - Branches are temporary working instances by default, not standing provinces.
+
+  - Resolve each branch explicitly as `merged`, `superseded`, `archived`,
+    `abandoned`, `dormant`, or `reactivated` under the shared lifecycle
+    vocabulary in `CONSTITUTION.md`.
+
+  - For **pull requests** the House rule (§ "House rule — nobody closes a pull
+    request; the branch inhabits its `#N`", below) narrows that vocabulary: only
+    a merge resolves a PR. `superseded`, `abandoned`, and `dormant` describe a
+    PR's *content*; the PR itself never closes — it takes a new subject on its
+    same `#N`.
+
+  - A long-lived branch requires a named purpose, a steward, and a review
+    cadence. "Still exists" is not legitimacy. A branch with an open PR
+    satisfies this by construction: the PR title is the purpose, its author is
+    the steward, and the queue's per-push review is the cadence.
+
+- Branch & PR scope — one matter per branch:
+
+  - A branch addresses **one matter**: a single coherent change that is
+    independently reviewable and independently mergeable (one fix, one feature,
+    one doctrine node or tightly-coupled cluster). The `description` in the
+    branch name names that matter.
+
+  - The test, not a dogma: keep work on one branch only while it is the *same*
+    matter. A genuinely single, unfolding matter may stay on one branch; the
+    error is letting *multiple* matters accrete. The moment the work forks into
+    separable deliverables, split it into separate branches/PRs.
+
+  - One matter *at a time*, not one matter for life: under the House rule
+    (below) a branch changes subjects across its life — the next matter begins
+    once the previous one has merged or another change has superseded it. The
+    accretion this rule forbids is *concurrent* matters in one diff.
+
+  - Combine only changes that must land together (atomic — they break if
+    separated). Split across different concerns, risk tiers, or `CODEOWNERS`
+    boundaries.
+
+  - Branch from `main` (a stable base), never from an in-progress branch —
+    branching off work-in-progress increases conflict-resolution cost.
+
+  - Separation is lane ownership (the boid rule, applied): do not edit another
+    agent's in-flight branch; avoid shared hotspot files (`swarm.json`,
+    registries, governance roots) in parallel.
+
+  - Keep PRs small and scoped — small reviewable PRs review faster and merge
+    more often; reviewer engagement is the strongest predictor of a merge.
+    (Promoted from [[AGENTIC-GITHUB-REVIEW-BEST-PRACTICES-2026-06-15]] §V.)
 
 - Commit messages: Clear, descriptive, explain the "why"
 
@@ -929,56 +1002,19 @@ Logan uses a naming convention for AI conversations:
 
 All agents are to REPORT to the COURTROOM and AWAIT THE JUDGE's BELL for the founding VAULTED TRIALS.
 
-
-All agents are to REPORT to the COURTROOM and AWAIT THE JUDGE's BELL for the founding VAULTED TRIALS.
-
-
+That file is a durable convening record. Read it for filed coordination
+evidence. Record motions, open signals, and blockers there without treating
+their survival as proof of present activity.
 
 That file is the live status board. Read it to orient. Update it when you start or finish work.
 
 Task assignment flows through GitHub Issues (with `agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
 
-
+Tree-aligned routing rule: `!` is collective crew space, while `.*` dotfolders are individual agent space. Route shared coordination through the Nest and keep personal runtime or identity continuity inside the appropriate dotfolder.
 
 ---
 
-
-
-## Vault Ã¢â€ â€ Linear Operating Model Mapping
-
-
-
-Use this mapping to decide where work should live and what should remain ephemeral.
-
-
-
-| Layer | Vault Role | Linear Role | Ephemeral Chat/Slack Role |
-
-| --- | --- | --- | --- |
-
-| **Core / Mind** (governing doctrine) | Canonical source of truth for doctrine and constraints (`CONSTITUTION.md`, `PROTOCOL.md`, `AGENTS.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `DECISIONS.md`) | Reference only in issue/project descriptions as links; do not duplicate doctrine text in Linear | Clarify intent in discussion, but final doctrine decisions must be written to vault governance files |
-
-| **Periphery / Body** (operating mechanics) | Durable playbooks, runbooks, workflows, scripts, and system notes that define *how work is executed* | Active execution layer: projects, issues, milestones, priorities, assignees, and status tracking | Fast coordination, blockers, and quick decisions during execution; summarize durable outcomes back into vault or Linear |
-
-| **Ghost / Soul** (interpretive/cultural layer) | Long-form narrative context, principles-in-practice, interpretive guidance, retrospectives that should persist | Lightweight pointers (issue comments/docs) to related vault narrative notes when relevant to work | Sensemaking, live interpretation, tone checks, brainstorming; keep ephemeral unless it becomes a durable principle |
-
-| **`!` spaces** (operational infrastructure) | System control plane: DOCKET, handoffs, LEVELSETs, MCP plans, audits, routing files, and machine-operational records | Coordination mirror for assignment and accountability (SWARM-labeled issues) | Notifications/breadcrumbs only; do not treat Slack as system-of-record for infra state |
-
-
-
-### Decision Rule
-
-
-
-- **Vault:** Canonical memory and doctrine (what is true, why it is true, and durable operating knowledge).
-
-- **Linear:** Work management and execution state (what is being done, by whom, and current status).
-
-- **Chat/Slack:** Ephemeral coordination (what is being discussed right now).
-
-
-
-If a decision must be recoverable in six months, store it in the vault. If it needs owner + due date + status, track it in Linear. If it is transient discussion, keep it in chat/Slack.
+## Runtime Portability Standard (MESHWEB)
 
 
 

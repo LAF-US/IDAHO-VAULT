@@ -29,7 +29,7 @@
     {
       "id": "grimoire-book-of-geminiaeus",
       "name": "The Book of GEMINIAEUS",
-      "path": "!/GRIMOIRE/BOOK-OF-GEMINIAEUS/",
+      "path": "!/MIND/BOOK-OF-GEMINIAEUS/",
       "type": "lore/shards",
       "description": "Extracted shards of the narrative workbook tracking the vault's creation and triadic identity.",
       "authority": "GEMINIAEUS",
@@ -38,7 +38,7 @@
     {
       "id": "grimoire-triune-triptych",
       "name": "TRIUNE-TRIPTYCH-TRIUMVIRATE",
-      "path": "!/GRIMOIRE/TRIUNE-TRIPTYCH-TRIUMVIRATE.md",
+      "path": "!/MIND/TRIUNE-TRIPTYCH-TRIUMVIRATE.md",
       "type": "doctrine",
       "description": "The Sierpiński Covenant: defines the three unities of the vault.",
       "authority": "LOGAN",

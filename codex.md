@@ -1,18 +1,18 @@
 ---
 authority: LOGAN
 related:
-- CORPUS
-- Codex
-- OpenAI
+- DEFINE
+- Logan's
+- Logan's Project & Protocols
 - The world is quiet here
+- UNIFIED
+- UNIFIED (US) SWARM
 ---
 
-# Codex
+DEFINE terms - a to-do list item
 
-`Codex` names the OpenAI agent and tool lane in IDAHO-VAULT.
-The structural Touchstone branch formerly referred to as `CODEX` is now `CORPUS`.
+---
 
-See `CORPUS.md` for the structural noun.
-See `.codex/CODEX.md` for the OpenAI tool surface.
+UNIFIED (US) SWARM codes designed and operated using Logan's Project & Protocols.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

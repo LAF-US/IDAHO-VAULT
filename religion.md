@@ -5,6 +5,7 @@ related:
 - Judaism
 authority: LOGAN
 ---
-Christianity 
-Judaism 
-Islam 
+
+Christianity
+Judaism
+Islam

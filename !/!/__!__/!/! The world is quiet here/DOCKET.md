@@ -42,9 +42,9 @@ Use this board to surface only live Logan-facing motion.
 | --- | --- | --- |
 | `!/SIGNALS/` | `1 ACKNOWLEDGED` | Open signal on file: `SIG-001-FROM-ABHORSEN-TO-VAULT-ADVISOR-RE-LAF44-EXHIBIT-A.md` |
 
-## WHERE LIVE WORK LIVES
+## Matters Awaiting Disposition
 
-| What | Where |
+| Matter | Question Reserved |
 | --- | --- |
 | Task coordination | Linear (SWARM label) + GitHub Issues (`agent:*` labels) |
 | Agent instructions | `CLAUDE.md`, `.github/copilot-instructions.md`, `GEMINI.md`, `ANTIGRAVITY.md` |

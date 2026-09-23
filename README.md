@@ -54,5 +54,6 @@ It is a pointer, not a separate constitution or duplicate governance layer.
 
 ## Stability note
 
-If instructions, automation, or handoff text drift from this anchor, correct them toward `IDAHO-VAULT/!` and the current root governance stack before adding new process.
-Treat older root-level orientation notes such as `!README.md` as historical breadcrumbs, not active metadata/template authority.
+If instructions, automation, or handoff text drift from this anchor, correct them toward `IDAHO-VAULT/!` and the canonical root governance stack before adding new process.
+
+# Updated Mon Apr 27 09:40:36 MDT 2026

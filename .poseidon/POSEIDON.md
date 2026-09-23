@@ -1,9 +1,8 @@
 ---
 title: POSEIDON
-status: ACTIVE
-role: Persona Stub
-type: system
-description: Bidirectional anchor for Poseidon persona
+authority: LOGAN
+related:
+- The world is quiet here
 ---
 # POSEIDON
 

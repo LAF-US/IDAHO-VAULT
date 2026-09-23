@@ -26,19 +26,8 @@ This makes it a **reliable, zero-config intake vector** for getting phone-captur
 1. **Capture** on phone — photo, screenshot, voice memo, document
 2. **Send** via Phone Link (share → Phone Link, or it syncs automatically depending on settings)
 3. **Files land** at `C:\Users\loganf\Downloads\Phone Link\`
-4. **Watcher Triggers** — `phone-link-auto-sweep.ps1` detects the drop and calls the intake script.
-5. **Script processes** files into `!/INBOX/` with metadata, classified by type.
-
-## File Type Handling
-
-| Type | Extensions | Vault destination | Notes |
-| --- | --- | --- | --- |
-| Photos | `.jpg`, `.jpeg`, `.png`, `.heic`, `.webp` | `!/INBOX/images/` | Renamed with date prefix |
-| Screenshots | `.png` (if detected) | `!/INBOX/screenshots/` | Heuristic: filename contains "screenshot" |
-| Voice memos | `.m4a`, `.ogg`, `.mp3`, `.wav`, `.aac` | `!/INBOX/audio/` | Ready for transcription pipeline |
-| Documents | `.pdf`, `.docx`, `.txt` | `!/INBOX/docs/` | Copied as-is |
-| Video | `.mp4`, `.mov`, `.3gp`, `.webm` | `!/INBOX/video/` | Large files — flagged for review |
-| Other | `*` | `!/INBOX/other/` | Catch-all for unrecognized types |
+4. **Run intake script** — `python .github/scripts/phone_link_intake.py` (or double-click `phone-link-intake.bat`)
+5. **Script moves** files directly into the vault root, preserving the original filenames whenever possible
 
 ## Intake Script
 
@@ -55,25 +44,19 @@ python .github/scripts/phone_link_intake.py
 # EXECUTE (Move files into vault)
 python .github/scripts/phone_link_intake.py --live-write
 
-# Process and auto-stage for git
-python .github/scripts/phone_link_intake.py --live-write --git-add
-
-# Ensure the watcher starts at login
-START-PHONE-LINK-SWEEP.cmd --register-startup
+# Process and auto-stage the moved files for git
+python .github/scripts/phone_link_intake.py --git-add
 ```
 
 ## Conventions
 
-- **Singular Authority:** The Python script is the sole mover. The PowerShell daemon is a thin trigger.
-- **Flattened Intake:** Files land in `!/INBOX/` subfolders without source-specific segregation.
-- **NETWEB Portability:** Filenames are lowercased and date-prefixed.
-- **MCP Guardrails:** Execution requires the `--live-write` flag. Each batch emits a structured YAML `mcp_action_log`.
-- **Durable Record:** A human-readable batch entry is appended to `!/INBOX/intake-log.md`.
-- **Login Persistence:** `START-PHONE-LINK-SWEEP.cmd --register-startup` installs the user-level launcher; `STOP-PHONE-LINK-SWEEP.cmd` uses the watcher PID file instead of CIM process inspection.
+- Files are **moved** (not copied) from Phone Link into the vault by default. Use `--copy` to preserve originals.
+- Files land in the **vault root** with their original filenames preserved.
+- If an identical file is already present at root, intake skips it.
+- If a different file already uses that name, intake appends a timestamp and short hash suffix.
 
 ## See Also
 
-- VAULT-CONVENTIONS — Vault structure and naming rules
-- `!/INBOX/` — Standard infrastructure intake staging
+- VAULT-CONVENTIONS — Vault structure and intake rules
 - `.github/scripts/phone_link_intake.py` — The intake automation script
 - `mcp_guardrails.py` — Structured action logging interface

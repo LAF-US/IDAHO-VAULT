@@ -31,15 +31,9 @@ before interpreting lore, historical notes, or older branch residue.
 
 Tree logic governs orientation: `!/*` is the Nest/Hive of the Unified Swarm personae, while `.*/` dotfolders are the persona chambers of individual agents.
 
-The active connector hub is:
-
-- GitHub = execution and transport
-- Linear = execution state
-- Slack = tertiary paging and breadcrumbs
-
-The full connector classification and maze census live in `!/AGENTS.md`, `swarm.json`, and `SPEC-CONNECTOR-HUB-2026-04-09.md`.
-
----
+This repository sits inside the broader `LAF-US` organization structure. The
+larger model includes both chambered repo anchors and separate GitHub team
+topology; this root file remains only a pointer into that fuller picture.
 
 Immediate wakeup facts:
 

@@ -53,9 +53,7 @@ Use this precedence order:
 
 Historical or exploratory material is not automatically authoritative doctrine.
 
-Google Gemini is banned from making decisions unless Logan is present.
-
-## Current Orientation
+## Repository Orientation
 
 - The repository is `github.com/LAF-US/IDAHO-VAULT`.
 - The broader `LAF-US` model includes both a repo layer and a team layer.
@@ -74,11 +72,11 @@ Google Gemini is banned from making decisions unless Logan is present.
 - Do not assume `!README.md` is the required startup path. It is Touchstone
   context and should be read when the task actually needs Tree or narrative
   orientation.
-- Do not assume historical CrewAI harbor notes are live. Treat them as
-  historical unless `.crewai/MANIFEST.md` or `!/AGENTS.md` explicitly says they
-  are current.
-- Do not assume generated bootstrap files are handwritten truth. `!/agents.json`
-  is generated from `swarm.json`.
+- Do not assume historical CrewAI harbor notes are authoritative. Treat them as
+  historical unless Logan or canonical governance explicitly reclassifies
+  them.
+- Do not assume generated discovery files are handwritten truth. `!/agents.json`
+  is generated from `swarm.json` for reference only and is not executable startup.
 - Do not assume connector language by itself explains the org. GitHub, Linear,
   and Slack describe a repo-local operating posture, not the total sovereignty
   model.

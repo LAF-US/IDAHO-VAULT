@@ -1,3 +1,4 @@
+import sys
 import os
 import shutil
 from pathlib import Path
@@ -24,7 +25,7 @@ def classify(name):
 
 if not source_dir.exists():
     print(f"Source {source_dir} not found. Nothing to migrate.")
-    exit(0)
+    sys.exit(0)
 
 # Categories to ensure exist
 categories = ['images', 'screenshots', 'audio', 'video', 'docs', 'other']

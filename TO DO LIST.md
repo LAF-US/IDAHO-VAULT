@@ -1,37 +1,15 @@
 ---
-title: TO DO LIST
-linter-yaml-title-alias: TO DO LIST
-date created: Friday, March 27th 2026, 10:09:45 am
-date modified: Tuesday, April 21st 2026, 7:45:31 pm
-related:
-- DAILY NOTE
-- Data Centers
-- FIX
-- PKG
-authority: LOGAN
+date created: Monday, April 27th 2026, 10:44:38 pm
+date modified: Monday, June 15th 2026, 10:37:18 am
 ---
-*Persistent list — incomplete items carry forward daily. Link daily notes here.*
 
 ## Active
 
-- [ ] [[YESTERDAY]]
-- WORK
-- [ ] FMLA PAPERWORK
 - VAULT
 - [ ] FIX DAILY NOTE SYNCING / CARRYFORWARD
-	- [ ] Tasks completed on a DAY were not checked off here.
-	- [ ] Tasks left unfinished on a DAY were not added to here.
-	- [ ] Tasks completed on a daily note should be reflected here intentionally.
-	- [ ] Tasks left unfinished on a daily note should be carried forward intentionally.
-- ¡ [[RING]] !
-- ¡ [>> ? <<] in [[WHO]] !
-- the [[ROAD]] was [[LAID]]
-
-## Recently Finished
-
-- [x] A250 REVISION WRITING
-- [x] RESET Obsidian Sync Vault
-- WORK
-- []
+  - [ ] Tasks completed on a DAY were not checked off here.
+  - [ ] Tasks left unfinished on a DAY were not added to here.
+  - [ ] Tasks completed on a daily note should be reflected here intentionally.
+  - [ ] Tasks left unfinished on a daily note should be carried forward intentionally.
 - PERSONAL
 - [ ] BANKING AND YNAB

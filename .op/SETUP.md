@@ -10,14 +10,14 @@
 
 ### Prerequisites
 
-- Windows 11 Pro
+- Windows 11 Pro (confirmed)
 - Git Bash installed (`C:\Program Files\Git\bin\bash.exe`)
 - 1Password desktop app installed
 - Administrative access on machine
 
 ### Step 1: Install 1Password CLI
 
-**Option A: Scoop**
+**Option A: Scoop (recommended for this machine)**
 
 ```bash
 scoop install 1password
@@ -31,8 +31,7 @@ brew install 1password-cli
 ```
 
 **Option C: Manual download**
-
-Download from the 1Password CLI release page and add it to `PATH`.
+Download from <https://app-updates.agilebits.com/check/win/1password/latest> — extract to `C:\Program Files\1Password CLI\` and add to `PATH`.
 
 ### Step 2: Configure Shell Integration
 
@@ -62,13 +61,7 @@ If no account is configured yet:
 op account add
 ```
 
-If an account already exists and just needs re-auth:
-
-```bash
-op signin --account my.1password.com
-```
-
-Verification sequence:
+Test:
 
 ```bash
 op account list
@@ -89,22 +82,28 @@ op whoami
 
 Assumption: an SSH key item such as `GitHub SSH Key` exists in 1Password.
 
+**Retrieve key fingerprint:**
+
 ```bash
 op item get "GitHub SSH Key" --fields private_key --format json | jq -r '.value' > /tmp/gh_key
 ssh-keygen -l -f /tmp/gh_key
 rm /tmp/gh_key
 ```
 
-Enable SSH agent in the 1Password desktop app:
+**Enable SSH agent in 1Password desktop app:**
+
+- Open 1Password → Settings → Developer
+- Toggle "SSH Agent" ON
+- Authorize the SSH key
 
 - Open 1Password
 - Settings
 - Developer
 - Toggle `SSH Agent` on
 
-Configure `~/.ssh/config`:
+Create/edit `~/.ssh/config`:
 
-```text
+```
 Host github.com
   AddKeysToAgent yes
   IdentityAgent ~/.ssh/1password-agent.sock
@@ -118,7 +117,7 @@ git config --global gpg.format ssh
 git config --global user.signingkey "ssh-ed25519 XXXXXXX..."
 git config --global commit.gpgsign true
 git config --global tag.gpgsign true
-git config --global gpg.ssh.program "ssh-keyscan"
+git config --global gpg.ssh.program "ssh-keygen"
 ```
 
 ### Step 6: Test Git Signing
@@ -135,32 +134,50 @@ git log --show-signature
 
 ### Step 1: Create Service Account in 1Password
 
-Create a password item:
+A service account token is a distinct credential type — created in the 1Password web console under **Developer Tools**, not as a regular vault item. During creation, 1Password shows the token once and offers a **Save in 1Password** button that saves a copy of the token value into a vault item for later retrieval. This is a convenience backup, not the authoritative storage location; the service account itself lives in Developer Tools.
 
-- Name: `GitHub Actions Service Account`
-- Password: generated token or existing `OP_SERVICE_ACCOUNT_TOKEN`
-
-Retrieve token:
-
-```bash
-op item get "GitHub Actions Service Account" --fields password
-```
+1. Go to `1password.com` → **Developer Tools** → **Service Accounts**
+2. Click **New Service Account**, give it a name (e.g., `idaho-vault-github-actions`)
+3. Grant it **Read** access to the relevant vault(s)
+4. Click **Save in 1Password** — saves a copy of the token into your vault so you can retrieve it later
+5. Copy the token value and add it to GitHub Secrets (Step 2 below)
 
 ### Step 2: Add Secret to GitHub
 
-Add `OP_SERVICE_ACCOUNT_TOKEN` to GitHub repo secrets.
+In GitHub repo settings (`github.com/loganfinney27/IDAHO-VAULT/settings/secrets/actions`):
+
+**New secret:** `OP_SERVICE_ACCOUNT_TOKEN`  
+**Value:** (paste token from Step 1 — or retrieve from 1Password if saved there)
 
 ### Step 3: Update Workflow to Fetch Secrets
 
 ```yaml
-- name: Authenticate 1Password
-  run: |
-    echo "${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}" | op signin --raw
+name: Example Job with 1Password
 
-- name: Fetch secret from 1Password
-  run: |
-    SECRET=$(op item get "GitHub Personal Access Token" --fields password)
-    echo "::add-mask::$SECRET"
+on: [push]
+
+jobs:
+  use-secrets:
+    runs-on: ubuntu-latest
+    # 1Password CLI v2 reads OP_SERVICE_ACCOUNT_TOKEN from the environment;
+    # no explicit signin step needed.
+    env:
+      OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      
+      # Fetch secret from 1Password vault
+      - name: Fetch GitHub Token from 1Password
+        run: |
+          GITHUB_PAT=$(op item get "GitHub Personal Access Token" --fields password)
+          echo "::add-mask::$GITHUB_PAT"
+          echo "GITHUB_TOKEN=$GITHUB_PAT" >> $GITHUB_ENV
+      
+      # Use secret in subsequent steps
+      - name: Use Secret
+        run: |
+          echo "Token is configured"
+          # Don't echo it; use ${{ env.GITHUB_TOKEN }}
 ```
 
 ---
@@ -170,13 +187,12 @@ Add `OP_SERVICE_ACCOUNT_TOKEN` to GitHub repo secrets.
 Create these items in the appropriate visible vault from `op vault list`:
 
 | Item Name | Type | Usage | Status |
-|---|---|---|---|
-| `GitHub Personal Access Token` | Password | GitHub API calls | Create or migrate |
-| `GitHub SSH Key` | SSH Key | Git commits and pushes | Create or import |
-| `Linear API Key` | Password | Linear workspace sync | Migrate |
-| `Idaho Legislature API Key` | Password | Scraper auth | Create if needed |
-| `Email SMTP Credentials` | Password | Budget tracker email | Create if needed |
-| `what3words` | API Key | what3words desktop / CLI lookup | Verified live item in vault `Vault` |
+| --- | --- | --- | --- |
+| `GitHub Personal Access Token` | Password | GitHub API calls, Linear sync | Create |
+| `GitHub SSH Key` | SSH Key | Git commits, pushes | Create |
+| `Linear API Key` | Password | Linear workspace sync | Migrate (currently in GitHub Secrets) |
+| `Idaho Legislature API Key` | Password | Scraper authentication | Create |
+| `Email SMTP Credentials` | Password | Budget tracker email | Create |
 
 ### How to Add a Secret
 
@@ -200,12 +216,12 @@ op item get "Secret Name" --fields label=username --format json
 ## Part 4: Troubleshooting
 
 | Problem | Solution |
-|---|---|
-| `op: command not found` | Add 1Password CLI to `PATH` |
-| `Access is denied` from the desktop pipe | Re-test outside the sandbox or isolated shell before assuming local 1Password is broken |
-| `op whoami` says not signed in | Check `op account list` and `op vault list`; the live desktop path may still have usable vault access |
-| Vault not found | Run `op vault list` and use the real visible vault name instead of assuming `IDAHO-VAULT` |
-| Secret item not found | Verify the item title and vault in the desktop app, then mirror that exact path in CLI commands |
+| --- | --- |
+| `op: command not found` | Add 1Password to PATH; check `echo $PATH` |
+| SSH agent socket error | Ensure 1Password desktop app running + SSH Agent enabled in settings |
+| Git signing fails | Verify `git config gpg.format ssh` and key fingerprint matches |
+| GitHub Actions auth fails | Check `OP_SERVICE_ACCOUNT_TOKEN` is set and valid |
+| Vault not found | Run `op vault list` to see available vaults; use correct vault name in commands |
 
 ---
 

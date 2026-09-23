@@ -48,6 +48,10 @@ echo "   [Attempting to launch gateway service via command line.]"
 openclaw gateway start
 
 GATEWAY_STATUS=$?
+if [ "$GATEWAY_STATUS" -ne 0 ]; then
+    echo "!!! openclaw gateway start failed (exit $GATEWAY_STATUS)"
+    exit "$GATEWAY_STATUS"
+fi
 
 echo "-----------------------------------------------------------------------------------"
 

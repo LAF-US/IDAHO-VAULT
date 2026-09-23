@@ -1,9 +1,8 @@
 ---
 title: ZEUS
-status: ACTIVE
-role: Persona Stub
-type: system
-description: Bidirectional anchor for Zeus persona
+authority: LOGAN
+related:
+- The world is quiet here
 ---
 # ZEUS
 

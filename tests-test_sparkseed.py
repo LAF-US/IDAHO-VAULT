@@ -4,7 +4,7 @@ import sys
 import unittest
 from pathlib import Path
 from subprocess import CompletedProcess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
-from unittest import mock
+import unittest.mock as mock
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SRC_ROOT = PROJECT_ROOT / "src"
