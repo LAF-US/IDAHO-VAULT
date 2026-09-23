@@ -3,10 +3,17 @@ title: "HANDOFF — CrewAI Ignition Session"
 date created: 2026-04-04
 authority: LOGAN
 doc_class: handoff
-status: active
+status: historical
+superseded_by: ".crewai/MANIFEST.md"
 ---
 
 # HANDOFF — CrewAI Ignition Session (2026-04-04)
+
+> [!IMPORTANT]
+> Historical handoff for the retired April 4 ignition harbor. Built-file lists,
+> runner instructions, and activation claims in this document are preserved as
+> historical record only. Current CrewAI doctrine and topology live in
+> `.crewai/MANIFEST.md`.
 
 ## What Was Done
 
@@ -21,7 +28,7 @@ Scorched-earth wipe of Obsidian-specific syntax. Commit `d84b87d`.
 - 19,533 empty stubs untouched
 - Script: `.github/scripts/chainfire.py` (idempotent, re-runnable)
 
-### Strike 2: CrewAI Ignition (ACTIVE)
+### Strike 2: CrewAI Ignition (HISTORICAL)
 
 Commit `3fc1379`. CrewAI 1.12.2 was already installed.
 

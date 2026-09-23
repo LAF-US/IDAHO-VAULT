@@ -3,11 +3,18 @@ title: "CrewAI Operations Handoff"
 date created: "2026-04-04"
 authority: crewai
 doc_class: handoff
+status: historical
+superseded_by: ".crewai/MANIFEST.md"
 ---
 
 # CrewAI Operations Handoff
 
 Historical note for the retired demo harbor. Do not use this file as the current runbook for the redesigned CrewAI Python layer.
+
+> [!IMPORTANT]
+> This document records the retired April 4 demo harbor. It references files,
+> runners, and assumptions that no longer define the live CrewAI layer.
+> Current CrewAI doctrine and topology live in `.crewai/MANIFEST.md`.
 
 ---
 
@@ -37,7 +44,7 @@ Historical note for the retired demo harbor. Do not use this file as the current
 
 ## Running a Crew
 
-### JFAC Parser (Active)
+### JFAC Parser (Retired Demo Harbor)
 
 ```bash
 # From vault root
@@ -108,7 +115,8 @@ crew_run_id: "{run_id}"
 4. **Update the manifest** at `.crewai/MANIFEST.md`
    - Add the crew, its agents, tasks, tools, inputs, and outputs
 
-5. **Do NOT** modify `swarm.json` — CrewAI crews are instruments within the swarm, not registry entries.
+5. **Historical boundary note:** the retired harbor kept CrewAI internals out of `swarm.json`.
+   - Current doctrine is narrower: `swarm.json` registers the CrewAI layer only, while CrewAI topology lives in `.crewai/MANIFEST.md`.
 
 ---
 
@@ -126,7 +134,7 @@ crew_run_id: "{run_id}"
 ```
 .crewai/                    ← Code/config (committed)
   crews/                    ← Crew definitions
-    jfac_crew.py            ← JFAC Parser (active)
+    jfac_crew.py            ← JFAC Parser (retired harbor reference)
     task_to_code_crew.py    ← Task-to-Code Bridge (stub)
     vault_custodian_crew.py ← Vault Custodian (stub)
   tools/                    ← Tool wrappers
@@ -147,4 +155,4 @@ _private/idaho-vault.env.tpl ← 1Password secret refs (gitignored)
 - `.crewai/MANIFEST.md` — full crew/agent/task/tool registry
 - `!/GRIMOIRE/BARTIMAEUS-CREWAI-ALIGNMENT-BRIEF.md` — architectural directive
 - `!/GRIMOIRE/NETWEB-CREWAI-ALIGNMENT.md` — strategy document
-- `swarm.json` — upstream machine registry (DO NOT MODIFY)
+- `swarm.json` — upstream machine registry for layer metadata only

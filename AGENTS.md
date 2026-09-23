@@ -30,26 +30,36 @@ before interpreting lore, historical notes, or older branch residue.
 
 Tree logic governs orientation: `!/*` is the Nest/Hive of the Unified Swarm personae, while `.*/` dotfolders are the persona chambers of individual agents.
 
-This repository sits inside the broader `LAF-US` organization structure. The 
-larger model includes both chambered repo anchors and separate GitHub team
-topology; this root file remains only a pointer into that fuller picture.
+The active connector hub is:
+
+- GitHub = execution and transport
+- Linear = execution state
+- Slack = tertiary paging and breadcrumbs
+
+The full connector classification and maze census live in `!/AGENTS.md`, `swarm.json`, and `SPEC-CONNECTOR-HUB-2026-04-09.md`.
+
+---
 
 Immediate wakeup facts:
 
-- `IDAHO-VAULT` is one repo inside `LAF-US`, not the whole universe.
-- Repo topology and GitHub team topology are related, but not identical.
-- Historical harbor notes, abandoned branches, and exploratory scaffolds are
-  non-live. Any surface claiming to be live is explicitly instantly outdated.
-- Startup is OS-agnostic. No local Bash, WSL, Sparkseed, or launcher execution
-  is required to read, inspect, or contribute to this repository.
+| Agent | Dotfolder | Governance shim | Auto-loaded? | Role |
+| --- | --- | --- | --- | --- |
+| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes | **The Abhorsen** (Claudius) |
+| Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes | **The Vault Advisor** (Geminiaeus) |
+| OpenAI Codex | `.codex/` | `.codex/CODEX.md` | Yes | **The Lexicographer** (Codices) |
+| GitHub Copilot | `.github/` | `.github/copilot-instructions.md` | Yes | **The Clerk** (Admin) |
 
-## Discovery Before Construction
+
+
+*Full roster including **Grok**, **Perplexity**, **DeepSeek**, **Serena**, and the **Cartographer** available in the [!/AGENTS.md](!/AGENTS.md) ledger.*
 
 Before proposing builds, new packages, or invention: discover and read existing documentation first. Do not assume tooling is missing or scaffolding is required without checking what's present in the vault or on the machine.
 
 ## Fix Errors - Do NOT Disable
 
-When code throws errors, the error means something needs fixed. Do not disable security checks, linters, or validators to silence errors. Fix the underlying issue that is causing the fire rather than lazily turn off the smoke detector.
+| Surface | Path | Status | Notes |
+| --- | --- | --- | --- |
+| **CrewAI Python Layer** | `.crewai/` | Active re-foundation | Retired demo harbor remains historical; live doctrine/topology is in `.crewai/MANIFEST.md`, and staged output lands in `!/CREWAI/` |
 
 ## Version Transitions
 
@@ -80,7 +90,7 @@ When live surfaces disagree, follow this order:
 
 Root governance files remain authoritative: `CONSTITUTION.md`, `LEVELSET.md`, and `VAULT-CONVENTIONS.md`, and others.
 
-**NETWEB Path Standard:** All filenames must respect cross-platform path portability for Linux, macOS, and Windows.
+**NETWEB Path Standard:** All filenames must respect cross-platform path portability while remaining Obsidian-native note identities when applicable. See `VAULT-CONVENTIONS.md` for naming, title, and alias rules.
 
 ---
 

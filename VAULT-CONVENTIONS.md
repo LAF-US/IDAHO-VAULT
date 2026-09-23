@@ -201,6 +201,25 @@ restructure the current vault.
 
 
 
+### Obsidian Filename Rule
+
+In this vault, the filename is part of the note interface. Obsidian uses it in
+the sidebar, quick switcher, wikilinks, backlinks, embeds, and everyday
+retrieval.
+
+Rules:
+
+1. Optimize note filenames for Obsidian-visible identity and human retrieval,
+   not just filesystem safety.
+2. Keep filenames cross-platform safe, but preserve the natural note title when
+   the platform allows it.
+3. When filesystem constraints force a compromise, preserve the exact work name
+   in frontmatter `title` and add `aliases` for likely link forms.
+4. Do not replace a human-facing title with an arbitrary slug when the note is
+   meant to be read, linked, and found by humans inside Obsidian.
+
+
+
 ---
 
 
@@ -269,7 +288,7 @@ Concrete Markdown files named by tracked Obsidian client config as templates mus
 
 - `manifest.json` for execution/interface inventory
 
-- `swarm.json` for the broader swarm registry
+- `swarm.json` for the broader swarm and connector registry
 
 
 
@@ -437,10 +456,13 @@ Use `Full Name` for all internal links Ã¢â‚¬â€ people, places, organi
 
 2. If it is governance or operational doctrine, prefer the root canonical files unless the artifact is specifically a routing shim, breadcrumb, DOCKET update, or bootstrap surface.
 3. If it is corpus content, choose a document class first, then create the note at repo root using the canonical filename pattern and required metadata.
+4. For Obsidian-facing notes, treat the filename as part of the user
+   interface: choose a human-recognizable note name first, then use `title` and
+   `aliases` to preserve exact forms when needed.
 
-4. For daily notes, let Obsidian create the file from `DAILY NOTE TEMPLATE.md` and let the daily-note scripts maintain carryforward and normalization.
+5. For daily notes, let Obsidian create the file from `DAILY NOTE TEMPLATE.md` and let the daily-note scripts maintain carryforward and normalization.
 
-5. GitHub automation may write files and update transport artifacts, but those writes must conform to vault doctrine rather than redefine it.
+6. GitHub automation may write files and update transport artifacts, but those writes must conform to vault doctrine rather than redefine it.
 
 
 
@@ -458,6 +480,14 @@ Use `Full Name` for all internal links Ã¢â‚¬â€ people, places, organi
 - **Linear** is execution-state support for ownership, status, and planning.
 
 - **Chat/Slack** is transient coordination; durable decisions or context must be promoted into the vault and/or execution systems.
+
+- **Core connector hub:** GitHub, Linear, and Slack form the active connector hub. GitHub executes, Linear tracks execution state, and Slack carries tertiary paging/breadcrumbs only.
+
+- **Adjunct connectors:** Gmail, Google Calendar, Google Drive, and Box are read-first context lanes. They may inform work, but they do not become durable authorities until their outputs are explicitly promoted.
+
+- **Deferred platform connectors:** Cloudflare and Hugging Face are classified in the connector registry but are not active operating authorities without a separate Logan-approved activation plan.
+
+- **Registry surfaces:** `swarm.json` is the machine-readable connector registry. `SPEC-CONNECTOR-HUB-2026-04-09.md` is the human-readable bridge for the connector hub and maze census.
 
 Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and control-plane breadcrumbs stable across tools.
 
@@ -558,7 +588,7 @@ Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scri
 
 
 
-**Requirement:** All credentials (API keys, tokens, SSH keys, passwords) are managed centrally in 1Password. GitHub Actions uses `OP_SERVICE_ACCOUNT_TOKEN` to fetch secrets at runtime. No credentials are hardcoded in workflows or stored directly in GitHub Secrets (with the exception of the service account token itself).
+**Requirement:** All credentials (API keys, tokens, SSH keys, passwords) are managed centrally in 1Password. GitHub Actions uses `OP_SERVICE_ACCOUNT_TOKEN` plus runtime secret references to fetch secrets. No credentials are hardcoded in workflows or stored directly in GitHub Secrets (with the exception of the service account token itself).
 
 
 
@@ -566,7 +596,7 @@ Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scri
 
 - Developer machines: 1Password CLI + SSH agent for local authentication and git signing
 
-- GitHub Actions: Service account token Ã¢â€ â€™ fetch secrets at runtime via `op item get`
+- GitHub Actions: service account token plus runtime secret references fetch secrets inside workflows
 
 - All secrets are rotated on defined schedules (see `.op/secrets.template.md`)
 
@@ -588,11 +618,13 @@ Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scri
 
 2. All GitHub Actions secrets (except `OP_SERVICE_ACCOUNT_TOKEN`) are fetched from 1Password at runtime
 
-3. Use `::add-mask::` in workflows to prevent accidental credential leakage in logs
+3. Do not assume a developer machine's visible desktop vault names match CI secret-reference paths such as `op://vault-operations/...`
 
-4. Rotate credentials on schedule; update `.op/secrets.template.md` with rotation date
+4. Use `::add-mask::` in workflows to prevent accidental credential leakage in logs
 
-5. SSH keys for git signing are managed via 1Password SSH agent on developer machines
+5. Rotate credentials on schedule; update `.op/secrets.template.md` with rotation date
+
+6. SSH keys for git signing are managed via 1Password SSH agent on developer machines
 
 
 

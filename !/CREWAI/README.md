@@ -2,10 +2,27 @@
 title: CrewAI Output Staging
 authority: crewai
 doc_class: index
+status: active
 ---
 
-# !/CREWAI/ — Output Staging
+# !/CREWAI/ - Output Staging
 
-This directory is reserved for future CrewAI output and also preserves notes from the retired demo implementation.
+This directory is the live staging and output surface for the re-founded CrewAI
+layer.
 
-There are currently **no active CrewAI runners** in the repo. Treat the contents here as historical artifacts or reserved staging space until the redesigned Python layer lands.
+It also preserves artifacts from the retired demo harbor. Those older files
+stay on record, but they are historical and do not define current procedure.
+
+## Staging Rule
+
+- CrewAI may write staged outputs here.
+- Staged outputs are on-record, but they are not canonical by default.
+- Promotion from `!/CREWAI/` into canon requires Logan approval.
+- Runtime caches, logs, and secret-bearing material do not belong here.
+
+## Current Truth
+
+- Live CrewAI doctrine and topology: `.crewai/MANIFEST.md`
+- Control-plane layer registration: `swarm.json`
+- Historical harbor records: `!/CREWAI/HANDOFF-CREWAI-OPS.md` and
+  `!/GRIMOIRE/NETWEB-CREWAI-ALIGNMENT.md`

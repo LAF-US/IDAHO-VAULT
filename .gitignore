@@ -1,177 +1,185 @@
-# IDAHO-VAULT gitignore
-#
-# First principle: the vault is the record. Markdown notes, structured
-# registries, scripts, source documents, media, attachments, and durable agent
-# memory stay visible to git by default.
-#
-# This file exists mainly to shield secrets and suppress machine churn. It
-# excludes local runtime state, dependency installs, caches, logs, credentials,
-# editor/workspace noise, and NETWEB-invalid names. Existing tracked files are
-# not untracked by these rules; use explicit git index cleanup when Logan
-# decides a tracked artifact is no longer part of the record.
-
-# ---------------------------------------------------------------------------
-# Secrets and credentials
-# ---------------------------------------------------------------------------
-.env
-.env.*
-!.env.example
-!.env.template
-.envrc
-
-.op/openrouter.env
-.op/reports/
-.op/
-.mcp-auth/
-secrets/
-vault-courier-key.json
-*-key.json
-*service-account.json
-archive-secrets-*.json
-application_default_credentials.json
-credentials.json
-token.json
-tokens.json
-oauth*.json
-client_secret*.json
-
-# Private key material and local certificate/key stores.
-*.pem
-*.key
-*.p12
-*.pfx
-id_rsa
-id_rsa.*
-id_ed25519
-id_ed25519.*
-known_hosts
-
-# Tool/package manager auth files commonly containing tokens.
-.npmrc
-.pypirc
-.netrc
-.aws/
-.azure/
-.config/gcloud/
-.gsutil/
-.config/rclone/
-rclone.conf
-*.rclone.conf
-
-# Credential exports and recovery codes must never enter the public record.
-Google Passwords.csv
-**/Google Passwords*.csv
-**/passwords*.csv
-*recovery-codes*
-*recovery_codes*
-
-# Tool auth state
-.claude/.credentials.json
-.codex/auth.json
-.codex/.codex-global-state.json
-.pi/agent/auth.json
-.gemini/oauth_creds.json
-.gemini/google_accounts.json
-.factory/auth.v2.*
-.factory/certs/
-.openclaw/credentials/
-.ollama/id_ed25519
-.ollama/id_ed25519.pub
-
-# ---------------------------------------------------------------------------
-# Python, JavaScript, and package runtime infrastructure
-# ---------------------------------------------------------------------------
+# Python
 __pycache__/
-*.py[cod]
-*$py.class
+*.pyc
+*.pyo
+*.pyd
 .Python
-.python_history
-!.python/
-!.python/**
-
+*.egg-info/
+dist/
+build/
 .venv/
 venv/
-env/
-ENV/
-.uv-cache/
-.pip-cache/
-*.egg-info/
-build/
-dist/
 
-node_modules/
-**/node_modules/
-.npm-cache/
+# CrewAI
+.crewai_cache/
+.crewai/logs/
 
-# External SDK/runtime installs parked locally are not vault content.
-google-cloud-sdk/
-LFPython/
-feed-generator/
-.local/share/claude/versions/
-.ollama/models/blobs/
-.ollama/models/manifests/
+# IDE
+.vscode/*
+!.vscode/mcp.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
 
-# ---------------------------------------------------------------------------
-# Local caches, temp, state, and generated databases
-# ---------------------------------------------------------------------------
-.cache/
-.tmp/
-.state/
-.pycache/
-.smart-env/
+# OS
+.DS_Store
+Thumbs.db
+*.exe
+*.lnk
+*.url
+~$*.doc
+~$*.docx
+~$*.xls
+~$*.xlsx
+~$*.ppt
+~$*.pptx
+
+# NETWEB: Windows reserved device names (cannot exist on NTFS - any case, any extension)
+# https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file
+[Aa][Uu][Xx]
+[Aa][Uu][Xx].*
+[Cc][Oo][Nn]
+[Cc][Oo][Nn].*
+[Nn][Uu][Ll]
+[Nn][Uu][Ll].*
+[Pp][Rr][Nn]
+[Pp][Rr][Nn].*
+[Cc][Oo][Mm][0-9]
+[Cc][Oo][Mm][0-9].*
+[Ll][Pp][Tt][0-9]
+[Ll][Pp][Tt][0-9].*
+
+# Media / binary files (prevent repo bloat - vault content is markdown, not media)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.webm
+*.svg
+*.heic
+*.mp4
+*.mp3
+*.m4a
+*.wav
+*.flac
+*.mov
+*.avi
+*.mpg
+*.mpeg
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.bin
+*.db
+*.sqlite
+*.geojson
+*.kml
+*.kmz
+*.shp
+*.gpx
+
+# Production/editing source formats (local media workspace artifacts)
+*.psd
+*.ai
+*.indd
+*.aep
+*.aegraphic
+*.mogrt
+*.prproj
+*.mxf
+*.xmp
+*.cr2
+*.tif
+*.tiff
+
+# Project-specific
+.env
+*.vault.json
+.remember/
+_private/
+_private/**
+.codex/tmp/
+tmp-minidata-msg/
+tmp-msg-extract/
+_phone-link-sweep.log
+\!/INBOX/_phone-link-watcher.log
+\!/INBOX/_phone-link-watcher.pid
+
+# Local media app cache artifacts
+*.cfa
+*.pek
+
+# AppleDouble sidecar files
+._*
+
+# Local machine secrets
+.obsidian/plugins/obsidian-local-rest-api/data.json
+
+# Swarm state archive (local only)
+.github/swarm/state/archive/
+
+# Swarm operational logs (ephemeral)
+\!/swarm/logs/*
+!\!/swarm/logs/.gitkeep
+
+# Obsidian system/state files (noisy, machine-local)
+.obsidian/workspace.json
+.obsidian/workspace*.json
+.obsidian/graph.json
+.obsidian/types.json
+.obsidian/backlink.json
+.obsidian/file-recovery.json
+.obsidian/page-preview.json
+.obsidian/switcher.json
+.obsidian/webviewer.json
+.obsidian/note-composer.json
+
+# Obsidian plugin runtime data / secrets (machine-local, not source)
+.obsidian/plugins/*/data.json
+.obsidian/plugins/recent-files-obsidian/data.json
+
+# Obsidian plugin cache directories (machine-generated, not source-trackable)
+.obsidian/plugins/*/cache/
 .makemd/
 .space/
 BMO/
 Tags/
 
-tmp/
-temp/
-*.tmp
-*.temp
-*.bak
-*.backup
-*-backup*.json
-data-backup*
-*.bundle
-*.download
-.rsync-partial/
-**/.rsync-partial/
-*.partial
-*.part
+# Obsidian plugin compiled binaries (too large, not source-trackable)
+.obsidian/plugins/mcp-tools/bin/
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+.obsidian/plugins/*/manifest.json
 
-*.log
-*.pid
-*.lock
-*.sqlite
-*.sqlite-shm
-*.sqlite-wal
-*.db
+# Smart Connections embedding cache (machine-generated, can be hundreds of MB)
+.smart-env/
+.obsidian/plugins/smart-connections/.smart-env/
 
-logs/
-**/logs/
-**/cache/
-**/.cache/
-**/tool-results/
-**/shared_proto_db/
+# Obsidian conflict duplicates
+.obsidian/**(2)*.json
 
-# Local media-app cache artifacts, not source documents.
-*.cfa
-*.pek
+# Daily notes (ephemeral, personal)
+DAILYNOTES/
 
-# ---------------------------------------------------------------------------
-# Agent and tool runtime internals
-# ---------------------------------------------------------------------------
-# Preserve agent dotfolders and durable memory by default; ignore only volatile
-# runtime/auth/cache surfaces.
-.agent-home/
+# Local runtime inbox artifacts (do not track phone-link intake payloads)
+INBOX/PHONE-LINK/*
 
+# Local conflicted duplicates and temp placeholders
+* (Conflicted copy *).md
+tempfolder.txt
+
+# Claude Code local settings (machine-local, not for repo)
 .claude/settings.local.json
-.claude/backups/
-.claude/cache/
-.claude/debug/
-.claude/file-history/
-.claude/projects/
-.claude/shell-snapshots/
 .claude/worktrees/
 .claude/plugins/cache/
 **/.claude/worktrees/

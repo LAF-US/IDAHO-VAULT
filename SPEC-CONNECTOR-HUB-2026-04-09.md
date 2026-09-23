@@ -1,6 +1,6 @@
 ---
 title: SPEC - Connector Hub and Connector Maze Census
-updated: 2026-04-10
+updated: 2026-04-09
 status: active
 authority: LOGAN
 type: spec
@@ -17,23 +17,25 @@ related:
   - swarm.json
   - LEVELSET
   - VAULT-CONVENTIONS
+date created: Thursday, April 9th 2026, 10:19:56 pm
+date modified: Friday, April 10th 2026, 12:50:36 pm
 ---
 
-# SPEC - Connector Hub and GitHub Primacy
+# SPEC - Connector Hub and Connector Maze Census
 
 ## Summary
 
-This spec formalizes the connector model for IDAHO-VAULT with GitHub as the sole core authority.
+This spec formalizes the connector model for IDAHO-VAULT in two phases:
 
-- **V1 core hub:** GitHub only
-- **V2 auxiliary:** Linear (execution state), Slack (ephemeral paging)
+- **V1 core hub:** GitHub + Linear + Slack
+- **V2 maze census:** classify every available connector without promoting new authorities
 
-The governing model:
+The governing model does not change:
 
 - **Vault** = durable record and doctrine
-- **GitHub** = execution, transport, and coordination primacy
-- **Linear** = execution state (mirrored from GitHub)
-- **Slack** = tertiary paging and breadcrumbs only
+- **GitHub** = execution and transport
+- **Linear** = execution state
+- **Slack** = ephemeral paging and breadcrumbs
 
 All other connectors remain read-first unless Logan explicitly promotes them later.
 
@@ -44,22 +46,25 @@ All other connectors remain read-first unless Logan explicitly promotes them lat
 ### Canonical roles
 
 | Connector | Category | Write Mode | Canonical Role | Authoritative For |
-| --- | --- | --- | --- | --- |
-| GitHub | `core` | `gated-write` | Issues, PRs, workflows, automation, execution transport, coordination state | everything — single source of truth |
-| Linear | `auxiliary` | `mirrored` | Mirrored from GitHub for human visibility | nothing authoritative |
-| Slack | `auxiliary` | `notification-only` | Tertiary paging, breadcrumbs | nothing durable |
+|---|---|---|---|---|
+| GitHub | `core` | `gated-write` | Issues, PRs, workflows, automation output, execution transport | execution transport |
+| Linear | `core` | `gated-write` | Owners, status, planning, SWARM execution tracking | execution state |
+| Slack | `core` | `notification-write` | Tertiary paging, quick coordination, breadcrumbs | nothing durable |
 
-### Implementation anchors
+### Existing implementation anchors
 
-- GitHub Issues and PRs are the system of record
-- Linear mirrors owner, status, and planning state from GitHub for human convenience
+- `.github/scripts/linear_gateway.py` remains the controlled Linear choke point
+- `.github/scripts/linear_pr_sync.py` remains the GitHub-to-Linear lifecycle bridge
 - Slack workflow reporting remains breadcrumb-only
 
 ### Core operating rule
 
-1. A GitHub event, issue, or PR change occurs.
-2. That change is the authoritative record.
-3. Linear and Slack may reflect or notify, but never replace GitHub.
+1. A GitHub event, workflow event, issue change, or PR change occurs.
+2. Linear mirrors owner, status, and planning state when appropriate.
+3. Slack may notify or carry a breadcrumb.
+4. Any durable outcome must be promoted into the vault and/or execution systems.
+
+Slack never becomes a system of record through speed or repetition alone.
 
 ---
 
@@ -135,9 +140,3 @@ V2 does **not** auto-enable new writes.
 
 This spec is the human-readable bridge between those surfaces.
 
-## DOCUMENT METADATA
-
-- Created: 2026-04-09
-- Last Updated: 2026-04-10
-- Status: active
-- Authority: LOGAN

@@ -1,11 +1,14 @@
 {
-  "// note": "Machine-readable scaffold for the CrewAI Python layer in IDAHO-VAULT.",
-  "// status": "The initial demo harbor was retired pending redesign.",
-  "version": "0.2.0",
+  "// note": "Machine-readable registry for the CrewAI layer in IDAHO-VAULT.",
+  "// status": "CrewAI is active as a re-foundation from scaffold. Internal topology and doctrine live in .crewai/MANIFEST.md.",
+  "version": "0.3.0",
   "crewai_version": "1.12.2",
   "vault": "github.com/loganfinney27/IDAHO-VAULT",
-  "status": "scaffold",
+  "status": "refoundation",
+  "manifest_path": ".crewai/MANIFEST.md",
   "output_dir": "!/CREWAI/",
+  "runtime_class": "linux-native disposable runtime slice",
+  "authority_boundary": "swarm.json registers the layer; live CrewAI topology and promotion rules live in .crewai/MANIFEST.md.",
   "active_runners": [],
   "crews": []
 }

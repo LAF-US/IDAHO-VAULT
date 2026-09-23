@@ -1,30 +1,29 @@
 @echo off
 setlocal
 
+set "SWEEP_SCRIPT=%~dp0phone-link-auto-sweep.ps1"
+set "STARTUP_DIR=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
+set "STARTUP_LAUNCHER=%STARTUP_DIR%\IDAHO-VAULT-Phone-Link-Sweep.cmd"
+
+if /I "%~1"=="--register-startup" goto register_startup
+if /I "%~1"=="--unregister-startup" goto unregister_startup
+
 set "SWEEP_SCRIPT=%~dp0.github\scripts\phone_link_auto_sweep.py"
 
-if not exist "%SWEEP_SCRIPT%" (
-	echo Missing Phone Link autosweep script: "%SWEEP_SCRIPT%"
-	exit /b 1
-)
+:finish
+endlocal
+exit /b 0
 
-where pythonw.exe >nul 2>nul
-if %ERRORLEVEL% EQU 0 (
-	start "Phone Link Auto Sweep" /B pythonw.exe "%SWEEP_SCRIPT%" %*
-	exit /b 0
-)
+:register_startup
+if not exist "%STARTUP_DIR%" mkdir "%STARTUP_DIR%"
+(
+echo @echo off
+echo call "%~f0"
+) > "%STARTUP_LAUNCHER%"
+echo Startup registration ensured at "%STARTUP_LAUNCHER%".
+goto finish
 
-where pyw.exe >nul 2>nul
-if %ERRORLEVEL% EQU 0 (
-	start "Phone Link Auto Sweep" /B pyw.exe -3 "%SWEEP_SCRIPT%" %*
-	exit /b 0
-)
-
-where python.exe >nul 2>nul
-if %ERRORLEVEL% EQU 0 (
-	start "Phone Link Auto Sweep" /MIN python.exe "%SWEEP_SCRIPT%" %*
-	exit /b 0
-)
-
-echo Python was not found on PATH. Install Python or add python.exe/pythonw.exe to PATH.
-exit /b 1
+:unregister_startup
+if exist "%STARTUP_LAUNCHER%" del "%STARTUP_LAUNCHER%"
+echo Startup registration removed from "%STARTUP_LAUNCHER%".
+goto finish

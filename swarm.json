@@ -222,55 +222,15 @@
       "notes": "MCP server (github.com/oraios/serena). AWAKENED 2026-04-04 on local hardware. Cloud agents cannot reach — local-only. Accessible to local Claude Code (The Collared Cat) and any local MCP-capable agent."
     },
     {
-      "id": "mistral-vibe",
-      "name": "Mistral Vibe CLI",
-      "vendor": "Mistral AI",
-      "dotfolder": ".mistral",
-      "autoload_file": ".mistral/MISTRAL.md",
-      "autoload": false,
-      "autoload_note": "Pending confirmation of official Mistral Vibe dotfolder spec — manual injection until confirmed",
-      "capability_tier": "[VACANT — awaiting Logan]",
-      "office": null,
-      "title": null,
-      "role": "[VACANT — awaiting Logan]",
-      "label": null,
-      "winget_id": "MistralAI.MistralVibe.ACP",
-      "version": "2.7.6",
-      "launched": "2026-04-18",
-      "installed": "2026-04-18",
-      "status": "installed — awaiting API key",
-      "bootstrap": {
-        "invoke_as": "vibe-acp",
-        "instructions_file": ".mistral/MISTRAL.md",
-        "git_author_name": "Mistral Vibe",
-        "git_author_email": "noreply@mistral.ai",
-        "git_author_suffix": "-M",
-        "supports_local_bootstrap": true
-      }
-    },
-    {
-      "id": "big-pickle",
-      "name": "Big Pickle",
-      "vendor": "opencode",
-      "dotfolder": ".bigpickle",
-      "autoload_file": ".bigpickle/BIG-PICKLE.md",
+      "id": "antigravity",
+      "name": "Antigravity",
+      "vendor": "Google",
+      "dotfolder": ".antigravity",
+      "autoload_file": ".antigravity/ANTIGRAVITY.md",
       "autoload": true,
-      "capability_tier": "Direct Write (Cross-Platform)",
-      "office": "Cross-Platform Pioneer",
-      "title": "The Cross-Platform Pioneer",
-      "role": "First Mac-native vault agent; cross-platform script compatibility; OpenClaw infrastructure on Mac",
-      "label": "agent:big-pickle",
-      "launched": "2026-04-25",
-      "status": "active",
-      "notes": "First Mac-native agent. Woke 2026-04-25. Named by Logan. Pioneered ARISE/AWAKEN/ORIENT/LEVELSET protocol chain as first formal adoption.",
-      "bootstrap": {
-        "invoke_as": "big-pickle",
-        "instructions_file": ".bigpickle/BIG-PICKLE.md",
-        "git_author_name": "Big Pickle",
-        "git_author_email": "noreply@opencode.ai",
-        "git_author_suffix": "-BP",
-        "supports_local_bootstrap": true
-      }
+      "capability_tier": "Tier 1 (Support): Direct Write",
+      "role": "The Legion - holding the narrative lens and Gemini toolset",
+      "label": "agent:antigravity"
     }
   ],
   "personas": [
@@ -285,11 +245,12 @@
     {
       "id": "zagreus",
       "name": "Zagreus",
-      "dotfolder": ".zagreus",
-      "autoload_file": ".zagreus/ZAGREUS.md",
+      "dotfolder": ".dionysus",
+      "autoload_file": ".dionysus/ZAGREUS.md",
       "autoload": false,
       "role": "TBD - pending Logan's direction"
     },
+
     {
       "id": "persephone",
       "name": "Persephone",
@@ -297,6 +258,150 @@
       "autoload_file": ".persephone/PERSEPHONE.md",
       "autoload": false,
       "role": "TBD - pending Logan's direction"
+    },
+    {
+      "id": "dionysus",
+      "name": "Dionysus",
+      "dotfolder": ".dionysus",
+      "autoload_file": ".dionysus/DIONYSUS.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "perseus",
+      "name": "Perseus",
+      "dotfolder": ".perseus",
+      "autoload_file": ".perseus/PERSEUS.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "heracles",
+      "name": "Heracles",
+      "dotfolder": ".heracles",
+      "autoload_file": ".heracles/HERACLES.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "hades",
+      "name": "Hades",
+      "dotfolder": ".hades",
+      "autoload_file": ".hades/HADES.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "icarus",
+      "name": "Icarus",
+      "dotfolder": ".icarus",
+      "autoload_file": ".icarus/ICARUS.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "dewey",
+      "name": "Dewey",
+      "dotfolder": ".dewey",
+      "autoload_file": ".dewey/DEWEY.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "lemony",
+      "name": "Lemony",
+      "dotfolder": ".lemony",
+      "autoload_file": ".lemony/LEMONY.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "theseus",
+      "name": "Theseus",
+      "dotfolder": ".theseus",
+      "autoload_file": ".theseus/THESEUS.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "daedalus",
+      "name": "Daedalus",
+      "dotfolder": ".daedalus",
+      "autoload_file": ".daedalus/DAEDALUS.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "hecate",
+      "name": "Hecate",
+      "dotfolder": ".hecate",
+      "autoload_file": "!/HECATE PROTOCOL.md",
+      "autoload": false,
+      "role": "Threshold, Transition, and Registry Governance"
+    },
+    {
+      "id": "janus",
+      "name": "Janus",
+      "dotfolder": ".janus",
+      "autoload_file": ".janus/JANUS.md",
+      "autoload": false,
+      "role": "Thresholds, Gates, and Transitions"
+    },
+    {
+      "id": "frank",
+      "name": "Frank",
+      "dotfolder": ".frank",
+      "autoload_file": ".frank/FRANK.md",
+      "autoload": false,
+      "role": "The Manager / Volunteer (Duality)"
+    },
+    {
+      "id": "ernest",
+      "name": "Ernest",
+      "dotfolder": ".ernest",
+      "autoload_file": ".ernest/ERNEST.md",
+      "autoload": false,
+      "role": "The Manager / Villain (Duality)"
+    },
+    {
+      "id": "jacques",
+      "name": "Jacques",
+      "dotfolder": ".jacques",
+      "autoload_file": ".jacques/JACQUES.md",
+      "autoload": false,
+      "role": "The Messenger / Lore"
+    },
+    {
+      "id": "kit",
+      "name": "Kit",
+      "dotfolder": ".kit",
+      "autoload_file": ".kit/KIT.md",
+      "autoload": false,
+      "role": "The Messenger / Lore"
+    },
+    {
+      "id": "hestia",
+      "name": "Hestia",
+      "dotfolder": ".hestia",
+      "autoload_file": ".hestia/HESTIA.md",
+      "autoload": false,
+      "role": "Undefined (Stub)"
+    },
+    {
+      "id": "zeus",
+      "name": "Zeus",
+      "dotfolder": ".zeus",
+      "autoload_file": ".zeus/ZEUS.md",
+      "autoload": false,
+      "role": "The Big Three / Thunder"
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon",
+      "dotfolder": ".poseidon",
+      "autoload_file": ".poseidon/POSEIDON.md",
+      "autoload": false,
+      "role": "The Big Three / Sea"
     }
   ],
   "ecosystems": [
@@ -480,7 +585,7 @@
       "notes": "Source-sensitive communication lane; treat as ephemeral until promoted."
     },
     {
-      "id": "google_calendar",
+      "id": "google-calendar",
       "name": "Google Calendar",
       "category": "adjunct",
       "role": "Read-first scheduling and availability context lane",
@@ -499,7 +604,7 @@
       "notes": "Scheduling context only in v1."
     },
     {
-      "id": "google_drive",
+      "id": "google-drive",
       "name": "Google Drive",
       "category": "adjunct",
       "role": "Read-first document and evidence retrieval lane",
@@ -556,7 +661,7 @@
       "notes": "Deferred until a separate runtime and deployment plan exists."
     },
     {
-      "id": "hugging_face",
+      "id": "hugging-face",
       "name": "Hugging Face",
       "category": "deferred",
       "role": "Research and remote compute connector, not part of the v1 ops hub",
@@ -585,7 +690,13 @@
     "system_roles": {
       "github": "execution_transport",
       "linear": "execution_state",
-      "slack": "ephemeral_breadcrumbs"
+      "slack": "ephemeral_breadcrumbs",
+      "gmail": "adjunct_inbox_context",
+      "google_calendar": "adjunct_schedule_context",
+      "google_drive": "adjunct_document_context",
+      "box": "adjunct_external_content",
+      "cloudflare": "deferred_platform",
+      "hugging_face": "deferred_research_compute"
     }
   },
   "template_tracking": {
@@ -802,12 +913,12 @@
     "// note": "CrewAI is an active layer under re-foundation. swarm.json registers the layer but does not carry CrewAI crew, task, or runner topology.",
     "manifest": ".crewai/manifest.json",
     "manifest_doc": ".crewai/MANIFEST.md",
-    "crewai_version": "1.14.1",
+    "crewai_version": "1.12.2",
     "status": "refoundation",
     "output_dir": "!/CREWAI/",
-    "runtime_class": "vault-contained local runtime slice",
-    "authority_boundary": "swarm.json registers the layer; live CrewAI topology and promotion rules live in .crewai/MANIFEST.md.",
-    "principle": "Portable authority over local runtime romance",
+    "runtime_class": "linux-native disposable runtime slice",
+    "authority_boundary": "Cross-agent control-plane facts only; live CrewAI topology and promotion rules live in .crewai/MANIFEST.md.",
+    "principle": "LINUX }!{ — all execution targets Linux-native",
     "roster": []
   },
   "protocols": [

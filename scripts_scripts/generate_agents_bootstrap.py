@@ -74,6 +74,14 @@ def build_discovery_index(swarm: dict) -> dict:
             "runtime_class": crews.get("runtime_class"),
             "authority_boundary": crews.get("authority_boundary"),
         },
+        "crewai_layer": {
+            "status": crews.get("status"),
+            "manifest": crews.get("manifest"),
+            "manifest_doc": crews.get("manifest_doc"),
+            "output_dir": crews.get("output_dir"),
+            "runtime_class": crews.get("runtime_class"),
+            "authority_boundary": crews.get("authority_boundary"),
+        },
         "agents": dict(sorted(agents.items())),
     }
 
