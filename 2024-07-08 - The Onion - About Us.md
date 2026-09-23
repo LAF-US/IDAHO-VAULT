@@ -60,7 +60,7 @@ Please do not send résumés unless specifically told to do so in a job listing.
 
 ### What if I have feedback on an Onion article?
 
-Please send all concerns to <publicfeedback@theonion.com>. *The Onion* cannot guarantee a response to any feedback to its content.
+Please send all concerns to publicfeedback@theonion.com. *The Onion* cannot guarantee a response to any feedback to its content.
 
 ### What if I want to sue The Onion?
 
@@ -72,15 +72,15 @@ To read *The Onion* ’s privacy policy, please [click here](https://theonion.co
 
 ### What if I want to advertise with The Onion?
 
-Please send all advertising inquiries to <advertising@theonion.com>. Please specify the business you would like to advertise, and the appropriate advertising sales representative will get back to you promptly.
+Please send all advertising inquiries to advertising@theonion.com. Please specify the business you would like to advertise, and the appropriate advertising sales representative will get back to you promptly.
 
 ### I’m a member of a lesser media organization and I want to cover The Onion. How do I do that?
 
-Please send all inquiries to <press@theonion.com>.
+Please send all inquiries to press@theonion.com.
 
 ### How can I bring The Onion to my event?
 
-The writers and editors of America’s Finest News Source and its sister sites are available for speaking engagements at universities, conferences, annual or semi-annual meet-ups for disgraced veterinarians, and festivals. Please send all inquiries to <press@theonion.com>.
+The writers and editors of America’s Finest News Source and its sister sites are available for speaking engagements at universities, conferences, annual or semi-annual meet-ups for disgraced veterinarians, and festivals. Please send all inquiries to press@theonion.com.
 
 ### How can I find archived issues of The Onion or license its content?
 

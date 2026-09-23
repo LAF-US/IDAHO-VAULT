@@ -1,37 +1,36 @@
-<%*
-const parsed = moment(tp.file.title, "YYYY-MM-DD", true);
-const d = parsed.isValid() ? parsed : moment();
-const weekday = d.format("dddd");
-const weekdayShort = d.format("ddd").toLowerCase();
-const stamp = `${weekday}, ${d.format("MMMM Do YYYY")}, 12:00:00 am`;
-tR += `---
-title: ${d.format("YYYY-MM-DD")}
+---
+title: {{date:YYYY-MM-DD}}
 aliases:
-  - ${d.format("YYYY-MM-DD")}
-  - ${d.format("MMMM D, YYYY")}
-  - ${d.format("MMMM Do, YYYY")}
-  - ${d.format("D MMMM YYYY")}
-  - ${d.format("dddd, MMMM D, YYYY")}
-linter-yaml-title-alias: ${d.format("YYYY-MM-DD")}
-yesterday: ${d.clone().subtract(1, "day").format("YYYY-MM-DD")}
-tomorrow: ${d.clone().add(1, "day").format("YYYY-MM-DD")}
+  - {{date:YYYY-MM-DD}}
+  - {{date:MMMM D, YYYY}}
+  - {{date:MMMM Do, YYYY}}
+  - {{date:D MMMM YYYY}}
+  - {{date:dddd, MMMM D, YYYY}}
+linter-yaml-title-alias: {{date:YYYY-MM-DD}}
+yesterday: {{date-1d:YYYY-MM-DD}}
+tomorrow: {{date+1d:YYYY-MM-DD}}
 weekday:
-  - ${weekday}
+  - {{date:dddd}}
 cssclasses:
-  - roygbiv-${weekdayShort}
+  - roygbiv-<% tp.date.now("ddd", 0, tp.file.title, "YYYY-MM-DD").toLowerCase() %>
 tags:
   - today
-  - ${d.format("YYYY/MM/DD")}
+  - {{date:YYYY/MM/DD}}
   - dailynote
-date created: ${stamp}
-date modified: ${stamp}
----`;
-%>
+related:
+  - TO DO LIST
+date created: {{date:dddd, MMMM Do YYYY, [12:00:00 am]}}
+date modified: {{date:dddd, MMMM Do YYYY, [12:00:00 am]}}
+---
+
+# {{date:dddd, MMMM D, YYYY}}
+
+## Daily Queue
 
 [[TO DO LIST]]
-- WORK
-- []
-- PERSONAL
-- []
-- VAULT
-- []
+
+*(no incomplete items carried forward)*
+
+## Notes
+
+- 

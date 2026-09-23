@@ -23,10 +23,9 @@ First, create a Claude resource in Azure:
 1. Navigate to the [Microsoft Foundry portal](https://ai.azure.com/)
 2. Create a new resource, noting your resource name
 3. Create deployments for the Claude models:
-
-- Claude Opus
-- Claude Sonnet
-- Claude Haiku
+	- Claude Opus
+		- Claude Sonnet
+		- Claude Haiku
 
 ### 2\. Configure Azure credentials
 

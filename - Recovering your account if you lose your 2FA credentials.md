@@ -41,10 +41,9 @@ You can use your two-factor authentication credentials or two-factor authenticat
 6. You may be required to verify an email address. To send an email containing a one-time password to each email address associated with your account, click **Send one-time password**.
 7. Type the one-time password from your email in the "One-time password" text field, then click **Verify email address**.
 8. Choose a recovery verification factor.
-
-- If you've used your current device to log into this account before and would like to use the device for verification, click **Verify with this device**.
-- If you've previously set up an SSH key on this account and would like to use the SSH key for verification, click **SSH key**.
-- If you've previously set up a personal access token and would like to use the personal access token for verification, click **Personal access token**.
+	- If you've used your current device to log into this account before and would like to use the device for verification, click **Verify with this device**.
+		- If you've previously set up an SSH key on this account and would like to use the SSH key for verification, click **SSH key**.
+		- If you've previously set up a personal access token and would like to use the personal access token for verification, click **Personal access token**.
 
 A member of GitHub Support will review your request and email you within three business days. If your request is approved, you'll receive a link to complete your account recovery process. If your request is denied, the email will include a way to contact support.
 
@@ -66,10 +65,9 @@ If you have lost access to your two-factor authentication credentials and your r
 4. You will be prompted for your 2FA credentials. Under "More options", click **Begin account or email recovery**.
 5. In the modal that appears, click **I understand, get started**.
 6. Choose a recovery verification factor.
-
-- If you've used your current device to log into this account before and would like to use the device for verification, click **Verify with this device**.
-- If you've previously set up an SSH key on this account and would like to use the SSH key for verification, click **SSH key**.
-- If you've previously set up a personal access token and would like to use the personal access token for verification, click **Personal access token**.
+	- If you've used your current device to log into this account before and would like to use the device for verification, click **Verify with this device**.
+		- If you've previously set up an SSH key on this account and would like to use the SSH key for verification, click **SSH key**.
+		- If you've previously set up a personal access token and would like to use the personal access token for verification, click **Personal access token**.
 
 A member of GitHub Support will review your request and email you within three business days. If your request is approved, you'll receive a link to complete your account recovery process. If your request is denied, the email will include a way to contact support.
 

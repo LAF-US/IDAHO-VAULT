@@ -7,12 +7,6 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-. (Join-Path $PSScriptRoot "1password-policy.ps1")
-$Policy = Get-1PasswordPolicy
-
-if ($PSBoundParameters.ContainsKey("MaxArchiveCount") -eq $false) {
-    $MaxArchiveCount = [int]$Policy.safety_limits.max_archives
-}
 
 function Ensure-OpSession {
     if (-not (Get-Command op -ErrorAction SilentlyContinue)) {

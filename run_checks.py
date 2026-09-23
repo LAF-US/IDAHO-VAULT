@@ -1,13 +1,21 @@
 #!/usr/bin/env python3
-"""Run syntax checks against repo-owned automation files."""
+"""Run syntax checks and pytest against repo-owned automation files."""
 
 from __future__ import annotations
 
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent
+TEST_FILES = [
+    "tests/test_topology_census.py",
+    "tests/test_stale_bot_prs.py",
+    "tests/test_review_feedback_loop.py",
+    "tests/test_metadata_survey.py",
+    "tests/test_backfill_daily_notes.py",
+    "tests/test_daily_rollover.py",
+]
 
 
 def collect_syntax_files() -> list[str]:
@@ -24,20 +32,12 @@ def run_syntax_checks(python_executable: str = sys.executable) -> int:
         return 0
 
     for file_path in syntax_files:
-        try:
-            result = subprocess.run(
-                [python_executable, "-m", "py_compile", file_path],
-                cwd=REPO_ROOT,
-                capture_output=True,
-                text=True,
-                encoding="utf-8",
-                errors="replace",
-                timeout=30,
-                check=False,
-            )
-        except subprocess.TimeoutExpired:
-            print(f"ERROR: py_compile timed out after 30s on {file_path}")
-            return 1
+        result = subprocess.run(
+            [python_executable, "-m", "py_compile", file_path],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+        )
         if result.returncode != 0:
             print(f"ERROR in {file_path}:")
             print(result.stderr)
@@ -48,20 +48,12 @@ def run_syntax_checks(python_executable: str = sys.executable) -> int:
 
 
 def run_pytest(python_executable: str = sys.executable) -> int:
-    try:
-        result = subprocess.run(
-            [python_executable, "-m", "pytest", *TEST_FILES, "-v"],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            timeout=300,
-            check=False,
-        )
-    except subprocess.TimeoutExpired:
-        print("ERROR: pytest timed out after 300s")
-        return 1
+    result = subprocess.run(
+        [python_executable, "-m", "pytest", *TEST_FILES, "-v"],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+    )
     print(result.stdout)
     if result.stderr:
         print(result.stderr)
@@ -72,7 +64,14 @@ def main() -> int:
     print("=" * 60)
     print("SYNTAX CHECKS")
     print("=" * 60)
-    return run_syntax_checks()
+    syntax_status = run_syntax_checks()
+    if syntax_status != 0:
+        return syntax_status
+
+    print("\n" + "=" * 60)
+    print("PYTEST")
+    print("=" * 60)
+    return run_pytest()
 
 
 if __name__ == "__main__":

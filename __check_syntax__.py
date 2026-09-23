@@ -4,7 +4,7 @@
 from __future__ import annotations
 
 import py_compile
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 import sys
 from pathlib import Path
 
@@ -24,27 +24,21 @@ def run_syntax_checks() -> bool:
         full_path = REPO_ROOT / file_path
         try:
             py_compile.compile(str(full_path), doraise=True)
-            print(f"[OK] {file_path} - PASSED")
+            print(f"✓ {file_path} - PASSED")
         except py_compile.PyCompileError as exc:
-            print(f"[FAIL] {file_path} - FAILED")
+            print(f"✗ {file_path} - FAILED")
             print(f"  Error: {exc}")
             all_passed = False
     return all_passed
 
 
 def run_unittests(python_executable: str = sys.executable) -> int:
-    try:
-        result = subprocess.run(
-            [python_executable, "-m", "unittest", UNITTEST_TARGET, "-v"],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            text=True,
-            timeout=300,
-            check=False,
-        )
-    except subprocess.TimeoutExpired:
-        print("ERROR: unittest run timed out after 300s")
-        return 1
+    result = subprocess.run(
+        [python_executable, "-m", "unittest", UNITTEST_TARGET, "-v"],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+    )
     print(result.stdout)
     if result.stderr:
         print(result.stderr)

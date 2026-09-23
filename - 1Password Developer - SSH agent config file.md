@@ -212,7 +212,7 @@ account = "my.1password.com"
 
 \[\[ssh-keys\]\]
 
-account = "<https://acme.1password.com>"
+account = "https://acme.1password.com"
 
 If you add or remove SSH keys from the account, access to the keys will be added to, or removed from, the SSH agent without needing to modify the agent config file later.
 
