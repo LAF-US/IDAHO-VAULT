@@ -1384,12 +1384,8 @@ Here’s the gentle, safe Sunday swarm mode I’d run.
   * blockers
   * true incidents
   * anything asking for approval
-<<<<<<< Updated upstream
-* leave merges and secret provisioning for later unless something is truly [on fire](<on fire.md>)
-=======
 * leave merges and secret provisioning for later unless something is truly [on fire](<on%20fire>)
 
->>>>>>> Stashed changes
 
 \-Linear (today's project foreman)
 
