@@ -44,7 +44,6 @@ by Logan Alvan Finney
 
 *Adopted: 2026-03-16*
 *Revised: 2026-04-02* by Codex, following the LAF-25 / LAF-28 registry repair
-*Amended: 2026-04-10* by Codex, Logan-directed facet terminology clarification
 *Replaces: Claude.md (v0.0) Frameworks*
 
 ---
@@ -65,11 +64,6 @@ by Logan Alvan Finney
 
 The vault is maintained by an agentic swarm of multiple personality-instances (locally called "personas," "individuals," "entities," "conversations," or "agents"). Each agent operates under a defined capability tier and metatextual layer.
 
-When Logan's own recurrent names or internal self-divisions appear in lore,
-touchstones, or narrative analysis, treat them as facets of one human identity
-rather than separate aliases, personas, or agents unless Logan explicitly says
-otherwise.
-
 This layer map is still under revision, but the control principle is stable: capability must be explicit, scoped, and reversible.
 
 ---
@@ -81,7 +75,7 @@ This layer map is still under revision, but the control principle is stable: cap
 
 Orientation protocol for instances awakening inside the vault. Current approved version:
 
-- **Location:** `LEVELSET-STEP-0-EXTERNAL-AGENT.md` *(repo root — not under `!/`)*
+- **Location:** `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md`
 - **Key principle:** Automation is the end state; manual bridge is an interim fallback. Failure is natural but advances change.
 
 ### ARISE v(0.0)
@@ -117,9 +111,9 @@ The documentary C's remain an active naming grammar: capture, collect, collate, 
 ## V. CONSTRAINTS
 
 - **No scope creep.** Core protocols rule, avoiding overrun of complexity for its own sake.
-- **`!/` is the stable routing and bootstrap layer.** Agents may rely on `!/README.md`, `!/AGENTS.md`, `!/agents.json`, and `!/agent.sh` for orientation and local bootstrap. Root governance files remain the doctrine layer.
+- **`!/` is the stable routing and bootstrap layer.** Agents may rely on `!/AGENTS.md`, `!/agents.json`, and `!/agent.sh` for orientation and local bootstrap. Root governance files remain the doctrine layer.
 - **Agentic guardrails:**
-  - Must ingest `!/README.md` and Logan's active framework stack before acting.
+  - Must ingest `AGENTS.md`, `!/AGENTS.md`, and Logan's active framework stack before acting.
   - Must declare an explicit capability tier.
   - Must not grant write access to the routing/bootstrap layer or rewrite governance without Logan's approval.
 - **No unauthorized restructuring.** Agents surface suggestions and best-practice recommendations for systemic reorganization, but Logan approves any structural change first.
@@ -169,7 +163,7 @@ Amendments require:
 
 ---
 
-*Last updated: 2026-04-10*
+*Last updated: 2026-04-02*
 
 *Status: pending revision-synthesis and congressional adoption, post-consolidation court.*
 

@@ -14,6 +14,10 @@ concurrency:
   group: auto-pr-${{ github.ref }}
   cancel-in-progress: true
 
+concurrency:
+  group: auto-pr-${{ github.ref_name }}
+  cancel-in-progress: true
+
 jobs:
   auto-pr:
     runs-on: ubuntu-latest
@@ -129,12 +133,23 @@ jobs:
               --head "$BRANCH" 2>&1 || true)
           fi
 
-          if [ "${CREATE_FAILED:-}" = "true" ]; then
-            if echo "$PR_URL" | grep -qi "already exists"; then
-              echo "PR already exists for $BRANCH (detected from gh output). Skipping."
-              exit 0
-            fi
-            echo "::warning::gh pr create failed: $PR_URL"
+          echo "Created PR: $PR_URL"
+
+      - name: Wait before triggering agent reviews
+        if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
+        run: |
+          echo "Waiting 30 minutes before triggering agent reviews so PR checks and follow-up pushes can settle."
+          sleep 1800
+
+      - name: Trigger agent reviews
+        if: steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="${GITHUB_REF_NAME}"
+          PR_NUM=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty' 2>/dev/null || true)
+          if [ -z "$PR_NUM" ] || ! [[ "$PR_NUM" =~ ^[0-9]+$ ]]; then
+            echo "No open PR found to trigger reviews on"
             exit 0
           fi
 
