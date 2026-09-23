@@ -3,7 +3,7 @@
 
 from __future__ import annotations
 
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from pathlib import Path
 
@@ -45,6 +45,27 @@ def run_syntax_checks(python_executable: str = sys.executable) -> int:
 
     print(f"Syntax OK - {len(syntax_files)} files checked")
     return 0
+
+
+def run_pytest(python_executable: str = sys.executable) -> int:
+    try:
+        result = subprocess.run(
+            [python_executable, "-m", "pytest", *TEST_FILES, "-v"],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=300,
+            check=False,
+        )
+    except subprocess.TimeoutExpired:
+        print("ERROR: pytest timed out after 300s")
+        return 1
+    print(result.stdout)
+    if result.stderr:
+        print(result.stderr)
+    return result.returncode
 
 
 def main() -> int:

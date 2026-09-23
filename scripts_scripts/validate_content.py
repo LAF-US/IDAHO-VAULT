@@ -7,7 +7,7 @@ Checks staged files for signs of injection, malformed frontmatter,
 or unexpected content. Exits non-zero to halt the workflow on failure.
 
 Usage:
-  python3 validate_content.py [--scope bills|inbox|all] [--paths-from-stdin]
+  python3 validate_content.py [--scope bills|admin|generated|inbox|all] [--paths-from-stdin]
 
 Exit codes:
   0  All checks passed
@@ -16,7 +16,7 @@ Exit codes:
 
 import argparse
 import re
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from pathlib import Path
 
@@ -109,6 +109,12 @@ def get_changed_files(paths_from_stdin: bool = False) -> list[Path]:
         return [Path(f) for f in lines if f.endswith(".md")]
     output = _run_git(["git", "diff", "--name-only", "--diff-filter=ACMRD", "--cached"])
     return [Path(f) for f in output.strip().splitlines() if f.endswith(".md")]
+
+
+def validate_frontmatter(path: Path, content: str) -> list[str]:
+    """Check that YAML frontmatter parses cleanly."""
+    _, errors = parse_frontmatter(path, content)
+    return errors
 
 
 def parse_frontmatter(path: Path, content: str) -> tuple[dict | None, list[str]]:

@@ -126,4 +126,3 @@ Examples:
 For more help on a command:
     hermes <command> --help
 logan@Logans-MBP ~ %
-```

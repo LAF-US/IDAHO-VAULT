@@ -4,7 +4,7 @@ Setup script to download and build tree-sitter language grammars
 """
 
 import shutil
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 from pathlib import Path
 
 # Grammar repositories

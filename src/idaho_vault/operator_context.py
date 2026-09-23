@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from datetime import date
 import json
 from pathlib import Path
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 from typing import Iterable
 
 
