@@ -48,7 +48,7 @@ posthog==7.53.0
     # via idaho-vault
 pycparser==3.0 ; implementation_name != 'PyPy'
     # via cffi
-pygit2==1.20.0
+pygit2==1.20.1
     # via idaho-vault
 pygments==2.21.0
     # via
