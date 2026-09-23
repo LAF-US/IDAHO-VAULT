@@ -1,6 +1,6 @@
 ---
 title: SPEC - Connector Hub and Connector Maze Census
-updated: 2026-04-09
+updated: 2026-04-10
 status: active
 authority: LOGAN
 type: spec
@@ -17,8 +17,6 @@ related:
   - swarm.json
   - LEVELSET
   - VAULT-CONVENTIONS
-date created: Thursday, April 9th 2026, 10:19:56 pm
-date modified: Friday, April 10th 2026, 12:50:36 pm
 ---
 
 # SPEC - Connector Hub and GitHub Primacy
@@ -137,3 +135,9 @@ V2 does **not** auto-enable new writes.
 
 This spec is the human-readable bridge between those surfaces.
 
+## DOCUMENT METADATA
+
+- Created: 2026-04-09
+- Last Updated: 2026-04-10
+- Status: active
+- Authority: LOGAN

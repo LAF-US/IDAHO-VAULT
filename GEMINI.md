@@ -2,7 +2,7 @@
 
 # Gemini — IDAHO-VAULT (Table of Contents)
 
-# Gemini
+This file serves as the project-specific Table of Contents for Gemini's context and instructions.
 
 ## Context & Instructions
 

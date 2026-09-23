@@ -6,9 +6,9 @@ type: reference
 
 # 1Password Secrets Inventory
 
-**Vault:** Use the real visible vault from `op vault list`  
-**Management:** Secrets centralized in 1Password; GitHub Actions synced via `OP_SERVICE_ACCOUNT_TOKEN`  
-**Updated:** 2026-04-12
+**Vault:** IDAHO-VAULT (or suitable 1Password team vault)  
+**Management:** All secrets centralized in 1Password; GitHub Actions synced via `OP_SERVICE_ACCOUNT_TOKEN`  
+**Updated:** 2026-03-30
 
 ---
 
@@ -42,21 +42,28 @@ type: reference
 
 ## Access Control
 
-- Use the visible vault list from the live desktop account, not a guessed vault name
-- GitHub Actions should expose only `OP_SERVICE_ACCOUNT_TOKEN`
-- Local developer workflows should use `op` against the signed-in desktop context
-- Emergency access remains outside the repo
+- **1Password vault:** Team vault "IDAHO-VAULT" (if org account) or Personal vault (individual account)
+- **GitHub Actions:** Only `OP_SERVICE_ACCOUNT_TOKEN` exposed; all other secrets fetched at runtime via `op item get`
+- **Local developer:** Full access via `op` CLI after authentication
+- **Emergency access:** Backup codes stored in secure location (not repo)
+
+---
+
+## Deprecation / Cleanup
+
+| Item | Status | Date Marked | Cleanup Date |
+|---|---|---|---|
+| *(none currently)* | — | — | — |
 
 ---
 
 ## How to Add a New Secret
 
-1. In the 1Password desktop app:
-   - choose the real target vault
-   - create the item
-   - title it clearly
-
-2. In GitHub Actions:
+1. **In 1Password desktop app:**
+   - Vault → "IDAHO-VAULT"
+   - Create new item (Password, SSH Key, or appropriate type)
+   - Title: `[Service] [Credential Type]` (e.g., `Slack Bot Token`)
+   - Save
 
 2. **In GitHub Actions workflow:**
 
@@ -68,8 +75,8 @@ type: reference
        echo "SECRET_NAME=$SECRET" >> $GITHUB_ENV
    ```
 
-3. In this file:
-   - add the secret row
+3. **In this file:**
+   - Add row to "Secrets Currently in Use" table
 
 ---
 
@@ -107,7 +114,7 @@ type: reference
 
 ## Emergency Procedures
 
-### If a Secret Is Compromised
+### If a Secret is Compromised
 
 1. **Immediately revoke** in source system (GitHub, Linear, service provider)
 2. **Generate replacement**
@@ -116,15 +123,30 @@ type: reference
 5. **Audit logs** — check for unauthorized access in GitHub Actions, Linear, etc.
 6. **Notify team** (if applicable)
 
-### Access Denied or Confusing Auth State
+### If 1Password Account is Compromised
+
+1. **Change 1Password account password**
+2. **Revoke all service tokens** in 1Password vault
+3. **Generate new `OP_SERVICE_ACCOUNT_TOKEN`**
+4. **Update GitHub Secrets** with new token
+5. **Rotate all secrets** that may have been exposed
+6. **Contact 1Password support** if account unauthorized access detected
+
+### Access Denied After Setup
 
 ```bash
-op account list
-op vault list
-op whoami
-```
+# Re-authenticate
+op signin
 
-If `op whoami` and `op vault list` disagree, trust the live retrieval test from `op item get` before concluding the local install is broken.
+# Check current session
+op whoami
+
+# List available vaults
+op vault list
+
+# Check vault permissions
+op vault get IDAHO-VAULT
+```
 
 ---
 
@@ -133,7 +155,8 @@ If `op whoami` and `op vault list` disagree, trust the live retrieval test from 
 **Local test (after setup):**
 
 ```bash
-op item get "what3words" --vault Vault --fields label=credential
+op item get "GitHub Personal Access Token" --fields password
+# Should return the token without errors
 ```
 
 **GitHub Actions test:**
@@ -149,6 +172,6 @@ Add a test workflow step:
 
 ## Related Documentation
 
-- `.op/SETUP.md`
-- `1Password.md`
-- `what3words.md`
+- `.op/SETUP.md` — Installation and configuration steps
+- `!/VAULT-CONVENTIONS.md` — Vault secret management section
+- `.claude/CLAUDE.md` — Claude Code operational context

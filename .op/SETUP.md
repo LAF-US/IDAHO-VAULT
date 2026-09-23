@@ -1,8 +1,8 @@
 # 1Password CLI & SSH Agent Setup
 
 **Scope:** Local developer machine + GitHub Actions integration  
-**Status:** Template with desktop reality notes from 2026-04-12  
-**Updated:** 2026-04-12
+**Status:** Template — requires Logan execution  
+**Updated:** 2026-03-30
 
 ---
 
@@ -12,7 +12,7 @@
 
 - Windows 11 Pro (confirmed)
 - Git Bash installed (`C:\Program Files\Git\bin\bash.exe`)
-- 1Password desktop app installed
+- 1Password app (desktop) already signed in
 - Administrative access on machine
 
 ### Step 1: Install 1Password CLI
@@ -21,7 +21,7 @@
 
 ```bash
 scoop install 1password
-op --version
+op --version  # Verify
 ```
 
 **Option B: Homebrew**
@@ -35,15 +35,18 @@ Download from <https://app-updates.agilebits.com/check/win/1password/latest> —
 
 ### Step 2: Configure Shell Integration
 
-Add to `~/.bashrc` or equivalent:
+Add to `~/.bashrc` (or equivalent):
 
 ```bash
+# 1Password CLI integration
 export OP_CONFIG_DIR="$HOME/.op"
 
+# SSH agent (1Password) — Unix socket simulation on Windows
 if [ -z "$SSH_AUTH_SOCK" ]; then
   export SSH_AUTH_SOCK="$HOME/.ssh/1password-agent.sock"
 fi
 
+# Alias for signed commits
 alias op-signin='eval $(op signin)'
 ```
 
@@ -55,10 +58,9 @@ source ~/.bashrc
 
 ### Step 3: Authenticate `op` CLI
 
-If no account is configured yet:
-
 ```bash
 op account add
+# Follow prompts: sign-in with 1Password account
 ```
 
 Test:
@@ -66,21 +68,11 @@ Test:
 ```bash
 op account list
 op vault list
-op whoami
 ```
-
-### Windows notes from the 2026-04-12 live re-test
-
-- Logan's desktop already had a saved CLI account:
-  - `my.1password.com`
-  - `loganfinney27@gmail.com`
-- The sandboxed shell produced a misleading pipe denial, but the live desktop context could still access vaults and items outside the sandbox.
-- `op whoami` may still report `account is not signed in` even when `op vault list` and `op item get` succeed through the live desktop path.
-- Do not assume the live vault is literally named `IDAHO-VAULT`; check `op vault list` and use the real visible vault name.
 
 ### Step 4: Register SSH Key in 1Password
 
-Assumption: an SSH key item such as `GitHub SSH Key` exists in 1Password.
+Assumption: You have an SSH key in 1Password vault (e.g., "GitHub SSH Key" item).
 
 **Retrieve key fingerprint:**
 
@@ -96,10 +88,7 @@ rm /tmp/gh_key
 - Toggle "SSH Agent" ON
 - Authorize the SSH key
 
-- Open 1Password
-- Settings
-- Developer
-- Toggle `SSH Agent` on
+**Configure SSH to use 1Password agent:**
 
 Create/edit `~/.ssh/config`:
 
@@ -112,9 +101,11 @@ Host github.com
 
 ### Step 5: Configure Git Signing
 
+Point git to 1Password SSH key:
+
 ```bash
 git config --global gpg.format ssh
-git config --global user.signingkey "ssh-ed25519 XXXXXXX..."
+git config --global user.signingkey "ssh-ed25519 XXXXXXX..." # fingerprint from Step 4
 git config --global commit.gpgsign true
 git config --global tag.gpgsign true
 git config --global gpg.ssh.program "ssh-keygen"
@@ -124,8 +115,9 @@ git config --global gpg.ssh.program "ssh-keygen"
 
 ```bash
 cd /path/to/IDAHO-VAULT
+echo "test" > /tmp/test.txt
 git commit --allow-empty -m "Test signed commit"
-git log --show-signature
+git log --show-signature  # Verify signature
 ```
 
 ---
@@ -150,6 +142,8 @@ In GitHub repo settings (`github.com/loganfinney27/IDAHO-VAULT/settings/secrets/
 **Value:** (paste token from Step 1 — or retrieve from 1Password if saved there)
 
 ### Step 3: Update Workflow to Fetch Secrets
+
+Example workflow file (`.github/workflows/example-with-secrets.yml`):
 
 ```yaml
 name: Example Job with 1Password
@@ -184,7 +178,9 @@ jobs:
 
 ## Part 3: Vault Secret Inventory
 
-Create these items in the appropriate visible vault from `op vault list`:
+### Secrets to Add to 1Password Vault
+
+Create these items in 1Password (Vault: "IDAHO-VAULT" or suitable team vault):
 
 | Item Name | Type | Usage | Status |
 | --- | --- | --- | --- |
@@ -199,7 +195,7 @@ Create these items in the appropriate visible vault from `op vault list`:
 ```bash
 op item create --category=login \
   --title="Secret Name" \
-  --vault="Visible Vault Name" \
+  --vault="IDAHO-VAULT" \
   username=user@example.com \
   password="$(op generate --length 32)"
 ```
@@ -227,10 +223,11 @@ op item get "Secret Name" --fields label=username --format json
 
 ## References
 
-- 1Password CLI docs
-- 1Password SSH agent docs
-- GitHub SSH signing docs
+- [1Password CLI Docs](https://developer.1password.com/docs/cli/)
+- [1Password SSH Agent](https://developer.1password.com/docs/ssh/)
+- [Git Signing with SSH](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification)
+- [GitHub Actions Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)
 
 ---
 
-**Next:** verify the exact secret path you need with `op item get`, then test the dependent external API from the same live desktop context.
+**Next:** After completing local setup, run `op item list` to verify vault access, then coordinate GitHub Actions integration with Claude Code.

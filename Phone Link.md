@@ -32,17 +32,19 @@ This makes it a **reliable, zero-config intake vector** for getting phone-captur
 ## Intake Script
 
 **Script:** `.github/scripts/phone_link_intake.py`
-**Daemon:** `phone-link-auto-sweep.ps1` (local PowerShell watcher)
-**Watcher log:** `!/INBOX/_phone-link-watcher.log`
+**Wrapper:** `phone-link-intake.bat` (repo root, for Windows double-click)
 
 ### Usage
 
 ```bash
-# From vault root (Preview mode)
+# From vault root
 python .github/scripts/phone_link_intake.py
 
-# EXECUTE (Move files into vault)
-python .github/scripts/phone_link_intake.py --live-write
+# With custom source path
+python .github/scripts/phone_link_intake.py --source "C:\Users\loganf\Downloads\Phone Link"
+
+# Dry run (show what would happen, don't move files)
+python .github/scripts/phone_link_intake.py --dry-run
 
 # Process and auto-stage the moved files for git
 python .github/scripts/phone_link_intake.py --git-add
@@ -59,4 +61,3 @@ python .github/scripts/phone_link_intake.py --git-add
 
 - VAULT-CONVENTIONS — Vault structure and intake rules
 - `.github/scripts/phone_link_intake.py` — The intake automation script
-- `mcp_guardrails.py` — Structured action logging interface

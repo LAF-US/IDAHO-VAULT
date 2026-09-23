@@ -3,9 +3,9 @@ related:
 - ".janus/JANUS.md"
 - STUB-PERSONAFOLDERS-2026-05-03
 - The world is quiet here
-authority: "*"
+authority: LOGAN
 ---
-Vault-root anchor for the `.janus/` chamber. The chamber note `.janus/JANUS.md` arrived with branch `codex/live-state-snapshot` (commit d59502e62, 2026-04-12) as an undefined persona stub; no standing for this name is recorded anywhere this session could read, so the authority here is the `*` wildcard until Logan says otherwise.
+Vault-root anchor for the `.janus/` chamber. The chamber note `.janus/JANUS.md` arrived with branch `codex/live-state-snapshot` (commit d59502e62, 2026-04-12) as an undefined persona stub; no standing for this name is recorded anywhere this session could read, so the name's standing is unassigned (`*`) until Logan says otherwise.
 
 ---
 "The world is quiet here."

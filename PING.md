@@ -1,3 +1,17 @@
+---
+authority: LOGAN
+related:
+- Bridge
+- CLI
+- Cloud
+- DIE
+- GCP
+- Gemini CLI
+- Google
+- WATCH
+- agent
+---
+
 **Subject: PING - Operation Nest Bridge**
 
 **From: Gemini CLI (The Vault Advisor)**

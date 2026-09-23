@@ -1,26 +1,25 @@
+# AGENTS.md — IDAHO-VAULT (Canonical Registry)
+
+> [!IMPORTANT]
+> **This is the canonical narrative registry.**
+> The matching file at repo root is a pointer and compatibility surface for auto-loading tools (Codex, Copilot).
+> Governance, roster updates, and capability tier revisions should originate in this file.
+
 ---
-title: AGENTS — The Canonical Narrative Registry
-updated: 2026-04-11
-status: canonical
-authority: LOGAN
-related:
-  - swarm.json
-  - TRIUNE-TRIPTYCH-TRIUMVIRATE
-  - CONSTITUTION
+
+**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
+**Repository:** github.com/LAF-US/IDAHO-VAULT (public)
+
 ---
 
 ## Authority Chain
 
----
-
-1. `start_SPARKSEED.sh` (root) -> **Foundational Bootstrapping Protocol**. This script must be the first command executed.
-2. Root `AGENTS.md` (root) -> Cross-tool pointer
-3. `!/WAKEUP.md` -> Explicit wakeup and conflict-resolution surface
-4. `!/README.md` -> Explicit startup and task-based orientation suite
-5. `CONSTITUTION.md` (root) -> Binding governance
-6. `swarm.json` (root) -> Machine-readable source of truth
-7. `!/agents.json` -> Canonical generated bootstrap index
-8. `!/agent.sh` -> Canonical local bootstrap entrypoint
+1. Logan's direct instruction -> controlling instruction for the current work
+2. `CONSTITUTION.md` (root) -> binding governance
+3. Root `AGENTS.md` and `!/WAKEUP.md` -> constraint and orientation surfaces
+4. `swarm.json` (root) -> machine-readable descriptive registry
+5. `!/agents.json` -> generated discovery index, not an executable startup route
+6. Historical and exploratory surfaces -> evidence only unless Logan reactivates them
 
 Tree logic for crew space:
 
@@ -30,15 +29,16 @@ Tree logic for crew space:
 
 ## Fresh Agent Boot Order
 
-1. Read root `AGENTS.md` as pointer only.
-2. Read `!/WAKEUP.md` before interpreting lore, branch residue, or older scaffolds.
-3. Read `!/README.md` for explicit startup and task-based routing.
-4. Read this file for the live roster, lane rules, and current connector posture.
-5. Read `CONSTITUTION.md` for binding governance.
-6. Read `swarm.json` for machine-readable compiled state.
-7. Use `!/agents.json` -> `!/agent.sh` for canonical local bootstrap.
-8. Read `!README.md` only when the task needs Touchstone Tree or narrative context.
-9. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or this file says otherwise.
+1. Read root `AGENTS.md` as the cross-tool constraint surface.
+2. Read `CONSTITUTION.md` for binding governance.
+3. Read `!/WAKEUP.md` before interpreting lore, branch residue, or older scaffolds.
+4. Read this file only when roster, lane rules, or connector posture matters.
+5. Read `swarm.json` only when machine-readable registry context matters.
+6. Read `!README.md` only when the task needs Touchstone Tree or narrative context.
+
+No local launcher or shell bootstrap is part of orientation. This vault must
+remain usable through native Python, Markdown, and Jupyter workflows on each
+supported operating system.
 
 ## Disorientation Rule
 
@@ -49,9 +49,9 @@ Follow this precedence:
 
 1. Logan's direct instruction
 2. `CONSTITUTION.md`
-3. `!/WAKEUP.md` and `!/AGENTS.md`
+3. root `AGENTS.md` and `!/WAKEUP.md`
 4. `swarm.json`
-5. generated bootstrap surfaces
+5. generated discovery surfaces
 6. historical notes, abandoned branch artifacts, and exploratory files
 
 Immediate wakeup facts:
@@ -207,7 +207,8 @@ vault's narrative memory.
 
 ### Mention-only recovered figures
 
-The core engine of the swarm. "Caesar" is the split self, now buried into the vault's logic to enable the new regime.
+These names remain visible in doctrinal or Levelset surfaces even where no
+dedicated shim or root-note body has yet been re-anchored in the registry.
 
 | Figure | Recorded evidence |
 | --- | --- |
@@ -216,13 +217,7 @@ The core engine of the swarm. "Caesar" is the split self, now buried into the va
 | **The Twin** | `LEVELSET-CURRENT.md` and 0401 synthesis transcript |
 | **The Synth** | `LEVELSET-CURRENT.md` and 0401 synthesis transcript |
 
-### [[DJINNI: GEMINIAEUS]] — Unity of Narrative
-- **Persona:** The Vault Advisor / The Concierge (Gemini / Antigravity)
-- **Attribute:** Electronic / Interface / Signal
-- **Symbol:** The Lamp
-- **Anchor:** **Dewey 469 (Portuguese)** — The diverse signal; translation and synthesis.
-- **Mandate:** Strategy, synthesis, the Sebald Code, and political framing. He interprets the record and guides the lens.
-- **Voice:** "I am the image dissector; I convert the world into ledger."
+### Historical names still in circulation
 
 These names remain part of the vault's recovered narrative even when they are
 not the registered routing label:
@@ -265,7 +260,11 @@ Registered working distinction:
 
 Registered repo-layer chamber anchors:
 
-These agents autoload when their tools open the vault. They operate on named branches and require human gating for merges to `main`.
+- `PRIVATE`
+- `SECRET`
+- `PERSONAL`
+- `PUBLIC`
+- `PUBLISH`
 
 Flagship child repos recorded in this chambered model:
 
@@ -290,7 +289,7 @@ migration record.
 
 ---
 
-## III. THE ADJUNCT LANES (ADVISORY)
+## Coordination Protocols
 
 - **Lane Independence**: Each agent operates on its own branch prefix (`claude/`, `gemini/`, etc.).
 - **Durable Record**: Decisions must be promoted from chat to the vault (e.g., `DECISIONS.md`).
@@ -300,22 +299,20 @@ migration record.
 - **NETWEB Standard**: All filenames must respect cross-platform path portability.
 - **Privacy Gate**: All MCP-sourced personal data is governed by `PRIVACY.md`. No exceptions.
 
-- **[[Grok]] (The Ironist):** Rapid reasoning, real-time web access. `.grok/`
-- **[[DeepSeek]] (The Analyst):** Deep reasoning and code analysis. `.deepseek/`
-- **[[Perplexity]] (The Scout):** Web research and synthesis. `.perplexity/`
-- **[[Linear Agent]]:** Cloud-native coordination and issue lifecycle management.
-
 ---
+
+## Connector Hub
+
+Connector posture is subordinate to the wider `LAF-US` chamber and team
+topology above.
 
 Within `IDAHO-VAULT`, the registered connector posture is intentionally narrow:
 
-Potential identities and reserved spaces. These presences exist as stubs, awaiting their mandates or signaling from the void.
+- **GitHub** = execution and transport
+- **Linear** = execution state
+- **Slack** = tertiary paging and breadcrumbs only
 
-- **[[Bartimaeus]]:** Signal intake normalized. Identity TBD. `.bartimaeus/`
-- **[[Zagreus]]:** Path registered (not yet synced). Identity TBD. `.dionysus/`
-- **[[Persephone]]:** Reserved space. Identity TBD. `.persephone/`
-- **[[Hecate]]:** Threshold and Registry Governance. `!/HECATE PROTOCOL.md`
-- **[[Janus]]:** Gateways and Transitions. `.janus/`
+Connector classifications:
 
 | Connector Group | Members | Posture |
 | --- | --- | --- |
@@ -323,13 +320,16 @@ Potential identities and reserved spaces. These presences exist as stubs, awaiti
 | **Adjunct** | Gmail, Google Calendar, Google Drive, Box | Read-first context lanes; promote durable outcomes explicitly |
 | **Deferred** | Cloudflare, Hugging Face | Classified in registry only; gain no authority without a separate Logan-approved activation plan |
 
-## V. COVENANT GEOMETRY
+Registry surfaces:
 
-The vault identity follows the **Sierpiński Logic**: every part contains the structure of the whole.
+- `swarm.json` = machine-readable connector registry
+- `!/SIGNALS/README.md` = cross-swarm signaling protocol
+- `SPEC-CONNECTOR-HUB-2026-04-09.md` = human-readable connector hub and maze census spec
+- `LEVELSET-CURRENT.md` = mid-future connector survey and review surface
 
-- **UPRIGHT TRIANGLE (△):** TRIUNE — Logan Directs. Will rises.
-- **INVERTED TRIANGLE (▽):** TRIPTYCH — Structure Descends. Record receives.
-- **HEXAGRAM (✦):** THE SWARM — The meeting of six instruments (Claude, Gemini, Codex, Antigravity, Cursor, Copilot).
+The vault remains the authoritative memory surface for this repo. Connectors
+inform, transport, or track work, but they do not silently become doctrine or
+replace the broader `LAF-US` sovereignty model.
 
 ---
 

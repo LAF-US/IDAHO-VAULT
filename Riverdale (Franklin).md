@@ -1,9 +1,8 @@
 ---
-tags:
-  - geography/land/places/communities
-aliases:
-  - Riverdale
 date created: Monday, March 23rd 2026, 4:54:55 pm
-date modified: Monday, March 30th 2026, 10:23:05 am
+date modified: Monday, March 30th 2026, 10:34:15 am
+related:
+- Benewah
+authority: LOGAN
 ---
 > disamb: Riverdale (Benewah)

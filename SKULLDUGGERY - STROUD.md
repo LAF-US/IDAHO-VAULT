@@ -1,6 +1,14 @@
 ---
 date created: Sunday, March 29th 2026, 11:06:12 pm
 date modified: Sunday, March 29th 2026, 11:06:30 pm
+related:
+- Bartimaeus
+- LAF
+- LOGAN
+- THE
+- agent
+- persona
+authority: LOGAN
 ---
 > 2026-05-18 correction: historical/persona note. The phrase "XKCD-TIER-CONFUSION" below is metaphorical residue, not a live XKCD protocol reference. Logan clarified that XKCD points to the standards-proliferation warning.
 

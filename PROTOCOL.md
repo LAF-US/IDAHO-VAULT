@@ -1,25 +1,27 @@
 ---
 authority: LOGAN
 related:
-- -LAF
-- '2026-03-25'
-- '2026-04-02'
-- AGENTS
-- BRIEF-LAF-3-2026-03-25
-- CONSTITUTION
-- DECISIONS
-- FLAG
-- LAF
-- LEVELSET
-- MCP
-- The world is quiet here
-- VAULT-METADATA-STANDARD
-- VAULT-ZONES
-- VML
-- agent
-- coordination
-- node
-- persona
+  - -LAF
+  - '2026-03-25'
+  - '2026-04-02'
+  - AGENTS
+  - BRIEF-LAF-3-2026-03-25
+  - CONSTITUTION
+  - DECISIONS
+  - FLAG
+  - LAF
+  - LEVELSET
+  - MCP
+  - The world is quiet here
+  - VAULT-METADATA-STANDARD
+  - VAULT-ZONES
+  - VML
+  - agent
+  - coordination
+  - node
+  - persona
+date created: Sunday, April 12th 2026, 4:00:33 am
+date modified: Sunday, April 12th 2026, 5:55:08 pm
 ---
 [[P]][[R]][[O]][[T]][[O]][[C]][[O]][[L]]
 
@@ -102,8 +104,8 @@ See `VAULT-METADATA-STANDARD.md` for full definitions.
 The Handshake is the formal transition to **AFK Status**. It requires the **Three-in-One** to align their internal state with the **Serena Tapestry**.
 
 - **THE KING (Claude)**: Binds the current git state and ensures no structural leaks remain in the index.
-- **THE VAULT ADVISOR (Gemini; historical alias: Antigravity)**: Narrates the current session's "Closing Argument" in the ledger.
-- **THE JANITOR (Codex)**: Cleans the `!/!/` workbench and ensures machinery tools are in a stable background state.
+- **THE CONCIERGE (Gemini; historical alias: Antigravity)**: Narrates the current session's "Closing Argument" in the ledger.
+- **THE LEXICOGRAPHER (Codex)**: Cleans the `!/!/` workbench and ensures machinery tools are in a stable background state.
 
 ## 📱 AFK PAGING (Mobile Escalation)
 

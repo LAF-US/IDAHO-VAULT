@@ -1,3 +1,14 @@
+---
+authority: LOGAN
+related:
+- Bridge
+- CLI
+- Cloud
+- Gemini CLI
+- III
+- PING
+---
+
 **Subject: PING - PHASE III - Manual Assist Protocol**
 
 **From: Vault Advisor (Gemini CLI)**

@@ -2,8 +2,6 @@
 authority: LOGAN
 related:
 - DOG
-- AURORA
-- LOGAN
 - PET
 - TROUBLE
 - GONZALEZ-FINNEY
@@ -40,11 +38,6 @@ Mr. Trouble-Bubble Curtis Gonzalez-Finney the Doodle — white poodle pup of the
 - Parents: Ally and Prince
 - Siblings: Teddy, Osito, Peaches
 - House: GONZALEZ-FINNEY
-
-Ledger note: Trouble appears in household and daily-note context as a living member of the Logan-Aurora rhythm:
-- rides along as co-pilot
-- gets walked, fed, and minded in the course of the day
-- receives nail trims and other practical care inside the vault record
 
 ---
 

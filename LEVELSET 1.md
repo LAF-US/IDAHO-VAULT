@@ -1,45 +1,47 @@
 ---
 authority: LOGAN
 related:
-- '201'
-- ALL
-- Anthropic
-- Bonner County
-- CCA
-- Capitol Correspondents Association
-- Clark Corbin
-- Copilot
-- FRAMEWORK
-- FRAMEWORKS
-- GitHub
-- IRE
-- Idaho
-- Idaho Capital Sun
-- Idaho Code
-- Idaho Press
-- Idaho Press Club
-- Idaho Public Television
-- Idaho Reports
-- LEVELSET
-- Logan Finney
-- Logan's
-- Microsoft Copilot
-- North Idaho
-- POV
-- RSS
-- TBD
-- WORK
-- XIV
-- YOU
-- agent
-- awakening
-- coordination
-- initialization
-- node
-- nodes
-- self
-- voting
-- window
+  - '201'
+  - ALL
+  - Anthropic
+  - Bonner County
+  - CCA
+  - Capitol Correspondents Association
+  - Clark Corbin
+  - Copilot
+  - FRAMEWORK
+  - FRAMEWORKS
+  - GitHub
+  - IRE
+  - Idaho
+  - Idaho Capital Sun
+  - Idaho Code
+  - Idaho Press
+  - Idaho Press Club
+  - Idaho Public Television
+  - Idaho Reports
+  - LEVELSET
+  - Logan Finney
+  - Logan's
+  - Microsoft Copilot
+  - North Idaho
+  - POV
+  - RSS
+  - TBD
+  - WORK
+  - XIV
+  - YOU
+  - agent
+  - awakening
+  - coordination
+  - initialization
+  - node
+  - nodes
+  - self
+  - voting
+  - window
+date created: Wednesday, April 1st 2026, 11:16:48 pm
+date modified: Monday, April 6th 2026, 9:15:28 pm
 ---
 
 # SWARM LEVELSET REPORT

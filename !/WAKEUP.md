@@ -28,27 +28,27 @@ or scattered branch residue.
 
 ## Read In This Order
 
-## Read In This Order
+1. Read root `AGENTS.md` as the auto-loaded pointer and constraint surface.
+2. Read `CONSTITUTION.md` for binding governance.
+3. Read this file to clear stale world models and conflict assumptions.
+4. Read `DECISIONS.md` and `VAULT-CONVENTIONS.md` when the task touches policy or repository changes.
+5. Read `swarm.json` only when machine-readable registry context is relevant.
+6. Read `!/AGENTS.md` only when roster, lane, or connector context is relevant.
+7. Read `!README.md` only when the task needs Touchstone Tree or narrative context.
 
-1. `start_SPARKSEED.sh` (Mandatory Bootstrap). This must run first.
-2. `!/WAKEUP.md` to clear stale world models and conflict assumptions.
-3. `!/README.md` for explicit startup and task-based orientation.
-4. `!/AGENTS.md` for the live roster, lane rules, and current connector posture.
-5. `CONSTITUTION.md` for binding governance.
-6. `swarm.json` for machine-readable compiled state.
-7. Use `!/agents.json` -> `!/agent.sh` for canonical local bootstrap.
-8. Read `!README.md` only when the task needs Touchstone Tree or narrative context.
-9. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
+Orientation is documentation-first and OS-agnostic. It does not require running
+a launcher, a shell bootstrap, Git Bash, WSL, or an OpenClaw operation.
 
 ## If Two Things Conflict
 
 Use this precedence order:
 
-1. Logan's direct instruction in the current thread or explicit governance decision
+1. Logan's direct instruction in the current thread or explicit governance
+   decision
 2. `CONSTITUTION.md`
-3. `!/WAKEUP.md` and `!/AGENTS.md`
+3. `!/WAKEUP.md`
 4. `swarm.json`
-5. `!/agents.json` and `!/agent.sh`
+5. generated discovery surfaces
 6. historical notes, branch artifacts, handoff drafts, and exploratory docs
 
 Historical or exploratory material is not automatically authoritative doctrine.
@@ -97,7 +97,7 @@ Historical or exploratory material is not automatically authoritative doctrine.
 
 ## Recovery Rule
 
-If you are still confused after reading the boot chain, stop, state the
+If you are still confused after reading the orientation documents, stop, state the
 conflict explicitly, and ask Logan rather than silently choosing a stale model.
 
 The point of this file is not poetry. It is to prevent false certainty.

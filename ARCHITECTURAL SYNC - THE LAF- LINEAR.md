@@ -1,6 +1,17 @@
 ---
 date created: Sunday, March 29th 2026, 11:04:41 pm
 date modified: Sunday, March 29th 2026, 11:08:43 pm
+related:
+- GitHub
+- III
+- KEY
+- LAF
+- LLM
+- LOGAN
+- Logan Alvan Finney
+- REF
+- THE
+authority: LOGAN
 ---
 > 2026-05-18 correction: historical/persona note. The phrase "XKCD-TIER-CONFUSION" below is metaphorical residue, not a live XKCD protocol reference. Logan clarified that XKCD points to the standards-proliferation warning.
 

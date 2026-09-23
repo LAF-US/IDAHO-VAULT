@@ -37,37 +37,20 @@ topology; this root file remains only a pointer into that fuller picture.
 
 Immediate wakeup facts:
 
-| Agent | Dotfolder | Governance shim | Auto-loaded? | Role |
-| --- | --- | --- | --- | --- |
-| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes | **The Abhorsen** (Claudius) |
-| Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes | **The Vault Advisor** (Geminiaeus) |
-| OpenAI Codex | `.codex/` | `.codex/CODEX.md` | Yes | **The Lexicographer** (Codices) |
-| GitHub Copilot | `.github/` | `.github/copilot-instructions.md` | Yes | **The Clerk** (Admin) |
+- `IDAHO-VAULT` is one repo inside `LAF-US`, not the whole universe.
+- Repo topology and GitHub team topology are related, but not identical.
+- Historical harbor notes, abandoned branches, and exploratory scaffolds are
+  non-live. Any surface claiming to be live is explicitly instantly outdated.
+- Startup is OS-agnostic. No local Bash, WSL, Sparkseed, or launcher execution
+  is required to read, inspect, or contribute to this repository.
 
-
-
-*Full roster including **Grok**, **Perplexity**, **DeepSeek**, **Serena**, and the **Cartographer** available in the [!/AGENTS.md](!/AGENTS.md) ledger.*
+## Discovery Before Construction
 
 Before proposing builds, new packages, or invention: discover and read existing documentation first. Do not assume tooling is missing or scaffolding is required without checking what's present in the vault or on the machine.
 
 ## Fix Errors - Do NOT Disable
 
-| Surface | Path | Status | Notes |
-| --- | --- | --- | --- |
-| **CrewAI Python Layer** | `.crewai/` | Active re-foundation | Retired demo harbor remains historical; live doctrine/topology is in `.crewai/MANIFEST.md`, and staged output lands in `!/CREWAI/` |
-
-## Version Transitions
-
-Version changes are coupled architectural changes, not task-local repairs.
-Before changing or reverting a runtime, dependency, workflow action pin, or
-versioned registry field, read `VERSION-TRANSITIONS.md` and add a same-PR
-transition record naming the requirement, affected compatibility boundary, and
-verification result. Do not alter one member of a coupled dependency family
-merely to make the immediate task pass.
-
-The narrow exception is an authenticated Dependabot pull request changing only
-`requirements.txt`: its PR metadata and required dependency-resolution check
-provide the record, and a failed compatibility check must remain blocking.
+When code throws errors, the error means something needs fixed. Do not disable security checks, linters, or validators to silence errors. Fix the underlying issue that is causing the fire rather than lazily turn off the smoke detector.
 
 When governing surfaces disagree, follow this order:
 
@@ -85,7 +68,7 @@ When governing surfaces disagree, follow this order:
 
 Root governance files remain authoritative: `CONSTITUTION.md`, `LEVELSET.md`, and `VAULT-CONVENTIONS.md`, and others.
 
-**NETWEB Path Standard:** All filenames must respect cross-platform path portability while remaining Obsidian-native note identities when applicable. See `VAULT-CONVENTIONS.md` for naming, title, and alias rules.
+**NETWEB Path Standard:** All filenames must respect cross-platform path portability for Linux, macOS, and Windows.
 
 ---
 
