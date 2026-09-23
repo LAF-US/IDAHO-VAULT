@@ -26,7 +26,6 @@ related:
 <https://t.co/uH0zzCLnKn>
 
 ## Links
-
 - <https://spokanefavs.com/how-journalists-are-not-seeking-the-truth-and-reporting-it-with-ui-homicides/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1601058062483492864)

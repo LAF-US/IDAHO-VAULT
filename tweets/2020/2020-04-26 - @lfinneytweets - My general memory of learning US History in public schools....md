@@ -25,7 +25,6 @@ My general memory of learning US History in public schools was something like–
 1960s-70s: we fixed racism & pollution, good job everyone <https://t.co/Yz2o1YbgC9>
 
 ## Links
-
 - <https://x.com/zeynep/status/1254397160331894784>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1254458202990600192)

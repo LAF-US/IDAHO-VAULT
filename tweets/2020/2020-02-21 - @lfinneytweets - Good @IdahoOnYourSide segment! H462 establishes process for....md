@@ -21,7 +21,6 @@ H462 establishes process for in-person walkthrough with tenant and landlord & re
 H459 would require 45-day notice if landlord will raise rent more than 10% (current law is 15 days). <https://t.co/zPGgGTxUmc>
 
 ## Links
-
 - <https://x.com/gregchaneyidaho/status/1230903509194854400>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230908574173237248)

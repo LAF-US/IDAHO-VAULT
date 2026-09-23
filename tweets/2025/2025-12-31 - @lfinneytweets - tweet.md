@@ -17,7 +17,6 @@ related:
 <https://t.co/cR3L6KDiln> <https://t.co/slggvHIwiQ>
 
 ## Links
-
 - <https://x.com/IdahoReports/status/2006484648705065029>
 
 ## Media

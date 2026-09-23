@@ -22,7 +22,6 @@ related:
 <https://t.co/h0g4SxSjJR>
 
 ## Links
-
 - <https://sandpointreader.com/boiling-point-reached-in-gun-case/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1222962645331955712)

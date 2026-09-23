@@ -19,11 +19,10 @@ related:
   - idpol
 ---
 
-Interesting how legislative opposition to the library bill fell geographically. #idleg #idpol
+Interesting how legislative opposition to the library bill fell geographically. #idleg #idpol 
 <https://t.co/ybllNiGnJy>
 
 ## Links
-
 - <https://www.datawrapper.de/_/XhL3J/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1779946786104443183)

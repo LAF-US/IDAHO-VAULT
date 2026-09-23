@@ -20,7 +20,6 @@ RT @FHQ: NEW AT FHQ: Idaho Presidential Primary Bills Pass Senate
 <https://t.co/9OQugTsiC1> <https://t.co/t08vMfsQsY>
 
 ## Links
-
 - <https://www.frontloadinghq.com/2023/03/idaho-presidential-primary-bills-pass.html>
 
 ## Media

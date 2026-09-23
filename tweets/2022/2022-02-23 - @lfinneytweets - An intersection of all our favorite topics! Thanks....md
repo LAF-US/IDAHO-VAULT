@@ -19,7 +19,6 @@ related:
 An intersection of all our favorite topics! Thanks @mlcarmel for joining me this morning. <https://t.co/uxJvcyukRa>
 
 ## Links
-
 - <https://x.com/IdahoReports/status/1496592546000039936>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1496593082053054465)

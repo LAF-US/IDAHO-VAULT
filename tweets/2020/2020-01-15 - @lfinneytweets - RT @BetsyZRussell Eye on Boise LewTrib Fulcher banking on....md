@@ -19,7 +19,6 @@ related:
 RT @BetsyZRussell: Eye on Boise: LewTrib: Fulcher banking on 'potato diplomacy', story by reporter Bill Spence <https://t.co/GlUUjkJuOq> #idp…
 
 ## Links
-
 - <https://bit.ly/2uKCO1I>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1217533043662917632)

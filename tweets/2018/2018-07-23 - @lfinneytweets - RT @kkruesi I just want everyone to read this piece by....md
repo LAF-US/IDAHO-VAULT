@@ -30,7 +30,6 @@ date modified: Tuesday, April 28th 2026, 5:41:25 pm
 RT @kkruesi: I just want everyone to read this piece by @sethogilvie <https://t.co/W2cCLyJA6Z> idleg idpol <https://t.co/wPw45dkOh7>
 
 ## Links
-
 - <https://idahoreports.blogs.idahoptv.org/2018/07/21/come-as-you-are-as-i-want-you-to-be/>
 
 ## Media

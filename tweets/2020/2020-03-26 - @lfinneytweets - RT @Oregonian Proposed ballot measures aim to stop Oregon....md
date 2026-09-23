@@ -19,7 +19,6 @@ related:
 RT @Oregonian: Proposed ballot measures aim to stop Oregon lawmakers from walking out <https://t.co/bFAuQWo1aG> <https://t.co/RRTYPXXjDg>
 
 ## Links
-
 - <https://trib.al/gDi5ckX>
 
 ## Media

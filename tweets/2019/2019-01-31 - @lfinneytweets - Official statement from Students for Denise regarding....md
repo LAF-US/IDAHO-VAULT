@@ -23,7 +23,6 @@ Official statement from Students for Denise regarding @uidaho suspension of prof
 Read the whole statement here: <https://t.co/VQ2IkrxLHe> <https://t.co/YumZCbQ0GO>
 
 ## Links
-
 - <http://reinstatedenise.com/statement>
 
 ## Media

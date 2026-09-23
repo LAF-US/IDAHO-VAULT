@@ -22,7 +22,6 @@ related:
 \#IdahoCOVID19 @uidahohousing #GoVandals <https://t.co/jBZKVxw5Rs>
 
 ## Links
-
 - <https://x.com/KBSX915/status/1285969340475441152>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1286014596008927232)

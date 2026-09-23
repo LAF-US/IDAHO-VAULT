@@ -22,7 +22,6 @@ related:
 \#IdahoCOVID19 @LewistonTribune <https://t.co/jpPPPyhHRD>
 
 ## Links
-
 - <https://x.com/ezebarker/status/1274086507679109120>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1274091810415996929)

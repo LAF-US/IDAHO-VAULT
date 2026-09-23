@@ -19,7 +19,6 @@ related:
 RT @Polygon: <https://t.co/1weinG3CdP> <https://t.co/WH2ovhXyk9>
 
 ## Links
-
 - <https://www.polygon.com/23471749/goncharov-1973-explained-tumblr-meme>
 
 ## Media

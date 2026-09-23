@@ -20,7 +20,6 @@ related:
 🍨 #idleg <https://t.co/1cMydQ5ViK> <https://t.co/lZAY0oltnc>
 
 ## Links
-
 - <https://x.com/lfinneytweets/status/1483931968588824576>
 
 ## Media

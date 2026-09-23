@@ -17,11 +17,10 @@ related:
   - MLKDay
 ---
 
-1967 #MLKDay
+1967 #MLKDay 
 <https://t.co/jMyQT8qaQj> <https://t.co/mCvE8QaZAi>
 
 ## Links
-
 - <https://www.truthorfiction.com/mlk-birmingham-news-cartoon/>
 
 ## Media

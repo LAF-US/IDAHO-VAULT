@@ -20,11 +20,10 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: April 30, Weekly Coronavirus Update | @IdahoPTV #IdahoCOVID19
+RT @IdahoReports: April 30, Weekly Coronavirus Update | @IdahoPTV #IdahoCOVID19 
 <https://t.co/gAyuEpll3j>
 
 ## Links
-
 - <https://youtu.be/NYRCURVnZqs>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1388306379174158338)

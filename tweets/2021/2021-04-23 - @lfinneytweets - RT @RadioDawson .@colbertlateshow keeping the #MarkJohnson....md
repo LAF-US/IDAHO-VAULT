@@ -23,7 +23,6 @@ related:
 RT @RadioDawson: .@colbertlateshow keeping the #MarkJohnson meme dream alive: <https://t.co/pMypmgQGWe>
 
 ## Links
-
 - <https://youtu.be/LJmuwJiDG4s?t=631>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1385627194685198336)

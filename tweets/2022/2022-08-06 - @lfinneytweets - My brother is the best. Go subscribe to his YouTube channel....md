@@ -14,11 +14,10 @@ related:
   - lfinneytweets
 ---
 
-My brother is the best. Go subscribe to his YouTube channel for animations and shenanigans 😁
+My brother is the best. Go subscribe to his YouTube channel for animations and shenanigans 😁 
 <https://t.co/56yEL0o20S> <https://t.co/DwIH51gpuR>
 
 ## Links
-
 - <https://youtube.com/c/PFINNEY?sub_confirmation=1>
 
 ## Media

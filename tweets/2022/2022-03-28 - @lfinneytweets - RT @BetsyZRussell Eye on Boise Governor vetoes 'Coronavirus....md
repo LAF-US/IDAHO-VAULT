@@ -24,7 +24,6 @@ related:
 RT @BetsyZRussell: Eye on Boise: Governor vetoes 'Coronavirus Pause Act' #idleg #idpol  <https://t.co/TPqojLSnTP> <https://t.co/KWeZ5hrHKC>
 
 ## Links
-
 - <https://www.idahopress.com/eyeonboise/governor-vetoes-coronavirus-pause-act/article_9d192fd1-1103-5375-ac7b-0fdc2af169bf.html>
 
 ## Media

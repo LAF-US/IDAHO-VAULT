@@ -18,7 +18,6 @@ Idaho polls have closed. And now...we wait.
 <https://t.co/cH8BJQyyIe>
 
 ## Links
-
 - <https://www.nytimes.com/interactive/2018/11/06/us/elections/results-idaho-elections.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1060022329999126529)

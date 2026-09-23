@@ -28,7 +28,6 @@ Former @idcourts Justice Jim Jones delivered a 16,000-signature petition to @Gov
 <https://t.co/8oTqNGjouN>
 
 ## Links
-
 - <https://www.kivitv.com/news/political/inside-the-statehouse/16-000-signatures-presented-to-gov-little-in-opposition-of-ballot-initiative-bill>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1380338190926508034)

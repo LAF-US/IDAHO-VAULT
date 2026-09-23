@@ -20,7 +20,6 @@ related:
 \#reinstatedenise <https://t.co/OdrTKQ2Wlq>
 
 ## Links
-
 - <https://x.com/uiargonaut/status/1090388178609950720>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1090460452302143488)

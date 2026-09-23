@@ -20,7 +20,6 @@ RT @TheOnion: Third Amendment Rights Group Celebrates Another Successful Year
 <https://t.co/lcfx2uvnoA> <https://t.co/2ZUv2dqt8l>
 
 ## Links
-
 - <https://theonion.com/third-amendment-rights-group-celebrates-another-success-1819569379/>
 
 ## Media

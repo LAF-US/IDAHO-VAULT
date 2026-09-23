@@ -21,7 +21,6 @@ RT @uiargonaut: Make a plan to vote on Tuesday with Argonaut reporter Ellamae!
 Video by Logan Finney.
 
 ## Links
-
 - <https://www.youtube.com/watch?v=YA3SSPVcyNo>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1059019987459891200)

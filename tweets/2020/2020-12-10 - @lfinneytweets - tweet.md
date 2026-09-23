@@ -17,7 +17,6 @@ related:
 <https://t.co/xkSvqPyjux> <https://t.co/OYEIaFFDSn>
 
 ## Links
-
 - <https://x.com/DonLDay/status/1337113160436727808>
 
 ## Media

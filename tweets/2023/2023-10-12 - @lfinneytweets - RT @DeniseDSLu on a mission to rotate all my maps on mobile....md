@@ -16,11 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @DeniseDSLu: on a mission to rotate all my maps on mobile don't @ me
+RT @DeniseDSLu: on a mission to rotate all my maps on mobile don't @ me 
 <https://t.co/cedu3HKoa2> <https://t.co/cLaWw1PvHW>
 
 ## Links
-
 - <https://www.bloomberg.com/news/articles/2023-10-12/-ring-of-fire-eclipse-this-weekend-will-test-texas-solar-power>
 
 ## Media

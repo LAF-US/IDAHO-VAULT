@@ -26,7 +26,6 @@ Today's @idcourts decision: 'Here is what we've decided, how our predecessors on
 Some weirdo on #idleg #idpol Twitter: <https://t.co/mG9X1tlUhZ>
 
 ## Links
-
 - <https://x.com/idahoans/status/1486865587993071616>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1486873240605585408)

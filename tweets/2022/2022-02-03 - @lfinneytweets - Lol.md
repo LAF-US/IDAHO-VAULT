@@ -18,11 +18,10 @@ related:
   - lfinneytweets
 ---
 
-@danielwinlander @IdahoGOP Lol
+@danielwinlander @IdahoGOP Lol 
 <https://t.co/NrGlfCh7FT>
 
 ## Links
-
 - <https://x.com/lfinneytweets/status/1488958755874086916>
 
 *In reply to [@danielwreporter](https://twitter.com/danielwreporter)*

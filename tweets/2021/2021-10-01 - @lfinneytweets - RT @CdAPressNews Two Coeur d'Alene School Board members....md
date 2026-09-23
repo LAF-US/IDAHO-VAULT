@@ -19,7 +19,6 @@ related:
 RT @CdAPressNews: Two Coeur d'Alene School Board members have resigned. <https://t.co/crjYH9rki6>
 
 ## Links
-
 - <https://cdapress.com/news/2021/oct/01/two-cda-school-board-members-quit/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1444018785476767746)

@@ -21,7 +21,6 @@ related:
 10k: probably tomorrow (~2 days) #IdahoCOVID19 <https://t.co/QIITAAcC9q>
 
 ## Links
-
 - <https://x.com/lfinneytweets/status/1281005482199531520>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1281771670181576704)

@@ -24,7 +24,6 @@ related:
 RT @BetsyZRussell: Eye on Boise: House defeats daycare licensing update bill #idleg #idpol <https://t.co/mgUahxXKH2> <https://t.co/fgu7bMSkNq>
 
 ## Links
-
 - <https://www.idahopress.com/eyeonboise/house-defeats-daycare-licensing-update-bill/article_980d532c-21bb-5686-8b52-cef8313afa77.html>
 
 ## Media

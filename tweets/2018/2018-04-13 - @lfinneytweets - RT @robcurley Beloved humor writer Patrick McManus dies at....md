@@ -19,7 +19,6 @@ related:
 RT @robcurley: Beloved humor writer Patrick McManus dies at age 84 <https://t.co/MdkBVLQV2j> <https://t.co/XXugF4UjJB>
 
 ## Links
-
 - <https://buff.ly/2HznM1o>
 
 ## Media

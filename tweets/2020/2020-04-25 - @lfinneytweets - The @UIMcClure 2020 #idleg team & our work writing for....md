@@ -20,11 +20,10 @@ related:
   - idleg
 ---
 
-The @UIMcClure 2020 #idleg team & our work writing for newspapers across the state was highlighted by @uidaho!
+The @UIMcClure 2020 #idleg team & our work writing for newspapers across the state was highlighted by @uidaho! 
 <https://t.co/OYYuIVjjVh>
 
 ## Links
-
 - <https://youtu.be/bfBn5fl0GL4>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1254138917223190528)

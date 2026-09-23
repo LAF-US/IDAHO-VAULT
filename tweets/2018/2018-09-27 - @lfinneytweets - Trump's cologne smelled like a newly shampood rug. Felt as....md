@@ -19,7 +19,6 @@ related:
 <https://t.co/186XgZ4bX1>
 
 ## Links
-
 - <https://www.creators.com/read/lenore-skenazy/07/14/smell-you-later>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

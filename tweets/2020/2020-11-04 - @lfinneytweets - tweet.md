@@ -17,7 +17,6 @@ related:
 <https://t.co/jXyo3wO6Nl> <https://t.co/YZKFgHlMa0>
 
 ## Links
-
 - <https://x.com/nycsouthpaw/status/1323753344968568833>
 
 ## Media

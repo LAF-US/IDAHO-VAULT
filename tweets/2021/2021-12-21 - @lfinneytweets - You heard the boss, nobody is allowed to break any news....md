@@ -17,7 +17,6 @@ related:
 You heard the boss, nobody is allowed to break any news until the new year. <https://t.co/odc1zzJcvr> <https://t.co/gRceKzryMO>
 
 ## Links
-
 - <https://t.co/odc1zzJcvr>
 
 ## Media

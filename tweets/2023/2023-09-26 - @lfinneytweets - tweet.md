@@ -18,7 +18,6 @@ related:
 <https://t.co/YHHzljnPtY>
 
 ## Links
-
 - <https://killedbygoogle.com/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

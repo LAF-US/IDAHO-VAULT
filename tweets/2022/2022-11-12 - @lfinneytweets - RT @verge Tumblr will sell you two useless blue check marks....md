@@ -19,7 +19,6 @@ related:
 RT @verge: Tumblr will sell you two useless blue check marks for $8 <https://t.co/5tKY8jqwTK> <https://t.co/R1vxZ3EbTP>
 
 ## Links
-
 - <https://www.theverge.com/2022/11/10/23451901/tumblr-blue-internet-checkmark-sale-twitter-verification-troll?utm_campaign=theverge&utm_content=chorus&utm_medium=social&utm_source=twitter>
 
 ## Media

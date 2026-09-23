@@ -22,11 +22,10 @@ related:
   - idpol
 ---
 
-RT @IdahoReports: Season 50, Episode 10: Talking Taxes... #idleg #idpol @IdahoPTV
+RT @IdahoReports: Season 50, Episode 10: Talking Taxes... #idleg #idpol @IdahoPTV 
 <https://t.co/hbraFtsa9A>
 
 ## Links
-
 - <https://video.idahoptv.org/video/talking-taxes-hgwrrp/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1482198380432429056)

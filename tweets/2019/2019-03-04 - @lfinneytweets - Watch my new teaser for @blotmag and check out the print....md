@@ -19,7 +19,6 @@ related:
 Watch my new teaser for @blotmag and check out the print edition!  <https://t.co/oOfX3UzJTW> <https://t.co/MeCpaGz4NM>
 
 ## Links
-
 - <https://issuu.com/blotmagazine/docs/issue3fullmagazine_working>_
 
 ## Media

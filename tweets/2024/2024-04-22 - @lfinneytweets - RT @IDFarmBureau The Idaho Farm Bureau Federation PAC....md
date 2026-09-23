@@ -20,7 +20,6 @@ RT @IDFarmBureau: The Idaho Farm Bureau Federation PAC announces endorsed candid
 <https://t.co/5nt6qRVkcq>
 
 ## Links
-
 - <https://www.idahofb.org/news-room/posts/idaho-farm-bureau-federation-pac-endorsed-candidates/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1782484291471147039)

@@ -17,7 +17,6 @@ related:
 <https://t.co/WfftRbEBln> <https://t.co/NlrbfSmqkP>
 
 ## Links
-
 - <https://x.com/GayLaVie/status/1270770388885221380>
 
 ## Media

@@ -24,7 +24,6 @@ related:
 RT @USGS_Idaho: Please share your experiences of #Challis #earthquake to help seismologists learn more: <https://t.co/hvUpjPhZiz>
 
 ## Links
-
 - <https://earthquake.usgs.gov/earthquakes/eventpage/us70008jr5/tellus>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1245150247799537665)

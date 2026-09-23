@@ -19,7 +19,6 @@ related:
 RT @CBS2Boise: Idaho hospitals brace for more Covid patients: <https://t.co/fB3GHWwaPB> <https://t.co/y8p4ce7bXE>
 
 ## Links
-
 - <https://bit.ly/3eJzAPd>
 
 ## Media

@@ -23,7 +23,6 @@ RT @highcountrynews: Western police are geared up for war. But who’s the enemy
 <https://t.co/efIAzIkKZs> <https://t.co/n5ayR7Xxpc>
 
 ## Links
-
 - <https://hcne.ws/31wpz3l>
 
 ## Media

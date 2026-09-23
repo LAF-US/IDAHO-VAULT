@@ -19,7 +19,6 @@ related:
 RT @theintercept: Surprise! It was a crypto exchange. <https://t.co/uJKh5gGF08> <https://t.co/nMQ1iCVa0D>
 
 ## Links
-
 - <https://interc.pt/3XI5gMw>
 
 ## Media

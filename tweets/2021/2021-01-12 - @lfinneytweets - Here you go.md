@@ -19,11 +19,10 @@ related:
   - lfinneytweets
 ---
 
-@IDprisonproject @IdahoPTV @GovernorLittle Here you go:
+@IDprisonproject @IdahoPTV @GovernorLittle Here you go: 
 <https://t.co/ijTuZdY21v>
 
 ## Links
-
 - <https://dfm.idaho.gov/publications/exec/budget/>
 
 *In reply to [@IDprisonproject](https://twitter.com/IDprisonproject)*

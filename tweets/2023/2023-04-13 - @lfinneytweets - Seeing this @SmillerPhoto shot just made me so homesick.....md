@@ -28,7 +28,6 @@ related:
 Seeing this @SmillerPhoto shot just made me so homesick. Great piece @IdahoStatesman @BeccaSavransky #idedu #idleg #idpol <https://t.co/PuzfGwLZPV> <https://t.co/dOXuPnBC0Y>
 
 ## Links
-
 - <https://x.com/propublica/status/1646439824780304385>
 
 ## Media

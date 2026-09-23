@@ -19,7 +19,6 @@ related:
 RT @KristenMcPeekTV: Mother of Patriot Front group member speaks out after son's arrest <https://t.co/0ukml6g4iS> <https://t.co/hiw6nXlSzb>
 
 ## Links
-
 - <https://bit.ly/3mOZeGO>
 
 ## Media

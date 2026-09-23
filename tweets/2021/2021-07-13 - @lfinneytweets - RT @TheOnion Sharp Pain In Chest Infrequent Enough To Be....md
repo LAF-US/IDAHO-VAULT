@@ -19,7 +19,6 @@ related:
 RT @TheOnion: Sharp Pain In Chest Infrequent Enough To Be Ignored <https://t.co/MjgSmFWutj> <https://t.co/TPOraIs9t1>
 
 ## Links
-
 - <https://bit.ly/2Vp1ABT>
 
 ## Media

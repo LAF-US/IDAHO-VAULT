@@ -19,11 +19,10 @@ related:
   - idpol
 ---
 
-So... property taxes. #idleg #idpol
+So... property taxes. #idleg #idpol 
 <https://t.co/5aSU5xAnQ8> <https://t.co/q3Qje88V87>
 
 ## Links
-
 - <https://public.flourish.studio/visualisation/14569309/>
 
 ## Media

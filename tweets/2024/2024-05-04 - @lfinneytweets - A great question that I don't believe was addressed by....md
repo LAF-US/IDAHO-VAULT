@@ -17,13 +17,12 @@ related:
   - lfinneytweets
 ---
 
-@danielwinvw A great question that I don't believe was addressed by lawmakers.
-<https://t.co/tikyTDIdw6>
+@danielwinvw A great question that I don't believe was addressed by lawmakers. 
+<https://t.co/tikyTDIdw6> 
 
 But something on par with masturbation or intercourse, apparently. <https://t.co/DVQJgmor7C>
 
 ## Links
-
 - <https://www.idahoednews.org/top-news/libraries-now-face-a-complex-question-whats-harmful-to-minors/>
 
 ## Media

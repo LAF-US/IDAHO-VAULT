@@ -26,7 +26,6 @@ Bonner County expects protests/uprising if Festival firearms prohibitions stands
 <https://t.co/4FrP1rtSS8>
 
 ## Links
-
 - <https://bonnercountydailybee.com/news/2020/jul/31/county-trouble-likely-if-ban-stands-7/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1291452565222068224)

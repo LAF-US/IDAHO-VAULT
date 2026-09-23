@@ -26,7 +26,6 @@ related:
 RT @MtnStatesPolicy: Election primary format across the country <https://t.co/eH6MTOoEHD> #mtleg #mptol #idleg <https://t.co/yfojD1uBIP>
 
 ## Links
-
 - <https://www.ncsl.org/elections-and-campaigns/state-primary-election-types>
 
 ## Media

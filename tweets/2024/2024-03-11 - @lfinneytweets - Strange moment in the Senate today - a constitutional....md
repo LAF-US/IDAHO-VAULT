@@ -21,11 +21,10 @@ related:
   - idpol
 ---
 
-Strange moment in the Senate today - a constitutional amendment on homeschool and private school from @HerndonforIdaho was ruled too late for consideration without a petition from leadership, per Joint Rule 20. First time I've seen this. #idleg #idpol
+Strange moment in the Senate today - a constitutional amendment on homeschool and private school from @HerndonforIdaho was ruled too late for consideration without a petition from leadership, per Joint Rule 20. First time I've seen this. #idleg #idpol 
 <https://t.co/fHAOPjULIi> <https://t.co/ChU6bzDqt5>
 
 ## Links
-
 - <https://legislature.idaho.gov/statutesrules/jointrules/>
 
 ## Media

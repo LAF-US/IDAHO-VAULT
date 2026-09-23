@@ -20,7 +20,6 @@ related:
 The page name of <https://t.co/nxIWTF7aiy> never fails to crack me up. #IdahoCOVID19 <https://t.co/as5vzqNMIl>
 
 ## Links
-
 - <http://coronavirus.idaho.gov>
 
 ## Media

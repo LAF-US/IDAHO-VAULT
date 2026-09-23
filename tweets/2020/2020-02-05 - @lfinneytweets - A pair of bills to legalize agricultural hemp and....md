@@ -26,7 +26,6 @@ A pair of bills to legalize agricultural hemp and FDA-approved* medical cannabis
 Meanwhile in Washington: weed smell! #waleg <https://t.co/AKDTAagbyX>
 
 ## Links
-
 - <https://x.com/CannabisWire/status/1224852524248772609>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1225133121730826240)

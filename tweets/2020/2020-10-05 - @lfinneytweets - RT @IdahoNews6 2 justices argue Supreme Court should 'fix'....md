@@ -19,7 +19,6 @@ related:
 RT @IdahoNews6: 2 justices argue Supreme Court should 'fix' same-sex marriage decision <https://t.co/TFkLJL3AJx> <https://t.co/S7IBnMBLKg>
 
 ## Links
-
 - <https://buff.ly/33yPAiS>
 
 ## Media

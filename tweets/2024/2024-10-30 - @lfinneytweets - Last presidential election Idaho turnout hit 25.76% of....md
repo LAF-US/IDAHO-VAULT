@@ -18,7 +18,6 @@ related:
 <https://t.co/w2rsdDkzG5>
 
 ## Links
-
 - <https://sos.idaho.gov/elect/voterreg/turnout.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1851720909901725772)

@@ -17,7 +17,6 @@ related:
 Worst birthday week ever. <https://t.co/7285XXWxVh>
 
 ## Links
-
 - <https://x.com/RadioDawson/status/1385604090189598723>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1385622838296465411)

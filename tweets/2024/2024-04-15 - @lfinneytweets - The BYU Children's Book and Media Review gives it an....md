@@ -20,7 +20,6 @@ The BYU Children's Book and Media Review gives it an "Outstanding" rating for In
 <https://t.co/8POpKdElI9>
 
 ## Links
-
 - <https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=5680&context=cbmr>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -21,7 +21,6 @@ related:
 <https://t.co/kpRxX8jyxm>
 
 ## Links
-
 - <https://idahofreedom.org/senate-bill-1377-petitions-paid-signature-gatherers/>
 
 *In reply to [@IdahoFreedomPAC](https://twitter.com/IdahoFreedomPAC)*

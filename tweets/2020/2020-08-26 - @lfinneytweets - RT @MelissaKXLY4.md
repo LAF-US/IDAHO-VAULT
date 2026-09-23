@@ -19,7 +19,6 @@ related:
 RT @MelissaKXLY4: <https://t.co/151qlGGayo> <https://t.co/8QHyW5PMcd>
 
 ## Links
-
 - <https://x.com/KalhanR/status/1298401095144935425>
 
 ## Media

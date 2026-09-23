@@ -19,7 +19,6 @@ related:
 RT @FenitN: …this is in an article about Barbenheimer <https://t.co/vL9xeYjP0n> <https://t.co/CtWr1Pme6H>
 
 ## Links
-
 - <https://www.washingtonpost.com/opinions/2023/07/19/barbie-oppenheimer-movies-anthropocene/>
 
 ## Media
