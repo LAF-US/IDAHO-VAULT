@@ -43,81 +43,28 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 
-# Pre-existing nonconforming dotfolders, inventoried 2026-07-02, all healed
-# 2026-07-04 (.blue, .copilot, .gitbook, .gordian, .gordon, .green, .indigo,
-# .openclaw, .orange, .red, .violet, .vscode, .yellow each gained their
-# <NAME>.md anchor). Kept as an empty set rather than deleted so the
-# grandfathering machinery below stays in place, even though it is
-# currently inactive with nothing left to warn about: do not add new
-# entries — a new dotfolder must ship its anchor in the same PR that
-# introduces it.
-GRANDFATHERED_MISSING_ANCHORS: set[str] = set()
-
-# The vacancy sentinel, fixed by STUB-PERSONAFOLDERS § 2 ("It must contain
-# `¿!?`"). Compared as BYTES, exactly: 306 of the vault's stubs were already
-# these four and 18 carried a stray trailing newline, so an "endswith" or
-# "strip()" comparison would ratify the drift instead of catching it.
-STUB_FILENAME = "stub.txt"
-STUB_CONTENT = b"\xc2\xbf\x21\x3f"  # ¿!?
-
-# ROOT-ANCHOR DEBT, AS A RATCHET RATHER THAN A LIST.
-#
-# 293 of 333 dotfolders have no vault-root <NAME>.md. That backlog cannot be
-# closed mechanically: a root anchor is an authored persona note (frontmatter,
-# `related` edges, the chamber's own lines), not a sentinel — see HECATE.md or
-# PERSEPHONE.md. Generating 293 of them would be an agent writing vault canon
-# it was never asked to write.
-#
-# So the prong ratchets instead of listing. A 293-name allowlist is exactly the
-# specimen list this file's own history records tearing out — it "was
-# simultaneously too small and wrong" — and it would need editing on every
-# fix. One integer cannot drift out of sync with the tree, because the tree
-# recomputes it every run.
-#
-# Effect: existing debt warns; ANY increase fails. A new dotfolder landing
-# without its root anchor pushes the count to 294 and turns the check red,
-# which is the rule that matters. Lower this number as anchors get written —
-# never raise it.
-MAX_MISSING_ROOT_ANCHORS = 293
-
-
-def expected_anchor_name(dotfolder: str) -> str:
-    # Strip exactly one leading dot; any further dots stay significant.
-    return dotfolder[1:].upper() + ".md"
-
-
-def tracked_top_level_dotfolders() -> list[str]:
-    try:
-        result = subprocess.run(
-            # quotePath=false: git's default quoting wraps non-ASCII names in
-            # "..." with octal escapes, which would fail startswith(".") and
-            # silently exempt such a dotfolder from enforcement.
-            ["git", "-c", "core.quotePath=false", "ls-tree", "HEAD"],
-            cwd=ROOT,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            capture_output=True,
-            check=False,
-            timeout=30,
-        )
-    except subprocess.TimeoutExpired as exc:
-        raise RuntimeError("git ls-tree HEAD timed out after 30s") from exc
-    except OSError as exc:
-        raise RuntimeError(f"git ls-tree HEAD could not run: {exc}") from exc
-    if result.returncode != 0:
-        raise RuntimeError(result.stderr.strip() or "git ls-tree HEAD failed")
-
-    folders: list[str] = []
-    for line in result.stdout.splitlines():
-        # format: <mode> <type> <object>\t<name>
-        meta, _, name = line.partition("\t")
-        if not name or not name.startswith("."):
-            continue
-        if meta.split()[1] != "tree":
-            continue
-        folders.append(name)
-    return sorted(folders)
+REQUIRED_ANCHORS = {
+    ".claude": [".claude/CLAUDE.md"],
+    ".gemini": [".gemini/GEMINI.md"],
+    ".codex": [".codex/CODEX.md"],
+    ".github": [".github/copilot-instructions.md"],
+    ".crewai": [".crewai/MANIFEST.md"],
+    ".grok": [".grok/GROK.md"],
+    ".deepseek": [".deepseek/DEEPSEEK.md"],
+    ".perplexity": [".perplexity/PERPLEXITY.md"],
+    ".serena": [".serena/SERENA.md"],
+    ".antigravity": [".antigravity/ANTIGRAVITY.md"],
+    ".bartimaeus": [".bartimaeus/BARTIMAEUS.md"],
+    ".zagreus": [".zagreus/ZAGREUS.md"],
+    ".persephone": [".persephone/PERSEPHONE.md"],
+    ".google": [".google/GOOGLE.md"],
+    ".meta": [".meta/META.md"],
+    ".microsoft": [".microsoft/MICROSOFT.md"],
+    ".slack": [".slack/SLACK.md"],
+    ".dionysus": [".dionysus/ZAGREUS.md"],
+    ".abhorsen": [".abhorsen/README.md"],
+    ".frankenstein": [".frankenstein/FRANKENSTEIN.md"],
+}
 
 
 def main() -> int:
