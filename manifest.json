@@ -1,6 +1,6 @@
 {
   "manifest_version": "1.0.0",
-  "generated_at": "2026-05-17T12:54:48.780958Z",
+  "generated_at": "2026-04-17T13:01:49.237612Z",
   "authority": {
     "canonical_system": "vault",
     "execution_system": "github",
@@ -995,27 +995,11 @@
       "state": "released"
     },
     {
-      "lock_id": "414eaeaa-0500-4b49-b99e-c9dcdf140b81",
-      "file_path": "!/ingest-2026-04-18T124356Z.md",
+      "lock_id": "e64d88a9-b86b-4bcd-aecb-7333f5876927",
+      "file_path": "!/ingest-2026-04-17T130149Z.md",
       "agent_id": "github-actions[bot]",
-      "created_at": "2026-04-18T12:43:56.662934Z",
-      "expires_at": "2026-04-18T12:58:56.662934Z",
-      "state": "released"
-    },
-    {
-      "lock_id": "6154cc28-bf40-49e6-864f-f9cc39ba2706",
-      "file_path": "!/ingest-2026-04-23T130830Z.md",
-      "agent_id": "github-actions[bot]",
-      "created_at": "2026-04-23T13:08:30.960776Z",
-      "expires_at": "2026-04-23T13:23:30.960776Z",
-      "state": "released"
-    },
-    {
-      "lock_id": "2fe402e1-ea8a-4f70-bf8d-4567a5fd7169",
-      "file_path": "!/ingest-2026-05-17T125448Z.md",
-      "agent_id": "github-actions[bot]",
-      "created_at": "2026-05-17T12:54:48.718809Z",
-      "expires_at": "2026-05-17T13:09:48.718809Z",
+      "created_at": "2026-04-17T13:01:49.171561Z",
+      "expires_at": "2026-04-17T13:16:49.171561Z",
       "state": "released"
     }
   ],
@@ -1119,31 +1103,13 @@
       "lock_id": "c8ea37ee-8c2d-4ade-82fa-8581536a2866",
       "version": 1
     },
-    "!/ingest-2026-04-18T124356Z.md": {
-      "content_hash": "sha256:6d945975fb55b6383b9f76b307ab67146e011a71266be936f27c8d28864806c9",
+    "!/ingest-2026-04-17T130149Z.md": {
+      "content_hash": "sha256:27dff5d15355fe3fa43e959da574a3d946d891db21724f35abbb2599d42f62d9",
       "last_writer": "github-actions[bot]",
-      "last_write_at": "2026-04-18T12:43:56.724080Z",
-      "last_read_at": "2026-04-18T12:43:56.724080Z",
+      "last_write_at": "2026-04-17T13:01:49.237612Z",
+      "last_read_at": "2026-04-17T13:01:49.237612Z",
       "status": "active",
-      "lock_id": "414eaeaa-0500-4b49-b99e-c9dcdf140b81",
-      "version": 1
-    },
-    "!/ingest-2026-04-23T130830Z.md": {
-      "content_hash": "sha256:c5d18f54dec72ce1be736830643ec36067db607d4880343b257c092ef941d30e",
-      "last_writer": "github-actions[bot]",
-      "last_write_at": "2026-04-23T13:08:31.029228Z",
-      "last_read_at": "2026-04-23T13:08:31.029228Z",
-      "status": "active",
-      "lock_id": "6154cc28-bf40-49e6-864f-f9cc39ba2706",
-      "version": 1
-    },
-    "!/ingest-2026-05-17T125448Z.md": {
-      "content_hash": "sha256:6dce2ed09ac408474b2c9007cae8efbef0a8317546199fd696f5ca0fdf0fd807",
-      "last_writer": "github-actions[bot]",
-      "last_write_at": "2026-05-17T12:54:48.780958Z",
-      "last_read_at": "2026-05-17T12:54:48.780958Z",
-      "status": "active",
-      "lock_id": "2fe402e1-ea8a-4f70-bf8d-4567a5fd7169",
+      "lock_id": "e64d88a9-b86b-4bcd-aecb-7333f5876927",
       "version": 1
     }
   }
