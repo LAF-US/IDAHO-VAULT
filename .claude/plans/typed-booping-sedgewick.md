@@ -40,7 +40,7 @@ Also noted, untouched: closed PRs #282, #287–#290, #889, #926, #980, #1023 and
 
 ## Verification
 
-- After step 1: `git ls-remote --heads origin` shows 112 branches, and none of the 65 names.
+- After step 1 (expected, not reached; step 1 did not run, see Status): `git ls-remote --heads origin` would show 106 branches (171 − 65), none of the 65 names.
 - After step 2: #104's page shows merged or closed; reported either way.
 - Dependabot PRs: each shows merged by the queue.
 
@@ -119,8 +119,8 @@ db3e606050bf test/push-gate-20260828
 - `bot/daily-rollover-*` (9): #151 #155 #159 #232 #257 #283 #301 #303 #305
 - `ingest-*` (17): #194 #202 #264 #281 #302 #304 #306 #308 #319 #320 #323 #325 #326 #337 #338 #339 #340
 - `dependabot/*` (23): #121 #176 #243 #295 #312–#316 #328 #330 #331 #333 #342 #352 #359 #360 #362–#366 #371
-- `codex/*` (32): #43 #84–#86 #90–#92 #94 #113–#115 #123–#128 #133 #182 #190 #191 #214 #219 #245 #255 #299 #300 #310 #341 #355 #356 #374 #375
-- `claude/*` (10): #104 #118 #122 #132 #157 #171 #173 #188 #256 #353 #354
+- `codex/*` (32 branches, 33 PRs; #190 and #191 share `codex/add-legal-references`): #43 #84–#86 #90–#92 #94 #113–#115 #123–#128 #133 #182 #190 #191 #214 #219 #245 #255 #299 #300 #310 #341 #355 #356 #374 #375
+- `claude/*` (10 branches, 11 PRs; #353 and #354 share `claude/update-claude-files-PRWCJ`): #104 #118 #122 #132 #157 #171 #173 #188 #256 #353 #354
 - `copilot/*` (3): #130 #138 #139
 - `antigravity/pullman-oidc-pipeline` #227, `recovered/pr-324` #324
 
