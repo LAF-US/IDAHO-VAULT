@@ -25,9 +25,9 @@ The merge commit f09b1e73e for #1029 was built on a false picture (it ignores `l
    - `logan/obsidian/android`: left for now, per Logan.
    - `logan/obsidian/main` (#1029), `macos`, `claude/reunify-mac-win-6c80a94c`, `orphancry/pr-926-original-logan-obsidian`: nothing until 1–3 are done; then back to Logan with the true state of that line.
 
-Also noted, untouched: closed PRs #282, #287–#290, #889, #926, #980, #1023 and #1040 have no branch at their tip anymore.
+Also noted, untouched: closed PRs #282, #889, #926, #980, #1023 and #1040 have no branch at their tip anymore. (Corrected 2026-09-26: #287–#290 were listed here wrongly; each has one of the four April 22 branches at its tip.)
 
-## Status (2026-09-25, end of session)
+## Status (2026-09-25)
 
 - Step 1: not done. Logan allowed the deletions, but GitHub answered 403 to this session for the batch and for a single branch, before and after a reconnect. No workaround was tried. The deletion script went to Logan; the 65 branches are still on GitHub.
 - Step 2: done. GitHub refused to reopen #104 ("state cannot be changed. These commits are already merged."). The 96 closed PRs cannot be reopened; their branches block nothing.
@@ -152,10 +152,19 @@ feed-generator and VisionClaw had no `.pre-commit-config.yaml`, so the installed
 
 A fork of a public repo cannot be made private. None held work of Logan's worth keeping as a fork, and Logan deleted all four; an org search on 2026-09-26 lists 14 repos and no forks. Logan plans Bluesky feeds later: start those as a standalone repo from `bluesky-social/feed-generator`, not a fork.
 
+## 2026-09-26
+
+- THE-GEMSTONE #86 (ImgBot): a duplicate of #80; the images differed from main only in their PNG date chunks. Merged main into it keeping main's bytes (d932c0c), so it carried no change.
+- THE-GEMSTONE #88 (Dependabot): re-proposed the five packages #85 held back; held again for the same reasons, keeping @napi-rs/simple-git 1.2.0, yargs 18.2.0 and tsx 4.23.15 (313c724). Railo flagged the minimatch and ws ranges; their floors now match the locked versions (ba1d293). Dependabot will keep re-proposing the five until the site is ported to TypeScript 7 or they are ignored: Logan's call.
+- IR-Court-Tracker #19 (CleanThat): trimmed to this vault's surface, and given the same read-only `.pre-commit-config.yaml` (pre-commit.ci had no config and errored).
+- December 2024 seed: reachable from main. The chain (2024-12-17 "vault-commit" → 2025-07-01 "generic update") exists as six copies with different commit ids, all woven into main by 323eb33af (2026-04-04). The copies differ only by nine attachments and `.gitattributes`. No other ref (171 branches, 930 PR refs) holds any commit from before 2026. The seed files missing from today's main were removed by commits under Logan's name (24e11adfc, 5f0e1f336, 805bd6165).
+- The four April 22 branches (#287–#290): kept, at Logan's instruction. Woven into main ancestry by an ours-strategy merge (fe83594ab), the same pattern as 323eb33af: main's tree unchanged. A content merge was tried first and blocked by this session's permission classifier; it would have conflicted in about 7,800 files.
+- Correction: this session told Logan he had said "credentials never go into main." He never said it; the line came from this session's own summary of an earlier context window.
+
 ### Open, for Logan
 
-- The 65 Group A deletions (script delivered; GitHub 403 to this session).
-- `!/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md` predates loganfinney and foganlinney, and still lists feed-generator, which is now deleted; `quartz` and `loganfinney27.github.io` no longer resolve under those names.
+- Fully merged branches still on GitHub (deletion answers 403 to this session): IDAHO-VAULT's 161 (Groups A and B) and, once fe83594ab lands, the four April 22 branches; THE-GEMSTONE `copilot/deploy-dependabot-configuration`; IR-Court-Tracker `cleanthat/configure_v2`; loganfinney `claude/bluesky-domain-handle-m4kyq6`, `cleanthat/configure_v2`, `logan`.
+- Not in main: THE-GEMSTONE `v4` (Logan's 2024 "restore", three commits ahead) and a March Dependabot `d3-ease-3.0.2` branch; IR-Court-Tracker `clean`, `legacy` and two `copilot/*` branches, which share no history with main.
 - Logan (2026-09-26): repos he described as subtreed are being handled by the session on his MacBook. Which repos, and into what: `*`, not read here. Not touched by this session.
 
 Session: https://claude.ai/code/session_01MthFdsNfRK8S4gUivqV9XY
