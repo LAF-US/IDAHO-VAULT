@@ -141,21 +141,21 @@ The first trim (#73, feed-generator #3, VisionClaw #2) set `can_edit_not_protect
 
 feed-generator and VisionClaw had no `.pre-commit-config.yaml`, so the installed app errored on every PR. Both now carry THE-GEMSTONE's read-only configuration (autofix off).
 
-### Forks in LAF-US (as read 2026-09-25)
+### Forks in LAF-US (as read 2026-09-25; all deleted by Logan by 2026-09-26)
 
-| Repo | Forked from | Visibility |
-| --- | --- | --- |
-| feed-generator | bluesky-social/feed-generator | public |
-| VisionClaw | Intent-Lab/VisionClaw | public |
-| AutoKeywordLinker | not visible to this session | public |
-| alfred-wordreference | not visible to this session | public |
+| Repo | Forked from | Visibility | Logan's own commits since forking |
+| --- | --- | --- | --- |
+| feed-generator | bluesky-social/feed-generator | public | none; only his merges of Dependabot, CleanThat and this session's PRs |
+| VisionClaw | Intent-Lab/VisionClaw | public | local build files only (`.idea/`, `workspace.xml`, `samples/`, a `Secrets.kt` backup) |
+| AutoKeywordLinker | not visible to this session | public | none (last push predates the fork) |
+| alfred-wordreference | not visible to this session | public | none (last push 2021) |
 
-A fork of a public repo cannot be made private. Whether each stays a fork is Logan's call.
+A fork of a public repo cannot be made private. None held work of Logan's worth keeping as a fork, and Logan deleted all four; an org search on 2026-09-26 lists 14 repos and no forks. Logan plans Bluesky feeds later: start those as a standalone repo from `bluesky-social/feed-generator`, not a fork.
 
 ### Open, for Logan
 
 - The 65 Group A deletions (script delivered; GitHub 403 to this session).
-- Four merged branches: `claude/new-session-0riz1k` and `cleanthat/configure_v2` in feed-generator and in VisionClaw.
-- `!/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md` predates VisionClaw, AutoKeywordLinker, alfred-wordreference, loganfinney and foganlinney; `quartz` and `loganfinney27.github.io` no longer resolve under those names.
+- `!/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md` predates loganfinney and foganlinney, and still lists feed-generator, which is now deleted; `quartz` and `loganfinney27.github.io` no longer resolve under those names.
+- Logan (2026-09-26): repos he described as subtreed are being handled by the session on his MacBook. Which repos, and into what: `*`, not read here. Not touched by this session.
 
 Session: https://claude.ai/code/session_01MthFdsNfRK8S4gUivqV9XY
