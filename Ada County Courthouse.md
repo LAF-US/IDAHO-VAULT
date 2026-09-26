@@ -1,1 +1,8 @@
-[[magistrate court]] [[Ada County]] [[courthouses|courthouse]] 
+---
+authority: LOGAN
+related:
+- Ada County
+- magistrate court
+---
+
+magistrate court Ada County courthouse

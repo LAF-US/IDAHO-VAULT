@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Glenns Ferry
-tags:
-  - schools/k12/district
+related:
+- Elmore County
+- Glenns Ferry
+authority: LOGAN
 ---
-[[Glenns Ferry]], [[Elmore County]] 
+Glenns Ferry, Elmore County

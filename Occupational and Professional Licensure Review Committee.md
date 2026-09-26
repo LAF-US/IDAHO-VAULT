@@ -1,6 +1,8 @@
 ---
-tags:
-  - 2023/session
-  - 2024/session
+related:
+- Idaho
+- Idaho Legislature
+- occupational and professional licensing
+authority: LOGAN
 ---
-[[Idaho Legislature]] committee on [[occupational and professional licensing]] 
+Idaho Legislature committee on occupational and professional licensing

@@ -1,11 +1,13 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
-aliases:
-  - Lewis
-  - 3L
+related:
+- Craigmont
+- Kamiah
+- Nezperce
+- Reubens
+- Slickpoo
+- Winchester
+authority: LOGAN
 ---
-Seat: [[Nezperce]]
-Municipalities: [[Kamiah]], [[Craigmont]], [[Reubens]], [[Winchester]] 
-Communities: [[Slickpoo]]
+Seat: Nezperce
+Municipalities: Kamiah, Craigmont, Reubens, Winchester
+Communities: Slickpoo

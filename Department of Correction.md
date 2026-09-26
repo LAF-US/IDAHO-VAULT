@@ -1,7 +1,6 @@
 ---
-aliases:
-  - IDOC
-tags:
-  - governments/state/executive/departments
+related:
+- Board of Correction
+authority: LOGAN
 ---
-[[Board of Correction]] 
+Board of Correction

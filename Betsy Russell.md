@@ -1,6 +1,8 @@
 ---
-tags:
-  - people/journalists
-residence: "[[Boise]]"
+residence: Boise
+related:
+- Boise
+- Eye on Boise
+authority: LOGAN
 ---
-Longtime [[Eye on Boise]] reporter and politics journalist 
+Longtime Eye on Boise reporter and politics journalist

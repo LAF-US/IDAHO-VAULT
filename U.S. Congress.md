@@ -1,8 +1,7 @@
 ---
-tags:
-  - position/elected/statewide/congress
-  - federal
-aliases:
-  - Congress
+related:
+- U.S. House
+- U.S. Senate
+authority: LOGAN
 ---
-[[U.S. Senate]] & [[U.S. House]] 
+U.S. Senate & U.S. House

@@ -1,6 +1,9 @@
 ---
-tags:
-  - party/democratic
-  - position/elected/precinct
+related:
+- Boise
+- Boise County
+- Idaho
+- Idaho Democratic Party
+authority: LOGAN
 ---
-Local [[Idaho Democratic Party]] [[precinct committeemen|precinct committee]] for [[Boise County]] 
+Local Idaho Democratic Party precinct committee for Boise County

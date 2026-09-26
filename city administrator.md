@@ -1,5 +1,7 @@
 ---
-tags:
-  - position/appointed/city/administrator
+related:
+- cities
+- city council
+authority: LOGAN
 ---
-[[cities]] executive hired by [[city council]] 
+cities executive hired by city council

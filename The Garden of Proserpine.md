@@ -1,9 +1,12 @@
 ---
 URL: https://www.poetryfoundation.org/poems/45288/the-garden-of-proserpine
+related:
+- The world is quiet here
+authority: LOGAN
 ---
-By [[Algernon Charles Swinburne]]
+By Algernon Charles Swinburne
 
-[[The world is quiet here.|Here, where the world is quiet]];  
+Here, where the world is quiet;  
 
          Here, where all trouble seems  
 
@@ -18,8 +21,6 @@ For reaping folk and sowing,
 For harvest-time and mowing,  
 
          A sleepy world of streams.  
-
-  
 
 I am tired of tears and laughter,  
 
@@ -37,8 +38,6 @@ Desires and dreams and powers
 
          And everything but sleep.  
 
-  
-
 Here life has death for neighbour,  
 
          And far from eye or ear  
@@ -54,8 +53,6 @@ They wot not who make thither;
 But no such winds blow hither,  
 
          And no such things grow here.  
-
-  
 
 No growth of moor or coppice,  
 
@@ -73,8 +70,6 @@ Save this whereout she crushes
 
          For dead men deadly wine.  
 
-  
-
 Pale, without name or number,  
 
          In fruitless fields of corn,  
@@ -90,8 +85,6 @@ In hell and heaven unmated,
 By cloud and mist abated  
 
          Comes out of darkness morn.  
-
-  
 
 Though one were strong as seven,  
 
@@ -109,8 +102,6 @@ And well though love reposes,
 
          In the end it is not well.  
 
-  
-
 Pale, beyond porch and portal,  
 
          Crowned with calm leaves, she stands  
@@ -126,8 +117,6 @@ Than love's who fears to greet her
 To men that mix and meet her  
 
          From many times and lands.  
-
-  
 
 She waits for each and other,  
 
@@ -145,8 +134,6 @@ Where summer song rings hollow
 
          And flowers are put to scorn.  
 
-  
-
 There go the loves that wither,  
 
          The old loves with wearier wings;  
@@ -162,8 +149,6 @@ Blind buds that snows have shaken,
 Wild leaves that winds have taken,  
 
          Red strays of ruined springs.  
-
-  
 
 We are not sure of sorrow,  
 
@@ -181,8 +166,6 @@ Sighs, and with eyes forgetful
 
          Weeps that no loves endure.  
 
-  
-
 From too much love of living,  
 
          From hope and fear set free,  
@@ -198,8 +181,6 @@ That dead men rise up never;
 That even the weariest river  
 
          Winds somewhere safe to sea.  
-
-  
 
 Then star nor sun shall waken,  
 
@@ -218,4 +199,5 @@ Only the sleep eternal
          In an eternal night.
 
 ---
-###### [["The world is quiet here."]]
+
+###### "The world is quiet here."

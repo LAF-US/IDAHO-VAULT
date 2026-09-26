@@ -1,5 +1,10 @@
 ---
-tags:
-  - geography/water/river/dams
+related:
+- Idaho
+- Idaho Power
+- Snake River
+- Twin Falls
+- Twin Falls reservoir
+authority: LOGAN
 ---
-[[Idaho Power]] [[dams|dam]] on the [[Snake River]] near [[Twin Falls]]; creates [[Twin Falls reservoir]]
+Idaho Power dam on the Snake River near Twin Falls; creates Twin Falls reservoir

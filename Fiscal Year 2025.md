@@ -1,9 +1,6 @@
 ---
-aliases:
-  - FY25
-  - FY2025
-  - 2025 fiscal year
-tags:
-  - 2025/
+related:
+- fiscal year
+authority: LOGAN
 ---
-July 1, 2024 - June 30, 2025 [[fiscal year]] 
+July 1, 2024 - June 30, 2025 fiscal year

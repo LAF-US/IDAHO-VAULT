@@ -1,7 +1,6 @@
 ---
-aliases:
-  - DEQ
-tags:
-  - governments/state/executive/departments
+related:
+- Governor
+authority: LOGAN
 ---
-Director appointed by the [[Governor]] 
+Director appointed by the Governor

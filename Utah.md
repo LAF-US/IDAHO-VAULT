@@ -1,8 +1,7 @@
 ---
-tags:
-  - governments/state
-  - geography/land/state
-aliases:
-  - UT
+related:
+- Idaho
+- United States of America
+authority: LOGAN
 ---
-one of the [[United States of America]], borders [[State of Idaho|Idaho]] to the southeast
+one of the United States of America, borders Idaho to the southeast

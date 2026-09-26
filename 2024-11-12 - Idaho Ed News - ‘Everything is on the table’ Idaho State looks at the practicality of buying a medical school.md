@@ -1,15 +1,53 @@
 ---
-outlet: "[[Idaho Education News]]"
-url: "https://www.idahoednews.org/top-news/everything-is-on-the-table-idaho-state-looks-at-the-practicality-of-buying-a-medical-school/"
+outlet: Idaho Education News
+url: https://www.idahoednews.org/top-news/everything-is-on-the-table-idaho-state-looks-at-the-practicality-of-buying-a-medical-school/
 author:
-  - "[[Kevin Richert]]"
-tags:
-  - media/articles
-  - 2024/11/12
+- Kevin Richert
+related:
+- '160'
+- '162'
+- '400'
+- '550'
+- '685'
+- '700'
+- About
+- Alaska
+- CEO
+- College of Southern Idaho
+- Council
+- ISU
+- Idaho
+- Idaho Capital Sun
+- Idaho College of Osteopathic Medicine
+- Idaho Education News
+- Idaho Press
+- Idaho State University
+- Janice McGeachin
+- Kevin Richert
+- Lewis-Clark State College
+- Meridian
+- Mike Moyle
+- Montana
+- President
+- Star
+- State Board of Education
+- TPG
+- University of Idaho
+- University of Washington
+- Utah
+- Washington
+- Wyoming
+- connections
+- dollars
+- health care
+- medical school
+- money
+- sign
+authority: LOGAN
 ---
-[[Idaho State University]] is looking at the feasibility of buying a private [[medical school]] in [[Meridian]].
+Idaho State University is looking at the feasibility of buying a private medical school in Meridian.
 
-The review is in its early stages, Idaho State President Robert Wagner said Monday. It’s unclear how much it would cost to acquire the [[Idaho College of Osteopathic Medicine]] (ICOM) or where the state or the university would get the money. It’s not even clear that Idaho State would actually pursue a purchase of ICOM, which has been affiliated with Idaho State since it opened six years ago. And at this point, ICOM isn’t even for sale.
+The review is in its early stages, Idaho State President Robert Wagner said Monday. It’s unclear how much it would cost to acquire the Idaho College of Osteopathic Medicine (ICOM) or where the state or the university would get the money. It’s not even clear that Idaho State would actually pursue a purchase of ICOM, which has been affiliated with Idaho State since it opened six years ago. And at this point, ICOM isn’t even for sale.
 
 “It is so early in any discussions, everything is on the table,” Wagner told Idaho Education News.
 
@@ -61,7 +99,7 @@ ICOM is now owned by [Rice University](https://www.rice.edu/), a private univers
 
 ### The health care professions niche
 
-ICOM’s projected growth coincides with Idaho State’s plans [to grow its Meridian campus](https://www.idahostatesman.com/news/local/community/west-ada/article294319359.html) and grow its statewide footprint in health care programs. Last week, the Meridian City Council approved a plan to annex 23 acres and rezone it for an expanded health science campus, [[2024-11-08 - Idaho Press - Idaho State approved to expand Meridian campus|the Idaho Press reported]].
+ICOM’s projected growth coincides with Idaho State’s plans [to grow its Meridian campus](https://www.idahostatesman.com/news/local/community/west-ada/article294319359.html) and grow its statewide footprint in health care programs. Last week, the Meridian City Council approved a plan to annex 23 acres and rezone it for an expanded health science campus, the Idaho Press reported.
 
 Health care has been a centerpiece in Idaho State’s mission for decades. The university has added 700 students in health professions fields over the past five years, touting partnerships with ICOM, Lewis-Clark State College and the College of Southern Idaho, among others.
 

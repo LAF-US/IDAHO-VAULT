@@ -1,5 +1,6 @@
 ---
-aliases:
-  - teacher
+related:
+- school districts
+authority: LOGAN
 ---
-[[school districts]] employees in classrooms
+school districts employees in classrooms

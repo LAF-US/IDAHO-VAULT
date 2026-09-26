@@ -1,6 +1,13 @@
 ---
-aliases:
-  - R. Todd Garbett
+related:
+- Bear
+- Bear Lake
+- Bear Lake County
+- Council
+- Idaho
+- Idaho Judicial Council
+- Lake
+authority: LOGAN
 ---
-- [[magistrate judges|magistrate judge]] in [[Bear Lake County]] 
-- 2024 [[gubernatorial appointment|appointee]] to [[Idaho Judicial Council]] 
+- magistrate judge in Bear Lake County
+- 2024 appointee to Idaho Judicial Council

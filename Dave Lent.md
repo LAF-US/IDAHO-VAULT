@@ -1,8 +1,11 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/candidate/legislative
+related:
+- Idaho
+- Idaho Falls
+- Senate Education
+- Senate member
+authority: LOGAN
 ---
-Residence: [[Idaho Falls]]
-- [[Senate member]], [[Senate Education]] chairman 
+Residence: Idaho Falls
+
+- Senate member, Senate Education chairman

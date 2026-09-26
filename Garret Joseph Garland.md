@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Garret Garland
-tags:
-  - people
+related:
+- Illinois
+- Patriot Front
+authority: LOGAN
 ---
-[[Patriot Front]] member, [[Illinois]] resident 
+Patriot Front member, Illinois resident

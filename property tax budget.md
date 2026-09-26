@@ -1,7 +1,11 @@
 ---
-aliases:
-  - local property taxes
-  - property tax budgets
+related:
+- budgets
+- cities
+- counties
+- school districts
+- taxes
+- taxing districts
+authority: LOGAN
 ---
-
-local [[budget|budgets]] from [[property tax|property taxes]] levied by [[counties]], [[cities]], [[school districts]] and [[taxing districts]] 
+local budgets from property taxes levied by counties, cities, school districts and taxing districts

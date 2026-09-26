@@ -1,31 +1,55 @@
 ---
 author:
-  - "[[Blake Jones]]"
+- Blake Jones
 outlet:
-  - "[[Idaho Education News]]"
+- Idaho Education News
 URL: https://www.idahoednews.org/news/schools-hesitant-to-join-idahos-health-insurance-plan-with-incoming-funding-boost/
-tags:
-  - media/articles
-  - 2022/03/31
-  - 2022/session
+related:
+- '105'
+- '400'
+- '500'
+- '600'
+- Alex Adams
+- Brad Little
+- Idaho
+- Idaho Education News
+- Melba
+- Nampa
+- Nampa School District
+- President
+- Rigby
+- Rod Furniss
+- Your Health Idaho
+- budget
+- budgets
+- costs
+- formula
+- health insurance
+- legislative
+- meeting
+- money
+- property tax
+- school districts
+- teachers
+authority: LOGAN
 ---
 Idaho lawmakers voted to send an additional $105 million annually to K-12 schools in hopes of improving employees’ health insurance. But some schools are hesitant to switch over to the state’s comparatively low-premium, high-benefit insurance plan for fear that the state funding won’t cover the costs.
 
 Proponents have touted the funding increase as a “game changer,” though schools and the law’s legislative sponsor alike say the $105 million won’t be enough to bring insurance benefits for K-12 staff up to par with the $12,500 spent on other state employees (schools currently get $8,400 per state-funded employee).
 
-“We’ve been trying for so long to get on the state plan, and it would be really, really cool if we could,” said [[Nampa School District]] Finance Director [[Randy Dewey]]. “But at the present time, it just financially doesn’t make sense.”
+“We’ve been trying for so long to get on the state plan, and it would be really, really cool if we could,” said Nampa School District Finance Director Randy Dewey. “But at the present time, it just financially doesn’t make sense.”
 
-[[Governor|Gov.]] [[Brad Little]] proposed the benefits boost in his January [[State of the State address]], and has signed into law a policy bill and a spending bill to execute the change.
+Gov. Brad Little proposed the benefits boost in his January State of the State address, and has signed into law a policy bill and a spending bill to execute the change.
 
 Those bills add the $105 million in annual state spending, tack on $75.5 million in federal one-time money to help cover the costs of switching onto the state plan and cut a $17.9 million leadership premium program as a tradeoff.
 
-But on the bottom line, districts will be “a little bit short” of the annual funding they need to spend as much on their employees as state agencies do, said Rep. [[Rod Furniss]], R-Rigby, who sponsored the increases that sailed through 2022 Legislature.
+But on the bottom line, districts will be “a little bit short” of the annual funding they need to spend as much on their employees as state agencies do, said Rep. Rod Furniss, R-Rigby, who sponsored the increases that sailed through 2022 Legislature.
 
 That’s for several reasons.
 
-One is that the $105 million figure was calculated through the state’s arcane funding formula for schools, so only state-covered positions will be funded, as Little’s budget chief [[Alex Adams]] confirmed to EdNews last month. That doesn’t cover staff positions that districts pay for with other sources — whether from [[property tax]] [[supplemental levy|levies]], other state funds or federal cash.
+One is that the $105 million figure was calculated through the state’s arcane funding formula for schools, so only state-covered positions will be funded, as Little’s budget chief Alex Adams confirmed to EdNews last month. That doesn’t cover staff positions that districts pay for with other sources — whether from property tax levies, other state funds or federal cash.
 
-The [[Nampa]] district, for example, will be over $600,000 short of what it would cost to pay for the state’s plan year to year, Dewey told EdNews this week.
+The Nampa district, for example, will be over $600,000 short of what it would cost to pay for the state’s plan year to year, Dewey told EdNews this week.
 
 Another reason is that state funding may be earmarked for school employee health insurance, but schools can spend that at their discretion. Furniss said some lawmakers have overestimated how much of this money schools are using on other expenses, but even the extra money won’t have strings attached to it. The money is “discretionary,” so schools can use it on whatever purposes they choose.
 
@@ -38,6 +62,7 @@ After Little ceremoniously signed the policy bill increasing insurance funding i
 If they don’t switch to the state’s plan, rural districts can face added challenges. Districts like Melba, which only employs around 100 people, have considerably less bargaining power with insurance companies, Ann Adams said, but she hopes having the state plan as an option will help in negotiations.
 
 ## Making the switch
+
 Districts also cite another reason for hesitating to switch on to the state plan: the $75.5 million of one-time money is not enough to cover the upfront costs.
 
 To join the state plan, enrollees have to pay into a “high risk claims pool,” a shared pot that helps the state pay for expensive and unexpected medical procedures and bills.
@@ -59,6 +84,7 @@ From the outset, advocates of the policy switch have never said all districts wi
 “The governor’s goal is to provide better health insurance coverage to school employees; in some cases that may mean joining the state plan, in other cases that will mean providing coverage through other carriers, but in all cases, the governor’s goal is to lower the premiums or deductibles school employees face,” Alex Adams told EdNews by email in early February.
 
 ## ‘A good tradeoff’
+
 While cutting a $17.9 million leadership premium for experienced teachers will still leave schools with a net funding boost, some are disappointed with the cut. Especially if teachers can’t get on the state’s plan in return.
 
 “For that to just be gone for nothing makes it seem like some kind of big scam to just get rid of the leadership premium money,” said Nampa Education Association President Brian Coffey.

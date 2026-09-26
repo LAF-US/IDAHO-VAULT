@@ -1,3 +1,11 @@
-[[Logan's]] professional role as IRL human.
+---
+authority: LOGAN
+related:
+- IRL
+- Logan's
+- definition
+---
 
-See: definition, secondary; context: physics 
+Logan's professional role as IRL human.
+
+See: definition, secondary; context: physics

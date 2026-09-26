@@ -1,18 +1,23 @@
 ---
-tags:
-  - geography/land/state/region
-aliases:
-  - southeastern Idaho
+related:
+- 2nd Congressional District
+- 6th Judicial District
+- Bear
+- Bear Lake
+- Franklin
+- Idaho
+- Lake
+- Southeastern Idaho Public Health
+authority: LOGAN
 ---
+- Bannock
+- Caribou
+- Bear Lake
+- Franklin
+- Oneida
+- Power
 
-- [[Bannock County|Bannock]]
-- [[Caribou County|Caribou]]
-- [[Bear Lake County|Bear Lake]]
-- [[Franklin County|Franklin]]
-- [[Oneida County|Oneida]]
-- [[Power County|Power]]
-
-[[Mountain Time Zone]]
-[[2nd Congressional District]]
-[[6th Judicial District]]
-[[Southeastern Idaho Public Health]]
+Mountain Time Zone
+2nd Congressional District
+6th Judicial District
+Southeastern Idaho Public Health

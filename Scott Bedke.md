@@ -1,14 +1,14 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/legislative
-  - people/elected/legislative
-  - people/appointed/legislative
-  - people/elected/statewide/ltgov
-  - people/candidate/statewide/ltgov
+related:
+- Governor
+- House member
+- Legislative District 27
+- Lieutenant Governor
+- Oakley
+authority: LOGAN
 ---
+Residence: Oakley
 
-Residence: [[Oakley]]
-- [[Lieutenant Governor]] 2022-
-- Long-tenured former [[Speaker of the House|Speaker]] & [[House member]] [[Legislative District 27]]
-- 
+- Lieutenant Governor 2022-
+- Long-tenured former Speaker & House member Legislative District 27
+-

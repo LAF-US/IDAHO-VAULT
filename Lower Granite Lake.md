@@ -1,5 +1,8 @@
 ---
-tags:
-  - geography/water/lake
+related:
+- Lower Granite dam
+- Snake River
+- Washington
+authority: LOGAN
 ---
-[[reservoirs|reservoir]] on the [[Snake River]] in [[Washington]] created by [[Lower Granite dam]] 
+reservoir on the Snake River in Washington created by Lower Granite dam

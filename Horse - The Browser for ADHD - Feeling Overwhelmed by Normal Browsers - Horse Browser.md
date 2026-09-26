@@ -1,10 +1,77 @@
 ---
-outlet:
-url: "https://browser.horse/?via=victor&gad_source=1&gad_campaignid=21209728058&gbraid=0AAAAA9mgT7H0vEz_jRJWAen-v44-iGyrm&gclid=Cj0KCQjwve7NBhC-ARIsALZy9HUHXGkCuxp_Ia0m9oyoux-E04aC0RbjLEFdOK6CTQKikxnxTh8f40IaAuYGEALw_wcB"
+outlet: null
+url: https://browser.horse/?via=victor&gad_source=1&gad_campaignid=21209728058&gbraid=0AAAAA9mgT7H0vEz_jRJWAen-v44-iGyrm&gclid=Cj0KCQjwve7NBhC-ARIsALZy9HUHXGkCuxp_Ia0m9oyoux-E04aC0RbjLEFdOK6CTQKikxnxTh8f40IaAuYGEALw_wcB
 author:
-  - "[[Eleanor McKeown]]"
-tags:
-  - media/articles
+- Eleanor McKeown
+related:
+- '102'
+- '108'
+- '113'
+- '125'
+- '137'
+- '147'
+- '162'
+- '175'
+- '187'
+- '188'
+- '212'
+- '213'
+- '225'
+- '233'
+- '252'
+- '260'
+- '262'
+- '271'
+- '287'
+- '288'
+- '293'
+- '300'
+- '325'
+- '337'
+- '358'
+- '375'
+- '425'
+- '465'
+- '488'
+- '525'
+- '563'
+- '586'
+- '625'
+- '627'
+- '643'
+- '666'
+- '675'
+- '686'
+- '713'
+- '725'
+- '775'
+- '787'
+- '788'
+- '826'
+- '862'
+- '863'
+- '887'
+- '888'
+- '913'
+- '925'
+- '938'
+- '962'
+- '963'
+- '974'
+- '975'
+- '987'
+- '988'
+- Golden
+- Google
+- NHS
+- OOO
+- connections
+- journal
+- links
+- rabbit
+- systems
+- web
+authority: LOGAN
 ---
 Horse Browser
 
@@ -24,7 +91,7 @@ Now used by
 
 Pascal Pixel
 
-](https://pascalpixel.com/)
+](<https://pascalpixel.com/>)
 
 ### Think in Trails®
 
@@ -38,7 +105,7 @@ Stop holding your research in working memory. Let the browser track your journey
 
 Embrace how you naturally explore ideas. Non-linear thinking becomes a superpower, not something to fight.
 
-![](https://www.youtube.com/watch?v=7gvxrieLvII)
+![alt text needed](https://www.youtube.com/watch?v=7gvxrieLvII)
 
 > Horse Browser is *unlike anything* I've ever seen in this space.
 
@@ -58,7 +125,7 @@ Horse Browser has been my daily driver \*almost\* since the day I downloaded it.
 
 ### The Problem
 
-## Normal Browsers aren't built for neurodivergent minds.
+## Normal Browsers aren't built for neurodivergent minds
 
 **Do you blame yourself for bad browsing habits?** You're not alone. Traditional browsers force linear thinking when neurodivergent minds naturally explore in webs of connection. Fighting your brain's way of working is exhausting.
 
@@ -76,7 +143,7 @@ British shorthairs
 
 \->
 
-https://thepanictimes.com/articles/panic-attack-symptoms
+<https://thepanictimes.com/articles/panic-attack-symptoms>
 
 /
 
@@ -101,7 +168,7 @@ British shorthairs
 
 \->
 
-https://thepanictimes.com/articles/panic-attack-symptoms
+<https://thepanictimes.com/articles/panic-attack-symptoms>
 
 /
 
@@ -109,7 +176,7 @@ https://thepanictimes.com/articles/panic-attack-symptoms
 
 \=
 
-```
+```text
 .
                          .OO
                        .OOOO
@@ -151,7 +218,7 @@ British shorthairs
 
 \->
 
-https://thepanictimes.com/articles/panic-attack-symptoms
+<https://thepanictimes.com/articles/panic-attack-symptoms>
 
 /
 
@@ -176,7 +243,7 @@ British shorthairs
 
 \->
 
-https://thepanictimes.com/articles/panic-attack-symptoms
+<https://thepanictimes.com/articles/panic-attack-symptoms>
 
 /
 
@@ -201,7 +268,7 @@ Feeling Panic?
 
 \->
 
-https://www.nhs.uk/mental-health/conditions/panic-disorder/
+<https://www.nhs.uk/mental-health/conditions/panic-disorder/>
 
 /
 
@@ -231,7 +298,7 @@ British shorthairs
 
 \->
 
-https://giphy.com/nonononono
+<https://giphy.com/nonononono>
 
 /
 
@@ -259,7 +326,7 @@ Research is usually a blizzard of clicking 'back' to find the last sane link. Bu
 
 ### Work with your brain
 
-## Say goodbye to Tab Hell and organise your internet with Trails®.
+## Say goodbye to Tab Hell and organise your internet with Trails®
 
 **Horse Browser works with your brain, not against it.** Trails® map your natural thought patterns as you browse. Each connection, tangent, and brilliant idea gets captured in a visual web that mirrors how your mind actually thinks.
 
@@ -299,7 +366,7 @@ Horse Browser is the way to solve the 'too many tabs' problem. Separate the tree
 
 ### Complete your tasks
 
-## Whip your pages up into the perfect productivity system.
+## Whip your pages up into the perfect productivity system
 
 **Horse Browser makes your pages work harder.** Build lists, organisers and filing systems with clever names and emojis that serve your workflow, delight your weird brain - and push you towards action that needs to happen
 
@@ -333,7 +400,7 @@ Modern browsers can't handle your curiosity - but Horse Browser can. Horse Brows
 
 ### Organise your world
 
-## Make your own internet – where anything can happen.
+## Make your own internet – where anything can happen
 
 **Horse Browser is your corner of the internet.** Decorate your Trails with cute emojis and build a zen garden with manicured pages that would make Marie Kondo proud.
 

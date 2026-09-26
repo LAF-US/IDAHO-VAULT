@@ -1,5 +1,7 @@
 ---
-aliases:
-  - Sandpoint Police
+related:
+- Sandpoint
+- police
+authority: LOGAN
 ---
-[[Sandpoint]] [[police]] 
+Sandpoint police

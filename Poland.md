@@ -1,8 +1,6 @@
 ---
-tags:
-  - governments/country
-  - geography/land/country
-aliases:
-  - Polish
+related:
+- Europe
+authority: LOGAN
 ---
-[[Europe]] 
+Europe

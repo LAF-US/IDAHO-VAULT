@@ -1,5 +1,7 @@
 ---
-aliases:
-  - healthcare
+related:
+- emergency room
+- nurses
+authority: LOGAN
 ---
-[[doctors]], [[nurses]], [[emergency room]] 
+doctors, nurses, emergency room

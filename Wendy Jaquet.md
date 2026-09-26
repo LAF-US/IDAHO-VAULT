@@ -1,10 +1,11 @@
 ---
-tags:
-  - party/democratic
-  - people/elected/legislative
-  - people/candidate/legislative
-  - people
+related:
+- 2020 census
+- Blaine County
+- House Minority Leader
+authority: LOGAN
 ---
-Residence: [[Blaine County]] 
-- former [[House Minority Leader]] 
-- Co-led [[2020 census]]  
+Residence: Blaine County
+
+- former House Minority Leader
+- Co-led 2020 census  

@@ -1,10 +1,9 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/democratic
-  - people/elected
-  - people
+related:
+- Bellevue
+- House Minority Caucus Chair
+authority: LOGAN
 ---
-Residence: [[Bellevue]] 
+Residence: Bellevue
 
-[[House Minority Caucus Chair]] 2022-
+House Minority Caucus Chair 2022-

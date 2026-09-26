@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Garden Valley
-tags:
-  - schools/k12/district
+related:
+- Boise
+- Boise County
+- Garden Valley
+authority: LOGAN
 ---
-[[Garden Valley]], [[Boise County]] 
+Garden Valley, Boise County

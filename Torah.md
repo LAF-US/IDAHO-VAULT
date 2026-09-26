@@ -1,1 +1,7 @@
-[[Judaism|Jewish]] [[holy book]] 
+---
+authority: LOGAN
+related:
+- holy book
+---
+
+Jewish holy book

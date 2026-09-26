@@ -1,0 +1,5 @@
+{
+  // IDAHO-VAULT currently contains no ABAP artifacts.
+  // Keep abaplint active if ABAP source is introduced later.
+  "noArtifactsOkay": true
+}

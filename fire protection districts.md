@@ -1,10 +1,8 @@
 ---
-tags:
-  - governments/taxingdistrict
-aliases:
-  - fire district
-  - fire districts
-  - fire protection district
+related:
+- bond elections
+- fire
+- taxing districts
+authority: LOGAN
 ---
-
-[[taxing districts]] for [[fire]] protection (can run [[bond elections]])
+taxing districts for fire protection (can run bond elections)

@@ -1,8 +1,6 @@
 ---
-tags:
-  - geography/water/lake
-aliases:
-  - lake
+related:
+- water
+authority: LOGAN
 ---
-
-large surface [[water]] formations
+large surface water formations

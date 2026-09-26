@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Melba
-tags:
-  - schools/k12/district
+related:
+- Canyon County
+- Melba
+authority: LOGAN
 ---
-[[Melba]], [[Canyon County]] 
+Melba, Canyon County

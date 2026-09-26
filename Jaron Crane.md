@@ -1,9 +1,10 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
+related:
+- Brent Crane
+- Nampa
+- Ron Crane
+authority: LOGAN
 ---
-Residence: [[Nampa]]
-- son of [[Ron Crane]], brother of [[Brent Crane]]
+Residence: Nampa
+
+- son of Ron Crane, brother of Brent Crane

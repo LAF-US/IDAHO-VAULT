@@ -1,8 +1,8 @@
 ---
-aliases:
-  - Lake Pend Oreille
-  - LPOSD
-tags:
-  - schools/k12/district
+related:
+- Bonner County
+- Sagle
+- Sandpoint
+authority: LOGAN
 ---
-[[Sandpoint]]/[[Sagle]], [[Bonner County]] 
+Sandpoint/Sagle, Bonner County

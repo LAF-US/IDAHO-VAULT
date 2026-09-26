@@ -1,5 +1,7 @@
 ---
-tags:
-  - people/appointed/judicial
+related:
+- Idaho
+- Idaho Court of Appeals
+authority: LOGAN
 ---
-[[Idaho Court of Appeals]] member
+Idaho Court of Appeals member

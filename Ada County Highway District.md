@@ -1,10 +1,6 @@
 ---
-aliases:
-  - ACHD
-tags:
-  - governments/taxingdistrict
-  - geography/land/roads
-  - governments/county
-  - position/elected/zones
+related:
+- Ada County
+authority: LOGAN
 ---
-countywide [[highway districts|highway district]] for [[Ada County]] 
+countywide highway district for Ada County

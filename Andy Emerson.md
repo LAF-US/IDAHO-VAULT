@@ -1,8 +1,9 @@
 ---
-tags:
-  - people/appointed/boards
-aliases:
-  - Andrew Emerson
+related:
+- Broadband Advisory Board
+- MH Solutions
+- President
+authority: LOGAN
 ---
-- President of [[MH Solutions]] 
-- [[Broadband Advisory Board]] member 
+- President of MH Solutions
+- Broadband Advisory Board member

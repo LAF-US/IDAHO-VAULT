@@ -1,8 +1,10 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/democratic
-  - people/candidate/legislative
+related:
+- Boise
+- House member
+- Legislative District 15
+authority: LOGAN
 ---
-Residence: [[Boise]] 
-- [[House member]] from [[Legislative District 15]] 
+Residence: Boise
+
+- House member from Legislative District 15

@@ -1,1 +1,7 @@
-adj; [[SOURCE]] W/ [[AUTHORITY]]
+---
+authority: LOGAN
+related:
+- SOURCE
+---
+
+adj; SOURCE W/ AUTHORITY

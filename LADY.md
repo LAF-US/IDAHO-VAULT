@@ -1,1 +1,7 @@
-[[MOTHER]]
+---
+authority: LOGAN
+related:
+- MOTHER
+---
+
+MOTHER

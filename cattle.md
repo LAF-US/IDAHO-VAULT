@@ -1,1 +1,7 @@
-[[agriculture]] 
+---
+authority: LOGAN
+related:
+- agriculture
+---
+
+agriculture

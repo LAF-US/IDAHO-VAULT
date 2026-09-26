@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/candidate/legislative
-  - people/elected/precinct
-  - people/candidate/precinct
-  - party/republican
+related:
+- Bingham County
+authority: LOGAN
 ---
-[[Bingham County]] 
+Bingham County

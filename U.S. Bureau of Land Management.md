@@ -1,9 +1,6 @@
 ---
-aliases:
-  - BLM
-  - Bureau of Land Management
-tags:
-  - federal
-  - governments/country/executive/departments/bureaus
+related:
+- U.S. Department of the Interior
+authority: LOGAN
 ---
-[[U.S. Department of the Interior]] 
+U.S. Department of the Interior

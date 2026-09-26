@@ -1,4 +1,13 @@
-[[churches]] 
-[[temples]] 
-[[synagogues]] 
-[[mosques]] 
+---
+authority: LOGAN
+related:
+- churches
+- mosques
+- synagogues
+- temples
+---
+
+churches
+temples
+synagogues
+mosques

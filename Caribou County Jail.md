@@ -1,1 +1,8 @@
-[[County Sheriff]], [[Caribou County]] [[jails|jail]]
+---
+authority: LOGAN
+related:
+- Caribou County
+- County Sheriff
+---
+
+County Sheriff, Caribou County jail

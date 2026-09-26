@@ -1,7 +1,14 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Idaho Mountain Express]]"
+- Idaho Mountain Express
+related:
+- Bellevue
+- Blaine County
+- Carey
+- Hailey
+- Idaho
+- Ketchum
+- Sun Valley
+authority: LOGAN
 ---
-[[Blaine County]] [[newspapers|newspaper]] serving [[Sun Valley]], [[Ketchum]], [[Hailey]] [[Bellevue]] and [[Carey]] 
+Blaine County newspaper serving Sun Valley, Ketchum, Hailey Bellevue and Carey

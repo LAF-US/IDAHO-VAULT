@@ -1,4 +1,6 @@
 ---
-tags: []
+related:
+- Ilana Rubel
+authority: LOGAN
 ---
-[[Ilana Rubel]] 
+Ilana Rubel

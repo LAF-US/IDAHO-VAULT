@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Valley
-tags:
-  - schools/k12/district
+related:
+- Hazelton
+- Jerome
+- Jerome County
+authority: LOGAN
 ---
-[[Hazelton]], [[Jerome County]] 
+Hazelton, Jerome County

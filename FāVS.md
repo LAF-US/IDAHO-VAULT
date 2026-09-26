@@ -1,5 +1,7 @@
 ---
-tags:
-  - vault/stub
+related:
+- Faith and Values Spokane
+- Spokane
+authority: LOGAN
 ---
-[[Faith and Values Spokane]] 
+Faith and Values Spokane

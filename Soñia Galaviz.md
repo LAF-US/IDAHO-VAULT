@@ -1,10 +1,12 @@
 ---
-tags:
-  - party/democratic
-  - people/elected
-  - people/elected/legislative
-  - people
+related:
+- Boise
+- House member
+- Legislative District 16
+- redistricting
+authority: LOGAN
 ---
-Residence: [[Boise]]
-- [[House member]] for [[Legislative District 16]] after [[redistricting]]
-- [[teachers|teacher]] 
+Residence: Boise
+
+- House member for Legislative District 16 after redistricting
+- teacher

@@ -1,7 +1,8 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Lewiston Tribune]]"
+- Lewiston Tribune
+related:
+- Lewiston
+authority: LOGAN
 ---
-[[Lewiston]] [[newspapers|newspaper]] 
+Lewiston newspaper

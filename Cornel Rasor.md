@@ -1,7 +1,8 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
+related:
+- Legislative District 1
+- Sage Dixon
+authority: LOGAN
 ---
-[[House member|Representative]] from [[Legislative District 1]] 
-Succeeded [[Sage Dixon]] 
+Representative from Legislative District 1
+Succeeded Sage Dixon

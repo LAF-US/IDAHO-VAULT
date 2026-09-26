@@ -1,5 +1,6 @@
 ---
-tags:
-  - geography/land/places
+related:
+- Boise
+authority: LOGAN
 ---
-[[Boise]] [[military]] 
+Boise military

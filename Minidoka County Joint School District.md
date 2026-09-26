@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Minidoka
-tags:
-  - schools/k12/district
+related:
+- Minidoka
+- Minidoka County
+- Rupert
+authority: LOGAN
 ---
-[[Rupert]], [[Minidoka County]] 
+Rupert, Minidoka County

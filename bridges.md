@@ -1,6 +1,7 @@
 ---
-aliases:
-  - bridge
-  - bridges and overpasses
+related:
+- rivers
+- roads
+authority: LOGAN
 ---
-[[roads]] crossings, often over [[rivers]] 
+roads crossings, often over rivers

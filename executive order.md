@@ -1,1 +1,7 @@
-[[Governor]] action 
+---
+authority: LOGAN
+related:
+- Governor
+---
+
+Governor action

@@ -1,8 +1,8 @@
 ---
-tags:
-  - governments/state/executive/departments/bureaus/offices
-aliases:
-  - rules coordinator
-  - administrative rules coordinator
+related:
+- Bureau of Regulatory & Legislative Affairs
+- Governor
+- administrative rules
+authority: LOGAN
 ---
-[[administrative rules]] management for [[Governor]] within [[Bureau of Regulatory & Legislative Affairs]] 
+administrative rules management for Governor within Bureau of Regulatory & Legislative Affairs

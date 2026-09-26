@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Nezperce
-tags:
-  - schools/k12/district
+related:
+- Lewis County
+- Nezperce
+authority: LOGAN
 ---
-[[Nezperce]], [[Lewis County]] 
+Nezperce, Lewis County

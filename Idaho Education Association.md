@@ -1,6 +1,6 @@
 ---
-aliases:
-  - IEA
-  - teachers' union
+related:
+- teachers
+authority: LOGAN
 ---
-statewide [[unions|labor union]] of [[teachers]]  
+statewide labor union of teachers  

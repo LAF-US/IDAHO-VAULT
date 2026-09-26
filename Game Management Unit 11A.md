@@ -1,7 +1,9 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - GMU 11A
+related:
+- Idaho
+- Idaho County
+- Lewis County
+- Nez Perce County
+authority: LOGAN
 ---
-eastern [[Lewis County]], southeastern [[Nez Perce County]], northwestern [[Idaho County]] 
+eastern Lewis County, southeastern Nez Perce County, northwestern Idaho County

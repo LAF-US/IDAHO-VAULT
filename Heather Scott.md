@@ -1,13 +1,13 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
+related:
+- Blanchard
+- Legislative District 2
+- redistricting
+authority: LOGAN
 ---
+Residence: Blanchard
 
-Residence: [[Blanchard]]
+House Rep. for Legislative District 2
 
-House Rep. for [[Legislative District 2]]
-- Longtime [[Legislative District 1|LD1]] Rep. before 2020 [[redistricting]]
-- 
+- Longtime LD1 Rep. before 2020 redistricting
+-

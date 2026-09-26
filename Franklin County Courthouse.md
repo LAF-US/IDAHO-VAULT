@@ -1,1 +1,9 @@
-[[magistrate court]] [[Franklin County]] [[courthouses|courthouse]] 
+---
+authority: LOGAN
+related:
+- Franklin
+- Franklin County
+- magistrate court
+---
+
+magistrate court Franklin County courthouse

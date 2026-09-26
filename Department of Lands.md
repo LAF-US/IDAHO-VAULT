@@ -1,7 +1,6 @@
 ---
-aliases:
-  - DoL
-tags:
-  - governments/state/executive/departments
+related:
+- State Board of Land Commissioners
+authority: LOGAN
 ---
-[[State Board of Land Commissioners]] 
+State Board of Land Commissioners

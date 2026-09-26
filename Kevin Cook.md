@@ -1,9 +1,10 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
+related:
+- Idaho
+- Idaho Falls
+- Senate member
+authority: LOGAN
 ---
-Residence: [[Idaho Falls]] 
-- [[Senate member]] 
+Residence: Idaho Falls
+
+- Senate member

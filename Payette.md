@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- Payette County
+authority: LOGAN
 ---
-Seat of [[Payette County]] 
+Seat of Payette County

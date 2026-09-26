@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Cambridge
-tags:
-  - schools/k12/district
+related:
+- Cambridge
+- Washington
+- Washington County
+authority: LOGAN
 ---
-[[Cambridge]], [[Washington County]] 
+Cambridge, Washington County

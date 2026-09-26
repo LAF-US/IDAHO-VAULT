@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Salmon
-tags:
-  - schools/k12/district
+related:
+- Lemhi
+- Lemhi County
+- Salmon
+authority: LOGAN
 ---
-[[Salmon]], [[Lemhi County]] 
+Salmon, Lemhi County

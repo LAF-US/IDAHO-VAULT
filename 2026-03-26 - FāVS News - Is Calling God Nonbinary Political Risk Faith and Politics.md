@@ -1,11 +1,34 @@
 ---
-source: "https://favs.news/god-nonbinary-james-talarico-faith-politics-opinion/"
+source: https://favs.news/god-nonbinary-james-talarico-faith-politics-opinion/
 author:
-  - "[[Walter Hesford]]"
+- Walter Hesford
 published: 2026-03-26
 created: 2026-03-27
-tags:
-  - 2026/03/26
+related:
+- '2026-03-26'
+- '2026-03-27'
+- '501'
+- CBS
+- CNN
+- Christian nationalism
+- Christianity
+- FāVS
+- Idaho
+- Islam
+- Judaism
+- Moscow
+- Texas
+- U.S. Senate
+- USA
+- University of Idaho
+- WHY
+- Washington
+- YouTube
+- journalists
+- public schools
+- religion
+- symbol
+authority: LOGAN
 ---
 ## Is saying ‘God is nonbinary’ political suicide? One Texas Senate candidate won’t back down
 
@@ -36,8 +59,6 @@ A reflection on resurrection myths across cultures argues Earth itself is the tr
 Our Sponsors
 
 Coin of Silver American Money with words In God We Trust/DepositPhoto
-
-  
 
 **By Walter Hesford | FāVS News Columnist**
 
@@ -71,7 +92,7 @@ The focus on affordability in current political discourse supports this view. Ho
 
 He also continues to [offer](https://www.instagram.com/p/DVxFTbukoK2/) Christian testimony: “Christ is the immigrant deported without due process. Christ is the senior citizen deprived of their Social Security benefits. Christ is the protester kidnapped in an unmarked vehicle …”
 
-![](https://www.youtube.com/watch?v=oiTJ7Pz_59A)
+![alt text needed](https://www.youtube.com/watch?v=oiTJ7Pz_59A)
 
 Probably more people have heard Talarico’s testimony via a Feb.16 interview with Stephen Colbert than anywhere else. This interview was banned by CBS and put on YouTube where it is still available.
 

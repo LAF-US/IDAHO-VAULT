@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Jefferson
-tags:
-  - schools/k12/district
+related:
+- Jefferson County
+- Rigby
+authority: LOGAN
 ---
-[[Rigby]], [[Jefferson County]] 
+Rigby, Jefferson County

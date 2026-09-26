@@ -1,6 +1,8 @@
 ---
-tags:
-  - people/elected/county/sheriff
+related:
+- County Sheriff
+- Shoshone
+- Shoshone County
+authority: LOGAN
 ---
-
-former [[Shoshone County]] [[County Sheriff|Sheriff]] 
+former Shoshone County Sheriff

@@ -1,5 +1,12 @@
 ---
-tags:
-  - geography/water/river/dams
+related:
+- Hagerman
+- Idaho
+- Idaho Power
+- Lower Salmon Falls reservoir
+- Salmon
+- Snake River
+- Upper Salmon Falls dam
+authority: LOGAN
 ---
-[[Idaho Power]] [[dams|dam]] on the [[Snake River]] near [[Hagerman]]; creates [[Lower Salmon Falls reservoir]] to the base of [[Upper Salmon Falls dam]] 
+Idaho Power dam on the Snake River near Hagerman; creates Lower Salmon Falls reservoir to the base of Upper Salmon Falls dam

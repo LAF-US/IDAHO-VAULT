@@ -1,10 +1,22 @@
 ---
-tags:
-  - people/idaho/legislature/house
-  - 2026/03/12
 source: commit
+related:
+- '202'
+- Bonners Ferry
+- House member
+- Idaho
+- Idaho Code
+- JFAC Rules
+- JFAC Working Groups
+- Joint Finance-Appropriations Committee
+- Sandpoint
+- Scott Grow
+- election
+- meeting
+- website
+authority: LOGAN
 ---
-[[Denise Woodward]] is a Republican [[Idaho House of Representatives|Idaho House]] member from District 1A (Bonners Ferry) who serves on [[Joint Finance-Appropriations Committee|JFAC]], made procedural objections at the March 7, 2025 JFAC meeting, and voted against [[Scott Grow]]'s re-election as co-chair in 2025.
+Denise Woodward is a Republican Idaho House member from District 1A (Bonners Ferry) who serves on JFAC, made procedural objections at the March 7, 2025 JFAC meeting, and voted against Scott Grow's re-election as co-chair in 2025.
 
 ## Basic Info
 
@@ -21,12 +33,12 @@ On JFAC as of 2026. Voted against Grow's re-election as co-chair in 2025 — one
 
 - Confirmed members actively count attendance to avoid triggering a quorum
 - Confirmed members attend working groups they are not assigned to
-- Argument that old JFAC rules remain in effect (because they were never voted out, only taken off the website) — actually the stronger parliamentary position per [[Mason's Manual]]
+- Argument that old JFAC rules remain in effect (because they were never voted out, only taken off the website) — actually the stronger parliamentary position per Mason's Manual
 
 ## Related Notes
 
-- [[Joint Finance-Appropriations Committee]]
-- [[JFAC Working Groups]]
-- [[JFAC Rules]]
-- [[Scott Grow]]
-- [[Idaho Code §74-202]]
+- Joint Finance-Appropriations Committee
+- JFAC Working Groups
+- JFAC Rules
+- Scott Grow
+- Idaho Code §74-202

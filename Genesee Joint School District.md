@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Genesee
-tags:
-  - schools/k12/district
+related:
+- Genesee
+- Latah County
+authority: LOGAN
 ---
-[[Genesee]], [[Latah County]] 
+Genesee, Latah County

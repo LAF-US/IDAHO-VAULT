@@ -1,3 +1,10 @@
-[[people]]
-[[homo sapiens]]
-[[individuals]]
+---
+authority: LOGAN
+related:
+- homo sapiens
+- individuals
+---
+
+people
+homo sapiens
+individuals

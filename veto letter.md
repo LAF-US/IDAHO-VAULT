@@ -1,1 +1,8 @@
-[[Governor]] message to [[Idaho Legislature|Legislature]] with [[veto]]
+---
+authority: LOGAN
+related:
+- Governor
+- veto
+---
+
+Governor message to Legislature with veto

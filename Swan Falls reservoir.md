@@ -1,5 +1,9 @@
 ---
-tags:
-  - geography/water/lake
+related:
+- Owyhee
+- Owyhee County
+- Snake River
+- Swan Falls dam
+authority: LOGAN
 ---
-[[reservoirs|reservoir]] on the [[Snake River]] in [[Ada County|Ada]] and [[Owyhee County]] created by [[Swan Falls dam]] 
+reservoir on the Snake River in Ada and Owyhee County created by Swan Falls dam

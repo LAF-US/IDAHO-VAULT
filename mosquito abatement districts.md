@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/taxingdistrict
+related:
+- taxing districts
+authority: LOGAN
 ---
-
-[[taxing districts]] for [[mosquito]] control 
+taxing districts for mosquito control

@@ -1,16 +1,23 @@
 ---
-tags:
-  - organizations/journalism
-  - 2026/03/12
 source: commit
+related:
+- Clark Corbin
+- ITD
+- Idaho
+- Idaho Reports
+- JFAC Working Groups
+- Jim Jones
+- OSC
+- chain
+authority: LOGAN
 ---
-The [[Idaho Capital Sun]] is a nonprofit digital news outlet that is the primary story carrier for the JFAC working groups open-meetings investigation and publishes [[Idaho Reports]] content under a CC BY-ND 4.0 syndication agreement.
+The Idaho Capital Sun is a nonprofit digital news outlet that is the primary story carrier for the JFAC working groups open-meetings investigation and publishes Idaho Reports content under a CC BY-ND 4.0 syndication agreement.
 
 ## Relevance
 
-- Primary vehicle for the [[JFAC Working Groups]] open-meetings story (editorial ownership held by [[Clark Corbin]])
-- [[Idaho Reports]] content syndicated to the Capital Sun under CC BY-ND 4.0 license
-- [[Jim Jones]] is a regular contributor/columnist
+- Primary vehicle for the JFAC Working Groups open-meetings story (editorial ownership held by Clark Corbin)
+- Idaho Reports content syndicated to the Capital Sun under CC BY-ND 4.0 license
+- Jim Jones is a regular contributor/columnist
 
 ## Key Coverage
 
@@ -21,6 +28,6 @@ The [[Idaho Capital Sun]] is a nonprofit digital news outlet that is the primary
 
 ## Related Notes
 
-- [[Clark Corbin]]
-- [[JFAC Working Groups]]
-- [[Idaho Reports]]
+- Clark Corbin
+- JFAC Working Groups
+- Idaho Reports

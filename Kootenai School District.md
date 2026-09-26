@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Kootenai
-tags:
-  - schools/k12/district
+related:
+- Harrison
+- Kootenai
+- Kootenai County
+authority: LOGAN
 ---
-[[Harrison]], [[Kootenai County]] 
+Harrison, Kootenai County

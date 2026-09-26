@@ -1,8 +1,29 @@
 ---
-tags:
-  - 2024/11/19
+related:
+- '208'
+- '871'
+- Department of Water Resources
+- Idaho
+- Idaho Power
+- King Hill
+- Lewiston
+- Milner
+- Moscow
+- NWS
+- North Idaho
+- Priest River
+- Salmon
+- Salmon River
+- Snake River
+- agriculture
+- creeks
+- livestock
+- reservoirs
+- systems
+- water
+authority: LOGAN
 ---
-[[Department of Water Resources]] Meeting
+Department of Water Resources Meeting
 
 PETER YOUNGBLOOD, USDA – [peter.youngblood@usda.gov](mailto:peter.youngblood@usda.gov) – 208-871-1245
 

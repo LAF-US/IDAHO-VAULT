@@ -1,10 +1,10 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
+related:
+- Dalton Gardens
+- Senate member
+authority: LOGAN
 ---
-Residence: [[Dalton Gardens]]
-- Former [[Senate member]] 
-- 
+Residence: Dalton Gardens
+
+- Former Senate member
+-

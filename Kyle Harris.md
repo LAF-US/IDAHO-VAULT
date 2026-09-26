@@ -1,7 +1,8 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
+related:
+- Legislative District 7
+- Mike Kingsley
+authority: LOGAN
 ---
-[[Legislative District 7]] [[House member|Representative]] 
-succeeded [[Mike Kingsley]] 
+Legislative District 7 Representative
+succeeded Mike Kingsley

@@ -1,3 +1,10 @@
-[[LEFT]]
+---
+authority: LOGAN
+related:
+- LEFT
+- WRONG
+---
 
-[[WRONG]]
+LEFT
+
+WRONG

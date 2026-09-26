@@ -1,1 +1,7 @@
-[[AUTHORITATIVE]] per [[CANON]]
+---
+authority: LOGAN
+related:
+- AUTHORITATIVE
+---
+
+AUTHORITATIVE per CANON

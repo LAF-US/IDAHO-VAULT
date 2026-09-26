@@ -1,7 +1,8 @@
 ---
-tags:
-  - party/republican
-  - position/elected/precinct
+related:
+- Ada County
+- Idaho
+- Idaho Republican Party
+authority: LOGAN
 ---
-
-Local [[Idaho Republican Party]] [[precinct committeemen|precinct committee]] for [[Ada County]] 
+Local Idaho Republican Party precinct committee for Ada County

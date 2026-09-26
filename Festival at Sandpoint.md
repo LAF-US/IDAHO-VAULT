@@ -1,1 +1,7 @@
-[[Sandpoint]] music festival 
+---
+authority: LOGAN
+related:
+- Sandpoint
+---
+
+Sandpoint music festival

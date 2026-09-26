@@ -1,4 +1,2 @@
 ---
-aliases:
-  - civil war
 ---

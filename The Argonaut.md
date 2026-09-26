@@ -1,8 +1,9 @@
 ---
 outlet:
-  - "[[The Argonaut]]"
-tags:
-  - media/outlets
+- The Argonaut
+related:
+- Idaho
+- University of Idaho
+authority: LOGAN
 ---
-
-[[University of Idaho]] student [[newspapers|newspaper]] 
+University of Idaho student newspaper

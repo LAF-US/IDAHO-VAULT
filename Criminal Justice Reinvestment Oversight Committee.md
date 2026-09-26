@@ -1,7 +1,7 @@
 ---
-tags:
-  - 2020/session
-  - 2019/session
-  - 2021/session
+related:
+- Idaho
+- Idaho Legislature
+authority: LOGAN
 ---
-[[Idaho Legislature]] interim [[criminal justice]] committee.
+Idaho Legislature interim criminal justice committee.

@@ -1,6 +1,12 @@
 ---
-tags:
-  - governments/taxingdistrict
+related:
+- Mullan
+- Shoshone
+- Shoshone County
+- Silver Valley
+- fire
+authority: LOGAN
 ---
-[[Silver Valley]] [[fire protection districts|fire district]] in [[Shoshone County]] 
-- [[Mullan]] area 
+Silver Valley fire district in Shoshone County
+
+- Mullan area

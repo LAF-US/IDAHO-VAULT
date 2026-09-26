@@ -1,5 +1,6 @@
 ---
-tags:
-  - geography/water/ocean
+related:
+- West Coast
+authority: LOGAN
 ---
-[[West Coast]] 
+West Coast

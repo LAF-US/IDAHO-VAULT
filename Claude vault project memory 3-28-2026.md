@@ -1,16 +1,88 @@
 ---
-aliases: []
 date created: Saturday, March 28th 2026, 2:53:19 pm
 date modified: Saturday, March 28th 2026, 2:55:09 pm
+related:
+- '201'
+- '2026-03-16'
+- '2026-03-18'
+- '900'
+- API
+- Adam McCoy
+- Alpha
+- BLOB
+- Bartimaeus
+- CCA
+- CHARTER
+- CONSTITUTION
+- Capitol Correspondents Association
+- Clark Corbin
+- Copilot
+- Drive
+- FāVS
+- GOP
+- GRIMOIRE
+- GUESTBOOK
+- GUIDELINES
+- GitHub
+- Google
+- IRE
+- Idaho
+- Idaho Capital Sun
+- Idaho Code
+- Idaho Legislature
+- Idaho Press
+- Idaho Press Club
+- Idaho Public Television
+- Idaho Reports
+- Joe Alfieri
+- KFF
+- Kevin Richert
+- LEVELSET
+- Logan Finney
+- Logan's
+- M365
+- MAGNUS
+- MCP
+- Medicaid
+- Melissa Davlin
+- Microsoft Copilot
+- North Idaho
+- NotebookLM
+- Obsidian
+- PBS
+- PREFERENCES
+- PROCEDURES
+- PROTOCOL
+- PROTOCOLS
+- RSS
+- SSD
+- State Board of Education
+- THE
+- The world is quiet here
+- University of Idaho
+- VFD
+- XIV
+- 'Yes'
+- agent
+- budgets
+- connections
+- coordination
+- format
+- individuals
+- infrastructure
+- node
+- transportation
+- voting
+authority: LOGAN
 ---
-
 # IDAHO-VAULT
 
-https://github.com/loganfinney27/IDAHO-VAULT
+<https://github.com/loganfinney27/IDAHO-VAULT>
 
 > Memory
 
 ---
+
 ## Manage project memory
 
 Claude regenerates project memory every evening from your past chats in this project. Only you can see this memory, and it is not shared with other project users.
@@ -104,4 +176,5 @@ Active journalism work includes a JFAC open meetings transparency investigation 
 - **Websites**: loganfinney.com (status unclear — possibly inactive/placeholder); thegemstone.org (anonymous, Quartz v4.2.3)
 
 ---
-# The world is quiet here.
+
+# The world is quiet here

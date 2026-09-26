@@ -1,11 +1,14 @@
 ---
-tags:
-  - party/republican
-  - people/elected/precinct
-  - people/candidate/schoolboard
-  - people/candidate/precinct
-residence: "[[Coeur d'Alene]]"
+residence: Coeur d'Alene
+related:
+- Coeur d'Alene
+- Freedom
+- Idaho
+- Idaho Freedom Foundation
+- Kootenai
+- Kootenai County
+- Kootenai County Republican Central Committee
+authority: LOGAN
 ---
-
-[[Kootenai County Republican Central Committee]] chairman
-[[Idaho Freedom Foundation]] board member 
+Kootenai County Republican Central Committee chairman
+Idaho Freedom Foundation board member

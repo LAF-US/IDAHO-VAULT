@@ -1,0 +1,6 @@
+# Explicit repository defaults. Refine only through a reviewed policy change.
+bundles: "auto"
+report:
+  pullRequest:
+    findings: "onChangedLinesOnly"
+    comment: true

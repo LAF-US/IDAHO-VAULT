@@ -1,10 +1,10 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/city/council
-  - people/elected/city/council
-  - people/candidate/precinct
-  - position/elected/precinct
+related:
+- CDA
+- Coeur d'Alene
+- city council
+authority: LOGAN
 ---
-Residence: [[Coeur d'Alene]] 
- - [[Coeur d'Alene|CDA]] [[city council]] member 
+Residence: Coeur d'Alene
+
+- CDA city council member

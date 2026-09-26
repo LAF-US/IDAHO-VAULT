@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Prairie
-tags:
-  - schools/k12/district
+related:
+- Elmore County
+- Prairie
+authority: LOGAN
 ---
-[[Prairie]], [[Elmore County]] 
+Prairie, Elmore County

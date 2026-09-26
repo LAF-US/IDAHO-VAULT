@@ -1,5 +1,6 @@
 ---
-tags:
-  - geography/water/river/dams
+related:
+- Snake River
+authority: LOGAN
 ---
-[[dams|dam]] on the [[Snake River]] 
+dam on the Snake River

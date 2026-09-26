@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Devin Center
-tags:
-  - people
+related:
+- Arkansas
+- Patriot Front
+authority: LOGAN
 ---
-[[Patriot Front]] member, [[Arkansas]] resident 
+Patriot Front member, Arkansas resident

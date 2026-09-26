@@ -1,1 +1,8 @@
-[[magistrate court]] [[Camas County]] [[courthouses|courthouse]] 
+---
+authority: LOGAN
+related:
+- Camas County
+- magistrate court
+---
+
+magistrate court Camas County courthouse

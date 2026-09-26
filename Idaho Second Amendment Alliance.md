@@ -1,3 +1,10 @@
-[[Greg Pruett]] 
+---
+authority: LOGAN
+related:
+- Greg Pruett
+- Second Amendment
+---
 
-[[Second Amendment]] 
+Greg Pruett
+
+Second Amendment

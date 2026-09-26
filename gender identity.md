@@ -1,1 +1,7 @@
-[[LGBTQ+ issues|LGBTQ+ issues]] 
+---
+authority: LOGAN
+related:
+- LGBTQ+ issues
+---
+
+LGBTQ+ issues

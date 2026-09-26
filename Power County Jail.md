@@ -1,1 +1,8 @@
-[[County Sheriff]], [[Power County]] [[jails|jail]]
+---
+authority: LOGAN
+related:
+- County Sheriff
+- Power County
+---
+
+County Sheriff, Power County jail

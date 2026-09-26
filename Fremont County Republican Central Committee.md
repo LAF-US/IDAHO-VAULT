@@ -1,7 +1,8 @@
 ---
-tags:
-  - party/republican
-  - position/elected/precinct
+related:
+- Fremont County
+- Idaho
+- Idaho Republican Party
+authority: LOGAN
 ---
-
-Local [[Idaho Republican Party]] [[precinct committeemen|precinct committee]] for [[Fremont County]] 
+Local Idaho Republican Party precinct committee for Fremont County

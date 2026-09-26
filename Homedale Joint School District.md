@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Homedale
-tags:
-  - schools/k12/district
+related:
+- Homedale
+- Owyhee
+- Owyhee County
+authority: LOGAN
 ---
-[[Homedale]], [[Owyhee County]] 
+Homedale, Owyhee County

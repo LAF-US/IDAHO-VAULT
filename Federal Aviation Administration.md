@@ -1,8 +1,6 @@
 ---
-aliases:
-  - FAA
-tags:
-  - governments/country/executive/departments/agencies
-  - federal
+related:
+- airport
+authority: LOGAN
 ---
-[[airport]] [[airstrip]] etc 
+airport airstrip etc

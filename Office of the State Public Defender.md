@@ -1,6 +1,8 @@
 ---
-tags:
-  - governments/state/executive
+related:
+- State Public Defender
+authority: LOGAN
 ---
-[[State Public Defender]] 
-- created in 2023 
+State Public Defender
+
+- created in 2023

@@ -1,7 +1,9 @@
 ---
-tags:
-  - party/democratic
-  - position/elected/precinct
+related:
+- Idaho
+- Idaho Democratic Party
+- Twin Falls
+- Twin Falls County
+authority: LOGAN
 ---
-
-Local [[Idaho Democratic Party]] [[precinct committeemen|precinct committee]] for [[Twin Falls County]] 
+Local Idaho Democratic Party precinct committee for Twin Falls County

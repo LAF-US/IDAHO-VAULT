@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Preston
-tags:
-  - schools/k12/district
+related:
+- Franklin
+- Franklin County
+- Preston
+authority: LOGAN
 ---
-[[Preston]], [[Franklin County]] 
+Preston, Franklin County

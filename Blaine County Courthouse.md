@@ -1,1 +1,8 @@
-[[magistrate court]] [[Blaine County]] [[courthouses|courthouse]] 
+---
+authority: LOGAN
+related:
+- Blaine County
+- magistrate court
+---
+
+magistrate court Blaine County courthouse

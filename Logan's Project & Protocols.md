@@ -1,6 +1,16 @@
-[[Unity]] [[(v0.0)]] :: [[US]] alignment 
+---
+authority: LOGAN
+related:
+- CONSTITUTION
+- FRAMEWORKS
+- LAF
+- The world is quiet here
+- Unity
+---
 
-See ; [[CONSTITUTION]] and [[FRAMEWORKS]]
+Unity (v0.0) :: US alignment
 
---- 
-[["The world is quiet here."]] -[[LOGAN|LAF]]
+See ; CONSTITUTION and FRAMEWORKS
+
+---
+"The world is quiet here." -LAF

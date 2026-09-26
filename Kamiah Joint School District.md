@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Kamiah
-tags:
-  - schools/k12/district
+related:
+- Kamiah
+- Lewis County
+authority: LOGAN
 ---
-[[Kamiah]], [[Lewis County]] 
+Kamiah, Lewis County

@@ -1,8 +1,17 @@
-Law and Policy firm, [[lobbying]] 
+---
+authority: LOGAN
+related:
+- Jason Risch
+- Jeremy Pisca
+- Robert Anderst
+- lobbying
+---
 
-[[Jason Risch]]
-[[Jeremy Pisca]]
-[[Robert Anderst]]
-[[Maggie Mallea]]
-[[Arica Todd]]
-[[Lara Herway]] 
+Law and Policy firm, lobbying
+
+Jason Risch
+Jeremy Pisca
+Robert Anderst
+Maggie Mallea
+Arica Todd
+Lara Herway

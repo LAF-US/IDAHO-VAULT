@@ -1,7 +1,7 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - GMU 1
+related:
+- Bonner County
+- Boundary County
+authority: LOGAN
 ---
-[[Boundary County]] and northern [[Bonner County]] 
+Boundary County and northern Bonner County

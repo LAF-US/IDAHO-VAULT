@@ -1,1 +1,9 @@
-[[magistrate court]] [[Minidoka County]] [[courthouses|courthouse]] 
+---
+authority: LOGAN
+related:
+- Minidoka
+- Minidoka County
+- magistrate court
+---
+
+magistrate court Minidoka County courthouse

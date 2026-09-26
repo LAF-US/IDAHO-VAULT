@@ -1,7 +1,7 @@
 ---
-aliases:
-  - water right
-  - first in time, first in right
+related:
+- beneficial use
+- water
+authority: LOGAN
 ---
-
-right to [[water]] for [[beneficial use]] 
+right to water for beneficial use

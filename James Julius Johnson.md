@@ -1,7 +1,7 @@
 ---
-aliases:
-  - James Johnson
-tags:
-  - people
+related:
+- Patriot Front
+- Washington
+authority: LOGAN
 ---
-[[Patriot Front]] member, [[Washington]] resident 
+Patriot Front member, Washington resident

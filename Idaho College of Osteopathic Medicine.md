@@ -1,7 +1,7 @@
 ---
-tags:
-  - schools/colleges/private
-aliases:
-  - ICOM
+related:
+- Meridian
+- medical school
+authority: LOGAN
 ---
-[[medical school]] in [[Meridian]] 
+medical school in Meridian

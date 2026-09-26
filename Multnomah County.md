@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
+related:
+- Oregon
+authority: LOGAN
 ---
-[[Oregon]] 
+Oregon

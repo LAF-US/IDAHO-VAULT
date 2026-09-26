@@ -1,5 +1,6 @@
 ---
-aliases:
-  - NICD
+related:
+- Keith Allred
+authority: LOGAN
 ---
-Executive Director [[Keith Allred]]
+Executive Director Keith Allred

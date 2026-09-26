@@ -1,9 +1,8 @@
 ---
-tags:
-  - party/republican
-  - people
+related:
+- Greg Chaney
+authority: LOGAN
 ---
+husband Greg Chaney
 
-husband [[Greg Chaney]]
-
-2024 House candidate for [[Legislative District 11|LD11]] 
+2024 House candidate for LD11

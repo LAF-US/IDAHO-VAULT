@@ -1,6 +1,6 @@
 ---
-aliases:
-  - church
+related:
+- places of worship
+authority: LOGAN
 ---
-
-[[Christianity|Christian]] [[places of worship]] 
+Christian places of worship

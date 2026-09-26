@@ -1,7 +1,8 @@
 ---
-tags:
-  - party/democratic
-  - position/elected/precinct
+related:
+- Bannock County
+- Idaho
+- Idaho Democratic Party
+authority: LOGAN
 ---
-
-Local [[Idaho Democratic Party]] [[precinct committeemen|precinct committee]] for [[Bannock County]].
+Local Idaho Democratic Party precinct committee for Bannock County.

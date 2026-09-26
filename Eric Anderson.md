@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
+related:
+- Public Utilities Commission
+authority: LOGAN
 ---
-[[Public Utilities Commission]]
+Public Utilities Commission

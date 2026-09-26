@@ -1,7 +1,7 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - GMU 5
+related:
+- Benewah
+- Benewah County
+authority: LOGAN
 ---
-western [[Benewah County]] 
+western Benewah County

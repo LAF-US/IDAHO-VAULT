@@ -1,6 +1,6 @@
 ---
-tags:
-  - geography/land/state
-  - governments/state
+related:
+- United States of America
+authority: LOGAN
 ---
-one of the [[United States of America]] 
+one of the United States of America

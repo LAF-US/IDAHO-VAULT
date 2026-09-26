@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Lakeland
-tags:
-  - schools/k12/district
+related:
+- Kootenai
+- Kootenai County
+- Rathdrum
+authority: LOGAN
 ---
-[[Rathdrum]], [[Kootenai County]] 
+Rathdrum, Kootenai County

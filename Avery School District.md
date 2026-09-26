@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Avery
-tags:
-  - schools/k12/district
+related:
+- Avery
+- Shoshone
+- Shoshone County
+authority: LOGAN
 ---
-[[Avery]], [[Shoshone County]] 
+Avery, Shoshone County

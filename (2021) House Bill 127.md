@@ -1,7 +1,7 @@
 ---
-tags:
-  - bills
-  - 2021/session
+related:
+- Broadband Advisory Board
+- Broadband Fund
+authority: LOGAN
 ---
-
-created the [[Broadband Advisory Board]] and the [[Broadband Fund]] 
+created the Broadband Advisory Board and the Broadband Fund

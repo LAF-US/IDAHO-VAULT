@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Mitchell Wagner
-tags:
-  - people
+related:
+- Missouri
+- Patriot Front
+authority: LOGAN
 ---
-[[Patriot Front]] member, [[Missouri]] resident 
+Patriot Front member, Missouri resident

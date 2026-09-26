@@ -1,19 +1,24 @@
 ---
-tags:
-  - 2020/01/21
-  - 2020/session
-  - bills
-cmte: "[[Senate Health and Welfare]]"
+cmte: Senate Health and Welfare
+related:
+- Dorothy Moon
+- Fred Martin
+- Senate Health and Welfare
+- definition
+- hemp
+- marijuana
+- nurses
+authority: LOGAN
 ---
-[[Senate Health and Welfare]] – Jan 21
+Senate Health and Welfare – Jan 21
 
-Chairman [[Fred Martin]]
+Chairman Fred Martin
 
-RS: [[nurses]] new section
+RS: nurses new section
 
 Printed, no presentation or discussion?
 
-RS: Amending Title 37 - [[House member|Rep.]] [[Dorothy Moon]]
+RS: Amending Title 37 - Rep. Dorothy Moon
 
 Removing hemp from definition of marijuana & removing hemp from schedule I, conformity with 2018 Farm Bill
 

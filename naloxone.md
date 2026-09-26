@@ -1,5 +1,6 @@
 ---
-aliases:
-  - Narcan
+related:
+- opioid reversal
+authority: LOGAN
 ---
-[[opioid reversal]] drug 
+opioid reversal drug

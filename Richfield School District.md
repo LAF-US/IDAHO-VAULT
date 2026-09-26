@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Richfield
-tags:
-  - schools/k12/district
+related:
+- Lincoln
+- Lincoln County
+- Richfield
+authority: LOGAN
 ---
-[[Richfield]], [[Lincoln County]] 
+Richfield, Lincoln County

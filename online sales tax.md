@@ -1,12 +1,9 @@
 ---
-aliases:
-  - taxes on internet sales
-  - taxes on online purchases
-  - taxes on internet purchases
-  - taxes on online sales
-  - internet sales tax
+related:
+- Internet
+- sales tax
+authority: LOGAN
 ---
+sales tax paid on Internet purchases
 
-[[sales tax]] paid on [[Internet]] purchases 
-
-[[marketplace facilitators]] 
+marketplace facilitators

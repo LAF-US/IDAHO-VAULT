@@ -1,5 +1,7 @@
 ---
-tags: []
+related:
+- Lauren Necochea
+authority: LOGAN
 ---
-[[Lauren Necochea]] 
-- 
+Lauren Necochea
+-

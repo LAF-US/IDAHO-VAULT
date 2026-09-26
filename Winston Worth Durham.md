@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Winston Durham
-tags:
-  - people
+related:
+- Genesee
+- Idaho
+- Patriot Front
+authority: LOGAN
 ---
-[[Patriot Front]] member, [[Genesee]] [[State of Idaho|Idaho]] resident 
+Patriot Front member, Genesee Idaho resident

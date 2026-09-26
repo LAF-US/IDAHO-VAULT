@@ -1,13 +1,12 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/legislative
-  - people/elected/legislative
-  - people/elected/statewide/governor
-  - people/appointed/legislative
-  - people/candidate/statewide/governor
-residence: "[[Emmett]]"
+residence: Emmett
+related:
+- Emmett
+- Governor
+- Lieutenant Governor
+- Senate member
+authority: LOGAN
 ---
-[[Governor]]
-former [[Lieutenant Governor]]
-former [[Senate member]] 
+Governor
+former Lieutenant Governor
+former Senate member

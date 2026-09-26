@@ -1,7 +1,7 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - GMU 8A
+related:
+- Clearwater County
+- Latah County
+authority: LOGAN
 ---
-eastern [[Latah County]] and western [[Clearwater County]] 
+eastern Latah County and western Clearwater County

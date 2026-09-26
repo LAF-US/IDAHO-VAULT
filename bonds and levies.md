@@ -1,3 +1,11 @@
-run during [[election|elections]] to increase [[property tax|property taxes]] and raise local funding for [[school districts]] 
+---
+authority: LOGAN
+related:
+- school districts
+- supplemental levy
+- taxes
+---
 
-a [[supplemental levy]] is a simple tax, whereas a [[bonds|bond]] is a financial instrument 
+run during elections to increase property taxes and raise local funding for school districts
+
+a supplemental levy is a simple tax, whereas a bond is a financial instrument

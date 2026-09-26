@@ -1,7 +1,7 @@
 ---
-tags:
-  - party/democratic
-  - people/candidate/country/congress
-  - people/elected/country/congress
+related:
+- House member
+- U.S. House
+authority: LOGAN
 ---
-former [[Idaho Democratic Party|Democratic]] [[U.S. House]] member for [[1st Congressional District|CD1]] 
+former Democratic U.S. House member for CD1

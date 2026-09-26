@@ -1,8 +1,9 @@
 ---
-aliases:
-  - Teton
-tags:
-  - schools/k12/district
+related:
+- Driggs
+- Teton
+- Teton County
+- Victor
+authority: LOGAN
 ---
-[[Driggs]]/[[Victor]], [[Teton County]] 
-
+Driggs/Victor, Teton County

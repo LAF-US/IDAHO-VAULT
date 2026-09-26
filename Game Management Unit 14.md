@@ -1,10 +1,10 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - Unit 14
-  - GMU 14
+related:
+- Idaho
+- Idaho County
+- chronic wasting disease
+authority: LOGAN
 ---
-northwestern [[Idaho County]]
+northwestern Idaho County
 
-[[chronic wasting disease]] 
+chronic wasting disease

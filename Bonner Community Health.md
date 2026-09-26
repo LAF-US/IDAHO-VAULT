@@ -1,5 +1,7 @@
 ---
-aliases:
-  - Bonner Community Hospital
+related:
+- Bonner County
+- Sandpoint
+authority: LOGAN
 ---
-[[Sandpoint]] [[hospitals|hospital]] [[Bonner County]] [[hospital districts|hospital district]] 
+Sandpoint hospital Bonner County hospital district

@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Muslim
-  - Muslims
-  - Islamic
+related:
+- mosques
+- religion
+authority: LOGAN
 ---
-[[religion]] - [[mosques]] 
+religion - mosques

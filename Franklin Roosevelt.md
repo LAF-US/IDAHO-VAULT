@@ -1,14 +1,13 @@
 ---
-tags:
-  - category/statue
-aliases:
-  - Franklin D. Roosevelt
-  - FDR
+related:
+- FDR
+- President
+authority: LOGAN
 ---
-![[content/Images/tumblr_owx4eg6HZq1wc45zao1_1280.png]]
+!tumblr_owx4eg6HZq1wc45zao1_1280.png
 
 # FDR
 
-Democratic President of the United States 
+Democratic President of the United States
 
 ---

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PMD ruleset — Codacy toggle.
+
+  NOT a GitHub repository ruleset. Those are branch and tag protection rules,
+  they are JSON, and they live in repository settings. Editing this file will
+  not protect a branch. The vault's notes on GitHub rulesets are unrelated to
+  it.
+
+  Both categories ship inside PMD. Reach is zero, and the reason is the one
+  fact that decides it: PMD analyses Java, and `git ls-files '*.java'` returns
+  nothing. No .jsp or .jar either.
+
+  This used to justify that by listing the repo's languages as "Python, shell
+  and Markdown", which was wrong: there are 7 first-party .js files (plus
+  vendored ones under THE-GEMSTONE and .obsidian/plugins). The conclusion was
+  right for the wrong reason, so it now rests on the absence of Java rather than
+  on an enumeration that has to stay current to stay true.
+
+  errorprone and bestpractices only — those find defects. codestyle and design
+  are largely taste, and documentation demands Javadoc on everything.
+-->
+<ruleset name="idaho-vault"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+  <description>
+    Defect-finding baseline: PMD's errorprone and bestpractices categories.
+    Matches nothing today — no Java here. Not a GitHub repository ruleset.
+  </description>
+
+  <rule ref="category/java/errorprone.xml"/>
+  <rule ref="category/java/bestpractices.xml"/>
+
+</ruleset>

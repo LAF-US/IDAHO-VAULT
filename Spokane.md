@@ -1,6 +1,8 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- Idaho
+- North Idaho
+- Washington
+authority: LOGAN
 ---
-eastern [[Washington]] city with regional influence in [[North Idaho]] 
+eastern Washington city with regional influence in North Idaho

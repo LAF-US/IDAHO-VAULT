@@ -1,7 +1,7 @@
 ---
-aliases:
-  - West Jefferson
-tags:
-  - schools/k12/district
+related:
+- Jefferson County
+- Terreton
+authority: LOGAN
 ---
-[[Terreton]], [[Jefferson County]] 
+Terreton, Jefferson County

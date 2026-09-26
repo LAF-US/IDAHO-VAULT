@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- California
+authority: LOGAN
 ---
-[[California]] 
+California

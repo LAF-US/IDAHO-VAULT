@@ -1,6 +1,7 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- Summit County
+- Utah
+authority: LOGAN
 ---
-[[Summit County]], [[Utah]] 
+Summit County, Utah

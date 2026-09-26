@@ -1,5 +1,2 @@
 ---
-aliases:
-  - censure
-  - censured
 ---

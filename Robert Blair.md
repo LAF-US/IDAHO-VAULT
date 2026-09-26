@@ -1,6 +1,6 @@
 ---
-tags:
-  - people/candidate/legislative
-  - party/republican
+related:
+- Dan Johnson
+authority: LOGAN
 ---
-- [[Dan Johnson]] longterm substitute in [[Idaho Senate|Senate]] 
+- Dan Johnson longterm substitute in Senate

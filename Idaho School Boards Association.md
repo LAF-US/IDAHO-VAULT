@@ -1,5 +1,6 @@
 ---
-aliases:
-  - ISBA
+related:
+- school board
+authority: LOGAN
 ---
-statewide [[school board]] association
+statewide school board association

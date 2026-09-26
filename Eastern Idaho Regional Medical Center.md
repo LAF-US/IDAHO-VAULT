@@ -1,5 +1,7 @@
 ---
-aliases:
-  - EIRMC
+related:
+- Idaho
+- Idaho Falls
+authority: LOGAN
 ---
-[[Idaho Falls]] [[hospitals|hospital]] 
+Idaho Falls hospital

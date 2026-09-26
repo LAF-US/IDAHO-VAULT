@@ -1,7 +1,8 @@
 ---
-tags:
-  - party/democratic
-  - position/elected/precinct
+related:
+- Clearwater County
+- Idaho
+- Idaho Democratic Party
+authority: LOGAN
 ---
-
-Local [[Idaho Democratic Party]] [[precinct committeemen|precinct committee]] for [[Clearwater County]] 
+Local Idaho Democratic Party precinct committee for Clearwater County

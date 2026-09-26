@@ -1,5 +1,7 @@
 ---
-tags:
-  - geography/water/river
+related:
+- Owyhee
+- Owyhee County
+authority: LOGAN
 ---
-[[rivers|river]] in [[Owyhee County]] 
+river in Owyhee County

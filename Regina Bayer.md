@@ -1,10 +1,11 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
+related:
+- Clifford Bayer
+- Meridian
+- Senate member
+authority: LOGAN
 ---
-Residence: [[Meridian]]
-- former [[Senate member]] 
-- mother of [[Clifford Bayer]] 
+Residence: Meridian
+
+- former Senate member
+- mother of Clifford Bayer

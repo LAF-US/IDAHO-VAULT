@@ -1,1 +1,8 @@
-[[magistrate court]] [[Nez Perce County]] [[courthouses|courthouse]] 
+---
+authority: LOGAN
+related:
+- Nez Perce County
+- magistrate court
+---
+
+magistrate court Nez Perce County courthouse

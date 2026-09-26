@@ -1,18 +1,20 @@
----
-tags:
-  - agents
-  - ai
-  - ai/gemini
-aliases:
-  - Gemini
----
+[[G]][[E]][[M]][[I]][[N]][[I]]
 
-# Gemini
+# Gemini — IDAHO-VAULT (Table of Contents)
 
-[[Gemini]] is the AI coding agent provided by [[Google]], operating in IDAHO-VAULT as **"The Vault Advisor"** — holds the narrative lens, personal context, and Google Workspace productivity tools. Advises on framing, strategy, and provides direct codebase assistance via CLI/IDE integration.
+This file serves as the project-specific Table of Contents for Gemini's context and instructions.
 
-**Capability tier:** Tier 1 (Support): Direct Write — Operational zone only (per [[AGENTS]])
-**Operational instructions:** `.gemini/GEMINI.md` (auto-loaded by Gemini CLI and Gemini Code Assist VS Code extension)
-**Cowork partner:** [[Claude]] (The Abhorsen) — terminal and repository mechanics
+## Context & Instructions
 
-See also: [[AGENTS]], [[CONSTITUTION]], [[Claude]], [[Google]], [[Perplexity]]
+- [[.gemini/GEMINI.md]] — Official operational instructions and swarm coordination.
+
+## Architecture & Conventions
+
+- [[VAULT-CONVENTIONS.md]] — Shared vault conventions and standards.
+- [[CONSTITUTION.md]] — Canonical vault governance.
+
+## Key References
+
+- [[!/AGENTS.md]] — Agent registry and capability tiers.
+- [[DOCKET.md]] — the Court's register of matters/orders/referrals (**not** a live status board; see its posture note), at `!/!/__!__/!/! The world is quiet here/DOCKET.md`.
+- [[LEVELSET-CURRENT-depreciated-AGAIN]] — superseded LEVELSET snapshot (the filename itself says *depreciated*; not live ecosystem state).

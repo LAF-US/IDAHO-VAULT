@@ -1,8 +1,8 @@
 ---
-aliases:
-  - Saint Maries
-  - St. Maries School District
-tags:
-  - schools/k12/district
+related:
+- Benewah
+- Benewah County
+- St. Maries
+authority: LOGAN
 ---
-[[St. Maries]], [[Benewah County]] 
+St. Maries, Benewah County

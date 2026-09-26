@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Mishael Buster
-tags:
-  - people
+related:
+- Patriot Front
+- Spokane
+- Washington
+authority: LOGAN
 ---
-[[Patriot Front]] member, [[Spokane]] [[Washington]] resident, [[Josiah Daniel Buster|Josiah Buster]] brother 
+Patriot Front member, Spokane Washington resident, Josiah Buster brother

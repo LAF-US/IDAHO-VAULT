@@ -1,7 +1,10 @@
 ---
-tags:
-  - federal
-  - geography/land/wildlife/federal
+related:
+- Franklin
+- Franklin County
+- Oxford
+- species
+- waterfowl species
+authority: LOGAN
 ---
-
-[[national wildlife refuge|protection area]] for [[waterfowl species]] in [[Franklin County]] near [[Oxford]] 
+protection area for waterfowl species in Franklin County near Oxford

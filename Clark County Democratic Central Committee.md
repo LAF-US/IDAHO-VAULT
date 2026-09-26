@@ -1,7 +1,8 @@
 ---
-tags:
-  - party/democratic
-  - position/elected/precinct
+related:
+- Clark County
+- Idaho
+- Idaho Democratic Party
+authority: LOGAN
 ---
-
-Local [[Idaho Democratic Party]] [[precinct committeemen|precinct committee]] for [[Clark County]] 
+Local Idaho Democratic Party precinct committee for Clark County

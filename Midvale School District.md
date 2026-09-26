@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Midvale
-tags:
-  - schools/k12/district
+related:
+- Midvale
+- Washington
+- Washington County
+authority: LOGAN
 ---
-[[Midvale]], [[Washington County]] 
+Midvale, Washington County

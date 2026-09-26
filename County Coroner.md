@@ -1,7 +1,6 @@
 ---
-tags:
-  - position/elected/county/executive
-aliases:
-  - Coroner
+related:
+- counties
+authority: LOGAN
 ---
-[[counties]] [[death]] 
+counties death

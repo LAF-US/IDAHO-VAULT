@@ -1,7 +1,8 @@
 ---
-tags:
-  - party/democratic
-  - position/elected/precinct
+related:
+- Blaine County
+- Idaho
+- Idaho Democratic Party
+authority: LOGAN
 ---
-
-Local [[Idaho Democratic Party]] [[precinct committeemen|precinct committee]] for [[Blaine County]] 
+Local Idaho Democratic Party precinct committee for Blaine County

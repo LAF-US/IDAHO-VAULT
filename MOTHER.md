@@ -1,1 +1,7 @@
-[[FATHER]]
+---
+authority: LOGAN
+related:
+- FATHER
+---
+
+FATHER

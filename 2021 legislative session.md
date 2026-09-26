@@ -1,5 +1,7 @@
 ---
-tags:
-  - 2021/session
+related:
+- Idaho
+- Idaho Legislature
+authority: LOGAN
 ---
-1st [[legislative session|Regular Session]] of the 66th [[Idaho Legislature]] 
+1st Regular Session of the 66th Idaho Legislature

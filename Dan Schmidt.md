@@ -1,16 +1,12 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/democratic
-  - people/appointed
-  - people/candidate/legislative
-  - people
-  - people/appointed/boards
+related:
+- Michelle
+- Michelle Stennett
+- Moscow
+authority: LOGAN
 ---
+Residence: Moscow
 
-Residence: [[Moscow]]
+Former senator for LD5
 
-Former [[Senate member|senator]] for [[Legislative District 5|LD5]]
-
-2021 [[Idaho Commission for Redistricting|Redistricting Commission]] appointee by [[Michelle Stennett]] 
-
+2021 Redistricting Commission appointee by Michelle Stennett

@@ -1,5 +1,6 @@
 ---
-aliases:
-  - hospital
+related:
+- health care
+authority: LOGAN
 ---
-large [[health care]] centers 
+large health care centers

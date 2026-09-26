@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Highland
-tags:
-  - schools/k12/district
+related:
+- Craigmont
+- Lewis County
+authority: LOGAN
 ---
-[[Craigmont]], [[Lewis County]] 
+Craigmont, Lewis County

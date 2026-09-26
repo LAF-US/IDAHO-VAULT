@@ -1,5 +1,11 @@
 ---
-tags:
-  - geography/water/river/dams
+related:
+- Idaho
+- Idaho Power
+- Lake
+- Milner
+- Milner Lake
+- Snake River
+authority: LOGAN
 ---
-[[Idaho Power]] [[dams|dam]] on the [[Snake River]] at [[Milner]]; creates [[Milner Lake]] 
+Idaho Power dam on the Snake River at Milner; creates Milner Lake

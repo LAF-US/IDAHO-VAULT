@@ -1,5 +1,6 @@
 ---
-tags:
-  - vault/stub
+related:
+- LOGAN
+authority: LOGAN
 ---
-[[LOGAN]] & [[Aurora]] 
+LOGAN & Aurora

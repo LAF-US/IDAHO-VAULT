@@ -1,7 +1,10 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - 10A
+related:
+- Clearwater County
+- Idaho
+- Idaho County
+- Shoshone
+- Shoshone County
+authority: LOGAN
 ---
-central [[Clearwater County]], southern [[Shoshone County]] and northern [[Idaho County]] 
+central Clearwater County, southern Shoshone County and northern Idaho County

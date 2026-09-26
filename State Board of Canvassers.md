@@ -1,5 +1,7 @@
 ---
-tags:
-  - governments/state/executive
+related:
+- Secretary of State
+- election
+authority: LOGAN
 ---
-[[Secretary of State]], [[State Controller|Controller]], [[State Treasurer|Treasurer]] finalize all [[election]] results.
+Secretary of State, Controller, Treasurer finalize all election results.

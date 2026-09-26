@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/country/executive/departments/bureaus
-  - federal
+related:
+- United States of America
+authority: LOGAN
 ---
-[[United States of America]] 
+United States of America

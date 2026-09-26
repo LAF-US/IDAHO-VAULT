@@ -1,9 +1,6 @@
 ---
-aliases:
-  - Teton County
-  - Teton County, Wyoming
-tags:
-  - governments/county
-  - geography/land/county
+related:
+- Wyoming
+authority: LOGAN
 ---
-[[Wyoming]]
+Wyoming

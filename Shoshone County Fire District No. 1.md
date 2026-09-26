@@ -1,8 +1,16 @@
 ---
-tags:
-  - governments/taxingdistrict
+related:
+- Osburn
+- Shoshone
+- Shoshone County
+- Silver Valley
+- Silverton
+- Wallace
+- fire
+authority: LOGAN
 ---
-[[Silver Valley]] [[fire protection districts|fire district]] in [[Shoshone County]] 
-- [[Osburn]]
-- [[Silverton]]
-- [[Wallace]]
+Silver Valley fire district in Shoshone County
+
+- Osburn
+- Silverton
+- Wallace

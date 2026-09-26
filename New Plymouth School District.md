@@ -1,7 +1,8 @@
 ---
-aliases:
-  - New Plymouth
-tags:
-  - schools/k12/district
+related:
+- New Plymouth
+- Payette
+- Payette County
+authority: LOGAN
 ---
-[[New Plymouth]], [[Payette County]] 
+New Plymouth, Payette County

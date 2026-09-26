@@ -1,8 +1,6 @@
 ---
-tags:
-  - party/republican
-  - people/elected/statewide/secretary
-  - people/candidate/statewide/secretary
-  - people/deceased
+related:
+- Secretary of State
+authority: LOGAN
 ---
-former [[Secretary of State]] 
+former Secretary of State

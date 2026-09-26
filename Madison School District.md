@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Madison
-tags:
-  - schools/k12/district
+related:
+- Madison County
+- Rexburg
+authority: LOGAN
 ---
-[[Rexburg]], [[Madison County]] 
+Rexburg, Madison County

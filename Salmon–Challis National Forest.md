@@ -1,6 +1,6 @@
 ---
-tags:
-  - federal
-  - geography/land/forests
+related:
+- national forests
+authority: LOGAN
 ---
-[[national forests]] 
+national forests

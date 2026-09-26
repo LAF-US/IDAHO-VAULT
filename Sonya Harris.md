@@ -1,8 +1,11 @@
 ---
-tags:
-  - people/candidate/schoolboard
+related:
+- Blackfoot
+- Blackfoot School District
+- school board
+authority: LOGAN
 ---
+Residence: Blackfoot
 
-Residence: [[Blackfoot]]
-- [[Blackfoot School District]] [[school board]] member
-- [[Task Force to Examine Indoctrination in Idaho Education|education indoctrination task force]] member 
+- Blackfoot School District school board member
+- education indoctrination task force member

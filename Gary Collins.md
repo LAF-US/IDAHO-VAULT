@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
-  - people/elected
-  - people
+related:
+- House Revenue and Taxation
+authority: LOGAN
 ---
-- former [[House Revenue and Taxation]] chairman 
+- former House Revenue and Taxation chairman

@@ -1,1 +1,8 @@
-[[magistrate court]] [[Oneida County]] [[courthouses|courthouse]] 
+---
+authority: LOGAN
+related:
+- Oneida County
+- magistrate court
+---
+
+magistrate court Oneida County courthouse

@@ -1,9 +1,6 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/legislative
-  - people/elected/legislative
-  - people
+related:
+- Secretary of State
+authority: LOGAN
 ---
-
-former [[Secretary of State]] and [[Speaker of the House|Speaker]] 
+former Secretary of State and Speaker

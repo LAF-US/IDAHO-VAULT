@@ -1,7 +1,7 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - GMU 8
+related:
+- Latah County
+- Nez Perce County
+authority: LOGAN
 ---
-western [[Latah County]] and northern [[Nez Perce County]] 
+western Latah County and northern Nez Perce County

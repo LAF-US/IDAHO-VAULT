@@ -1,3 +1,12 @@
-[[invertebrates]] [[invasive species]] 
+---
+authority: LOGAN
+related:
+- Snake River
+- invasive species
+- invertebrates
+- species
+---
 
-detected in the [[Snake River]] in 2023
+invertebrates invasive species
+
+detected in the Snake River in 2023

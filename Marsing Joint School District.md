@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Marsing
-tags:
-  - schools/k12/district
+related:
+- Marsing
+- Owyhee
+- Owyhee County
+authority: LOGAN
 ---
-[[Marsing]], [[Owyhee County]] 
+Marsing, Owyhee County

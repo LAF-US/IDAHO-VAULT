@@ -1,10 +1,10 @@
 ---
-tags:
-  - party/democratic
-  - people/elected
-  - people/elected/legislative
-  - people
+related:
+- Boise
+- Legislative District 17
+authority: LOGAN
 ---
-Residence: [[Boise]]
-- [[Legislative District 17]]
-- 
+Residence: Boise
+
+- Legislative District 17
+-

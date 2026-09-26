@@ -1,1 +1,9 @@
-[[magistrate court]] [[Lincoln County]] [[courthouses|courthouse]] 
+---
+authority: LOGAN
+related:
+- Lincoln
+- Lincoln County
+- magistrate court
+---
+
+magistrate court Lincoln County courthouse

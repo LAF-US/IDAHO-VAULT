@@ -1,5 +1,8 @@
 ---
-tags:
-  - people
+related:
+- CEO
+- President
+- Saint Alphonsus Health System
+authority: LOGAN
 ---
-[[Saint Alphonsus Health System]] President and CEO 
+Saint Alphonsus Health System President and CEO

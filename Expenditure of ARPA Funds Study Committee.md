@@ -1,5 +1,8 @@
 ---
-tags:
-  - 2021/session
+related:
+- Idaho
+- Idaho Legislature
+- budgets
+authority: LOGAN
 ---
-[[Idaho Legislature]] committee on [[American Rescue Plan Act|ARPA]] [[budget|budgets]] 
+Idaho Legislature committee on ARPA budgets

@@ -1,7 +1,11 @@
 ---
-tags:
-  - governments/state/executive
-aliases:
-  - Land Board
+related:
+- Attorney General
+- Department of Lands
+- Governor
+- Idaho
+- Secretary of State
+- State of Idaho
+authority: LOGAN
 ---
-[[State of Idaho]] [[Governor]], [[Secretary of State]], [[Attorney General]], [[Superintendent of Public Instruction|Superintendent]], and [[State Controller|Controller]]. Directs the [[Department of Lands]] and oversees state endowment [[public lands]]. 
+State of Idaho Governor, Secretary of State, Attorney General, Superintendent, and Controller. Directs the Department of Lands and oversees state endowment public lands.

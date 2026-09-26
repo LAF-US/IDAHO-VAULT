@@ -1,1 +1,8 @@
-[[County Sheriff]], [[Clearwater County]] [[jails|jail]]
+---
+authority: LOGAN
+related:
+- Clearwater County
+- County Sheriff
+---
+
+County Sheriff, Clearwater County jail

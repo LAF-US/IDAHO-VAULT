@@ -1,1 +1,7 @@
-[[Idaho Commission for Redistricting|Redistricting Commission]] after [[U.S. Census]]
+---
+authority: LOGAN
+related:
+- U.S. Census
+---
+
+Redistricting Commission after U.S. Census

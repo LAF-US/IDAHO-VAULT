@@ -1,5 +1,7 @@
 ---
-tags:
-  - people/appointed/city/administrator
+related:
+- Sandpoint
+- city administrator
+authority: LOGAN
 ---
-[[city administrator]] for [[Sandpoint]] 
+city administrator for Sandpoint

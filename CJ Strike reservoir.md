@@ -1,5 +1,9 @@
 ---
-tags:
-  - geography/water/lake
+related:
+- CJ Strike dam
+- Owyhee
+- Owyhee County
+- Snake River
+authority: LOGAN
 ---
-[[reservoirs|reservoir]] on the [[Snake River]] in [[Elmore County|Elmore]] and [[Owyhee County]] created by [[CJ Strike dam]] 
+reservoir on the Snake River in Elmore and Owyhee County created by CJ Strike dam

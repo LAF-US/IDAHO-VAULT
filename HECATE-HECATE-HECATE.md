@@ -1,1 +1,10 @@
-[[HECATE PROTOCOL]] [[ECHO]] 
+---
+authority: LOGAN
+related:
+- ECHO
+- HECATE
+- HECATE PROTOCOL
+- PROTOCOL
+---
+
+HECATE PROTOCOL ECHO

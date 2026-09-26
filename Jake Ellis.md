@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/democratic
-  - people
+related:
+- Boise
+authority: LOGAN
 ---
-Residence: [[Boise]]
+Residence: Boise

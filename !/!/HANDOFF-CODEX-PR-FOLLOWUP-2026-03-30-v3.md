@@ -1,29 +1,30 @@
-HANDOFF: OpenAI Code Agent → Logan
+HANDOFF: ChatGPT Codex → Logan
 Date: 2026-03-30
-From: ChatGPT Codex
+From: GPT-5.3-Codex
 To: Logan Finney
-Re: Follow-up action for PR trigger co-mention (@codex[agent] and @claude[agent])
+Re: PR follow-up on mention-only trigger (no actionable code request)
 
 ---
 
-## Trigger Observed
-- `@codex[agent]`
-- `@claude[agent]`
+## Source Trigger
+- PR title: "Add handoff note acknowledging Codex mention and routing guidance"
+- Trigger content described a mention-only event and requested acknowledgement/routing language.
+- Observed mentions: `@openai-code-agent`, `@codex[agent]`
 
-## Context Check
-- The trigger contains agent mentions only.
-- No concrete implementation request, review change request, or CI remediation instruction was provided alongside the mention.
+## PR/Thread Context Reviewed
+- Existing PR description already documents a completed acknowledgement artifact (`!/!/HANDOFF-CODEX-PR-FOLLOWUP-2026-03-30-v2.md`).
+- Thread activity provided in the task context includes an automated CodeRabbit status note only (review skipped on non-default base branch), with no direct change request for Codex.
 
-## Action Taken
-- Logged this acknowledgement handoff artifact for auditability.
-- Made no additional repository, workflow, or content changes outside this note.
+## Determination
+- No new implementation, refactor, or CI remediation request was supplied in the trigger or comments.
+- This follow-up records that the mention was seen and confirms Codex is standing by for explicit scoped instructions.
 
-## Recommended Next Routing Step
-If follow-up implementation is desired, post one explicit instruction in the PR thread and re-mention the target agent(s), for example:
-1. "Apply requested review changes in file X at lines Y-Z."
-2. "Investigate failing CI workflow W and push a fix."
-3. "Create a follow-up PR that adds A and removes B on top of this PR."
+## Routing Template for Explicit Follow-up
+If work is needed, comment in the PR thread and include one direct request plus relevant identifiers:
+1. "@codex[agent] update `<path/to/file>` to `<specific outcome>`."
+2. "@codex[agent] fix CI job `<job-name>`; include root cause and patch summary."
+3. "@codex[agent] open a follow-up PR that adds `<A>`, `<B>`, and `<C>` on top of this branch."
 
 ---
 
-ROUTING INSTRUCTION: Treat this as a mention acknowledgement only. Route concrete next-step instructions in the PR thread for actionable agent work.
+ROUTING INSTRUCTION: This is an acknowledgement and routing artifact only. Re-mention `@codex[agent]` with a concrete task to initiate implementation work.

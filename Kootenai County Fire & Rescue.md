@@ -1,5 +1,8 @@
 ---
-tags:
-  - governments/taxingdistrict
+related:
+- Kootenai
+- Kootenai County
+- fire
+authority: LOGAN
 ---
-[[fire protection districts|fire protection district]] in [[Kootenai County]] 
+fire protection district in Kootenai County

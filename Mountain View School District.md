@@ -1,7 +1,10 @@
 ---
-aliases:
-  - Mountain View
-tags:
-  - schools/k12/district
+related:
+- Elk City
+- Grangeville
+- Idaho
+- Idaho County
+- Kooskia
+authority: LOGAN
 ---
-[[Grangeville]]/[[Kooskia]]/[[Elk City]], [[Idaho County]] 
+Grangeville/Kooskia/Elk City, Idaho County

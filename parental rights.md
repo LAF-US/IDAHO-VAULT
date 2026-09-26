@@ -1,1 +1,8 @@
-rights of parents to oversee their [[minors]] 
+---
+authority: LOGAN
+related:
+- minors
+- parents
+---
+
+rights of parents to oversee their minors

@@ -1,5 +1,11 @@
 ---
-tags:
-  - geography/water/lake
+related:
+- Jerome
+- Shoshone
+- Shoshone Falls dam
+- Snake River
+- Twin Falls
+- Twin Falls County
+authority: LOGAN
 ---
-[[reservoirs|reservoir]] on the [[Snake River]] in [[Jerome County|Jerome]] and [[Twin Falls County]] created by [[Shoshone Falls dam]] at [[Twin Falls]] 
+reservoir on the Snake River in Jerome and Twin Falls County created by Shoshone Falls dam at Twin Falls

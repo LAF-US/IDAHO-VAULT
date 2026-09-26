@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Ririe
-tags:
-  - schools/k12/district
+related:
+- Jefferson County
+- Ririe
+authority: LOGAN
 ---
-[[Ririe]], [[Jefferson County]] 
+Ririe, Jefferson County

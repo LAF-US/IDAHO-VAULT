@@ -1,5 +1,7 @@
 ---
-tags:
-  - people
+related:
+- neo-Nazi
+- white supremacist
+authority: LOGAN
 ---
-[[white supremacist]] [[neo-Nazi]] 
+white supremacist neo-Nazi

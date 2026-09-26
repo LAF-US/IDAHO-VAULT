@@ -1,6 +1,7 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- Multnomah County
+- Oregon
+authority: LOGAN
 ---
-[[Multnomah County]], [[Oregon]] 
+Multnomah County, Oregon

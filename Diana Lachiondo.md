@@ -1,7 +1,6 @@
 ---
-tags:
-  - people/candidate/county/commission
-  - people/elected/county/commission
-  - party/democratic
+related:
+- Ada County
+authority: LOGAN
 ---
-former [[Ada County]] [[County Commissioners|Commissioner]] 
+former Ada County Commissioner

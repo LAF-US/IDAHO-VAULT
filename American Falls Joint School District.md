@@ -1,7 +1,7 @@
 ---
-aliases:
-  - American Falls
-tags:
-  - schools/k12/district
+related:
+- American Falls
+- Power County
+authority: LOGAN
 ---
-[[American Falls]], [[Power County]] 
+American Falls, Power County

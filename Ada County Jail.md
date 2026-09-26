@@ -1,5 +1,7 @@
 ---
-tags: []
+related:
+- Ada County
+- County Sheriff
+authority: LOGAN
 ---
-
-[[Ada County]] [[jails|jail]] [[County Sheriff]]
+Ada County jail County Sheriff

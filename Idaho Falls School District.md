@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Idaho Falls
-tags:
-  - schools/k12/district
+related:
+- Bonneville County
+- Idaho
+- Idaho Falls
+authority: LOGAN
 ---
-[[Idaho Falls]], [[Bonneville County]] 
+Idaho Falls, Bonneville County

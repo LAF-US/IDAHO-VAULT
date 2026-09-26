@@ -1,12 +1,20 @@
 ---
 author:
-  - "[[Gretchen Parsons]]"
+- Gretchen Parsons
 outlet:
-  - "[[BoiseDev]]"
+- BoiseDev
 URL: https://boisedev.com/news/2023/11/08/bond-to-expand-ada-county-jail-fails/
-tags:
-  - media/articles
-  - 2023/11/08
+related:
+- '294'
+- Ada County
+- Ada County Jail
+- Boise
+- BoiseDev
+- County Commissioners
+- Drive
+- election
+- property tax
+authority: LOGAN
 ---
 Ada County’s jail won’t be expanding in the near future.
 

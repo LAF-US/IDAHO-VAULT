@@ -1,6 +1,8 @@
 ---
-aliases:
-  - SHAMP
+related:
+- Idaho
+- University of Idaho
+- medical school
+authority: LOGAN
 ---
-
-[[University of Idaho]] [[medical school]] 
+University of Idaho medical school

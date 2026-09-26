@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Fruitland
-tags:
-  - schools/k12/district
+related:
+- Fruitland
+- Payette
+- Payette County
+authority: LOGAN
 ---
-[[Fruitland]], [[Payette County]] 
+Fruitland, Payette County

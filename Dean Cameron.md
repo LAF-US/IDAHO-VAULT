@@ -1,10 +1,11 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/candidate/legislative
-  - people/appointed/statewide/executive/departments
+related:
+- Department of Insurance
+- Meridian
+- Senate member
+authority: LOGAN
 ---
-Residence: [[Meridian]]
-- [[Department of Insurance]] director 
-- former [[Senate member]]
+Residence: Meridian
+
+- Department of Insurance director
+- former Senate member

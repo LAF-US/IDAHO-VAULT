@@ -1,8 +1,6 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/candidate/legislative
-  - people/candidate/statewide/ltgov
+related:
+- White Bird
+authority: LOGAN
 ---
-Residence: [[White Bird]]
+Residence: White Bird

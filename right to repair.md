@@ -1,6 +1,6 @@
 ---
-aliases:
-  - right-to-repair
+related:
+- original equipment manufacturer
+authority: LOGAN
 ---
-
-[[original equipment manufacturer]] 
+original equipment manufacturer

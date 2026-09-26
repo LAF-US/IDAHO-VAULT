@@ -1,10 +1,10 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
-aliases:
-  - Gem
-  - 1G
+related:
+- Emmett
+- Letha
+- Ola
+- Sweet
+authority: LOGAN
 ---
-Seat: [[Emmett]]
-Communities: [[Letha]], [[Ola]], [[Sweet]] 
+Seat: Emmett
+Communities: Letha, Ola, Sweet

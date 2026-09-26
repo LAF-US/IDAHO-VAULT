@@ -1,5 +1,10 @@
 ---
-tags:
-  - geography/water/river/dams
+related:
+- Jackson
+- Jackson Lake
+- Lake
+- Snake River
+- Wyoming
+authority: LOGAN
 ---
-[[dams|dam]] on the [[Snake River]] in [[Wyoming]]; enlarges [[Jackson Lake]] 
+dam on the Snake River in Wyoming; enlarges Jackson Lake

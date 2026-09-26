@@ -1,1 +1,7 @@
-[[cattle]] 
+---
+authority: LOGAN
+related:
+- cattle
+---
+
+cattle

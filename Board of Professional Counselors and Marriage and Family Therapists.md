@@ -1,3 +1,10 @@
-[[counselors]] 
+---
+authority: LOGAN
+related:
+- counselors
+- therapists
+---
 
-[[therapists]] 
+counselors
+
+therapists

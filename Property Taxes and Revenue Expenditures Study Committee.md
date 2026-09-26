@@ -1,6 +1,8 @@
 ---
-tags:
-  - 2020/session
-  - 2021/session
+related:
+- Idaho
+- Idaho Legislature
+- taxes
+authority: LOGAN
 ---
-2020-2021 [[Idaho Legislature]] interim committee on [[property tax|property taxes]] 
+2020-2021 Idaho Legislature interim committee on property taxes

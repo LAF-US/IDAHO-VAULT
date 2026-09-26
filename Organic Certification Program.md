@@ -1,1 +1,7 @@
-[[Department of Agriculture]] 
+---
+authority: LOGAN
+related:
+- Department of Agriculture
+---
+
+Department of Agriculture

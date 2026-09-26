@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Potlatch
-tags:
-  - schools/k12/district
+related:
+- Latah County
+- Potlatch
+authority: LOGAN
 ---
-[[Potlatch]], [[Latah County]] 
+Potlatch, Latah County

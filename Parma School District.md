@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Parma
-tags:
-  - schools/k12/district
+related:
+- Canyon County
+- Parma
+authority: LOGAN
 ---
-[[Parma]], [[Canyon County]] 
+Parma, Canyon County

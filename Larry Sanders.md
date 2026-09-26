@@ -1,8 +1,9 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/city/council
-  - people/elected/city/council
+related:
+- Rathdrum
+- city council
+authority: LOGAN
 ---
-Residence: [[Rathdrum]]
-- candidate for [[Rathdrum]] [[city council]] in 2023, endorsed by [[Kootenai County Republican Central Committee|KCRCC]]  
+Residence: Rathdrum
+
+- candidate for Rathdrum city council in 2023, endorsed by KCRCC  

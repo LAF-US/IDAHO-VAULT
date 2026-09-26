@@ -1,7 +1,9 @@
 ---
-tags:
-  - party/republican
-  - position/elected/precinct
+related:
+- Franklin
+- Franklin County
+- Idaho
+- Idaho Republican Party
+authority: LOGAN
 ---
-
-Local [[Idaho Republican Party]] [[precinct committeemen|precinct committee]] for [[Franklin County]] 
+Local Idaho Republican Party precinct committee for Franklin County

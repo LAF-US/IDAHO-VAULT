@@ -1,5 +1,10 @@
 ---
-tags:
-  - geography/water/lake
+related:
+- Bonneville County
+- Palisades
+- Palisades dam
+- Snake River
+- Wyoming
+authority: LOGAN
 ---
-[[reservoirs|reservoir]] in [[Bonneville County]] on the [[Snake River]] created by [[Palisades dam]] at [[Palisades]] to [[Wyoming]] border 
+reservoir in Bonneville County on the Snake River created by Palisades dam at Palisades to Wyoming border

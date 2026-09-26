@@ -1,8 +1,7 @@
 ---
-tags:
-  - geography/land/state
-  - governments/state
-aliases:
-  - WA
+related:
+- Idaho
+- United States of America
+authority: LOGAN
 ---
-one of the [[United States of America]], borders [[State of Idaho|Idaho]] to the northwest
+one of the United States of America, borders Idaho to the northwest

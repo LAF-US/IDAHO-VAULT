@@ -1,1 +1,8 @@
-[[magistrate court]] [[Butte County]] [[courthouses|courthouse]] 
+---
+authority: LOGAN
+related:
+- Butte County
+- magistrate court
+---
+
+magistrate court Butte County courthouse

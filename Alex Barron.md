@@ -1,8 +1,8 @@
 ---
-tags:
-  - people
-aliases:
-  - Bard of the American Redoubt
-  - Bard of the Redoubt
+related:
+- Kootenai
+- Kootenai County
+- Kootenai County Republican Central Committee
+authority: LOGAN
 ---
-[[Kootenai County Republican Central Committee]] 
+Kootenai County Republican Central Committee

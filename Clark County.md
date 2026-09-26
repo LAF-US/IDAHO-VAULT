@@ -1,11 +1,11 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
-aliases:
-  - Clark
-  - 5C
+related:
+- Dubois
+- Humphrey
+- Kilgore
+- Spencer
+authority: LOGAN
 ---
-Seat: [[Dubois]]
-Municipalities: [[Spencer]]
-Communities: [[Kilgore]], [[Humphrey]] 
+Seat: Dubois
+Municipalities: Spencer
+Communities: Kilgore, Humphrey

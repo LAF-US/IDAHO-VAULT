@@ -1,7 +1,9 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - GMU 6
+related:
+- Benewah
+- Benewah County
+- Shoshone
+- Shoshone County
+authority: LOGAN
 ---
-eastern [[Benewah County]] and southwestern [[Shoshone County]] 
+eastern Benewah County and southwestern Shoshone County

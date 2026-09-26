@@ -1,5 +1,7 @@
 ---
-tags:
-  - 2019/session
+related:
+- Idaho
+- Idaho Legislature
+authority: LOGAN
 ---
-1st [[legislative session|Regular Session]] of the 65th [[Idaho Legislature]] 
+1st Regular Session of the 65th Idaho Legislature

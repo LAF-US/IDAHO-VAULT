@@ -1,9 +1,7 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/elected
-  - people
+related:
+- Lewiston
+authority: LOGAN
 ---
 r
-Residence: [[Lewiston]]
+Residence: Lewiston

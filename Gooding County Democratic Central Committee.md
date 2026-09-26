@@ -1,7 +1,9 @@
 ---
-tags:
-  - party/democratic
-  - position/elected/precinct
+related:
+- Gooding
+- Gooding County
+- Idaho
+- Idaho Democratic Party
+authority: LOGAN
 ---
-
-Local [[Idaho Democratic Party]] [[precinct committeemen|precinct committee]] for [[Gooding County]] 
+Local Idaho Democratic Party precinct committee for Gooding County

@@ -1,14 +1,38 @@
 ---
 date created: Saturday, March 28th 2026, 5:31:30 pm
 date modified: Saturday, March 28th 2026, 5:32:17 pm
-tags:
-  - administration/reference
-  - ai/tools
+related:
+- '2026-03-28'
+- ADD
+- API
+- CLI
+- CrewAI
+- DEVELOPMENT
+- FRAMEWORKS
+- GUI
+- GitHub
+- LLM
+- MCP
+- MVP
+- NOT
+- Notebook LM
+- OCR
+- Obsidian
+- OpenAI
+- OpenAI Swarm
+- PROTOCOL
+- RSS
+- agent
+- coordination
+- node
+- systems
+- web
+authority: LOGAN
+---
+Notebook LM 2026-03-28
+
 ---
 
-[[Notebook LM]] [[2026-03-28]]
-
----
 # AI + AUTOMATION TOOL LANDSCAPE (2024–2026)
 
 ## Practical Tool Shelf — Open, Local-First, Hobbyist → Professional
@@ -20,22 +44,20 @@ tags:
 This document surveys currently available tools for building:
 
 - AI-assisted workflows
-    
+
 - multi-agent systems
-    
+
 - local-first knowledge systems
-    
+
 - journalism/data pipelines
-    
 
 Priority is given to:
 
 - free / open-source tools
-    
+
 - local execution capability
-    
+
 - strong community ecosystems
-    
 
 ---
 
@@ -52,50 +74,44 @@ Run AI models locally without relying on cloud APIs.
 #### Ollama
 
 - Local model runner (Mac/Linux/Windows)
-    
+
 - Simple CLI + API
-    
+
 - Supports Llama, Mistral, Qwen, DeepSeek
-    
 
 Use case:
 
 - local inference
-    
+
 - privacy-preserving workflows
-    
 
 ---
 
 #### LM Studio
 
 - GUI-based local model runner
-    
+
 - Easy model downloads and testing
-    
 
 Use case:
 
 - experimentation
-    
+
 - non-technical workflows
-    
 
 ---
 
 #### llama.cpp ecosystem
 
 - Highly optimized C++ inference
-    
+
 - Runs on low-resource hardware
-    
 
 Use case:
 
 - edge devices
-    
+
 - offline systems
-    
 
 ---
 
@@ -104,18 +120,16 @@ Use case:
 Pros:
 
 - privacy
-    
+
 - no API cost
-    
+
 - offline capability
-    
 
 Cons:
 
 - lower performance vs top cloud models
-    
+
 - hardware constraints
-    
 
 ---
 
@@ -132,64 +146,56 @@ Coordinate multiple agents or tasks.
 #### OpenAI Swarm
 
 - Minimal orchestration framework
-    
+
 - explicit handoffs
-    
+
 - stateless design
-    
 
 Use case:
 
 - controlled workflows
-    
+
 - testable routing logic
-    
 
 ---
 
 #### LangGraph
 
 - graph-based orchestration (LangChain ecosystem)
-    
+
 - persistent state support
-    
 
 Use case:
 
 - complex pipelines
-    
+
 - branching workflows
-    
 
 ---
 
 #### AutoGen
 
 - multi-agent conversations
-    
+
 - more autonomous behavior
-    
 
 Use case:
 
 - experimentation
-    
+
 - research setups
-    
 
 ---
 
 #### CrewAI
 
 - role-based agent teams
-    
+
 - higher-level abstraction
-    
 
 Use case:
 
 - quick prototyping
-    
 
 ---
 
@@ -198,16 +204,14 @@ Use case:
 Low-level (Swarm):
 
 - more control
-    
+
 - more work
-    
 
 High-level (CrewAI, AutoGen):
 
 - faster setup
-    
+
 - less predictability
-    
 
 ---
 
@@ -224,50 +228,44 @@ Persist state outside the model.
 #### Obsidian (Markdown Vault)
 
 - local-first knowledge base
-    
+
 - file-based
-    
+
 - graph visualization
-    
 
 Use case:
 
 - canonical memory layer
-    
 
 ---
 
 #### Git / GitHub
 
 - version control
-    
+
 - audit trail
-    
+
 - automation (Actions)
-    
 
 Use case:
 
 - authoritative state
-    
+
 - history + rollback
-    
 
 ---
 
 #### SQLite / Postgres
 
 - structured storage
-    
 
 Use case:
 
 - metadata
-    
+
 - logs
-    
+
 - structured queries
-    
 
 ---
 
@@ -276,21 +274,18 @@ Use case:
 ##### Chroma
 
 - lightweight
-    
+
 - easy local setup
-    
 
 ##### LanceDB
 
 - optimized for local + columnar storage
-    
 
 Use case:
 
 - semantic search
-    
+
 - embeddings
-    
 
 ---
 
@@ -299,16 +294,14 @@ Use case:
 Files (Obsidian):
 
 - transparent
-    
+
 - human-readable
-    
 
 Databases:
 
 - scalable
-    
+
 - more complex
-    
 
 ---
 
@@ -325,21 +318,18 @@ Standardized interface between agents and tools.
 #### Obsidian MCP Tools plugin
 
 - exposes vault as tool interface
-    
 
 #### Custom MCP servers
 
 - Node.js / Python implementations
-    
 
 ---
 
 ### Role in System
 
 - NOT coordination
-    
+
 - IS controlled access layer
-    
 
 ---
 
@@ -348,16 +338,14 @@ Standardized interface between agents and tools.
 Pros:
 
 - secure tool access
-    
+
 - modular
-    
 
 Cons:
 
 - immature ecosystem
-    
+
 - added complexity
-    
 
 ---
 
@@ -374,37 +362,32 @@ Bring external data into the system.
 #### Python (requests, BeautifulSoup)
 
 - simple web scraping
-    
 
 ---
 
 #### Playwright
 
 - browser automation
-    
+
 - handles dynamic sites
-    
 
 ---
 
 #### Scrapy
 
 - large-scale scraping framework
-    
 
 ---
 
 #### CourtListener API
 
 - legal data access
-    
 
 ---
 
 #### RSS / Public APIs
 
 - structured feeds
-    
 
 ---
 
@@ -413,16 +396,14 @@ Bring external data into the system.
 Simple tools:
 
 - fast to build
-    
+
 - brittle
-    
 
 Advanced tools:
 
 - more reliable
-    
+
 - more setup
-    
 
 ---
 
@@ -439,39 +420,34 @@ Extract structured data from PDFs, images, documents.
 #### Docling
 
 - document parsing
-    
+
 - structured output
-    
 
 ---
 
 #### Unstructured.io
 
 - converts documents to structured formats
-    
 
 ---
 
 #### Tesseract OCR
 
 - open-source OCR
-    
 
 ---
 
 #### Vision-capable models (local or API)
 
 - extract from complex layouts
-    
 
 ---
 
 ### Tradeoffs
 
 - OCR accuracy varies
-    
+
 - complex documents require multiple passes
-    
 
 ---
 
@@ -488,33 +464,28 @@ Trigger workflows and manage execution.
 #### GitHub Actions
 
 - CI/CD workflows
-    
+
 - event-based triggers
-    
 
 Use case:
 
 - automation tied to repo
-    
 
 ---
 
 #### Cron jobs
 
 - scheduled execution
-    
 
 ---
 
 #### Airflow / Prefect
 
 - workflow orchestration
-    
 
 Use case:
 
 - complex pipelines
-    
 
 ---
 
@@ -523,16 +494,14 @@ Use case:
 Simple (cron, Actions):
 
 - easy
-    
+
 - limited
-    
 
 Advanced (Airflow):
 
 - powerful
-    
+
 - heavy
-    
 
 ---
 
@@ -549,32 +518,28 @@ Enable multi-device or offline coordination.
 #### Tailscale / WireGuard
 
 - secure mesh networking
-    
 
 ---
 
 #### Syncthing
 
 - file synchronization
-    
 
 ---
 
 ### Use Case
 
 - local-first replication
-    
+
 - offline workflows
-    
 
 ---
 
 ### Tradeoffs
 
 - adds operational complexity
-    
+
 - not needed for MVP
-    
 
 ---
 
@@ -585,23 +550,20 @@ Enable multi-device or offline coordination.
 #### VS Code / Cursor
 
 - code editor with AI support
-    
 
 ---
 
 #### Jupyter Notebooks
 
 - experimentation
-    
+
 - data workflows
-    
 
 ---
 
 #### Docker
 
 - environment isolation
-    
 
 ---
 
@@ -620,21 +582,18 @@ Track system behavior.
 #### Plain logs (files)
 
 - simplest approach
-    
 
 ---
 
 #### Structured logs (JSON)
 
 - machine-readable
-    
 
 ---
 
 #### Monitoring tools (optional)
 
 - Prometheus / Grafana
-    
 
 ---
 
@@ -675,15 +634,14 @@ Basic file writes
 Avoid:
 
 - full vector database
-    
+
 - complex orchestration frameworks
-    
+
 - distributed systems
-    
+
 - multi-node sync
-    
+
 - custom MCP servers
-    
 
 ---
 
@@ -692,15 +650,14 @@ Avoid:
 Choose tools based on:
 
 1. Does it reduce complexity?
-    
+
 2. Can it run locally?
-    
+
 3. Is it inspectable/auditable?
-    
+
 4. Does it integrate with existing system?
-    
+
 5. Can it be removed later?
-    
 
 ---
 
@@ -713,11 +670,10 @@ There are already more tools than needed.
 The limiting factor is:
 
 - disciplined system design
-    
+
 - clear workflows
-    
+
 - controlled state management
-    
 
 ---
 
@@ -726,21 +682,19 @@ The limiting factor is:
 The current ecosystem provides everything needed to build:
 
 - local-first AI systems
-    
+
 - agent-based workflows
-    
+
 - data ingestion pipelines
-    
 
 No single tool solves the system.
 
 Success comes from:
 
 - combining simple tools correctly
-    
+
 - validating small workflows
-    
+
 - avoiding unnecessary complexity
-    
 
 ---

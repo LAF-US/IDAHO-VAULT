@@ -1,9 +1,7 @@
 ---
-aliases:
-  - judge
-  - judicial
-tags:
-  - position/elected/judicial
-  - position/appointed/judicial
+related:
+- district judges
+- magistrate judges
+authority: LOGAN
 ---
-[[district judges]] & [[magistrate judges]] 
+district judges & magistrate judges

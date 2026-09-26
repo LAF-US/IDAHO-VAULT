@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Emmett
-tags:
-  - schools/k12/district
+related:
+- Emmett
+- Gem County
+authority: LOGAN
 ---
-[[Emmett]], [[Gem County]] 
+Emmett, Gem County

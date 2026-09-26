@@ -1,5 +1,6 @@
 ---
-tags:
-  - geography/land/places/communities
+related:
+- Jefferson County
+authority: LOGAN
 ---
-[[Jefferson County]], intersection of [[Interstate 15|I-15]] and [[Highway 33]] 
+Jefferson County, intersection of I-15 and Highway 33

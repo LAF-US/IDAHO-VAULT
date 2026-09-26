@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- Washington
+authority: LOGAN
 ---
-[[Washington]]
+Washington

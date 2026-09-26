@@ -1,9 +1,9 @@
 ---
-aliases:
-  - drag queen story time
-  - drag queen story hour
-  - drag story hour
-  - drag story time
+related:
+- books
+- children
+- drag
+- libraries
+authority: LOGAN
 ---
-
-[[drag|drag performers]] reading [[books]] to [[children]], usually at [[libraries]] 
+drag performers reading books to children, usually at libraries

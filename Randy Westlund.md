@@ -1,8 +1,9 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/city/council
-  - people/elected/city/council
+related:
+- Post Falls
+- city council
+authority: LOGAN
 ---
-Residence: [[Post Falls]]
-- candidate for [[Post Falls]] [[city council]] in 2023, endorsed by [[Kootenai County Republican Central Committee|KCRCC]]  
+Residence: Post Falls
+
+- candidate for Post Falls city council in 2023, endorsed by KCRCC  

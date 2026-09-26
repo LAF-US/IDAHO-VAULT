@@ -1,3 +1,10 @@
-[[Office of Broadband]] 
+---
+authority: LOGAN
+related:
+- Broadband Advisory Board
+- Office of Broadband
+---
 
-[[Broadband Advisory Board]] 
+Office of Broadband
+
+Broadband Advisory Board

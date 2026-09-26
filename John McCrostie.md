@@ -1,10 +1,10 @@
 ---
-tags:
-  - party/democratic
-  - people/elected
-  - people/elected/legislative
-  - people
+related:
+- Boise
+- House member
+authority: LOGAN
 ---
-Residence: [[Boise]]
-- former [[House member]]
-- music [[teachers|teacher]] 
+Residence: Boise
+
+- former House member
+- music teacher

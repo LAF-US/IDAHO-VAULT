@@ -1,7 +1,7 @@
 ---
-aliases:
-  - IACI
-  - Association of Commerce and Industry
-  - Association for Commerce and Industry
+related:
+- Idaho
+- Idaho Prosperity Fund
+authority: LOGAN
 ---
-[[Idaho Prosperity Fund]]
+Idaho Prosperity Fund

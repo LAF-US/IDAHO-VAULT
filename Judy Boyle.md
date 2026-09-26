@@ -1,9 +1,10 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
+related:
+- House member
+- Legislative District 9
+- Midvale
+authority: LOGAN
 ---
-Residence: [[Midvale]]
-- [[House member]] for [[Legislative District 9]] 
+Residence: Midvale
+
+- House member for Legislative District 9

@@ -1,8 +1,14 @@
 ---
-tags:
-  - federal
-  - geography/land/reservations
+related:
+- Arbon
+- Arbon Valley
+- Fort Hall
+- Gibson
+- Shoshone
+- Shoshone-Bannock Tribes
+- counties
+authority: LOGAN
 ---
-[[Shoshone-Bannock Tribes]] lands in [[Bannock County|Bannock]], [[Bingham County|Bingham]], [[Power County|Power]] & [[Caribou County|Caribou]] counties 
+Shoshone-Bannock Tribes lands in Bannock, Bingham, Power & Caribou counties
 
-[[Fort Hall]], [[Arbon Valley]], [[Gibson]] 
+Fort Hall, Arbon Valley, Gibson

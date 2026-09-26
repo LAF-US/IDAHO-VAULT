@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Weiser
-tags:
-  - schools/k12/district
+related:
+- Washington
+- Washington County
+- Weiser
+authority: LOGAN
 ---
-[[Weiser]], [[Washington County]] 
+Weiser, Washington County

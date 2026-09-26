@@ -1,5 +1,11 @@
-[[MAN]]
+---
+authority: LOGAN
+related:
+- MAN
+---
 
-[[MALE]]
+MAN
 
-[[MASCULINE]]
+MALE
+
+MASCULINE

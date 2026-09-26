@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Soda Springs
-tags:
-  - schools/k12/district
+related:
+- Caribou County
+- Soda Springs
+authority: LOGAN
 ---
-[[Soda Springs]], [[Caribou County]] 
+Soda Springs, Caribou County

@@ -1,1 +1,7 @@
-[[HOV lanes]], [[driving]] [[cars]] 
+---
+authority: LOGAN
+related:
+- HOV
+---
+
+HOV lanes, driving cars

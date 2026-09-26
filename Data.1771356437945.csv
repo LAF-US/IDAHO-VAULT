@@ -1,0 +1,11 @@
+﻿Budget,Program,Bill,Status,Description
+<b><i>FY26 Reduction</i></b>,<i>Example Budget</i><br><b>Dept. of Economy</b>,Reduction Bill,☑,<b>M/D: FY26 holdback<br><i>FY26 Additional 1% plan:<i/></b><br>This is a description from the agency.
+<b><i>FY26 Reduction</i></b>,<i>Example Budget</i><br><b>Dept. of Freedom</b>,Reduction Bill,☑,<b>M/D: FY26 holdback<br><i>FY26 Additional 1% plan:<i/></b><br>This is a description from the agency.
+<b><i>FY26 Reduction</i></b>,<i>Example Budget</i><br><b>Dept. of Government</b>,Reduction Bill,☑,<b>M/D: FY26 holdback<br><i>FY26 Additional 1% plan:<i/></b><br>This is a description from the agency.
+<b>FY27 Maintenance</b>,<b><i>Example Budget</i></b>,Maintenance Bill,✓,<b>M/D: FY27 base reduction<br>MAINTENANCE BUDGET BILL</b>
+<i>FY27 Maintenance</i>,<i>Example Budget</i><br><b>Dept. of Economy</b>,<i>Maintenance Bill</i>,✓,<b>M/D: FY27 reduction<br><i>FY26 Additional 2% plan:</i></b><br>This is a description from the agency.
+<i>FY27 Maintenance</i>,<i>Example Budget</i><br><b>Dept. of Freedom</b>,<i>Maintenance Bill</i>,✓,<b>M/D: FY27 reduction<br><i>FY26 Additional 2% plan:</i></b><br>This is a description from the agency.
+<i>FY27 Maintenance</i>,<i>Example Budget</i><br><b>Dept. of Government</b>,<i>Maintenance Bill</i>,✓,<b>M/D: FY27 reduction<br><i>FY26 Additional 2% plan:</i></b><br>This is a description from the agency.
+FY27 Enhancement,<i>Example Budget</i><br><b>Dept. of Economy</b>,Enhancement Bills,✗,<b>M/D: FY27 enhancement</b><br>Additional changes from maintenance.
+FY27 Enhancement,<i>Example Budget</i><br><b>Dept. of Freedom</b>,Enhancement Bills,—,<b>M/D: FY27 enhancement</b><br>Additional changes from maintenance.
+FY27 Enhancement,<i>Example Budget</i><br><b>Dept. of Government</b>,☐,☐,☐

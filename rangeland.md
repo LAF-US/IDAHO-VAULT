@@ -1,1 +1,7 @@
-[[livestock]]
+---
+authority: LOGAN
+related:
+- livestock
+---
+
+livestock

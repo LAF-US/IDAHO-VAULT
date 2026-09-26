@@ -1,6 +1,8 @@
 ---
-tags:
-  - people/journalists
-residence: "[[Sandpoint]]"
+residence: Sandpoint
+related:
+- Sandpoint
+- Sandpoint Reader
+authority: LOGAN
 ---
-former [[Sandpoint Reader]] staff 
+former Sandpoint Reader staff

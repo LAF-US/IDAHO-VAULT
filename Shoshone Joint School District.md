@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Shoshone
-tags:
-  - schools/k12/district
+related:
+- Lincoln
+- Lincoln County
+- Shoshone
+authority: LOGAN
 ---
-[[Shoshone]], [[Lincoln County]] 
+Shoshone, Lincoln County

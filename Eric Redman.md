@@ -1,12 +1,14 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
+related:
+- Coeur d'Alene
+- Convention of States
+- House member
+- Jordan Redman
+authority: LOGAN
 ---
-Residence: [[Coeur d'Alene]]
-- active with [[Convention of States]] movement
-- 2021 [[Idaho Commission for Redistricting|Redistricting Commission]] member
-- former [[House member]]
-- father of [[Jordan Redman]]
+Residence: Coeur d'Alene
+
+- active with Convention of States movement
+- 2021 Redistricting Commission member
+- former House member
+- father of Jordan Redman

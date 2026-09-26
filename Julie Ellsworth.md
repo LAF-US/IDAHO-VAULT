@@ -1,10 +1,9 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/legislative
-  - people/elected/legislative
-  - people/elected/statewide/governor
-  - people/candidate/statewide/treasurer
+related:
+- House member
+- State Treasurer
+authority: LOGAN
 ---
-[[State Treasurer]]
-- former [[House member]] 
+State Treasurer
+
+- former House member

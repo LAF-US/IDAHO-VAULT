@@ -1,12 +1,14 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/appointed/boards
-  - people/candidate/legislative
-  - people
-residence: "[[Idaho Falls]]"
+residence: Idaho Falls
+related:
+- Garden City
+- Idaho
+- Idaho Commission for Redistricting
+- Idaho Falls
+- Senate Majority Leader
+- Senate member
+authority: LOGAN
 ---
-- Former [[Senate member]] and [[Senate Majority Leader]]
-- [[Idaho Commission for Redistricting]] member 2021 
-- townhouse in [[Garden City]] 
+- Former Senate member and Senate Majority Leader
+- Idaho Commission for Redistricting member 2021
+- townhouse in Garden City

@@ -1,11 +1,16 @@
 ---
-tags: [category/frieze]
-aliases: [Idaho, The Gem State, State of Idaho]
 title: Idaho
 linter-yaml-title-alias: Idaho
+related:
+- '2026-04-04'
+- CrewAI
+- Idaho Constitution
+- Oregon
+- POC
+- Washington
+authority: LOGAN
 ---
-
-![[Idaho.png]]
+!Idaho.png
 
 ## The Gem State
 
@@ -26,3 +31,9 @@ linter-yaml-title-alias: Idaho
 > "**NAME AND BOUNDARIES OF STATE**." Idaho Constitution. *Art. XVII, Sec. 1.*
 
 ---
+
+## CrewAI Entity Reference
+
+The state. All appropriations flow through the Idaho state government.
+
+*Registered by address_poc.py — run POC-20260404-214321, 2026-04-04*

@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/country/executive/departments/bureaus
-  - federal
+related:
+- U.S. Census
+authority: LOGAN
 ---
-[[United States of America|United States]] agency that carries out the [[U.S. Census]] 
+United States agency that carries out the U.S. Census

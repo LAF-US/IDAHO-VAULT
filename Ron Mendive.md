@@ -1,9 +1,9 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
+related:
+- House member
+- Post Falls
+authority: LOGAN
 ---
-Residence: [[Post Falls]]
-- [[House member]] 
+Residence: Post Falls
+
+- House member

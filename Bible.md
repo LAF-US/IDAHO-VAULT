@@ -1,1 +1,7 @@
-[[Christianity|Christian]] [[holy book]] 
+---
+authority: LOGAN
+related:
+- holy book
+---
+
+Christian holy book

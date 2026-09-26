@@ -1,7 +1,7 @@
 ---
-tags:
-  - party/democratic
-  - people/candidate/city/mayor
-  - people/elected/city/mayor
+related:
+- Boise
+- mayor
+authority: LOGAN
 ---
-[[mayor]] of [[Boise]] 
+mayor of Boise

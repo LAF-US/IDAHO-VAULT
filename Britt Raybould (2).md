@@ -1,10 +1,27 @@
 ---
-tags:
-  - people/idaho/legislature/house
-  - 2026/03/12
 source: commit
+related:
+- Boise
+- Britt Raybould
+- CFO
+- GOP
+- House Appropriations
+- House member
+- IFF
+- Idaho
+- JFAC Working Groups
+- Joint Finance-Appropriations Committee
+- Logan Finney
+- MPC
+- Madison County
+- Mike Moyle
+- Rexburg
+- Ron Nate
+- budget
+- election
+authority: LOGAN
 ---
-[[Britt Raybould]] is a Republican [[Idaho House of Representatives|Idaho House]] member from District 34B (Rexburg) who served on [[Joint Finance-Appropriations Committee|JFAC]] through 2024 and was removed from the committee and all appropriations work by [[Mike Moyle]] at the December 2024 organizational session.
+Britt Raybould is a Republican Idaho House member from District 34B (Rexburg) who served on JFAC through 2024 and was removed from the committee and all appropriations work by Mike Moyle at the December 2024 organizational session.
 
 ## Basic Info
 
@@ -17,9 +34,9 @@ source: commit
 ## Legislative History
 
 - First term 2018–2020 (lost seat)
-- Won back District 34B in 2022 by defeating IFF-aligned [[Ron Nate]] in primary by 36 votes
+- Won back District 34B in 2022 by defeating IFF-aligned Ron Nate in primary by 36 votes
 - On JFAC through 2024 session
-- **Removed from JFAC and House Appropriations entirely at December 2024 organizational session by [[Mike Moyle]]** ✅ confirmed
+- **Removed from JFAC and House Appropriations entirely at December 2024 organizational session by Mike Moyle** ✅ confirmed
 - Current 2026 committees: Environment, Energy & Technology; Resources & Conservation; Revenue & Taxation
 
 ## On Working Groups (on record)
@@ -32,7 +49,7 @@ Tight-lipped with press (Logan Finney's direct experience). Has institutional lo
 
 ## Related Notes
 
-- [[Joint Finance-Appropriations Committee]]
-- [[JFAC Working Groups]]
-- [[Mike Moyle]]
-- [[Ron Nate]]
+- Joint Finance-Appropriations Committee
+- JFAC Working Groups
+- Mike Moyle
+- Ron Nate

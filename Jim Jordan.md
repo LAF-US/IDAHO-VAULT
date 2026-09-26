@@ -1,7 +1,8 @@
 ---
-tags:
-  - party/republican
-  - people/elected/country/congress
+related:
+- House member
+- Ohio
+- U.S. House
+authority: LOGAN
 ---
-
-[[U.S. House]] member from [[Ohio]] 
+U.S. House member from Ohio

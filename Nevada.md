@@ -1,8 +1,7 @@
 ---
-tags:
-  - governments/state
-  - geography/land/state
-aliases:
-  - NV
+related:
+- Idaho
+- United States of America
+authority: LOGAN
 ---
-one of the [[United States of America]], borders [[State of Idaho|Idaho]] to the southwest
+one of the United States of America, borders Idaho to the southwest

@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Mullan
-tags:
-  - schools/k12/district
+related:
+- Mullan
+- Shoshone
+- Shoshone County
+authority: LOGAN
 ---
-[[Mullan]], [[Shoshone County]] 
+Mullan, Shoshone County

@@ -1,9 +1,6 @@
 ---
-aliases:
-  - Attorney General's Office
-  - attorney general's office
-tags:
-  - governments/state/executive
+related:
+- Attorney General
+authority: LOGAN
 ---
-
-[[Attorney General]] 
+Attorney General

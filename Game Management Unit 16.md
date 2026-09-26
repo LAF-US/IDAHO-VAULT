@@ -1,7 +1,7 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - GMU 16
+related:
+- Idaho
+- Idaho County
+authority: LOGAN
 ---
-northern [[Idaho County]] 
+northern Idaho County

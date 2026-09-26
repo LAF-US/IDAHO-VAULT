@@ -1,1 +1,7 @@
-[[County Sheriff]], [[Cassia  County]] [[jails|jail]]
+---
+authority: LOGAN
+related:
+- County Sheriff
+---
+
+County Sheriff, Cassia  County jail

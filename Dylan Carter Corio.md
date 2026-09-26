@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Dylan Corio
-tags:
-  - people
+related:
+- Patriot Front
+- Wyoming
+authority: LOGAN
 ---
-[[Patriot Front]] member, [[Wyoming]] resident 
+Patriot Front member, Wyoming resident

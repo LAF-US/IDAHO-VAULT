@@ -1,21 +1,22 @@
 ---
-aliases:
-  - the panhandle
-  - Panhandle
-  - northern Idaho
-  - N. Idaho
-  - Idaho Panhandle
-tags:
-  - geography/land/state/region
+related:
+- 1st Congressional District
+- 1st Judicial District
+- Benewah
+- Kootenai
+- Panhandle Health District
+- Shoshone
+authority: LOGAN
 ---
 The "Five Northern Counties"
-- [[Boundary County|Boundary]]
-- [[Bonner County|Bonner]]
-- [[Kootenai County|Kootenai]]
-- [[Benewah County|Benewah]]
-- [[Shoshone County|Shoshone]]
 
-[[Pacific Time Zone]]
-[[1st Congressional District]]
-[[1st Judicial District]]
-[[Panhandle Health District]]
+- Boundary
+- Bonner
+- Kootenai
+- Benewah
+- Shoshone
+
+Pacific Time Zone
+1st Congressional District
+1st Judicial District
+Panhandle Health District

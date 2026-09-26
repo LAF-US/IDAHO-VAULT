@@ -1,4 +1,2 @@
 ---
-tags:
-  - party/democratic
 ---

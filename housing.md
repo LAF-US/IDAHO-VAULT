@@ -1,16 +1,28 @@
+---
+authority: LOGAN
+related:
+- affordable housing
+- apartments
+- homelessness
+- homeowners
+- homes
+- property tax
+---
 
-[[homes]]
-[[apartments]]
 
-[[homeowners]]
-[[homebuyer]]
+homes
+apartments
 
-[[property tax]]
-[[homeowners' exemption]] 
+homeowners
+homebuyer
 
-[[homelessness]] 
+property tax
+homeowners' exemption
 
-[[affordable housing]] 
-- [[workforce housing]] 
-- [[low-income housing]] 
-[[luxury housing]] 
+homelessness
+
+affordable housing
+
+- workforce housing
+- low-income housing
+luxury housing

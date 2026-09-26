@@ -1,19 +1,39 @@
 ---
-source: "https://favs.news/idaho-bill-penalties-disrupting-church-services/"
+source: https://favs.news/idaho-bill-penalties-disrupting-church-services/
 author:
-  - "[[Logan Finney]]"
+- Logan Finney
 published: 2026-03-11
 created: 2026-03-27
 title: 2026-03-11 - FāVS News - Idaho Bill Targets Disruptions at Church Services
-aliases:
-  - 2026-03-11 - FāVS News - Idaho Bill Targets Disruptions at Church Services
-linter-yaml-title-alias: 2026-03-11 - FāVS News - Idaho Bill Targets Disruptions at Church Services
+linter-yaml-title-alias: 2026-03-11 - FāVS News - Idaho Bill Targets Disruptions at
+  Church Services
 date created: Friday, March 27th 2026, 10:36:11 am
 date modified: Friday, March 27th 2026, 6:05:45 pm
-tags:
-  - 2026/03/11
+related:
+- '200'
+- '2026-03-27'
+- '501'
+- Boise
+- CNN
+- Chad Christensen
+- Christian nationalism
+- Cornel Rasor
+- FāVS
+- House Judiciary, Rules and Administration
+- Idaho
+- Idaho Falls
+- Logan Finney
+- Moscow
+- Sandpoint
+- USA
+- University of Idaho
+- Washington
+- arrests
+- journalists
+- law enforcement
+- religion
+authority: LOGAN
 ---
-
 ## Church trespass bill moves to Idaho House for consideration
 
 Date:
@@ -46,7 +66,7 @@ Cathedral of St. John the Evangelist in Boise (Logan Finney).
 
 **By Logan Finney | **FāVS News Reporter****
 
-![](https://www.youtube.com/watch?v=gt4HSgcFKFw)
+![alt text needed](https://www.youtube.com/watch?v=gt4HSgcFKFw)
 
 Idaho lawmakers advanced a bill on Monday that would establish specific criminal penalties for people who trespass to disrupt church services or religious worship.
 

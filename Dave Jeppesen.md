@@ -1,5 +1,7 @@
 ---
-tags:
-  - people/appointed/statewide/executive/departments
+related:
+- Brad Little
+- Department of Health and Welfare
+authority: LOGAN
 ---
-[[Department of Health and Welfare]] director under [[Brad Little]] 
+Department of Health and Welfare director under Brad Little

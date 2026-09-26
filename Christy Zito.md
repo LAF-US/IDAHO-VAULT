@@ -1,11 +1,15 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
-residence: "[[Hammett]]"
+residence: Hammett
+related:
+- Geoff Schroeder
+- Hammett
+- House member
+- Idaho
+- Idaho Second Amendment Alliance
+- Second Amendment
+- Senate member
+authority: LOGAN
 ---
-- 2024 [[primary election|primary]] challenger to [[Geoff Schroeder]] for [[Legislative District 8|LD8]] [[Idaho Senate|Senate]] 
-- Former [[House member|House member]] and [[Senate member|Senate member]] for [[Legislative District 23|LD23]] 
-- [[Idaho Second Amendment Alliance]] 
+- 2024 primary challenger to Geoff Schroeder for LD8 Senate
+- Former House member and Senate member for LD23
+- Idaho Second Amendment Alliance

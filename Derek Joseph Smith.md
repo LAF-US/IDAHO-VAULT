@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Derek Smith
-tags:
-  - people
+related:
+- Patriot Front
+- South Dakota
+authority: LOGAN
 ---
-[[Patriot Front]] member, [[South Dakota]] resident 
+Patriot Front member, South Dakota resident

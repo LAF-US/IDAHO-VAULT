@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Meadows Valley
-tags:
-  - schools/k12/district
+related:
+- Adams County
+- Meadows
+- New Meadows
+authority: LOGAN
 ---
-[[New Meadows]]/[[Meadows]], [[Adams County]] 
+New Meadows/Meadows, Adams County

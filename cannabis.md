@@ -1,1 +1,8 @@
-[[plant]] that is harvested for [[hemp]] and [[marijuana]] 
+---
+authority: LOGAN
+related:
+- hemp
+- marijuana
+---
+
+plant that is harvested for hemp and marijuana

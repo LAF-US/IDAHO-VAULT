@@ -1,11 +1,12 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
-aliases:
-  - Lincoln
-  - 4L
+related:
+- Dietrich
+- Hidden Valley
+- Kimama
+- Richfield
+- Shoshone
+authority: LOGAN
 ---
-Seat: [[Shoshone]]
-Municipalities: [[Dietrich]], [[Richfield]] 
-Communities: [[Hidden Valley]], [[Kimama]] 
+Seat: Shoshone
+Municipalities: Dietrich, Richfield
+Communities: Hidden Valley, Kimama

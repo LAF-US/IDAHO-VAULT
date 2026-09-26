@@ -1,1 +1,7 @@
-[[high schools|high school]] athletics [[LGBTQ+ issues]] 
+---
+authority: LOGAN
+related:
+- LGBTQ+ issues
+---
+
+high school athletics LGBTQ+ issues

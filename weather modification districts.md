@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/taxingdistrict
+related:
+- taxing districts
+authority: LOGAN
 ---
-
-[[taxing districts]] for [[weather modification]] and [[cloud seeding]] 
+taxing districts for weather modification and cloud seeding

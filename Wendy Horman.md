@@ -1,11 +1,14 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
-  - people/candidate/legislative
+related:
+- Idaho
+- Idaho Falls
+- Joint Finance-Appropriations Committee
+- Scott Bedke
+authority: LOGAN
 ---
-Residence: [[Idaho Falls]]
+Residence: Idaho Falls
 
-[[Joint Finance-Appropriations Committee]] co-chair 2023-
-- unsuccessfully challenged [[Scott Bedke]] for [[Speaker of the House|Speaker]] in 2022 
-- [[House Appropriations|JFAC]] vice chair -2021 
+Joint Finance-Appropriations Committee co-chair 2023-
+
+- unsuccessfully challenged Scott Bedke for Speaker in 2022
+- JFAC vice chair -2021

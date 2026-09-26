@@ -1,1 +1,8 @@
-state of [[State of Idaho|Idaho]]'s [[health insurance]] marketplace
+---
+authority: LOGAN
+related:
+- Idaho
+- health insurance
+---
+
+state of Idaho's health insurance marketplace

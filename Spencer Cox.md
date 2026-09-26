@@ -1,6 +1,7 @@
 ---
-tags:
-  - party/republican
-  - people/elected/statewide/governor
+related:
+- Governor
+- Utah
+authority: LOGAN
 ---
-[[Governor]] of [[Utah]] 
+Governor of Utah

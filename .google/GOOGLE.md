@@ -1,3 +1,6 @@
+---
+title: GOOGLE
+---
 # GOOGLE.md — IDAHO-VAULT
 
 **Load mechanism:** This file is NOT auto-loaded by any Google product. It must be manually provided by Logan — pasted into a chat session. It is the designated governance shim for Google ecosystem tools working on IDAHO-VAULT tasks.
@@ -12,7 +15,7 @@
 
 ## Governance
 
-This file is a context shim for Google ecosystem tools. Vault governance authority lives in `!/CONSTITUTION.md`. When this file and `!/CONSTITUTION.md` conflict, `!/CONSTITUTION.md` governs. Capability tier: **Advisory** per `!/AGENTS.md`.
+This file is a context shim for Google ecosystem tools. Vault governance authority lives in `CONSTITUTION.md`. When this file and `CONSTITUTION.md` conflict, `CONSTITUTION.md` governs. Capability tier: **Advisory** per `!/AGENTS.md`.
 
 ---
 
@@ -42,7 +45,7 @@ This shim covers the full Google ecosystem surface:
 
 ## Conventions & Standards
 
-See `!/VAULT-CONVENTIONS.md` for vault structure and naming conventions.
+See `VAULT-CONVENTIONS.md` for vault structure and naming conventions.
 
 If Logan has not described the relevant vault context, ask before making assumptions.
 
@@ -50,8 +53,8 @@ If Logan has not described the relevant vault context, ask before making assumpt
 
 ## See Also
 
-- `!/CONSTITUTION.md` — Canonical vault governance authority
-- `!/VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
+- `CONSTITUTION.md` — Canonical vault governance authority
+- `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 - `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules
 - `.gemini/GEMINI.md` — Gemini CLI coding agent (separate shim, auto-loaded)
 - `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` — Paste-to-agent LEVELSET prompt

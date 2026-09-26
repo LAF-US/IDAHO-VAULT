@@ -1,5 +1,8 @@
 ---
-tags:
-  - geography/water/creek
+related:
+- Idaho
+- Idaho County
+- Slate Creek
+authority: LOGAN
 ---
-[[Idaho County]] watershed south of [[Slate Creek]] 
+Idaho County watershed south of Slate Creek

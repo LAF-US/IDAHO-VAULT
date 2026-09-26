@@ -1,5 +1,7 @@
 ---
-tags:
-  - geography/land/places/communities
+related:
+- Payette
+- Payette River
+authority: LOGAN
 ---
-[[Payette River]] 
+Payette River

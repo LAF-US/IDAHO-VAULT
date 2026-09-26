@@ -1,9 +1,11 @@
 ---
-aliases:
-  - LHTAC
-tags:
-  - geography/land/roads
+related:
+- ITD
+- Pacific NorthWest Economic Region
+- roads
+- transportation
+authority: LOGAN
 ---
-within [[Department of Transportation|ITD]] for [[roads]] 
+within ITD for roads
 
-state [[transportation]] partner for [[Pacific NorthWest Economic Region]] 
+state transportation partner for Pacific NorthWest Economic Region

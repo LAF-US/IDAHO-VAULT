@@ -1,7 +1,11 @@
 ---
-aliases:
-  - First Judicial District
+related:
+- Benewah
+- Judicial Districts
+- Kootenai
+- Shoshone
+authority: LOGAN
 ---
-[[Boundary County|Boundary]], [[Bonner County|Bonner]], [[Benewah County|Benewah]], [[Shoshone County|Shoshone]], [[Kootenai County|Kootenai]],
+Boundary, Bonner, Benewah, Shoshone, Kootenai,
 
-One of the seven [[Judicial Districts]].
+One of the seven Judicial Districts.

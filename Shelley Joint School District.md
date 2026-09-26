@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Shelley
-tags:
-  - schools/k12/district
+related:
+- Bingham County
+- Bonneville County
+- Shelley
+authority: LOGAN
 ---
-[[Shelley]], [[Bingham County]]/[[Bonneville County]] 
+Shelley, Bingham County/Bonneville County

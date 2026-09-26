@@ -1,10 +1,12 @@
 ---
-tags:
-  - people
-  - people/journalists
+related:
+- Brad Little
+- CDA
+- Jim Risch
+authority: LOGAN
 ---
-press secretary for [[U.S. Senate|Sen.]] [[Jim Risch]]
+press secretary for Sen. Jim Risch
 
-former press secretary for [[Governor|Gov.]] [[Brad Little]] 
+former press secretary for Gov. Brad Little
 
-former [[Coeur d'Alene Press|CDA Press]] reporter 
+former CDA Press reporter

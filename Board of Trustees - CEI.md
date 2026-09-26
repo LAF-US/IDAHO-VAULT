@@ -1,11 +1,9 @@
 ---
-tags:
-  - position/elected/zones/collegeboards
-  - schools
-aliases:
-  - CEI Trustees
-  - CEI Trustee
-  - College of Eastern Idaho Trustee
-  - College of Eastern Idaho Trustees
+related:
+- Bonneville County
+- College of Eastern Idaho
+- Eastern Idaho
+- Idaho
+authority: LOGAN
 ---
-Governing board for [[College of Eastern Idaho]], elected in [[Bonneville County]] 
+Governing board for College of Eastern Idaho, elected in Bonneville County

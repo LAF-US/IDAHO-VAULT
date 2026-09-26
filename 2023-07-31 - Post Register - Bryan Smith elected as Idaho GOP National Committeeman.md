@@ -1,12 +1,31 @@
 ---
 author:
-  - "[[David Pace]]"
+- David Pace
 outlet:
-  - "[[Post Register]]"
+- Post Register
 URL: https://www.postregister.com/news/local/bryan-smith-elected-as-idaho-gop-national-committeeman/article_de0cfcc8-2fee-11ee-92eb-b7cc4baad37d.html
-tags:
-  - media/articles
-  - 2023/07/31
+related:
+- Boise
+- Bonneville County
+- Bryan Smith
+- Challis
+- Damond Watkins
+- David Pace
+- Dorothy Moon
+- GOP
+- Idaho
+- Idaho Republican Party
+- Jefferson County
+- Legislative District 3
+- NCM
+- Post Register
+- RNC
+- Republican National Committee
+- election
+- meeting
+- voting
+- website
+authority: LOGAN
 ---
 Bryan Smith was elected as the Idaho GOP national committeeman at a special meeting of the Republican State Central Committee on Saturday in Boise.
 
@@ -45,4 +64,3 @@ Smith authored the August 2022 petition that called for a special meeting of the
 Smith originally ran against Watkins for the national committeeman position at the GOP state convention in 2020, and lost by one vote, Watkins told the Post Register previously.
 
 If the RNC approves his credentials, Smith will be one of three Idaho representatives to the Republican National Committee. Moon and Idaho GOP National Committeewoman Cindy Siddoway also represent the state party on the RNC.
-

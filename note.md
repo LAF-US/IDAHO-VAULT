@@ -1,1 +1,7 @@
-[[node]] 
+---
+authority: LOGAN
+related:
+- node
+---
+
+node

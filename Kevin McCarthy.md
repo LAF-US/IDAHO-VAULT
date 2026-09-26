@@ -1,7 +1,8 @@
 ---
-tags:
-  - federal
-  - party/republican
-  - people/elected/country/congress
+related:
+- California
+- House member
+- U.S. House
+authority: LOGAN
 ---
-[[U.S. House]] member from [[California]]
+U.S. House member from California

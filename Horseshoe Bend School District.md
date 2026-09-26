@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Horseshoe Bend
-tags:
-  - schools/k12/district
+related:
+- Boise
+- Boise County
+- Horseshoe Bend
+authority: LOGAN
 ---
-[[Horseshoe Bend]], [[Boise County]] 
+Horseshoe Bend, Boise County

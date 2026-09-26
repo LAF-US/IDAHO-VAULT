@@ -1,6 +1,6 @@
 ---
-aliases:
-  - superintendent
+related:
+- school board
+authority: LOGAN
 ---
-
-[[school districts|school district]] administrator hired by [[school board]] 
+school district administrator hired by school board

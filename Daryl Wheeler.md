@@ -1,7 +1,7 @@
 ---
-tags:
-  - people/candidate/county/sheriff
-  - people/elected/county/sheriff
-  - party/republican
+related:
+- Bonner County
+- County Sheriff
+authority: LOGAN
 ---
-[[Bonner County|Bonner]] [[County Sheriff]] 
+Bonner County Sheriff

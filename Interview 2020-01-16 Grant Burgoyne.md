@@ -1,13 +1,31 @@
 ---
 author:
-  - "[[Logan Finney]]"
-tags:
-  - 2020/01/16
-  - 2020/session
+- Logan Finney
+related:
+- 2020-01-16 - McClure - Bill aims to shift drug policy from arrest to treatment
+- Grant
+- Grant Burgoyne
+- Idaho
+- Logan Finney
+- Senate Judiciary and Rules
+- Todd Lakey
+- addiction
+- books
+- children
+- civil commitments
+- connections
+- law enforcement
+- marijuana
+- minors
+- nicotine
+- opioids
+- tobacco
+- vaping
+authority: LOGAN
 ---
-[[Senate member|Sen.]] [[Grant Burgoyne]] on drug decriminalization and civil commitments bill [https://legislature.idaho.gov/sessioninfo/2020/legislation/S1222/](https://legislature.idaho.gov/sessioninfo/2020/legislation/S1222/)
+Sen. Grant Burgoyne on drug decriminalization and civil commitments bill [https://legislature.idaho.gov/sessioninfo/2020/legislation/S1222/](https://legislature.idaho.gov/sessioninfo/2020/legislation/S1222/)
 
-*Interview for [[2020-01-16 - McClure - Bill aims to shift drug policy from arrest to treatment]]*
+*Interview for 2020-01-16 - McClure - Bill aims to shift drug policy from arrest to treatment*
 
 Statement of Purpose: “intended to refocus Idaho’s response to the use of illegal drugs from punishment to treatment by (i) decriminalizing the unlawful use of controlled substances in private places, and (ii) repealing the current prohibition on civil commitments for drug abuse.”
 
@@ -19,7 +37,7 @@ Statement of Purpose: “intended to refocus Idaho’s response to the use of il
 
 -adds “intent to deliver” to trafficking, leaves mandatory minimums intact. Simple possession/use of drugs is no longer a criminal charge. Person under the influence (qualifying circumstance) can be detained and taken to treatment facility.
 
-House has passed mandatory minimum reforms last two years (strike mandatory, allow judge to assign lesser), no hearing in [[Senate Judiciary and Rules]] w/ Chairman [[Todd Lakey]].
+House has passed mandatory minimum reforms last two years (strike mandatory, allow judge to assign lesser), no hearing in Senate Judiciary and Rules w/ Chairman Todd Lakey.
 
 INTERVIEW TRANSCRIPT
 
@@ -45,7 +63,7 @@ INTERVIEW TRANSCRIPT
 
 06:57 I don’t really see any difference between – and I do not mean to downplay the seriousness of pushing illegal drugs – but I really don’t the difference between pushing illegal drugs like heroin/meth/cocaine/marijuana and pushing tobacco and nicotine to our youth.
 
-07:26 They are all dangerous drugs. Tobacco and nicotine are in some respects the most dangerous drugs that are pushed to our children. They are, in my opinion, _the_ gateway drug. It’s really very interesting to me how the tobacco industry had developed flavors and candies for – interruption
+07:26 They are all dangerous drugs. Tobacco and nicotine are in some respects the most dangerous drugs that are pushed to our children. They are, in my opinion, *the* gateway drug. It’s really very interesting to me how the tobacco industry had developed flavors and candies for – interruption
 
 08:12 Getting back to the tobacco issue. It’s remarkable the way marijuana and tobacco are being marketed in the same way.
 

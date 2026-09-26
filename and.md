@@ -1,12 +1,12 @@
 ---
-aliases:
-  - as well as
-  - also
-  - "&"
-  - "[ & ]"
+related:
+- LAF
+- The world is quiet here
+- syntax
+authority: LOGAN
 ---
-[[syntax]]
+syntax
 
-[[CODEX]] 
+CODEX
 
-[[The world is quiet here.]] -LAF
+The world is quiet here. -LAF

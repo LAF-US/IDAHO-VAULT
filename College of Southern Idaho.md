@@ -1,7 +1,9 @@
 ---
-aliases:
-  - CSI
-tags:
-  - schools/colleges/community
+related:
+- Board of Trustees - CSI
+- CSI
+- Twin Falls
+- Twin Falls County
+authority: LOGAN
 ---
-[[Twin Falls County]]-based [[community colleges|community college]] overseen by [[Board of Trustees - CSI]] 
+Twin Falls County-based community college overseen by Board of Trustees - CSI

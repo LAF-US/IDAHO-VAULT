@@ -1,1 +1,8 @@
-[[County Sheriff]], [[Bannock County]] [[jails|jail]]
+---
+authority: LOGAN
+related:
+- Bannock County
+- County Sheriff
+---
+
+County Sheriff, Bannock County jail

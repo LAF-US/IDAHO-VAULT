@@ -1,8 +1,9 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/city/council
-  - people/elected/city/council
+related:
+- Boise
+- city council
+authority: LOGAN
 ---
-Residence: [[Boise]]
-- [[Idaho Republican Party|Republican]] member of [[Boise]] [[city council]] 
+Residence: Boise
+
+- Republican member of Boise city council

@@ -1,6 +1,7 @@
 ---
-aliases:
-  - bond election
+related:
+- bonds
+- election
+authority: LOGAN
 ---
-
-[[election]] where voters approve or reject [[bonds]] 
+election where voters approve or reject bonds

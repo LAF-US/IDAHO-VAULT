@@ -1,13 +1,17 @@
 ---
-tags:
-  - party/constitution
-  - people
+related:
+- Freedom
+- Health Freedom Idaho
+- Idaho
+- Idaho Constitution
+- Idaho Constitution Party
+- Idaho Dispatch
+authority: LOGAN
 ---
+realtor
 
-[[realtors|realtor]]
+Health Freedom Idaho
 
-[[Health Freedom Idaho]]
+Idaho Dispatch
 
-[[Idaho Dispatch]]
-
-former [[Idaho Constitution Party]] candidate for [[Legislative District 15|LD15]] [[Idaho Senate|Senate]]
+former Idaho Constitution Party candidate for LD15 Senate

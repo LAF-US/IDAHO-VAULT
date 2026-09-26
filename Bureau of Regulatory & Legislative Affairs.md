@@ -1,5 +1,6 @@
 ---
-tags:
-  - governments/state/executive/departments/bureaus
+related:
+- Division of Financial Management
+authority: LOGAN
 ---
-within [[Division of Financial Management]] 
+within Division of Financial Management

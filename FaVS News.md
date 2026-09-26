@@ -1,5 +1,8 @@
 ---
-tags:
-  - media/outlets
+related:
+- Spokane
+- religion
+- website
+authority: LOGAN
 ---
-[[Spokane]] [[religion]] [[Internet|website]] [[reporting]] [[and]] [[commentary]] 
+Spokane religion website reporting and commentary

@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Richard Jessop
-tags:
-  - people
+related:
+- Idaho
+- Idaho Falls
+- Patriot Front
+authority: LOGAN
 ---
-[[Patriot Front]] member, [[Idaho Falls]] [[State of Idaho|Idaho]] resident 
+Patriot Front member, Idaho Falls Idaho resident

@@ -1,7 +1,11 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Idaho State Journal]]"
+- Idaho State Journal
+related:
+- Adams Publishing Group
+- Bannock County
+- Idaho
+- Pocatello
+authority: LOGAN
 ---
-[[Bannock County]] [[newspapers|newspaper]] in [[Pocatello]] owned by [[Adams Publishing Group]] 
+Bannock County newspaper in Pocatello owned by Adams Publishing Group

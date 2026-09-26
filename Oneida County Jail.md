@@ -1,1 +1,8 @@
-[[County Sheriff]], [[Oneida County]] [[jails|jail]]
+---
+authority: LOGAN
+related:
+- County Sheriff
+- Oneida County
+---
+
+County Sheriff, Oneida County jail

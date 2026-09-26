@@ -1,6 +1,8 @@
 ---
-aliases:
-  - IFF
-  - Freedom Foundation
+related:
+- Brent Regan
+- Dustin Hurst
+- Wayne Hoffman
+authority: LOGAN
 ---
-[[Wayne Hoffman]] [[Dustin Hurst]] [[Brent Regan]] 
+Wayne Hoffman Dustin Hurst Brent Regan

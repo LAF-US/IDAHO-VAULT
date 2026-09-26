@@ -1,7 +1,11 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/city/council
-residence: "[[Coeur d'Alene]]"
+residence: Coeur d'Alene
+related:
+- CDA
+- Coeur d'Alene
+- Dan Gookin
+- Machele Hamilton
+- city council
+authority: LOGAN
 ---
-- candidate for [[Coeur d'Alene|CDA]] [[city council]] in 2023, endorsed by [[Kootenai County Republican Central Committee|KCRCC]], with [[Machele Hamilton]] as treasurer, challenged [[Dan Gookin]] 
+- candidate for CDA city council in 2023, endorsed by KCRCC, with Machele Hamilton as treasurer, challenged Dan Gookin

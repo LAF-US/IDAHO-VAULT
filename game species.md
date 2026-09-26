@@ -1,48 +1,105 @@
-[[hunting]] [[animals]], mostly [[mammals]] and [[birds]] 
+---
+authority: LOGAN
+related:
+- animals
+- badger
+- beaver
+- big game species
+- bighorn sheep
+- birds
+- black bear
+- bobcat
+- chukar
+- coots
+- coyote
+- crow
+- deer
+- doves
+- ducks
+- elk
+- ermine
+- fox
+- furbearer species
+- geese
+- grouse
+- hunting
+- marten
+- mink
+- moose
+- mountain goat
+- mountain lion
+- muskrat
+- pheasant
+- predatory species
+- pronghorn
+- quail
+- rabbit
+- raccoon
+- river otter
+- sandhill cranes
+- sheep
+- skunk
+- snipe
+- species
+- trophy species
+- turkey
+- upland species
+- waterfowl species
+- weasel
+- wolf
+---
 
-[[big game species]]: 
-- [[deer]]
-- [[elk]]
-- [[pronghorn]]
-- [[black bear]]
-- [[mountain lion]]
-- [[wolf]]
+hunting animals, mostly mammals and birds
 
-[[trophy species]]:
-- [[moose]]
-- [[bighorn sheep]]
-- [[mountain goat]]
+big game species:
 
-[[waterfowl species]]:
-- [[geese]]
-- [[ducks]]
-- [[coots]]
-- [[snipe]]
+- deer
+- elk
+- pronghorn
+- black bear
+- mountain lion
+- wolf
 
-[[upland species]]:
-- [[turkey]]
-- [[pheasant]]
-- [[grouse]]
-- [[chukar]]
-- [[quail]]
-- [[crow]]
-- [[sandhill cranes]]
-- [[doves]]
-- [[rabbit]]
+trophy species:
 
-[[furbearer species]]:
-- [[badger]]
-- [[beaver]]
-- [[bobcat]]
-- [[fox]]
-- [[marten]]
-- [[mink]]
-- [[muskrat]]
-- [[river otter]]
+- moose
+- bighorn sheep
+- mountain goat
 
-[[predatory species]]:
-- [[coyote]]
-- [[skunk]]
-- [[weasel]]
-- [[raccoon]]
-- [[ermine]]
+waterfowl species:
+
+- geese
+- ducks
+- coots
+- snipe
+
+upland species:
+
+- turkey
+- pheasant
+- grouse
+- chukar
+- quail
+- crow
+- sandhill cranes
+- doves
+- rabbit
+
+furbearer species:
+
+- badger
+- beaver
+- bobcat
+- fox
+- marten
+- mink
+- muskrat
+- river otter
+
+predatory species:
+
+- coyote
+- skunk
+- weasel
+- raccoon
+- ermine

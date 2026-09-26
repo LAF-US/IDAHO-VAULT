@@ -1,7 +1,9 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Preston Citizen]]"
+- Preston Citizen
+related:
+- Adams Publishing Group
+- Preston
+authority: LOGAN
 ---
-[[newspapers|newspaper]] based in [[Preston]] owned by [[Adams Publishing Group]] 
+newspaper based in Preston owned by Adams Publishing Group

@@ -1,5 +1,5 @@
-[[UP]]
+UP
 
-[[BELOW]]
+BELOW
 
-[[UNDER]]
+UNDER

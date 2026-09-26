@@ -1,7 +1,8 @@
 ---
-tags:
-  - position/elected/precinct
-  - party/democratic
+related:
+- Camas County
+- Idaho
+- Idaho Democratic Party
+authority: LOGAN
 ---
-
-Local [[Idaho Democratic Party]] [[precinct committeemen|precinct committee]] for [[Camas County]] 
+Local Idaho Democratic Party precinct committee for Camas County

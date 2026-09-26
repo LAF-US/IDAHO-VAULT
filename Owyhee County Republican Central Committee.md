@@ -1,7 +1,9 @@
 ---
-tags:
-  - party/republican
-  - position/elected/precinct
+related:
+- Idaho
+- Idaho Republican Party
+- Owyhee
+- Owyhee County
+authority: LOGAN
 ---
-
-Local [[Idaho Republican Party]] [[precinct committeemen|precinct committee]] for [[Owyhee County]] 
+Local Idaho Republican Party precinct committee for Owyhee County

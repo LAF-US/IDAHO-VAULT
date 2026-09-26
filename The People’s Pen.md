@@ -1,9 +1,10 @@
 ---
-tags:
-  - media/outlets
-aliases:
-  - People's Pen
 outlet:
-  - "[[The People’s Pen|People's Pen]]"
+- People's Pen
+related:
+- Hari Heath
+- Kootenai
+- Kootenai County
+authority: LOGAN
 ---
-[[Kootenai County]] liberty [[newspapers|newspaper]] with funding from [[Kootenai County Republican Central Committee|KCRCC]]; writers include [[Hari Heath]]  
+Kootenai County liberty newspaper with funding from KCRCC; writers include Hari Heath  

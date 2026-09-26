@@ -1,5 +1,11 @@
 ---
-tags:
-  - geography/water/lake
+related:
+- Gooding
+- Salmon
+- Snake River
+- Twin Falls
+- Twin Falls County
+- Upper Salmon Falls dam
+authority: LOGAN
 ---
-[[reservoirs|reservoir]] on the [[Snake River]] in [[Gooding County|Gooding]] and [[Twin Falls County]] created by [[Upper Salmon Falls dam]] 
+reservoir on the Snake River in Gooding and Twin Falls County created by Upper Salmon Falls dam

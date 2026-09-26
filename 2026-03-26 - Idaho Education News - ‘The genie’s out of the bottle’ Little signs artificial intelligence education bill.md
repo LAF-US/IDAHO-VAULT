@@ -1,15 +1,28 @@
 ---
-source: "https://www.idahoednews.org/news/the-genies-out-of-the-bottle-little-signs-artificial-intelligence-education-bill/"
+source: https://www.idahoednews.org/news/the-genies-out-of-the-bottle-little-signs-artificial-intelligence-education-bill/
 author:
-  - "[[Kaeden Lincoln]]"
+- Kaeden Lincoln
 published: 2026-03-26
 created: 2026-03-27
 date created: Friday, March 27th 2026, 11:30:35 am
 date modified: Friday, March 27th 2026, 11:34:38 am
-tags:
-  - 2026/03/26
+related:
+- '2026-03-26'
+- '2026-03-27'
+- Brad Little
+- Debbie Critchfield
+- Governor
+- Idaho
+- Idaho Capitol
+- Idaho Falls
+- Kevin Cook
+- Lincoln
+- Moore
+- artificial intelligence
+- definition
+- teachers
+authority: LOGAN
 ---
-
 Idaho Gov. Brad Little signed a bill instructing the Idaho Department of Education to develop a statewide framework for integrating generative artificial intelligence (AI) into classrooms.
 
 The framework will serve teachers just as much, if not more, than students, said State Superintendent Debbie Critchfield.
@@ -34,6 +47,6 @@ Little referred to Moore’s Law, an observation made by former Intel leader Gor
 
 “Everybody thought it wasn’t going to happen,” Little said of Moore’s Law, “and it just continued to happen.”
 
-![](https://www.idahoednews.org/wp-content/uploads/2026/03/AIBill_crichfield.little.jpg)
+![alt text needed](https://www.idahoednews.org/wp-content/uploads/2026/03/AIBill_crichfield.little.jpg)
 
 Idaho Governor Brad Little after signing an AI education bill on March 26, 2026 at the Idaho Capitol. (Kaeden Lincoln/IdahoEdNews)

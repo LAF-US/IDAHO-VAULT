@@ -1,1 +1,8 @@
-[[water]] for [[plant]] [[agriculture]] 
+---
+authority: LOGAN
+related:
+- agriculture
+- water
+---
+
+water for plant agriculture

@@ -1,5 +1,8 @@
 ---
-tags:
-  - geography/water/river/dams
+related:
+- Cascade
+- Cascade Reservoir
+- Valley County
+authority: LOGAN
 ---
-[[Cascade Reservoir]] [[dams|dam]] in [[Valley County]] at [[Cascade]] 
+Cascade Reservoir dam in Valley County at Cascade

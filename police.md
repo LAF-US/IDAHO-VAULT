@@ -1,6 +1,7 @@
 ---
-tags:
-  - governments/city
+related:
+- cities
+- law enforcement
+authority: LOGAN
 ---
-
-[[cities]] [[law enforcement]] 
+cities law enforcement

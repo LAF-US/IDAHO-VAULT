@@ -1,6 +1,8 @@
 ---
-tags:
-  - governments/taxingdistrict
+related:
+- Lewiston
+- Port of Lewiston
+- taxing districts
+authority: LOGAN
 ---
-
-[[taxing districts]] for [[Port of Lewiston|ports (i.e. the Port of Lewiston)]] 
+taxing districts for ports (i.e. the Port of Lewiston)

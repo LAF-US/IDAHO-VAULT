@@ -1,7 +1,13 @@
 ---
-
+related:
+- California
+- Oregon
+- Pacific Ocean
+- Washington
+authority: LOGAN
 ---
-[[United States of America|American]] coast on the [[Pacific Ocean]]  
-- [[Washington]]
-- [[Oregon]]
-- [[California]] 
+American coast on the Pacific Ocean  
+
+- Washington
+- Oregon
+- California

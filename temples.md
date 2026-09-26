@@ -1,1 +1,8 @@
-[[Church of Jesus Christ of Latter-Day Saints|LDS Church]] [[places of worship]] 
+---
+authority: LOGAN
+related:
+- LDS
+- places of worship
+---
+
+LDS Church places of worship

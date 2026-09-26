@@ -1,8 +1,13 @@
 ---
-tags:
-  - federal
-  - geography/land/reservations
+related:
+- Nevada
+- Owyhee
+- Owyhee County
+- Riddle
+- Shoshone
+- Shoshone-Paiute Tribes
+authority: LOGAN
 ---
-[[Shoshone-Paiute Tribes]] lands in [[Owyhee County]] and [[Nevada]] 
+Shoshone-Paiute Tribes lands in Owyhee County and Nevada
 
-[[Riddle]], [[Owyhee]] 
+Riddle, Owyhee

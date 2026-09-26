@@ -1,7 +1,8 @@
 ---
-tags:
-  - party/republican
-  - position/elected/precinct
+related:
+- Bannock County
+- Idaho
+- Idaho Republican Party
+authority: LOGAN
 ---
-
-Local [[Idaho Republican Party]] [[precinct committeemen|precinct committee]] for [[Bannock County]] 
+Local Idaho Republican Party precinct committee for Bannock County

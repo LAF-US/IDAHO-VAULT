@@ -1,7 +1,7 @@
 ---
-tags:
-  - 2020/session
-  - federal
-  - 2019/session
+related:
+- Committee on Federalism
+- health care
+authority: LOGAN
 ---
-2019-2020 [[health care]] subcommittee within [[Committee on Federalism]].
+2019-2020 health care subcommittee within Committee on Federalism.

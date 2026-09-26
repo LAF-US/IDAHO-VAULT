@@ -167,5 +167,3 @@ dexie/dist/dexie.js:
   PERFORMANCE OF THIS SOFTWARE.
   ***************************************************************************** *)
 */
-
-/* nosourcemap */

@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
+related:
+- Burley
+authority: LOGAN
 ---
-Residence: [[Burley]]
+Residence: Burley

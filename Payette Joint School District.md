@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Payette
-tags:
-  - schools/k12/district
+related:
+- Payette
+- Payette County
+authority: LOGAN
 ---
-[[Payette]], [[Payette County]] 
+Payette, Payette County

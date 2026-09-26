@@ -1,8 +1,20 @@
-[[Bible]]
-[[Torah]] 
-[[Quran]] 
+---
+authority: LOGAN
+related:
+- Bible
+- Quran
+- Torah
+- canon
+- doctrine
+- religion
+- religiosity
+---
 
-[[religion]]
-[[religiosity]]
-[[canon]]
-[[doctrine]]
+Bible
+Torah
+Quran
+
+religion
+religiosity
+canon
+doctrine

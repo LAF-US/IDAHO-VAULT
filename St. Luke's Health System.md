@@ -1,8 +1,7 @@
 ---
-aliases:
-  - St. Luke's
-  - Saint Luke's
-  - St. Luke’s Health System
-  - St. Luke’s
+related:
+- Idaho
+- hospitals
+authority: LOGAN
 ---
-[[hospitals]] in [[State of Idaho|Idaho]] 
+hospitals in Idaho

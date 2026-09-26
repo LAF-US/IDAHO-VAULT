@@ -1,3 +1,10 @@
-https://www.idahoednews.org/news/mcgeachin-names-indoctrination-task-force-replacement/ 
+---
+authority: LOGAN
+related:
+- Idaho
+- Task Force to Examine Indoctrination in Idaho Education
+---
 
-[[Task Force to Examine Indoctrination in Idaho Education]] 
+<https://www.idahoednews.org/news/mcgeachin-names-indoctrination-task-force-replacement/>
+
+Task Force to Examine Indoctrination in Idaho Education

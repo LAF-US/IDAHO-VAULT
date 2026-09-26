@@ -1,10 +1,6 @@
 ---
-tags:
-  - governments/country/executive/departments/bureaus
-  - federal
-aliases:
-  - U.S. Attorney for Idaho
-  - U.S. Attorney
-  - District Attorney
+related:
+- Idaho
+authority: LOGAN
 ---
-[[U.S. Department of Justice]] in [[State of Idaho|Idaho]] 
+U.S. Department of Justice in Idaho

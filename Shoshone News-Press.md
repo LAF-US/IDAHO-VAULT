@@ -1,7 +1,10 @@
 ---
 outlet:
-  - "[[Shoshone News-Press]]"
-tags:
-  - media/outlets
+- Shoshone News-Press
+related:
+- Shoshone
+- Shoshone County
+- The Hagadone Corporation
+authority: LOGAN
 ---
-[[Shoshone County]] [[newspapers|newspaper]] owned by [[The Hagadone Corporation]] 
+Shoshone County newspaper owned by The Hagadone Corporation

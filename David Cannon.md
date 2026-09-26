@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
+related:
+- Blackfoot
+authority: LOGAN
 ---
-Residence: [[Blackfoot]]
+Residence: Blackfoot

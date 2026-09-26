@@ -1,7 +1,10 @@
 ---
-aliases:
-  - Cottonwood
-tags:
-  - schools/k12/district
+related:
+- Cottonwood
+- Ferdinand
+- Greencreek
+- Idaho
+- Idaho County
+authority: LOGAN
 ---
-[[Cottonwood]]/[[Ferdinand]]/[[Greencreek]], [[Idaho County]] 
+Cottonwood/Ferdinand/Greencreek, Idaho County

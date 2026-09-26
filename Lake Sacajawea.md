@@ -1,5 +1,8 @@
 ---
-tags:
-  - geography/water/lake
+related:
+- Ice Harbor dam
+- Snake River
+- Washington
+authority: LOGAN
 ---
-[[reservoirs|reservoir]] on the [[Snake River]] in [[Washington]] created by [[Ice Harbor dam]]  
+reservoir on the Snake River in Washington created by Ice Harbor dam  

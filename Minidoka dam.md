@@ -1,5 +1,10 @@
 ---
-tags:
-  - geography/water/river/dams
+related:
+- Lake
+- Lake Walcott
+- Minidoka
+- Minidoka National Wildlife Refuge
+- Snake River
+authority: LOGAN
 ---
-[[dams|dam]] on the [[Snake River]] near [[Minidoka]]; creates [[Lake Walcott]] and [[Minidoka National Wildlife Refuge]] 
+dam on the Snake River near Minidoka; creates Lake Walcott and Minidoka National Wildlife Refuge

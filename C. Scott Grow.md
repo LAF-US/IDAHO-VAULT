@@ -1,11 +1,13 @@
 ---
-tags:
-  - party/republican
-  - people/elected
-  - people/elected/legislative
-  - people
-residence: "[[Eagle]]"
+residence: Eagle
+related:
+- Eagle
+- House Revenue and Taxation
+- Senate member
+- Steven Thayn
+- redistricting
+authority: LOGAN
 ---
-- [[Joint Finance-Appropriations Committee|JFAC]] co-chair 
-- former [[House Revenue and Taxation]] vice chair 
-- defeated [[Steven Thayn]] for [[Legislative District 14|LD14]] [[Senate member]] after [[redistricting]]
+- JFAC co-chair
+- former House Revenue and Taxation vice chair
+- defeated Steven Thayn for LD14 Senate member after redistricting

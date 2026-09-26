@@ -1,1 +1,7 @@
-[[books|book]] by [[Leslie Connor]] 
+---
+authority: LOGAN
+related:
+- Connor
+---
+
+book by Leslie Connor

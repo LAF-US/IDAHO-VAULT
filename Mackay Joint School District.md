@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Mackay
-tags:
-  - schools/k12/district
+related:
+- Custer
+- Custer County
+- Mackay
+authority: LOGAN
 ---
-[[Mackay]], [[Custer County]] 
+Mackay, Custer County

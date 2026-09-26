@@ -1,15 +1,34 @@
 ---
-outlet: "[[Idaho Press]]"
-url: "https://www.idahopress.com/news/local/idaho-state-approved-to-expand-meridian-campus/article_7bbad330-9d37-11ef-866d-ab6dec5b6b84.html"
+outlet: Idaho Press
+url: https://www.idahopress.com/news/local/idaho-state-approved-to-expand-meridian-campus/article_7bbad330-9d37-11ef-866d-ab6dec5b6b84.html
 author:
-  - "[[Emily White]]"
-tags:
-  - media/articles
-  - 2024/11/08
+- Emily White
+related:
+- Drive
+- Eagle
+- ISU
+- Idaho
+- Idaho Falls
+- Idaho Press
+- Idaho State University
+- Meridian
+- Pocatello
+- President
+- Twin Falls
+- assistant
+- city council
+- health care
+- hospitals
+- housing
+- infrastructure
+- medical school
+- nurses
+- therapists
+authority: LOGAN
 ---
-A bigger health science campus is coming to [[Meridian]].
+A bigger health science campus is coming to Meridian.
 
-On Wednesday, the [[Meridian]] [[city council]] approved an ordinance officially annexing and rezoning over 23 acres of land for [[Idaho State University]] to begin an expansion of its Meridian health science campus. The land was purchased by ISU in 2019, according to Gabe Bargen, the executive director of ISU Health Science Center.
+On Wednesday, the Meridian city council approved an ordinance officially annexing and rezoning over 23 acres of land for Idaho State University to begin an expansion of its Meridian health science campus. The land was purchased by ISU in 2019, according to Gabe Bargen, the executive director of ISU Health Science Center.
 
 The expansion could make ISU the closest thing Idaho has to a medical school, Bargen said.
 
@@ -38,4 +57,3 @@ Funding for the expansion is expected to continue coming in the next several yea
 The first steps to the expansion will be removing an old farmhouse and barn on the property, Sagendorf said, which could happen as soon as next summer. Plans for student housing and health care clinics on the property could come by 2030, Sagendorf said. The expansion, which will also include building research laboratories and classroom buildings, could take several decades to complete, Sagendorf said.
 
 “It’s a very long-term expansion that will be done step by step,” Sagendorf said.
-

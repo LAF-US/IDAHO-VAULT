@@ -1,10 +1,13 @@
 ---
-tags:
-  - party/democratic
-  - people/elected
-  - people/elected/legislative
-  - people
+related:
+- Boise
+- Department of Parks and Recreation
+- Fred Martin
+- Legislative District 15
+- Senate member
+authority: LOGAN
 ---
-Residence: [[Boise]]
-- [[Senate member]] for [[Legislative District 15]] after [[Fred Martin]]
-- former [[Department of Parks and Recreation]] employee 
+Residence: Boise
+
+- Senate member for Legislative District 15 after Fred Martin
+- former Department of Parks and Recreation employee

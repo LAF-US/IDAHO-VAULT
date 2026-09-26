@@ -1,7 +1,6 @@
 ---
-aliases:
-  - Blue Cross
-  - BC of Idaho
-  - BCI
+related:
+- health insurance
+authority: LOGAN
 ---
-[[health insurance]] 
+health insurance

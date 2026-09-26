@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Whitepine
-tags:
-  - schools/k12/district
+related:
+- Bovill
+- Deary
+- Latah County
+authority: LOGAN
 ---
-[[Bovill]]/[[Deary]], [[Latah County]] 
+Bovill/Deary, Latah County

@@ -1,7 +1,7 @@
 ---
-tags:
-  - party/republican
-  - people/elected/city/mayor
-  - people/candidate/city/mayor
+related:
+- Meridian
+- mayor
+authority: LOGAN
 ---
-[[Meridian]] [[mayor]] 
+Meridian mayor

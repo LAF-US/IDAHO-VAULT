@@ -1,6 +1,6 @@
 ---
-tags:
-  - position/appointed/boards-commissions
+related:
+- charter schools
+authority: LOGAN
 ---
-
-[[charter schools]] 
+charter schools

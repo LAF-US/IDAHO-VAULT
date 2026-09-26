@@ -1,0 +1,29 @@
+[
+  "obsidian-mind-map",
+  "graph-nested-tags",
+  "recent-files-obsidian",
+  "obsidian42-strange-new-worlds",
+  "tag-wrangler",
+  "obsidian-linter",
+  "better-search-views",
+<<<<<<< Updated upstream
+  "obsidian-git",
+  "obsidian-importer",
+  "obsidian-local-rest-api",
+  "mcp-tools",
+  "smart-connections",
+  "templater-obsidian"
+=======
+  "omnisearch",
+  "obsidian-annotator",
+  "break-page",
+  "pdf-emojis",
+  "pdf-plus",
+  "oz-image-plugin",
+  "text-extractor",
+  "obsidian-extract-pdf-highlights",
+  "handwritten-notes",
+  "taskbone-ocr-plugin",
+  "obsidian-git"
+>>>>>>> Stashed changes
+]

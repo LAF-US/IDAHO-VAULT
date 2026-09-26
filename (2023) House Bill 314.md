@@ -1,7 +1,6 @@
 ---
-tags:
-  - bills
-  - 2023/session
+related:
+- libraries
+authority: LOGAN
 ---
-
-[[libraries]]
+libraries

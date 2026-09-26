@@ -1,0 +1,105 @@
+# Plan: Standardize `!/` Admin File Frontmatter and Footers
+
+## Context
+
+The `!/` governance files were just consolidated (previous PR). Now their frontmatter is inconsistent — some have YAML, some don't; tag vocabularies and field names vary. Footers are missing from most files or use a non-standard format (`###### [["..."]]` instead of the specified separator+link form). This pass establishes uniform metadata and closure across all internal (US) vault documents.
+
+**Scope:** `!/` directory only (15 files). No body text changes. No `!/!/` ephemeral files. No content vault files (bills, articles, people).
+
+---
+
+## Standards to Apply
+
+### YAML Frontmatter (admin files)
+
+```yaml
+---
+tags:
+  - administration/[category]
+updated: YYYY-MM-DD
+status: active|draft|stub
+---
+```
+
+- `tags`: always `administration/` namespace, using existing subcategory vocabulary
+- `updated`: today's date (2026-03-24) for all files touched this pass
+- `status`: `active` for in-use files, `draft` for files pending Logan's review, `stub` for empty/minimal placeholders
+- `source: commit` is optional — include only if the file was agent-generated (e.g., AGENTS.md already has it; preserve it)
+- **Do NOT add `created` field** — inconsistently tracked, adds noise
+
+### Footer (all internal US vault docs in `!/`)
+
+Every file in `!/` ends with:
+
+```
+
+---
+
+[["The world is quiet here."]]
+```
+
+Two existing files (`!/PROTOCOLS.md`, `!/UNIFIED (US) SWARM.md`) have the footer but in wrong format (`###### [["The world is quiet here."]]` with no `---` separator) — update them.
+
+---
+
+## File-by-File Changes
+
+### Files with GOOD frontmatter — footer only
+
+| File | Current FM | Footer Action |
+|---|---|---|
+| `!/README.md` | `tags: [administration/canonical]`, `updated`, `status` | Add |
+| `!/AGENTS.md` | `tags: [administration/agents]`, `updated`, `status: draft`, `source: commit` | Add |
+| `!/PROTOCOL.md` | `tags: [administration/protocol]`, `updated`, `status: draft` | Verify/add if missing |
+| `!/LEVELSET.md` | `tags: [administration/levelset]`, `updated` — missing `status` | Add `status: active`; add footer |
+| `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` | `tags: [administration/protocol, administration/levelset]`, `updated`, `status: active` | Add footer |
+| `!/MCP-IMPLEMENTATION-PLAN.md` | `tags: [administration/mcp, administration/implementation-plan]`, `updated`, `status: draft` | Add footer |
+
+### Files missing frontmatter — add FM + footer
+
+| File | Add FM | Notes |
+|---|---|---|
+| `!/VAULT-CONVENTIONS.md` | `tags: [administration/conventions]`, `updated: 2026-03-24`, `status: active` | Add before `# VAULT-CONVENTIONS` heading |
+| `!/CONSTITUTION.md` | `tags: [administration/constitution]`, `updated: 2026-03-24`, `status: active` | Add before blank line + "by [[Logan]]" epigraph. Do NOT touch epigraph or body. |
+| `!/DECISIONS.md` | `tags: [administration/decisions]`, `updated: 2026-03-24`, `status: active` | File starts with `# DECISIONS.md` heading — add FM before heading |
+| `!/PROTOCOLS.md` | `tags: [administration/protocols]`, `updated: 2026-03-24`, `status: active` | Has footer but wrong format — fix footer too |
+| `!/UNIFIED (US) SWARM.md` | `tags: [administration/swarm]`, `updated: 2026-03-24`, `status: active` | Has footer but wrong format — fix footer too |
+| `!/SWARM.md` | `tags: [administration/swarm]`, `updated: 2026-03-24`, `status: stub` | Empty file — FM + footer only |
+| `!/AGENTIC SWARM.md` | `tags: [administration/swarm]`, `updated: 2026-03-24`, `status: stub` | Empty file — FM + footer only |
+| `!/HECATE PROTOCOL.md` | `tags: [administration/protocol]`, `updated: 2026-03-24`, `status: stub` | Empty file — FM + footer only |
+| `!/MAGNUS-SWARM.md` | `tags: [administration/swarm]`, `updated: 2026-03-24`, `status: stub` | Body is single line `[[MAGNUS]]` — keep it. Add FM above, footer below. |
+
+### Footer format fixes (footer exists, wrong format)
+
+| File | Current | Fix To |
+|---|---|---|
+| `!/PROTOCOLS.md` | `###### [["The world is quiet here."]]` | `\n---\n\n[["The world is quiet here."]]` |
+| `!/UNIFIED (US) SWARM.md` | `###### [["The world is quiet here."]]` | `\n---\n\n[["The world is quiet here."]]` |
+
+---
+
+## What NOT to Touch
+
+- Body text of any file — Logan's own writing, canonical reference material
+- The epigraph `[["The world is quiet here."]]` that appears near the top of `!/CONSTITUTION.md` — it is a prologue, not a footer; it stays where it is
+- `!/!/` files (ephemeral layer — different metadata conventions)
+- Any content vault files (bills, articles, people, topics)
+- `CLAUDE.md`, `GEMINI.md` (root, different convention)
+
+---
+
+## Execution
+
+New branch: `claude/standardize-admin-frontmatter` (separate from the structure PR to keep concerns isolated).
+
+Single commit: all 15 files in one pass — frontmatter and footer changes only, no body edits.
+
+---
+
+## Verification
+
+1. Read first 10 lines of each modified file — confirm YAML present and well-formed
+2. Read last 6 lines of each modified file — confirm footer format matches standard
+3. `git diff --stat` — confirm only `!/` files touched, no content vault files
+4. Check that CONSTITUTION.md epigraph is untouched (still at top, unchanged)
+5. Open PR — likely auto-merges (low-risk metadata changes, no governance logic changed)

@@ -1,1 +1,8 @@
-[[County Sheriff]], [[Blaine County]] [[jails|jail]]
+---
+authority: LOGAN
+related:
+- Blaine County
+- County Sheriff
+---
+
+County Sheriff, Blaine County jail

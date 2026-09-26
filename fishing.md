@@ -1,1 +1,7 @@
-harvesting [[fish]] 
+---
+authority: LOGAN
+related:
+- fish
+---
+
+harvesting fish

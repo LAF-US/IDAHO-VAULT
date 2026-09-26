@@ -1,13 +1,20 @@
 ---
-aliases:
-  - GIAC
+related:
+- Andrea Powers
+- Department of Administration
+- Division of Veterans Services
+- Kevin Cook
+- Lauren Necochea
+- Office of Group Insurance
+- Paul
+authority: LOGAN
 ---
+Office of Group Insurance
 
-[[Office of Group Insurance]] 
-- [[Steve Bailey]], [[Department of Administration]] director 
-- [[Senate member|Sen.]] [[Kevin Cook]] 
-- [[House member|Rep.]] [[Lauren Necochea]] 
-- [[Dick Humiston]], [[retirement|retired]] [[state employee]] 
-- [[Andrea Powers]], [[State Court System|judiciary]] 
-- [[Paul Spannknebel]], [[state employee|active employee]] with [[Division of Veterans Services]] 
-- [[Rob Sauer]], [[school districts|school district]] 
+- Steve Bailey, Department of Administration director
+- Sen. Kevin Cook
+- Rep. Lauren Necochea
+- Dick Humiston, retired state employee
+- Andrea Powers, judiciary
+- Paul Spannknebel, active employee with Division of Veterans Services
+- Rob Sauer, school district

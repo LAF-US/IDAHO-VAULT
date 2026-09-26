@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected/legislative
-  - people/elected
-  - party/republican
-  - people
+related:
+- Kuna
+authority: LOGAN
 ---
-Residence: [[Kuna]]
+Residence: Kuna

@@ -1,12 +1,11 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
+related:
+- Home
+- Mountain Home
+authority: LOGAN
 ---
-Residence: [[Mountain Home]]
+Residence: Mountain Home
 
-High school teacher 
+High school teacher
 
-[[House Appropriations|JFAC]] member 
+JFAC member

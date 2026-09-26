@@ -1,5 +1,6 @@
 ---
-tags:
-  - geography/land/places/communities
+related:
+- Elmore County
+authority: LOGAN
 ---
-[[Elmore County]] 
+Elmore County

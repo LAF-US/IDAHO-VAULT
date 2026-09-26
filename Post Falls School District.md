@@ -1,8 +1,8 @@
 ---
-aliases:
-  - Post Falls
-  - PFSD
-tags:
-  - schools/k12/district
+related:
+- Kootenai
+- Kootenai County
+- Post Falls
+authority: LOGAN
 ---
-[[Post Falls]], [[Kootenai County]] 
+Post Falls, Kootenai County

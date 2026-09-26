@@ -1,9 +1,8 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/elected
-  - people
+related:
+- Jerome
+authority: LOGAN
 ---
-Residence: [[Jerome]]
-- longtime [[House Appropriations|JFAC]] chairwoman 
+Residence: Jerome
+
+- longtime JFAC chairwoman

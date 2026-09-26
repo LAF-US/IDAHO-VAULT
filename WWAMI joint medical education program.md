@@ -1,11 +1,15 @@
 ---
-aliases:
-  - WWAMI
-  - WWAMI program
-  - Idaho Regional Medical Education Program
-  - Idaho WWAMI
-  - WWAMI Idaho
+related:
+- Alaska
+- Idaho
+- Montana
+- University of Idaho
+- University of Washington
+- Washington
+- Wyoming
+- medical school
+authority: LOGAN
 ---
-joint [[medical school]] [[program]] between [[University of Idaho]] and [[University of Washington]] 
+joint medical school program between University of Idaho and University of Washington
 
-[[Washington]], [[Wyoming]], [[Alaska]], [[Montana]], and [[State of Idaho|Idaho]] [[medical]] [[students]] 
+Washington, Wyoming, Alaska, Montana, and Idaho medical students

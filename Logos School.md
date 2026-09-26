@@ -1,6 +1,6 @@
 ---
-tags:
-  - schools/k12/private
+related:
+- Moscow
+authority: LOGAN
 ---
-
-[[Moscow]] school operated by the [[Christ Church of Moscow|Kirkers]]. 
+Moscow school operated by the Kirkers.

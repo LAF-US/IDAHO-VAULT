@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Republican in Name Only
-  - Republicans in name only
-  - RINO
+related:
+- Idaho
+- Idaho Republican Party
+authority: LOGAN
 ---
-[[Idaho Republican Party]] 
+Idaho Republican Party

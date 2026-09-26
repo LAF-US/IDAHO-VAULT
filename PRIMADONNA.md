@@ -1,1 +1,1 @@
-[[PRIMA]][[DONNA]]
+PRIMADONNA

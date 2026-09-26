@@ -1,13 +1,26 @@
 ---
-tags:
-  - 2020/01/27
-  - 2020/session
-  - bills
-cmte: "[[Idaho House of Representatives]]"
+cmte: Idaho House of Representatives
+related:
+- '313'
+- '315'
+- '316'
+- '318'
+- '321'
+- '322'
+- '331'
+- FDA
+- HCR
+- Idaho
+- Idaho House of Representatives
+- STEM
+- presidential primary
+- voice
+- voice vote
+authority: LOGAN
 ---
-[[Idaho House of Representatives|House]] Floor - Jan 27
+House Floor - Jan 27
 
-H 331 – [[STEM Action Center]] appropriation – passes
+H 331 – STEM Action Center appropriation – passes
 
 H 313 – Acupuncture – held on calendar
 
@@ -15,7 +28,7 @@ H 318 – Occupational Licensing – passes
 
 H 321 – Liquor, plazas – passes 66-1 (Armstrong)
 
-H 322 – Elections, political party [[presidential primary]] - Move back to State affairs
+H 322 – Elections, political party presidential primary - Move back to State affairs
 
 H 315 – Controlled substances – updates to FDA standards – 62-5
 

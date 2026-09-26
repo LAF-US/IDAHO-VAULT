@@ -1,9 +1,8 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
-  - people/candidate/legislative
+related:
+- Legislative District 27
+- Oakley
+authority: LOGAN
 ---
-
-Residence: [[Oakley]]
-[[Legislative District 27]]
+Residence: Oakley
+Legislative District 27

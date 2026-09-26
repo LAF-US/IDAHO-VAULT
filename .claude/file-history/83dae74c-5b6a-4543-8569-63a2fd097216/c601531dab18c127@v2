@@ -1,0 +1,10 @@
+# Qodo PR Agent configuration (auto-loaded by Qodo PR review)
+# See !/VAULT-CONVENTIONS.md for vault governance conventions
+# See !/AGENTS.md for agent registry and capability tiers
+
+[pr_reviewer]
+# Vault-specific review guidance:
+# - All committed content is ON THE RECORD (public repo)
+# - Governance files in !/ require Logan's explicit approval before merge
+# - Python files (.github/scripts/) are machine/procedural product
+# - Markdown files are human product (attributable to Logan)

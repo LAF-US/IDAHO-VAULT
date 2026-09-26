@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Challis
-tags:
-  - schools/k12/district
+related:
+- Challis
+- Custer
+- Custer County
+authority: LOGAN
 ---
-[[Challis]], [[Custer County]] 
+Challis, Custer County

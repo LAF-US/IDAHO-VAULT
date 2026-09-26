@@ -1,7 +1,7 @@
 ---
-tags:
-  - party/republican
-  - people
+related:
+- Legislative District 21
+authority: LOGAN
 ---
-- former [[Legislative District 21]] candidate for [[Idaho Senate|Senate]]
-- 
+- former Legislative District 21 candidate for Senate
+-

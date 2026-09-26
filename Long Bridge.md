@@ -1,5 +1,9 @@
 ---
-tags:
-  - geography/land/roads/highways
+related:
+- Lake
+- Lake Pend Oreille
+- Sagle
+- Sandpoint
+authority: LOGAN
 ---
-[[bridges|bridge]] connecting [[Sandpoint]] and [[Sagle]] over [[Lake Pend Oreille]]
+bridge connecting Sandpoint and Sagle over Lake Pend Oreille

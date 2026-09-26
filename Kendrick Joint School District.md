@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Kendrick
-tags:
-  - schools/k12/district
+related:
+- Kendrick
+- Latah County
+authority: LOGAN
 ---
-[[Kendrick]], [[Latah County]] 
+Kendrick, Latah County

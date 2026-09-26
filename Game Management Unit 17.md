@@ -1,7 +1,7 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - GMU 17
+related:
+- Idaho
+- Idaho County
+authority: LOGAN
 ---
-eastern [[Idaho County]] 
+eastern Idaho County

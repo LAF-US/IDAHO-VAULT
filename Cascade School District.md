@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Cascasde
-tags:
-  - schools/k12/district
+related:
+- Cascade
+- Valley County
+authority: LOGAN
 ---
-[[Cascade]], [[Valley County]] 
+Cascade, Valley County

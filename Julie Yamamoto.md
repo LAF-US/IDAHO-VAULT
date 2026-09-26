@@ -1,9 +1,9 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
+related:
+- Caldwell
+- House Education
+authority: LOGAN
 ---
-Residence: [[Caldwell]]
-- [[House Education]] chair 
+Residence: Caldwell
+
+- House Education chair

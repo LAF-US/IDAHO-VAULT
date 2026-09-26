@@ -1,7 +1,7 @@
 ---
-tags:
-  - party/democratic
-  - people/elected/legislative
-residence: "[[Pocatello]]"
+residence: Pocatello
+related:
+- Pocatello
+authority: LOGAN
 ---
-Residence: [[Pocatello]] 
+Residence: Pocatello

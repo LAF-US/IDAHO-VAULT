@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Swan Valley
-tags:
-  - schools/k12/district
+related:
+- Bonneville County
+- Irwin
+authority: LOGAN
 ---
-[[Irwin]], [[Bonneville County]] 
+Irwin, Bonneville County

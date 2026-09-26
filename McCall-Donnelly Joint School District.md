@@ -1,7 +1,8 @@
 ---
-aliases:
-  - McCall-Donnelly
-tags:
-  - schools/k12/district
+related:
+- Donnelly
+- McCall
+- Valley County
+authority: LOGAN
 ---
-[[McCall]]/[[Donnelly]], [[Valley County]] 
+McCall/Donnelly, Valley County

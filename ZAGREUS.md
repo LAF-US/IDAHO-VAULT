@@ -1,10 +1,12 @@
 ---
-tags: [HERO, VOICE, PERSONA]
 title: ZAGREUS
-aliases: [ZAGREUS]
 linter-yaml-title-alias: ZAGREUS
+related:
+- The world is quiet here
+authority: LOGAN
+---
 ---
 
----
-
-[["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

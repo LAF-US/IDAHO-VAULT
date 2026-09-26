@@ -1,5 +1,7 @@
 ---
-aliases:
-  - LAPD
+related:
+- Los Angeles
+- police
+authority: LOGAN
 ---
-[[Los Angeles]] [[police]] 
+Los Angeles police

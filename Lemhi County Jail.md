@@ -1,1 +1,9 @@
-[[County Sheriff]], [[Lemhi County]] [[jails|jail]]
+---
+authority: LOGAN
+related:
+- County Sheriff
+- Lemhi
+- Lemhi County
+---
+
+County Sheriff, Lemhi County jail

@@ -1,8 +1,7 @@
 ---
-tags:
-  - party/republican
-aliases:
-  - IRWF
-  - Republican Women
+related:
+- Idaho
+- Idaho Republican Party
+authority: LOGAN
 ---
-[[Idaho Republican Party]] women's affinity group 
+Idaho Republican Party women's affinity group

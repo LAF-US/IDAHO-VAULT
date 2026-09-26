@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Lapwai
-tags:
-  - schools/k12/district
+related:
+- Lapwai
+- Nez Perce County
+authority: LOGAN
 ---
-[[Lapwai]], [[Nez Perce County]] 
+Lapwai, Nez Perce County

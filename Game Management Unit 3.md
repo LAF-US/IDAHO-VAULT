@@ -1,7 +1,7 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - GMU 3
+related:
+- Kootenai
+- Kootenai County
+authority: LOGAN
 ---
-central [[Kootenai County]] 
+central Kootenai County

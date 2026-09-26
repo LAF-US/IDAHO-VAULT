@@ -1,7 +1,9 @@
 ---
-tags:
-  - geography/land/places/communities
+related:
+- Long Valley
+- Valley County
+authority: LOGAN
 ---
-[[Valley County]] 
+Valley County
 
-[[Long Valley]] 
+Long Valley

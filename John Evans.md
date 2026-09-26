@@ -1,10 +1,6 @@
 ---
-tags:
-  - party/democratic
-  - people/deceased
-  - people/elected/statewide/governor
-  - people/candidate/statewide/governor
-  - people/elected/statewide/ltgov
-  - people/candidate/statewide/ltgov
+related:
+- Governor
+authority: LOGAN
 ---
-former [[Governor]] 
+former Governor

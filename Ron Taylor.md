@@ -1,9 +1,12 @@
 ---
-tags:
-  - party/democratic
-  - people/elected
-  - people/elected/legislative
-  - people
+related:
+- Hailey
+- Michelle
+- Michelle Stennett
+- Senate member
+- redistricting
+authority: LOGAN
 ---
-Residence: [[Hailey]] 
-- [[Senate member]] for [[Legislative District 26|LD26]], replaced [[Michelle Stennett]] after [[redistricting]] 
+Residence: Hailey
+
+- Senate member for LD26, replaced Michelle Stennett after redistricting

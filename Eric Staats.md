@@ -1,6 +1,6 @@
 ---
-tags:
-  - people
+related:
+- Idaho
+authority: LOGAN
 ---
-
-[[Department of Transportation|Idaho Transportation Department]] Engineer Manager
+Idaho Transportation Department Engineer Manager

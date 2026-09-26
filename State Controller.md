@@ -1,9 +1,10 @@
 ---
-tags:
-  - position/elected/statewide/executive
-  - governments/state/executive
-aliases:
-  - Controller
+related:
+- Brandon Woolf
+- State Treasurer
+- money
+authority: LOGAN
 ---
-[[State Treasurer]] accepts the money, Controller spends it.
-- [[Brandon Woolf]] 
+State Treasurer accepts the money, Controller spends it.
+
+- Brandon Woolf

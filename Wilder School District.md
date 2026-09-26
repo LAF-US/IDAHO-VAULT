@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Wilder
-tags:
-  - schools/k12/district
+related:
+- Canyon County
+- Wilder
+authority: LOGAN
 ---
-[[Wilder]], [[Canyon County]] 
+Wilder, Canyon County

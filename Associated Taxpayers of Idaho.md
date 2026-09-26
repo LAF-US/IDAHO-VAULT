@@ -1,11 +1,10 @@
 ---
-aliases:
-  - ATI
-  - ATI conference
-  - taxpayers conference
-  - taxpayers association
+related:
+- Miguel Legarreta
+- President
+- taxes
+authority: LOGAN
 ---
+President Miguel Legarreta
 
-President [[Miguel Legarreta]] 
-
-[[taxes]] 
+taxes

@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Wallace
-tags:
-  - schools/k12/district
+related:
+- Shoshone
+- Shoshone County
+- Wallace
+authority: LOGAN
 ---
-[[Wallace]], [[Shoshone County]] 
+Wallace, Shoshone County

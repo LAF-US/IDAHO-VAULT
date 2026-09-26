@@ -1,8 +1,7 @@
 ---
-aliases:
-  - Jewish
-  - Judeo
-  - Jew
-  - Jews
+related:
+- religion
+- synagogues
+authority: LOGAN
 ---
-[[religion]] - [[synagogues]] 
+religion - synagogues

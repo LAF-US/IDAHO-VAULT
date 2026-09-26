@@ -1,0 +1,74 @@
+---
+source: "https://en.wikipedia.org/wiki/Dungeons_%26_Dragons"
+author:
+  - "[[Wikipedia]]"
+published: 2001-10-04
+created: 2026-04-17
+---
+***Dungeons & Dragons*** (commonly abbreviated as ***D&D*** or ***DnD***) [^5] is a fantasy [tabletop role-playing game](https://en.wikipedia.org/wiki/Tabletop_role-playing_game "Tabletop role-playing game") (TTRPG) originally created and designed by [Gary Gygax](https://en.wikipedia.org/wiki/Gary_Gygax "Gary Gygax") and [Dave Arneson](https://en.wikipedia.org/wiki/Dave_Arneson "Dave Arneson").[^6] [^7] [^8] The game was first published in 1974 by [Tactical Studies Rules](https://en.wikipedia.org/wiki/TSR_\(company\)#Tactical_Studies_Rules "TSR (company)") (TSR).[^8] It has been published by [Wizards of the Coast](https://en.wikipedia.org/wiki/Wizards_of_the_Coast "Wizards of the Coast"), later a subsidiary of [Hasbro](https://en.wikipedia.org/wiki/Hasbro "Hasbro"), since 1997. The game was derived from [miniature wargames](https://en.wikipedia.org/wiki/Miniature_wargaming "Miniature wargaming"), with a variation of the 1971 game *[Chainmail](https://en.wikipedia.org/wiki/Chainmail_\(game\) "Chainmail (game)")* serving as the initial rule system.[^7] [^9] *D&D* 's publication is commonly recognized as the beginning of modern role-playing games and the role-playing game industry,[^8] [^10] which also deeply influenced [video games](https://en.wikipedia.org/wiki/Video_games "Video games"), especially the [role-playing](https://en.wikipedia.org/wiki/Role-playing_video_game "Role-playing video game") video game genre.[^11] [^12] [^13]
+
+*D&D* departs from traditional [wargaming](https://en.wikipedia.org/wiki/Wargame "Wargame") by allowing each player to create their own [character](https://en.wikipedia.org/wiki/Player_character "Player character") to play instead of a [military formation](https://en.wikipedia.org/wiki/Military_formation "Military formation"). These characters embark upon adventures within a fantasy setting. A [Dungeon Master](https://en.wikipedia.org/wiki/Dungeon_Master "Dungeon Master") (DM) serves as referee and storyteller for the game, while maintaining the setting in which the adventures occur, and playing the role of the inhabitants of the game world, known as [non-player characters](https://en.wikipedia.org/wiki/Non-player_character "Non-player character") (NPCs). The characters form a [party](https://en.wikipedia.org/wiki/Party_\(role-playing_games\) "Party (role-playing games)") and they interact with the setting's inhabitants and each other. Together they solve problems, engage in battles, explore, and gather treasure and knowledge. In the process, player characters earn [experience points](https://en.wikipedia.org/wiki/Experience_point "Experience point") (XP) to level up, and become increasingly powerful over a series of separate gaming sessions.[^6] [^10] [^14] Players choose a class when they create their character, which gives them special perks and abilities every few levels.
+
+The early success of *D&D* led to a proliferation of similar game systems. Despite the competition, *D&D* has remained the market leader in the role-playing game industry.[^15] [^16] In 1977, the game was split into two branches: the relatively rules-light game system of [basic *Dungeons & Dragons*](https://en.wikipedia.org/wiki/Editions_of_Dungeons_%26_Dragons#Dungeons_&_Dragons_Basic_Set_and_revisions "Editions of Dungeons & Dragons"), and the more structured, rules-heavy game system of *[Advanced Dungeons & Dragons](https://en.wikipedia.org/wiki/Editions_of_Dungeons_%26_Dragons#Advanced_Dungeons_&_Dragons "Editions of Dungeons & Dragons")* (abbreviated as *AD&D*).[^17] [^18] [^19] *AD&D* 2nd Edition was published in 1989. In 2000, a new system was released as *D&D* 3rd edition, continuing the edition numbering from *AD&D*; a revised version 3.5 was released in June 2003. These 3rd edition rules formed the basis of the [d20 System](https://en.wikipedia.org/wiki/D20_system "D20 system"), which is available under the [Open Game License](https://en.wikipedia.org/wiki/Open_Game_License "Open Game License") (OGL) for use by other publishers. *D&D* 4th edition was released in June 2008.[^20] The 5th edition of *D&D*, the most recent, was released during the second half of 2014.[^16]
+
+In 2004, *D&D* remained the best-known,[^21] and best-selling,[^22] role-playing game in the US, with an estimated 20 million people having played the game and more than US$1 billion in book and equipment sales worldwide.[^6] The year 2017 had "the most number of players in its history—12 million to 15 million in North America alone".[^23] *D&D 5th edition* sales "were up 41 percent in 2017 from the year before, and soared another 52 percent in 2018, the game's biggest sales year yet".[^16] The game has been supplemented by many premade [adventures](https://en.wikipedia.org/wiki/Adventure_\(Dungeons_%26_Dragons\) "Adventure (Dungeons & Dragons)"), as well as commercial [campaign settings](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons_campaign_settings "Dungeons & Dragons campaign settings") suitable for use by regular gaming groups.[^24] *D&D* is known beyond the game itself for other [*D&D* -branded products](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons-related_products "Dungeons & Dragons-related products"), [references in popular culture](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons_in_popular_culture "Dungeons & Dragons in popular culture"), and some of the [controversies that have surrounded it](https://en.wikipedia.org/wiki/Dungeons_%26_Dragons_controversies "Dungeons & Dragons controversies"), particularly a [moral panic](https://en.wikipedia.org/wiki/Satanic_panic "Satanic panic") in the 1980s that attempted to associate it with [Satanism](https://en.wikipedia.org/wiki/Satanism "Satanism") and suicide.[^6] [^25] [^26] The game has won multiple awards and has been translated into many languages.
+
+[^5]: ["D&D: The 'What does that stand for?' list"](https://www.geeknative.com/64619/dd-the-what-does-that-stand-for-list/). *Geek Native*. February 18, 2019. [Archived](https://web.archive.org/web/20200225182354/https://www.geeknative.com/64619/dd-the-what-does-that-stand-for-list/) from the original on February 25, 2020. Retrieved February 25, 2020.
+
+[^6]: Waters, Darren (April 26, 2004). ["What happened to Dungeons and Dragons?"](https://news.bbc.co.uk/2/hi/uk_news/magazine/3655627.stm). *[BBC News](https://en.wikipedia.org/wiki/BBC_News "BBC News")*. [Archived](https://web.archive.org/web/20191227184108/http://news.bbc.co.uk/2/hi/uk_news/magazine/3655627.stm) from the original on December 27, 2019. Retrieved February 25, 2020.
+
+[^7]: D'Anastasio, Cecilia (August 26, 2019). ["Dungeons & Deceptions: The First D&D Players Push Back On The Legend Of Gary Gygax"](https://kotaku.com/dungeons-deceptions-the-first-d-d-players-push-back-1837516834). *[Kotaku](https://en.wikipedia.org/wiki/Kotaku "Kotaku")*. [Archived](https://web.archive.org/web/20200629155353/https://kotaku.com/dungeons-deceptions-the-first-d-d-players-push-back-1837516834) from the original on June 29, 2020. Retrieved February 25, 2020.
+
+[^8]: Michaud, Jon (November 2, 2015). ["The Tangled Cultural Roots of Dungeons & Dragons"](https://www.newyorker.com/books/page-turner/the-tangled-cultural-roots-of-dungeons-dragons). *[The New Yorker](https://en.wikipedia.org/wiki/The_New_Yorker "The New Yorker")*. [Archived](https://web.archive.org/web/20200309221348/https://www.newyorker.com/books/page-turner/the-tangled-cultural-roots-of-dungeons-dragons) from the original on March 9, 2020. Retrieved February 25, 2020.
+
+[^9]: [Birnbaum 2004](#CITEREFBirnbaum2004)
+
+[^10]: J. Patrick Williams; Sean Q. Hendricks; W. Keith Winkler (2006). *Gaming as Culture, Essays on Reality, Identity and Experience in Fantasy Games*. Jefferson, N.C.: McFarland & Company. pp. 1–14, 27. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-7864-2436-2](https://en.wikipedia.org/wiki/Special:BookSources/0-7864-2436-2 "Special:BookSources/0-7864-2436-2"). [OCLC](https://en.wikipedia.org/wiki/OCLC_\(identifier\) "OCLC (identifier)") [63122794](https://search.worldcat.org/oclc/63122794).
+
+[^11]: Kogod, Theo (September 30, 2020). ["11 Ways Dungeons & Dragons Influenced Video Games"](https://www.thegamer.com/ways-dungeons-dragons-influenced-video-games/). *TheGamer*. Retrieved August 6, 2022.
+
+[^12]: ["The influence of role-playing in video games"](http://www.gametopiastudios.com/beyond/article/03/2019/18/influence-role-playing-in-videogames). *<www.gametopiastudios.com>*. [Archived](https://web.archive.org/web/20220806185634/http://www.gametopiastudios.com/beyond/article/03/2019/18/influence-role-playing-in-videogames) from the original on August 6, 2022. Retrieved August 6, 2022.
+
+[^13]: ["The Influence of Dungeons and Dragons on Video Games"](https://www.museumofplay.org/blog/the-influence-of-dungeons-and-dragons-on-video-games/). *The Strong National Museum of Play*. May 6, 2011. Retrieved August 6, 2022.
+
+[^14]: Jahromi, Neima (October 24, 2017). ["The Uncanny Resurrection of Dungeons & Dragons"](https://www.newyorker.com/culture/cultural-comment/the-uncanny-resurrection-of-dungeons-and-dragons). *[The New Yorker](https://en.wikipedia.org/wiki/The_New_Yorker "The New Yorker")*. [Archived](https://web.archive.org/web/20200619190633/https://www.newyorker.com/culture/cultural-comment/the-uncanny-resurrection-of-dungeons-and-dragons) from the original on June 19, 2020. Retrieved February 25, 2020.
+
+[^15]: "Frankly, the difference in sales between Wizards and all other producers of roleplaying games is so staggering that even saying there is an 'RPG industry' at all may be generous." [Cook, Monte](https://en.wikipedia.org/wiki/Monte_Cook "Monte Cook"). ["The Open Game License as I See It – Part II"](https://web.archive.org/web/20060328184105/http://www.montecook.com/cgi-bin/page.cgi?mc_los_155). Archived from [the original](http://www.montecook.com/cgi-bin/page.cgi?mc_los_155) on March 28, 2006. Retrieved May 28, 2019.
+
+[^16]: Pilon, Mary (July 8, 2019). ["The Rise of the Professional Dungeon Master"](https://www.bloomberg.com/news/features/2019-07-08/how-to-be-a-professional-dungeons-dragons-master-hosting-games). *[Bloomberg Businessweek](https://en.wikipedia.org/wiki/Bloomberg_Businessweek "Bloomberg Businessweek")*. [Archived](https://web.archive.org/web/20190710004711/https://www.bloomberg.com/news/features/2019-07-08/how-to-be-a-professional-dungeons-dragons-master-hosting-games) from the original on July 10, 2019. Retrieved February 25, 2020.
+
+[^17]: Gygax; "From the Sorcerer's Scroll" in *The Dragon* #26.
+
+[^18]: Vehovec, Doug (August 23, 2018). ["Is There a Best Edition of D&D? Absolutely"](https://nerdarchy.com/is-there-a-best-edition-of-dd-absolutely/). *Nerdarchy*. [Archived](https://web.archive.org/web/20200701081114/https://nerdarchy.com/is-there-a-best-edition-of-dd-absolutely/) from the original on July 1, 2020. Retrieved February 25, 2020.
+
+[^19]: Appelcline, Shannon. ["Players Handbook (1e) - Product History"](https://www.dmsguild.com/product/17003/Players-Handbook-1e). *Dungeon Masters Guild*. [Archived](https://web.archive.org/web/20200225190002/https://www.dmsguild.com/product/17003/Players-Handbook-1e) from the original on February 25, 2020. Retrieved February 25, 2020.
+
+[^20]: [Harold Johnson](https://en.wikipedia.org/wiki/Harold_Johnson_\(game_designer\) "Harold Johnson (game designer)"); [Steve Winter](https://en.wikipedia.org/wiki/Steve_Winter_\(game_designer\) "Steve Winter (game designer)"); [Peter Adkison](https://en.wikipedia.org/wiki/Peter_Adkison "Peter Adkison"); [Ed Stark](https://en.wikipedia.org/wiki/Ed_Stark "Ed Stark"); Peter Archer (2004). *[30 Years of Adventure](https://en.wikipedia.org/wiki/30_Years_of_Adventure "30 Years of Adventure"): A Celebration of Dungeons & Dragons*. Renton, WA: Wizards of the Coast. p. 253. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-7869-3498-0](https://en.wikipedia.org/wiki/Special:BookSources/0-7869-3498-0 "Special:BookSources/0-7869-3498-0"). [OCLC](https://en.wikipedia.org/wiki/OCLC_\(identifier\) "OCLC (identifier)") [56961559](https://search.worldcat.org/oclc/56961559).
+
+[^21]: According to a 1999 survey in the United States, 6% of 12- to 35-year-olds have played role-playing games. Of those who play regularly, two-thirds play *D&D*. (Dancey; Adventure Game Industry Market Research Summary)
+
+[^22]: Products branded *Dungeons & Dragons* made up over fifty percent of the RPG products sold in 2005. (Hite; State of the Industry 2005)
+
+[^23]: Brodeur, Nicole (May 4, 2018). ["Behind the scenes of the making of Dungeons & Dragons"](https://www.seattletimes.com/life/lifestyle/behind-the-scenes-of-the-making-of-dungeons-dragons/). *[The Seattle Times](https://en.wikipedia.org/wiki/The_Seattle_Times "The Seattle Times")*. [Archived](https://web.archive.org/web/20180513132519/https://www.seattletimes.com/life/lifestyle/behind-the-scenes-of-the-making-of-dungeons-dragons/) from the original on May 13, 2018. Retrieved February 25, 2020.
+
+[^24]: Heller, Emily (May 26, 2018). ["A beginner's guide to playing Dungeons and Dragons"](https://www.polygon.com/2018/5/26/17153274/dnd-how-to-play-dungeons-dragons-5e-guide-spells-dice-character-sheets-dm). *Polygon*. [Archived](https://web.archive.org/web/20200611235323/https://www.polygon.com/2018/5/26/17153274/dnd-how-to-play-dungeons-dragons-5e-guide-spells-dice-character-sheets-dm) from the original on June 11, 2020. Retrieved February 25, 2020.
+
+[^25]: Waldron, David (2005). ["Role-Playing Games and the Christian Right: Community Formation in Response to a Moral Panic"](http://researchonline.federation.edu.au/vital/access/HandleResolver/1959.17/44257). *The Journal of Religion and Popular Culture*. **9** (1). University of Toronto Press Inc. (UTPress): 3. [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi (identifier)"):[10.3138/jrpc.9.1.003](https://doi.org/10.3138%2Fjrpc.9.1.003). [hdl](https://en.wikipedia.org/wiki/Hdl_\(identifier\) "Hdl (identifier)"):[1959.17/44257](https://hdl.handle.net/1959.17%2F44257). [ISSN](https://en.wikipedia.org/wiki/ISSN_\(identifier\) "ISSN (identifier)") [1703-289X](https://search.worldcat.org/issn/1703-289X). [Archived](https://web.archive.org/web/20240728002604/https://researchonline.federation.edu.au/vital/access/manager/Repository/vital:919;jsessionid=C99F96AA4FC4A2C5CC435B4B511892C7) from the original on July 28, 2024. Retrieved May 10, 2021.
+
+[^26]: [*McMartin Preschool: Anatomy of a Panic - Retro Report*](https://www.youtube.com/watch?v=ATUpSPj0x-c). *The New York Times*. [Archived](https://web.archive.org/web/20220921041259/https://www.youtube.com/watch?v=ATUpSPj0x-c) from the original on September 21, 2022. Retrieved July 31, 2018.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

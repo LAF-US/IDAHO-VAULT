@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Josiah Buster
-tags:
-  - people
+related:
+- Patriot Front
+- Texas
+authority: LOGAN
 ---
-[[Patriot Front]] member, [[Texas]] resident, [[Mishael Joshua Buster|Mishael Buster]] brother
+Patriot Front member, Texas resident, Mishael Buster brother

@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Marsh Valley
-tags:
-  - schools/k12/district
+related:
+- Arimo
+- Bannock County
+- Marsh Valley
+authority: LOGAN
 ---
-[[Arimo]]/[[Marsh Valley]], [[Bannock County]] 
+Arimo/Marsh Valley, Bannock County

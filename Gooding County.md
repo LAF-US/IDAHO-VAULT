@@ -1,10 +1,10 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
-aliases:
-  - Gooding
-  - 2G
+related:
+- Bliss
+- Gooding
+- Hagerman
+- Wendell
+authority: LOGAN
 ---
-Seat: [[Gooding]]
-Municipalities: [[Bliss]], [[Hagerman]], [[Wendell]] 
+Seat: Gooding
+Municipalities: Bliss, Hagerman, Wendell

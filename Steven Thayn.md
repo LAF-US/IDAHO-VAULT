@@ -1,11 +1,13 @@
 ---
-tags:
-  - people/elected/legislative
-  - people/elected
-  - party/republican
-  - people
+related:
+- Emmett
+- Senate Education
+- Senate member
+- redistricting
+authority: LOGAN
 ---
-Residence: [[Emmett]]
+Residence: Emmett
 
-Former [[Senate member|Senate member]], defeated in primary after [[redistricting]]
-- Former [[Senate Education]] chair
+Former Senate member, defeated in primary after redistricting
+
+- Former Senate Education chair

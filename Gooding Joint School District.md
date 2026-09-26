@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Gooding
-tags:
-  - schools/k12/district
+related:
+- Gooding
+- Gooding County
+authority: LOGAN
 ---
-[[Gooding]], [[Gooding County]] 
+Gooding, Gooding County

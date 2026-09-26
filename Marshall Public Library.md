@@ -1,1 +1,7 @@
-[[Pocatello]] public [[libraries|library]] founded in 1907
+---
+authority: LOGAN
+related:
+- Pocatello
+---
+
+Pocatello public library founded in 1907

@@ -1,7 +1,11 @@
 ---
-tags:
-  - party/republican
-  - position/elected/precinct
+related:
+- Bear
+- Bear Lake
+- Bear Lake County
+- Idaho
+- Idaho Republican Party
+- Lake
+authority: LOGAN
 ---
-
-Local [[Idaho Republican Party]] [[precinct committeemen|precinct committee]] for [[Bear Lake County]] 
+Local Idaho Republican Party precinct committee for Bear Lake County

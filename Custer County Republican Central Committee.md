@@ -1,7 +1,9 @@
 ---
-tags:
-  - party/republican
-  - position/elected/precinct
+related:
+- Custer
+- Custer County
+- Idaho
+- Idaho Republican Party
+authority: LOGAN
 ---
-
-Local [[Idaho Republican Party]] [[precinct committeemen|precinct committee]] for [[Custer County]] 
+Local Idaho Republican Party precinct committee for Custer County

@@ -1,7 +1,11 @@
 ---
-aliases:
-  - Bruneau-Grand View
-tags:
-  - schools/k12/district
+related:
+- Bruneau
+- Grand View
+- Oreana
+- Owyhee
+- Owyhee County
+- View
+authority: LOGAN
 ---
-[[Bruneau]]/[[Grand View]]/[[Oreana]], [[Owyhee County]] 
+Bruneau/Grand View/Oreana, Owyhee County

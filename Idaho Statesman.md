@@ -1,8 +1,9 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Idaho Statesman]]"
+- Idaho Statesman
+related:
+- Boise
+- Idaho
+authority: LOGAN
 ---
-
-[[Boise]] [[newspapers|newspaper]] 
+Boise newspaper

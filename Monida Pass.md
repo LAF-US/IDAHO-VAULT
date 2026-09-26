@@ -1,6 +1,6 @@
 ---
-tags:
-  - geography/land/places/communities
+related:
+- Montana
+authority: LOGAN
 ---
-
-[[Montana]] state line
+Montana state line

@@ -1,24 +1,30 @@
 ---
-aliases:
-  - PHD5
-  - SCPHD
-tags:
-  - geography/land/state/region
-  - position/appointed/county/healthdistricts
+related:
+- '208'
+- '737'
+- Gooding
+- Jerome
+- Lincoln
+- Magic Valley
+- Minidoka
+- Twin Falls
+- Washington
+authority: LOGAN
 ---
-District Director: [[Melody Bowyer]]  
+District Director: Melody Bowyer  
 1020 Washington Street N.  
-[[Twin Falls]], ID 83301-3156  
+Twin Falls, ID 83301-3156  
 1-208-737-5900
 
-[[Magic Valley]] [[public health districts|public health district]] 
+Magic Valley public health district
 
-Counties: 
-- [[Blaine County|Blaine]]
-- [[Camas County|Camas]]
-- [[Gooding County|Gooding]]
-- [[Lincoln County|Lincoln]]
-- [[Jerome County|Jerome]]
-- [[Minidoka County|Minidoka]]
-- [[Cassia County|Cassia]]
-- [[Twin Falls County|Twin]]
+Counties:
+
+- Blaine
+- Camas
+- Gooding
+- Lincoln
+- Jerome
+- Minidoka
+- Cassia
+- Twin

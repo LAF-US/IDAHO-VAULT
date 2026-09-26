@@ -1,1 +1,8 @@
-[[magistrate court]] [[Bonner County]] [[courthouses|courthouse]] 
+---
+authority: LOGAN
+related:
+- Bonner County
+- magistrate court
+---
+
+magistrate court Bonner County courthouse

@@ -1,12 +1,79 @@
 ---
 author:
-  - "[[Anne Helen Petersen]]"
+- Anne Helen Petersen
 outlet:
-  - "[[Buzzfeed News]]"
+- Buzzfeed News
 URL: https://www.buzzfeednews.com/article/annehelenpetersen/coronavirus-covid-cities-second-homes-rural-small-towns
-tags:
-  - media/articles
-  - 2020/03/31
+related:
+- '187'
+- '200'
+- '250'
+- '500'
+- Anne Helen Petersen
+- Banks
+- Blaine County
+- Boise
+- Colorado
+- Connecticut
+- Facebook
+- Grangeville
+- ICU
+- Idaho
+- Idaho Statesman
+- Lake
+- Maine
+- Medicaid
+- Missoula
+- Montana
+- Netflix
+- New York
+- North Carolina
+- North Idaho
+- OUT
+- Oregon
+- Portland
+- San Francisco
+- Seattle
+- Summit County
+- Sun Valley
+- Texas
+- Twitter
+- Utah
+- Washington
+- Wyoming
+- affordable housing
+- airport
+- apartments
+- broadband
+- chain
+- children
+- cities
+- connections
+- coronavirus
+- counties
+- dollars
+- economic development
+- emergency room
+- fishing
+- flooding
+- health care
+- homes
+- hospitals
+- housing
+- infrastructure
+- nurses
+- parents
+- police
+- self
+- sign
+- ski resorts
+- social media
+- systems
+- taxes
+- teachers
+- water
+- window
+authority: LOGAN
 ---
 *You might not want to spend your quarantine in a city. But the rural places many Americans treat as playgrounds, and the workers who keep them running, will suffer for it.*
 
@@ -24,7 +91,7 @@ From the coast of Maine to the North Shore of Lake Superior, hundreds of thousan
 
 For now, in the absence of any clear federal guidelines restricting domestic travel, residents in many small towns across the US are drafting their own ad hoc policies for outside visitors. In Skamania County, outside of Portland, there are signs spray-painted with “STAY OUT LOCALS ONLY” posted around town. One resident told me that community members will follow around any car they don’t recognize that enters the neighborhood. (The local hardware store is also offering free toilet paper with the purchase of a firearm.) At a small backwoods inn on the banks of the Rogue River in Oregon, 200 miles from the nearest hospital, the owner told me that even with a “NO VACANCY” sign up, and the restaurant closed down, she still had people knocking on the door, looking for a long-term place to stay.
 
-In Dare County, North Carolina — the Outer Banks — police have set up a checkpoint to turn back anyone, even a second-home owner, who’s not a full-time resident. The tiny island of North Haven, Maine, has banned all visitors, including people who own property, while locals in Vinalhaven tried to forcibly quarantine three people by downing a tree across their street because their car had out-of-state plates. In Marfa, Texas, like dozens of other vacation spots across the country, the local government has requested that all short-term rentals be shut down. But locals I spoke to in Marfa and in towns across the West suspect that people are still renting under the table, or have simply transformed their Airbnbs into three-to-four-month furnished rentals and are listing them on Zillow, Craigslist, and [[Facebook]] Community Pages instead.
+In Dare County, North Carolina — the Outer Banks — police have set up a checkpoint to turn back anyone, even a second-home owner, who’s not a full-time resident. The tiny island of North Haven, Maine, has banned all visitors, including people who own property, while locals in Vinalhaven tried to forcibly quarantine three people by downing a tree across their street because their car had out-of-state plates. In Marfa, Texas, like dozens of other vacation spots across the country, the local government has requested that all short-term rentals be shut down. But locals I spoke to in Marfa and in towns across the West suspect that people are still renting under the table, or have simply transformed their Airbnbs into three-to-four-month furnished rentals and are listing them on Zillow, Craigslist, and Facebook Community Pages instead.
 
 In Montana, where I live, state residents have been officially advised to shelter in place, but short-term rentals have not yet been restricted. Vacation rental revenue estimates for early March in the Whitefish zip code rose from $1.1 million to $2.1 million, year over year. And a Whitefish rental company recently sent an email blast advertising the area’s “low population to help with social distancing” for those “looking for a great spot to isolate or self-quarantine.” (After community outcry, the owner apologized.) A luxury travel booker told Forbes she’s still busy booking “a lot of resorts in mountain areas,” including Paws Up Resort, 45 minutes outside of Missoula, which bills itself as “like a national park, but private.” Cabin rentals currently start at $1,250 a day. The owners of one Airbnb in Bozeman briefly listed it as “The Last Best Place to Quarantine.”
 
@@ -38,9 +105,9 @@ Most people arriving from cities aren’t thinking about these things — and th
 
 “The worst part is that these second-home owners are coming up and acting like isolation is a vacation,” said Jen, 39, who lives in the northwest Colorado Rockies.
 
-That sense of entitlement is nothing new in the US. “Rural, nature-heavy environments have long served as a way for a privileged (and overwhelmingly white) ‘Us’ to get away from an othered and less-privileged ‘Them,’” writer Rahawa Haile pointed out last week on Twitter. “People of means who feel entitled to space and perceived ‘purity’ will flock to it if law and infrastructure allow it.” Ashleigh Weeden, who’s completing her PhD in rural studies at the University of Guelph, told me that many people still think of rural and remote places as “empty,” as places of escape — which, in her words, “ignores that there are entire communities of people who live there year-round and [[indigenous peoples|indigenous people]] who’ve lived in these places since time immemorial.”
+That sense of entitlement is nothing new in the US. “Rural, nature-heavy environments have long served as a way for a privileged (and overwhelmingly white) ‘Us’ to get away from an othered and less-privileged ‘Them,’” writer Rahawa Haile pointed out last week on Twitter. “People of means who feel entitled to space and perceived ‘purity’ will flock to it if law and infrastructure allow it.” Ashleigh Weeden, who’s completing her PhD in rural studies at the University of Guelph, told me that many people still think of rural and remote places as “empty,” as places of escape — which, in her words, “ignores that there are entire communities of people who live there year-round and indigenous people who’ve lived in these places since time immemorial.”
 
-> “The worst part is that these second-home owners are coming up and acting like isolation is a vacation.” 
+> “The worst part is that these second-home owners are coming up and acting like isolation is a vacation.”
 
 That view also helps explain some of the behaviors that full-time residents have reported seeing among the influx of out-of-towners. “They’re not respecting the locals who are desperately trying to maintain guidelines when grocery shopping or getting out for exercise. They’re strolling the aisles in outdoor gear, casually grabbing something for supper that night — not isolating and disinfecting like the locals are,” Jen said. “We know how precarious our situation is. The level of disrespect is palpable. And it hurts to think of what could be on the horizon due to their careless and self-entitled actions.”
 
@@ -66,14 +133,13 @@ In a recent article on class and the coronavirus, the New York Times described t
 
 And some of these places — particularly in northern states like Michigan, Montana, and Idaho, with abundant natural sources of water — have already been identified as places to retreat from the effects of climate change. “Rural communities are going to see an uptick, outside of the coronavirus, of people buying property and second homes as a refuge from climate change,” said Hardy, whose research focuses on Michigan’s Upper Peninsula. “And it’s the same thing with the so-called coronavirus refugee: People are thinking, Where do we want to be in a disaster situation? Where is the most safe? And the answer, to them, are these rural places.”
 
-
 Rural studies scholars debate constantly about what qualifies a place as rural — is it the number of people who live there? The density? The feel? An influx of people, hungry for the same conveniences they have in their urban life, not only changes the feel of a place, but also displaces the people who made that town what it was in the first place. It’s not just the projected medical shortages, then, that scare rural residents. It’s the way these current migration patterns serve as a forecast for the future to come — one characterized, in Hardy’s words, by a sort of “disaster gentrification.”
 
 >“People are thinking, Where do we want to be in a disaster situation? Where is the most safe? And the answer, to them, are these rural places.”
 
 Those scholars also debate the different categories of rural: the places that have fully embraced the amenity-rich tourism-dependent strategy (Whitefish, Aspen, Hudson Valley), the places transitioning to that model from land-based economies, and the places, in Hardy’s words, that are poor, struggling, and have no real path toward a tourist economy (areas of the Mississippi Delta and Appalachia, as well as hundreds of former ranching, farming, or mining communities across the US). Right now, much of the national media’s focus is on areas in those first two categories. But COVID-19 is undoubtedly coming for the poor rural areas, too.
 
-It will take longer, and it might not solely be through rich visitors. Instead, it will spread through retirement homes, as it has in Lander, Wyoming, and decimate the disproportionately elderly populations that fill these rural states. It will spread through [[indigenous peoples|Native American]] reservations, where the Indian Health Service is unequipped to deal with the crisis, and where many extended families live together in one home. It will be particularly dire in the rural South, where community members are more likely to be uninsured and living in poverty than anywhere else in the county. It will come home with truck drivers and gas station attendants and those who work or shop at Walmarts in the closest midsize town. It will come to the dozens of counties whose hospitals have closed as their governors continue to refuse Medicaid expansion. On March 30, nearly half of the nation's rural counties had reported at least one confirmed case of COVID-19.
+It will take longer, and it might not solely be through rich visitors. Instead, it will spread through retirement homes, as it has in Lander, Wyoming, and decimate the disproportionately elderly populations that fill these rural states. It will spread through Native American reservations, where the Indian Health Service is unequipped to deal with the crisis, and where many extended families live together in one home. It will be particularly dire in the rural South, where community members are more likely to be uninsured and living in poverty than anywhere else in the county. It will come home with truck drivers and gas station attendants and those who work or shop at Walmarts in the closest midsize town. It will come to the dozens of counties whose hospitals have closed as their governors continue to refuse Medicaid expansion. On March 30, nearly half of the nation's rural counties had reported at least one confirmed case of COVID-19.
 
 The virus, some people have taken to saying, “does not discriminate.” But that’s not quite true. It is putting our class and racial hierarchies in harsh relief — systems that favor the rich and the globally mobile while declaring the work of so many of the working class “essential.” Wealth is the vector. And the economically precarious will suffer because of it — whether they’re cleaning the offices of the infected in New York or checking groceries in Blaine County, Idaho.
 

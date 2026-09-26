@@ -1,8 +1,7 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
-aliases:
-  - LA
+related:
+- California
+- Orange County
+authority: LOGAN
 ---
-[[Orange County]], [[California]] 
+Orange County, California

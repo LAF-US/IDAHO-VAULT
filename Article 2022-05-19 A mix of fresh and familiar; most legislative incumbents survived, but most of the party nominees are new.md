@@ -1,10 +1,21 @@
 ---
-tags:
-  - media/articles
-  - 2022/05/19
-  - 2022/election
+date created: Monday, March 23rd 2026, 4:54:51 pm
+date modified: Monday, March 30th 2026, 8:38:43 pm
+related:
+- GOP
+- Idaho
+- Idaho Democratic Party
+- Idaho Legislature
+- Idaho Reports
+- Idaho Republican Party
+- Logan Finney
+- election
+- general election
+- legislative
+- redistricting
+authority: LOGAN
 ---
-by [[Logan Finney]], [[Idaho Reports]]
+by Logan Finney, Idaho Reports
 
 Most sitting Idaho legislators chose to seek reelection this year. They were joined by a large field of new candidates, with the majority of Republicans facing a contested legislative primary on Tuesday.
 

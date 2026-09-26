@@ -1,1 +1,7 @@
-[[DEFINE]] [[term]] 
+---
+authority: LOGAN
+related:
+- DEFINE
+---
+
+DEFINE term

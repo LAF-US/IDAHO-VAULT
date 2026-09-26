@@ -1,1 +1,7 @@
-[[chronic wasting disease|CWD]] 
+---
+authority: LOGAN
+related:
+- CWD
+---
+
+CWD

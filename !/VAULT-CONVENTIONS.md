@@ -16,35 +16,43 @@ This is a personal journalism research vault. It contains notes on Idaho politic
 
 ## Vault Structure
 
-This vault is intentionally hybrid. Governance and automation live in dedicated
-system folders, while a large share of the journalism corpus lives directly at
-repo root. Do not assume that a root-heavy layout means the vault is
-"unorganized," and do not use older taxonomy examples as permission to
-restructure the current vault.
-
-### Root Folder Semantics
-
-| Path | Meaning | Agent rule |
-| --- | --- | --- |
-| `!/` | Canonical governance, protocols, levelsets, records, routing | Read first for system truth. Do not restructure, rename, or clean without Logan's explicit direction. |
-| Repo root `.md` files | Primary note corpus and working knowledge base | Root-flat notes are intentional. Do not mass-move them into category folders without explicit authorization. |
-| `INBOX/` | Intake and staging area | Use for intake only when directed. Do not auto-empty or normalize it. |
-| `swarm/` | Swarm support artifacts and structured coordination data | Treat as infrastructure, not general note taxonomy. |
-| `.github/` | Automation, workflows, scripts, and GitHub-specific instructions | Safe to modify only within assigned automation work and governance boundaries. |
-| `.obsidian/` | Obsidian application configuration | Not note content. Respect sync and git boundaries before changing anything here. |
-| Agent/persona dotfolders such as `.claude/`, `.codex/`, `.gemini/`, `.grok/`, `.deepseek/`, `.google/`, `.meta/`, `.microsoft/`, `.perplexity/`, `.persephone/`, `.zagreus/`, `.bartimaeus/` | Agent/persona shims, governance files, and local identity infrastructure | Protected. Do not delete, rename, consolidate, or "clean up" these folders unless it is your own dotfolder or Logan explicitly directs the change. |
-| Tooling folders such as `.venv/`, `.vscode/`, `.qodo/` | Local environment or tool support | Do not infer that a hidden folder is disposable just because it is small, empty, or unfamiliar. |
-
-### Folder Rules For Emerging Agents
-
-- Treat `!/` as the vault control plane.
-- Treat root-flat notes as a deliberate operating choice, not a mistake to fix.
-- Treat persona dotfolders as keystone infrastructure, even when they contain
-  only a shim file or appear empty.
-- If a folder's purpose is unclear, stop and ask Logan before proposing
-  deletion, consolidation, or mass moves.
-- Historical references to older folder trees are descriptive context, not
-  standing authorization to reorganize the live vault.
+```
+IDAHO-VAULT/
+  !/                      System files, logs, agent routing
+  ATTACHMENTS/
+    DOCUMENTS/            PDFs, images
+    MAPS/                 Map files
+    TEMPLATES/            Obsidian templates (Article, Hearing, OP-ED, Press Release)
+  GOVERNMENTS/
+    IDAHO - EXECUTIVE/    Governor, departments, commissions, health districts
+    IDAHO - JUDICIAL/     Courts, judicial districts
+    IDAHO - LEGISLATIVE/
+      BILLS/              Named: (YYYY) Bill Type Number.md
+      DISTRICTS/          Legislative districts
+      IDAHO HOUSE/        House members, committees
+      IDAHO SENATE/       Senate members, committees
+      JOINT COMMITTEES/   Joint legislative committees
+      SESSIONS/           Session notes by year
+    USA - FEDERAL/        Federal entities, legislation, census
+    USA - TRIBES/         Tribal governments
+  ORGANIZATIONS/          Churches, companies, education, hospitals, legal, parties, politics, publications, unions
+  PEOPLE/                 Individual people (public figures)
+  PLACES/                 Cities, counties, schools, geography, regions, roads, taxing districts
+    OTHER/                Non-Idaho places (out-of-state cities, counties, countries, states)
+  SOURCES/
+    EDITORIALS/           Opinion pieces
+    HEARINGS/             Meeting/hearing notes, organized by year
+    INTERVIEWS/           Interview notes
+    LISTS/                Reference lists
+    NEWS MEDIA/           News articles. Named: YYYY-MM-DD - Outlet - Title.md
+    PODCASTS/             Podcast notes
+    PRESS RELEASES/       Press releases
+    RESOLUTIONS/          Resolutions
+  TOPICS/                 Subject areas (agriculture, economy, education, elections, fiscal, health, legal, etc.)
+  X LABELER/              Unsorted files pending classification
+  .github/scripts/        Automation scripts (Python)
+  .github/workflows/      GitHub Actions workflows
+```
 
 ---
 
@@ -60,28 +68,36 @@ restructure the current vault.
 
 ---
 
+## Document Classes and Templates
+
+The canonical class/template system is defined in `!/VAULT-TEMPLATES.md`.
+
+Rules:
+
+1. Every new note should be created from a recognized document class first.
+2. Required classes must use their canonical template and naming pattern.
+3. Unknown/ambiguous notes are staged as `misc_reference` and routed through `X LABELER/`.
+4. Class and template schema changes are governance changes, not ad-hoc formatting edits.
+
+See `!/VAULT-TEMPLATES.md` for:
+
+- class registry
+- template IDs
+- required frontmatter keys
+- routing/maintenance workflow
+- constitutional interaction model
+
+---
+
 ## Frontmatter Conventions
 
-All Obsidian files use YAML frontmatter. The canonical header/footer policy is defined in `!/VAULT-METADATA-STANDARD.md` and should be treated as the source of truth for required fields, optional fields, lifecycle status, timestamp format, authorship, and authority.
-
-### Baseline Required Fields (all governed markdown notes)
-
-```yaml
-title: "<document title>"
-updated: YYYY-MM-DD
-status: <draft|active|superseded|archived>
-authority: "<decision authority>"
-```
-
-### Type-Specific Additions
-
-Tags are stored in frontmatter only. Treat `tags:` as the canonical tag source for a note, use lowercase slash-path tags, and keep date/session/election tags as tags when they are part of the note taxonomy.
+All Obsidian files use YAML frontmatter. Key fields by type:
 
 **People:**
 
 ```yaml
 tags:
-  - party/republican # or party/democratic
+  - Party/Republican # or Party/Democratic
   - people/elected/legislative
 residence: "[[Boise]]"
 ```
@@ -94,7 +110,7 @@ outlet: "[[Outlet Name]]"
 URL: https://...
 tags:
   - media/articles
-  - 2024/01/15
+  - YYYY/MM/DD
 ```
 
 **Bills:**
@@ -102,7 +118,7 @@ tags:
 ```yaml
 tags:
   - bills
-  - 2026/session
+  - YYYY/session
 aliases:
   - HB 24
 cmte: ["[[Committee Name]]"]
@@ -115,7 +131,7 @@ URL: https://legislature.idaho.gov/...
 ```yaml
 cmte: "[[Committee Name]]"
 tags:
-  - 2023/12/19
+  - YYYY/MM/DD
 ```
 
 ---
@@ -134,22 +150,7 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 
 ---
 
-## Vault ↔ Linear Operating Model Mapping
-
-| Layer (purpose)            | Vault (canonical memory)                                                                                         | Linear (execution state)                                           | Chat/Slack (ephemeral)                                              |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------- |
-| **Core / Mind**<br>governing doctrine | Constitution, Charter, Codex, decision logs, doctrine/guidance updates, LEVELSET snapshots                           | Work items to draft/revise doctrine; link PRs/issues to vault artifacts | Quick clarifications; capture any decision back into Vault/PR issue |
-| **Periphery / Body**<br>operating mechanics | Protocols, procedures, preferences, templates/SOPs, stable checklists, automation docs                                   | Tasks/epics for doing the work, tracking status, ownership, deadlines | Live coordination, handoffs, Q&A; move outcomes to Linear/Vault     |
-| **Ghost / Soul**<br>interpretive/cultural layer | Guidelines, grimoire/interpretive notes, guestbook/cultural norms, context vaults                                          | Action items emerging from interpretive work (e.g., follow-ups, retro tasks) | Brainstorms, vibes, drafts; memorialize decisions/insights in Vault |
-| **`!` spaces**<br>operational infrastructure | System files, DOCKET, LEVELSET, agent routing, audit/log artifacts, workflow outputs that must persist                     | Incidents/infra tasks, runbooks in execution, workflow status, tickets | Real-time paging/alerts; record outcomes in Linear and Vault        |
-
-**Decision Rule:** Vault holds doctrine and context that must persist. Linear tracks execution, owners, and current state. Chat/Slack is transient coordination — any decision or durable context must be promoted promptly into Vault and/or Linear.
-
----
-
 ## Automation
-
-### Active Automation Scripts
 
 | Script                 | Purpose                                     | Trigger                         |
 | ---------------------- | ------------------------------------------- | ------------------------------- |
@@ -158,23 +159,6 @@ Use `[[Full Name]]` for all internal links — people, places, organizations, bi
 | `post_digest.py`       | Posts bill activity to GitHub Issues digest | Called by scraper workflow      |
 | `propose_moves.py`     | Proposes vault file reorganization          | Weekly Monday 7 AM UTC + manual |
 | `wayback_audit.py`     | Audits URL preservation in Wayback Machine  | Weekly Monday 8 AM UTC + manual |
-| `daily_rollover.py`    | Rolls over daily note tasks                 | Daily 4 AM MT                   |
-| `linear_brief_generator.py` | Generates research briefs from Linear issues | Called by linear-brief workflow |
-| `classify_paths.py`    | Classifies changed files by risk tier       | Called by auto-pr workflow      |
-| `validate_content.py`  | Validates vault content structure           | Called by multiple workflows    |
-| `post_levelset_closure.py` | Notifies when LEVELSET files ready for closure | Called by levelset-closure workflow |
-
-### Utility Scripts (Manual Use Only)
-
-These scripts are not called by automated workflows but are available for manual vault maintenance:
-
-| Script                  | Purpose                                                      | Usage                               |
-| ----------------------- | ------------------------------------------------------------ | ----------------------------------- |
-| `expand_date_aliases.py` | One-off: expands date alias frontmatter in daily notes       | `python3 .github/scripts/expand_date_aliases.py [--dry-run]` |
-| `normalize_tags.py`      | Normalizes Markdown note tags across vault                   | `python3 .github/scripts/normalize_tags.py [--write]` |
-| `tidy_daily_notes.py`    | One-off: normalizes daily note frontmatter structure         | `python3 .github/scripts/tidy_daily_notes.py [--dry-run]` |
-| `obsidian_rest_api_client.py` | REST API client for Obsidian Local REST API plugin    | Import/use in other scripts as needed |
-| `mcp_guardrails.py`      | MCP protocol guardrails (reserved for future MCP integration) | Import/use in MCP-enabled scripts   |
 
 Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scripts that commit to the repo use `git config user.name "github-actions[bot]"`. Dependencies are tracked in `.github/scripts/requirements-scraper.txt`.
 
@@ -224,29 +208,6 @@ When uncertain about sourcing category, **ask Logan**.
 
 ---
 
-## Obsidian Sync / Git Boundary
-
-Two systems share the vault. They have distinct, non-overlapping responsibilities.
-
-| Layer | Obsidian Sync (paid) | Git / GitHub |
-| --- | --- | --- |
-| Plugin code (`main.js`, `manifest.json`) | Syncs across devices | Tracked — public record |
-| Plugin settings (`data.json`) | Syncs across devices, E2E encrypted | **Gitignored** — never reaches GitHub |
-| `community-plugins.json` | Syncs across devices | Tracked — canonical plugin list |
-| Workspace state (`workspace.json`, `graph.json`) | Syncs across devices | Gitignored — machine-local noise |
-| Vault content (`.md` files) | Syncs across devices | Tracked |
-
-**Rule:** Obsidian Sync is the private courier for credentials and machine state. Git is the public record for vault content and plugin presence. The `.gitignore` wildcard `.obsidian/plugins/*/data.json` is the firewall — no `data.json` reaches GitHub without a deliberate `git add --force`.
-
-**Required Obsidian Sync settings (enable on every device):**
-
-- Settings → Sync → `Installed community plugins` ✓
-- Settings → Sync → `Plugin settings` ✓
-
-**Mobile:** When vault-mobile is added, Obsidian Sync carries plugins and settings automatically. Desktop-only plugins (e.g., `obsidian-local-rest-api`) will be silently skipped by mobile Obsidian.
-
----
-
 ## Git Practices
 
 - Branch naming:
@@ -271,22 +232,6 @@ Two systems share the vault. They have distinct, non-overlapping responsibilitie
 
 ---
 
-## Conversation Taxonomy
-
-Logan uses a naming convention for AI conversations:
-
-| Prefix | Purpose |
-| --- | --- |
-| PERMANENT: | Central, non-deletable conversations |
-| PERSISTENT: | Long-running, role-specific conversations |
-| TASK: | Bounded, completable work items |
-| STORY: | Journalism story development |
-| PROJECT: | Multi-session projects |
-| ISSUE: | Problem resolution |
-| INQUIRY: | Research questions |
-
----
-
 ## Swarm Coordination
 
 All agents coordinate through THE COURTROOM: `!/!/!/! The world is quiet here/DOCKET.md`
@@ -294,24 +239,3 @@ All agents coordinate through THE COURTROOM: `!/!/!/! The world is quiet here/DO
 That file is the live status board. Read it to orient. Update it when you start or finish work.
 
 Task assignment flows through GitHub Issues (with `agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
-
----
-
-## Vault ↔ Linear Operating Model Mapping
-
-Use this mapping to decide where work should live and what should remain ephemeral.
-
-| Layer | Vault Role | Linear Role | Ephemeral Chat/Slack Role |
-| --- | --- | --- | --- |
-| **Core / Mind** (governing doctrine) | Canonical source of truth for doctrine and constraints (`CONSTITUTION.md`, `PROTOCOL.md`, `AGENTS.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `DECISIONS.md`) | Reference only in issue/project descriptions as links; do not duplicate doctrine text in Linear | Clarify intent in discussion, but final doctrine decisions must be written to vault governance files |
-| **Periphery / Body** (operating mechanics) | Durable playbooks, runbooks, workflows, scripts, and system notes that define *how work is executed* | Active execution layer: projects, issues, milestones, priorities, assignees, and status tracking | Fast coordination, blockers, and quick decisions during execution; summarize durable outcomes back into vault or Linear |
-| **Ghost / Soul** (interpretive/cultural layer) | Long-form narrative context, principles-in-practice, interpretive guidance, retrospectives that should persist | Lightweight pointers (issue comments/docs) to related vault narrative notes when relevant to work | Sensemaking, live interpretation, tone checks, brainstorming; keep ephemeral unless it becomes a durable principle |
-| **`!` spaces** (operational infrastructure) | System control plane: DOCKET, handoffs, LEVELSETs, MCP plans, audits, routing files, and machine-operational records | Coordination mirror for assignment and accountability (SWARM-labeled issues) | Notifications/breadcrumbs only; do not treat Slack as system-of-record for infra state |
-
-### Decision Rule
-
-- **Vault:** Canonical memory and doctrine (what is true, why it is true, and durable operating knowledge).
-- **Linear:** Work management and execution state (what is being done, by whom, and current status).
-- **Chat/Slack:** Ephemeral coordination (what is being discussed right now).
-
-If a decision must be recoverable in six months, store it in the vault. If it needs owner + due date + status, track it in Linear. If it is transient discussion, keep it in chat/Slack.

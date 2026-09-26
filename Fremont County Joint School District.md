@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Fremont
-tags:
-  - schools/k12/district
+related:
+- Fremont County
+- St. Anthony
+authority: LOGAN
 ---
-[[St. Anthony]], [[Fremont County]] 
+St. Anthony, Fremont County

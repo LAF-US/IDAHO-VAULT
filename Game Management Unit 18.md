@@ -1,7 +1,7 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - GMU 18
+related:
+- Idaho
+- Idaho County
+authority: LOGAN
 ---
-southwestern [[Idaho County]] 
+southwestern Idaho County

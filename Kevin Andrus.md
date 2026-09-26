@@ -1,13 +1,19 @@
 ---
-tags:
-  - people/elected/legislative
-  - people/elected
-  - party/republican
-  - people
+related:
+- Brigham Young University
+- Brigham Young University-Idaho
+- House member
+- Idaho
+- Idaho State University
+- Lava Hot Springs
+- Marsh Valley
+- Pocatello
+authority: LOGAN
 ---
-Residence: [[Lava Hot Springs]]
-Graduate: [[Marsh Valley High School]], [[Brigham Young University-Idaho]], [[Idaho State University]]
+Residence: Lava Hot Springs
+Graduate: Marsh Valley High School, Brigham Young University-Idaho, Idaho State University
 
-[[House member]] 
-- born in [[Pocatello]]
-- 
+House member
+
+- born in Pocatello
+-

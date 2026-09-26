@@ -1,6 +1,6 @@
 ---
-aliases:
-  - arrested
-  - arrest
+related:
+- law enforcement
+authority: LOGAN
 ---
-[[law enforcement]]
+law enforcement

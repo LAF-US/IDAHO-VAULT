@@ -1,6 +1,12 @@
-[[RIGHT]]
+---
+authority: LOGAN
+related:
+- DOWN
+- RIGHT
+---
 
-[[UP]]
+RIGHT
 
-[[DOWN]]
+UP
 
+DOWN

@@ -1,5 +1,12 @@
-[[BOY]]
+---
+authority: LOGAN
+related:
+- BOY
+- LADY
+---
 
-[[WOMAN]]
+BOY
 
-[[LADY]]
+WOMAN
+
+LADY

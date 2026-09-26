@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Parks & Rec
-tags:
-  - governments/state/executive/departments
+related:
+- Idaho
+- State of Idaho
+authority: LOGAN
 ---
-[[State of Idaho]] [[parks]] 
+State of Idaho parks

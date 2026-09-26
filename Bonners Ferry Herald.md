@@ -1,7 +1,10 @@
 ---
 outlet:
-  - "[[Bonners Ferry Herald]]"
-tags:
-  - media/outlets
+- Bonners Ferry Herald
+related:
+- Bonners Ferry
+- Boundary County
+- The Hagadone Corporation
+authority: LOGAN
 ---
-[[Bonners Ferry]], [[Boundary County]] [[newspapers|newspaper]] owned by [[The Hagadone Corporation]] 
+Bonners Ferry, Boundary County newspaper owned by The Hagadone Corporation

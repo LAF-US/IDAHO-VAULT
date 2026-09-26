@@ -1,3 +1,10 @@
+---
+authority: LOGAN
+related:
+- LAF
+- The world is quiet here
+---
+
 people
 persons
 entities

@@ -1,6 +1,8 @@
 ---
-tags:
-  - geography/land/places/geology
-  - geography/land/state/region
+related:
+- Idaho
+- Oregon
+- Snake River
+authority: LOGAN
 ---
-[[Snake River]] border between [[State of Idaho|Idaho]] and [[Oregon]] 
+Snake River border between Idaho and Oregon

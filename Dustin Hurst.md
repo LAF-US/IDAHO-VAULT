@@ -1,7 +1,13 @@
 ---
-tags:
-  - people
+related:
+- Freedom
+- Freedom Bros Podcast
+- IFF
+- Idaho
+- Idaho Freedom PAC
+- PAC
+- Podcast
+authority: LOGAN
 ---
-
-[[Idaho Freedom Foundation|IFF]] & [[Idaho Freedom PAC]]
-[[Freedom Bros Podcast]] 
+IFF & Idaho Freedom PAC
+Freedom Bros Podcast

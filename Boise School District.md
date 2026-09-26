@@ -1,8 +1,7 @@
 ---
-aliases:
-  - Boise
-tags:
-  - schools/k12/district
+related:
+- Ada County
+- Boise
+authority: LOGAN
 ---
-[[Boise]], [[Ada County]] 
-
+Boise, Ada County

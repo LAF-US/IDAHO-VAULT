@@ -1,5 +1,7 @@
 ---
-aliases:
-  - American Civil Liberties Union
+related:
+- Idaho
+- State of Idaho
+authority: LOGAN
 ---
-[[American Civil Liberties Union|ACLU]] affiliate for [[State of Idaho]] 
+ACLU affiliate for State of Idaho

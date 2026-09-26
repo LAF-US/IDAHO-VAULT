@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Clark
-tags:
-  - schools/k12/district
+related:
+- Clark County
+- Dubois
+authority: LOGAN
 ---
-[[Dubois]], [[Clark County]] 
+Dubois, Clark County

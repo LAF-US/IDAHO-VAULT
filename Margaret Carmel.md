@@ -1,6 +1,6 @@
 ---
-tags:
-  - people/journalists
-  - people
+related:
+- BoiseDev
+authority: LOGAN
 ---
-[[BoiseDev]] 
+BoiseDev

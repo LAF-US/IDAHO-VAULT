@@ -1,7 +1,9 @@
 ---
-aliases:
-  - Three Creek
-tags:
-  - schools/k12/district
+related:
+- Murphy
+- Murphy Hot Springs
+- Twin Falls
+- Twin Falls County
+authority: LOGAN
 ---
-[[Murphy Hot Springs]], [[Twin Falls County]] 
+Murphy Hot Springs, Twin Falls County

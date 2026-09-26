@@ -1,5 +1,9 @@
 ---
-tags:
-  - geography/water/lake
+related:
+- Adams County
+- Hells Canyon
+- Hells Canyon dam
+- Snake River
+authority: LOGAN
 ---
-[[reservoirs|reservoir]] on the [[Snake River]] in [[Adams County]] created by [[Hells Canyon dam]] 
+reservoir on the Snake River in Adams County created by Hells Canyon dam

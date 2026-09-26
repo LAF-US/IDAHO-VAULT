@@ -1,8 +1,8 @@
 ---
-tags:
-  - party/democratic
-  - people/elected/legislative
-  - people/candidate/legislative
-residence: "[[Boise]]"
+residence: Boise
+related:
+- Boise
+- House member
+authority: LOGAN
 ---
-- [[House member]] for [[Legislative District 19|LD19]] 
+- House member for LD19

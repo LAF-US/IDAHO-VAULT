@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Firth
-tags:
-  - schools/k12/district
+related:
+- Bingham County
+- Firth
+authority: LOGAN
 ---
-[[Firth]], [[Bingham County]] 
+Firth, Bingham County

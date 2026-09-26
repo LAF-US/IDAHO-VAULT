@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- Gem County
+authority: LOGAN
 ---
-Seat of [[Gem County]]
+Seat of Gem County

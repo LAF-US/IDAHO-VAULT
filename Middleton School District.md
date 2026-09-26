@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Middleton
-tags:
-  - schools/k12/district
+related:
+- Canyon County
+- Middleton
+authority: LOGAN
 ---
-[[Middleton]], [[Canyon County]] 
+Middleton, Canyon County

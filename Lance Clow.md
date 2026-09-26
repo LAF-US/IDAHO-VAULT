@@ -1,10 +1,9 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
-  - people/elected
-  - people
+related:
+- House Education
+- Twin Falls
+authority: LOGAN
 ---
-Residence: [[Twin Falls]]
+Residence: Twin Falls
 
-- Former [[House Education]] chairman 
+- Former House Education chairman

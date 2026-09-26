@@ -1,10 +1,13 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
-aliases:
-  - Oneida
-  - 1O
+related:
+- Cherry Creek
+- Holbrook
+- Malad City
+- Pleasantview
+- Samaria
+- Stone
+- Woodruff
+authority: LOGAN
 ---
-Seat: [[Malad City]]
-Communities: [[Cherry Creek]], [[Holbrook]], [[Pleasantview]], [[Samaria]], [[Stone]], [[Woodruff]] 
+Seat: Malad City
+Communities: Cherry Creek, Holbrook, Pleasantview, Samaria, Stone, Woodruff

@@ -1,7 +1,6 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/statewide/attorneygeneral
-  - people/elected/statewide/attorneygeneral
+related:
+- Attorney General
+authority: LOGAN
 ---
-former [[Attorney General]] 
+former Attorney General

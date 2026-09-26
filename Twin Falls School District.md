@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Twin Falls
-tags:
-  - schools/k12/district
+related:
+- Twin Falls
+- Twin Falls County
+authority: LOGAN
 ---
-[[Twin Falls]], [[Twin Falls County]] 
+Twin Falls, Twin Falls County

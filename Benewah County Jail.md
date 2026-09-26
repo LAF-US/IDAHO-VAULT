@@ -1,1 +1,9 @@
-[[County Sheriff]], [[Benewah County]] [[jails|jail]]
+---
+authority: LOGAN
+related:
+- Benewah
+- Benewah County
+- County Sheriff
+---
+
+County Sheriff, Benewah County jail

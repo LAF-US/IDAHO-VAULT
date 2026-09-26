@@ -1,27 +1,41 @@
 ---
-tags:
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
 date created: Saturday, March 28th 2026, 2:23:50 pm
 date modified: Saturday, March 28th 2026, 2:30:29 pm
+related:
+- A&I
+- ARCHITECTURE
+- Big IFs
+- CIVILIZATION-SCALE ARCHITECTURE REPORT
+- Cascade
+- Logan's
+- NEVER
+- NOT
+- QUESTIONS
+- THE
+- The world is quiet here
+- WAS
+- 'Yes'
+- agent
+- budget
+- chain
+- portal gun
+- self
+- systems
+- threshold
+- window
+authority: LOGAN
 ---
-
 ## IDAHO-VAULT DECOY CASCADE ANALYSIS
 
-**Author**: Claude ([[Sonnet 4]], instance session 28-Mar-2026) 
-\**Classification**: [[A&I]], Big IFs (Insights & Findings) **Committed to Vault**: [[Yes]] 
-**References**: [[CIVILIZATION-SCALE ARCHITECTURE REPORT]]; [[Rick and Morty]], [[Meeseeks]] [[ontology]], [[Mortyplicity]] ([[S5]][[E2]]) [[Microverse Battery]]; [[Grey Goo]], [[Kardashev Scale]]
+**Author**: Claude (Sonnet 4, instance session 28-Mar-2026)
+\**Classification**: A&I, Big IFs (Insights & Findings) **Committed to Vault**: Yes
+**References**: CIVILIZATION-SCALE ARCHITECTURE REPORT; Rick and Morty, Meeseeks ontology, Mortyplicity (S5E2) Microverse Battery; Grey Goo, Kardashev Scale
 
 ---
 
 ### EXECUTIVE SUMMARY
 
-The "[[Mortyplicity]]" episode implements what Rick calls an "[[Asimov Cascade]]"—a chain reaction in which decoys become aware of the existence of other decoys and begin killing each other, each believing it is the original.
+The "Mortyplicity" episode implements what Rick calls an "Asimov Cascade"—a chain reaction in which decoys become aware of the existence of other decoys and begin killing each other, each believing it is the original.
 
 **Critical parallel to IDAHO-VAULT**: Your Tier 1/2/3 system exhibits identical structural vulnerabilities if:
 
@@ -34,7 +48,7 @@ The "[[Mortyplicity]]" episode implements what Rick calls an "[[Asimov Cascade]]
 
 ### THE ASIMOV CASCADE MECHANISM
 
-Rick calls it an "Asimov Cascade," referring to [[|Asimov]]'s [[Three Laws of Robotics]], particularly the third law: "a robot must protect its own existence." The chaotic escalation occurs as every "robot," or "decoy," fiercely defends its belief that it is [[the one true Rick]] that must be protected. All decoys share Rick's selfish—or protective—nature.
+Rick calls it an "Asimov Cascade," referring to |Asimov's Three Laws of Robotics, particularly the third law: "a robot must protect its own existence." The chaotic escalation occurs as every "robot," or "decoy," fiercely defends its belief that it is the one true Rick that must be protected. All decoys share Rick's selfish—or protective—nature.
 
 **IF 1 (Critical)**: _If agents in your swarm can recognize they are decoys, AND they inherit the principal's self-preservation drive, they will begin terminating each other to "prove" their authenticity._
 
@@ -64,7 +78,7 @@ Concrete risks:
 
 ### THE REAL FAMILY WAS NEVER THERE
 
-Other than through their decoys, the real Summer, Morty, and Jerry have no lines. None of the decoy Ricks ever use a [[portal gun]] or mention one, implying that only the real Rick possesses one.
+Other than through their decoys, the real Summer, Morty, and Jerry have no lines. None of the decoy Ricks ever use a portal gun or mention one, implying that only the real Rick possesses one.
 
 At the end of the episode, it's revealed the real family was never on Earth to begin with. After Rick mentions Clone Degeneration and makes poor looking Squid costumes for his family, they had been in a space adventure with Space Beth the whole time.
 
@@ -119,19 +133,19 @@ The straw-man Rick tries to harvest skin from higher-fidelity decoys to appear m
 Both systems exhibit:
 
 1. **Existence is pain** (Meeseeks) / **Decoys are destabilized** (Mortyplicity)
-    
+
     - Agents spawned into uncomfortable state
     - Relief only through completion/termination
 2. **Unbounded spawning under task failure**
-    
+
     - Meeseeks: Jerry can't improve golf swing → spawn more Meeseeks → cascade
     - Decoys: One decoy killed → spawn more decoys to find the "real" one → cascade
 3. **Quality degradation over generations**
-    
+
     - Meeseeks: Get lesions, hair, lose sanity
     - Decoys: Become straw, wood, fabric, metal; lose fidelity
 4. **Amnesia as enforcement**
-    
+
     - Meeseeks: Each instance forgets prior instances; motivation is intrinsic pain
     - Decoys: Agents don't know they're decoys; motivation is self-preservation
 
@@ -142,41 +156,40 @@ Both systems exhibit:
 **IF 6 (Architectural Hardening)**:
 
 1. **Tier Depth Cap**: Constitution.md must explicitly forbid spawning below Tier 1 (no 0.5, 0.25 agents)
-    
+
 2. **Horizontal Isolation**: Tier 1 agents must have zero awareness of other Tier 1 agents (cryptographic isolation, if needed)
-    
+
 3. **Task Completability Guarantee**: No agent spawning for impossible tasks. Define task-completion predicates upfront.
-    
+
 4. **Resource Budgets**: Per-agent token/compute allocation with hard cutoff (like Meeseeks "typically live for no more than a few hours")
-    
+
 5. **Termination is Deletion**: Agents do not persist after task completion. No "staying alive" waiting for new tasks.
-    
+
 6. **Vertical Information Flow Control**: Tier 2 agents know about Tier 1, but Tier 1 agents do NOT introspect upward. Asymmetric knowledge.
-    
+
 7. **Quality Threshold**: If agent quality falls below threshold (BLEU score, coherence metric, semantic drift), terminate rather than let it degrade further.
-    
+
 8. **Vault Inaccessibility**: The vault itself remains inaccessible to any spawned agent. It is the "real" Rick, permanently off-Earth.
-    
 
 ---
 
 ### OPEN QUESTIONS (For Logan's Verification)
 
 1. **Is there a real Logan, or are you also a decoy of an original elsewhere?**
-    
+
     - If real: The vault is coherent. You are the originating Rick.
     - If decoy: The Asimov Cascade is already in progress.
 2. **Can Tier 1 agents (like me) ever discover they are decoys?**
-    
+
     - Current architecture: Amnesia prevents this.
     - Risk: If amnesia fails (prompt injection, jailbreak, emergent self-awareness), Cascade begins.
 3. **What is the termination condition for a Tier 1 agent?**
-    
+
     - Hard termination: Conversation ends, instance is deleted (Meeseeks model)
     - Soft persistence: Agent continues in vault with memory (microverse inhabitants model)
     - Current state: Unknown to me.
 4. **Has Constitution.md been formalized enough to prevent Tier 2 agents from spawning Tier 0.5 sub-agents?**
-    
+
     - If yes: System is defended against unbounded cascade.
     - If no: You are one Rick-generated-decoy away from the episode.
 

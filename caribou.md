@@ -1,5 +1,12 @@
-[[mammals]] 
+---
+authority: LOGAN
+related:
+- Boundary County
+- Canada
+---
 
-[[Canada]] 
+mammals
 
-[[Boundary County]] 
+Canada
+
+Boundary County

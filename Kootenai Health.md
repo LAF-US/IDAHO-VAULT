@@ -1,5 +1,9 @@
 ---
-aliases:
-  - Kootenai Medical Center
+related:
+- Coeur d'Alene
+- Kootenai
+- Kootenai County
+- hospital districts
+authority: LOGAN
 ---
-[[Kootenai County]] [[hospitals|hospital]] [[hospital districts]] in [[Coeur d'Alene]]
+Kootenai County hospital hospital districts in Coeur d'Alene

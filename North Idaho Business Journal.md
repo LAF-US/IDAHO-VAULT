@@ -1,7 +1,10 @@
 ---
 outlet:
-  - "[[North Idaho Business Journal]]"
-tags:
-  - media/outlets
+- North Idaho Business Journal
+related:
+- Idaho
+- North Idaho
+- The Hagadone Corporation
+authority: LOGAN
 ---
-[[North Idaho]] [[newspapers|newspaper]] owned by [[The Hagadone Corporation]] 
+North Idaho newspaper owned by The Hagadone Corporation

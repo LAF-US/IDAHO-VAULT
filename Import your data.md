@@ -1,11 +1,11 @@
 ---
-tags: [tools/linear, migration, project/LAF-4]
 updated: 2026-03-25
 title: Import your data
-aliases: [Import your data]
 linter-yaml-title-alias: Import your data
+related:
+- '2026-03-25'
+authority: LOGAN
 ---
-
 ## Import your data
 
 Whether you're exploring Linear, running a pilot, or ready for full migration, these resources outline the path forward.

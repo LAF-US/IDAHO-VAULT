@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Diedtrich
-tags:
-  - schools/k12/district
+related:
+- Dietrich
+- Lincoln
+- Lincoln County
+authority: LOGAN
 ---
-[[Dietrich]], [[Lincoln County]] 
+Dietrich, Lincoln County

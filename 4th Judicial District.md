@@ -1,8 +1,9 @@
 ---
-aliases:
-  - Fourth Judicial District
+related:
+- Boise
+- Judicial Districts
+authority: LOGAN
 ---
+Ada, Boise, Elmore, Valley
 
-[[Ada County|Ada]], [[Boise County|Boise]], [[Elmore County|Elmore]], [[Valley County|Valley]]
-
-One of the seven [[Judicial Districts]].
+One of the seven Judicial Districts.

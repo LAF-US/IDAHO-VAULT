@@ -1,6 +1,8 @@
 ---
-tags:
-  - people/candidate/legislative
-residence: "[[Melba]]"
+residence: Melba
+related:
+- Melba
+- Tina Lambert
+authority: LOGAN
 ---
-challenger to [[Tina Lambert]] in 2024 [[Legislative District 23|LD23]] [[primary election|primary]] 
+challenger to Tina Lambert in 2024 LD23 primary

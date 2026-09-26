@@ -1,7 +1,9 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/city/council
+related:
+- Hauser
+- city council
+authority: LOGAN
 ---
-Residence: [[Hauser]]
-- candidate for [[Hauser]] [[city council]] in 2023, endorsed by [[Kootenai County Republican Central Committee|KCRCC]]  
+Residence: Hauser
+
+- candidate for Hauser city council in 2023, endorsed by KCRCC  

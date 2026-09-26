@@ -1,1 +1,7 @@
-imaginary frame of mind and view ; an ephemeral fictive personality or voice 
+---
+authority: LOGAN
+related:
+- voice
+---
+
+imaginary frame of mind and view ; an ephemeral fictive personality or voice

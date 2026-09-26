@@ -1,3 +1,12 @@
-receives money from [[Idaho Lottery]] 
+---
+authority: LOGAN
+related:
+- Council
+- Idaho
+- Idaho Lottery
+- money
+---
 
-oversight by [[Permanent Building Fund Advisory Council]] 
+receives money from Idaho Lottery
+
+oversight by Permanent Building Fund Advisory Council

@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- Twin Falls County
+authority: LOGAN
 ---
-Seat of [[Twin Falls County]]
+Seat of Twin Falls County

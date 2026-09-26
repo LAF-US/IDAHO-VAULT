@@ -1,9 +1,11 @@
 ---
-aliases:
-  - permission slip
-  - permission
+related:
+- children
+- parental rights
+- parents
+authority: LOGAN
 ---
-[[parental rights]] 
-[[families]] 
-[[children]] 
-[[parents]] 
+parental rights
+families
+children
+parents

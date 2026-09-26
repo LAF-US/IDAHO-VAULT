@@ -1,1 +1,9 @@
-[[magistrate court]] [[Benewah County]] [[courthouses|courthouse]] 
+---
+authority: LOGAN
+related:
+- Benewah
+- Benewah County
+- magistrate court
+---
+
+magistrate court Benewah County courthouse

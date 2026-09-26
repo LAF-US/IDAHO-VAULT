@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Grace
-tags:
-  - schools/k12/district
+related:
+- Caribou County
+- Grace
+authority: LOGAN
 ---
-[[Grace]], [[Caribou County]] 
+Grace, Caribou County

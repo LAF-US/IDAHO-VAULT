@@ -1,10 +1,7 @@
 ---
-aliases:
-  - cross-dressing
-  - crossdressing
-  - drag queens
-  - drag kings
-  - drag performers
-  - drag artists
+related:
+- LGBTQ+ pride
+- gender identity
+authority: LOGAN
 ---
-[[LGBTQ+ pride]] performances around [[gender identity]] 
+LGBTQ+ pride performances around gender identity

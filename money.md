@@ -1,1 +1,7 @@
-[[currency]] 
+---
+authority: LOGAN
+related:
+- currency
+---
+
+currency

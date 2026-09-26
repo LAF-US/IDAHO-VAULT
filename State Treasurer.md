@@ -1,10 +1,6 @@
 ---
-tags:
-  - position/elected/statewide/executive
-  - governments/state/executive
-aliases:
-  - Treasurer
+related:
+- Julie Ellsworth
+authority: LOGAN
 ---
-
-
-[[Julie Ellsworth]]
+Julie Ellsworth

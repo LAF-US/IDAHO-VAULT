@@ -1,7 +1,9 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Spokesman-Review]]"
+- Spokesman-Review
+related:
+- Spokane
+- Washington
+authority: LOGAN
 ---
-[[Spokane]], [[Washington]] [[newspapers|newspaper]] - owned by [[Cowles Company]] 
+Spokane, Washington newspaper - owned by Cowles Company

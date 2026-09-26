@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Lewiston
-tags:
-  - schools/k12/district
+related:
+- Lewiston
+- Nez Perce County
+authority: LOGAN
 ---
-[[Lewiston]], [[Nez Perce County]] 
+Lewiston, Nez Perce County

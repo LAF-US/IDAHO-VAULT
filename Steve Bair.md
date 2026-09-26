@@ -1,9 +1,9 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
+related:
+- Blackfoot
+- Senate member
+authority: LOGAN
 ---
-Residence: [[Blackfoot]]
-- former [[Senate member]], [[Senate Finance|JFAC]] chair 
+Residence: Blackfoot
+
+- former Senate member, JFAC chair

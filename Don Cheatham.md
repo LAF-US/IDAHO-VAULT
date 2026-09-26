@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
+related:
+- Coeur d'Alene
+authority: LOGAN
 ---
-Residence: [[Coeur d'Alene]]
+Residence: Coeur d'Alene

@@ -1,1 +1,9 @@
-[[magistrate court]] [[Washington County]] [[courthouses|courthouse]] 
+---
+authority: LOGAN
+related:
+- Washington
+- Washington County
+- magistrate court
+---
+
+magistrate court Washington County courthouse

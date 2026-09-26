@@ -1,10 +1,12 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
-  - people/candidate/legislative
-  - people
-residence: "[[Moscow]]"
+residence: Moscow
+related:
+- House member
+- Medicaid
+- Medicaid Expansion
+- Medicaid Expansion ballot initiative
+- Moscow
+authority: LOGAN
 ---
-- Former [[House member]] for [[Legislative District 5|LD5]] 
-- supported [[Medicaid Expansion ballot initiative]] 
+- Former House member for LD5
+- supported Medicaid Expansion ballot initiative

@@ -1,1 +1,7 @@
-[[money]] 
+---
+authority: LOGAN
+related:
+- money
+---
+
+money

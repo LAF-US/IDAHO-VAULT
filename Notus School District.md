@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Notus
-tags:
-  - schools/k12/district
+related:
+- Canyon County
+- Notus
+authority: LOGAN
 ---
-[[Notus]], [[Canyon County]] 
+Notus, Canyon County

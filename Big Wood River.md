@@ -1,6 +1,6 @@
 ---
-tags:
-  - geography/water/river
+related:
+- Blaine County
+authority: LOGAN
 ---
-
-[[rivers|river]] in [[Blaine County]]
+river in Blaine County

@@ -1,7 +1,10 @@
 ---
-tags:
-  - governments/state/executive/departments/divisions
+related:
+- Alex Adams
+- Brad Little
+- Governor
+authority: LOGAN
 ---
+Budget agency for the Governor.
 
-Budget agency for the [[Governor]].
-- Brad Little - [[Alex Adams]]
+- Brad Little - Alex Adams

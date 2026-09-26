@@ -1,8 +1,10 @@
 ---
-tags:
-  - governments
+related:
+- Ada County
+- Idaho
+- State of Idaho
+authority: LOGAN
 ---
+State of Idaho capital city
 
-[[State of Idaho]] capital city
-
-[[Ada County]] seat
+Ada County seat

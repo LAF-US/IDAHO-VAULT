@@ -1,6 +1,7 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- Malheur County
+- Oregon
+authority: LOGAN
 ---
-[[Malheur County]], [[Oregon]] 
+Malheur County, Oregon

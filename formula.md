@@ -1,1 +1,8 @@
-[[math]] [[algorithm]] 
+---
+authority: LOGAN
+related:
+- algorithm
+- math
+---
+
+math algorithm

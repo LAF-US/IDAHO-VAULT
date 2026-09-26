@@ -1,7 +1,7 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - GMU 9
+related:
+- Shoshone
+- Shoshone County
+authority: LOGAN
 ---
-southern [[Shoshone County]] 
+southern Shoshone County

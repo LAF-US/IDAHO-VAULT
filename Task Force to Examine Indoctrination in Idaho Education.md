@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Task Force to Examine Indoctrination in Idaho Education
-  - education indoctrination task force
+related:
+- Janice McGeachin
+- Priscilla Giddings
+authority: LOGAN
 ---
-Created by [[Lieutenant Governor|Lt. Gov.]] [[Janice McGeachin]] and co-chaired with [[Priscilla Giddings]] 
-
+Created by Lt. Gov. Janice McGeachin and co-chaired with Priscilla Giddings

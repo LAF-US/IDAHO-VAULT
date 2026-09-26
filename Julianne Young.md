@@ -1,9 +1,11 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/elected
-  - people
+related:
+- Blackfoot
+- Julie VanOrden
+- election
+- primary election
+- sex education
+authority: LOGAN
 ---
-Residence: [[Blackfoot]] 
-defeated [[Julie VanOrden]] in [[primary election]] after [[sex education]] bill
+Residence: Blackfoot
+defeated Julie VanOrden in primary election after sex education bill

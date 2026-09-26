@@ -1,3 +1,10 @@
-[[QUESTION]]
+---
+authority: LOGAN
+related:
+- ANSWERS
+- QUESTION
+---
 
-[[ANSWERS]]
+QUESTION
+
+ANSWERS

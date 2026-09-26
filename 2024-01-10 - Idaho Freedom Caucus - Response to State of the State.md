@@ -1,21 +1,35 @@
 ---
 author:
-  - "[[Idaho Freedom Caucus]]"
-tags:
-  - media/pressrelease
-  - 2024/01/10
-URL:
+- Idaho Freedom Caucus
+URL: null
+related:
+- Brad Little
+- Freedom
+- Governor
+- Heather Scott
+- Idaho
+- Idaho Freedom Caucus
+- Maria Nate
+- State of Idaho
+- Tammy Nichols
+- balanced budget
+- budget
+- children
+- currency
+- dollars
+- money
+authority: LOGAN
 ---
-
 Media Contact:
 Rep. Heather Scott  
 Sen. Tammy Nichols  
 
 # PRESS RELEASE
+
 For Immediate Release, January 10, 2024
 A Vision of Freedom for the Future of Idaho
 
---- 
+---
 
 During the COVID years, the State of Idaho accepted $22.9 billion of federal money, including billions of dollars of Federal American Rescue Plan money. The legislature outright admitted in the bill that “ARPA funds are borrowed from our grandchildren.” Idaho is now channeling these funds into substantial new government programs while offering very little tax relief.
 
@@ -35,7 +49,7 @@ In this session, we will offer bills to protect our constitutional rights, creat
 
 Stay tuned as we continue to share our commitment to a FREE IDAHO.
 
---- 
+---
 Best,
 Maria Nate
 Idaho Director

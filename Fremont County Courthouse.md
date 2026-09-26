@@ -1,5 +1,7 @@
 ---
-tags:
-  - vault/stub
+related:
+- Fremont County
+- magistrate court
+authority: LOGAN
 ---
-[[magistrate court]] [[Fremont County]] [[courthouses|courthouse]] 
+magistrate court Fremont County courthouse

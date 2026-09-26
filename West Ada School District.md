@@ -1,8 +1,7 @@
 ---
-aliases:
-  - Meridian School District
-  - West Ada
-tags:
-  - schools/k12/district
+related:
+- Ada County
+- Meridian
+authority: LOGAN
 ---
-[[Meridian]], [[Ada County]] 
+Meridian, Ada County

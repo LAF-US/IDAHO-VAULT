@@ -1,7 +1,10 @@
 ---
-tags:
-  - people
+related:
+- Idaho
+- Reclaim Idaho
+- Sandpoint
+authority: LOGAN
 ---
+Hometown: Sandpoint
 
-Hometown: [[Sandpoint]] 
-- [[Reclaim Idaho]] cofounder
+- Reclaim Idaho cofounder

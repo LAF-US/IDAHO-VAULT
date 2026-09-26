@@ -1,7 +1,9 @@
 ---
-tags:
-  - party/republican
-  - position/elected/precinct
+related:
+- Boise
+- Boise County
+- Idaho
+- Idaho Republican Party
+authority: LOGAN
 ---
-
-Local [[Idaho Republican Party]] [[precinct committeemen|precinct committee]] for [[Boise County]] 
+Local Idaho Republican Party precinct committee for Boise County

@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Pocatello-Chubbuck
-tags:
-  - schools/k12/district
+related:
+- Bannock County
+- Chubbuck
+- Pocatello
+authority: LOGAN
 ---
-[[Pocatello]]/[[Chubbuck]], [[Bannock County]] 
+Pocatello/Chubbuck, Bannock County

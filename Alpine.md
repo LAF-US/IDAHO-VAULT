@@ -1,4 +1,3 @@
 ---
-tags:
-  - geography/land/places/communities
 ---
+[[A]][[l]][[p]][[i]][[n]][[e]]

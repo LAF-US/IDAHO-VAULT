@@ -1,1 +1,7 @@
-[[vocal]] 
+---
+authority: LOGAN
+related:
+- vocal
+---
+
+vocal

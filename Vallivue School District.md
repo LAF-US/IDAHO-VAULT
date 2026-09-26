@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Vallivue
-tags:
-  - schools/k12/district
+related:
+- Caldwell
+- Canyon County
+- Nampa
+authority: LOGAN
 ---
-[[Caldwell]]/[[Nampa]], [[Canyon County]] 
+Caldwell/Nampa, Canyon County

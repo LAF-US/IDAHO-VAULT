@@ -1,9 +1,6 @@
 ---
-aliases:
-  - FY23
-  - FY2023
-  - 2023 fiscal year
-tags:
-  - 2023/
+related:
+- fiscal year
+authority: LOGAN
 ---
-July 1, 2022 - June 30, 2023 [[fiscal year]] 
+July 1, 2022 - June 30, 2023 fiscal year

@@ -1,8 +1,6 @@
 ---
-tags:
-  - federal
-aliases:
-  - Payments in Lieu of Taxes
-  - PILT
+related:
+- property tax
+authority: LOGAN
 ---
-[[property tax]] replacement for [[federal land]] 
+property tax replacement for federal land

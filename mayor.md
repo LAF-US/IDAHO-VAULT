@@ -1,5 +1,6 @@
 ---
-tags:
-  - position/elected/city/mayor
+related:
+- cities
+authority: LOGAN
 ---
-[[cities]] executive
+cities executive

@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Rockland
-tags:
-  - schools/k12/district
+related:
+- Power County
+- Rockland
+authority: LOGAN
 ---
-[[Rockland]], [[Power County]] 
+Rockland, Power County

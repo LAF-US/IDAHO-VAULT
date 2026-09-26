@@ -1,1 +1,7 @@
-[[Islam|Muslim]] [[holy book]] 
+---
+authority: LOGAN
+related:
+- holy book
+---
+
+Muslim holy book

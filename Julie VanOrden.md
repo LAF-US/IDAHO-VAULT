@@ -1,16 +1,18 @@
 ---
-aliases:
-  - Julie Van Orden
-tags:
-  - people/elected/legislative
-  - people/elected
-  - party/republican
-  - people
+related:
+- House Education
+- House member
+- Julianne Young
+- Pingree
+- Senate Health and Welfare
+- election
+- primary election
+- sex education
+authority: LOGAN
 ---
+Residence: Pingree
 
-Residence: [[Pingree]]
+Chair of Senate Health and Welfare
 
-Chair of [[Senate Health and Welfare]]
-
-- Former [[House member|House member]], [[House Education]] chair 
-- lost [[primary election]] to [[Julianne Young]] after [[sex education]] bill in [[House Education]] 
+- Former House member, House Education chair
+- lost primary election to Julianne Young after sex education bill in House Education

@@ -1,6 +1,8 @@
 ---
-tags:
-  - party/republican
-  - people
+related:
+- Bonneville County
+- Bonneville County Republican Central Committee
+- assistant
+authority: LOGAN
 ---
-[[Bonneville County Republican Central Committee]] assistant [[precinct committeemen|precinct committee officer]] 
+Bonneville County Republican Central Committee assistant precinct committee officer

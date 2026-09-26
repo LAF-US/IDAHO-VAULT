@@ -1,7 +1,6 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- Montana
+authority: LOGAN
 ---
-
-[[Montana]] 
+Montana

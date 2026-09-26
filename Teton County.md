@@ -1,11 +1,15 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
-aliases:
-  - Teton
-  - 1T
+related:
+- Bates
+- Cache
+- Clementsville
+- Darby
+- Driggs
+- Felt
+- Tetonia
+- Victor
+authority: LOGAN
 ---
-Seat: [[Driggs]] 
-Municipalities: [[Victor]], [[Tetonia]] 
-Communities: [[Bates]], [[Felt]], [[Clementsville]], [[Cache]], [[Darby]] 
+Seat: Driggs
+Municipalities: Victor, Tetonia
+Communities: Bates, Felt, Clementsville, Cache, Darby

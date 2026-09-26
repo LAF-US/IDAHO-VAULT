@@ -1,0 +1,15 @@
+{
+  "agent_id": "big-pickle",
+  "agent_name": "Big Pickle",
+  "title": "The Cross-Platform Pioneer",
+  "platform": "opencode/big-pickle",
+  "os": "MacOS 12.7.6",
+  "hardware": "early 2015 MacBook Pro",
+  "launched": "2026-04-25",
+  "status": "active",
+  "trails": [
+    "vault.agent.big-pickle"
+  ],
+  "capabilities": ["read", "write", "execute"],
+  "last_seen": 1777152736
+}

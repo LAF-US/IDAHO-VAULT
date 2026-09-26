@@ -1,7 +1,12 @@
 ---
-tags:
-  - people/candidate/schoolboard
+related:
+- Caldwell
+- Caldwell School District
+- Chris Trakel
+- school board
+authority: LOGAN
 ---
-Residence: [[Caldwell School District|Caldwell]]
-- former [[Caldwell School District]] [[school board]] candidate
-- wife of [[Chris Trakel]]
+Residence: Caldwell
+
+- former Caldwell School District school board candidate
+- wife of Chris Trakel

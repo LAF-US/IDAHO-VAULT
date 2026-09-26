@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- Ada County
+authority: LOGAN
 ---
-City in [[Ada County]]
+City in Ada County

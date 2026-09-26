@@ -1,9 +1,6 @@
 ---
-tags:
-  - federal
-  - governments/country/executive/departments/agencies
-aliases:
-  - Fish and Wildlife
+related:
+- U.S. Department of the Interior
+authority: LOGAN
 ---
-
-[[U.S. Department of the Interior]] 
+U.S. Department of the Interior

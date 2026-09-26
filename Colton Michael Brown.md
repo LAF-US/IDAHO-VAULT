@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Colton Brown
-tags:
-  - people
+related:
+- Patriot Front
+- Washington
+authority: LOGAN
 ---
-[[Patriot Front]] member, [[Washington]] resident 
+Patriot Front member, Washington resident

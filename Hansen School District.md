@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Hansen
-tags:
-  - schools/k12/district
+related:
+- Hansen
+- Twin Falls
+- Twin Falls County
+authority: LOGAN
 ---
-[[Hansen]], [[Twin Falls County]] 
+Hansen, Twin Falls County

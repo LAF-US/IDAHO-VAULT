@@ -1,3 +1,2 @@
 
-
-refundable or non-refundable [[taxes|tax]] benefits 
+refundable or non-refundable tax benefits

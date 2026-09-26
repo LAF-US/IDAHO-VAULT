@@ -1,3 +1,9 @@
-[[children]]
-[[families]]
-[[child]]
+---
+authority: LOGAN
+related:
+- children
+---
+
+children
+families
+child

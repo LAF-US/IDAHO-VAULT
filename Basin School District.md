@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Basin
-tags:
-  - schools/k12/district
+related:
+- Boise
+- Boise County
+authority: LOGAN
 ---
-[[Boise County]] 
+Boise County

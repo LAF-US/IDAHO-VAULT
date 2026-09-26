@@ -1,7 +1,7 @@
 ---
-tags:
-  - party/republican
-  - people/elected/county/executive
-  - people
+related:
+- Ada County
+- County Sheriff
+authority: LOGAN
 ---
-[[Ada County]] [[County Sheriff|Sheriff]] 
+Ada County Sheriff

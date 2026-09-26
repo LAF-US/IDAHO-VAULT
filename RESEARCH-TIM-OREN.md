@@ -1,13 +1,19 @@
 ---
-tags:
-  - administration/research
-  - people/elected/legislative
 source: commit
 updated: 2026-03-16
+related:
+- '2026-03-16'
+- Idaho
+- Idaho Legislature
+- Logan's
+- Tim Oren
+- voting
+- website
+authority: LOGAN
 ---
 # Research Brief: Tim Oren — Voting Pattern Analysis
 
-**Subject:** [[Tim Oren]]
+**Subject:** Tim Oren
 **Type:** Voting pattern analysis
 **Status:** Pending assignment — awaiting available research instance (Tier 4)
 **Priority:** Standard

@@ -1,5 +1,8 @@
 ---
 outlet:
-  - "[[USA Today]]"
+- USA Today
+related:
+- USA
+authority: LOGAN
 ---
-[[United States of America|American]] national [[newspapers|newspaper]] 
+American national newspaper

@@ -1,1 +1,7 @@
-[[Christianity]] 
+---
+authority: LOGAN
+related:
+- Christianity
+---
+
+Christianity

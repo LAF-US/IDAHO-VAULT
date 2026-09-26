@@ -1,1 +1,7 @@
-administrative boundaries and locations for [[voting]] 
+---
+authority: LOGAN
+related:
+- voting
+---
+
+administrative boundaries and locations for voting

@@ -1,14 +1,15 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/elected
-  - people
+related:
+- House Assistant Majority Leader
+- House Business
+- House Ethics and Policy
+- Ponderay
+authority: LOGAN
 ---
 er
-Residence: [[Ponderay]]
+Residence: Ponderay
 
-[[House Assistant Majority Leader]]
-- former [[House Ethics and Policy]] chair
-- former [[House Business]] chair
+House Assistant Majority Leader
 
+- former House Ethics and Policy chair
+- former House Business chair

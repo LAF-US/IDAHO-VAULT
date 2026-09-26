@@ -1,14 +1,19 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
-  - people/candidate/legislative
-  - people
+related:
+- Doug Ricks
+- Governor
+- Jim Risch
+- Lieutenant Governor
+- Madison High School
+- Rexburg
+- Senate member
+authority: LOGAN
 ---
-Residence: [[Rexburg]]
-Graduate: [[Madison High School]], [[Brigham Young University-Idaho|Ricks College]]
+Residence: Rexburg
+Graduate: Madison High School, Ricks College
 
-Former [[Senate member]]
-- [[Lieutenant Governor]] during short tenure of Gov. [[Jim Risch]]
-- Father of [[Doug Ricks]]
-- 
+Former Senate member
+
+- Lieutenant Governor during short tenure of Gov. Jim Risch
+- Father of Doug Ricks
+-

@@ -1,7 +1,14 @@
 ---
-aliases:
-  - Sixth Judicial District
+date created: Monday, March 23rd 2026, 4:54:51 pm
+date modified: Monday, March 30th 2026, 10:16:55 am
+related:
+- Bear
+- Bear Lake
+- Franklin
+- Judicial Districts
+- Lake
+authority: LOGAN
 ---
-[[Bannock County|Bannock]], [[Bear Lake County|Bear Lake]], [[Caribou County|Caribou]], [[Franklin County|Franklin]], [[Oneida County|Oneida]], [[Power County|Power]]
+Bannock, Bear Lake, Caribou, Franklin, Oneida, Power
 
-One of the seven [[Judicial Districts]].
+One of the seven Judicial Districts.

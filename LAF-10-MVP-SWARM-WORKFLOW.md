@@ -1,12 +1,19 @@
 ---
-tags:
-  - operations/swarm
-  - workflow/mvp
 updated: 2026-03-25
 status: draft
 source: linear/LAF-10
+related:
+- '2026-03-25'
+- FOR
+- GitHub
+- LAF
+- Logan Finney
+- MVP
+- agent
+- codex
+- coordination
+authority: LOGAN
 ---
-
 # LAF-10 — MVP Swarm Workflow (Vault + Linear + Slack)
 
 ## Goal

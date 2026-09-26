@@ -1,5 +1,10 @@
 ---
-tags:
-  - geography/water/river/dams
+related:
+- American Falls
+- American Falls reservoir
+- Idaho
+- Idaho Power
+- Snake River
+authority: LOGAN
 ---
-[[Idaho Power]] [[dams|dam]] on the [[Snake River]] near [[American Falls]]; creates [[American Falls reservoir]] 
+Idaho Power dam on the Snake River near American Falls; creates American Falls reservoir

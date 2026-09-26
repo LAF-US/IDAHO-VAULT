@@ -1,11 +1,10 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/democratic
-  - people
-aliases:
-  - Matthew Erpelding
+related:
+- Boise
+- House Minority Leader
+- House member
+authority: LOGAN
 ---
-Residence: [[Boise]]
-- former [[House member]] and [[House Minority Leader]] 
+Residence: Boise
+
+- former House member and House Minority Leader

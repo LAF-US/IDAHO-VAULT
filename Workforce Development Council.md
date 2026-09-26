@@ -1,10 +1,13 @@
 ---
-tags:
-  - governments/state/executive
+related:
+- Governor
+- Idaho
+- Idaho Launch
+- Wendi Secrist
+authority: LOGAN
 ---
+Independent advisory body under the Governor.
 
-Independent advisory body under the [[Governor]].
+Executive Director: Wendi Secrist
 
-Executive Director: [[Wendi Secrist]]
-
-Programs: [[Idaho Launch]], [[Next Steps Idaho]]
+Programs: Idaho Launch, Next Steps Idaho

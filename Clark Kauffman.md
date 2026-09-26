@@ -1,10 +1,8 @@
 ---
-tags:
-  - party/republican
-  - people/elected
-  - people/elected/legislative
-  - people
-residence: "[[Filer]]"
+residence: Filer
+related:
+- Filer
+- House member
+authority: LOGAN
 ---
-
-- former [[House member]] 
+- former House member

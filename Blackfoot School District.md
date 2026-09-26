@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Blackfoot
-tags:
-  - schools/k12/district
+related:
+- Bingham County
+- Blackfoot
+authority: LOGAN
 ---
-[[Blackfoot]], [[Bingham County]] 
+Blackfoot, Bingham County

@@ -1,9 +1,8 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
-aliases:
-  - SLC
-  - SL,UT
+related:
+- Eastern Idaho
+- Idaho
+- Utah
+authority: LOGAN
 ---
-[[Utah]] state capital with regional influence in [[Eastern Idaho]] 
+Utah state capital with regional influence in Eastern Idaho

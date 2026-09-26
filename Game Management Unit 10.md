@@ -1,7 +1,8 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - GMU 10
+related:
+- Clearwater County
+- Idaho
+- Idaho County
+authority: LOGAN
 ---
-eastern [[Clearwater County]], northern [[Idaho County]] 
+eastern Clearwater County, northern Idaho County

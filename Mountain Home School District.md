@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Mountain Home
-tags:
-  - schools/k12/district
+related:
+- Elmore County
+- Home
+- Mountain Home
+authority: LOGAN
 ---
-[[Mountain Home]], [[Elmore County]] 
+Mountain Home, Elmore County

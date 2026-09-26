@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Camas
-tags:
-  - schools/k12/district
+related:
+- Camas County
+- Fairfield
+authority: LOGAN
 ---
-[[Fairfield]], [[Camas County]] 
+Fairfield, Camas County

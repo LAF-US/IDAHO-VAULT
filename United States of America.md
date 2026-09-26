@@ -1,16 +1,9 @@
 ---
-aliases:
-  - USA
-  - America
-  - United States
-  - nation
-  - American
-  - our country
-  - this country
-  - national
-tags:
-  - federal
-  - governments/country
-  - geography/land/country
+related:
+- Atlantic Ocean
+- Canada
+- Mexico
+- Pacific Ocean
+authority: LOGAN
 ---
-bordered by [[Canada]] and [[Mexico]], [[Atlantic Ocean]] and [[Pacific Ocean]] 
+bordered by Canada and Mexico, Atlantic Ocean and Pacific Ocean

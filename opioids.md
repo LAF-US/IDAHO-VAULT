@@ -1,6 +1,7 @@
 ---
-aliases:
-  - opioid
+related:
+- fentanyl
+- morphine
+authority: LOGAN
 ---
-
-[[morphine]] [[heroin]] [[painkillers]] [[fentanyl]] 
+morphine heroin painkillers fentanyl

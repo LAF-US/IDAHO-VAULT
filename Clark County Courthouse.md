@@ -1,1 +1,8 @@
-[[magistrate court]] [[Clark County]] [[courthouses|courthouse]] 
+---
+authority: LOGAN
+related:
+- Clark County
+- magistrate court
+---
+
+magistrate court Clark County courthouse

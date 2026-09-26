@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Cassia
-tags:
-  - schools/k12/district
+related:
+- Burley
+- Cassia County
+authority: LOGAN
 ---
-[[Burley]], [[Cassia County]] 
+Burley, Cassia County

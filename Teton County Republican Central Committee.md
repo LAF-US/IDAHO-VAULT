@@ -1,7 +1,9 @@
 ---
-tags:
-  - party/republican
-  - position/elected/precinct
+related:
+- Idaho
+- Idaho Republican Party
+- Teton
+- Teton County
+authority: LOGAN
 ---
-
-Local [[Idaho Republican Party]] [[precinct committeemen|precinct committee]] for [[Teton County]] 
+Local Idaho Republican Party precinct committee for Teton County

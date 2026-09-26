@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Wesley Van Horn
-tags:
-  - people
+related:
+- Alabama
+- Patriot Front
+authority: LOGAN
 ---
-[[Patriot Front]] member, [[Alabama]] resident 
+Patriot Front member, Alabama resident

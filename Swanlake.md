@@ -1,7 +1,7 @@
 ---
-tags:
-  - geography/land/places/communities
-aliases:
-  - Swan Lake
+related:
+- Franklin
+- Franklin County
+authority: LOGAN
 ---
-[[Franklin County]] 
+Franklin County

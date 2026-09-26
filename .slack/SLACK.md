@@ -1,3 +1,6 @@
+---
+title: SLACK
+---
 # SLACK.md — IDAHO-VAULT
 
 **Load mechanism:** Slack CLI reads `.slack/hooks.json` and `.slack/config.json` (official CLI auto-load). This governance shim covers Slack AI and any Slack-based agent coordination.
@@ -10,7 +13,7 @@
 
 ## Governance
 
-Vault governance authority lives in `!/CONSTITUTION.md`. When this file and `!/CONSTITUTION.md` conflict, `!/CONSTITUTION.md` governs. Capability tier: **Advisory** per `!/AGENTS.md`.
+Vault governance authority lives in `CONSTITUTION.md`. When this file and `CONSTITUTION.md` conflict, `CONSTITUTION.md` governs. Capability tier: **Advisory** per `!/AGENTS.md`.
 
 ---
 
@@ -25,7 +28,7 @@ Vault governance authority lives in `!/CONSTITUTION.md`. When this file and `!/C
 
 ## Conventions & Standards
 
-See `!/VAULT-CONVENTIONS.md` — specifically the Vault ↔ Linear Operating Model Mapping table and the Sourcing Protocol section.
+See `VAULT-CONVENTIONS.md` — specifically the Vault ↔ Linear Operating Model Mapping table and the Sourcing Protocol section.
 
 **Key rule:** Any decision made in Slack must be promoted to a vault file or Linear issue before it is considered recorded.
 
@@ -33,7 +36,7 @@ See `!/VAULT-CONVENTIONS.md` — specifically the Vault ↔ Linear Operating Mod
 
 ## See Also
 
-- `!/CONSTITUTION.md` — Canonical vault governance authority
-- `!/VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
+- `CONSTITUTION.md` — Canonical vault governance authority
+- `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 - `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules
-- `!/!/!/! The world is quiet here/DOCKET.md` — Live swarm status board
+- [[DOCKET-POSTURE]] — the DOCKET coordination posture (canonical, single-source): THE DOCKET is the Court's register, **not** a live swarm status board

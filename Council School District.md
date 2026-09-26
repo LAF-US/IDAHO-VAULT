@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Council
-tags:
-  - schools/k12/district
+related:
+- Adams County
+- Council
+authority: LOGAN
 ---
-[[Council]], [[Adams County]] 
+Council, Adams County

@@ -1,12 +1,12 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
+related:
+- Association of Idaho Cities
+- House member
+- Idaho
+authority: LOGAN
 ---
+Residence:
 
-Residence: [[]]
+Association of Idaho Cities executive director
 
-[[Association of Idaho Cities]] executive director
-- Former [[House member|House member]] 
+- Former House member

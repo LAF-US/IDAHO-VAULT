@@ -1,7 +1,9 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Montpelier News-Examiner]]"
+- Montpelier News-Examiner
+related:
+- Adams Publishing Group
+- Montpelier
+authority: LOGAN
 ---
-[[newspapers|newspaper]] based in [[Montpelier]] owned by [[Adams Publishing Group]] 
+newspaper based in Montpelier owned by Adams Publishing Group

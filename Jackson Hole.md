@@ -1,6 +1,8 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- Teton
+- Teton County
+- Wyoming
+authority: LOGAN
 ---
-[[Teton County (WY)|Teton County]], [[Wyoming]] 
+Teton County, Wyoming

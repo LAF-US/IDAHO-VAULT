@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Aberdeen
-tags:
-  - schools/k12/district
+related:
+- Aberdeen
+- Bingham County
+authority: LOGAN
 ---
-[[Aberdeen]], [[Bingham County]] 
+Aberdeen, Bingham County

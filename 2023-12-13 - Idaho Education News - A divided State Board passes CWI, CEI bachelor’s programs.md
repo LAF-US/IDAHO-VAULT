@@ -1,12 +1,36 @@
 ---
 author:
-  - "[[Kevin Richert]]"
+- Kevin Richert
 outlet:
-  - "[[Idaho Education News]]"
+- Idaho Education News
 URL: https://www.idahoednews.org/top-news/a-divided-state-board-passes-cwi-cei-bachelors-programs/
-tags:
-  - media/articles
-  - 2023/12/13
+related:
+- '150'
+- '170'
+- '285'
+- '700'
+- Bill Gilbert
+- Boise
+- Boise State University
+- CEI
+- CWI
+- College of Eastern Idaho
+- College of Southern Idaho
+- College of Western Idaho
+- David Hill
+- Debbie Critchfield
+- Eastern Idaho
+- Idaho
+- Idaho Education News
+- Idaho State University
+- Kevin Richert
+- President
+- Shawn Keough
+- State Board of Education
+- executive session
+- money
+- word
+authority: LOGAN
 ---
 Supporters touted the promise of getting more students into college, and serving workforce needs.
 
@@ -43,10 +67,11 @@ The CWI program and the CEI operations management proposals passed on identical 
 CEI’s digital forensics degree passed unanimously.
 
 ## Up next: the Idaho State job search
+
 The State Board will be back at work first thing Thursday morning — but behind closed doors.
 
 The board will meet in executive session to interview the five finalists for the Idaho State president’s job.
 
-Under [[Idaho Code|state law]], the board can’t hire a new president in closed session. The board will have to vote on that hire in open session at a later date.
+Under state law, the board can’t hire a new president in closed session. The board will have to vote on that hire in open session at a later date.
 
 The board hopes to hire a new president by the end of the year. President Kevin Satterlee is retiring on Dec. 31.

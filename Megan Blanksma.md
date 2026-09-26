@@ -1,12 +1,12 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/elected
-  - people
+related:
+- Hammett
+- House Majority Caucus Chair
+- House Majority Leader
+authority: LOGAN
 ---
+Residence: Hammett
 
-Residence: [[Hammett]]
+House Majority Leader
 
-[[House Majority Leader]]
-- Former [[House Majority Caucus Chair]] 
+- Former House Majority Caucus Chair

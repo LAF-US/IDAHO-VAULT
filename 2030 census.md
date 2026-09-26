@@ -1,1 +1,7 @@
-[[U.S. Census]] 
+---
+authority: LOGAN
+related:
+- U.S. Census
+---
+
+U.S. Census

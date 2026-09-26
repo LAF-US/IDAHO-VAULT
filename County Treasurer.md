@@ -1,7 +1,7 @@
 ---
-tags:
-  - position/elected/county/executive
-aliases:
-  - Treasurer
+related:
+- budgets
+- counties
+authority: LOGAN
 ---
-[[counties]] [[budget|budgets]] 
+counties budgets

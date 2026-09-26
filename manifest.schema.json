@@ -9,6 +9,7 @@
     "authority",
     "sync",
     "mcp",
+    "obsidian_templates",
     "locks",
     "entries"
   ],
@@ -17,9 +18,10 @@
     "generated_at": { "type": "string", "format": "date-time" },
     "authority": {
       "type": "object",
-      "required": ["canonical_system", "interface_system", "fallback_mode"],
+      "required": ["canonical_system", "execution_system", "interface_system", "fallback_mode"],
       "properties": {
-        "canonical_system": { "const": "github" },
+        "canonical_system": { "const": "vault" },
+        "execution_system": { "const": "github" },
         "interface_system": { "const": "obsidian" },
         "fallback_mode": { "const": "filesystem" }
       },
@@ -47,6 +49,64 @@
         "mode": { "const": "transport_only" },
         "server": { "type": ["string", "null"] },
         "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "obsidian_templates": {
+      "type": "object",
+      "required": ["source_of_truth", "concrete_bindings", "folder_bindings", "untracked_plugins"],
+      "properties": {
+        "source_of_truth": { "const": "tracked_obsidian_config" },
+        "concrete_bindings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["client", "plugin", "config_path", "template_path", "mode", "status", "note_folder"],
+            "properties": {
+              "client": { "const": "obsidian" },
+              "plugin": { "type": "string" },
+              "config_path": { "type": "string" },
+              "template_path": { "type": "string" },
+              "mode": { "type": "string" },
+              "status": { "type": "string" },
+              "note_folder": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "folder_bindings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["client", "plugin", "config_path", "folder", "date_format", "time_format", "status", "note"],
+            "properties": {
+              "client": { "const": "obsidian" },
+              "plugin": { "type": "string" },
+              "config_path": { "type": "string" },
+              "folder": { "type": "string" },
+              "date_format": { "type": "string" },
+              "time_format": { "type": "string" },
+              "status": { "type": "string" },
+              "note": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "untracked_plugins": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["client", "plugin", "status", "config_path", "note"],
+            "properties": {
+              "client": { "const": "obsidian" },
+              "plugin": { "type": "string" },
+              "status": { "type": "string" },
+              "config_path": { "type": "string" },
+              "note": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
       },
       "additionalProperties": false
     },

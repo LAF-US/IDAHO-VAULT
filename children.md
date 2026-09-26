@@ -1,2 +1,8 @@
-[[parents]]
-[[families]]
+---
+authority: LOGAN
+related:
+- parents
+---
+
+parents
+families

@@ -1,10 +1,11 @@
 ---
-tags:
-  - party/republican
-  - people/elected
-  - people/elected/legislative
-  - people
+related:
+- Dover
+- House member
+- mayor
+authority: LOGAN
 ---
-Residence: [[Dover]]
-- elected [[mayor]] of [[Dover]]
-- former [[House member]] 
+Residence: Dover
+
+- elected mayor of Dover
+- former House member

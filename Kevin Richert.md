@@ -1,6 +1,7 @@
 ---
-tags:
-  - people/journalists
-  - people
+related:
+- Idaho
+- Idaho Education News
+authority: LOGAN
 ---
-[[Idaho Education News]] 
+Idaho Education News

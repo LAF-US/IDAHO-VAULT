@@ -1,9 +1,9 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/deceased
-  - people/candidate/legislative
+related:
+- House member
+- Lewiston
+authority: LOGAN
 ---
-Residence: [[Lewiston]] 
-- [[House member]] for [[Legislative District 6|LD6]] 
+Residence: Lewiston
+
+- House member for LD6

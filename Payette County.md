@@ -1,11 +1,12 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
-aliases:
-  - Payette
-  - 1P
+related:
+- Fruitland
+- Hamilton Corner
+- New Plymouth
+- Payette
+- Sand Hollow
+authority: LOGAN
 ---
-Seat: [[Payette]]
-Municipalities: [[Fruitland]], [[New Plymouth]]
-Communities: [[Hamilton Corner]], [[Sand Hollow]] 
+Seat: Payette
+Municipalities: Fruitland, New Plymouth
+Communities: Hamilton Corner, Sand Hollow

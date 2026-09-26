@@ -1,1 +1,7 @@
-[[cannabis]] raised for [[agriculture|agricultural]] purposes 
+---
+authority: LOGAN
+related:
+- cannabis
+---
+
+cannabis raised for agricultural purposes

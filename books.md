@@ -1,5 +1,6 @@
 ---
-aliases:
-  - book
+related:
+- libraries
+authority: LOGAN
 ---
-[[libraries]]
+libraries

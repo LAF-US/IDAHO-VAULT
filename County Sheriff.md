@@ -1,7 +1,7 @@
 ---
-tags:
-  - position/elected/county/executive
-aliases:
-  - Sheriff
+related:
+- counties
+- law enforcement
+authority: LOGAN
 ---
-[[counties]] [[law enforcement]] 
+counties law enforcement

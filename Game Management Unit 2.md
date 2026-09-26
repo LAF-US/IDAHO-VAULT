@@ -1,7 +1,8 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - GMU 2
+related:
+- Bonner County
+- Kootenai
+- Kootenai County
+authority: LOGAN
 ---
-southern [[Bonner County]] and northern [[Kootenai County]] 
+southern Bonner County and northern Kootenai County

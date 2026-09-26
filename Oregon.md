@@ -1,6 +1,7 @@
 ---
-tags:
-  - governments/state
-  - geography/land/state
+related:
+- Idaho
+- United States of America
+authority: LOGAN
 ---
-one of the [[United States of America]], borders [[State of Idaho|Idaho]] to the west
+one of the United States of America, borders Idaho to the west

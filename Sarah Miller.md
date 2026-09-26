@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Sarah A. Miller
-tags:
-  - people/journalists
+related:
+- Idaho
+- Idaho Statesman
+authority: LOGAN
 ---
-[[Idaho Statesman]] photographer videographer 
+Idaho Statesman photographer videographer

@@ -1,12 +1,6 @@
 ---
-aliases:
-  - YouTube channel
-  - YouTube video
-  - YouTube videos
-  - YouTube channels
-  - YouTuber
-  - YouTubers
+related:
+- social media
+authority: LOGAN
 ---
-
-[[social media]] platform
-
+social media platform

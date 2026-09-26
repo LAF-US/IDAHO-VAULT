@@ -1,21 +1,15 @@
 ---
-title: TO DO LIST
-aliases:
-  - TO DO LIST
-linter-yaml-title-alias: TO DO LIST
-date created: Friday, March 27th 2026, 10:09:45 am
-date modified: Sunday, March 29th 2026, 4:59:58 pm
+date created: Monday, April 27th 2026, 10:44:38 pm
+date modified: Monday, June 15th 2026, 10:37:18 am
 ---
-
-*Persistent list — incomplete items carry forward daily. Link daily notes here.*
 
 ## Active
 
-- [ ] Scripts
-	- [ ] Franklin - Mormons
-	- [ ] Pierce - Gold Mining
-	- [ ] Franklin - Pioneer Day
-	- [ ] Pierce - Logging
-	- [ ] Rigby - Farnsworth
-- [ ] IR Power PKG
-- [ ] Dialogue Podcasts SCHEDULE
+- VAULT
+- [ ] FIX DAILY NOTE SYNCING / CARRYFORWARD
+  - [ ] Tasks completed on a DAY were not checked off here.
+  - [ ] Tasks left unfinished on a DAY were not added to here.
+  - [ ] Tasks completed on a daily note should be reflected here intentionally.
+  - [ ] Tasks left unfinished on a daily note should be carried forward intentionally.
+- PERSONAL
+- [ ] BANKING AND YNAB

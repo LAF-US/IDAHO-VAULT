@@ -1,6 +1,6 @@
 ---
-tags:
-  - people/candidate/legislative
-  - party/republican
+related:
+- Glenneda Zuiderveld
+authority: LOGAN
 ---
-challenger to [[Glenneda Zuiderveld]] for 2024 [[Legislative District 24|LD24]] [[primary election|primary]] 
+challenger to Glenneda Zuiderveld for 2024 LD24 primary

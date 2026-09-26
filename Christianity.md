@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Judeo-Christian
-  - Christian
-  - Christians
+related:
+- churches
+- religion
+authority: LOGAN
 ---
-[[religion]] - [[Catholic Church|Catholic]] and Orthodox and Protestant [[churches]] 
+religion - Catholic and Orthodox and Protestant churches

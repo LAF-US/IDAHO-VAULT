@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- Bonner County
+authority: LOGAN
 ---
-[[Bonner County]] seat
+Bonner County seat

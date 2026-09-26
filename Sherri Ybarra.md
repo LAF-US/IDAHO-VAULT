@@ -1,7 +1,6 @@
 ---
-tags:
-  - people/elected/statewide/superintendent
-  - people/candidate/statewide/superintendent
-  - party/republican
+related:
+- Superintendent of Public Instruction
+authority: LOGAN
 ---
-former [[Superintendent of Public Instruction]] 
+former Superintendent of Public Instruction

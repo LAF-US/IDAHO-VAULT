@@ -1,5 +1,7 @@
 ---
-tags:
-  - geography/land/places/geology
+related:
+- Latah County
+- Moscow
+authority: LOGAN
 ---
-[[Latah County]] southeast of [[Moscow]]
+Latah County southeast of Moscow

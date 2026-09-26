@@ -1,0 +1,222 @@
+# Plan: Agent Dotfolder Architecture
+
+## Context
+
+Agent instruction files currently live at vault root (`CLAUDE.md`, `GEMINI.md`,
+`Perplexity.md`, `Grok.md`). This creates disambiguation collisions with vault
+notes (`codex.md`), and doesn't follow the established dotfolder convention
+already used by `.git/`, `.github/`, `.obsidian/`, `.claude/`, `.vscode/`, `.qodo/`.
+
+The fix: each AI tool gets its own dotfolder. Files inside are invisible to
+Obsidian's note graph, can't collide with vault notes, and each folder can grow
+independently (settings, levelsets, context bundles). `!/` becomes the shared
+commons all agents draw from — hub-and-spoke.
+
+---
+
+## Official Auto-Load Status (per tool documentation)
+
+| Tool | Dotfolder | Auto-load file | Auto-loaded? |
+| --- | --- | --- | --- |
+| Claude Code | `.claude/` | `.claude/CLAUDE.md` | Yes — official |
+| Gemini CLI | `.gemini/` | `.gemini/GEMINI.md` | Yes — official |
+| OpenAI Codex CLI | `.codex/` | `.codex/config.toml` | Yes — official |
+| Grok (xAI) | `.grok/` | `.grok/GROK.md` | Claimed — source uncertain |
+| GitHub Copilot | `.github/` | `.github/copilot-instructions.md` | Yes — official (already done) |
+| Deepseek | `.deepseek/` | none official | Manual injection |
+| Perplexity | `.perplexity/` | none official | Manual injection |
+| Microsoft (non-Copilot) | `.microsoft/` | none official | Manual injection |
+| Meta AI / Llama | `.meta/` | none official | Manual injection |
+| Fictive personas | `.bartimaeus/` `.zagreus/` `.persephone/` | none | Manual injection |
+
+**Cross-tool standard:** `AGENTS.md` at repo root is auto-loaded by OpenAI Codex
+and GitHub Copilot. Currently only `!/AGENTS.md` exists — create a thin root-level
+`AGENTS.md` as a pointer.
+
+---
+
+## Folder Structure (target state)
+
+```
+.claude/
+  CLAUDE.md          ← moved from root (official auto-load)
+  rules/             ← optional: modular rules auto-loaded by Claude Code
+  settings.json      ← already exists
+  settings.local.json ← already exists
+
+.gemini/
+  GEMINI.md          ← moved from root GEMINI.md (official auto-load)
+  settings.json      ← stub (Gemini CLI config)
+
+.codex/
+  config.toml        ← stub (official Codex CLI config)
+  instructions.md    ← governance shim for OpenAI Codex agents
+
+.grok/
+  GROK.md            ← governance shim (matches claimed convention)
+
+.deepseek/
+  instructions.md    ← governance shim (manual injection)
+
+.perplexity/
+  instructions.md    ← moved from root Perplexity.md
+
+.microsoft/
+  instructions.md    ← governance shim for full Microsoft AI surface:
+                        GitHub Copilot (chat/CLI), Microsoft Copilot (M365),
+                        Azure OpenAI, Bing AI, Copilot Studio
+
+.meta/
+  instructions.md    ← governance shim for Meta AI surface:
+                        Meta AI (WhatsApp/Instagram/Facebook), Llama models,
+                        Meta AI Studio
+
+.bartimaeus/
+  instructions.md    ← fictive persona shim (manual injection)
+
+.zagreus/
+  instructions.md    ← fictive persona shim (manual injection)
+
+.persephone/
+  instructions.md    ← fictive persona shim (manual injection)
+
+AGENTS.md            ← NEW at root: thin cross-tool pointer to !/AGENTS.md
+```
+
+---
+
+## Root Cleanup
+
+| File | Action | Reason |
+| --- | --- | --- |
+| `CLAUDE.md` | `git mv` → `.claude/CLAUDE.md`, delete root | Official path is `.claude/CLAUDE.md` |
+| `GEMINI.md` | `git mv` → `.gemini/GEMINI.md`, delete root | Official path is `.gemini/GEMINI.md` |
+| `Perplexity.md` | `git mv` → `.perplexity/instructions.md`, delete root | No auto-load; move to dotfolder |
+| `Grok.md` | `git rm` | Empty file (0 bytes); replaced by `.grok/GROK.md` |
+| `codex.md` | Leave untouched | Existing vault note — not an agent file |
+| `CLAUDE 1.md` / `CLAUDE 2.md` | Flag for Logan | Archive copies — Logan decides keep/delete |
+
+---
+
+## File Contents
+
+### Standard shim structure (all non-auto-load files)
+
+Every `instructions.md` / `GROK.md` / etc. follows the 6-block pattern:
+1. **Load mechanism** — honest auto-load OR manual injection statement
+2. **Identity header** — owner / repo / platform
+3. **Governance** — defers to `!/CONSTITUTION.md`; declares capability tier
+4. **Role** — agent persona, one paragraph
+5. **Conventions pointer** — `See !/VAULT-CONVENTIONS.md`
+6. **See Also** — flat list pointing to `!/` commons
+
+Target: 30–45 lines per file.
+
+### `.codex/config.toml` stub
+
+```toml
+# OpenAI Codex CLI project configuration
+# See https://developers.openai.com/codex/config-reference
+# Governance shim: .codex/instructions.md
+# Shared conventions: !/VAULT-CONVENTIONS.md
+```
+
+### `.gemini/settings.json` stub
+
+```json
+{
+  "// governance": "See .gemini/GEMINI.md and !/CONSTITUTION.md"
+}
+```
+
+### `.meta/instructions.md`
+
+Governance shim for Meta AI products. Follows standard 6-block pattern.
+Role: "The Social Graph" — Meta AI access via WhatsApp/Instagram/Facebook
+integrations and Llama model deployments. Read/advisory only unless Logan
+directs otherwise.
+
+### Fictive personas
+
+`.bartimaeus/`, `.zagreus/`, `.persephone/` get `instructions.md` stubs with
+role TBD by Logan. Placeholder content:
+
+```markdown
+# [NAME] — IDAHO-VAULT
+
+**Load mechanism:** Manual injection by Logan.
+[...]
+**Role:** [Pending Logan's direction — persona not yet formally defined.]
+```
+
+---
+
+## Gitignore
+
+**Rule:** IDE/runtime dotfolders are ignored. Agent governance dotfolders are tracked.
+
+| Folder | Status | Action |
+| --- | --- | --- |
+| `.vscode/` | Already gitignored (line 14) | None |
+| `.qodo/` | Empty, not in `.gitignore` | Add to `.gitignore` (housekeeping) |
+| `.venv/` | Already gitignored | None |
+| `.gemini/`, `.codex/`, `.grok/`, etc. | New governance folders | Must be tracked — verify no wildcard catches them |
+
+No existing `.gitignore` wildcard rule will catch the new agent folders. The
+`.gitignore` ignores named folders explicitly, not by pattern. Safe to proceed.
+
+---
+
+## Execution Order
+
+1. Add `.qodo/` to `.gitignore`
+2. `git mv CLAUDE.md .claude/CLAUDE.md`
+3. `git mv GEMINI.md .gemini/GEMINI.md` + create `.gemini/settings.json`
+4. `git mv Perplexity.md .perplexity/instructions.md`
+5. `git rm Grok.md`
+6. Create remaining new folders + files:
+   `.codex/`, `.grok/`, `.deepseek/`, `.microsoft/`,
+   `.bartimaeus/`, `.zagreus/`, `.persephone/`, `.meta/`
+7. Create root `AGENTS.md` (thin pointer to `!/AGENTS.md`)
+8. Flag `CLAUDE 1.md` / `CLAUDE 2.md` to Logan before touching
+9. Single commit on `claude/agent-dotfolder-architecture` branch
+
+---
+
+## Files Modified / Created
+
+| Path | Status |
+| --- | --- |
+| `.claude/CLAUDE.md` | Moved from `CLAUDE.md` |
+| `.gemini/GEMINI.md` | Moved from `GEMINI.md` |
+| `.gemini/settings.json` | New stub |
+| `.codex/config.toml` | New stub |
+| `.codex/instructions.md` | New governance shim |
+| `.grok/GROK.md` | New governance shim |
+| `.deepseek/instructions.md` | New governance shim |
+| `.perplexity/instructions.md` | Moved from `Perplexity.md` |
+| `.microsoft/instructions.md` | New governance shim (Copilot, M365, Azure OpenAI, Bing, Copilot Studio) |
+| `.meta/instructions.md` | New governance shim (Meta AI, Llama, Meta AI Studio) |
+| `.bartimaeus/instructions.md` | New stub (role TBD by Logan) |
+| `.zagreus/instructions.md` | New stub (role TBD by Logan) |
+| `.persephone/instructions.md` | New stub (role TBD by Logan) |
+| `AGENTS.md` (root) | New — thin pointer to `!/AGENTS.md` |
+| `CLAUDE.md` (root) | Deleted (moved to `.claude/`) |
+| `GEMINI.md` (root) | Deleted (moved to `.gemini/`) |
+| `Perplexity.md` (root) | Deleted (moved to `.perplexity/`) |
+| `Grok.md` (root) | Deleted (empty, replaced by `.grok/`) |
+
+---
+
+## Open Questions for Logan
+
+1. **`CLAUDE 1.md` / `CLAUDE 2.md`** at root — archive copies of old CLAUDE.md.
+   Delete or move to `!/` archive?
+2. **Fictive persona roles** — `.bartimaeus/`, `.zagreus/`, `.persephone/` stubs
+   will have placeholder role text. Logan should define canonical roles before
+   or after this PR.
+3. **`.meta/` role** — assigned "The Social Graph" as placeholder. Logan should
+   confirm or redefine before or after this PR.
+4. **`.grok/` auto-load status** — the official xAI Grok (the LLM) has no
+   confirmed CLI dotfolder convention. The `.grok/GROK.md` claim came from a
+   community project. Treat as manual injection until confirmed otherwise.

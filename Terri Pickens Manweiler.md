@@ -1,5 +1,7 @@
 ---
-tags:
-  - party/democratic
+related:
+- Governor
+- Lieutenant Governor
+authority: LOGAN
 ---
-former candidate for [[Lieutenant Governor]] 
+former candidate for Lieutenant Governor

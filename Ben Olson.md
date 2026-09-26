@@ -1,5 +1,7 @@
 ---
-tags:
-  - people/journalists
+related:
+- Sandpoint
+- Sandpoint Reader
+authority: LOGAN
 ---
-[[Sandpoint Reader]] publisher 
+Sandpoint Reader publisher

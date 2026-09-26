@@ -1,7 +1,9 @@
 ---
-aliases:
-  - NIC
-tags:
-  - schools/colleges/community
+related:
+- Board of Trustees - NIC
+- Kootenai
+- Kootenai County
+- NIC
+authority: LOGAN
 ---
-[[Kootenai County]]-based [[community colleges|community college]] overseen by [[Board of Trustees - NIC]] 
+Kootenai County-based community college overseen by Board of Trustees - NIC

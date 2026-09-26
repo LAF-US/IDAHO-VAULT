@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Buhl
-tags:
-  - schools/k12/district
+related:
+- Buhl
+- Twin Falls
+- Twin Falls County
+authority: LOGAN
 ---
-[[Buhl]], [[Twin Falls County]] 
+Buhl, Twin Falls County

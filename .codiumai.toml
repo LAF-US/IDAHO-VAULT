@@ -1,5 +1,5 @@
 # Qodo test generation configuration (auto-loaded by Qodo test gen)
-# See !/VAULT-CONVENTIONS.md for vault governance conventions
+# See VAULT-CONVENTIONS.md for vault governance conventions
 
 [codiumai]
 # Test generation targets: .github/scripts/*.py

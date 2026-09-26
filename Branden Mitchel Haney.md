@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Branden Haney
-tags:
-  - people
+related:
+- Patriot Front
+- Utah
+authority: LOGAN
 ---
-[[Patriot Front]] member, [[Utah]] resident 
+Patriot Front member, Utah resident

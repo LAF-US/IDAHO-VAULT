@@ -1,6 +1,8 @@
 ---
-aliases:
-  - Schweitzer
-  - Schweitzer Mountain Resort
+related:
+- Bonner County
+- Sandpoint
+- ski resorts
+authority: LOGAN
 ---
-[[ski resorts]] in [[Sandpoint]], [[Bonner County]] 
+ski resorts in Sandpoint, Bonner County

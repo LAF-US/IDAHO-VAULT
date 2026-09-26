@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Moscow
-tags:
-  - schools/k12/district
+related:
+- Latah County
+- Moscow
+authority: LOGAN
 ---
-[[Moscow]], [[Latah County]] 
+Moscow, Latah County

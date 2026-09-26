@@ -1,9 +1,9 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/democratic
-  - people/appointed/legislative
-  - people/candidate/legislative
-residence: "[[Boise]]"
+residence: Boise
+related:
+- Boise
+- Legislative District 17
+- Senate member
+authority: LOGAN
 ---
-[[Senate member]] for [[Legislative District 17]] 
+Senate member for Legislative District 17

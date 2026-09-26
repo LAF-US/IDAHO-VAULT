@@ -1,5 +1,3 @@
 ---
-tags:
-  - party/democratic
 ---
-former [[State Treasurer|Treasurer]] candidate
+former Treasurer candidate

@@ -1,9 +1,10 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/elected
-  - people
+related:
+- House Revenue and Taxation
+- House member
+- Meridian
+authority: LOGAN
 ---
-Residence: [[Meridian]]
-- former [[House member]] and [[House Revenue and Taxation]] chairman 
+Residence: Meridian
+
+- former House member and House Revenue and Taxation chairman

@@ -1,10 +1,12 @@
 ---
-tags:
-  - people/elected/legislative
-  - people/elected
-  - party/democratic
-  - people
+related:
+- Boise
+- House member
+- Idaho
+- Idaho Democratic Party
+- Legislative District 17
+authority: LOGAN
 ---
-Residence: [[Boise]]
+Residence: Boise
 
-[[Idaho Democratic Party]] [[House member|House member]] from [[Legislative District 17]]
+Idaho Democratic Party House member from Legislative District 17

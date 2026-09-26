@@ -1,11 +1,24 @@
 ---
-outlet:
-url: "https://www.creativerly.com/i-do-not-like-horses-except-this-one-with-horse-browser/"
+outlet: null
+url: https://www.creativerly.com/i-do-not-like-horses-except-this-one-with-horse-browser/
 author:
-  - "[[Philipp Temmel]]"
-tags:
-  - media/articles
-  - 2024/06/16
+- Philipp Temmel
+related:
+- About
+- CEO
+- Paris
+- 'Yes'
+- costs
+- emoji
+- initial
+- journal
+- links
+- parents
+- social media
+- systems
+- web
+- website
+authority: LOGAN
 ---
 As a child, I got faced multiple times with the same situation. After I introduced myself to friends or acquaintances of my parents, and they heard my name, suddenly they felt the urge to explain that my name dates back to *Philippos*, which is Greek and means *philos = aficionado* and *hippos = horse,* so to them *Philipp* basically meant *horse lover.* I always felt a bit annoyed hearing that, because I just do not like horses. They are unpredictable, they have a lot of power, and I heard a lot of stories of accidents from friends and families where horses were involved. So, yeah, I do not like horses.
 
@@ -13,7 +26,7 @@ However, I recently met a horse that I actually like. Luckily, it is not a *real
 
 This is [Horse Browser](https://gethorse.com/?via=creativerly&ref=creativerly.com) \*, the only horse I like.
 
-![](https://www.creativerly.com/content/images/size/w2400/2024/09/CleanShot-2024-09-16-at-17.17.24@2x.png)
+![alt text needed](https://www.creativerly.com/content/images/size/w2400/2024/09/CleanShot-2024-09-16-at-17.17.24@2x.png)
 
 The makers of Horse Browser, Pascal Pixel and Elly McKeown
 
@@ -69,7 +82,7 @@ Retracing your steps of your whole research is an incredible powerful thing, and
 
 As I continued using Horse Browser more and more, leveraging Trails for specific research for my articles, grouping Trails by task or subject area, I realized how much I was in the need for a dedicated browser like [Horse Browser](https://gethorse.com/?via=creativerly&ref=creativerly.com) \*. Sure, I now added yet another app to my toolstack, however, using Horse Browser is fun, it is a beautiful piece of software, it supports my workflows, and I enjoy using it. All reasons enough to add another tool to my toolstack.
 
-### $10 per month or $60 per year for a browser? Yes.
+### $10 per month or $60 per year for a browser? Yes
 
 As of writing this, Horse Browser costs $10 per month or $60 per year. This is the first time I paid for a browser, and I do not regret a single dollar of it. Just after a single day of using Horse Browser for a couple of hours, the interface, the Trails, SubTrails, and more, clicked for me. Horse Browser did not replace Vivaldi as my main browser, but it became the browser I use for research and for the work on all my side-projects. Additionally, it is also a great browser, in case you would like to just experience calmness and a browser dedicated to some parts of your work. To make Horse Browser my main browser there are a couple of things that are missing: I would love to have a command bar interface that gives me an additional way to navigate between Trails, Areas, and Projects. I am heavily relying on browser extensions, for example to capture bookmarks. Now, I get that this is exactly what Horse Browser wants to "prevent", since the idea of Trails also functions as bookmarks. For example, if you have a news site opened as a tab, and you browse it every day, stumble across something interesting to read, but you decide to not read it right away and rather save it for later, all you have to do in Horse Browser is click on and open it up, as it will get saved and opened as a SubTrail of that news site. You can then fold the news site, and keep your sidebar clean and organized.
 

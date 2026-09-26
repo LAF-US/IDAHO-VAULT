@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Kimberly
-tags:
-  - schools/k12/district
+related:
+- Kimberly
+- Twin Falls
+- Twin Falls County
+authority: LOGAN
 ---
-[[Kimberly]], [[Twin Falls County]] 
+Kimberly, Twin Falls County

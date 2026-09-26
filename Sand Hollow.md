@@ -1,5 +1,7 @@
 ---
-tags:
-  - geography/land/places/communities
+related:
+- Payette
+- Payette County
+authority: LOGAN
 ---
-[[Payette County]] 
+Payette County

@@ -1,11 +1,15 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
-aliases:
-  - Power
-  - 2P
+related:
+- American Falls
+- Arbon
+- Arbon Valley
+- Neeley
+- Pauline
+- Pocatello
+- Rockland
+- Roy
+authority: LOGAN
 ---
-Seat: [[American Falls]]
-Municipalities: [[Rockland]], [[Pocatello]]
-Communities: [[Arbon Valley]], [[Arbon]], [[Neeley]], [[Pauline]], [[Roy]] 
+Seat: American Falls
+Municipalities: Rockland, Pocatello
+Communities: Arbon Valley, Arbon, Neeley, Pauline, Roy

@@ -1,5 +1,6 @@
 ---
-tags:
-  - geography/water/ocean
+related:
+- East Coast
+authority: LOGAN
 ---
-[[East Coast]] 
+East Coast

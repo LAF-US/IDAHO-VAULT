@@ -1,0 +1,124 @@
+AUTHORITATIVE EVENTS: 52
+DELIVERED EVENTS: 42
+AUTHORITATIVE BLANK LINES: [719]
+DELIVERED BLANK LINES: none
+
+SOURCE-ONLY EVENT OCCURRENCES:
+  dozen-vault_time@cron_clock x3
+  millenium-vault_time@cron_clock x1
+  s1-vault_time@cron_clock x1
+  s2-vault_time@cron_clock x1
+  s3-vault_time@cron_clock x1
+  s4-vault_time@cron_clock x1
+  s5-vault_time@cron_clock x1
+  s6-vault_time@cron_clock x1
+
+DELIVERED-ONLY EVENT OCCURRENCES:
+
+MATCHED EVENTS WITH PROPERTY DIFFERENCES: 42
+  april-vault_time@cron_clock occurrence 1
+  august-vault_time@cron_clock occurrence 1
+  azer-vault_time@cron_clock occurrence 1
+  century-vault_time@cron_clock occurrence 1
+  dawn-vault_time@cron_clock occurrence 1
+  day-vault_time@cron_clock occurrence 1
+  decade-vault_time@cron_clock occurrence 1
+  december-vault_time@cron_clock occurrence 1
+  dusk-vault_time@cron_clock occurrence 1
+  february-vault_time@cron_clock occurrence 1
+  friday-vault_time@cron_clock occurrence 1
+  hour-vault_time@cron_clock occurrence 1
+  january-vault_time@cron_clock occurrence 1
+  july-vault_time@cron_clock occurrence 1
+  june-vault_time@cron_clock occurrence 1
+  march-vault_time@cron_clock occurrence 1
+  may-vault_time@cron_clock occurrence 1
+  methera-vault_time@cron_clock occurrence 1
+  minute-vault_time@cron_clock occurrence 1
+  monday-vault_time@cron_clock occurrence 1
+  month-vault_time@cron_clock occurrence 1
+  noon-vault_time@cron_clock occurrence 1
+  november-vault_time@cron_clock occurrence 1
+  october-vault_time@cron_clock occurrence 1
+  pits-vault_time@cron_clock occurrence 1
+  q1-vault_time@cron_clock occurrence 1
+  q2-vault_time@cron_clock occurrence 1
+  q3-vault_time@cron_clock occurrence 1
+  q4-vault_time@cron_clock occurrence 1
+  saturday-vault_time@cron_clock occurrence 1
+  september-vault_time@cron_clock occurrence 1
+  sethera-vault_time@cron_clock occurrence 1
+  sunday-vault_time@cron_clock occurrence 1
+  tan-vault_time@cron_clock occurrence 1
+  tethera-vault_time@cron_clock occurrence 1
+  thursday-vault_time@cron_clock occurrence 1
+  tick-vault_time@cron_clock occurrence 1
+  tuesday-vault_time@cron_clock occurrence 1
+  wednesday-vault_time@cron_clock occurrence 1
+  week-vault_time@cron_clock occurrence 1
+  yan-vault_time@cron_clock occurrence 1
+  year-vault_time@cron_clock occurrence 1
+
+CALENDAR-LEVEL LINES AUTHORITATIVE: 16; DELIVERED: 10
+
+STRICT SOURCE FINDINGS:
+  Source as pasted is LF-delimited rather than CRLF-delimited.
+  Blank content line at source line 719.
+  Line 9: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 18: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 32: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 45: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 58: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 71: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 84: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 97: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 110: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 123: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 137: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 151: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 165: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 179: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 193: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 207: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 220: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 233: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 246: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 259: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 272: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 285: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 298: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 311: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 324: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 337: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 350: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 363: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 376: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 390: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 404: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 418: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 432: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 446: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 460: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 474: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 488: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 502: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 516: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 530: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 544: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 557: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 571: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 585: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 599: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 613: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 627: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 641: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 655: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 657: RRULE contains a part without =.
+  Line 668: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 670: RRULE contains a part without =.
+  Line 681: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 683: RRULE contains a part without =.
+  Line 694: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  Line 707: invalid DTSTAMP DATE-TIME value '20270101Z'.
+  UID 'dozen-vault_time@cron_clock' is duplicated 3 times.
+TOTAL STRICT SOURCE FINDINGS: 59

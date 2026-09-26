@@ -1,1 +1,8 @@
-[[white supremacist]] [[racism]] 
+---
+authority: LOGAN
+related:
+- racism
+- white supremacist
+---
+
+white supremacist racism

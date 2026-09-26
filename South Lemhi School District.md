@@ -1,7 +1,8 @@
 ---
-aliases:
-  - South Lemhi
-tags:
-  - schools/k12/district
+related:
+- Leadore
+- Lemhi
+- Lemhi County
+authority: LOGAN
 ---
-[[Leadore]], [[Lemhi County]] 
+Leadore, Lemhi County

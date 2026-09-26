@@ -1,7 +1,11 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Teton Valley News]]"
+- Teton Valley News
+related:
+- Adams Publishing Group
+- Driggs
+- Teton
+- Teton County
+authority: LOGAN
 ---
-[[Teton County]] [[newspapers|newspaper]] in [[Driggs]] owned by [[Adams Publishing Group]]
+Teton County newspaper in Driggs owned by Adams Publishing Group

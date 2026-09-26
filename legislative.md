@@ -1,1 +1,7 @@
-[[Idaho Legislature|Legislature]] [[and]] [[Idaho Legislature|legislators]] [[context]] [[window]] 
+---
+authority: LOGAN
+related:
+- window
+---
+
+Legislature and legislators context window

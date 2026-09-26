@@ -1,10 +1,8 @@
 ---
-tags:
-  - media/outlets
-aliases:
-  - DNews
-  - Daily News
 outlet:
-  - "[[Moscow-Pullman Daily News]]"
+- Moscow-Pullman Daily News
+related:
+- Moscow
+authority: LOGAN
 ---
-[[Moscow]] [[newspapers|newspaper]] 
+Moscow newspaper

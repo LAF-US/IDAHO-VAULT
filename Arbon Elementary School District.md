@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Arbon
-tags:
-  - schools/k12/district
+related:
+- Arbon
+- Arbon Valley
+- Power County
+authority: LOGAN
 ---
-[[Arbon Valley]], [[Power County]] 
+Arbon Valley, Power County

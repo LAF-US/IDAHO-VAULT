@@ -1,5 +1,7 @@
 ---
-tags:
-  - governments/state/legislative
+related:
+- Idaho
+- Idaho House of Representatives
+authority: LOGAN
 ---
-[[Idaho House of Representatives]] 
+Idaho House of Representatives

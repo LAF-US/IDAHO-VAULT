@@ -1,10 +1,16 @@
 ---
-tags:
-  - 2022/05/12
-  - 2022/election
-  - media/articles
+related:
+- GOP
+- Idaho
+- Idaho Reports
+- Logan Finney
+- election
+- general election
+- legislative
+- primary election
+authority: LOGAN
 ---
-by [[Logan Finney]], [[Idaho Reports]]
+by Logan Finney, Idaho Reports
 
 Amid a handful of retirements and a few campaigns for executive branch, most sitting Idaho lawmakers are running for reelection.
 

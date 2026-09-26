@@ -1,9 +1,6 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
+related:
+- Nampa
+authority: LOGAN
 ---
-Residence: [[Nampa]]
-
+Residence: Nampa

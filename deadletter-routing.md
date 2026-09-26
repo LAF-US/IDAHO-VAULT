@@ -1,3 +1,18 @@
+---
+authority: LOGAN
+related:
+- 2026-03-16T2127-claude-orphan-cry
+- Anthropic
+- CRY
+- Copilot
+- GitHub
+- Microsoft Copilot
+- PROTOCOL
+- SOURCE
+- agent
+- node
+---
+
 # DEADLETTER ROUTING PROTOCOL
 
 When a swarm node generates output but has no downstream receiver (orphaned handoff):
@@ -7,6 +22,7 @@ When a swarm node generates output but has no downstream receiver (orphaned hand
 Create file: `/SWARM/deadletters/{TIMESTAMP}-{SOURCE}-{ISSUE}.md`
 
 Example:
+
 ```
 /SWARM/deadletters/2026-03-16T2127-claude-orphan-cry.md
 ```
@@ -47,6 +63,7 @@ Example:
 ## TRIAGE CHECKLIST
 
 Principal (Logan) should:
+
 - [ ] Review all deadletters in `/SWARM/deadletters/`
 - [ ] Decide: who should own this? (which agent?)
 - [ ] Route to appropriate node OR update agent role

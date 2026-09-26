@@ -1,11 +1,38 @@
 ---
-source: "https://favs.news/faith-leaders-protest-idaho-laws-capitol-worship/"
+source: https://favs.news/faith-leaders-protest-idaho-laws-capitol-worship/
 author:
-  - "[[Logan Finney]]"
+- Logan Finney
 published: 2026-01-12
 created: 2026-03-27
-tags:
-  - 2026/01/12
+related:
+- '175'
+- '2026-03-27'
+- Boise
+- Christian nationalism
+- Christianity
+- First Amendment
+- Franklin
+- FāVS
+- ICE
+- Idaho
+- Idaho Legislature
+- Islam
+- LDS
+- Logan Finney
+- Medicaid
+- Spokane
+- UMC
+- Washington
+- atheist
+- battery
+- belonging
+- freedom of religion
+- health care
+- homelessness
+- legislative
+- legislative session
+- religion
+authority: LOGAN
 ---
 ## Faith leaders protest Idaho Legislature’s “misuse of Christianity” at Capitol worship service
 
@@ -36,8 +63,6 @@ A Methow Valley church installed solar panels and battery storage to serve as a 
 Our Sponsors
 
 Faith leaders pray before Idaho Legislative session begins (Logan Finney/FāVS News).
-
-  
 
 **By Logan Finney |** **FāVS News** **Reporter**
 

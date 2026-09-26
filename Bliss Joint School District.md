@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Bliss
-tags:
-  - schools/k12/district
+related:
+- Bliss
+- Gooding
+- Gooding County
+authority: LOGAN
 ---
-[[Bliss]], [[Gooding County]] 
+Bliss, Gooding County

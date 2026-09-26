@@ -1,22 +1,35 @@
 ---
-tags:
-  - 2021/session
-  - 2020/session
-  - 2019/session
-  - 2022/session
-  - 2023/session
-  - 2024/session
-  - 1999/session
+related:
+- Coeur d'Alene
+- Coeur d'Alene Tribe
+- Governor
+- Idaho
+- Idaho Legislature
+- Kootenai
+- Kootenai Tribe
+- Nez Perce Tribe
+- President
+- Senate President Pro Tempore
+- Shoshone
+- Shoshone-Bannock Tribes
+- Shoshone-Paiute Tribes
+- Speaker of the House
+- State of Idaho
+- indigenous peoples
+- tribal chairman
+- tribal council
+authority: LOGAN
 ---
-[[Idaho Legislature]] [[Idaho House of Representatives|House]] and [[Idaho Senate|Senate]] statutorily created ([[1999 legislative session|1999]]) council on relationship between the [[State of Idaho]] and [[indigenous peoples]]. 
+Idaho Legislature House and Senate statutorily created (1999) council on relationship between the State of Idaho and indigenous peoples.
 
-Members: 
-- one appointed by [[Governor]]
-- two [[Idaho Senate|Senate]] members appointed by [[Senate President Pro Tempore]] 
-- two [[Idaho House of Representatives|House]] members appointed by [[Speaker of the House]] 
-- one each appointed by [[tribal council]] and approved by [[tribal chairman]] 
-	- [[Kootenai Tribe]] 
-	- [[Coeur d'Alene Tribe]]
-	- [[Nez Perce Tribe]] 
-	- [[Shoshone-Bannock Tribes]]
-	- [[Shoshone-Paiute Tribes]] 
+Members:
+
+- one appointed by Governor
+- two Senate members appointed by Senate President Pro Tempore
+- two House members appointed by Speaker of the House
+- one each appointed by tribal council and approved by tribal chairman
+  - Kootenai Tribe
+  - Coeur d'Alene Tribe
+  - Nez Perce Tribe
+  - Shoshone-Bannock Tribes
+  - Shoshone-Paiute Tribes

@@ -1,7 +1,6 @@
 ---
-tags:
-  - 2020/session
-  - federal
-  - 2019/session
+related:
+- Committee on Federalism
+authority: LOGAN
 ---
-2019-2020 [[education]] subcommittee within [[Committee on Federalism]]. 
+2019-2020 education subcommittee within Committee on Federalism.

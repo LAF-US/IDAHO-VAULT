@@ -1,7 +1,9 @@
 ---
-aliases:
-  - West Bonner
-tags:
-  - schools/k12/district
+related:
+- Bonner County
+- Laclede
+- Oldtown
+- Priest River
+authority: LOGAN
 ---
-[[Priest River]]/[[Laclede]]/[[Oldtown]], [[Bonner County]] 
+Priest River/Laclede/Oldtown, Bonner County

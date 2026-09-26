@@ -1,11 +1,7 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
-aliases:
-  - Richard Cheatum
+related:
+- Pocatello
+- city council
+authority: LOGAN
 ---
-
-Residence: [[Pocatello]], city council member
+Residence: Pocatello, city council member

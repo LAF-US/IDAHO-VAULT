@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Nampa
-tags:
-  - schools/k12/district
+related:
+- Canyon County
+- Nampa
+authority: LOGAN
 ---
-[[Nampa]], [[Canyon County]] 
+Nampa, Canyon County

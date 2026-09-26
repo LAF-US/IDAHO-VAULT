@@ -1,8 +1,8 @@
 ---
-aliases:
-  - Kuna
-tags:
-  - schools/k12/district
+related:
+- Ada County
+- Canyon County
+- Kuna
+authority: LOGAN
 ---
-
-[[Kuna]], [[Ada County]]/[[Canyon County]] 
+Kuna, Ada County/Canyon County

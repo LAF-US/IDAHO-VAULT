@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
+related:
+- Dalton Gardens
+authority: LOGAN
 ---
-Residence: [[Dalton Gardens]]
+Residence: Dalton Gardens

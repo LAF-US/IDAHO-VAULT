@@ -1,1 +1,9 @@
+---
+authority: LOGAN
+related:
+- LEVELSET
+- PROTOCOLS
+- RUN
+---
+
 Gemini: RUN LEVELSET PROTOCOLS and PRINT REPORTS

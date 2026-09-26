@@ -1,6 +1,9 @@
 ---
-tags:
-  - geography/land/state/region
-  - geography/land/places/geology
+related:
+- Idaho
+- North Idaho
+- Shoshone
+- Shoshone County
+authority: LOGAN
 ---
-[[Shoshone County]] historic [[mining]] region in [[North Idaho]] 
+Shoshone County historic mining region in North Idaho

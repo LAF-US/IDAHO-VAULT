@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Boundary
-tags:
-  - schools/k12/district
+related:
+- Bonners Ferry
+- Boundary County
+authority: LOGAN
 ---
-[[Bonners Ferry]], [[Boundary County]] 
+Bonners Ferry, Boundary County

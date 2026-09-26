@@ -1,6 +1,7 @@
 ---
-tags: 
-aliases:
-  - TECM
+related:
+- Idaho
+- roads
+authority: LOGAN
 ---
-[[Department of Transportation|Idaho Transportation Department]] funding for major and local [[roads]]  
+Idaho Transportation Department funding for major and local roads  

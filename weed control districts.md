@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/taxingdistrict
+related:
+- taxing districts
+authority: LOGAN
 ---
-
-[[taxing districts]] for controlling [[noxious weeds]] 
+taxing districts for controlling noxious weeds

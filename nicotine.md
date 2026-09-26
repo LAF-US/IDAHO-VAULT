@@ -1,1 +1,7 @@
-addictive chemical in [[tobacco]] 
+---
+authority: LOGAN
+related:
+- tobacco
+---
+
+addictive chemical in tobacco

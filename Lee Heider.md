@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
+related:
+- Twin Falls
+authority: LOGAN
 ---
-Residence: [[Twin Falls]]
+Residence: Twin Falls

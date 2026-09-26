@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Murtaugh
-tags:
-  - schools/k12/district
+related:
+- Murtaugh
+- Twin Falls
+- Twin Falls County
+authority: LOGAN
 ---
-[[Murtaugh]], [[Twin Falls County]] 
+Murtaugh, Twin Falls County

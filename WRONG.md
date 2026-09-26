@@ -1,1 +1,7 @@
-[[RIGHT]]
+---
+authority: LOGAN
+related:
+- RIGHT
+---
+
+RIGHT

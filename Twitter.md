@@ -1,5 +1,6 @@
 ---
-aliases:
-  - X
+related:
+- Elon Musk
+authority: LOGAN
 ---
-Purchased by [[Elon Musk]]
+Purchased by Elon Musk

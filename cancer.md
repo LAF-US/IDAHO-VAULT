@@ -1,1 +1,7 @@
-[[diseases]] 
+---
+authority: LOGAN
+related:
+- diseases
+---
+
+diseases

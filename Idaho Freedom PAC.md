@@ -1,6 +1,9 @@
 ---
-aliases:
-  - Freedom PAC
+related:
+- Freedom
+- Idaho
+- Idaho Freedom Foundation
+- political action committee
+authority: LOGAN
 ---
-
-[[Idaho Freedom Foundation]] [[political action committee]] 
+Idaho Freedom Foundation political action committee

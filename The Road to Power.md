@@ -1,7 +1,7 @@
 ---
-aliases:
-  - TheRoadtoPower.com
-  - Road to Power
+related:
+- Scott Rhodes
+- white supremacist
+authority: LOGAN
 ---
-
-[[Scott Rhodes]] [[white supremacist]] podcast 
+Scott Rhodes white supremacist podcast

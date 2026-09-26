@@ -1,6 +1,9 @@
 ---
-tags:
-  - party/republican
-  - position/elected/precinct
+related:
+- Gooding
+- Gooding County
+- Idaho
+- Idaho Republican Party
+authority: LOGAN
 ---
-Local [[Idaho Republican Party]] [[precinct committeemen|precinct committee]] for [[Gooding County]] 
+Local Idaho Republican Party precinct committee for Gooding County

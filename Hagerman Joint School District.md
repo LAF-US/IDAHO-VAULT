@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Hagerman
-tags:
-  - schools/k12/district
+related:
+- Gooding
+- Gooding County
+- Hagerman
+authority: LOGAN
 ---
-[[Hagerman]], [[Gooding County]] 
+Hagerman, Gooding County

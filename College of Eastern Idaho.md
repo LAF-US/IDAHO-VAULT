@@ -1,7 +1,8 @@
 ---
-tags:
-  - schools/colleges/community
-aliases:
-  - CEI
+related:
+- Board of Trustees - CEI
+- Bonneville County
+- CEI
+authority: LOGAN
 ---
-[[Bonneville County]]-based [[community colleges|community college]] overseen by [[Board of Trustees - CEI]] 
+Bonneville County-based community college overseen by Board of Trustees - CEI

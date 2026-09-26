@@ -1,7 +1,9 @@
 ---
-tags:
-  - geography/land/wildlife/state
-aliases:
-  - GMU 4
+related:
+- Kootenai
+- Kootenai County
+- Shoshone
+- Shoshone County
+authority: LOGAN
 ---
-northern [[Shoshone County]] and eastern [[Kootenai County]] 
+northern Shoshone County and eastern Kootenai County

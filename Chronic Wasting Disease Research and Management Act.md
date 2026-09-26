@@ -1,6 +1,6 @@
 ---
-tags:
-  - federal
-  - bills
+related:
+- chronic wasting disease
+authority: LOGAN
 ---
-[[chronic wasting disease]] 
+chronic wasting disease

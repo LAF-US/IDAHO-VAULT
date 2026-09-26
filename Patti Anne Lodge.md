@@ -1,11 +1,11 @@
 ---
-tags:
-  - people/elected/legislative
-  - people/elected
-  - party/republican
-  - people
+related:
+- Huston
+- Senate State Affairs
+- Senate member
+authority: LOGAN
 ---
+Residence: Huston
 
-Residence: [[Huston]]
-- former [[Senate member]] and [[Senate State Affairs]] [[committee chairmen|committee chair]] 
-- wife of [[Edward Lodge]] 
+- former Senate member and Senate State Affairs committee chair
+- wife of Edward Lodge

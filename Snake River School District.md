@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Snake River
-tags:
-  - schools/k12/district
+related:
+- Atomic City
+- Bingham County
+- Pingree
+authority: LOGAN
 ---
-[[Pingree]]/[[Atomic City]], [[Bingham County]] 
+Pingree/Atomic City, Bingham County

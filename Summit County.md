@@ -1,6 +1,7 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
+related:
+- Park City
+- Utah
+authority: LOGAN
 ---
-[[Park City]], [[Utah]] 
+Park City, Utah

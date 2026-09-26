@@ -1,7 +1,8 @@
 ---
-aliases:
-  - West Side
-tags:
-  - schools/k12/district
+related:
+- Dayton
+- Franklin
+- Franklin County
+authority: LOGAN
 ---
-[[Dayton]], [[Franklin County]] 
+Dayton, Franklin County

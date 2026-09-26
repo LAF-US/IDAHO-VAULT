@@ -1,5 +1,6 @@
 ---
-tags:
-  - geography/water/river
+related:
+- Bingham County
+authority: LOGAN
 ---
-[[rivers|river]] in [[Bingham County]] 
+river in Bingham County

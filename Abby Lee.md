@@ -1,9 +1,13 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
-  - people/candidate/legislative
-residence: "[[Fruitland]]"
+residence: Fruitland
+related:
+- Fruitland
+- Jim Rice
+- Senate member
+- election
+- primary election
+- redistricting
+authority: LOGAN
 ---
-- [[Senate member]] from [[Legislative District 9|LD9]] 
-- Beat [[Jim Rice]] in [[primary election]] after [[redistricting]] 
+- Senate member from LD9
+- Beat Jim Rice in primary election after redistricting

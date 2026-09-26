@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Salmon River
-tags:
-  - schools/k12/district
+related:
+- Idaho
+- Idaho County
+- Riggins
+authority: LOGAN
 ---
-[[Riggins]], [[Idaho County]] 
+Riggins, Idaho County

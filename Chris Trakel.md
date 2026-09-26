@@ -1,7 +1,6 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
-  - people/candidate/legislative
-residence: "[[Caldwell]]"
+residence: Caldwell
+related:
+- Caldwell
+authority: LOGAN
 ---

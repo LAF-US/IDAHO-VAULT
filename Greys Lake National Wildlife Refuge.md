@@ -1,7 +1,10 @@
 ---
-tags:
-  - federal
-  - geography/land/wildlife/federal
+related:
+- Caribou County
+- Wayan
+- birds
+- migratory birds
+- national wildlife refuge
+authority: LOGAN
 ---
-
-[[national wildlife refuge]] for [[migratory birds]] in [[Bonneville County|Bonneville]] and [[Caribou County]] near [[Wayan]] 
+national wildlife refuge for migratory birds in Bonneville and Caribou County near Wayan

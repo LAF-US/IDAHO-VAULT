@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
+related:
+- McCammon
+authority: LOGAN
 ---
-Residence: [[McCammon]]
+Residence: McCammon

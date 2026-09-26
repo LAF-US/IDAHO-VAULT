@@ -1,11 +1,11 @@
 ---
-tags:
-  - position/elected/statewide/congress
-  - federal
-  - geography/land/state/region
-aliases:
-  - CD1
-  - ID-01
-  - First Congressional District
+related:
+- Central Idaho
+- Congressional Districts
+- Idaho
+- North Idaho
+- North-Central Idaho
+- Treasure Valley
+authority: LOGAN
 ---
-[[Congressional Districts]], typically [[North Idaho]], [[North-Central Idaho]], [[Central Idaho]], [[Treasure Valley]] 
+Congressional Districts, typically North Idaho, North-Central Idaho, Central Idaho, Treasure Valley

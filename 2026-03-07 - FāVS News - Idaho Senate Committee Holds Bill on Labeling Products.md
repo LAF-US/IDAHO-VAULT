@@ -1,11 +1,43 @@
 ---
-source: "https://favs.news/idaho-bill-labeling-products-fetal-cell-lines-held/"
+source: https://favs.news/idaho-bill-labeling-products-fetal-cell-lines-held/
 author:
-  - "[[Logan Finney]]"
+- Logan Finney
 published: 2026-03-07
 created: 2026-03-27
-tags:
-  - 2026/03/07
+related:
+- '2026-03-27'
+- '501'
+- Ben Toews
+- Brian Lenney
+- CNN
+- California
+- Christian nationalism
+- DNA
+- Dan Foreman
+- FDA
+- FāVS
+- Human Resources
+- Idaho
+- Idaho Senate
+- James Ruchti
+- Jim Guthrie
+- Logan Finney
+- McCammon
+- Middleton
+- Moscow
+- Nampa
+- Pocatello
+- Senate State Affairs
+- Tammy Nichols
+- USA
+- University of Idaho
+- Washington
+- abortion
+- cancer
+- humans
+- journalists
+- religion
+authority: LOGAN
 ---
 ## Idaho bill to label products made with fetal cells dies in Senate committee
 
@@ -37,11 +69,9 @@ Our Sponsors
 
 Idaho State Capital
 
-  
-
 **By Logan Finney | FāVS News Reporter**
 
-![](https://www.youtube.com/watch?v=VWAJj0Rfqbw)
+![alt text needed](https://www.youtube.com/watch?v=VWAJj0Rfqbw)
 
 Numerous medical products such as vaccines were developed using human fetal cells in their scientific research. An Idaho Senate committee this week debated if the government should take a stronger role in labeling products developed using those cells, ultimately holding the bill.
 

@@ -1,1 +1,7 @@
-[[legislative]] [[action]] 
+---
+authority: LOGAN
+related:
+- legislative
+---
+
+legislative action

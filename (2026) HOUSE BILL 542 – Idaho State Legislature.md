@@ -1,13 +1,23 @@
 ---
-source: "https://legislature.idaho.gov/sessioninfo/2026/legislation/H0542/"
-author:
-published:
+source: https://legislature.idaho.gov/sessioninfo/2026/legislation/H0542/
+author: null
+published: null
 created: 2026-03-25
 title: (2026) HOUSE BILL 542 – Idaho State Legislature
-aliases: [(2026) HOUSE BILL 542 – Idaho State Legislature]
 linter-yaml-title-alias: (2026) HOUSE BILL 542 – Idaho State Legislature
+related:
+- '2026-03-25'
+- '542'
+- Act
+- Idaho
+- JRA
+- Mickelsen
+- Raymond
+- Stone
+- journal
+- legislative
+authority: LOGAN
 ---
-
 Print Friendly
 
 ## HOUSE BILL 542
@@ -28,7 +38,7 @@ The status of each bill, resolution, proclamation, and memorial is updated when 
 
 [Legislative Co-sponsors](https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/H0542LegCo.pdf)
 
-| H0542aaS |  | by STATE AFFAIRS COMMITTEE |
+| H0542aaS | | by STATE AFFAIRS COMMITTEE |
 | --- | --- | --- |
 
 SOCIAL MEDIA – Adds to existing law to establish the Stop Harms from Addictive Social Media Act.

@@ -1,1 +1,7 @@
-[[numbers]] 
+---
+authority: LOGAN
+related:
+- numbers
+---
+
+numbers

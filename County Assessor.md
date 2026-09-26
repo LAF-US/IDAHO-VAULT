@@ -1,7 +1,6 @@
 ---
-tags:
-  - position/elected/county/executive
-aliases:
-  - Assessor
+related:
+- counties
+authority: LOGAN
 ---
-[[counties]] [[property values]] 
+counties property values

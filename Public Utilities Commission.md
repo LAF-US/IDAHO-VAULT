@@ -1,6 +1,6 @@
 ---
-tags:
-  - position/appointed/boards-commissions
-  - governments/state/executive
+related:
+- Governor
+authority: LOGAN
 ---
-Appointed by the [[Governor]].
+Appointed by the Governor.

@@ -1,5 +1,8 @@
 ---
-tags:
-  - geography/water/lake
+related:
+- Adams County
+- Oxbow dam
+- Snake River
+authority: LOGAN
 ---
-[[reservoirs|reservoir]] on the [[Snake River]] in [[Adams County]] created by [[Oxbow dam]]  
+reservoir on the Snake River in Adams County created by Oxbow dam  

@@ -1,7 +1,12 @@
 ---
-tags:
-  - geography/water/lake
+related:
+- Lake
+- Little Payette Lake
+- McCall
+- Payette
+- pair
+authority: LOGAN
 ---
-[[McCall]] [[lakes|lake]] 
+McCall lake
 
-pair to [[Little Payette Lake]] 
+pair to Little Payette Lake

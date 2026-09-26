@@ -1,8 +1,6 @@
 ---
-tags:
-  - governments/state/executive/departments/bureaus/offices
-aliases:
-  - OGI
+related:
+- health insurance
+authority: LOGAN
 ---
-
-[[state employee]] [[health insurance]] 
+state employee health insurance

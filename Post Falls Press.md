@@ -1,7 +1,9 @@
 ---
 outlet:
-  - "[[Post Falls Press]]"
-tags:
-  - media/outlets
+- Post Falls Press
+related:
+- Post Falls
+- The Hagadone Corporation
+authority: LOGAN
 ---
-[[Post Falls]] [[newspapers|newspaper]] owned by [[The Hagadone Corporation]] 
+Post Falls newspaper owned by The Hagadone Corporation

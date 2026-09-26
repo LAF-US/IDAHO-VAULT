@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected/legislative
-  - people/elected
-  - party/republican
-  - people
+related:
+- CDA
+authority: LOGAN
 ---
-Residence: [[Coeur d'Alene|CDA]] 
+Residence: CDA

@@ -1,5 +1,6 @@
 ---
-tags:
-  - geography/water
+related:
+- water
+authority: LOGAN
 ---
-[[water]] 
+water

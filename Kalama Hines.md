@@ -1,5 +1,7 @@
 ---
-tags:
-  - people/journalists
+related:
+- East Idaho News
+- Idaho
+authority: LOGAN
 ---
-[[East Idaho News]] reporter 
+East Idaho News reporter

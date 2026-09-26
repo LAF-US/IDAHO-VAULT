@@ -1,16 +1,49 @@
 ---
 author:
-  - "[[David Pace]]"
+- David Pace
 outlet:
-  - "[[Post Register]]"
+- Post Register
 URL: https://www.postregister.com/news/government/damond-watkins-says-his-resignation-from-state-rnc-role-was-coerced/article_25d09540-2727-11ee-a593-ef3c63c8c95c.html
-tags:
-  - media/articles
-  - 2023/07/22
+related:
+- '107'
+- 7th Judicial District
+- Boise
+- Bonneville County
+- Bonneville County Republican Central Committee
+- Bryan Smith
+- Challis
+- County Clerk
+- Damond Watkins
+- David Pace
+- Donald Trump
+- Dorothy Moon
+- Eastern Idaho
+- GOP
+- ICU
+- Idaho
+- Idaho Falls
+- Idaho Republican Party
+- NCM
+- North Carolina
+- Post Register
+- President
+- RNC
+- Republican National Committee
+- Tom Luna
+- Trent Clark
+- Utah
+- Washington
+- counties
+- election
+- executive session
+- meeting
+- parents
+- places of worship
+authority: LOGAN
 ---
-[[Damond Watkins]], a member of an illustrious [[Eastern Idaho]] political family, has enjoyed a storied political career that has seen him earn respect from those at the highest levels of the national [[U.S. Republican Party|Republican Party]].
+Damond Watkins, a member of an illustrious Eastern Idaho political family, has enjoyed a storied political career that has seen him earn respect from those at the highest levels of the national Republican Party.
 
-His father, Dane Watkins Sr., is a longtime [[Idaho Falls]] businessman who served more than a decade as an Idaho state senator. His brother, Dane Watkins Jr., was elected Bonneville County prosecutor three times before becoming a 7th Judicial District judge, where he has been elected four times.
+His father, Dane Watkins Sr., is a longtime Idaho Falls businessman who served more than a decade as an Idaho state senator. His brother, Dane Watkins Jr., was elected Bonneville County prosecutor three times before becoming a 7th Judicial District judge, where he has been elected four times.
 
 Damond Watkins grew up attending Republican National Conventions with his father and brother, but his interest in government and politics focused more on the background. He served as a Senate page, both in Boise and Washington, D.C., was elected student body president at the University of Utah, interned in the Clinton White House and spent years climbing through the ranks of the Bonneville County Republican Central Committee, eventually becoming chairman.
 

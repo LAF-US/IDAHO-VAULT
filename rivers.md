@@ -1,7 +1,7 @@
 ---
-tags:
-  - geography/water/river
-aliases:
-  - river
+related:
+- creeks
+- water
+authority: LOGAN
 ---
-[[water]] and gravity; bigger than [[creeks]] 
+water and gravity; bigger than creeks

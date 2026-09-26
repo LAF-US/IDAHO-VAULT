@@ -1,1 +1,7 @@
-[[ANSWER]]
+---
+authority: LOGAN
+related:
+- ANSWER
+---
+
+ANSWER

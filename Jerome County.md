@@ -1,11 +1,14 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
-aliases:
-  - Jerome
-  - 2J
+related:
+- Caldron Linn
+- Eden
+- Greenwood
+- Hazelton
+- Hidden Valley
+- Jerome
+- Milner
+authority: LOGAN
 ---
-Seat: [[Jerome]]
-Municipalities: [[Hazelton]], [[Eden]]
-Communities: [[Caldron Linn]], [[Greenwood]], [[Milner]], [[Hidden Valley]]
+Seat: Jerome
+Municipalities: Hazelton, Eden
+Communities: Caldron Linn, Greenwood, Milner, Hidden Valley

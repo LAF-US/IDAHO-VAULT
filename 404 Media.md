@@ -1,8 +1,11 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[404 Media]]"
+- 404 Media
+related:
+- '404'
+- VICE Media
+authority: LOGAN
 ---
-[[Internet|online]] news outlet focused on technology
-- founded by former [[VICE Media]] staff 
+online news outlet focused on technology
+
+- founded by former VICE Media staff

@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
+related:
+- Inkom
+authority: LOGAN
 ---
-Residence: [[Inkom]] 
+Residence: Inkom

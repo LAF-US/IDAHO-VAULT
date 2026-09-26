@@ -1,10 +1,6 @@
 ---
-aliases:
-  - John Stevenson
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
-residence: "[[Rupert]]"
+residence: Rupert
+related:
+- Rupert
+authority: LOGAN
 ---

@@ -1,5 +1,7 @@
 ---
-tags:
-  - geography/land/places/communities
+related:
+- Caldwell
+- Nampa
+authority: LOGAN
 ---
-between [[Nampa]] and [[Caldwell]] 
+between Nampa and Caldwell

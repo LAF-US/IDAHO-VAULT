@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
+related:
+- Sagle
+authority: LOGAN
 ---
-Residence: [[Sagle]]
+Residence: Sagle

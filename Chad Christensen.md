@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
+related:
+- House member
+authority: LOGAN
 ---
-- former [[House member]] 
+- former House member

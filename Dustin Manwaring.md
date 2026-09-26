@@ -1,11 +1,9 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
+related:
+- House Majority Caucus Chair
+- Pocatello
+authority: LOGAN
 ---
+Residence: Pocatello
 
-Residence: [[Pocatello]]
-
-[[House Majority Caucus Chair]]
+House Majority Caucus Chair

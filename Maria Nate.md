@@ -1,8 +1,7 @@
 ---
-tags:
-  - party/republican
-  - people
+related:
+- Ron Nate
+authority: LOGAN
 ---
-
-Wife of [[Ron Nate]]
-[[Idaho Republican Party|IDGOP]] Secretary
+Wife of Ron Nate
+IDGOP Secretary

@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Sugar-Salem
-tags:
-  - schools/k12/district
+related:
+- Madison County
+- Sugar City
+authority: LOGAN
 ---
-[[Sugar City]], [[Madison County]] 
+Sugar City, Madison County

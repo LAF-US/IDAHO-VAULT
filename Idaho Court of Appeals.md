@@ -1,9 +1,14 @@
 ---
-tags:
-  - position/appointed/judicial
-  - governments/state/judicial
+related:
+- Amanda Brailsford
+- David Gratton
+- Idaho
+- Idaho Supreme Court
+- Jessica Lorello
+- Molly Huskey
+authority: LOGAN
 ---
-Overseen by [[Idaho Supreme Court]]
+Overseen by Idaho Supreme Court
 
-Chief Judge: [[Jessica Lorello]]
-Judges: [[Molly Huskey]], [[David Gratton]] & [[Amanda Brailsford]]
+Chief Judge: Jessica Lorello
+Judges: Molly Huskey, David Gratton & Amanda Brailsford

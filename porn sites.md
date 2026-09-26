@@ -1,6 +1,6 @@
 ---
-aliases:
-  - adult websites
+related:
+- pornography
+authority: LOGAN
 ---
-
-[[pornography]] [[Internet|websites]] 
+pornography websites

@@ -1,8 +1,6 @@
 ---
-aliases:
-  - OEM
-  - OEMs
-  - original equipment manufacturers
-  - original maufacturers
+related:
+- right to repair
+authority: LOGAN
 ---
-[[right to repair]] 
+right to repair

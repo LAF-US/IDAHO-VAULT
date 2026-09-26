@@ -1,12 +1,160 @@
 ---
-tags:
-  - schools/k12/district/high-schools
-  - schools/k12/private
-aliases:
-  - high school
+related:
+- Aberdeen
+- American Falls
+- American Falls High School
+- Ammon
+- Arco
+- Arimo
+- Ashton
+- Bancroft
+- Bear
+- Bear Lake
+- Blackfoot
+- Bliss
+- Boise
+- Bonners Ferry
+- Bruneau
+- Buhl
+- Burley
+- Butte County
+- Caldwell
+- Camas County
+- Cambridge
+- Carey
+- Cascade
+- Castleford
+- Challis
+- Clark County
+- Clark Fork
+- Coeur d'Alene
+- Cottonwood
+- Council
+- Craigmont
+- Culdesac
+- Dayton
+- Deary
+- Declo
+- Dietrich
+- Donnelly
+- Driggs
+- Dubois
+- Eagle
+- Emmett
+- Fairfield
+- Filer
+- Firth
+- Fort Hall
+- Frank Church
+- Fruitland
+- Garden Valley
+- Genesee
+- Glenns Ferry
+- Gooding
+- Grace
+- Grangeville
+- Greenleaf
+- Hagerman
+- Hailey
+- Hansen
+- Harrison
+- Hayden
+- Hazelton
+- Home
+- Homedale
+- Horseshoe Bend
+- Idaho
+- Idaho City
+- Idaho Falls
+- Jerome
+- Kamiah
+- Kellogg
+- Kendrick
+- Kimberly
+- Kooskia
+- Kootenai
+- Kuna
+- Lake
+- Lapwai
+- Leadore
+- Lewiston
+- Liberty
+- Logos School
+- Mackay
+- Mackay High School
+- Madison High School
+- Magic Valley
+- Malad City
+- Malta
+- Marsh Valley
+- Marsing
+- McCall
+- Meadows
+- Melba
+- Meridian
+- Middleton
+- Midvale
+- Montpelier
+- Moscow
+- Mountain Home
+- Mullan
+- Murtaugh
+- Nampa
+- Nampa High School
+- New Meadows
+- New Plymouth
+- Nezperce
+- North Idaho
+- Notus
+- Oakley
+- Orofino
+- Owyhee
+- Parma
+- Payette
+- Plummer
+- Pocatello
+- Post Falls
+- Potlatch
+- Prairie
+- Preston
+- Priest River
+- Raft River
+- Rathdrum
+- Rexburg
+- Richfield
+- Rigby
+- Riggins
+- Ririe
+- Rockland
+- Rupert
+- Salmon
+- Salmon River
+- Sandpoint
+- Sandpoint High School
+- Shelley
+- Shoshone
+- Snake River
+- Soda Springs
+- Spirit Lake
+- St. Anthony
+- St. Maries
+- Star
+- State of Idaho
+- Sugar City
+- Sun Valley
+- Terreton
+- Teton
+- Troy
+- Twin Falls
+- View
+- Wallace
+- Weippe
+- Weiser
+- Wendell
+- Wilder
+authority: LOGAN
 ---
-
-This is a list of high schools (private, [[school districts|district]] and [[charter schools|charter]]) in the [[State of Idaho]] by county.
+This is a list of high schools (private, district and charter) in the State of Idaho by county.
 
 _Ada County_
 Bishop Kelly High School, Boise
@@ -41,7 +189,7 @@ Meadows Valley Junior/Senior High School, New Meadows
 
 _Bannock County_
 Pocatello High School, Pocatello
-[[Highland High School]], Pocatello
+Highland High School, Pocatello
 Century High School, Pocatello
 Marsh Valley High School, Arimo
 
@@ -72,9 +220,9 @@ Horseshoe Bend High School, Horseshoe Bend
 Idaho City High School, Idaho City
 
 _Bonner County_
-[[Clark Fork Junior-Senior High School]], Clark Fork
-[[Priest River Lamanna High School]], Priest River
-[[Sandpoint High School]], Sandpoint
+Clark Fork Junior-Senior High School, Clark Fork
+Priest River Lamanna High School, Priest River
+Sandpoint High School, Sandpoint
 
 _Bonneville County_
 Bonneville High School, Idaho Falls 5A
@@ -133,7 +281,7 @@ Timberline High School, Weippe
 
 _Custer County_
 Challis High School, Challis
-[[Mackay High School]], Mackay
+Mackay High School, Mackay
 
 _Elmore County_
 Glenns Ferry High School, Glenns Ferry
@@ -188,7 +336,7 @@ _Latah County_
 Deary High School, Deary
 Genesee High School, Genesee
 Kendrick High School, Kendrick
-[[Logos School]], Moscow
+Logos School, Moscow
 Moscow High School, Moscow
 Potlatch High School, Potlatch
 Troy High School, Troy
@@ -208,7 +356,7 @@ Richfield High School, Richfield
 Shoshone High School, Shoshone
 
 _Madison County_
-[[Madison High School]], Rexburg 5A
+Madison High School, Rexburg 5A
 Sugar-Salem High School, Sugar City
 
 _Minidoka County_

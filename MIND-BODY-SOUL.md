@@ -1,1 +1,7 @@
-[[SOUL]]
+---
+authority: LOGAN
+related:
+- SOUL
+---
+
+SOUL

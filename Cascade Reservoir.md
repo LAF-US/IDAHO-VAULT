@@ -1,5 +1,9 @@
 ---
-tags:
-  - geography/water/lake
+related:
+- Cascade
+- Cascade Dam
+- Payette
+- Payette River
+authority: LOGAN
 ---
-[[Payette River]] [[reservoirs|reservoir]] created by [[Cascade Dam]] 
+Payette River reservoir created by Cascade Dam

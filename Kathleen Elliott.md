@@ -1,5 +1,6 @@
 ---
-tags:
-  - people
+related:
+- Public Defense Commission
+authority: LOGAN
 ---
-[[Public Defense Commission]] executive director
+Public Defense Commission executive director

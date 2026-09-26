@@ -1,6 +1,7 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
+related:
+- California
+- Los Angeles
+authority: LOGAN
 ---
-[[Los Angeles]], [[California]] 
+Los Angeles, California

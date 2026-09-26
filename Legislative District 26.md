@@ -1,50 +1,78 @@
 ---
-aliases:
-  - LD26
-tags:
-  - position/elected/legislative
-  - geography/land/state/region
+related:
+- Bert Stevenson
+- Blaine County
+- Camas County
+- Dean Cameron
+- Gooding
+- Gooding County
+- Jack Nelsen
+- Jerome
+- Jerome County
+- Lincoln
+- Lincoln County
+- Maxine Bell
+- Michelle
+- Michelle Stennett
+- Muffy Davis
+- Ned Burns
+- Ron Taylor
+- Sally Toone
+- Steve Miller
+authority: LOGAN
 ---
-[[Blaine County]], [[Lincoln County]] & [[Jerome County]]
-- Formerly [[Blaine County]], [[Camas County]], [[Gooding County]] & [[Lincoln County]]
+Blaine County, Lincoln County & Jerome County
 
-### 2023-2024 
-Sen. [[Ron Taylor]]
-Rep. [[Ned Burns]]
-Rep. [[Jack Nelsen]]
+- Formerly Blaine County, Camas County, Gooding County & Lincoln County
 
-> REDISTRICTING 
+### 2023-2024
+
+Sen. Ron Taylor
+Rep. Ned Burns
+Rep. Jack Nelsen
+
+> REDISTRICTING
+>
 ### 2021-2022
-Sen. [[Michelle Stennett]]
-Rep. [[Muffy Davis]] / [[Ned Burns]]
-Rep. [[Sally Toone]]
+
+Sen. Michelle Stennett
+Rep. Muffy Davis / Ned Burns
+Rep. Sally Toone
 
 ### 2019-2020
-Sen. [[Michelle Stennett]]
-Rep. [[Muffy Davis]]
-Rep. [[Sally Toone]]
+
+Sen. Michelle Stennett
+Rep. Muffy Davis
+Rep. Sally Toone
 
 ### 2017-2018
-Sen. [[Michelle Stennett]]
-Rep. [[Steve Miller]]
-Rep. [[Sally Toone]]
+
+Sen. Michelle Stennett
+Rep. Steve Miller
+Rep. Sally Toone
+
 ### 2015-2016
-Sen. [[Michelle Stennett]]
-Rep. [[Steve Miller]]
-Rep. [[Donna Pence]]
+
+Sen. Michelle Stennett
+Rep. Steve Miller
+Rep. Donna Pence
 
 ### 2013-2014
-Sen. [[Michelle Stennett]]
-Rep. [[Steve Miller]]
-Rep. [[Donna Pence]]
 
-> REDISTRICTING 
+Sen. Michelle Stennett
+Rep. Steve Miller
+Rep. Donna Pence
+
+> REDISTRICTING
+>
 ### 2011-2012
-Sen. [[Dean Cameron]]
-Rep. [[Bert Stevenson]]
-Rep. [[Maxine Bell]]
+
+Sen. Dean Cameron
+Rep. Bert Stevenson
+Rep. Maxine Bell
 
 ### 2009-2010
-Sen. [[]]
-Rep. [[]]
-Rep. [[]]
+
+Sen.
+Rep.
+Rep.

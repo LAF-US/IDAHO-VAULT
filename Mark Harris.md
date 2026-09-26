@@ -1,9 +1,6 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
+related:
+- Soda Springs
+authority: LOGAN
 ---
-
-Residence: [[Soda Springs]]
+Residence: Soda Springs

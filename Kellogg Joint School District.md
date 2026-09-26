@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Kellogg
-tags:
-  - schools/k12/district
+related:
+- Kellogg
+- Shoshone
+- Shoshone County
+authority: LOGAN
 ---
-[[Kellogg]], [[Shoshone County]] 
+Kellogg, Shoshone County

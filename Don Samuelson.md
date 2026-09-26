@@ -1,10 +1,10 @@
 ---
-tags:
-  - party/republican
-  - people/deceased
-  - people/elected/statewide/governor
-  - people/candidate/statewide/governor
+related:
+- Governor
+- Sandpoint
+- sales tax
+authority: LOGAN
 ---
-Former [[Governor]] from [[Sandpoint]]
-- opposed [[sales tax]] creation
+Former Governor from Sandpoint
 
+- opposed sales tax creation

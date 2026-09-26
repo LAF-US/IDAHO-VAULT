@@ -1,3 +1,10 @@
-[[birds of prey]] 
+---
+authority: LOGAN
+related:
+- birds of prey
+- migratory birds
+---
 
-[[migratory birds]] 
+birds of prey
+
+migratory birds

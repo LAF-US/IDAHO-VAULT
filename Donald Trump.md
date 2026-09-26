@@ -1,9 +1,7 @@
 ---
-tags:
-  - party/republican
-  - people/elected/country/president
-  - people/candidate/country/president
-aliases:
-  - Trump
+related:
+- President
+- United States of America
+authority: LOGAN
 ---
-Former [[President]] of the [[United States of America]]
+Former President of the United States of America

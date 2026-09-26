@@ -1,5 +1,9 @@
 ---
-aliases:
-  - Proposition 2 (2020)
+related:
+- Idaho
+- Medicaid
+- Medicaid Expansion
+- Reclaim Idaho
+authority: LOGAN
 ---
-[[Reclaim Idaho]] [[Medicaid Expansion]] [[ballot initiatives|ballot initiative]] 
+Reclaim Idaho Medicaid Expansion ballot initiative

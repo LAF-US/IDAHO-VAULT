@@ -1,1 +1,8 @@
-[[Bonner County]] [[nonprofits|nonprofit]] [[housing agency]] 
+---
+authority: LOGAN
+related:
+- Bonner County
+- housing
+---
+
+Bonner County nonprofit housing agency

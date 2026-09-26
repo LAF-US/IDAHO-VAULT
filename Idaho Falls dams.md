@@ -1,5 +1,9 @@
 ---
-tags:
-  - geography/water/river/dams
+related:
+- Idaho
+- Idaho Falls
+- Snake River
+- dams
+authority: LOGAN
 ---
-eponymous [[dams]] on the [[Snake River]] in [[Idaho Falls]] 
+eponymous dams on the Snake River in Idaho Falls

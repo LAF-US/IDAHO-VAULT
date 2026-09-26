@@ -1,7 +1,7 @@
 ---
-aliases:
-  - North Gem
-tags:
-  - schools/k12/district
+related:
+- Bancroft
+- Caribou County
+authority: LOGAN
 ---
-[[Bancroft]], [[Caribou County]] 
+Bancroft, Caribou County

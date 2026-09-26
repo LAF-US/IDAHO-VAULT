@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Orofino
-tags:
-  - schools/k12/district
+related:
+- Clearwater County
+- Orofino
+authority: LOGAN
 ---
-[[Orofino]], [[Clearwater County]] 
+Orofino, Clearwater County

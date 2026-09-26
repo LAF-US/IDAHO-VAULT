@@ -1,5 +1,6 @@
 ---
-tags:
-  - people
+related:
+- Idaho
+authority: LOGAN
 ---
-executive director of [[Idaho Federation of Families]] 
+executive director of Idaho Federation of Families

@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
+related:
+- Menan
+authority: LOGAN
 ---
-Residence: [[Menan]] 
+Residence: Menan

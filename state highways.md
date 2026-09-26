@@ -1,7 +1,8 @@
 ---
-tags:
-  - governments/state
-  - geography/land/roads/highways
+related:
+- Idaho
+- State of Idaho
+- highways
+authority: LOGAN
 ---
-
-[[State of Idaho]] [[highways]] owned and maintained by [[Department of Transportation|Idaho Transportation Department]]  
+State of Idaho highways owned and maintained by Idaho Transportation Department  

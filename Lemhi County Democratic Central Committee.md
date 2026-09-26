@@ -1,7 +1,9 @@
 ---
-tags:
-  - party/democratic
-  - position/elected/precinct
+related:
+- Idaho
+- Idaho Democratic Party
+- Lemhi
+- Lemhi County
+authority: LOGAN
 ---
-
-Local [[Idaho Democratic Party]] [[precinct committeemen|precinct committee]] for [[Lemhi County]] 
+Local Idaho Democratic Party precinct committee for Lemhi County

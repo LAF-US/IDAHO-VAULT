@@ -1,1 +1,8 @@
-[[magistrate court]] [[Valley County]] [[courthouses|courthouse]] 
+---
+authority: LOGAN
+related:
+- Valley County
+- magistrate court
+---
+
+magistrate court Valley County courthouse

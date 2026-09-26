@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Wendell
-tags:
-  - schools/k12/district
+related:
+- Gooding
+- Gooding County
+- Wendell
+authority: LOGAN
 ---
-[[Wendell]], [[Gooding County]] 
+Wendell, Gooding County

@@ -1,5 +1,6 @@
 ---
-aliases:
-  - St. Alphonsus Regional
+related:
+- Boise
+authority: LOGAN
 ---
-[[Saint Alphonsus Health System|Saint Alphonsus]] regional [[trauma center]] [[hospitals|hospital]] in [[Boise]] 
+Saint Alphonsus regional trauma center hospital in Boise

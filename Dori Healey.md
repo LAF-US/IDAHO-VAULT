@@ -1,10 +1,12 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/elected
-  - people
+related:
+- Boise
+- House member
+- Legislative District 15
+- redistricting
+authority: LOGAN
 ---
-Residence: [[Boise]]
-- [[House member]] for [[Legislative District 15]] after [[redistricting]]
-- [[nurses|nurse]] 
+Residence: Boise
+
+- House member for Legislative District 15 after redistricting
+- nurse

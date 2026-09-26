@@ -1,1 +1,9 @@
-major [[electricity|energy]] [[utility]] that serves [[State of Idaho|Idaho]] and [[Oregon]] 
+---
+authority: LOGAN
+related:
+- Idaho
+- Oregon
+- utility
+---
+
+major energy utility that serves Idaho and Oregon

@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Jerome
-tags:
-  - schools/k12/district
+related:
+- Jerome
+- Jerome County
+authority: LOGAN
 ---
-[[Jerome]], [[Jerome County]] 
+Jerome, Jerome County

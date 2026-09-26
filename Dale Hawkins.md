@@ -1,9 +1,10 @@
 ---
-tags:
-  - people/elected
-  - party/republican
-  - people/elected/legislative
-  - people
+related:
+- Fernwood
+- House member
+- redistricting
+authority: LOGAN
 ---
-Residence: [[Fernwood]]
-- [[House member]] for [[Legislative District 2|LD2]] after [[redistricting]] 
+Residence: Fernwood
+
+- House member for LD2 after redistricting

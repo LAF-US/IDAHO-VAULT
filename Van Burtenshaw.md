@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected/legislative
-  - people/elected
-  - party/republican
-  - people
+related:
+- Terreton
+authority: LOGAN
 ---
-Residence: [[Terreton]] 
+Residence: Terreton

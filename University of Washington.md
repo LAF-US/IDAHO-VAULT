@@ -1,5 +1,6 @@
 ---
-tags:
-  - schools/colleges/state
+related:
+- Washington
+authority: LOGAN
 ---
-[[Washington]] [[state colleges|university]] 
+Washington university

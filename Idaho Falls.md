@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- Bonneville County
+authority: LOGAN
 ---
-seat of [[Bonneville County]]
+seat of Bonneville County

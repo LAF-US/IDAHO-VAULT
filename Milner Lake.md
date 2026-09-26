@@ -1,5 +1,9 @@
 ---
-tags:
-  - geography/water/lake
+related:
+- Burley
+- Milner
+- Milner dam
+- Snake River
+authority: LOGAN
 ---
-[[reservoirs|reservoir]] on the [[Snake River]] at [[Burley]] created by [[Milner dam]] 
+reservoir on the Snake River at Burley created by Milner dam

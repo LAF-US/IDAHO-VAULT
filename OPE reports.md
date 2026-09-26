@@ -1,1 +1,7 @@
-Produced by [[Office of Performance Evaluations]] for [[Joint Legislative Oversight Committee|JLOC]] and [[Idaho Legislature|Legislature]] to review issues and laws.
+---
+authority: LOGAN
+related:
+- Office of Performance Evaluations
+---
+
+Produced by Office of Performance Evaluations for JLOC and Legislature to review issues and laws.

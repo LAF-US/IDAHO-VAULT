@@ -1,22 +1,28 @@
 ---
-aliases:
-  - PHD3
-  - SWDH
-tags:
-  - geography/land/state/region
-  - position/appointed/county/healthdistricts
+related:
+- '208'
+- '455'
+- Caldwell
+- Central Idaho
+- Idaho
+- Owyhee
+- Payette
+- Treasure Valley
+- Washington
+authority: LOGAN
 ---
-Director: [[Nikole Zogg]]  
+Director: Nikole Zogg  
 13307 Miami Lane  
-[[Caldwell]], ID 83607  
+Caldwell, ID 83607  
 1-208-455-5300
 
-[[Treasure Valley]] & [[Central Idaho]] [[public health districts|public health district]]  
+Treasure Valley & Central Idaho public health district  
 
-Counties: 
-- [[Canyon County|Canyon]]
-- [[Owyhee County|Owyhee]]
-- [[Payette County|Payette]]
-- [[Gem County|Gem]]
-- [[Washington County|Washington]]
-- [[Adams County|Adams]]
+Counties:
+
+- Canyon
+- Owyhee
+- Payette
+- Gem
+- Washington
+- Adams

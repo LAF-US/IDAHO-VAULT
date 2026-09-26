@@ -1,6 +1,7 @@
 ---
-aliases:
-  - DMCA
+related:
+- copyright
+- copyright laws
+authority: LOGAN
 ---
-
-[[United States of America|United States]] [[copyright laws]] 
+United States copyright laws

@@ -11647,5 +11647,3 @@ var MsgHandlerPlugin = class extends import_obsidian6.Plugin {
     await this.saveData(this.settings);
   }
 };
-
-/* nosourcemap */

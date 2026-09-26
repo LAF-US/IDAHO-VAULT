@@ -1,10 +1,6 @@
 ---
-aliases:
-  - SDE
-  - Idaho Department of Education
-  - Education Department
-  - Department of Education
-tags:
-  - governments/state/executive
+related:
+- Superintendent of Public Instruction
+authority: LOGAN
 ---
-[[Superintendent of Public Instruction]] 
+Superintendent of Public Instruction

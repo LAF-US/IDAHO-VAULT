@@ -1,12 +1,14 @@
 ---
-tags:
-  - party/republican
-  - people/elected/legislative
-  - people/elected/city/mayor
-  - people/candidate/city/mayor
-  - people/candidate/legislative
+related:
+- Idaho
+- Lewiston
+- Senate member
+- University of Idaho
+- mayor
+authority: LOGAN
 ---
-Residence: [[Lewiston]] 
-Graduate: [[University of Idaho]]
-- elected [[mayor]] of Lewiston in 2021 
-- former [[Senate member]] 
+Residence: Lewiston
+Graduate: University of Idaho
+
+- elected mayor of Lewiston in 2021
+- former Senate member

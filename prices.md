@@ -1,1 +1,7 @@
-[[costs]] 
+---
+authority: LOGAN
+related:
+- costs
+---
+
+costs

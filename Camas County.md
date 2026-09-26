@@ -1,10 +1,10 @@
 ---
-tags:
-  - governments/county
-  - geography/land/county
-aliases:
-  - Camas
-  - 1C
+related:
+- Corral
+- Fairfield
+- Hill City
+- Soldier
+authority: LOGAN
 ---
-Seat: [[Fairfield]]
-Communities: [[Soldier]], [[Hill City]], [[Corral]] 
+Seat: Fairfield
+Communities: Soldier, Hill City, Corral

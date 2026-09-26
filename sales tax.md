@@ -1,7 +1,17 @@
-[[taxes]] on purchases 
+---
+authority: LOGAN
+related:
+- House Revenue and Taxation
+- Senate Local Government and Taxation
+- property tax
+- taxes
+---
+
+taxes on purchases
 
 **Legislative History**
-Bills go through [[House Revenue and Taxation]] & [[Senate Local Government and Taxation]]
+Bills go through House Revenue and Taxation & Senate Local Government and Taxation
+
 - Created in 1960s
-- State cannot levy [[property tax]] while sales tax is in effect.
-- 
+- State cannot levy property tax while sales tax is in effect.
+-

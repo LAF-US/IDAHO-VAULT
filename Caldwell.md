@@ -1,6 +1,6 @@
 ---
-tags:
-  - governments/city
-  - geography/land/city
+related:
+- Canyon County
+authority: LOGAN
 ---
-[[Canyon County]] seat
+Canyon County seat

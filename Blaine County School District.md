@@ -1,7 +1,9 @@
 ---
-aliases:
-  - Blaine
-tags:
-  - schools/k12/district
+related:
+- Bellevue
+- Blaine County
+- Hailey
+- Ketchum
+authority: LOGAN
 ---
-[[Hailey]]/[[Ketchum]]/[[Bellevue]], [[Blaine County]] 
+Hailey/Ketchum/Bellevue, Blaine County

@@ -1,10 +1,7 @@
 ---
-tags:
-  - people/elected/country/president
-  - people/candidate/country/president
-  - party/democratic
-aliases:
-  - Obama
+related:
+- President
+- United States of America
+authority: LOGAN
 ---
-
-Former [[President]] of the [[United States of America]]
+Former President of the United States of America

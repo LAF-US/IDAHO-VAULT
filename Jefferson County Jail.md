@@ -1,1 +1,8 @@
-[[County Sheriff]], [[Jefferson County]] [[jails|jail]]
+---
+authority: LOGAN
+related:
+- County Sheriff
+- Jefferson County
+---
+
+County Sheriff, Jefferson County jail

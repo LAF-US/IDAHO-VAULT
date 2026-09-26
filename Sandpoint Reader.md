@@ -1,9 +1,9 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Sandpoint Reader]]"
-aliases:
-  - The Reader
+- Sandpoint Reader
+related:
+- Bonner County
+- Sandpoint
+authority: LOGAN
 ---
-[[Sandpoint]] [[Bonner County]] alt-weekly [[newspapers|newspaper]] 
+Sandpoint Bonner County alt-weekly newspaper

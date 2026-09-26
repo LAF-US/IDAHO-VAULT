@@ -1,8 +1,9 @@
 ---
-tags:
-  - people/elected/legislative
-  - party/republican
-  - people/candidate/legislative
-residence: "[[Nampa]]"
+residence: Nampa
+related:
+- Jeff Agenbroad
+- Nampa
+- Senate member
+authority: LOGAN
 ---
-[[Senate member]] for [[Legislative District 13|LD13]] after [[primary election|primary]] against [[Jeff Agenbroad]] 
+Senate member for LD13 after primary against Jeff Agenbroad

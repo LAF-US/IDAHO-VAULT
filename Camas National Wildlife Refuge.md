@@ -1,7 +1,9 @@
 ---
-tags:
-  - federal
-  - geography/land/wildlife/federal
+related:
+- Jefferson County
+- birds
+- migratory birds
+- national wildlife refuge
+authority: LOGAN
 ---
-
-[[national wildlife refuge]] for [[migratory birds]] in [[Jefferson County]] 
+national wildlife refuge for migratory birds in Jefferson County

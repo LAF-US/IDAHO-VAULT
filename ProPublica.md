@@ -1,5 +1,3 @@
 ---
-tags:
-  - media/outlets
 ---
-national investigative journalism [[Internet|online]] news outlet
+national investigative journalism online news outlet

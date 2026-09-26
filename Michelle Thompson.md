@@ -1,7 +1,9 @@
 ---
-tags:
-  - party/republican
-  - people/candidate/schoolboard
+related:
+- Rathdrum
+- school board
+authority: LOGAN
 ---
-Residence: [[Rathdrum]]
-- candidate for [[Lakeland Joint School District|Lakeland]] [[school board]] in 2023, endorsed by [[Kootenai County Republican Central Committee|KCRCC]]  
+Residence: Rathdrum
+
+- candidate for Lakeland school board in 2023, endorsed by KCRCC  

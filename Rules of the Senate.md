@@ -1,12 +1,15 @@
 ---
-aliases:
-  - Senate Rules
-  - Senate Rule
+related:
+- Idaho
+- Idaho Senate
+- Joint Senate and House Rules
+authority: LOGAN
 ---
-**[[Idaho Senate]]** 
-- [[Senate member|Senate members]] 
-- [[Joint Senate and House Rules]] 
+**Idaho Senate**
 
---- 
+- Senate members
+- Joint Senate and House Rules
 
-https://legislature.idaho.gov/statutesrules/senaterules/ 
+---
+
+<https://legislature.idaho.gov/statutesrules/senaterules/>

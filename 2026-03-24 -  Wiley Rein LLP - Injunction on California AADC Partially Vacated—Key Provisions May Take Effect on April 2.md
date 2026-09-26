@@ -1,15 +1,31 @@
 ---
-source: "https://www.wiley.law/alert-Injunction-on-California-AADC-Partially-Vacated-Key-Provisions-May-Take-Effect-on-April-2"
-author:
-published:
+source: https://www.wiley.law/alert-Injunction-on-California-AADC-Partially-Vacated-Key-Provisions-May-Take-Effect-on-April-2
+author: null
+published: null
 created: 2026-03-26
-title: 2026-03-24 -  Wiley Rein LLP - Injunction on California AADC Partially Vacated—Key Provisions May Take Effect on April 2
-aliases: [2026-03-24 -  Wiley Rein LLP - Injunction on California AADC Partially Vacated—Key Provisions May Take Effect on April 2]
-linter-yaml-title-alias: 2026-03-24 -  Wiley Rein LLP - Injunction on California AADC Partially Vacated—Key Provisions May Take Effect on April 2
-tags:
-  - 2026/03/24
+title: 2026-03-24 -  Wiley Rein LLP - Injunction on California AADC Partially Vacated—Key
+  Provisions May Take Effect on April 2
+linter-yaml-title-alias: 2026-03-24 -  Wiley Rein LLP - Injunction on California AADC
+  Partially Vacated—Key Provisions May Take Effect on April 2
+related:
+- '2026-03-24'
+- '2026-03-26'
+- Act
+- California
+- Consumer Price Index
+- LLP
+- PIF
+- attorneys
+- broadband
+- children
+- definition
+- district court
+- minors
+- parents
+- sign
+- window
+authority: LOGAN
 ---
-
 Alert March 24, 2026
 
 March 24, 2026
@@ -52,9 +68,9 @@ Additionally, covered businesses are prohibited from:
 ***Which Provisions of the Injunction Did the Ninth Circuit Keep?***
 
 - Restrictions on Data Use, including:
-	- Limitations on the use of a minor's personal information, particularly if "the business knows, or has reason to know" that the information "is materially detrimental to the physical health, mental health, or well-being of a child."
-		- Prohibition on profiling a minor without "appropriate safeguards," and the profiling must be "necessary to provide the online service, product, or feature" or "in the best interests of the" minor.
-		- Prohibition on collecting, selling, sharing, or retaining "any personal information that is not necessary to provide an online service, product, or feature… unless the business can demonstrate a compelling reason that the collecting, selling, sharing, or retaining of the personal information is in the best interests of children likely to access the online service, product, or feature." Prohibition on the use of minors' personal information for reasons other than that for which the business collected the information, absent showing that the use is "in the best interests" of the minors.
+  - Limitations on the use of a minor's personal information, particularly if "the business knows, or has reason to know" that the information "is materially detrimental to the physical health, mental health, or well-being of a child."
+    - Prohibition on profiling a minor without "appropriate safeguards," and the profiling must be "necessary to provide the online service, product, or feature" or "in the best interests of the" minor.
+    - Prohibition on collecting, selling, sharing, or retaining "any personal information that is not necessary to provide an online service, product, or feature… unless the business can demonstrate a compelling reason that the collecting, selling, sharing, or retaining of the personal information is in the best interests of children likely to access the online service, product, or feature." Prohibition on the use of minors' personal information for reasons other than that for which the business collected the information, absent showing that the use is "in the best interests" of the minors.
 - Restrictions on "Dark Patterns": Businesses cannot use "dark patterns to lead or encourage children to provide personal information beyond what is reasonably expected to provide that online service, product, or feature to forego privacy protections, or to take any action that the business knows, or has reason to know, is materially detrimental to the child's physical health, mental health, or well-being."
 
 ***Which Businesses Are Covered by the AADC?***

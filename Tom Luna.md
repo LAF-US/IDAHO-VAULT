@@ -1,8 +1,9 @@
 ---
-tags:
-  - people/candidate/statewide/superintendent
-  - people/elected/statewide/superintendent
-  - party/republican
+related:
+- Idaho
+- Idaho Republican Party
+- Superintendent of Public Instruction
+authority: LOGAN
 ---
-former [[Idaho Republican Party]] chair
-former [[Superintendent of Public Instruction]] 
+former Idaho Republican Party chair
+former Superintendent of Public Instruction

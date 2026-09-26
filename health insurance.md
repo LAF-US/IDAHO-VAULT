@@ -1,1 +1,7 @@
-[[insurance]] for [[health care]] 
+---
+authority: LOGAN
+related:
+- health care
+---
+
+insurance for health care

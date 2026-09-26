@@ -1,8 +1,6 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
-residence: "[[Rogerson]]"
+residence: Rogerson
+related:
+- Rogerson
+authority: LOGAN
 ---

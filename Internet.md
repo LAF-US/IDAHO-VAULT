@@ -1,8 +1,6 @@
 ---
-aliases:
-  - online
-  - web
-  - website
-  - websites
+related:
+- web
+authority: LOGAN
 ---
-[[web]] [[and]]/or]] [[website|websites]] 
+web and/or]] websites

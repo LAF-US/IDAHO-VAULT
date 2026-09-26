@@ -1,13 +1,10 @@
 ---
-aliases:
-  - W/O
-  - w/o
-  - w/out
-  - w/no
+related:
+- syntax
+authority: LOGAN
 ---
+individual
 
-[[individual]] 
+syntax
 
-[[syntax]]
-
-[[ ? ]] 
+ ?  

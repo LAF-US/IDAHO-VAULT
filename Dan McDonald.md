@@ -1,8 +1,8 @@
 ---
-tags:
-  - people/candidate/county/commission
-  - people/elected/county/commission
-  - party/republican
-residence: "[[Sandpoint]]"
+residence: Sandpoint
+related:
+- Bonner County
+- Sandpoint
+authority: LOGAN
 ---
-former [[Bonner County]] [[County Commissioners|Commissioner]] 
+former Bonner County Commissioner

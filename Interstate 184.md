@@ -1,7 +1,6 @@
 ---
-aliases:
-  - I-184
-tags:
-  - geography/land/roads/interstates
+related:
+- Boise
+authority: LOGAN
 ---
-Minor east-west [[Interstate 84|I-84]] [[U.S. interstates|interstate]] connector in [[Boise]] 
+Minor east-west I-84 interstate connector in Boise

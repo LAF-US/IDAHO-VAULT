@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Robert Whitted
-tags:
-  - people
+related:
+- Patriot Front
+- Texas
+authority: LOGAN
 ---
-[[Patriot Front]] member, [[Texas]] resident 
+Patriot Front member, Texas resident

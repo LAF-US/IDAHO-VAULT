@@ -1,5 +1,8 @@
 ---
-tags:
-  - geography/water/lake
+related:
+- Little Goose dam
+- Snake River
+- Washington
+authority: LOGAN
 ---
-[[reservoirs|reservoir]] on the [[Snake River]] in [[Washington]] created by [[Little Goose dam]]  
+reservoir on the Snake River in Washington created by Little Goose dam  

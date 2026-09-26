@@ -1,1 +1,7 @@
-- former [[Department of Environmental Quality]] director appointed by [[C.L. 'Butch' Otter|Butch Otter]] in 2012, former deputy director 
+---
+authority: LOGAN
+related:
+- Department of Environmental Quality
+---
+
+- former Department of Environmental Quality director appointed by Butch Otter in 2012, former deputy director

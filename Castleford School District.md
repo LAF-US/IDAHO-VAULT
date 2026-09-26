@@ -1,7 +1,8 @@
 ---
-aliases:
-  - Castleford
-tags:
-  - schools/k12/district
+related:
+- Castleford
+- Twin Falls
+- Twin Falls County
+authority: LOGAN
 ---
-[[Castleford]], [[Twin Falls County]] 
+Castleford, Twin Falls County

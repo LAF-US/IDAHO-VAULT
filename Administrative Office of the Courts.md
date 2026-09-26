@@ -1,7 +1,8 @@
 ---
-tags:
-  - governments/state/judicial
-aliases:
-  - Office of the Courts
+related:
+- Idaho
+- Idaho Supreme Court
+- State Court System
+authority: LOGAN
 ---
-[[Idaho Supreme Court]] administrative office for the [[State Court System]] 
+Idaho Supreme Court administrative office for the State Court System

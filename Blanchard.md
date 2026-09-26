@@ -1,5 +1,6 @@
 ---
-tags:
-  - geography/land/places/communities
+related:
+- Bonner County
+authority: LOGAN
 ---
-[[Bonner County]] 
+Bonner County

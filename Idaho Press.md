@@ -1,9 +1,13 @@
 ---
-tags:
-  - media/outlets
 outlet:
-  - "[[Idaho Press]]"
-aliases:
-  - Idaho Press-Tribune
+- Idaho Press
+related:
+- Adams Publishing Group
+- Caldwell
+- Canyon County
+- Idaho
+- Nampa
+- Treasure Valley
+authority: LOGAN
 ---
-[[Treasure Valley]] [[newspapers|newspaper]] based in [[Canyon County]] owned by [[Adams Publishing Group]] - formerly [[Caldwell]] Tribune and [[Nampa]] Free Press 
+Treasure Valley newspaper based in Canyon County owned by Adams Publishing Group - formerly Caldwell Tribune and Nampa Free Press

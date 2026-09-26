@@ -1,13 +1,11 @@
 ---
-tags:
-  - party/republican
-  - people
-  - people/elected/statewide/superintendent
+related:
+- Cassia County
+- Superintendent of Public Instruction
+authority: LOGAN
 ---
+Residence: Cassia County
 
-Residence: [[Cassia County]]
+Current Superintendent of Public Instruction
 
-Current [[Superintendent of Public Instruction]]
-
-Former [[State Board of Education|SBOE]] president 
-
+Former SBOE president

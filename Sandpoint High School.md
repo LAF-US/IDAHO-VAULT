@@ -1,6 +1,9 @@
 ---
-tags:
-  - schools/k12/district/high-schools
+related:
+- Lake
+- Lake Pend Oreille
+- Lake Pend Oreille School District
+- Sandpoint
+authority: LOGAN
 ---
-
-[[Sandpoint]] [[high schools|high school]] [[Lake Pend Oreille School District]] 
+Sandpoint high school Lake Pend Oreille School District

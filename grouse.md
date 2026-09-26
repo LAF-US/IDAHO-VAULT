@@ -1,3 +1,11 @@
-[[birds]], [[upland species]]
+---
+authority: LOGAN
+related:
+- birds
+- species
+- upland species
+---
 
-[[forest grouse]] and [[prairie grouse]] 
+birds, upland species
+
+forest grouse and prairie grouse

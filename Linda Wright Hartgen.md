@@ -1,13 +1,12 @@
 ---
-aliases:
-  - Linda Wright-Hartgen
-  - Linda Hartgen
-tags:
-  - people/elected/legislative
-  - people/elected
-  - party/republican
-  - people
+related:
+- House member
+- Senate member
+- Stephen Hartgen
+- Twin Falls
+authority: LOGAN
 ---
-Residence: [[Twin Falls]]
-- [[Senate member]], former [[House member]]
-- wife of [[Stephen Hartgen]] 
+Residence: Twin Falls
+
+- Senate member, former House member
+- wife of Stephen Hartgen

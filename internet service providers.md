@@ -1,6 +1,7 @@
 ---
-aliases:
-  - ISPs
-  - ISP
+related:
+- Internet
+- broadband
+authority: LOGAN
 ---
-[[Internet]] [[broadband]] provider companies 
+Internet broadband provider companies

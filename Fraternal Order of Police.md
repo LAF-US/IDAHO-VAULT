@@ -1,1 +1,7 @@
-[[unions|union]] for [[police]] 
+---
+authority: LOGAN
+related:
+- police
+---
+
+union for police

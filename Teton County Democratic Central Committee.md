@@ -1,7 +1,9 @@
 ---
-tags:
-  - party/democratic
-  - position/elected/precinct
+related:
+- Idaho
+- Idaho Democratic Party
+- Teton
+- Teton County
+authority: LOGAN
 ---
-
-Local [[Idaho Democratic Party]] [[precinct committeemen|precinct committee]] for [[Teton County]] 
+Local Idaho Democratic Party precinct committee for Teton County

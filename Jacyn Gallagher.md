@@ -1,9 +1,10 @@
 ---
-tags:
-  - people/elected
-  - people/elected/legislative
-  - party/republican
-  - people
+related:
+- House member
+- Weiser
+- redistricting
+authority: LOGAN
 ---
-Residence: [[Weiser]]
-- [[House member]] for [[Legislative District 9|LD9]] after [[redistricting]] 
+Residence: Weiser
+
+- House member for LD9 after redistricting

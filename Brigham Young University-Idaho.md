@@ -1,9 +1,7 @@
 ---
-aliases:
-  - BYU-I
-  - Ricks College
-tags:
-  - schools/colleges/private
-  - schools
+related:
+- Church of Jesus Christ of Latter-Day Saints
+- Rexburg
+authority: LOGAN
 ---
-[[Church of Jesus Christ of Latter-Day Saints]] [[higher education]] institution in [[Rexburg]]
+Church of Jesus Christ of Latter-Day Saints higher education institution in Rexburg

@@ -1,5 +1,6 @@
 ---
-tags:
-  - geography/water/river
+related:
+- Oneida County
+authority: LOGAN
 ---
-[[rivers|river]] in [[Oneida County]] 
+river in Oneida County

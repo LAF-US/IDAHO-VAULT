@@ -1,5 +1,6 @@
 ---
-tags:
-  - vault/stub
+related:
+- Global Positioning System
+authority: LOGAN
 ---
-[[Global Positioning System]] 
+Global Positioning System

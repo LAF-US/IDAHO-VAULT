@@ -1,11 +1,10 @@
 ---
-tags:
-  - party/republican
-  - people/elected
-  - people/elected/legislative
-  - people
-residence: "[[Moscow]]"
+residence: Moscow
+related:
+- House member
+- Moscow
+authority: LOGAN
 ---
-[[House member]] 
+House member
 
-[[foster care]] 
+foster care

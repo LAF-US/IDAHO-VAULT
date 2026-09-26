@@ -1,3 +1,9 @@
-[[Twitter|X]][[AI]]
+---
+authority: LOGAN
+related:
+- Elon Musk
+---
 
-[[Elon Musk]]
+XAI
+
+Elon Musk

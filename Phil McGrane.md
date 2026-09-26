@@ -1,10 +1,10 @@
 ---
-tags:
-  - party/republican
-  - people/elected/county/clerk
-  - people/candidate/county/clerk
-  - people/candidate/statewide/secretary
-  - people/elected/statewide/secretary
+related:
+- Ada County
+- County Clerk
+- Secretary of State
+authority: LOGAN
 ---
-[[Secretary of State]]
-- former [[Ada County]] [[County Clerk|Clerk]] 
+Secretary of State
+
+- former Ada County Clerk

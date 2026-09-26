@@ -1,6 +1,7 @@
 ---
-tags:
-  - schools/k12/district/high-schools
+related:
+- Nampa
+- Nampa School District
+authority: LOGAN
 ---
-
-[[Nampa]] [[high schools|high school]] in [[Nampa School District]] 
+Nampa high school in Nampa School District

@@ -1,8 +1,8 @@
 ---
-tags:
-  - party/republican
-  - people/elected/statewide/secretary
-  - people/candidate/statewide/secretary
-residence: "[[Boise]]"
+residence: Boise
+related:
+- Boise
+- Secretary of State
+authority: LOGAN
 ---
-- former [[Secretary of State]]
+- former Secretary of State

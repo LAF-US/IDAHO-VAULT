@@ -1,1 +1,7 @@
-people who participate in [[hunting]] 
+---
+authority: LOGAN
+related:
+- hunting
+---
+
+people who participate in hunting

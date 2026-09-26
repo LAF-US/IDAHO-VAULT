@@ -1,7 +1,7 @@
 ---
-aliases:
-  - Troy
-tags:
-  - schools/k12/district
+related:
+- Latah County
+- Troy
+authority: LOGAN
 ---
-[[Troy]], [[Latah County]] 
+Troy, Latah County

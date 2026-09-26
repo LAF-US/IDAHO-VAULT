@@ -1,23 +1,30 @@
+<%* const d = moment(tp.file.title, "YYYY-MM-DD") -%>
+
 ---
-title: {{date:YYYY-MM-DD}}
+title: <% moment(tp.file.title, "YYYY-MM-DD").format("YYYY-MM-DD") %>
 aliases:
-  - {{date:YYYY-MM-DD}}
-  - {{date:MMMM D, YYYY}}
-  - {{date:MMMM Do, YYYY}}
-  - {{date:D MMMM YYYY}}
-  - {{date:dddd, MMMM D, YYYY}}
-linter-yaml-title-alias: {{date:YYYY-MM-DD}}
-yesterday:
-tomorrow:
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("YYYY-MM-DD") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("MMMM D, YYYY") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("MMMM Do, YYYY") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("D MMMM YYYY") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("dddd, MMMM D, YYYY") %>
+period: day
+linter-yaml-title-alias: <% moment(tp.file.title, "YYYY-MM-DD").format("YYYY-MM-DD") %>
+yesterday: <% moment(tp.file.title, "YYYY-MM-DD").subtract(1,"d").format("YYYY-MM-DD") %>
+tomorrow: <% moment(tp.file.title, "YYYY-MM-DD").add(1,"d").format("YYYY-MM-DD") %>
 weekday:
-  - {{date:dddd}}
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("dddd") %>
+cssclasses:
+  - roygbiv-<% moment(tp.file.title, "YYYY-MM-DD").format("ddd").toLowerCase() %>
 tags:
   - today
-  - {{date:YYYY/MM/DD}}
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("YYYY/MM/DD") %>
   - dailynote
-date created: {{date:dddd, MMMM Do YYYY, h:mm:ss a}}
-date modified: {{date:dddd, MMMM Do YYYY, h:mm:ss a}}
+date created: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
+date modified: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
+
 ---
 
-[[TO DO LIST]]
+## Daily Queue
 
+[[TO DO LIST]]

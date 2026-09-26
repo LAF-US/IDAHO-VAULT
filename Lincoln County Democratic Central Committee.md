@@ -1,7 +1,9 @@
 ---
-tags:
-  - party/democratic
-  - position/elected/precinct
+related:
+- Idaho
+- Idaho Democratic Party
+- Lincoln
+- Lincoln County
+authority: LOGAN
 ---
-
-Local [[Idaho Democratic Party]] [[precinct committeemen|precinct committee]] for [[Lincoln County]] 
+Local Idaho Democratic Party precinct committee for Lincoln County
