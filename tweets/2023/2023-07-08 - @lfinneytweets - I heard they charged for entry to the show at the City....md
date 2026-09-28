@@ -1,4 +1,5 @@
 ---
+title: "I heard they charged for entry to the show at the City..."
 date: 2023-07-08
 time: 17:35:38
 tweet_id: "1677733194085601280"

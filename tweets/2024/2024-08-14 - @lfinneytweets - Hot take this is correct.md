@@ -1,4 +1,5 @@
 ---
+title: "Hot take this is correct"
 date: 2024-08-14
 time: 21:05:25
 tweet_id: "1823828295974330368"

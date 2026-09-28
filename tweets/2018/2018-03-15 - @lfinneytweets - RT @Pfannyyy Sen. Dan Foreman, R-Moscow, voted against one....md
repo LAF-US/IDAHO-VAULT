@@ -1,4 +1,5 @@
 ---
+title: "RT @Pfannyyy Sen. Dan Foreman, R-Moscow, voted against one..."
 date: 2018-03-15
 time: 22:40:16
 tweet_id: "974415009760423938"

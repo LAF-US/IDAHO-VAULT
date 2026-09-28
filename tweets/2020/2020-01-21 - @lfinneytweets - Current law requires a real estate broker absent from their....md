@@ -1,4 +1,5 @@
 ---
+title: "Current law requires a real estate broker absent from their..."
 date: 2020-01-21
 time: 16:55:28
 tweet_id: "1219664821370535936"

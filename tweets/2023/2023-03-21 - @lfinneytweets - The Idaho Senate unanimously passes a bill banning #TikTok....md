@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Senate unanimously passes a bill banning #TikTok..."
 date: 2023-03-21
 time: 22:01:42
 tweet_id: "1638299873488547841"

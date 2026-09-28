@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Our @davlinnews spoke with @KevinRichert..."
 date: 2020-05-01
 time: 23:40:53
 tweet_id: "1256368023444676608"

@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell Sen. Vick asks ACLU atty Ritchie Eppink..."
 date: 2019-04-02
 time: 17:54:36
 tweet_id: "1113137670010527744"

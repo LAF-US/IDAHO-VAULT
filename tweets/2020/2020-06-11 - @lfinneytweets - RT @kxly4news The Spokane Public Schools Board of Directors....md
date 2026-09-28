@@ -1,4 +1,5 @@
 ---
+title: "RT @kxly4news The Spokane Public Schools Board of Directors..."
 date: 2020-06-11
 time: 02:28:46
 tweet_id: "1270905786881851393"

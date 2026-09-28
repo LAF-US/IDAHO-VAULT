@@ -1,4 +1,5 @@
 ---
+title: "but condone premarital sex, promiscuity, homosexuality and..."
 date: 2021-08-28
 time: 02:14:05
 tweet_id: "1431439915410026499"

@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Ybarra said she talks to her 20-year-old..."
 date: 2020-08-06
 time: 18:29:40
 tweet_id: "1291441326672642048"

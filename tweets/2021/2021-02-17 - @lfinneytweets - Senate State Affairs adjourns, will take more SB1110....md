@@ -1,4 +1,5 @@
 ---
+title: "Senate State Affairs adjourns, will take more SB1110..."
 date: 2021-02-17
 time: 17:22:46
 tweet_id: "1362090125027549185"

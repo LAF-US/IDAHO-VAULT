@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut UI tuition will increase by 5.6% next..."
 date: 2019-04-18
 time: 00:54:07
 tweet_id: "1118679064640806912"

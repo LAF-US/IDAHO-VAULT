@@ -1,4 +1,5 @@
 ---
+title: "RT @IndianCountry Tristan Ahtone (@Tahtone) talks his..."
 date: 2020-06-28
 time: 21:40:22
 tweet_id: "1277356189269938176"

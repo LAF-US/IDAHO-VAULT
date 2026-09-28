@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports U.S. Rep. Russ Fulcher is open to..."
 date: 2025-09-05
 time: 21:05:58
 tweet_id: "1964072539618947484"

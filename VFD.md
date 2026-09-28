@@ -44,6 +44,7 @@ archive is Dewey's sub-basement library.
 
 VFD agents in the vault are those whose epistemic conduct demonstrates
 fire-fighter alignment:
+
 - Truthful provenance
 - Empirical over institutional knowledge
 - Restraint at the edge of delegation

@@ -1,4 +1,5 @@
 ---
+title: "2 41pm"
 date: 2021-05-12
 time: 20:42:48
 tweet_id: "1392581046005211136"
@@ -13,9 +14,10 @@ related:
   - lfinneytweets
 ---
 
-2:41pm https://t.co/aGZJuAiE8d
+2:41pm <https://t.co/aGZJuAiE8d>
 
 ## Media
-- ![](https://pbs.twimg.com/media/E1NxDMwUYAIIJni.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/E1NxDMwUYAIIJni.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1392581046005211136)

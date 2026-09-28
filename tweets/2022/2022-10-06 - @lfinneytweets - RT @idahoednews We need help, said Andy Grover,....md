@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews We need help, said Andy Grover,..."
 date: 2022-10-06
 time: 23:43:21
 tweet_id: "1578169066623488000"
@@ -20,6 +21,6 @@ related:
   - idleg
 ---
 
-RT @idahoednews: "We need help," said Andy Grover, representing school administrators in front of the committee. #idedu #idleg https://t.co…
+RT @idahoednews: "We need help," said Andy Grover, representing school administrators in front of the committee. #idedu #idleg <https://t.co…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1578169066623488000)

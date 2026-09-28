@@ -14,14 +14,16 @@ related:
   - lfinneytweets
 ---
 
-You can read more on Haring and his art here: https://t.co/6SyGAnimVx 
-And here’s another, more in-depth bio: https://t.co/XA2YTEcJM4 https://t.co/1GfFmIfhtv
+You can read more on Haring and his art here: <https://t.co/6SyGAnimVx>
+And here’s another, more in-depth bio: <https://t.co/XA2YTEcJM4> <https://t.co/1GfFmIfhtv>
 
 ## Links
-- https://www.invaluable.com/blog/keith-haring/
-- https://www.visualaids.org/artists/detail/keith-haring
+
+- <https://www.invaluable.com/blog/keith-haring/>
+- <https://www.visualaids.org/artists/detail/keith-haring>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/DfjfMvDWsAAaQAq.jpg)
 - ![](https://pbs.twimg.com/media/DfjfMvZXkAEqAT-.jpg)
 - ![](https://pbs.twimg.com/media/DfjfMv_W0AAiKvp.jpg)

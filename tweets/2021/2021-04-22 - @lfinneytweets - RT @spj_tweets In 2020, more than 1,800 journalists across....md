@@ -1,4 +1,5 @@
 ---
+title: "RT @spj_tweets In 2020, more than 1,800 journalists across..."
 date: 2021-04-22
 time: 18:11:45
 tweet_id: "1385295274323546112"

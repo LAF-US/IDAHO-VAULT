@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports A shooting in Uvalde, TX has drawn..."
 date: 2022-05-26
 time: 20:20:10
 tweet_id: "1529920347952140288"

@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Debates on @IdahoPTV Attorney General, 2022..."
 date: 2022-04-20
 time: 05:29:10
 tweet_id: "1516650159152664576"
@@ -24,10 +25,10 @@ related:
 ---
 
 The Idaho Debates on @IdahoPTV: Attorney General, 2022 Republican Primary. #Election2022 #idpol #idleg 
-https://t.co/KyAfn9yu9h
+<https://t.co/KyAfn9yu9h>
 
 ## Links
-- https://video.idahoptv.org/video/attorney-general-2022-republican-primary-gn8dod/
+- <https://video.idahoptv.org/video/attorney-general-2022-republican-primary-gn8dod/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

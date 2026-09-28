@@ -1,4 +1,5 @@
 ---
+title: "And now the agenda is withdrawn!"
 date: 2021-05-05
 time: 20:31:30
 tweet_id: "1390041483525300224"
@@ -13,9 +14,9 @@ related:
   - lfinneytweets
 ---
 
-And now the agenda is withdrawn! https://t.co/NffmpKA1JO
+And now the agenda is withdrawn! <https://t.co/NffmpKA1JO>
 
 ## Links
-- https://t.co/NffmpKA1JO
+- <https://t.co/NffmpKA1JO>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1390041483525300224)

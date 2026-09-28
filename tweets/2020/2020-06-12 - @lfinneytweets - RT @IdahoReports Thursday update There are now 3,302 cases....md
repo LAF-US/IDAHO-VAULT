@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Thursday update There are now 3,302 cases..."
 date: 2020-06-12
 time: 02:23:43
 tweet_id: "1271266903567200257"

@@ -1,4 +1,5 @@
 ---
+title: "tweet (002750)"
 date: 2024-05-25
 time: 00:52:13
 tweet_id: "1794169568984002750"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/NxrpUBzSOI
+<https://t.co/NxrpUBzSOI>
 
 ## Links
-- https://cdapress.com/news/2024/may/21/defamation-trial-begins-for-blogger-sued-by-drag-performer/
+- <https://cdapress.com/news/2024/may/21/defamation-trial-begins-for-blogger-sued-by-drag-performer/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

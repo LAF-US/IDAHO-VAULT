@@ -1,4 +1,5 @@
 ---
+title: "RT @WillWalkey It's striking to me that, while some folks..."
 date: 2021-12-28
 time: 04:51:47
 tweet_id: "1475690922230763521"

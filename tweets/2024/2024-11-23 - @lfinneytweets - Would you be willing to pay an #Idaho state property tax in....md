@@ -1,4 +1,5 @@
 ---
+title: "Would you be willing to pay an #Idaho state property tax in..."
 date: 2024-11-23
 time: 00:31:53
 tweet_id: "1860119041819705669"

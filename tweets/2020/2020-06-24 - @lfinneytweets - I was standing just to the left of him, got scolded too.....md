@@ -1,4 +1,5 @@
 ---
+title: "I was standing just to the left of him, got scolded too...."
 date: 2020-06-24
 time: 02:14:29
 tweet_id: "1275613234259652608"

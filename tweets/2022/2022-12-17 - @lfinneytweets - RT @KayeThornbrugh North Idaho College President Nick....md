@@ -1,4 +1,5 @@
 ---
+title: "RT @KayeThornbrugh North Idaho College President Nick..."
 date: 2022-12-17
 time: 20:30:47
 tweet_id: "1604212531731783680"

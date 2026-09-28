@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The budget inches Idaho one step closer to..."
 date: 2023-03-23
 time: 19:09:30
 tweet_id: "1638981312966180864"
@@ -20,6 +21,6 @@ related:
   - idpol
 ---
 
-RT @IdahoReports: The budget inches Idaho one step closer to being able to use execution by firing squad. #idleg #idpol https://t.co/7yE6GK…
+RT @IdahoReports: The budget inches Idaho one step closer to being able to use execution by firing squad. #idleg #idpol <https://t.co/7yE6GK…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1638981312966180864)

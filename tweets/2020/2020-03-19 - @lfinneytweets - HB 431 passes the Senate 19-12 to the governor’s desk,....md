@@ -1,4 +1,5 @@
 ---
+title: "HB 431 passes the Senate 19-12 to the governor\u2019s desk,..."
 date: 2020-03-19
 time: 02:35:55
 tweet_id: "1240467005985009664"

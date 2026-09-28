@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson Speaker Bedke We need to emphasize that..."
 date: 2021-03-19
 time: 17:08:13
 tweet_id: "1372958098759983104"

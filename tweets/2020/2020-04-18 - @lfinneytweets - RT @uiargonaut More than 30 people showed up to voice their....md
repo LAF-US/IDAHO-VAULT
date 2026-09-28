@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut More than 30 people showed up to voice their..."
 date: 2020-04-18
 time: 20:08:54
 tweet_id: "1251603632341934085"

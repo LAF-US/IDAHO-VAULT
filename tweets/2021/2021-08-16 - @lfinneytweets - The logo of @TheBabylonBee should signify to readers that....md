@@ -1,4 +1,5 @@
 ---
+title: "The logo of @TheBabylonBee should signify to readers that..."
 date: 2021-08-16
 time: 18:04:32
 tweet_id: "1427330448401715203"
@@ -18,10 +19,10 @@ related:
 ---
 
 The logo of @TheBabylonBee should signify to readers that it's satire. If you're not familiar with the various satirical news sites, the fake @CNN chyron is misleading at best. 
-https://t.co/YdD2UQKvJv
+<https://t.co/YdD2UQKvJv>
 
 ## Links
-- https://x.com/TheBabylonBee/status/1427299611912327168
+- <https://x.com/TheBabylonBee/status/1427299611912327168>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

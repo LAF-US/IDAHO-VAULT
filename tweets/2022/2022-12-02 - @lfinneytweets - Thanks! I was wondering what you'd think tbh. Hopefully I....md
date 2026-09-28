@@ -1,4 +1,5 @@
 ---
+title: "Thanks! I was wondering what you'd think tbh. Hopefully I..."
 date: 2022-12-02
 time: 06:12:18
 tweet_id: "1598560670303518720"

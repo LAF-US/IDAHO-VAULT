@@ -1,4 +1,5 @@
 ---
+title: "Public Health Administrator Elke Shaw-Tullock says that the..."
 date: 2021-01-12
 time: 21:42:12
 tweet_id: "1349109447394660352"

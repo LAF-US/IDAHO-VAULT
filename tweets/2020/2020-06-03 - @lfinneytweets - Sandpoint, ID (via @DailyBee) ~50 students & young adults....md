@@ -1,4 +1,5 @@
 ---
+title: "Sandpoint, ID (via @DailyBee) ~50 students & young adults..."
 date: 2020-06-03
 time: 21:32:53
 tweet_id: "1268294608364027904"

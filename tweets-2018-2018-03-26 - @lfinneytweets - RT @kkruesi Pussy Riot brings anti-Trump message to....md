@@ -20,6 +20,6 @@ related:
   - idpol
 ---
 
-RT @kkruesi: Pussy Riot brings anti-Trump message to conservative Idaho - very excited to write about this! #treefort2018 #idpol  https://t…
+RT @kkruesi: Pussy Riot brings anti-Trump message to conservative Idaho - very excited to write about this! #treefort2018 #idpol  <https://t…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/978344791384637441)

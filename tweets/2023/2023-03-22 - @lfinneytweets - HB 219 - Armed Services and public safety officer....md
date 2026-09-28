@@ -1,4 +1,5 @@
 ---
+title: "HB 219 - Armed Services and public safety officer..."
 date: 2023-03-22
 time: 23:01:13
 tweet_id: "1638677239045980161"

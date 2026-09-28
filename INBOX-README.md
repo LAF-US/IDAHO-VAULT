@@ -15,7 +15,7 @@ Raw intake. Files land here before they are processed into the vault, except for
 **Automation and protocol live in `!/INBOX/` — this is the drop face only.**
 
 | Subdirectory | Source | Protocol |
-|---|---|---|
+| --- | --- | --- |
 | `AI-CAPTURES/` | Chrome extension exports, AI conversation Markdown | See `!/INBOX/AI-CAPTURES/README.md` |
 | `PHONE-LINK/` | Windows Phone Link auto-sweep to vault root | See root `phone-link-auto-sweep.ps1` |
 

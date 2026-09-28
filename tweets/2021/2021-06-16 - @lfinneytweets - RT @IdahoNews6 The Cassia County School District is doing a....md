@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 The Cassia County School District is doing a..."
 date: 2021-06-16
 time: 00:45:04
 tweet_id: "1404963198898343940"

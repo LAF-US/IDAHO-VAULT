@@ -1,4 +1,5 @@
 ---
+title: "RT @elliew0lfe There weren\u2019t students crying on the quad or..."
 date: 2024-11-07
 time: 23:06:04
 tweet_id: "1854661625061818728"

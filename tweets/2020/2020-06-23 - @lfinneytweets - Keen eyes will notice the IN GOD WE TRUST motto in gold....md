@@ -1,4 +1,5 @@
 ---
+title: "Keen eyes will notice the IN GOD WE TRUST motto in gold..."
 date: 2020-06-23
 time: 19:55:11
 tweet_id: "1275517780935053313"

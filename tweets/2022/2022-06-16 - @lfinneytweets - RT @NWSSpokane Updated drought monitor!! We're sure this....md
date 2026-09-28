@@ -1,4 +1,5 @@
 ---
+title: "RT @NWSSpokane Updated drought monitor!! We're sure this..."
 date: 2022-06-16
 time: 22:34:26
 tweet_id: "1537564284149846016"

@@ -4,4 +4,4 @@ related:
 - holy book
 ---
 
-Christian holy book 
+Christian holy book

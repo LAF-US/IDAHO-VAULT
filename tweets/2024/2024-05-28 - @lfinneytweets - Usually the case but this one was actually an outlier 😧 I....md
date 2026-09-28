@@ -1,4 +1,5 @@
 ---
+title: "Usually the case but this one was actually an outlier \ud83d\ude27 I..."
 date: 2024-05-28
 time: 18:53:34
 tweet_id: "1795528861318549549"

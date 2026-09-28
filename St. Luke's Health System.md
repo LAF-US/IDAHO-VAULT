@@ -4,4 +4,4 @@ related:
 - hospitals
 authority: LOGAN
 ---
-hospitals in Idaho 
+hospitals in Idaho

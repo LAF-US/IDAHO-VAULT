@@ -1,4 +1,5 @@
 ---
+title: "So that wraps up day one of the #idleg special session. I..."
 date: 2020-08-25
 time: 01:32:16
 tweet_id: "1298070657809256448"

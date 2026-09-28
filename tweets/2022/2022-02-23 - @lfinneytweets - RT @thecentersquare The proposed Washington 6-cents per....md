@@ -1,4 +1,5 @@
 ---
+title: "RT @thecentersquare The proposed Washington 6-cents per..."
 date: 2022-02-23
 time: 22:52:23
 tweet_id: "1496618972640206849"

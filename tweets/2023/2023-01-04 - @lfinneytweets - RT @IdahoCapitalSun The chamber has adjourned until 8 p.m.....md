@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun The chamber has adjourned until 8 p.m...."
 date: 2023-01-04
 time: 22:59:38
 tweet_id: "1610772976252891139"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise LewTrib Rep. Scott wants all..."
 date: 2021-03-01
 time: 19:22:49
 tweet_id: "1366468989086429184"

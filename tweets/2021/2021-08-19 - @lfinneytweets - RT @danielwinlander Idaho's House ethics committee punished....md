@@ -1,4 +1,5 @@
 ---
+title: "RT @danielwinlander Idaho's House ethics committee punished..."
 date: 2021-08-19
 time: 18:21:53
 tweet_id: "1428421980101890048"

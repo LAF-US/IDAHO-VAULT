@@ -1,4 +1,5 @@
 ---
+title: "RT @APWestRegion A ban on black Mormons as local faith..."
 date: 2018-06-01
 time: 06:30:02
 tweet_id: "1002437096529805312"

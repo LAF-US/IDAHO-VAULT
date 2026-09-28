@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-12-23
 time: 05:09:32
 tweet_id: "1473883448334950410"
@@ -16,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@idahofreedom https://t.co/vPYdVvt9ek
+@idahofreedom <https://t.co/vPYdVvt9ek>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/FHRJLnFVEAAZP-D.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FHRJLnFVEAAZP-D.jpg)
 
 *In reply to [@idahofreedom](https://twitter.com/idahofreedom)*
 

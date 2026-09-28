@@ -1,4 +1,5 @@
 ---
+title: "RT @USGSBigQuakes Prelim M6.5 Earthquake southern Idaho..."
 date: 2020-04-01
 time: 00:13:58
 tweet_id: "1245142324222410752"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @USGSBigQuakes: Prelim M6.5 Earthquake southern Idaho Mar-31 23:52 UTC, updates https://t.co/LwObyJaSjV
+RT @USGSBigQuakes: Prelim M6.5 Earthquake southern Idaho Mar-31 23:52 UTC, updates <https://t.co/LwObyJaSjV>
 
 ## Links
-- https://go.usa.gov/xvCj2
+- <https://go.usa.gov/xvCj2>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1245142324222410752)

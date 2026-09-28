@@ -21,9 +21,10 @@ related:
   - GoVandals
 ---
 
-Four years of fun. Thanks for all the memories, friends! 🎷 #vandalmarchingband #GoVandals @uidaho @VandalBand https://t.co/gRx3r7kDml
+Four years of fun. Thanks for all the memories, friends! 🎷 #vandalmarchingband #GoVandals @uidaho @VandalBand <https://t.co/gRx3r7kDml>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/ELpu4OHVUAEIXwh.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1205397776185475072)

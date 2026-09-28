@@ -1,4 +1,5 @@
 ---
+title: "RT @MikeCrapo Today, I chaired the first \u201chybrid\u201d hearing..."
 date: 2020-05-05
 time: 20:23:54
 tweet_id: "1257768003308908544"

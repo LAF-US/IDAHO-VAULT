@@ -20,9 +20,10 @@ related:
   - idpol
 ---
 
-@nicoleMfoy 👏👏👏 #idleg #idpol https://t.co/7MubJ60op1
+@nicoleMfoy 👏👏👏 #idleg #idpol <https://t.co/7MubJ60op1>
 
 ## Links
-- https://x.com/lyndsie_kiebert/status/1115002884570009601
+
+- <https://x.com/lyndsie_kiebert/status/1115002884570009601>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1115706484954779649)

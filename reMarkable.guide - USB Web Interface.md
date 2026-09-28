@@ -21,7 +21,7 @@ See the official [Transferring files using a USB cable](https://support.remarkab
 
 The USB Web Interface exposes the following API endpoints that can be used to interact with the xochitl filesystem.
 
-### GET http://10.11.99.1/documents/
+### GET <http://10.11.99.1/documents/>
 
 Get the document and folders list for the root folder. This will also respond to POST requests.
 
@@ -34,7 +34,7 @@ curl \
 | jq -r 'map({(.ID): {VissibleName,Type}}) | add'
 ```
 
-### GET http://10.11.99.1/documents/{guid}
+### GET <http://10.11.99.1/documents/{guid}>
 
 Get the documents and folders list for a specific folder. This will also respond to POST requests.
 
@@ -48,7 +48,7 @@ curl \
 | jq -r 'map({(.ID): {VissibleName,Type}}) | add'
 ```
 
-### GET http://10.11.99.1/download/{guid}/pdf
+### GET <http://10.11.99.1/download/{guid}/pdf>
 
 Download the PDF for a specific document.
 
@@ -60,7 +60,7 @@ curl \
   -I "http://10.11.99.1/download/$guid/pdf"
 ```
 
-### GET http://10.11.99.1/download/{guid}/rmdoc
+### GET <http://10.11.99.1/download/{guid}/rmdoc>
 
 Download the raw notebook archive for a specific document. This was added in v3.9.
 
@@ -72,7 +72,7 @@ curl \
   -I "http://10.11.99.1/download/$guid/rmdoc"
 ```
 
-### POST http://10.11.99.1/upload
+### POST <http://10.11.99.1/upload>
 
 Upload a document to the last folder that was listed.
 
@@ -89,7 +89,7 @@ curl \
   -F "file=@$file;filename=$(basename "$file");type=application/pdf"
 ```
 
-### GET http://10.11.99.1/log.txt
+### GET <http://10.11.99.1/log.txt>
 
 Download the xochitl log file found at `/home/root/log.txt`.
 
@@ -103,7 +103,7 @@ curl \
   'http://10.11.99.1/log.txt'
 ```
 
-### GET http://10.11.99.1/thumbnail/{guid}
+### GET <http://10.11.99.1/thumbnail/{guid}>
 
 Download the thumbnail for a specific document (latest page opened).
 
@@ -115,7 +115,7 @@ curl \
   -I "http://10.11.99.1/thumbnail/$guid"
 ```
 
-### POST 'http://10.11.99.1/search/{keyword}'
+### POST '<http://10.11.99.1/search/{keyword}>'
 
 Search for documents matching a specific keyword. This endpoint is currently under development, and may not work as expected.
 

@@ -1,4 +1,5 @@
 ---
+title: "Go learn a few things - but come right back, the news biz..."
 date: 2022-11-08
 time: 06:01:58
 tweet_id: "1589860763635970049"

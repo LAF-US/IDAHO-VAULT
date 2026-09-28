@@ -1,4 +1,5 @@
 ---
+title: "A quarrelsome man has no good neighbors."
 date: 2021-10-13
 time: 20:24:22
 tweet_id: "1448384134548647936"

@@ -1,4 +1,5 @@
 ---
+title: "Walking around like normal people. Getting checks from the..."
 date: 2020-06-25
 time: 21:19:13
 tweet_id: "1276263705328508929"

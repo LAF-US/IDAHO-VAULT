@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Idaho homeowners to receive $192M in..."
 date: 2023-11-21
 time: 19:34:58
 tweet_id: "1727047974084391303"
@@ -16,6 +17,6 @@ related:
 ---
 
 RT @IdahoCapitalSun: Idaho homeowners to receive $192M in property tax reductions due to 2023 law passed by Legislature
-https://t.co/P9DAuK…
+<https://t.co/P9DAuK…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1727047974084391303)

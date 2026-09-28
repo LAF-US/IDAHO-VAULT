@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin The sponsor of a new draft bill aimed at..."
 date: 2021-10-04
 time: 22:00:38
 tweet_id: "1445146872729853970"

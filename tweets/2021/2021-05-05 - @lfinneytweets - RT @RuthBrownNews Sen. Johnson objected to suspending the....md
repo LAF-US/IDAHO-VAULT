@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Sen. Johnson objected to suspending the..."
 date: 2021-05-05
 time: 20:05:14
 tweet_id: "1390034873302192129"

@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews A courtroom showdown between Sherri Ybarra,..."
 date: 2020-05-01
 time: 21:17:56
 tweet_id: "1256332046927978497"

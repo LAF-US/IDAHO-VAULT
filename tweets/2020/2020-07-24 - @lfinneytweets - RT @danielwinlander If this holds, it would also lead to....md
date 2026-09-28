@@ -1,4 +1,5 @@
 ---
+title: "RT @danielwinlander If this holds, it would also lead to..."
 date: 2020-07-24
 time: 18:13:02
 tweet_id: "1286726096386285568"

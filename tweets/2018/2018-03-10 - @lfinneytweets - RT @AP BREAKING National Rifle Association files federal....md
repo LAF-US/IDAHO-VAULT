@@ -1,4 +1,5 @@
 ---
+title: "RT @AP BREAKING National Rifle Association files federal..."
 date: 2018-03-10
 time: 03:05:46
 tweet_id: "972307496596512768"

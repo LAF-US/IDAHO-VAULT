@@ -1,4 +1,5 @@
 ---
+title: "RT @uidaho Our band = our best Vandal ambassadors...."
 date: 2024-03-29
 time: 04:53:43
 tweet_id: "1773574234003955941"

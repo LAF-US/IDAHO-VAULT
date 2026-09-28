@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune The Clearwater River Casino has been..."
 date: 2022-07-18
 time: 14:25:13
 tweet_id: "1549037580376629248"

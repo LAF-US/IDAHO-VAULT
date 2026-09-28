@@ -1,4 +1,5 @@
 ---
+title: "RT @BMakuch A domestic terrorist planning to car-bomb a..."
 date: 2020-03-26
 time: 03:46:41
 tweet_id: "1243021529228558336"

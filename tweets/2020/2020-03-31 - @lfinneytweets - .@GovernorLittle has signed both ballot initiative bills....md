@@ -1,4 +1,5 @@
 ---
+title: ".@GovernorLittle has signed both ballot initiative bills..."
 date: 2020-03-31
 time: 01:15:11
 tweet_id: "1244795340802281472"

@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Rep. David Cannon, R-Blackfoot, made it..."
 date: 2023-03-28
 time: 16:20:56
 tweet_id: "1640750832953053185"

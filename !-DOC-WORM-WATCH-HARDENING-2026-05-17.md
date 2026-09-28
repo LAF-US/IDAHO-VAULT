@@ -69,4 +69,3 @@ as a dependency. The Python surface is broader because CrewAI and supporting
 tools pull a real dependency graph. The main hardening work is therefore not
 "panic about every package"; it is keeping credentials scarce, scoped, and out
 of install-time execution paths.
-

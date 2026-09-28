@@ -1,4 +1,5 @@
 ---
+title: "\u201cNo political movement can be healthy unless it has its own..."
 date: 2023-09-17
 time: 02:38:07
 tweet_id: "1703236862461251753"

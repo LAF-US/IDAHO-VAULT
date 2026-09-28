@@ -55,7 +55,7 @@ Before installing MacPorts, you need to install Xcode from [developer.apple.com]
 
 You can now probably head over to [www.macports.org](https://www.macports.org/) and download a.pkg installer for your version of macOS. If you are using a beta of a new release or the hot, fresh bits of a.0 release, the.pkg may not be available and you will have to build from source. Either download the tarball and unpack it or clone the git repo and checkout the current release tag.
 
-```
+```bash
 # use actual latest tarball
 curl -O https://distfiles.macports.org/MacPorts/MacPorts-2.6.2.tar.bz2
 tar xf MacPorts-2.6.2.tar.bz2
@@ -63,14 +63,14 @@ tar xf MacPorts-2.6.2.tar.bz2
 
 **OR**
 
-```
+```bash
 git clone https://github.com/macports/macports-base.git
 git checkout 10.6.2 # or whatever is the highest version number without a -beta or -rc suffix
 ```
 
 Whichever way you got the source code, enter the directory in your Terminal.app, configure, build, and install.
 
-```
+```bash
 ./configure
 make
 sudo make install
@@ -86,7 +86,7 @@ Set default variants options. I have not used X11 on macOS in years. I like to d
 
 `sudo vi /opt/local/etc/macports/variants.conf`
 
-```
+```text
 -x11 +no_x11 +quartz +bash_completion
 ```
 
@@ -98,7 +98,7 @@ In `macports.conf`, set the rsync\_server and rsync\_dir to match your alternate
 
 `sudo vi /opt/local/etc/macports/macports.conf`
 
-```
+```markdown
 # The rsync server for fetching MacPorts base during selfupdate. This
 # setting is NOT used when downloading the ports tree; the sources for
 # the ports tree are set in sources.conf. See
@@ -120,7 +120,8 @@ In `sources.conf` change the path to your local mirror.
 
 `sudo vi /opt/local/etc/macports/sources.conf`
 
-#rsync://rsync.macports.org/release/tarballs/ports.tar \[default\]  
+# rsync://rsync.macports.org/release/tarballs/ports.tar \[default\]  
+
 rsync://jnb.za.rsync.macports.org/macports/release/tarballs/ports.tar \[default\]
 
 #### Paths
@@ -137,7 +138,7 @@ Edit the system default path:
 
 `sudo vi /etc/paths`
 
-```
+```text
 /usr/local/bin
 /usr/local/sbin
 /opt/local/libexec/gnubin
@@ -153,7 +154,7 @@ Edit the system default manpath to resolve documentation in the same order as th
 
 `sudo vi /etc/manpaths`
 
-```
+```text
 /usr/local/share/man
 /usr/share/man
 /opt/local/libexec/gnubin/man
@@ -166,7 +167,7 @@ If you want a contemporary `bash` from MacPorts, you need to have it in `/etc/sh
 
 `sudo vi /etc/shells`
 
-```
+```text
 /bin/bash
 /bin/csh
 /bin/ksh
@@ -242,7 +243,7 @@ Make sure you have a `~/.bashrc` and `~/.bash_profile`.
 
 Edit `~/.bash_profile` to add
 
-```
+```text
 #flags to hint build systems to find things in macports
 CFLAGS="$CFLAGS -I/opt/local/include" 
 CXXFLAGS="$CXXFLAGS -I/opt/local/include" 
@@ -252,14 +253,14 @@ PKG_CONFIG_PATH=/opt/local/lib/pkgconfig
 
 If MacPorts altered your `PATH` then comment that out:
 
-```
+```markdown
 # MacPorts Installer addition on 2016-09-22_at_13:35:36: adding an appropriate PATH variable for use with MacPorts.
 # export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 ```
 
 At the very end of `~/.bash_profile` load `~/.bashrc`.
 
-```
+```bash
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
@@ -271,14 +272,14 @@ In `~/.bashrc` you can set up some preferences:
 
 I’m not into the fancy prompts. I like a classic `$`.
 
-```
+```text
 #classic, minimalist prompt + current git branch
 PS1='\$ '
 ```
 
 #### Prevent ssh from messing up the title
 
-```
+```markdown
 # force reset of the current directory name in terminal title
 # to reset it after SSH sessions end.
 PROMPT_COMMAND='echo -ne "\033]0;$(basename ${PWD})\007"'
@@ -286,7 +287,7 @@ PROMPT_COMMAND='echo -ne "\033]0;$(basename ${PWD})\007"'
 
 #### Bash completion
 
-```
+```bash
 if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
   . /opt/local/etc/profile.d/bash_completion.sh
 fi
@@ -296,7 +297,7 @@ fi
 
 Again, I like something simple. You can look up the fancy things.
 
-```
+```bash
 if [ -f /opt/local/share/git/git-prompt.sh ]; then
   . /opt/local/share/git/git-prompt.sh
   PS1='\[\033[1;36m\]$(__git_ps1 "[%s] ")\[\033[0m\]\$ '
@@ -305,7 +306,7 @@ fi
 
 #### Colors like Debian and Ubuntu
 
-```
+```text
 #colorful
 export CLICOLOR=1
 
@@ -368,7 +369,7 @@ export MINICOM='--color on'
 
 #### Prefered editor and pager
 
-```
+```bash
 export EDITOR=vim
 export PAGER=less
 ```
@@ -384,7 +385,7 @@ At this point if you open a new terminal, it should feel very much like a Linux 
 
 Create a file `~/.aws/config` that contains API key credentials like this:
 
-```
+```text
 [default]
 aws_access_key_id = some-key-id
 aws_secret_access_key = some-key-value
@@ -447,7 +448,7 @@ Java OpenJDK with Oracle HotSpot VM
 Microsoft SQL Server client tools: `sqlcmd` and `bcp`  
 `sudo port install mssql-tools`
 
-```
+```bash
 msodbcsql17 has the following notes:
   To make this work with SSL you need to create a symbolic link as follows: 
    sudo mkdir -p /usr/local/opt/openssl/ 

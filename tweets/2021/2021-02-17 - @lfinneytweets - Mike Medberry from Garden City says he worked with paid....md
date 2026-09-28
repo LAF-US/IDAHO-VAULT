@@ -1,4 +1,5 @@
 ---
+title: "Mike Medberry from Garden City says he worked with paid..."
 date: 2021-02-17
 time: 17:17:11
 tweet_id: "1362088719897874437"

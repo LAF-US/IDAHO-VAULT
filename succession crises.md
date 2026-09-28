@@ -1,4 +1,4 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
+<img alt="alt text needed" src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
 
 # succession crises
 
@@ -25,26 +25,25 @@ Fiction often dramatizes these via rival heirs or power vacuums, as in TV Tropes
 
 <div align="center">⁂</div>
 
-[^1_1]: https://en.wikipedia.org/wiki/Succession_crisis
+[^1_1]: <https://en.wikipedia.org/wiki/Succession_crisis>
 
-[^1_2]: https://en.wikipedia.org/wiki/War_of_succession
+[^1_2]: <https://en.wikipedia.org/wiki/War_of_succession>
 
-[^1_3]: https://www.reddit.com/r/worldbuilding/comments/1g3qyl2/what_are_the_succession_crises_in_your_world/
+[^1_3]: <https://www.reddit.com/r/worldbuilding/comments/1g3qyl2/what_are_the_succession_crises_in_your_world/>
 
-[^1_4]: https://www.history.co.uk/articles/3-worst-succession-crises-from-british-history
+[^1_4]: <https://www.history.co.uk/articles/3-worst-succession-crises-from-british-history>
 
-[^1_5]: https://www.all-interests-aligned.com/resources/the-succession-crisis-in-europe
+[^1_5]: <https://www.all-interests-aligned.com/resources/the-succession-crisis-in-europe>
 
-[^1_6]: https://researchnow.flinders.edu.au/en/activities/succession-crises-and-continuities-in-tenth-century-england/
+[^1_6]: <https://researchnow.flinders.edu.au/en/activities/succession-crises-and-continuities-in-tenth-century-england/>
 
-[^1_7]: https://tvtropes.org/pmwiki/pmwiki.php/Main/SuccessionCrisis
+[^1_7]: <https://tvtropes.org/pmwiki/pmwiki.php/Main/SuccessionCrisis>
 
-[^1_8]: https://www.facebook.com/KingsGenerals/videos/the-spanish-succession-crisis-charles-iis-dilemmathe-spanish-succession-crisis-1/554798080901548/
+[^1_8]: <https://www.facebook.com/KingsGenerals/videos/the-spanish-succession-crisis-charles-iis-dilemmathe-spanish-succession-crisis-1/554798080901548/>
 
-[^1_9]: https://tropedia.fandom.com/wiki/Succession_Crisis
+[^1_9]: <https://tropedia.fandom.com/wiki/Succession_Crisis>
 
-[^1_10]: https://hbr.org/2005/02/ending-the-ceo-succession-crisis
-
+[^1_10]: <https://hbr.org/2005/02/ending-the-ceo-succession-crisis>
 
 ---
 
@@ -69,26 +68,25 @@ Today, cybernetics underpins AI autonomy, IoT networks, robotics, and biocyberne
 
 <div align="center">⁂</div>
 
-[^2_1]: https://en.wikipedia.org/wiki/Cybernetics
+[^2_1]: <https://en.wikipedia.org/wiki/Cybernetics>
 
-[^2_2]: https://www.merriam-webster.com/dictionary/cybernetics
+[^2_2]: <https://www.merriam-webster.com/dictionary/cybernetics>
 
-[^2_3]: https://www.britannica.com/science/cybernetics
+[^2_3]: <https://www.britannica.com/science/cybernetics>
 
-[^2_4]: https://pangaro.com/definition-cybernetics.html
+[^2_4]: <https://pangaro.com/definition-cybernetics.html>
 
-[^2_5]: https://asc-cybernetics.org/definitions/
+[^2_5]: <https://asc-cybernetics.org/definitions/>
 
-[^2_6]: https://liora.io/en/all-about-cybernetics
+[^2_6]: <https://liora.io/en/all-about-cybernetics>
 
-[^2_7]: https://metaphorum.org/cybernetics
+[^2_7]: <https://metaphorum.org/cybernetics>
 
-[^2_8]: https://www.anu.edu.au/news/all-news/what-is-cybernetics
+[^2_8]: <https://www.anu.edu.au/news/all-news/what-is-cybernetics>
 
-[^2_9]: https://www.sandia.gov/research/cybernetics/
+[^2_9]: <https://www.sandia.gov/research/cybernetics/>
 
-[^2_10]: https://www.youtube.com/watch?v=WZ4KQBJNsIc
-
+[^2_10]: <https://www.youtube.com/watch?v=WZ4KQBJNsIc>
 
 ---
 
@@ -111,24 +109,23 @@ Cyber-physical systems combine both, like autonomous security robots in smart bu
 
 <div align="center">⁂</div>
 
-[^3_1]: https://www.youtube.com/watch?v=m9iQt-b6UbU
+[^3_1]: <https://www.youtube.com/watch?v=m9iQt-b6UbU>
 
-[^3_2]: https://liora.io/en/all-about-cybernetics
+[^3_2]: <https://liora.io/en/all-about-cybernetics>
 
-[^3_3]: https://onlinedegrees.sandiego.edu/application-of-ai-in-robotics/
+[^3_3]: <https://onlinedegrees.sandiego.edu/application-of-ai-in-robotics/>
 
-[^3_4]: https://irispublishers.com/ojrat/fulltext/robotics-and-automation-in-the-21st-century.ID.000578.php
+[^3_4]: <https://irispublishers.com/ojrat/fulltext/robotics-and-automation-in-the-21st-century.ID.000578.php>
 
-[^3_5]: https://www.azorobotics.com/Article.aspx?ArticleID=97
+[^3_5]: <https://www.azorobotics.com/Article.aspx?ArticleID=97>
 
-[^3_6]: https://www.data-alliance.net/blog/applications-of-robotics-in-the-internet-of-things-iot
+[^3_6]: <https://www.data-alliance.net/blog/applications-of-robotics-in-the-internet-of-things-iot>
 
-[^3_7]: https://kabam.ai/blogs/the-role-of-iot-in-robotics-improving-efficiency-and-connectivity/
+[^3_7]: <https://kabam.ai/blogs/the-role-of-iot-in-robotics-improving-efficiency-and-connectivity/>
 
-[^3_8]: https://www.sciencedirect.com/science/article/pii/S1877050921012588/pdf?md5=ee19606205052094d88b9f69e28f5807\&pid=1-s2.0-S1877050921012588-main.pdf
+[^3_8]: <https://www.sciencedirect.com/science/article/pii/S1877050921012588/pdf?md5=ee19606205052094d88b9f69e28f5807\&pid=1-s2.0-S1877050921012588-main.pdf>
 
-[^3_9]: https://www.telecomreviewafrica.com/articles/features/4398-cybernetics-exploring-the-intersection-of-humans-and-machines/
-
+[^3_9]: <https://www.telecomreviewafrica.com/articles/features/4398-cybernetics-exploring-the-intersection-of-humans-and-machines/>
 
 ---
 
@@ -149,26 +146,25 @@ Consumer IoT powers smart homes (e.g., voice assistants like Alexa), while Indus
 
 <div align="center">⁂</div>
 
-[^4_1]: https://www.ibm.com/think/topics/internet-of-things
+[^4_1]: <https://www.ibm.com/think/topics/internet-of-things>
 
-[^4_2]: https://en.wikipedia.org/wiki/Internet_of_things
+[^4_2]: <https://en.wikipedia.org/wiki/Internet_of_things>
 
-[^4_3]: https://aws.amazon.com/what-is/iot/
+[^4_3]: <https://aws.amazon.com/what-is/iot/>
 
-[^4_4]: https://www.coursera.org/articles/internet-of-things
+[^4_4]: <https://www.coursera.org/articles/internet-of-things>
 
-[^4_5]: https://www.splashtop.com/blog/what-is-iot
+[^4_5]: <https://www.splashtop.com/blog/what-is-iot>
 
-[^4_6]: https://www.youtube.com/watch?v=qjn2SR2WlG4
+[^4_6]: <https://www.youtube.com/watch?v=qjn2SR2WlG4>
 
-[^4_7]: https://onomondo.com/blog/iot-devices-explained/
+[^4_7]: <https://onomondo.com/blog/iot-devices-explained/>
 
-[^4_8]: https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-the-internet-of-things
+[^4_8]: <https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-the-internet-of-things>
 
-[^4_9]: https://www.cisco.com/site/us/en/learn/topics/industrial-iot/what-is-iot.html
+[^4_9]: <https://www.cisco.com/site/us/en/learn/topics/industrial-iot/what-is-iot.html>
 
-[^4_10]: https://csrc.nist.gov/glossary/term/internet_of_things
-
+[^4_10]: <https://csrc.nist.gov/glossary/term/internet_of_things>
 
 ---
 
@@ -192,26 +188,25 @@ IIoT demands precision sensors and protocols like OPC UA, unlike IoT's Wi-Fi/Blu
 
 <div align="center">⁂</div>
 
-[^5_1]: https://standardbots.com/blog/iiot-vs-iot
+[^5_1]: <https://standardbots.com/blog/iiot-vs-iot>
 
-[^5_2]: https://www.geeksforgeeks.org/difference-between-iiot-and-iot/
+[^5_2]: <https://www.geeksforgeeks.org/difference-between-iiot-and-iot/>
 
-[^5_3]: https://www.emqx.com/en/blog/iiot-vs-iot-examples-and-5-key-differences
+[^5_3]: <https://www.emqx.com/en/blog/iiot-vs-iot-examples-and-5-key-differences>
 
-[^5_4]: https://www.sealevel.com/iot-iiot-industry-4-0-whats-the-difference-and-does-it-matter
+[^5_4]: <https://www.sealevel.com/iot-iiot-industry-4-0-whats-the-difference-and-does-it-matter>
 
-[^5_5]: https://upkeep.com/learning/difference-iot-iandiot/
+[^5_5]: <https://upkeep.com/learning/difference-iot-iandiot/>
 
-[^5_6]: https://nordvpn.com/blog/iiot-vs-iot/
+[^5_6]: <https://nordvpn.com/blog/iiot-vs-iot/>
 
-[^5_7]: https://timbergrove.com/blog/iot-vs-iiot-the-difference
+[^5_7]: <https://timbergrove.com/blog/iot-vs-iiot-the-difference>
 
-[^5_8]: https://www.leverege.com/blogpost/difference-between-iot-and-iiot
+[^5_8]: <https://www.leverege.com/blogpost/difference-between-iot-and-iiot>
 
-[^5_9]: https://www.top10erp.org/faq/what-is-the-difference-between-iot-vs-iiot
+[^5_9]: <https://www.top10erp.org/faq/what-is-the-difference-between-iot-vs-iiot>
 
-[^5_10]: https://www.reddit.com/r/PLC/comments/wxezaz/what_is_the_actual_advantage_of_iot_in_an/
-
+[^5_10]: <https://www.reddit.com/r/PLC/comments/wxezaz/what_is_the_actual_advantage_of_iot_in_an/>
 
 ---
 
@@ -232,7 +227,6 @@ Alvin Toffler popularized the prosumer concept, influencing how brands engage ac
 - **Tools**: Power tools from DeWalt or Vitamix blenders with pro durability for DIY experts.[^6_7]
 - **Smart Devices**: Advanced drones, VR headsets, or customizable smart home hubs like Ecobee Premium thermostats.[^6_8][^6_6]
 
-
 ## Characteristics
 
 Prosumer gadgets prioritize durability, expandability, and precision over basic consumer simplicity, appealing to knowledgeable users in hobbies like video editing or home automation. They enable pro-like outputs, such as monetized content creation, without full professional investment.[^6_9][^6_7][^6_2]
@@ -240,26 +234,25 @@ Prosumer gadgets prioritize durability, expandability, and precision over basic 
 
 <div align="center">⁂</div>
 
-[^6_1]: https://en.wikipedia.org/wiki/Prosumer
+[^6_1]: <https://en.wikipedia.org/wiki/Prosumer>
 
-[^6_2]: https://www.pcmag.com/encyclopedia/term/prosumer
+[^6_2]: <https://www.pcmag.com/encyclopedia/term/prosumer>
 
-[^6_3]: https://www.arimetrics.com/en/digital-glossary/prosumer
+[^6_3]: <https://www.arimetrics.com/en/digital-glossary/prosumer>
 
-[^6_4]: https://corys.pro/the-difference-between-consumer-prosumer-and-professional-grade-av-tech/
+[^6_4]: <https://corys.pro/the-difference-between-consumer-prosumer-and-professional-grade-av-tech/>
 
-[^6_5]: https://dictionary.cambridge.org/us/dictionary/english/prosumer
+[^6_5]: <https://dictionary.cambridge.org/us/dictionary/english/prosumer>
 
-[^6_6]: https://www.pcmag.com/picks/the-best-smart-home-devices
+[^6_6]: <https://www.pcmag.com/picks/the-best-smart-home-devices>
 
-[^6_7]: https://toolsinaction.com/what-is-a-prosumer-top-5-qualities/
+[^6_7]: <https://toolsinaction.com/what-is-a-prosumer-top-5-qualities/>
 
-[^6_8]: https://as2.ae/gadgets-examples/
+[^6_8]: <https://as2.ae/gadgets-examples/>
 
-[^6_9]: https://www.youtube.com/watch?v=_Cb6ae4XsJk
+[^6_9]: <https://www.youtube.com/watch?v=_Cb6ae4XsJk>
 
-[^6_10]: https://www.youtube.com/watch?v=Wy5x_CGSYiQ
-
+[^6_10]: <https://www.youtube.com/watch?v=Wy5x_CGSYiQ>
 
 ---
 
@@ -286,24 +279,23 @@ AI shifts developers toward strategic roles like architecture and oversight, wit
 
 <div align="center">⁂</div>
 
-[^7_1]: https://www.ibm.com/think/topics/ai-in-software-development
+[^7_1]: <https://www.ibm.com/think/topics/ai-in-software-development>
 
-[^7_2]: https://en.wikipedia.org/wiki/AI-assisted_software_development
+[^7_2]: <https://en.wikipedia.org/wiki/AI-assisted_software_development>
 
-[^7_3]: https://www.pace.edu/news/ai-software-development
+[^7_3]: <https://www.pace.edu/news/ai-software-development>
 
-[^7_4]: https://github.com/resources/articles/ai-in-software-development
+[^7_4]: <https://github.com/resources/articles/ai-in-software-development>
 
-[^7_5]: https://www.deeplearning.ai/courses/generative-ai-for-software-development/
+[^7_5]: <https://www.deeplearning.ai/courses/generative-ai-for-software-development/>
 
-[^7_6]: https://newsletter.pragmaticengineer.com/p/when-ai-writes-almost-all-code-what
+[^7_6]: <https://newsletter.pragmaticengineer.com/p/when-ai-writes-almost-all-code-what>
 
-[^7_7]: https://www.reddit.com/r/softwaredevelopment/comments/11n0ibu/how_sta***REMOVED***using_ai_in_software_development/
+[^7_7]: <https://www.reddit.com/r/softwaredevelopment/comments/11n0ibu/how_start_using_ai_in_software_development/>
 
-[^7_8]: https://www.youtube.com/watch?v=CQmI4XKTa0U
+[^7_8]: <https://www.youtube.com/watch?v=CQmI4XKTa0U>
 
-[^7_9]: https://cloud.google.com/use-cases/ai-for-developers
-
+[^7_9]: <https://cloud.google.com/use-cases/ai-for-developers>
 
 ---
 
@@ -326,24 +318,23 @@ A small software team might keep its code in one organization, assign owners and
 
 <div align="center">⁂</div>
 
-[^8_1]: https://github.com/settings/organizations
+[^8_1]: <https://github.com/settings/organizations>
 
-[^8_2]: https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations
+[^8_2]: <https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations>
 
-[^8_3]: https://docs.github.com/articles/creating-a-new-organization-from-scratch
+[^8_3]: <https://docs.github.com/articles/creating-a-new-organization-from-scratch>
 
-[^8_4]: https://github.com/solutions/industry/nonprofits
+[^8_4]: <https://github.com/solutions/industry/nonprofits>
 
-[^8_5]: https://docs.github.com/organizations
+[^8_5]: <https://docs.github.com/organizations>
 
-[^8_6]: https://www.youtube.com/watch?v=kpJWWIauuAU
+[^8_6]: <https://www.youtube.com/watch?v=kpJWWIauuAU>
 
-[^8_7]: https://github.com/collections/open-source-organizations
+[^8_7]: <https://github.com/collections/open-source-organizations>
 
-[^8_8]: https://github.com/pricing
+[^8_8]: <https://github.com/pricing>
 
-[^8_9]: https://www.reddit.com/r/github/comments/nzllo2/when_to_use_organizations/
-
+[^8_9]: <https://www.reddit.com/r/github/comments/nzllo2/when_to_use_organizations/>
 
 ---
 
@@ -373,22 +364,21 @@ Adopt consistent naming like "eng-frontend" or "product-checkout" based on respo
 
 <div align="center">⁂</div>
 
-[^9_1]: https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/best-practices-for-organizations
+[^9_1]: <https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/best-practices-for-organizations>
 
-[^9_2]: https://github.blog/enterprise-software/devops/best-practices-for-organizations-and-teams-using-github-enterprise-cloud/
+[^9_2]: <https://github.blog/enterprise-software/devops/best-practices-for-organizations-and-teams-using-github-enterprise-cloud/>
 
-[^9_3]: https://blog.gitguardian.com/best-practices-for-managing-developer-teams-in-github-orgs/
+[^9_3]: <https://blog.gitguardian.com/best-practices-for-managing-developer-teams-in-github-orgs/>
 
-[^9_4]: https://dev.to/playfulprogramming/structuring-github-enterprise-best-practices-from-the-org-level-down-45i5
+[^9_4]: <https://dev.to/playfulprogramming/structuring-github-enterprise-best-practices-from-the-org-level-down-45i5>
 
-[^9_5]: https://www.reddit.com/r/GitProtect/comments/1igjqjh/best_practices_to_create_a_github_organization/
+[^9_5]: <https://www.reddit.com/r/GitProtect/comments/1igjqjh/best_practices_to_create_a_github_organization/>
 
-[^9_6]: https://gitprotect.io/blog/github-organizations-best-practices/
+[^9_6]: <https://gitprotect.io/blog/github-organizations-best-practices/>
 
-[^9_7]: https://github.com/orgs/community/discussions/149827
+[^9_7]: <https://github.com/orgs/community/discussions/149827>
 
-[^9_8]: https://imperialcollegelondon.github.io/docs/organisation_structure
-
+[^9_8]: <https://imperialcollegelondon.github.io/docs/organisation_structure>
 
 ---
 
@@ -398,13 +388,12 @@ This screenshot shows your GitHub organization "Logan Finney's [Unified Swarm] P
 
 ## Organization Overview
 
-LAF-US appears focused on AI/software projects tied to your custom instructions (https://github.com/loganfinney27/IDAHO-VAULT), likely for knowledge management, Obsidian plugins, and automation in Boise, ID. The "Est Perpetua" motto and US location align with your documentary journalism and tech workflow interests.[^10_2][^10_1]
+LAF-US appears focused on AI/software projects tied to your custom instructions (<https://github.com/loganfinney27/IDAHO-VAULT>), likely for knowledge management, Obsidian plugins, and automation in Boise, ID. The "Est Perpetua" motto and US location align with your documentary journalism and tech workflow interests.[^10_2][^10_1]
 
 ## Repo Highlights
 
 - **IDAHO-VAULT**: Obsidian-based archive, possibly for bullet journaling or daily notes, with 0 stars but starred as popular.[^10_1]
 - **PyThon master archive**: Python-focused, fitting your AI research and scripting (e.g., Playwright, task automation).[^10_1]
-
 
 ## Structuring Advice
 
@@ -414,14 +403,13 @@ Follow prior best practices: Create teams like "LAF-Engineering" or "Obsidian-Te
 
 [^10_1]: Screenshot_20260412-110908.jpg
 
-[^10_2]: https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations
+[^10_2]: <https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations>
 
-[^10_3]: https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/best-practices-for-organizations
+[^10_3]: <https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/best-practices-for-organizations>
 
-[^10_4]: https://blog.gitguardian.com/best-practices-for-managing-developer-teams-in-github-orgs/
+[^10_4]: <https://blog.gitguardian.com/best-practices-for-managing-developer-teams-in-github-orgs/>
 
-[^10_5]: https://github.blog/enterprise-software/devops/best-practices-for-organizations-and-teams-using-github-enterprise-cloud/
-
+[^10_5]: <https://github.blog/enterprise-software/devops/best-practices-for-organizations-and-teams-using-github-enterprise-cloud/>
 
 ---
 
@@ -436,11 +424,10 @@ Set **LAF-PUBLISH** as public for polished releases (e.g., IDAHO-VAULT demos). M
 ## Teams Structure
 
 - Parent: **LAF-Core** (owners: you + backups)
-    - **LAF-Publish-Team** (write to PUBLISH/PUBLIC)
-    - **LAF-Personal-Team** (your solo access to PERSONAL)
-    - **LAF-Private-Team** (trusted collaborators for PRIVATE)
-    - **LAF-Secret-Team** (secret team, 1-2 members max for SECRET)[^11_12][^11_1]
-
+  - **LAF-Publish-Team** (write to PUBLISH/PUBLIC)
+  - **LAF-Personal-Team** (your solo access to PERSONAL)
+  - **LAF-Private-Team** (trusted collaborators for PRIVATE)
+  - **LAF-Secret-Team** (secret team, 1-2 members max for SECRET)[^11_12][^11_1]
 
 ## Implementation Steps
 
@@ -455,29 +442,28 @@ This scales your 14 repos (e.g., migrate IDAHO-VAULT to PERSONAL/PRIVATE), maint
 
 <div align="center">⁂</div>
 
-[^11_1]: https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/best-practices-for-organizations
+[^11_1]: <https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/best-practices-for-organizations>
 
-[^11_2]: https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/enterprise-best-practices/organize-work
+[^11_2]: <https://docs.github.com/en/enterprise-cloud@latest/admin/concepts/enterprise-best-practices/organize-work>
 
-[^11_3]: https://www.youtube.com/watch?v=kpJWWIauuAU
+[^11_3]: <https://www.youtube.com/watch?v=kpJWWIauuAU>
 
-[^11_4]: https://www.reddit.com/r/learnprogramming/comments/1146o4i/github_repo_organization_best_practices/
+[^11_4]: <https://www.reddit.com/r/learnprogramming/comments/1146o4i/github_repo_organization_best_practices/>
 
-[^11_5]: https://dev.to/pwd9000/github-repository-best-practices-23ck
+[^11_5]: <https://dev.to/pwd9000/github-repository-best-practices-23ck>
 
-[^11_6]: https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories
+[^11_6]: <https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories>
 
-[^11_7]: https://gitprotect.io/blog/github-organizations-best-practices/
+[^11_7]: <https://gitprotect.io/blog/github-organizations-best-practices/>
 
-[^11_8]: https://github.com/orgs/community/discussions/155527
+[^11_8]: <https://github.com/orgs/community/discussions/155527>
 
-[^11_9]: https://github.com/orgs/community/discussions/149827
+[^11_9]: <https://github.com/orgs/community/discussions/149827>
 
-[^11_10]: https://www.reddit.com/r/github/comments/w053mw/canshould_i_use_organizations_to_group_my/
+[^11_10]: <https://www.reddit.com/r/github/comments/w053mw/canshould_i_use_organizations_to_group_my/>
 
 [^11_11]: Screenshot_20260412-110908.jpg
 
-[^11_12]: https://blog.gitguardian.com/best-practices-for-managing-developer-teams-in-github-orgs/
+[^11_12]: <https://blog.gitguardian.com/best-practices-for-managing-developer-teams-in-github-orgs/>
 
-[^11_13]: https://dev.to/playfulprogramming/structuring-github-enterprise-best-practices-from-the-org-level-down-45i5
-
+[^11_13]: <https://dev.to/playfulprogramming/structuring-github-enterprise-best-practices-from-the-org-level-down-45i5>

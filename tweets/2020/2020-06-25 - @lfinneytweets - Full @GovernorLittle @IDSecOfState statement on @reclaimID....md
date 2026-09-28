@@ -1,4 +1,5 @@
 ---
+title: "Full @GovernorLittle @IDSecOfState statement on @reclaimID..."
 date: 2020-06-25
 time: 15:48:16
 tweet_id: "1276180415770853385"

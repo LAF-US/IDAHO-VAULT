@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Burgoyne compares the Senate's atmosphere..."
 date: 2020-03-19
 time: 20:11:30
 tweet_id: "1240732649569660928"

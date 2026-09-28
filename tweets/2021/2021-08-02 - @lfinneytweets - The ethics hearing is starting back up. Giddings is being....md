@@ -1,4 +1,5 @@
 ---
+title: "The ethics hearing is starting back up. Giddings is being..."
 date: 2021-08-02
 time: 19:18:11
 tweet_id: "1422275552988188693"

@@ -1,4 +1,5 @@
 ---
+title: "Misheard this morning, the $10 million in grants would be..."
 date: 2024-01-30
 time: 18:38:38
 tweet_id: "1752400947261899103"
@@ -17,10 +18,10 @@ related:
 ---
 
 Misheard this morning, the $10 million in grants would be *in addition* for low-income families that get the earned income tax credit. (h/t @ianmaxstevenson) 
-https://t.co/1UltJcQy45
+<https://t.co/1UltJcQy45>
 
 ## Links
-- https://www.idahostatesman.com/news/politics-government/state-politics/article284867086.html
+- <https://www.idahostatesman.com/news/politics-government/state-politics/article284867086.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

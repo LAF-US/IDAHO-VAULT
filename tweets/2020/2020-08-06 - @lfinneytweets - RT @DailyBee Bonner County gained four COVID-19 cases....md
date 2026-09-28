@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee Bonner County gained four COVID-19 cases..."
 date: 2020-08-06
 time: 23:35:19
 tweet_id: "1291518245359427584"

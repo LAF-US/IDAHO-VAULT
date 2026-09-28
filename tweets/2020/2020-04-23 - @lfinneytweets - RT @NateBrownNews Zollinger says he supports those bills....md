@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Zollinger says he supports those bills..."
 date: 2020-04-23
 time: 22:43:04
 tweet_id: "1253454370055708672"

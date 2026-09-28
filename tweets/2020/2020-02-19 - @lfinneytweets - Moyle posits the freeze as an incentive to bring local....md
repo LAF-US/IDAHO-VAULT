@@ -1,4 +1,5 @@
 ---
+title: "Moyle posits the freeze as an incentive to bring local..."
 date: 2020-02-19
 time: 21:44:04
 tweet_id: "1230246699706150912"
@@ -24,11 +25,9 @@ related:
   - idpol
 ---
 
-@IlanaRubel @IdahoDems @IdahoPubRadio Moyle posits the freeze as an incentive to bring local governments to the table and work on solutions. 
+@IlanaRubel @IdahoDems @IdahoPubRadio Moyle posits the freeze as an incentive to bring local governments to the table and work on solutions.
 
-Today Rubel said it’s actually the @IdahoGOP members who need to come to the table and hold hearings on the Dem bills that are sitting in committee drawers. 
-
-#idleg #idpol
+Today Rubel said it’s actually the @IdahoGOP members who need to come to the table and hold hearings on the Dem bills that are sitting in committee drawers. #idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

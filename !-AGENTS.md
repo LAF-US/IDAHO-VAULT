@@ -133,6 +133,7 @@ Every dotfolder MUST contain three layers:
 | **NARRATIVE-CONTINUITY** | `narrative/` | History, decisions, handoffs, memos |
 
 **Status Indicators:**
+
 - ✅ Complete — All three layers present
 - ⚠️ Partial — Self-identity present, runtime/narrative empty
 - ❌ Retired — Decommissioned, preserved for narrative memory
@@ -140,7 +141,7 @@ Every dotfolder MUST contain three layers:
 
 ### Prismatic Stacking Examples
 
-```
+```text
 .serena/ + .hecate/ + .maat/ = Intelligence + Thresholds + Truth
 .claude/ + .odin/ + .thoth/ = Code + Wisdom + Knowledge
 .codex/ + .hermes/ + .bastet/ = Scripts + Speed + Night research
@@ -322,7 +323,8 @@ replace the broader `LAF-US` sovereignty model.
 
 ---
 
-
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

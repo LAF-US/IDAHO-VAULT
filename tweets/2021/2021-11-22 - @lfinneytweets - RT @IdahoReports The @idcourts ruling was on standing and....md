@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The @idcourts ruling was on standing and..."
 date: 2021-11-22
 time: 23:31:05
 tweet_id: "1462926639801647106"

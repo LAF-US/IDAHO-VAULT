@@ -16,11 +16,11 @@ English playwright [Watts Phillips](https://en.wikipedia.org/wiki/Watts_Phillips
 
 ## Birth and family
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Thomas_Alexandre_Dumas_-_Olivier_Pichat.jpg/250px-Thomas_Alexandre_Dumas_-_Olivier_Pichat.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Thomas_Alexandre_Dumas_-_Olivier_Pichat.jpg/250px-Thomas_Alexandre_Dumas_-_Olivier_Pichat.jpg)
 
 General Thomas-Alexandre Dumas, father of Alexandre Dumas
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Alexandre_Dumas_pere.jpg/250px-Alexandre_Dumas_pere.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Alexandre_Dumas_pere.jpg/250px-Alexandre_Dumas_pere.jpg)
 
 Alexandre Dumas, engraving by Antoine Maurin
 
@@ -34,7 +34,7 @@ The family surname ("de la Pailleterie") was never bestowed upon Thomas-Alexandr
 
 ## Career
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Alexandre_Dumas_par_Achille_Dev%C3%A9ria_%281829%29.png/250px-Alexandre_Dumas_par_Achille_Dev%C3%A9ria_%281829%29.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Alexandre_Dumas_par_Achille_Dev%C3%A9ria_%281829%29.png/250px-Alexandre_Dumas_par_Achille_Dev%C3%A9ria_%281829%29.png)
 
 Alexandre Dumas by Achille Devéria (1829)
 
@@ -48,7 +48,7 @@ He founded a production studio, staffed with writers who turned out hundreds of 
 
 Dumas depended on numerous assistants and collaborators, of whom [Auguste Maquet](https://en.wikipedia.org/wiki/Auguste_Maquet "Auguste Maquet") was the best known. It was not until the late twentieth century that his role was fully understood.[^19] Dumas wrote the short novel *[Georges](https://en.wikipedia.org/wiki/Georges_\(novel\) "Georges (novel)")* (1843), which uses ideas and plots later repeated in *The Count of Monte Cristo*. Maquet took Dumas to court to get authorial recognition and a higher payment rate for his work. He was successful in getting more money, but not a by-line.[^19] [^20]
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Ch%C3%A2teau_Monte_Cristo_Alexandre_Dumas_le_Po***REMOVED***Marly.jpg/250px-Ch%C3%A2teau_Monte_Cristo_Alexandre_Dumas_le_Po***REMOVED***Marly.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Ch%C3%A2teau_Monte_Cristo_Alexandre_Dumas_le_Port_Marly.jpg/250px-Ch%C3%A2teau_Monte_Cristo_Alexandre_Dumas_le_Port_Marly.jpg)
 
 The Château de Monte-Cristo in Le Port-Marly
 
@@ -56,7 +56,7 @@ Dumas's novels were so popular that they were soon translated into English and o
 
 Dumas wrote in a wide variety of genres and published a total of 100,000 pages in his lifetime.[^6] He made use of his experience, writing travel books after taking journeys, including those motivated by reasons other than pleasure. Dumas travelled to Spain, Italy, Germany, England and [French Algeria](https://en.wikipedia.org/wiki/French_Algeria "French Algeria"). After King Louis-Philippe was ousted in a revolt, [Louis-Napoléon Bonaparte](https://en.wikipedia.org/wiki/Napoleon_III_of_France "Napoleon III of France") was elected president. As Bonaparte disapproved of the author, Dumas fled in 1851 to Brussels, Belgium, which was also an effort to escape his creditors. In about 1859, he moved to [Russia](https://en.wikipedia.org/wiki/Russian_Empire "Russian Empire"), where French was the second language of the elite and his writings were enormously popular. Dumas spent two years in Russia and visited St. Petersburg, Moscow, Kazan, Astrakhan, Baku, and Tbilisi. He published travel books about Russia.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Alexandre_Dumas_en_costume_Kalmuk%2C_PH20506%281%29.jpg/250px-Alexandre_Dumas_en_costume_Kalmuk%2C_PH20506%281%29.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Alexandre_Dumas_en_costume_Kalmuk%2C_PH20506%281%29.jpg/250px-Alexandre_Dumas_en_costume_Kalmuk%2C_PH20506%281%29.jpg)
 
 Alexandre Dumas in a chokha and papakha during a trip to the Caucasus
 
@@ -68,7 +68,7 @@ Despite Dumas's aristocratic background and personal success, he had to deal wit
 
 ## Personal life
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Dumas_pere_print.jpg/250px-Dumas_pere_print.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Dumas_pere_print.jpg/250px-Dumas_pere_print.jpg)
 
 Dumas later in his career
 
@@ -89,7 +89,7 @@ With [Victor Hugo](https://en.wikipedia.org/wiki/Victor_Hugo "Victor Hugo"), [Ch
 
 ## Death and legacy
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Alexandre_Dumas_and_Georgia_national_costumes_2002.jpg/250px-Alexandre_Dumas_and_Georgia_national_costumes_2002.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Alexandre_Dumas_and_Georgia_national_costumes_2002.jpg/250px-Alexandre_Dumas_and_Georgia_national_costumes_2002.jpg)
 
 A postal stamp of Georgia dedicated to the 200th anniversary of Alexandre Dumas, who visited the Caucasus in 1858–1859
 
@@ -111,7 +111,7 @@ In 2002, for the bicentenary of Dumas's birth, [French President](https://en.wik
 
 Chirac acknowledged the racism that had existed in France and said that the re-interment in the Pantheon had been a way of correcting that wrong, as Alexandre Dumas was enshrined alongside fellow great authors [Victor Hugo](https://en.wikipedia.org/wiki/Victor_Hugo "Victor Hugo") and [Émile Zola](https://en.wikipedia.org/wiki/%C3%89mile_Zola "Émile Zola").[^34] [^35] Chirac noted that although France has produced many great writers, none has been so widely read as Dumas. His novels have been translated into nearly 100 languages, and inspired more than 200 motion pictures.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tomb_of_Dumas_and_Hugo_and_Zola_in_Panth%C3%A9on%2C_16_April_2010.jpg/250px-Tomb_of_Dumas_and_Hugo_and_Zola_in_Panth%C3%A9on%2C_16_April_2010.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tomb_of_Dumas_and_Hugo_and_Zola_in_Panth%C3%A9on%2C_16_April_2010.jpg/250px-Tomb_of_Dumas_and_Hugo_and_Zola_in_Panth%C3%A9on%2C_16_April_2010.jpg)
 
 Tomb of Alexandre Dumas at the Panthéon in Paris
 
@@ -172,7 +172,7 @@ In addition, Dumas wrote many series of novels:
 
 1. *[The Three Musketeers](https://en.wikipedia.org/wiki/The_Three_Musketeers "The Three Musketeers")* (*Les Trois Mousquetaires*, 1844)
 2. *[Twenty Years After](https://en.wikipedia.org/wiki/Twenty_Years_After "Twenty Years After")* (*Vingt ans après*, 1845)
-3. *[The Vicomte de Bragelonne](https://en.wikipedia.org/wiki/The_Vicomte_de_Bragelonne "The Vicomte de Bragelonne")*, sometimes called *Ten Years Later* (*Le Vicomte de Bragelonne, ou Dix ans plus tard*, 1847). When published in English, it was usually split into three parts: *The Vicomte de Bragelonne* (sometimes called *Between Two Kings*), *Louise de la Valliere*, and *[The Man in the Iron Mask](https://en.wikipedia.org/wiki/The_Vicomte_of_Bragelonne:_Ten_Years_Later#Pa***REMOVED***Three:_The_Man_in_the_Iron_Mask_\(Chapters_181%E2%80%93269\) "The Vicomte of Bragelonne: Ten Years Later")*, of which the last part is the best known.
+3. *[The Vicomte de Bragelonne](https://en.wikipedia.org/wiki/The_Vicomte_de_Bragelonne "The Vicomte de Bragelonne")*, sometimes called *Ten Years Later* (*Le Vicomte de Bragelonne, ou Dix ans plus tard*, 1847). When published in English, it was usually split into three parts: *The Vicomte de Bragelonne* (sometimes called *Between Two Kings*), *Louise de la Valliere*, and *[The Man in the Iron Mask](https://en.wikipedia.org/wiki/The_Vicomte_of_Bragelonne:_Ten_Years_Later#Part_Three:_The_Man_in_the_Iron_Mask_\(Chapters_181%E2%80%93269\) "The Vicomte of Bragelonne: Ten Years Later")*, of which the last part is the best known.
 
 ##### Related books
 
@@ -180,7 +180,7 @@ In addition, Dumas wrote many series of novels:
 2. *[The Women's War](https://en.wikipedia.org/wiki/The_Women%27s_War_\(novel\) "The Women's War (novel)")* (*La Guerre des Femmes*, 1845): follows Baron des Canolles, a naïve Gascon soldier who falls in love with two women.
 3. *The Dove* – the court of Louis XIII, revolving around courtly intrigue, romantic loyalty, and a symbolic dove given as a token of love
 4. *The Count of Moret; The Red Sphinx; or, Richelieu and His Rivals* (*Le Comte de Moret; Le Sphinx Rouge*, 1865–66) – a prequel to *The Dove*
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Houghton_MS_Fr_133.1_-_Le_Comte_de_Moret%2C_1.jpg/250px-Houghton_MS_Fr_133.1_-_Le_Comte_de_Moret%2C_1.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Houghton_MS_Fr_133.1_-_Le_Comte_de_Moret%2C_1.jpg/250px-Houghton_MS_Fr_133.1_-_Le_Comte_de_Moret%2C_1.jpg)
 
 First page of the original manuscript to Le Comte de Moret
 
@@ -252,7 +252,7 @@ Dumas wrote many plays and adapted several of his novels as dramas. In the 1840s
 Dumas wrote four original libretti for the Parisian opera stage:
 
 - *Piquillo* (1837), opéra-comique in one act with music by [Hippolyte Monpou](https://en.wikipedia.org/wiki/Hippolyte_Monpou "Hippolyte Monpou") (1804-1841)
-- *Samson* (1856), tableaux bibliques in four acts with music by [Gilbert Duprez](https://en.wikipedia.org/wiki/Gilbe***REMOVED***Duprez "Gilbert Duprez") (1806-1896), with Édouard Duprez (1804-1879)
+- *Samson* (1856), tableaux bibliques in four acts with music by [Gilbert Duprez](https://en.wikipedia.org/wiki/Gilbert_Duprez "Gilbert Duprez") (1806-1896), with Édouard Duprez (1804-1879)
 - *La Bacchante* (1858), opéra-comique in 2 acts with music by [Eugène Gautier](https://en.wikipedia.org/wiki/Eug%C3%A8ne_Gautier "Eugène Gautier") (1822-1878), with [Adolphe de Leuven](https://en.wikipedia.org/wiki/Adolphe_de_Leuven "Adolphe de Leuven") (1802-1884)
 - *[Le roman d'Elvire](https://en.wikipedia.org/wiki/Le_roman_d%27Elvire "Le roman d'Elvire")* (1860), opéra-comique in 3 acts with music by [Ambroise Thomas](https://en.wikipedia.org/wiki/Ambroise_Thomas "Ambroise Thomas") (1811-1896), with Adolphe de Leuven
 
@@ -271,9 +271,9 @@ He was also known for his travel writing. These books included:
 - *Montevideo, ou une nouvelle Troie*, 1850 (*[The New Troy](https://en.wikipedia.org/wiki/The_New_Troy "The New Troy")*), inspired by the [Great Siege of Montevideo](https://en.wikipedia.org/wiki/Great_Siege_of_Montevideo "Great Siege of Montevideo")
 - *Le Journal de Madame Giovanni* (*The Journal of Madame Giovanni*, 1856)
 - *Travel Impressions in the Kingdom of Napoli/Naples Trilogy*:
-	- *Impressions of Travel in Sicily* (*Le Speronare (Sicily – 1835)*, 1842
-		- *Captain Arena* (*Le Capitaine Arena (Italy – Aeolian Islands and Calabria – 1835)*, 1842
-		- *[Impressions of Travel in Naples](https://en.wikipedia.org/wiki/Le_Corricolo "Le Corricolo")* (*Le Corricolo (Rome – Naples – 1833)*, 1843
+  - *Impressions of Travel in Sicily* (*Le Speronare (Sicily – 1835)*, 1842
+    - *Captain Arena* (*Le Capitaine Arena (Italy – Aeolian Islands and Calabria – 1835)*, 1842
+    - *[Impressions of Travel in Naples](https://en.wikipedia.org/wiki/Le_Corricolo "Le Corricolo")* (*Le Corricolo (Rome – Naples – 1833)*, 1843
 - *Travel Impressions in Russia – Le Caucase Original edition: Paris 1859*
 - *Adventures in Czarist Russia, or From Paris to Astrakhan* (*Impressions de voyage: En Russie; De Paris à Astrakan: Nouvelles impressions de voyage (1858)*, 1859–1862
 - *Voyage to the Caucasus* (*Le Caucase: Impressions de voyage; suite de En Russie (1859)*, 1858–1859
@@ -349,7 +349,7 @@ French historian [Alain Decaux](https://en.wikipedia.org/wiki/Alain_Decaux "Alai
 
 [^33]: Jordan, Taylor (21 July 2015). [""Musketeers" author's coffin arrives at the Pantheon"](https://www.youtube.com/watch?v=0QQezHBtcpc&ab_channel=APArchive). *AP Archive*. France. Retrieved 15 February 2021.
 
-[^34]: [Chirac, Jacques](https://en.wikipedia.org/wiki/Jacques_Chirac "Jacques Chirac") (30 November 2002). ["Discours prononcé lors du transfert des cendres d'Alexandre Dumas au Panthéon"](https://fr.wikisource.org/wiki/Discours_prononc%C3%A9_lors_du_transfe***REMOVED***des_cendres_d%E2%80%99Alexandre_Dumas_au_Panth%C3%A9on) (in French). Retrieved 19 August 2008.
+[^34]: [Chirac, Jacques](https://en.wikipedia.org/wiki/Jacques_Chirac "Jacques Chirac") (30 November 2002). ["Discours prononcé lors du transfert des cendres d'Alexandre Dumas au Panthéon"](https://fr.wikisource.org/wiki/Discours_prononc%C3%A9_lors_du_transfert_des_cendres_d%E2%80%99Alexandre_Dumas_au_Panth%C3%A9on) (in French). Retrieved 19 August 2008.
 
 [^35]: ["Paris Monuments Panthéon-Close up picture of the interior of the crypt of Victor Hugo (left) Alexandre Dumas (middle) Émile Zola (right)"](https://web.archive.org/web/20120419194137/http://www.parisphotogallery.com/Paris/photos/monuments/Pantheon/Interior_crypt_Victor_Hugo_Alexandre_Dumas_Emile_Zola_10526.htm). ParisPhotoGallery. Archived from [the original](http://www.parisphotogallery.com/Paris/photos/monuments/Pantheon/Interior_crypt_Victor_Hugo_Alexandre_Dumas_Emile_Zola_10526.htm) on 19 April 2012. Retrieved 30 January 2012.
 
@@ -361,4 +361,4 @@ French historian [Alain Decaux](https://en.wikipedia.org/wiki/Alain_Decaux "Alai
 
 [^39]: MuseoWeb CMS. ["Banche dati, Open Archives, Libri elettronici"](http://www.bnnonline.it/index.php?it/232/banche-dati-open-archives-libri-elettronici/720=&paginate_pagenum=3&printPdf=1&stripImages=1&paginate_pageNum=3&desktop=true&tabs_state=tablatest) \[Databases, Open Archives, Electronic Books\]. *Biblioteca Nazionale di Napoli* (in Italian). Retrieved 28 August 2020.
 
-[^40]: ["Alexandre Dumas"](http://www.dumaspere.com/pages/english/societe/sommaire.html). *www.dumaspere.com*. Retrieved 22 August 2017.
+[^40]: ["Alexandre Dumas"](http://www.dumaspere.com/pages/english/societe/sommaire.html). *<www.dumaspere.com>*. Retrieved 22 August 2017.

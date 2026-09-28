@@ -1,4 +1,5 @@
 ---
+title: "It was more informative than a direct answer to my minor..."
 date: 2021-05-19
 time: 19:25:24
 tweet_id: "1395098282724970498"

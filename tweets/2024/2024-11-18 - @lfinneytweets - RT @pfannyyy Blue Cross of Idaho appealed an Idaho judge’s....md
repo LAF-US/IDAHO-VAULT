@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy Blue Cross of Idaho appealed an Idaho judge\u2019s..."
 date: 2024-11-18
 time: 23:34:02
 tweet_id: "1858654929881018738"

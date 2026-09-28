@@ -1,4 +1,5 @@
 ---
+title: "Getting weirdly emotional today watching footage of the old..."
 date: 2022-11-22
 time: 18:37:23
 tweet_id: "1595124299882299392"

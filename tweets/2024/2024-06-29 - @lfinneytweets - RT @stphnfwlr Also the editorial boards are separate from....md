@@ -1,4 +1,5 @@
 ---
+title: "RT @stphnfwlr Also the editorial boards are separate from..."
 date: 2024-06-29
 time: 22:58:49
 tweet_id: "1807186990460481644"

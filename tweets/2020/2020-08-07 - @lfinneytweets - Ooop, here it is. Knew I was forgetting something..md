@@ -1,4 +1,5 @@
 ---
+title: "Ooop, here it is. Knew I was forgetting something."
 date: 2020-08-07
 time: 00:14:07
 tweet_id: "1291528010030407681"
@@ -17,10 +18,10 @@ related:
 ---
 
 @Elliot_Lake @phdidaho Ooop, here it is. Knew I was forgetting something. 
-https://t.co/0DFWPoHSVk
+<https://t.co/0DFWPoHSVk>
 
 ## Links
-- https://panhandlehealthdistrict.org/covid-19/
+- <https://panhandlehealthdistrict.org/covid-19/>
 
 *In reply to [@Elliot_Lake](https://twitter.com/Elliot_Lake)*
 

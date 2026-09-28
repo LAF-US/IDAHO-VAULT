@@ -1,4 +1,5 @@
 ---
+title: "Happy Memorial Day"
 date: 2018-05-28
 time: 14:36:12
 tweet_id: "1001109892084580353"
@@ -13,9 +14,9 @@ related:
   - lfinneytweets
 ---
 
-Happy Memorial Day https://t.co/IqarncFsPu
+Happy Memorial Day <https://t.co/IqarncFsPu>
 
 ## Links
-- https://x.com/IdahoStatesman/status/1001100788297601024
+- <https://x.com/IdahoStatesman/status/1001100788297601024>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1001109892084580353)

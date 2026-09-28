@@ -1,4 +1,5 @@
 ---
+title: "RT @highcountrynews In Acceleration Hours, @JesseGoolsby..."
 date: 2020-06-03
 time: 21:54:37
 tweet_id: "1268300081234493440"

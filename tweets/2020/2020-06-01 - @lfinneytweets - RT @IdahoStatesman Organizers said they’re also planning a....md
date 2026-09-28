@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman Organizers said they\u2019re also planning a..."
 date: 2020-06-01
 time: 17:41:06
 tweet_id: "1267511503826980865"

@@ -1,4 +1,5 @@
 ---
+title: "Senate adjourned until 10am. Tomorrow still on the calendar..."
 date: 2020-03-19
 time: 02:52:03
 tweet_id: "1240471067044397058"

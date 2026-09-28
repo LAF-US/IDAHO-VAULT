@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 Members of the House Education Committee..."
 date: 2022-02-22
 time: 04:32:50
 tweet_id: "1495979873349029888"

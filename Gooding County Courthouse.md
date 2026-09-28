@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Gooding County courthouse 
+magistrate court Gooding County courthouse

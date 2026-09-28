@@ -1,4 +1,5 @@
 ---
+title: "RT @mpdailynews As a rise in new cases of COVID-19..."
 date: 2020-09-03
 time: 14:12:01
 tweet_id: "1301523345461014531"

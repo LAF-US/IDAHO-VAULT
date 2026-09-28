@@ -1,4 +1,5 @@
 ---
+title: "No on Prop One got 13,610 more votes than Trump. #idpol"
 date: 2024-11-07
 time: 16:59:43
 tweet_id: "1854569432439529570"

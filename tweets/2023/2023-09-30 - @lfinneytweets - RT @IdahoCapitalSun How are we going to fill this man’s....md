@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun How are we going to fill this man\u2019s..."
 date: 2023-09-30
 time: 22:22:28
 tweet_id: "1708245957173977342"

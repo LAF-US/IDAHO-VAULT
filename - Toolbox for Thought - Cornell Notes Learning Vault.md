@@ -10,7 +10,7 @@ created: 2026-04-24
 
 This vault teaches you how to use the Cornell Note-Taking System in your Obsidian vault. It includes learning material, samples, and Obsidian configuration files to enable Cornell Notes in your vault.
 
-![](https://www.youtube.com/watch?v=WkfEKI469J8)
+![alt text needed](https://www.youtube.com/watch?v=WkfEKI469J8)
 
 ### A system for Paper and Digital Note-Taking
 
@@ -42,11 +42,11 @@ Cornell Notes are split up into three sections:
 
 #### What is the value of Cornell Notes?
 
-![](https://www.youtube.com/watch?v=ai9P4_E0WLg)
+![alt text needed](https://www.youtube.com/watch?v=ai9P4_E0WLg)
 
 ### Bonus Features
 
-##### Templates to make your life easier!
+##### Templates to make your life easier
 
 The learning vault includes templates for making Cornell Notes, and inserting cues and summaries. Templates are not required to use this solution in your vault, but it does make Cornell Notes much quicker to use in your vault. If you choose these Templates, you will then need to install the Templater plugin.  
 ![Templater-MakeCN.gif](https://publish-01.obsidian.md/access/5482717c61d4cd4a5e39468efa73a612/_pub/Experiments/media/BannerImages/Templater-MakeCN.gif)
@@ -59,4 +59,4 @@ It also works on mobile devices.
 
 ==Download Cornell Notes Learning Vault for free at:== [GitHub](https://github.com/TfTHacker/cornell-notes-learning-vault)
 
-![](https://www.youtube.com/watch?v=jb_ifELEbjQ)
+![alt text needed](https://www.youtube.com/watch?v=jb_ifELEbjQ)

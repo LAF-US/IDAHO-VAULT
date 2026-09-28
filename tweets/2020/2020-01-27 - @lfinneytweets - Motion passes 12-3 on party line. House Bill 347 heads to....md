@@ -1,4 +1,5 @@
 ---
+title: "Motion passes 12-3 on party line. House Bill 347 heads to..."
 date: 2020-01-27
 time: 17:36:50
 tweet_id: "1221849560009474049"

@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel Boise is booming and it\u2019s changing the city..."
 date: 2021-04-01
 time: 17:13:05
 tweet_id: "1377670363543302144"

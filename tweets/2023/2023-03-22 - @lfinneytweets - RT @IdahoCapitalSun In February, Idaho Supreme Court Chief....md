@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun In February, Idaho Supreme Court Chief..."
 date: 2023-03-22
 time: 19:38:51
 tweet_id: "1638626312532414464"

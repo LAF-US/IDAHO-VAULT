@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews In House Commerce. Rep. Giddings is..."
 date: 2020-02-05
 time: 20:34:04
 tweet_id: "1225155650646204416"

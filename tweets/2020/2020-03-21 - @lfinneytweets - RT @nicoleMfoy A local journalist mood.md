@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy A local journalist mood"
 date: 2020-03-21
 time: 01:03:52
 tweet_id: "1241168615421825029"

@@ -77,11 +77,12 @@ authority: LOGAN
 ---
 # IDAHO-VAULT
 
-https://github.com/loganfinney27/IDAHO-VAULT
+<https://github.com/loganfinney27/IDAHO-VAULT>
 
 > Memory
 
 ---
+
 ## Manage project memory
 
 Claude regenerates project memory every evening from your past chats in this project. Only you can see this memory, and it is not shared with other project users.
@@ -175,4 +176,5 @@ Active journalism work includes a JFAC open meetings transparency investigation 
 - **Websites**: loganfinney.com (status unclear — possibly inactive/placeholder); thegemstone.org (anonymous, Quartz v4.2.3)
 
 ---
-# The world is quiet here.
+
+# The world is quiet here

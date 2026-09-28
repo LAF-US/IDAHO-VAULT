@@ -67,6 +67,7 @@ Write final deck deliverables in the chosen output directory, using an `outputs`
 Use this quick surface first when editing the JS builder. It is a curated subset of the full TypeScript presentation API, not the full reference.
 
 ### Build rules
+
 - Use `@oai/artifact-tool` from Node for final deck construction, rendering, editable-text verification, and `.pptx` export.
 - All size and positioning units are pixels unless a specific API notes otherwise.
 - Author meaningful content as editable PowerPoint objects: `slide.shapes`, `shape.text`, `slide.tables`, `slide.charts`, and `slide.speakerNotes`.
@@ -77,6 +78,7 @@ Use this quick surface first when editing the JS builder. It is a curated subset
 - Render with `presentation.export({ slide, format: "png", scale: 1 })` before final export, and use scratch inspect records to confirm important copy is editable.
 
 ### Conventions and gotchas
+
 - New deck: `Presentation.create({ slideSize: { width: 1280, height: 720 } })`.
 - `Presentation` is the in-memory deck object; `PresentationFile` is for `.pptx` import/export.
 - Existing deck: `PresentationFile.importPptx(await FileBlob.load("input.pptx"))`.
@@ -95,6 +97,7 @@ Use this quick surface first when editing the JS builder. It is a curated subset
 - Match chart typography to the slide: set `chart.titleTextStyle.typeface`, `chart.legend.textStyle.typeface`, `chart.xAxis.textStyle.typeface`, `chart.yAxis.textStyle.typeface`, and `chart.dataLabels.textStyle.typeface` to the same body/title font family used elsewhere.
 
 Local image helper:
+
 ```ts
 const fs = await import("node:fs/promises");
 
@@ -105,6 +108,7 @@ async function readImageBlob(imagePath) {
 ```
 
 ### Core deck and slide APIs
+
 - `const { FileBlob, Presentation, PresentationFile } = await import("@oai/artifact-tool")`
 - `const presentation = Presentation.create({ slideSize: { width: 1280, height: 720 } })`
 - `const imported = await PresentationFile.importPptx(await FileBlob.load("input.pptx"))`
@@ -116,6 +120,7 @@ async function readImageBlob(imagePath) {
 - `slide.background.fill = "background1"` or a solid/gradient fill object
 
 ### Shapes and rich text
+
 - `slide.shapes.add({ geometry, position, fill, line })`
 - Common `geometry` values are non-exhaustive; use known preset names first and verify each shape by rendering the deck.
 - `shape.position = { left?: number, top?: number, width?: number, height?: number, rotation?: number, horizontalFlip?: boolean, verticalFlip?: boolean }`
@@ -130,6 +135,7 @@ async function readImageBlob(imagePath) {
 - `shape.text.add("New paragraph")`, `shape.text.replace("Old", "New")`
 
 Detached rich text:
+
 ```ts
 const { Text } = await import("@oai/artifact-tool");
 const block = Text.create(["Quarterly Business Review", "Q2 Execution Plan"]);
@@ -140,6 +146,7 @@ shape.text = block;
 ```
 
 Connector example:
+
 ```ts
 slide.shapes.add({
   geometry: "connector",
@@ -154,12 +161,14 @@ slide.shapes.add({
 ```
 
 ### Images, tables, charts, and notes
+
 - `slide.images.add({ blob, fit: "cover", alt })`, `slide.images.add({ dataUrl, fit: "contain", alt })`, `slide.images.add({ uri, alt })`
 - `image.position = { left, top, width, height }`
 - `image.replace({ blob: replacementBlob, alt: "Updated hero" })`
 - `image.crop = { left: 0.05, top: 0.05, right: 0.05, bottom: 0.05 }`
 - `image.geometry = "roundRect"` or pass `geometry: "roundRect"` at creation for masks
 - Text-free plate pattern:
+
   ```ts
   const plate = slide.images.add({
     blob: await readImageBlob("tmp/slides/pro-reference-images/slide-01.png"),
@@ -168,6 +177,7 @@ slide.shapes.add({
   });
   plate.position = { left: 0, top: 0, width: 1280, height: 720 };
   ```
+
 - `const table = slide.tables.add([["Metric", "North", "EMEA"], ["Bookings", 120, 94]])`
 - `const table = slide.tables.add({ rows, columns, left, top, width, height, values })`
 - `table.getCell(row, col).value = "APAC"`, `table.setValues(matrix)`
@@ -190,6 +200,7 @@ slide.shapes.add({
 - `slide.speakerNotes.setText("Presenter notes")`, `slide.speakerNotes.append(["Next point", "Final point"])`
 
 ### Theme, styles, auto-layout, and placeholders
+
 - `presentation.theme.colorScheme = { name, themeColors: { accent1, accent2, bg1, bg2, tx1, tx2, ... } }`
 - `presentation.theme.hexColorMap`
 - `const style = presentation.styles.add("metricLabel")`; set `style.fontSize`, `style.bold`, `style.color`, `style.typeface`
@@ -202,6 +213,7 @@ slide.shapes.add({
 ## Required Workflow
 
 1. Plan the deck:
+
 - Define audience, narrative arc, slide list, source plan, visual system, icon/style plan, and likely hero/diagram/crop assets.
 - Create or update an agent-authored `narrative_plan.md` in the final output directory during this step unless the user explicitly asks for PPTX-only output. Include audience, objective, narrative arc, slide list, source plan, visual system, imagegen plan, asset needs, and editability plan. Do not rely on the JS builder to create or overwrite this file.
 - If the source plan includes a local PDF, first extract readable text locally with runtime `pypdf`. Use web/source search only if local extraction fails, source data is incomplete, or the task requires current external context.
@@ -212,7 +224,8 @@ slide.shapes.add({
 - Before sourcing or generating each visual, decide its intended aspect ratio, placement, crop, and relationship to editable text. Prompt for that composition explicitly; for example, if text will sit on the left of a person image, ask imagegen to place the person on the right with calm space on the left.
 - Use modern sans by default: `Poppins` for titles and `Lato` for body/captions. Use formal serif only when appropriate: `Caladea` headings and `Liberation Serif` body/captions.
 
-2. Prepare native-imagegen prompts:
+1. Prepare native-imagegen prompts:
+
 - Write one outline file with an intro paragraph and exactly one section per slide.
 - Use this skill's `scripts/prepare_reference_prompts.js` to create one prompt per slide and a manifest with expected filenames.
 - Ask for text-free art-direction plates: broad calm zones, atmosphere, texture, collage, hero imagery, motifs, unlabeled diagrams/charts, abstract UI chrome, placeholder strokes, and icon containers.
@@ -229,14 +242,16 @@ slide.shapes.add({
 
 Run this skill's `scripts/prepare_reference_prompts.js` helper with the outline file, reference-image directory, slide count, deck size, and style guidance. Use platform-appropriate paths resolved from the current environment.
 
-3. Generate the art plates:
+1. Generate the art plates:
+
 - Use the platform-native imagegen tool once per slide prompt.
 - Keep the final selected image for each slide as `slide-XX.png` in the reference directory from the manifest.
 - Do not embed, attach, or link generated art plates in chat while working unless the user explicitly asks to review them.
 - Do not generate or keep image-rendered words, numbers, table text, labels, logos, source text, or code as part of the plate.
 - If a visual crop or isolated hero image is needed, prefer regenerating a cleaner text-free plate or placing the full plate with PowerPoint geometry. Avoid raster-cropping helpers in this JS skill path.
 
-4. Build the editable deck in JS:
+1. Build the editable deck in JS:
+
 - Start from `scripts/init_pro_deck_builder_js.js` or write a bespoke Node builder with the same architecture: theme constants, slide data, source notes, `addText`, `addCard`, `addTitleBlock`, `addHeader`, `addPlate`, native chart helpers wrapping `slide.charts.add(...)`, table/card helpers, icon helpers, render/export helpers, and inspect-record helpers.
 - Treat generated art plates as visual direction and crop sources. The authored JS layer owns text, cards, labels, native chart objects, icons, and important shapes.
 - A full-slide generated art plate may sit behind the deterministic editable layer only when it is text-free.
@@ -253,7 +268,8 @@ Run local builder files from a workspace where `@oai/artifact-tool` is resolvabl
 
 Do not use a different `node` binary for `@oai/artifact-tool` builders unless you first prove the package resolves. Do not run `pnpm exec` from the repo root, and do not run a builder without a sibling or otherwise resolvable `node_modules/@oai/artifact-tool`; Node resolves the package from the builder path.
 
-5. Verify:
+1. Verify:
+
 - Render final slides from JS with `presentation.export({ slide, format: "png", scale: 1 })`; save previews under scratch `tmp/slides/<deck-id>/preview/`, not in the final output folder.
 - Write scratch inspect records from JS helper wrappers. Each editable textbox record must include `kind`, `slide`, `role`, `text`, `textChars`, `textLines`, and `bbox`.
 - Use the scratch inspect records to confirm major planned copy exists as editable text/table/chart/notes data, not only in images.
@@ -271,6 +287,7 @@ Do not use a different `node` binary for `@oai/artifact-tool` builders unless yo
 ## Completion Criteria
 
 Complete only when:
+
 - The final deck is exported as `output.pptx`; any agent-authored `narrative_plan.md` remains a support file that is not surfaced unless requested.
 - Internal implementation check only: the final deck is built, rendered, verified, and exported with the required runtime. Do not mention this tooling or workflow in the final response.
 - Important copy was internally verified as editable.

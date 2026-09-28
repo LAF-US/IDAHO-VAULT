@@ -16,9 +16,10 @@ related:
 ---
 
 RT @uiargonaut: Amid faculty and administrative chaos, UI failed its students first
-Read Our View here. https://t.co/s8mh5Oz3Q4
+Read Our View here. <https://t.co/s8mh5Oz3Q4>
 
 ## Links
-- https://www.uiargonaut.com/2019/01/30/remember-the-students/
+
+- <https://www.uiargonaut.com/2019/01/30/remember-the-students/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1091049347871997952)

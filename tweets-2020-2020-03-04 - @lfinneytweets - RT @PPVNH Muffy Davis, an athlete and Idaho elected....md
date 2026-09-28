@@ -20,7 +20,7 @@ related:
   - hb509
 ---
 
-RT @PPVNH: Muffy Davis, an athlete and Idaho elected official, said #hb500 and #hb509 are unsound. 
+RT @PPVNH: Muffy Davis, an athlete and Idaho elected official, said #hb500 and #hb509 are unsound.
 
 “Saying a person would transition to c…
 

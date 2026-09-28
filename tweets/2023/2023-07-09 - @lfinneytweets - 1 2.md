@@ -1,4 +1,5 @@
 ---
+title: "1 2"
 date: 2023-07-09
 time: 21:29:10
 tweet_id: "1678154348952682497"
@@ -19,10 +20,10 @@ related:
   - lfinneytweets
 ---
 
-@chopchopcda @stopidahorinos @RodFurniss1 @GovernorLittle 1/2 https://t.co/aHE11FQvju
+@chopchopcda @stopidahorinos @RodFurniss1 @GovernorLittle 1/2 <https://t.co/aHE11FQvju>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2023/04/06/questions-arise-on-idahos-place-in-2024-presidential-campaign/
+- <https://blog.idahoreports.idahoptv.org/2023/04/06/questions-arise-on-idahos-place-in-2024-presidential-campaign/>
 
 *In reply to [@chopchopcda](https://twitter.com/chopchopcda)*
 

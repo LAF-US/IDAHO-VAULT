@@ -1,4 +1,5 @@
 ---
+title: "RT @lori_denhartog The Senate adjourns Sine Die."
 date: 2020-03-20
 time: 01:58:46
 tweet_id: "1240820042410807296"

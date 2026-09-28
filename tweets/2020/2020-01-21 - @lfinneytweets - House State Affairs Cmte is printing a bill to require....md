@@ -1,4 +1,5 @@
 ---
+title: "House State Affairs Cmte is printing a bill to require..."
 date: 2020-01-21
 time: 16:30:27
 tweet_id: "1219658527326654464"

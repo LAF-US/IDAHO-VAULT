@@ -4,7 +4,7 @@ author:
 published: 2025-09-10
 created: 2026-04-06
 ---
-![](https://www.wassmuthcenter.org/wp-content/uploads/2025/11/IMG_2659-2048x1465.jpeg)
+![alt text needed](https://www.wassmuthcenter.org/wp-content/uploads/2025/11/IMG_2659-2048x1465.jpeg)
 
 ## Powerful Practices
 

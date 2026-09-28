@@ -1,4 +1,5 @@
 ---
+title: "I was freaking out a bit, not able to get the coronavirus..."
 date: 2020-11-12
 time: 01:15:29
 tweet_id: "1326695077654134789"

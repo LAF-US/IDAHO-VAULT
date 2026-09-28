@@ -6,4 +6,4 @@ related:
 - The Hagadone Corporation
 authority: LOGAN
 ---
-Post Falls newspaper owned by The Hagadone Corporation 
+Post Falls newspaper owned by The Hagadone Corporation

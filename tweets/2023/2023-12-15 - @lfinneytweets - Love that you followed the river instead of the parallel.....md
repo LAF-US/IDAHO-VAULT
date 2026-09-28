@@ -1,4 +1,5 @@
 ---
+title: "Love that you followed the river instead of the parallel...."
 date: 2023-12-15
 time: 19:23:27
 tweet_id: "1735742383038570740"

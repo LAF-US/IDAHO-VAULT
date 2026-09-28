@@ -1,4 +1,5 @@
 ---
+title: "RT @NewsHour A 5-4 decision cut back on the Supreme Court\u2019s..."
 date: 2022-06-29
 time: 17:07:47
 tweet_id: "1542193123849166849"

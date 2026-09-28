@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy For months, tracking down vaccination rates in..."
 date: 2021-06-22
 time: 01:08:32
 tweet_id: "1407143433811107842"

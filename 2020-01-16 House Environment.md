@@ -11,11 +11,10 @@ authority: LOGAN
 House Environment, Energy and Technology
 Jan 16, 2020 2pm
 
-Rob McQuade, legal counsel for Department of Environmental Quality 
+Rob McQuade, legal counsel for Department of Environmental Quality
 
 **Board of Drinking Water and Wastewater Professionals**
 administrative rules approved unanimously with no discussion
-
 
 DEQ director John Tippets, joined by a whole gaggle of administrators
 

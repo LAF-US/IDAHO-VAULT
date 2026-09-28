@@ -55,22 +55,22 @@ Task Status modal
 Here is some more detail.
 
 - **Status Symbol**
-	- the single character in the `[]` at the start of the task.
-		- this character will control what how tasks are rendered by your Theme or CSS Snippet.
+  - the single character in the `[]` at the start of the task.
+    - this character will control what how tasks are rendered by your Theme or CSS Snippet.
 - **Status Name**
-	- a name for the status.
-		- this is flexible: for custom statuses, you can use any name you wish.
-		- is searchable with `status.name`, for example `status.name includes My custom in-progress status`.
+  - a name for the status.
+    - this is flexible: for custom statuses, you can use any name you wish.
+    - is searchable with `status.name`, for example `status.name includes My custom in-progress status`.
 - **Next Status Symbol**
-	- the status symbol to use when the task is toggled.
+  - the status symbol to use when the task is toggled.
 - **Status Type**
-	- one of `TODO`, `IN_PROGRESS`, `ON_HOLD`, `DONE`, `CANCELLED`, `NON_TASK`.
-		- Tasks needs to know the type of each status, so that it knows how to treat them when searching, and what to do when tasks with the status are toggled.
-		- types are searchable with `status.type`, for example `status.type is IN_PROGRESS`.
-		- Also available:
-		- `sort by status.type`
-				- `group by status.type`
-		- For more information, see [Status Types](https://publish.obsidian.md/tasks/Getting+Started/Statuses/Status+Types)
+  - one of `TODO`, `IN_PROGRESS`, `ON_HOLD`, `DONE`, `CANCELLED`, `NON_TASK`.
+    - Tasks needs to know the type of each status, so that it knows how to treat them when searching, and what to do when tasks with the status are toggled.
+    - types are searchable with `status.type`, for example `status.type is IN_PROGRESS`.
+    - Also available:
+    - `sort by status.type`
+  - `group by status.type`
+    - For more information, see [Status Types](https://publish.obsidian.md/tasks/Getting+Started/Statuses/Status+Types)
 
 ### Unknown Statuses
 
@@ -112,7 +112,7 @@ The [Example Statuses](https://publish.obsidian.md/tasks/Getting+Started/Statuse
 
 Core statuses represent conventional markdown tasks:
 
-```
+```markdown
 - [ ] I am a task that is not yet done
 - [x] I am a task that has been done
 ```
@@ -129,7 +129,7 @@ Custom statuses represent any non-standard markdown tasks.
 
 Here are some tasks with example custom statuses, that is, with non-standard characters between the `[` and `]`:
 
-```
+```markdown
 - [X] Checked
 - [-] A dropped/cancelled task
 - [?] A question
@@ -148,19 +148,19 @@ What Tasks' custom statuses allow you to do is to **also customise the behaviour
 
 > [!info] Info
 > Broad steps to understand and set up Statuses (or "Alternate Checkboxes"):
-> 
+>
 > - Understand what Statuses are:
-> 	- [Statuses](https://publish.obsidian.md/tasks/Getting+Started/Statuses)
-> 		- [Custom Statuses](https://publish.obsidian.md/tasks/Getting+Started/Statuses/Custom+Statuses)
+>   - [Statuses](https://publish.obsidian.md/tasks/Getting+Started/Statuses)
+>     - [Custom Statuses](https://publish.obsidian.md/tasks/Getting+Started/Statuses/Custom+Statuses)
 > - Choose your status styling scheme: this will determine the names and symbols for your custom statuses:
-> 	- Some common ones are shown in [About Status Collections](https://publish.obsidian.md/tasks/Reference/Status+Collections/About+Status+Collections)
+>   - Some common ones are shown in [About Status Collections](https://publish.obsidian.md/tasks/Reference/Status+Collections/About+Status+Collections)
 > - Set up your status styling scheme
-> 	- [How to style custom statuses](https://publish.obsidian.md/tasks/How+To/Style+custom+statuses).
+>   - [How to style custom statuses](https://publish.obsidian.md/tasks/How+To/Style+custom+statuses).
 > - Configure Tasks to use your custom statuses
-> 	- [How to set up your custom statuses](https://publish.obsidian.md/tasks/How+To/Set+up+custom+statuses)
-> 		- [Check your Statuses](https://publish.obsidian.md/tasks/Getting+Started/Statuses/Check+your+Statuses)
+>   - [How to set up your custom statuses](https://publish.obsidian.md/tasks/How+To/Set+up+custom+statuses)
+>     - [Check your Statuses](https://publish.obsidian.md/tasks/Getting+Started/Statuses/Check+your+Statuses)
 > - Optionally, update your tasks searches to take advantage of the new flexibility
-> 	- [Filters for Task Statuses](https://publish.obsidian.md/tasks/Queries/Filters#Filters%20for%20Task%20Statuses)
+>   - [Filters for Task Statuses](https://publish.obsidian.md/tasks/Queries/Filters#Filters%20for%20Task%20Statuses)
 
 ## Using Statuses
 
@@ -178,13 +178,13 @@ The [‘Create or edit Task’ Modal](https://publish.obsidian.md/tasks/Editing/
 - `done` - matches tasks with status types `DONE`, `CANCELLED` and `NON_TASK`
 - `not done` - matches tasks with status types `TODO`, `IN_PROGRESS` and `ON_HOLD`
 - **Status Name**
-	- `status.name` text search
-		- `sort by status.name`
-		- `group by status.name`
+  - `status.name` text search
+    - `sort by status.name`
+    - `group by status.name`
 - **Status Type**
-	- `status.type` text search
-		- `sort by status.type`
-		- `group by status.type`
+  - `status.type` text search
+    - `sort by status.type`
+    - `group by status.type`
 
 For details, see [Filters for Task Statuses](https://publish.obsidian.md/tasks/Queries/Filters#Filters%20for%20Task%20Statuses)
 

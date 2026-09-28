@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee The judge read the verified complaint that..."
 date: 2023-09-02
 time: 22:11:30
 tweet_id: "1698096335172554938"

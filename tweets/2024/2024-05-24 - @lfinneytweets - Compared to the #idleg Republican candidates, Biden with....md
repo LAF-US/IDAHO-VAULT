@@ -1,4 +1,5 @@
 ---
+title: "Compared to the #idleg Republican candidates, Biden with..."
 date: 2024-05-24
 time: 04:51:50
 tweet_id: "1793867481574191552"

@@ -15,9 +15,10 @@ related:
   - lfinneytweets
 ---
 
-Films start in 15 minutes! @KenworthyPAC https://t.co/qYuzUDEYub
+Films start in 15 minutes! @KenworthyPAC <https://t.co/qYuzUDEYub>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/D5r3QVxUYAEXGMj.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1124482935950675969)

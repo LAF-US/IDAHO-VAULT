@@ -1,4 +1,5 @@
 ---
+title: "RT @jonesblakej The House Education Committee just..."
 date: 2022-01-13
 time: 17:03:54
 tweet_id: "1481673372601761793"

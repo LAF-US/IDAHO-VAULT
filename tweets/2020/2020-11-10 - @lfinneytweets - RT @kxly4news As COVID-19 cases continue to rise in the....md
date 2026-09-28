@@ -1,4 +1,5 @@
 ---
+title: "RT @kxly4news As COVID-19 cases continue to rise in the..."
 date: 2020-11-10
 time: 02:43:11
 tweet_id: "1325992369062211584"

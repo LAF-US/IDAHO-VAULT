@@ -1,4 +1,5 @@
 ---
+title: "RT @ImErinRobinson CDA Police Chief Lee White says 31..."
 date: 2022-06-11
 time: 23:58:23
 tweet_id: "1535773470218342400"

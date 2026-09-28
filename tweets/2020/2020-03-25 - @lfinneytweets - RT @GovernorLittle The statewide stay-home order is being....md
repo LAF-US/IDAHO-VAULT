@@ -1,4 +1,5 @@
 ---
+title: "RT @GovernorLittle The statewide stay-home order is being..."
 date: 2020-03-25
 time: 20:56:29
 tweet_id: "1242918297823096832"

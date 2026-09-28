@@ -1,4 +1,5 @@
 ---
+title: "Still unclear to me how you'd operationalize this. Hard..."
 date: 2024-09-27
 time: 00:08:14
 tweet_id: "1839456982689865975"

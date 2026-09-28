@@ -15,9 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @blotmag: Get ready for six brand new stories, on stands and online Monday. https://t.co/xRDKj2dH6m
+RT @blotmag: Get ready for six brand new stories, on stands and online Monday. <https://t.co/xRDKj2dH6m>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/D0mvRNMU8AAJIbr.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1101700004090007554)

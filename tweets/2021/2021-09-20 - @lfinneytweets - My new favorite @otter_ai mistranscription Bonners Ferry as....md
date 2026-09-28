@@ -1,4 +1,5 @@
 ---
+title: "My new favorite @otter_ai mistranscription Bonners Ferry as..."
 date: 2021-09-20
 time: 21:02:02
 tweet_id: "1440058693316276236"

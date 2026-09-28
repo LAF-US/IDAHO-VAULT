@@ -1,4 +1,5 @@
 ---
+title: "RT @kenvogel .@GovWhitmer says she will not accept the vice..."
 date: 2024-07-22
 time: 16:21:14
 tweet_id: "1815421858021302510"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Watch the Idaho Debates 2020 on @IdahoPTV..."
 date: 2020-10-17
 time: 00:05:07
 tweet_id: "1317255284717334528"

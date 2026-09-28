@@ -1,4 +1,5 @@
 ---
+title: "I officially challenge you to a post-COVID Super Smash Bros..."
 date: 2020-12-08
 time: 22:25:37
 tweet_id: "1336436798336028672"

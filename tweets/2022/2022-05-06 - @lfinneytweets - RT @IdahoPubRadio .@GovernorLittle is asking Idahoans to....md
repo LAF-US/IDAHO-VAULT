@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@GovernorLittle is asking Idahoans to..."
 date: 2022-05-06
 time: 19:12:08
 tweet_id: "1522655470103629824"

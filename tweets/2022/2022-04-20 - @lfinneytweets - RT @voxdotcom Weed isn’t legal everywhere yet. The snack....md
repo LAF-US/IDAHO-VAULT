@@ -1,4 +1,5 @@
 ---
+title: "RT @voxdotcom Weed isn\u2019t legal everywhere yet. The snack..."
 date: 2022-04-20
 time: 21:18:34
 tweet_id: "1516889081761828864"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @voxdotcom: Weed isn’t legal everywhere yet. The snack companies can’t wait. https://t.co/TBfpyN6h8Z
+RT @voxdotcom: Weed isn’t legal everywhere yet. The snack companies can’t wait. <https://t.co/TBfpyN6h8Z>
 
 ## Links
-- https://www.vox.com/the-goods/23034255/state-of-weed-thc-snacks-beverages-artet-potli?utm_campaign=vox&utm_content=chorus&utm_medium=social&utm_source=twitter
+- <https://www.vox.com/the-goods/23034255/state-of-weed-thc-snacks-beverages-artet-potli?utm_campaign=vox&utm_content=chorus&utm_medium=social&utm_source=twitter>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1516889081761828864)

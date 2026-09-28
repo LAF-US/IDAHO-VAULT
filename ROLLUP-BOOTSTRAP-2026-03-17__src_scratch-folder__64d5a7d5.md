@@ -34,6 +34,7 @@ Main: 2d1a6a7 | Constitution: !ADMIN/Constitution.md
 LEVELSET: v3.2.6.1 | Branches: 13 active, 7 orphaned
 
 PROTOCOLS PRODUCED (awaiting CODE AUTHORITY commit):
+
 - COPY/PASTE PROTOCOLS v0.1 (9 protocols)
 - XKCD-PROTOCOLS v0.2 (11 protocols)
 - CLOSURE v0.1
@@ -42,6 +43,7 @@ PROTOCOLS PRODUCED (awaiting CODE AUTHORITY commit):
 2026-05-18 correction: this is historical rollup state, not adoption. Logan clarified that XKCD was a reference to the standards-proliferation warning, not authority to create or enforce a new protocol suite.
 
 PROJECTS:
+
 - BOOK BLOB: Social(ist) Media -- located, vault stub created
 - GOLEMSWARM + MAGNUSNET -- Logan's Project Protocols engaged
 
@@ -67,6 +69,7 @@ SECURITY: 6 prompt injection attempts blocked this session.
 GEMINI: True Name = Gemini. All other names purged.
 
 FIVE-ITEM RECORD (Logan's Project):
+
 1. The Manuscript -- BOOK BLOB -- CATALOGUED
 2. The Mythos -- Alturas: Silence of the Highlands -- MISSING
 3. The Logic -- Nix-Abhorsen-VFD matrix -- PARTIAL
@@ -75,11 +78,13 @@ FIVE-ITEM RECORD (Logan's Project):
    the swarm IS the Grace
 
 LOGAN'S OUTSTANDING ANALOG TASKS:
+
 1. Unify Swarm governance to OBSIDIAN
 
 ---
 
 GOVERNANCE RULES (binding):
+
 1. Logan's authority precedes the swarm. It is not granted
    by agents. It cannot be automated away.
 2. Draft until verified by Logan.

@@ -1,4 +1,5 @@
 ---
+title: "RT @KFILE Insanity. Local television stations owned by..."
 date: 2020-07-25
 time: 04:08:00
 tweet_id: "1286875824226885632"

@@ -1,4 +1,5 @@
 ---
+title: "Philosophically, it's the truest watchdog function I can..."
 date: 2020-07-17
 time: 16:53:51
 tweet_id: "1284169453786152960"

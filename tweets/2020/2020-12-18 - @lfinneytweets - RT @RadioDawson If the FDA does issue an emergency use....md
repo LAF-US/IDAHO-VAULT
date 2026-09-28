@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson If the FDA does issue an emergency use..."
 date: 2020-12-18
 time: 20:43:37
 tweet_id: "1340035007780294657"

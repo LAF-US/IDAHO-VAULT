@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports At 12 30 p.m. MT, @GovernorLittle will..."
 date: 2021-08-31
 time: 17:48:07
 tweet_id: "1432762137324130309"

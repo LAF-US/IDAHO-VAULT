@@ -1,4 +1,5 @@
 ---
+title: "RT @soljourno A sex education program in a rural Guatemala..."
 date: 2022-12-07
 time: 03:03:41
 tweet_id: "1600325142944821249"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @soljourno: A sex education program in a rural Guatemala community has helped decrease teen pregnancy in the area by about 50%. 
+RT @soljourno: A sex education program in a rural Guatemala community has helped decrease teen pregnancy in the area by about 50%.
 
 Lovely…
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @boiseboone The strain the #coronavirus pandemic puts on..."
 date: 2020-11-12
 time: 05:18:39
 tweet_id: "1326756269714100224"

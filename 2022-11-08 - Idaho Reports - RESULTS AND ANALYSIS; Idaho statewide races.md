@@ -48,7 +48,7 @@ You can look at this a few ways: Heidt has established a floor for the Democrats
 
 Or, as Gary Raney with Defend and Protect Idaho argued, Bundy underperformed.
 
-“Ammon Bundy’s campaign for the highest office in our state was an embarrassment — and today we saw Idahoans resoundingly reject him and his extremist politics and violent rhetoric,” Raney wrote in a Wednesday press release. “Bundy tried and failed miserably. He lost to Democrat Stephen Heidt despite outspending him 8 to 1. He had almost no impact on Brad Little’s sweeping re-election even though the incumbent Governor did nearly no campaigning since winning his primary.” 
+“Ammon Bundy’s campaign for the highest office in our state was an embarrassment — and today we saw Idahoans resoundingly reject him and his extremist politics and violent rhetoric,” Raney wrote in a Wednesday press release. “Bundy tried and failed miserably. He lost to Democrat Stephen Heidt despite outspending him 8 to 1. He had almost no impact on Brad Little’s sweeping re-election even though the incumbent Governor did nearly no campaigning since winning his primary.”
 
 Back to the Democrats, a few statewide candidates, like Dianna David and Shawn Keenan, didn’t campaign in the leadup to the general election.
 

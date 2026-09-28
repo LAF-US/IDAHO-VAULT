@@ -1,4 +1,5 @@
 ---
+title: "RT @HDruzin Health and Welfare Director Jeppesen Idaho..."
 date: 2020-06-11
 time: 16:45:24
 tweet_id: "1271121364544442368"

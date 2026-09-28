@@ -15,9 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @twinfallstn: More than 20K Idahoans with mental illness will get insured by Medicaid expansion https://t.co/MhDgRPSPvI
+RT @twinfallstn: More than 20K Idahoans with mental illness will get insured by Medicaid expansion <https://t.co/MhDgRPSPvI>
 
 ## Links
-- https://buff.ly/2ToFPN1
+
+- <https://buff.ly/2ToFPN1>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1064368247137431553)

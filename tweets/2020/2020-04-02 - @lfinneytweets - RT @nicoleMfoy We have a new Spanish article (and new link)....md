@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy We have a new Spanish article (and new link)..."
 date: 2020-04-02
 time: 02:29:12
 tweet_id: "1245538746079952896"

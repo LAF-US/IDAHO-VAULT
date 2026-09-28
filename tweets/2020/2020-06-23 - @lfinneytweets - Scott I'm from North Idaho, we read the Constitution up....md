@@ -1,4 +1,5 @@
 ---
+title: "Scott I'm from North Idaho, we read the Constitution up..."
 date: 2020-06-23
 time: 15:51:48
 tweet_id: "1275456531383742465"

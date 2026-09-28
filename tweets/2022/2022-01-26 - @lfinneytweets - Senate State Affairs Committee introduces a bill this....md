@@ -1,4 +1,5 @@
 ---
+title: "Senate State Affairs Committee introduces a bill this..."
 date: 2022-01-26
 time: 15:12:01
 tweet_id: "1486356256851824641"

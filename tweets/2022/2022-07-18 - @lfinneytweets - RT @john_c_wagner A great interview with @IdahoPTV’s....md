@@ -1,4 +1,5 @@
 ---
+title: "RT @john_c_wagner A great interview with @IdahoPTV\u2019s..."
 date: 2022-07-18
 time: 23:44:46
 tweet_id: "1549178397250576384"

@@ -1,4 +1,5 @@
 ---
+title: "44 lovely little uniquely weird ways of doing things \u2764\ufe0f"
 date: 2024-05-22
 time: 23:41:33
 tweet_id: "1793427008401338845"

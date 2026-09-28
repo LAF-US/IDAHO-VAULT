@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews The Secretary of State's Office said it..."
 date: 2024-07-03
 time: 00:31:19
 tweet_id: "1808297433035952207"

@@ -1,4 +1,5 @@
 ---
+title: "RT @twinfallstn Rep. Barbara Ehardt said she doesn\u2019t have a..."
 date: 2020-09-22
 time: 00:17:02
 tweet_id: "1308198584022573056"

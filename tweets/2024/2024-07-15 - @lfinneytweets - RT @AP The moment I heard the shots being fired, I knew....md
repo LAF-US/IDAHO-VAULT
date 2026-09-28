@@ -1,4 +1,5 @@
 ---
+title: "RT @AP The moment I heard the shots being fired, I knew..."
 date: 2024-07-15
 time: 14:38:51
 tweet_id: "1812859377482944956"

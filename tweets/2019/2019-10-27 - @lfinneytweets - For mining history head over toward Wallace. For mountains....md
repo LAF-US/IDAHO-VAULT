@@ -1,4 +1,5 @@
 ---
+title: "For mining history head over toward Wallace. For mountains..."
 date: 2019-10-27
 time: 18:54:00
 tweet_id: "1188529296823869440"

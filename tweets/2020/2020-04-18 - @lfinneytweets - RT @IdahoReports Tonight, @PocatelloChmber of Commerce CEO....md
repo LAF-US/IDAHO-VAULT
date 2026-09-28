@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Tonight, @PocatelloChmber of Commerce CEO..."
 date: 2020-04-18
 time: 00:20:12
 tweet_id: "1251304488226263040"

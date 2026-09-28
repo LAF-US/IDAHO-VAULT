@@ -1,4 +1,5 @@
 ---
+title: "Rice is making a comparison between physical goods going..."
 date: 2020-03-17
 time: 22:18:48
 tweet_id: "1240039912818143232"

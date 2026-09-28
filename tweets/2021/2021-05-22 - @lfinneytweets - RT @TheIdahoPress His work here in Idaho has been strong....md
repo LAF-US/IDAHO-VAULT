@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress His work here in Idaho has been strong..."
 date: 2021-05-22
 time: 00:52:53
 tweet_id: "1395905471131783169"

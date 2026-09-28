@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Attorney General's office on..."
 date: 2020-04-20
 time: 21:49:47
 tweet_id: "1252353795910012928"

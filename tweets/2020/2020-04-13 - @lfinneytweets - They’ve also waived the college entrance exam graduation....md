@@ -1,4 +1,5 @@
 ---
+title: "They\u2019ve also waived the college entrance exam graduation..."
 date: 2020-04-13
 time: 21:42:46
 tweet_id: "1249815314411343873"

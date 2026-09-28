@@ -1,4 +1,5 @@
 ---
+title: "First day #idleg notebook dump - @IdahoGOP supports..."
 date: 2024-01-09
 time: 00:55:42
 tweet_id: "1744523307591102668"
@@ -20,6 +21,7 @@ related:
 ---
 
 First day #idleg notebook dump:
+
 - @IdahoGOP supports requiring a 2/3 threshold to pass ballot initiatives.
 - Asked @nichols_senator about the private school tax credit bill unveiled Friday. She said she prefers a more "universal" option, like ESAs, but wasn't against it.
 ...

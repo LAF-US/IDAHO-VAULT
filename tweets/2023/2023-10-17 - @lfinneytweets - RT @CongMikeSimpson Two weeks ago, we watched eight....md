@@ -1,4 +1,5 @@
 ---
+title: "RT @CongMikeSimpson Two weeks ago, we watched eight..."
 date: 2023-10-17
 time: 17:44:07
 tweet_id: "1714336499720995045"

@@ -1,4 +1,5 @@
 ---
+title: "Rubel increased teacher pay and keeping the K-12 budget..."
 date: 2020-03-19
 time: 22:50:41
 tweet_id: "1240772712215113728"

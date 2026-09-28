@@ -1,4 +1,5 @@
 ---
+title: "It has been interesting to see the rally around this topic...."
 date: 2023-12-05
 time: 16:51:32
 tweet_id: "1732080275969147045"

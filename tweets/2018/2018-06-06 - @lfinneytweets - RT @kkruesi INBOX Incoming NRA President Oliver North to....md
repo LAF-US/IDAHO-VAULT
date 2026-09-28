@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi INBOX Incoming NRA President Oliver North to..."
 date: 2018-06-06
 time: 21:22:02
 tweet_id: "1004473511954432000"

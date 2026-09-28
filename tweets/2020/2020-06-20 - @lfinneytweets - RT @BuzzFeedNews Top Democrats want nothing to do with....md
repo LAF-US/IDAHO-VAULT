@@ -1,4 +1,5 @@
 ---
+title: "RT @BuzzFeedNews Top Democrats want nothing to do with..."
 date: 2020-06-20
 time: 01:51:15
 tweet_id: "1274157836293992454"

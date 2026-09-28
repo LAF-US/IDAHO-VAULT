@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Rumors began circulating late last week of..."
 date: 2022-08-16
 time: 22:03:57
 tweet_id: "1559662274083561473"

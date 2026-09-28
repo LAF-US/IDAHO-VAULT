@@ -1,4 +1,5 @@
 ---
+title: "I've been gone for a few days. What did I miss #idpol"
 date: 2021-07-20
 time: 23:41:20
 tweet_id: "1417630737746907136"

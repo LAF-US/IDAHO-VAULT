@@ -18,9 +18,10 @@ related:
   - MarchForOurLives
 ---
 
-RT @savannahlcardon: Palouse #MarchForOurLives protesters gather together in East City Park. https://t.co/CInkp7qcX1
+RT @savannahlcardon: Palouse #MarchForOurLives protesters gather together in East City Park. <https://t.co/CInkp7qcX1>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/DZFKjAdVoAAYw1V.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/977832298748854272)

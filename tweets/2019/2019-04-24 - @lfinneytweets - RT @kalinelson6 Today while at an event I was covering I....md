@@ -1,4 +1,5 @@
 ---
+title: "RT @kalinelson6 Today while at an event I was covering I..."
 date: 2019-04-24
 time: 06:27:28
 tweet_id: "1120937281005555712"

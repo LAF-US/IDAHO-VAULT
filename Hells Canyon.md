@@ -5,4 +5,4 @@ related:
 - Snake River
 authority: LOGAN
 ---
-Snake River border between Idaho and Oregon 
+Snake River border between Idaho and Oregon

@@ -1,4 +1,5 @@
 ---
+title: "Rep. Giddings just entered, to over a minute of standing..."
 date: 2021-08-02
 time: 14:57:46
 tweet_id: "1422210020540702725"

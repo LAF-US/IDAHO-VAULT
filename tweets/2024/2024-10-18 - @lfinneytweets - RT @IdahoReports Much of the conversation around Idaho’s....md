@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Much of the conversation around Idaho\u2019s..."
 date: 2024-10-18
 time: 22:36:18
 tweet_id: "1847406378144714845"

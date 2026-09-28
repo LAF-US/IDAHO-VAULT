@@ -1,4 +1,5 @@
 ---
+title: "RT @blkauffman7 Hundreds of people were out this afternoon..."
 date: 2020-06-21
 time: 00:22:35
 tweet_id: "1274497909262712833"

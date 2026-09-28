@@ -1,4 +1,5 @@
 ---
+title: "Interesting replies to this tweet from ruby-red Idaho"
 date: 2018-10-31
 time: 03:46:51
 tweet_id: "1057478985049755648"
@@ -13,9 +14,9 @@ related:
   - lfinneytweets
 ---
 
-Interesting replies to this tweet from "ruby-red Idaho" https://t.co/sDJPzmn3cw
+Interesting replies to this tweet from "ruby-red Idaho" <https://t.co/sDJPzmn3cw>
 
 ## Links
-- https://x.com/JaniceMcGeachin/status/1043175426820988929
+- <https://x.com/JaniceMcGeachin/status/1043175426820988929>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1057478985049755648)

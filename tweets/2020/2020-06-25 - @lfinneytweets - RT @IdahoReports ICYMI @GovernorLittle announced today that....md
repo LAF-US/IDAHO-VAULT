@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports ICYMI @GovernorLittle announced today that..."
 date: 2020-06-25
 time: 20:22:09
 tweet_id: "1276249342794297344"

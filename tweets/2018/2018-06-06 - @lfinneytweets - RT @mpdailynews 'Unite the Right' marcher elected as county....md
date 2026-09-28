@@ -1,4 +1,5 @@
 ---
+title: "RT @mpdailynews 'Unite the Right' marcher elected as county..."
 date: 2018-06-06
 time: 18:11:48
 tweet_id: "1004425639498092544"

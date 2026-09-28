@@ -1,4 +1,5 @@
 ---
+title: "RT @RepRussFulcher Tomorrow, I will vote in support of Jim..."
 date: 2023-10-17
 time: 17:43:54
 tweet_id: "1714336448001032220"

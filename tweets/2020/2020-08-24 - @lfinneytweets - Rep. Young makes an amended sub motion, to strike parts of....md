@@ -1,4 +1,5 @@
 ---
+title: "Rep. Young makes an amended sub motion, to strike parts of..."
 date: 2020-08-24
 time: 18:24:30
 tweet_id: "1297963009034170368"

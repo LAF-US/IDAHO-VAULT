@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho Republican Party will elect its..."
 date: 2024-06-14
 time: 16:02:20
 tweet_id: "1801646363308134786"

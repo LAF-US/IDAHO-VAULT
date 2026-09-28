@@ -1,4 +1,5 @@
 ---
+title: "The original bill simply directed the state tax commission..."
 date: 2020-03-16
 time: 18:27:18
 tweet_id: "1239619267126910976"

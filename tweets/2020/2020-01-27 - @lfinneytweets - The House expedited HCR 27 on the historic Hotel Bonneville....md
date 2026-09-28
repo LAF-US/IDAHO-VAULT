@@ -1,4 +1,5 @@
 ---
+title: "The House expedited HCR 27 on the historic Hotel Bonneville..."
 date: 2020-01-27
 time: 18:47:54
 tweet_id: "1221867442751696914"

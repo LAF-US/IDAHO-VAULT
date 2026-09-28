@@ -64,8 +64,6 @@ Our Sponsors
 
 Faith leaders pray before Idaho Legislative session begins (Logan Finney/FāVS News).
 
-  
-
 **By Logan Finney |** **FāVS News** **Reporter**
 
 It was an afternoon full of worship, song and protest as people of faith gathered in the cold on Sunday to mark the start of the annual legislative session at the Idaho State Capitol.

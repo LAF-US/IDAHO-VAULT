@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin In response to Little's announcements..."
 date: 2020-11-13
 time: 22:56:27
 tweet_id: "1327384862508994563"

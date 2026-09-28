@@ -13,9 +13,10 @@ related:
   - lfinneytweets
 ---
 
-“It’s going to have to happen in the next few days,” the tax committee chair said. “Hopefully we can work something out.” https://t.co/3YlfLUfFPy
+“It’s going to have to happen in the next few days,” the tax committee chair said. “Hopefully we can work something out.” <https://t.co/3YlfLUfFPy>
 
 ## Links
-- https://x.com/BetsyZRussell/status/1234855379244388354
+
+- <https://x.com/BetsyZRussell/status/1234855379244388354>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1234879649672396800)

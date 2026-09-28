@@ -1,4 +1,5 @@
 ---
+title: "So long, snowflake."
 date: 2021-04-09
 time: 16:34:51
 tweet_id: "1380559845288333313"
@@ -13,9 +14,9 @@ related:
   - lfinneytweets
 ---
 
-So long, snowflake. https://t.co/4T5jFb0Kug
+So long, snowflake. <https://t.co/4T5jFb0Kug>
 
 ## Links
-- https://x.com/kxly4news/status/1380545875802480654
+- <https://x.com/kxly4news/status/1380545875802480654>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1380559845288333313)

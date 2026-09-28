@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports After fights over how to respond to..."
 date: 2022-03-30
 time: 18:21:30
 tweet_id: "1509234379486236673"

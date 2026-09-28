@@ -1,4 +1,5 @@
 ---
+title: "RT @ChristinaLords We at the @IdahoStatesman believe our..."
 date: 2020-03-14
 time: 05:55:09
 tweet_id: "1238705203735478272"

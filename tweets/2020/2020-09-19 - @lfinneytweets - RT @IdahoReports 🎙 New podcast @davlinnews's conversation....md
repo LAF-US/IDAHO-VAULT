@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports \ud83c\udf99 New podcast @davlinnews's conversation..."
 date: 2020-09-19
 time: 18:00:57
 tweet_id: "1307379163418906624"

@@ -1,4 +1,5 @@
 ---
+title: "RT @TexasTribune Defense attorneys have started asking..."
 date: 2021-10-06
 time: 20:17:37
 tweet_id: "1445845724483129347"

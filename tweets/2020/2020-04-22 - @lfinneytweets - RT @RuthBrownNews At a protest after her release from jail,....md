@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews At a protest after her release from jail,..."
 date: 2020-04-22
 time: 17:26:08
 tweet_id: "1253012222512529408"

@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress U.S. Sen. Risch tells @ktvb he doesn't..."
 date: 2020-01-08
 time: 03:18:59
 tweet_id: "1214748304484880384"

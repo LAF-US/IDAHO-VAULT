@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Sen. Lodge just called today the last day..."
 date: 2021-05-12
 time: 19:29:48
 tweet_id: "1392562674353905667"

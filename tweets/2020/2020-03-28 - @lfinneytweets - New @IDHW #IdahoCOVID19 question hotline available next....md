@@ -1,4 +1,5 @@
 ---
+title: "New @IDHW #IdahoCOVID19 question hotline available next..."
 date: 2020-03-28
 time: 16:02:27
 tweet_id: "1243931465064185856"
@@ -20,9 +21,9 @@ related:
   - idpol
 ---
 
-New @IDHW #IdahoCOVID19 question hotline available next week #idpol https://t.co/3zxOfrj5IM
+New @IDHW #IdahoCOVID19 question hotline available next week #idpol <https://t.co/3zxOfrj5IM>
 
 ## Links
-- https://x.com/IDHW/status/1243926588091228169
+- <https://x.com/IDHW/status/1243926588091228169>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243931465064185856)

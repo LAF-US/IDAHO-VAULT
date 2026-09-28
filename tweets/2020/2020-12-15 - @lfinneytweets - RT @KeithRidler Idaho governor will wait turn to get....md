@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Idaho governor will wait turn to get..."
 date: 2020-12-15
 time: 20:06:34
 tweet_id: "1338938523307536384"
@@ -21,9 +22,9 @@ related:
   - idahoCovid19
 ---
 
-RT @KeithRidler: Idaho governor will wait turn to get coronavirus vaccination (from @AP) #idpol #idahoCovid19  https://t.co/QHe3dmNyAm
+RT @KeithRidler: Idaho governor will wait turn to get coronavirus vaccination (from @AP) #idpol #idahoCovid19  <https://t.co/QHe3dmNyAm>
 
 ## Links
-- https://apnews.com/article/c83cc2f3770fe02bae0cd994d227eb7e
+- <https://apnews.com/article/c83cc2f3770fe02bae0cd994d227eb7e>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1338938523307536384)

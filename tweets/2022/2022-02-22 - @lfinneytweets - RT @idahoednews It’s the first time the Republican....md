@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews It\u2019s the first time the Republican..."
 date: 2022-02-22
 time: 19:11:06
 tweet_id: "1496200895918649344"

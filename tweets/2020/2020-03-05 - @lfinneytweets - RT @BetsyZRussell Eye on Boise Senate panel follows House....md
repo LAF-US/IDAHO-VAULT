@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Senate panel follows House..."
 date: 2020-03-05
 time: 06:48:26
 tweet_id: "1235457122025877505"

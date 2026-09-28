@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell Yes, @RepRussFulcher attended today's GOP..."
 date: 2019-10-24
 time: 00:57:15
 tweet_id: "1187171157994160128"

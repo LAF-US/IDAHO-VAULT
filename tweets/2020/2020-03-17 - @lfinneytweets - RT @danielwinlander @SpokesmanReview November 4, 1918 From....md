@@ -1,4 +1,5 @@
 ---
+title: "RT @danielwinlander @SpokesmanReview November 4, 1918 From..."
 date: 2020-03-17
 time: 22:10:02
 tweet_id: "1240037705121017857"

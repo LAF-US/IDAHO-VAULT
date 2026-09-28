@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Current law allows individual school..."
 date: 2023-03-15
 time: 17:40:20
 tweet_id: "1636059771538399235"

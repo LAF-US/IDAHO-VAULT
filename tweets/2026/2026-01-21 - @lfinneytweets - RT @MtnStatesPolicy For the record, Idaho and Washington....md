@@ -1,4 +1,5 @@
 ---
+title: "RT @MtnStatesPolicy For the record, Idaho and Washington..."
 date: 2026-01-21
 time: 19:41:20
 tweet_id: "2014060763099578405"
@@ -17,6 +18,6 @@ related:
 
 RT @MtnStatesPolicy: For the record, Idaho and Washington legislators have been in session for the exact same number of days.  
 
-https://t.…
+<https://t.…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/2014060763099578405)

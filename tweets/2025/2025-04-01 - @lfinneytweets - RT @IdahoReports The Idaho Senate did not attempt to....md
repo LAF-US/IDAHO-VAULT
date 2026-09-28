@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho Senate did not attempt to..."
 date: 2025-04-01
 time: 00:20:25
 tweet_id: "1906864190352204160"

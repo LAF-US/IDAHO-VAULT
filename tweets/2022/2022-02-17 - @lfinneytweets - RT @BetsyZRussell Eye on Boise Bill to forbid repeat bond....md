@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Bill to forbid repeat bond..."
 date: 2022-02-17
 time: 19:34:49
 tweet_id: "1494394926414499843"

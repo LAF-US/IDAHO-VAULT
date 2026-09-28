@@ -1,4 +1,5 @@
 ---
+title: "RT @EmmaEpperly Latah County Prosecutor Bill Thompson told..."
 date: 2022-11-30
 time: 22:24:21
 tweet_id: "1598080518599618560"

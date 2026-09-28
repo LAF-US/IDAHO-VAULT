@@ -17,9 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@ryannoyance @boisestatelive @uidaho @BoiseState_UTP Wow. RIP KUID 😔 https://t.co/AEkEF4taZb
+@ryannoyance @boisestatelive @uidaho @BoiseState_UTP Wow. RIP KUID 😔 <https://t.co/AEkEF4taZb>
 
 ## Media
+
 - ![](https://pbs.twimg.com/tweet_video_thumb/D4dYWCYUUAAkti6.jpg)
 
 *In reply to [@ryannoyance](https://twitter.com/ryannoyance)*

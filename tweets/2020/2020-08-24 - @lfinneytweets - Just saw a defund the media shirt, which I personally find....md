@@ -1,4 +1,5 @@
 ---
+title: "Just saw a defund the media shirt, which I personally find..."
 date: 2020-08-24
 time: 15:48:50
 tweet_id: "1297923831265296384"

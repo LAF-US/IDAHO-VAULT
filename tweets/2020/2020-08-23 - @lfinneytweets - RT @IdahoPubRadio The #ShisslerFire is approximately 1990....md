@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The #ShisslerFire is approximately 1990..."
 date: 2020-08-23
 time: 02:56:07
 tweet_id: "1297366985647353856"

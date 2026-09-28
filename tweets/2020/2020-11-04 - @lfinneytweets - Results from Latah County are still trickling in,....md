@@ -1,4 +1,5 @@
 ---
+title: "Results from Latah County are still trickling in,..."
 date: 2020-11-04
 time: 07:34:04
 tweet_id: "1323891246004252672"
@@ -21,9 +22,9 @@ related:
 ---
 
 Results from Latah County are still trickling in, @uiargonaut @apalermooo reports. While partial results show a strong Republican lead in every race, these results do not include early or absentee votes. #idpol #idleg 
-https://t.co/SQWrBN14z0
+<https://t.co/SQWrBN14z0>
 
 ## Links
-- https://www.uiargonaut.com/2020/11/03/latah-county-races-still-too-early-to-call/
+- <https://www.uiargonaut.com/2020/11/03/latah-county-races-still-too-early-to-call/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1323891246004252672)

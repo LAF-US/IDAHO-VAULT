@@ -1,4 +1,5 @@
 ---
+title: "Getting a bit stir crazy from cabin fever in COVID-19..."
 date: 2022-12-22
 time: 02:39:36
 tweet_id: "1605754901828874240"

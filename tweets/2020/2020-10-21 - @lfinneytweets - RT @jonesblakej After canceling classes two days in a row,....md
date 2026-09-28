@@ -1,4 +1,5 @@
 ---
+title: "RT @jonesblakej After canceling classes two days in a row,..."
 date: 2020-10-21
 time: 01:47:00
 tweet_id: "1318730474794086400"

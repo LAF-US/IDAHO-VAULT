@@ -68,18 +68,23 @@ CONFERENCE CALL does **not** replace:
 ## III. CORE PRINCIPLES
 
 ### 1. Logan Chairs
+
 Every CONFERENCE CALL has exactly one Chair: Logan. No agent self-convenes, self-promotes to Chair, or opens a CONFERENCE on behalf of Logan. The Chair calls the CONFERENCE, sets the agenda, and declares dismissal.
 
 ### 2. Quorum is What Logan Says It Is
+
 A CONFERENCE may involve two agents or ten. Logan names the participants. Unlisted agents are not present, do not act on the agenda, and do not commit output to the vault under that CONFERENCE record.
 
 ### 3. One Agenda, One Record
+
 Every CONFERENCE CALL produces a single durable artifact: the CONFERENCE RECORD. All decisions, outputs, and action items from the session are captured in that file. If it is not in the RECORD, it did not happen in this CONFERENCE.
 
 ### 4. Lanes Persist
+
 Vault lane boundaries remain in force during a CONFERENCE. Agents do not cross lanes because they are "in a meeting." Ambiguous tasks are explicitly delegated by Logan in the agenda.
 
 ### 5. Vault Over Chat
+
 CONFERENCE CALL outputs are vault artifacts. Chat transcripts are ephemeral. The CONFERENCE RECORD is the durable form.
 
 ---
@@ -89,7 +94,7 @@ CONFERENCE CALL outputs are vault artifacts. Chat transcripts are ephemeral. The
 A CONFERENCE CALL has five bounded phases:
 
 | Phase | Name | Actor | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | **CALL** | Logan | Declares the CONFERENCE, names participants, sets the agenda |
 | 2 | **CONVENE** | All invited agents | Each agent acknowledges, runs LEVELSET, declares readiness |
 | 3 | **CONFERENCE** | All agents (Chair-directed) | Agenda items are worked in order; one at a time, Chair-directed |
@@ -101,6 +106,7 @@ A CONFERENCE CALL has five bounded phases:
 ## V. ROLES
 
 ### 5.1 Chair (Logan)
+
 - Opens and closes the CONFERENCE
 - Sets and owns the agenda
 - Directs agent action (who speaks, in what order)
@@ -108,17 +114,20 @@ A CONFERENCE CALL has five bounded phases:
 - Signs off on the CONFERENCE RECORD before it is committed
 
 ### 5.2 Participant Agents
+
 - Acknowledge CALL and declare readiness (CONVENE phase)
 - Work their assigned agenda items
 - Do not act beyond their assigned lane without explicit Chair delegation
 - Surface FLAGs immediately (do not wait for the next agenda item)
 
 ### 5.3 Recording Agent
+
 - Designated by Logan (default: CODE AUTHORITY / Claude)
 - Writes and commits the CONFERENCE RECORD to the vault
 - Does not editorialize — captures what was said and decided, not what the Recording Agent thinks should have been said
 
 ### 5.4 Observer (optional)
+
 - Named by Logan; read-only access; no action items
 - Does not speak unless called on by the Chair
 - Listed in CONFERENCE RECORD header for audit purposes
@@ -131,7 +140,7 @@ A CONFERENCE CALL has five bounded phases:
 
 Logan opens a CONFERENCE by posting or stating the CALL signal in the active coordination channel. Minimum required fields:
 
-```
+```text
 CONFERENCE CALL
 DATE: YYYY-MM-DD
 CHAIR: Logan
@@ -148,7 +157,7 @@ OBSERVER: [agent name or "none"]
 
 Each invited agent, upon receiving the CALL, responds:
 
-```
+```text
 CONVENE RECEIVED
 AGENT: [Agent name and persona]
 LEVELSET: [brief summary of current state and lane]
@@ -161,7 +170,7 @@ If an agent cannot CONVENE (blocked, FLAG pending, lane conflict), it states `RE
 
 Once all participants have ACKed, Logan declares the CONFERENCE open:
 
-```
+```text
 CONFERENCE OPEN
 ALL PRESENT: [list]
 AGENDA CONFIRMED: YES / MODIFIED (if items changed)
@@ -200,7 +209,7 @@ An agent may not expand the agenda during a CONFERENCE. New topics surface as a 
 
 ### 8.1 File Location and Naming
 
-```
+```text
 !/CONFERENCE-RECORD-[YYYY-MM-DD]-[TOPIC-SLUG].md
 ```
 
@@ -222,7 +231,7 @@ status: open | closed | partial
 ---
 ```
 
-```
+```markdown
 # CONFERENCE RECORD — [TOPIC] — [DATE]
 
 ## Agenda
@@ -270,7 +279,7 @@ status: open | closed | partial
 
 Logan closes the CONFERENCE by posting:
 
-```
+```text
 CONFERENCE CLOSED
 DATE: YYYY-MM-DD
 RECORD: [file path of committed CONFERENCE RECORD]
@@ -284,7 +293,7 @@ Agents do not close their own participation. They wait for DISMISSED, then retur
 ## X. FAILURE MODES & MITIGATIONS
 
 | Failure | Symptom | Mitigation |
-|---|---|---|
+| --- | --- | --- |
 | Quorum not reached | Agent cannot CONVENE | Chair decides: delay, substitute, or proceed with partial quorum; log absent agents in RECORD |
 | Scope explosion | Agenda grows during session | Reject additions; log as proposed follow-up CONFERENCE; Chair enforces |
 | Lane conflict mid-CONFERENCE | Two agents reach for the same file | Chair arbitrates; log in RECORD under FLAGs |
@@ -297,7 +306,7 @@ Agents do not close their own participation. They wait for DISMISSED, then retur
 ## XI. RELATIONSHIP TO EXISTING PROTOCOLS
 
 | Protocol | Relationship |
-|---|---|
+| --- | --- |
 | **Plain handoff practice** | Inter-agent messages during a CONFERENCE should be explicit, small, and understandable. They do not require XKCD classes unless Logan asks for them. |
 | **TRIUNE HANDSHAKE** | The TRIUNE HANDSHAKE is a specific three-agent pre-AFK CONFERENCE; it follows this protocol's structure informally |
 | **PASSBACK SYNC** | A CONFERENCE may be triggered to BOOTSTRAP context from a dying agent; the TOSS/BOOTSTRAP operations run as agenda items |
@@ -325,4 +334,6 @@ Agents do not close their own participation. They wait for DISMISSED, then retur
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

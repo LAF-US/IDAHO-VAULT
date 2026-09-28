@@ -1,4 +1,5 @@
 ---
+title: "RT @CNN \u201cNot all streets are like Sesame Street. \u2026 What we..."
 date: 2020-06-06
 time: 18:40:05
 tweet_id: "1269338285177892864"

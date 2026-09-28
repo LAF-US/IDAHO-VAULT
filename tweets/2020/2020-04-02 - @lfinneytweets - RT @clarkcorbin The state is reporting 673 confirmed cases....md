@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin The state is reporting 673 confirmed cases..."
 date: 2020-04-02
 time: 01:00:39
 tweet_id: "1245516460027334656"

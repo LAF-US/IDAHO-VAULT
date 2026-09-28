@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Little says he will advise legislators to..."
 date: 2020-08-06
 time: 18:37:46
 tweet_id: "1291443362151559168"

@@ -1,4 +1,5 @@
 ---
+title: "The @CityofPostFalls City Council voted yesterday to send a..."
 date: 2020-04-22
 time: 17:04:54
 tweet_id: "1253006877786431488"
@@ -24,9 +25,9 @@ related:
 ---
 
 The @CityofPostFalls City Council voted yesterday to send a letter to @GovernorLittle, urging him to procure additional COVID-19 & serology tests before lifting the state stay-at-home order. #idpol #IdahoCOVID19 (@JenniPassaro @CdAPressNews) 
-https://t.co/qnexbUu8ng
+<https://t.co/qnexbUu8ng>
 
 ## Links
-- https://cdapress.com/news/2020/apr/22/post-falls-council-urges-more-covid-19-5/
+- <https://cdapress.com/news/2020/apr/22/post-falls-council-urges-more-covid-19-5/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253006877786431488)

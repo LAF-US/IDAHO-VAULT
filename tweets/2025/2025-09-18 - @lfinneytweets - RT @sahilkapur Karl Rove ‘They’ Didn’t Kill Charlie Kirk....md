@@ -1,4 +1,5 @@
 ---
+title: "RT @sahilkapur Karl Rove \u2018They\u2019 Didn\u2019t Kill Charlie Kirk..."
 date: 2025-09-18
 time: 17:17:24
 tweet_id: "1968726058460381522"

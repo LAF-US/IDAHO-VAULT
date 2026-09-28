@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Blaine County courthouse 
+magistrate court Blaine County courthouse

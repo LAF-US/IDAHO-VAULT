@@ -1,4 +1,5 @@
 ---
+title: "... Rep. Ron Nate (Rexburg); Rep. Karey Hanks (St...."
 date: 2021-01-11
 time: 17:25:06
 tweet_id: "1348682360208846848"

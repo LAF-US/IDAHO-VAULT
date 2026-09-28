@@ -157,9 +157,14 @@ function writeManifest(outputDir, promptPaths, titles, deckSize) {
     ],
     slides,
   };
-  const manifestPath = path.join(outputDir, "reference_manifest.json");
-  fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
-  return manifestPath;
+  const base = path.resolve(outputDir);
+  const target = path.resolve(base, "reference_manifest.json");
+  const relative = path.relative(base, target);
+  if (relative.startsWith("..") || path.isAbsolute(relative)) {
+    throw new Error("Invalid path");
+  }
+  fs.writeFileSync(target, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+  return target;
 }
 
 function writeMarkdown(outputDir, slides) {

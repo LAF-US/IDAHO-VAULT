@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews The Idaho Senate just voted 31-4 for a..."
 date: 2020-03-04
 time: 18:19:54
 tweet_id: "1235268748317249537"

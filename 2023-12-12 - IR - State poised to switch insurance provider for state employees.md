@@ -26,19 +26,19 @@ related:
 - teachers
 authority: LOGAN
 ---
-The State of Idaho is considering a new health insurance provider for its employees, lawmakers on the Change in Employee Compensation Committee (CEC) learned in a presentation Tuesday from representatives of the state’s purchasing division and office of group insurance. 
+The State of Idaho is considering a new health insurance provider for its employees, lawmakers on the Change in Employee Compensation Committee (CEC) learned in a presentation Tuesday from representatives of the state’s purchasing division and office of group insurance.
 
 The state employee health insurance contract is awarded through a competitive bidding process, like any other major state purchase. Currently, the state’s Office of Group Insurance covers about 60,000 Idahoans — including state employees, spouses, and dependents — through its contract with Blue Cross of Idaho.
 
-In an “invitation to negotiate” process earlier this year, the state solicited bids for a new health insurance contract. The Division of Purchasing notified bidders on Nov. 15 of its intent to award the contract to Regence BlueShield of Idaho for Fiscal Year 2025. 
+In an “invitation to negotiate” process earlier this year, the state solicited bids for a new health insurance contract. The Division of Purchasing notified bidders on Nov. 15 of its intent to award the contract to Regence BlueShield of Idaho for Fiscal Year 2025.
 
-The division commissioned an independent actuary to analyze the differences between the top bidders. 
+The division commissioned an independent actuary to analyze the differences between the top bidders.
 
-“The overall network coverage across all three of these finalists were very similar,” said Division of Purchasing administrator Valerie Bollinger. “Members will not suddenly find themselves unable to get medical care and important medications on July 1.” 
+“The overall network coverage across all three of these finalists were very similar,” said Division of Purchasing administrator Valerie Bollinger. “Members will not suddenly find themselves unable to get medical care and important medications on July 1.”
 
-According to the actuary’s analysis, projected savings under a new contract with Regence would include roughly a 7% decrease in combined medical and prescription drug claims, a 19% decrease in administrative costs and an 11% decrease in overall expenses. 
+According to the actuary’s analysis, projected savings under a new contract with Regence would include roughly a 7% decrease in combined medical and prescription drug claims, a 19% decrease in administrative costs and an 11% decrease in overall expenses.
 
-The new Regence plan would include all the health insurance benefits that state employees currently receive, as well as additional benefits, such as an integrated diabetes management program and additional behavioral health programs. 
+The new Regence plan would include all the health insurance benefits that state employees currently receive, as well as additional benefits, such as an integrated diabetes management program and additional behavioral health programs.
 
 Another provider, as yet unidentified, is appealing the state’s decision to go with Regence, so the contract has not yet been awarded.  
 

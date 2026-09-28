@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho House of Representatives passed..."
 date: 2022-02-22
 time: 20:43:39
 tweet_id: "1496224189681844224"

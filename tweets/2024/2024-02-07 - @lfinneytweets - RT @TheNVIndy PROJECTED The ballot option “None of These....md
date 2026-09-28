@@ -1,4 +1,5 @@
 ---
+title: "RT @TheNVIndy PROJECTED The ballot option \u201cNone of These..."
 date: 2024-02-07
 time: 06:22:59
 tweet_id: "1755114917156503916"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @TheNVIndy: PROJECTED: The ballot option “None of These Candidates” is projected to win Nevada’s Republican primary. https://t.co/5b3jlX…
+RT @TheNVIndy: PROJECTED: The ballot option “None of These Candidates” is projected to win Nevada’s Republican primary. <https://t.co/5b3jlX…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1755114917156503916)

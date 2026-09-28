@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews This bill gives power to the prudest person..."
 date: 2024-06-27
 time: 03:04:24
 tweet_id: "1806161630642028668"

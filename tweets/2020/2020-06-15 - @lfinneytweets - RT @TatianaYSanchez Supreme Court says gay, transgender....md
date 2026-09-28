@@ -1,4 +1,5 @@
 ---
+title: "RT @TatianaYSanchez Supreme Court says gay, transgender..."
 date: 2020-06-15
 time: 16:04:06
 tweet_id: "1272560523523969031"

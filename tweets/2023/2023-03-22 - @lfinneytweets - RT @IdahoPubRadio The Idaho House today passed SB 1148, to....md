@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The Idaho House today passed SB 1148, to..."
 date: 2023-03-22
 time: 23:38:36
 tweet_id: "1638686645787713537"

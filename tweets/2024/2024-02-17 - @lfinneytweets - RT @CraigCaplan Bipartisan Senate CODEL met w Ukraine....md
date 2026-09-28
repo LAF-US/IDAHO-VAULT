@@ -1,4 +1,5 @@
 ---
+title: "RT @CraigCaplan Bipartisan Senate CODEL met w Ukraine..."
 date: 2024-02-17
 time: 22:21:04
 tweet_id: "1758979904551665812"

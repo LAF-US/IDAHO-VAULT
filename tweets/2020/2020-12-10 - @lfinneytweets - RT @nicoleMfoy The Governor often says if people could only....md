@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy The Governor often says if people could only..."
 date: 2020-12-10
 time: 20:19:22
 tweet_id: "1337129803590201344"

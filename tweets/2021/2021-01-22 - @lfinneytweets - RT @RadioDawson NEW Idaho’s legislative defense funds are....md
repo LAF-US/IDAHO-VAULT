@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson NEW Idaho\u2019s legislative defense funds are..."
 date: 2021-01-22
 time: 19:15:31
 tweet_id: "1352696413092626432"

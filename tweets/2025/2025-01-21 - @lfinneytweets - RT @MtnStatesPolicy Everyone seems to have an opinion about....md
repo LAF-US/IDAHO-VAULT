@@ -1,4 +1,5 @@
 ---
+title: "RT @MtnStatesPolicy Everyone seems to have an opinion about..."
 date: 2025-01-21
 time: 23:18:09
 tweet_id: "1881843756267409586"

@@ -1,4 +1,5 @@
 ---
+title: "RT @AngelaMWilhelm Asheville Police surround a medic..."
 date: 2020-06-04
 time: 07:12:54
 tweet_id: "1268440574148743168"

@@ -69,7 +69,7 @@ The Pareto Router is a way to have OpenRouter always pick a strong coding model 
 
 The Pareto Router is tuned for coding use cases. Under the hood it keeps a curated shortlist of strong coding models currently available on OpenRouter. The exact shortlist and selection logic evolve over time as new models land and benchmarks shift.
 
-](https://openrouter.ai/openrouter/pareto-code)[Elephant](https://openrouter.ai/openrouter/elephant-alpha)
+](<https://openrouter.ai/openrouter/pareto-code)[Elephant>](<https://openrouter.ai/openrouter/elephant-alpha>)
 
 [
 
@@ -77,7 +77,7 @@ Elephant Alpha is a 100B-parameter text model focused on intelligence efficiency
 
 Note: Prompts and completions may be logged by the provider and used to improve the model.
 
-](https://openrouter.ai/openrouter/elephant-alpha)[Hunter Alpha](https://openrouter.ai/openrouter/hunter-alpha)
+](<https://openrouter.ai/openrouter/elephant-alpha)[Hunter> Alpha](<https://openrouter.ai/openrouter/hunter-alpha>)
 
 [
 
@@ -85,7 +85,7 @@ Hunter Alpha is a 1 Trillion parameter + 1M token context frontier intelligence 
 
 **Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.
 
-](https://openrouter.ai/openrouter/hunter-alpha)[Healer Alpha](https://openrouter.ai/openrouter/healer-alpha)
+](<https://openrouter.ai/openrouter/hunter-alpha)[Healer> Alpha](<https://openrouter.ai/openrouter/healer-alpha>)
 
 [
 
@@ -93,7 +93,7 @@ Healer Alpha is a frontier omni-modal model with vision, hearing, reasoning, and
 
 **Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.
 
-](https://openrouter.ai/openrouter/healer-alpha)[Aurora Alpha](https://openrouter.ai/openrouter/aurora-alpha)
+](<https://openrouter.ai/openrouter/healer-alpha)[Aurora> Alpha](<https://openrouter.ai/openrouter/aurora-alpha>)
 
 [
 
@@ -103,7 +103,7 @@ Default reasoning effort is set to medium for fast responses. For agentic coding
 
 Note: All prompts and completions for this model are logged by the provider and may be used to improve the model.
 
-](https://openrouter.ai/openrouter/aurora-alpha)[Pony Alpha](https://openrouter.ai/openrouter/pony-alpha)
+](<https://openrouter.ai/openrouter/aurora-alpha)[Pony> Alpha](<https://openrouter.ai/openrouter/pony-alpha>)
 
 [
 
@@ -111,7 +111,7 @@ Pony is a cutting-edge foundation model with strong performance in coding, agent
 
 **Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.
 
-](https://openrouter.ai/openrouter/pony-alpha)[Body Builder](https://openrouter.ai/openrouter/bodybuilder)
+](<https://openrouter.ai/openrouter/pony-alpha)[Body> Builder](<https://openrouter.ai/openrouter/bodybuilder>)
 
 [
 
@@ -121,7 +121,7 @@ This is useful for creating multi-model requests, custom model routers, or progr
 
 **BETA NOTICE**: Body Builder is in beta, and currently free. Pricing and functionality may change in the future.
 
-](https://openrouter.ai/openrouter/bodybuilder)[Bert-Nebulon Alpha](https://openrouter.ai/openrouter/bert-nebulon-alpha)
+](<https://openrouter.ai/openrouter/bodybuilder)[Bert-Nebulon> Alpha](<https://openrouter.ai/openrouter/bert-nebulon-alpha>)
 
 [
 
@@ -131,7 +131,7 @@ This is a cloaked model provided to the community to gather feedback. A general-
 
 **Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.
 
-](https://openrouter.ai/openrouter/bert-nebulon-alpha)[Sherlock Dash Alpha](https://openrouter.ai/openrouter/sherlock-dash-alpha)
+](<https://openrouter.ai/openrouter/bert-nebulon-alpha)[Sherlock> Dash Alpha](<https://openrouter.ai/openrouter/sherlock-dash-alpha>)
 
 [
 
@@ -141,7 +141,7 @@ This is a cloaked model provided to the community to gather feedback. A frontier
 
 **Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.
 
-](https://openrouter.ai/openrouter/sherlock-dash-alpha)[Sherlock Think Alpha](https://openrouter.ai/openrouter/sherlock-think-alpha)
+](<https://openrouter.ai/openrouter/sherlock-dash-alpha)[Sherlock> Think Alpha](<https://openrouter.ai/openrouter/sherlock-think-alpha>)
 
 [
 
@@ -151,7 +151,7 @@ This is a cloaked model provided to the community to gather feedback. A frontier
 
 **Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.
 
-](https://openrouter.ai/openrouter/sherlock-think-alpha)[Polaris Alpha](https://openrouter.ai/openrouter/polaris-alpha)
+](<https://openrouter.ai/openrouter/sherlock-think-alpha)[Polaris> Alpha](<https://openrouter.ai/openrouter/polaris-alpha>)
 
 [
 
@@ -161,7 +161,7 @@ This is a cloaked model provided to the community to gather feedback. A powerful
 
 **Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.
 
-](https://openrouter.ai/openrouter/polaris-alpha)[Andromeda Alpha](https://openrouter.ai/openrouter/andromeda-alpha)
+](<https://openrouter.ai/openrouter/polaris-alpha)[Andromeda> Alpha](<https://openrouter.ai/openrouter/andromeda-alpha>)
 
 [
 
@@ -171,7 +171,7 @@ This is a small reasoning VLM trained for image understanding. It's strengths in
 
 Note: All prompts and output are logged to improve the provider’s model and its product and services. Please do not upload any personal, confidential, or otherwise sensitive information. This is a trial use only. Do not use for production or business-critical systems.
 
-](https://openrouter.ai/openrouter/andromeda-alpha)[Sonoma Dusk Alpha](https://openrouter.ai/openrouter/sonoma-dusk-alpha)
+](<https://openrouter.ai/openrouter/andromeda-alpha)[Sonoma> Dusk Alpha](<https://openrouter.ai/openrouter/sonoma-dusk-alpha>)
 
 [
 
@@ -179,7 +179,7 @@ This is a cloaked model provided to the community to gather feedback. A fast and
 
 Note: It’s free to use during this testing period, and prompts and completions are logged by the model creator for feedback and training.
 
-](https://openrouter.ai/openrouter/sonoma-dusk-alpha)[Sonoma Sky Alpha](https://openrouter.ai/openrouter/sonoma-sky-alpha)
+](<https://openrouter.ai/openrouter/sonoma-dusk-alpha)[Sonoma> Sky Alpha](<https://openrouter.ai/openrouter/sonoma-sky-alpha>)
 
 [
 
@@ -187,7 +187,7 @@ This is a cloaked model provided to the community to gather feedback. A maximall
 
 Note: It’s free to use during this testing period, and prompts and completions are logged by the model creator for feedback and training.
 
-](https://openrouter.ai/openrouter/sonoma-sky-alpha)[Horizon Beta](https://openrouter.ai/openrouter/horizon-beta)
+](<https://openrouter.ai/openrouter/sonoma-sky-alpha)[Horizon> Beta](<https://openrouter.ai/openrouter/horizon-beta>)
 
 [
 
@@ -195,7 +195,7 @@ This is a cloaked model provided to the community to gather feedback. This is an
 
 Note: It’s free to use during this testing period, and prompts and completions are logged by the model creator for feedback and training.
 
-](https://openrouter.ai/openrouter/horizon-beta)[Horizon Alpha](https://openrouter.ai/openrouter/horizon-alpha)
+](<https://openrouter.ai/openrouter/horizon-beta)[Horizon> Alpha](<https://openrouter.ai/openrouter/horizon-alpha>)
 
 [
 
@@ -203,7 +203,7 @@ This was a cloaked model provided to the community to gather feedback. It has be
 
 Note: It’s free to use during this testing period, and prompts and completions are logged by the model creator for feedback and training.
 
-](https://openrouter.ai/openrouter/horizon-alpha)[Cypher Alpha](https://openrouter.ai/openrouter/cypher-alpha)
+](<https://openrouter.ai/openrouter/horizon-alpha)[Cypher> Alpha](<https://openrouter.ai/openrouter/cypher-alpha>)
 
 [
 
@@ -211,7 +211,7 @@ This is a cloaked model provided to the community to gather feedback. It's an al
 
 Note: All prompts and completions for this model are logged by the provider and may be used to improve the model and other products and services. You remain responsible for any required end user notices and consents and for ensuring that no personal, confidential, or otherwise sensitive information, including data from individuals under the age of 18, is submitted.
 
-](https://openrouter.ai/openrouter/cypher-alpha)[Optimus Alpha](https://openrouter.ai/openrouter/optimus-alpha)
+](<https://openrouter.ai/openrouter/cypher-alpha)[Optimus> Alpha](<https://openrouter.ai/openrouter/optimus-alpha>)
 
 [
 
@@ -219,7 +219,7 @@ This is a cloaked model provided to the community to gather feedback. It's geare
 
 **Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.
 
-](https://openrouter.ai/openrouter/optimus-alpha)[Quasar Alpha](https://openrouter.ai/openrouter/quasar-alpha)
+](<https://openrouter.ai/openrouter/optimus-alpha)[Quasar> Alpha](<https://openrouter.ai/openrouter/quasar-alpha>)
 
 [
 
@@ -227,13 +227,13 @@ This is a cloaked model provided to the community to gather feedback. It’s a p
 
 **Note:** All prompts and completions for this model are logged by the provider and may be used to improve the model.
 
-](https://openrouter.ai/openrouter/quasar-alpha)[Cinematika 7B](https://openrouter.ai/openrouter/cinematika-7b)
+](<https://openrouter.ai/openrouter/quasar-alpha)[Cinematika> 7B](<https://openrouter.ai/openrouter/cinematika-7b>)
 
 [
 
 This model is under development. Check the OpenRouter Discord for updates.
 
-](https://openrouter.ai/openrouter/cinematika-7b)[Auto Router](https://openrouter.ai/openrouter/auto)
+](<https://openrouter.ai/openrouter/cinematika-7b)[Auto> Router](<https://openrouter.ai/openrouter/auto>)
 
 [
 
@@ -245,4 +245,4 @@ Learn more, including how to customize the models for routing, in our docs."
 
 Requests will be routed to the following models:
 
-](https://openrouter.ai/openrouter/auto)
+](<https://openrouter.ai/openrouter/auto>)

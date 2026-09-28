@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe A short time after the crowd entered the..."
 date: 2020-07-16
 time: 19:46:04
 tweet_id: "1283850409056931840"

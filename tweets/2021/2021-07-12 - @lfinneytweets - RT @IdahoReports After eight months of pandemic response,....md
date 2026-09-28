@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports After eight months of pandemic response,..."
 date: 2021-07-12
 time: 20:38:07
 tweet_id: "1414685524258746368"

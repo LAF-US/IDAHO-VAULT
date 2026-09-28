@@ -1,4 +1,5 @@
 ---
+title: "That's a fair critique. Not the point of Twitter, but my..."
 date: 2020-07-17
 time: 18:04:09
 tweet_id: "1284187144722935808"

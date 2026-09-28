@@ -1,4 +1,5 @@
 ---
+title: "OK I hate the terms far-right and far-left, totally get..."
 date: 2024-05-22
 time: 19:17:14
 tweet_id: "1793360490602672244"

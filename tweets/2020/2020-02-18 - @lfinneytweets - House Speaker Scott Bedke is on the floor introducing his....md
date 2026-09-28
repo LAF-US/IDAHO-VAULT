@@ -1,4 +1,5 @@
 ---
+title: "House Speaker Scott Bedke is on the floor introducing his..."
 date: 2020-02-18
 time: 18:19:25
 tweet_id: "1229832808459190272"

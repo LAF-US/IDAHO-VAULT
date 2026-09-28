@@ -1,4 +1,5 @@
 ---
+title: "No action yet from the Idaho House on appropriations bills...."
 date: 2024-02-06
 time: 20:36:04
 tweet_id: "1754967215059665365"

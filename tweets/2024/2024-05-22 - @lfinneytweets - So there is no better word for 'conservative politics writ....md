@@ -1,4 +1,5 @@
 ---
+title: "So there is no better word for 'conservative politics writ..."
 date: 2024-05-22
 time: 19:38:49
 tweet_id: "1793365921643561111"

@@ -1,4 +1,5 @@
 ---
+title: "Boise is booming"
 date: 2021-07-08
 time: 01:24:30
 tweet_id: "1412945656503619588"

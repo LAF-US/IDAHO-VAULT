@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler \u201cDid we advertise it enough Or are there..."
 date: 2021-11-19
 time: 05:46:51
 tweet_id: "1461571651871514629"

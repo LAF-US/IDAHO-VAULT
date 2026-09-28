@@ -7,7 +7,7 @@ created: 2026-04-07
 ---
 ## Circle K eyes another Meridian location, modifies plans for Kuna station
 
-![](https://boisedev.com/wp-content/uploads/2024/03/03_CircleK_Favor-2048x1365.jpg)
+![alt text needed](https://boisedev.com/wp-content/uploads/2024/03/03_CircleK_Favor-2048x1365.jpg)
 
 A Circle K location in Texas. Photo: Courtesy Circle K/BusinessWire
 

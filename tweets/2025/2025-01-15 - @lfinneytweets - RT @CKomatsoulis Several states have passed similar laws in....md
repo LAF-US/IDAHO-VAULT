@@ -1,4 +1,5 @@
 ---
+title: "RT @CKomatsoulis Several states have passed similar laws in..."
 date: 2025-01-15
 time: 22:55:07
 tweet_id: "1879663633757819143"

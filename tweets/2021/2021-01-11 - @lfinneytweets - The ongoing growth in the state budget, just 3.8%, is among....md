@@ -1,4 +1,5 @@
 ---
+title: "The ongoing growth in the state budget, just 3.8%, is among..."
 date: 2021-01-11
 time: 20:36:49
 tweet_id: "1348730605823946752"
@@ -23,7 +24,7 @@ related:
   - idleg
 ---
 
-@GovernorLittle @IdahoController "The ongoing growth in the state budget, just 3.8%, is among the most conservative in years… Let’s continue to live within our means and make investments where they count.” #idpol #idleg 
+@GovernorLittle @IdahoController "The ongoing growth in the state budget, just 3.8%, is among the most conservative in years… Let’s continue to live within our means and make investments where they count.” #idpol #idleg
 -@GovernorLittle
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports SCOTUS ruled Thursday that wetlands need a..."
 date: 2023-05-26
 time: 03:08:30
 tweet_id: "1661932292527513600"

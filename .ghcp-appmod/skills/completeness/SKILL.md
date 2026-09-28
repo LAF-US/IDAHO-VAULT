@@ -35,7 +35,7 @@ Run script once from repo root and parse JSON for FEATURE_DIR and AVAILABLE_DOCS
 - TASKS = FEATURE_DIR/tasks.md
 - CHECKPOINTS_DIR = FEATURE_DIR/checkpoints/
 
-Bash example: `$KIT_ROOT/skills/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks` 
+Bash example: `$KIT_ROOT/skills/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks`
 PowerShell example: `$KIT_ROOT/skills/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks`
 
 Abort with an error message if any required file is missing.
@@ -46,7 +46,7 @@ For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot
 **REQUIRED — all must be loaded:**
 
 | Artifact | Path | Purpose |
-|----------|------|---------|
+| ---------- | ------ | --------- |
 | Constitution | `$APPMOD_DIR/constitution.md` | Principle compliance validation |
 | Specification | `FEATURE_DIR/spec.md` | Original requirements (REQ-XXX) + acceptance criteria + scope baseline |
 | Plan | `FEATURE_DIR/plan.md` | Architecture, phases, plan items |
@@ -55,7 +55,7 @@ For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot
 **REQUIRED — all checkpoints:**
 
 | Checkpoint | Path | Validates |
-|------------|------|-----------|
+| ------------ | ------ | ----------- |
 | spec-to-plan | `FEATURE_DIR/checkpoints/spec-to-plan.yaml` | REQ-XXX → Plan items |
 | plan-to-tasks | `FEATURE_DIR/checkpoints/plan-to-tasks.yaml` | Plan items → Tasks |
 | tasks-to-impl | `FEATURE_DIR/checkpoints/tasks-to-impl.yaml` | Tasks → Code changes |
@@ -71,6 +71,7 @@ For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot
    - Build aggregated error/warning list
 
 2. **Checkpoint validation report:**
+
    ```markdown
    ## Checkpoint Validation
    
@@ -106,6 +107,7 @@ Read the traceability data already persisted in `tasks-to-impl.yaml` by Implemen
 3. **Any break in the chain = CRITICAL error**
 
 Save verification result to `FEATURE_DIR/checkpoints/traceability-matrix.yaml`:
+
 ```yaml
 traceability:
   - requirement: "REQ-XXX"
@@ -171,14 +173,17 @@ This ensures the tasks-to-impl checkpoint mirrors the same pattern as spec-to-pl
 Perform targeted detection passes. Limit to 50 findings total.
 
 #### A. Implementation Gaps
+
 - Tasks with code changes that don't match their described intent
 - Plan items that are only partially realized in implementation
 
 #### B. Constitution Alignment
+
 - Any implementation pattern conflicting with a MUST principle
 - Missing mandated quality gates or practices from constitution
 
 #### C. Inconsistency Detection
+
 - Terminology drift between spec requirements and implementation
 - Data entities referenced in spec/plan but missing in implementation
 - API contracts defined in `contracts/` but not implemented
@@ -243,6 +248,7 @@ Write the migration summary report to `FEATURE_DIR/migration-summary.md`. This i
 Append the verdict section to the end of `FEATURE_DIR/migration-summary.md`:
 
 **PASS** (all conditions met):
+
 - All checkpoints passed with 100% coverage
 - All tasks completed with corresponding code changes
 - End-to-end traceability has no breaks
@@ -252,6 +258,7 @@ Append the verdict section to the end of `FEATURE_DIR/migration-summary.md`:
 → Append: "✓ Completeness check PASSED. Feature is ready for final review."
 
 **FAIL** (any condition unmet):
+
 - List all CRITICAL issues with specific remediation steps
 - Recommend which ImplementationAgent batch to re-run
 - Provide explicit task IDs that need attention

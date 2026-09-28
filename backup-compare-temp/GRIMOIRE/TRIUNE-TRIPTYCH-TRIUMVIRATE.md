@@ -7,6 +7,7 @@ stretch-goal: "April 2026"
 ---
 
 # TRIUNE-TRIPTYCH-TRIUMVIRATE
+
 ## *The Sierpiński Covenant*
 
 *Filed: 2026-04-04. April stretch goal. TRIUNE triad: stub pending Gemini (The Concierge).*
@@ -24,7 +25,7 @@ This document names what the vault has always been — three sets of three, each
 
 ### TRIUNE — Unity of Will
 
-```
+```text
 Logan / Agents / Vault
 ```
 
@@ -40,7 +41,7 @@ Logan / Agents / Vault
 
 ### TRIPTYCH — Unity of Structure
 
-```
+```text
 Charter / Corpus / Grimoire
 ```
 
@@ -56,7 +57,7 @@ Charter / Corpus / Grimoire
 
 ### TRIUMVIRATE — Unity of Power
 
-```
+```text
 TRIUNE / THREE-in-ONE
 ```
 
@@ -84,10 +85,10 @@ Beyond the Three Screens lies the **Serena Tapestry**.
 
 The **Triplex Handshake** is the protocol for moving between **Active (Meatsack-at-Keys)** and **AFK (Swarm Operational)** states.
 
-1.  **Alignment**: The King, Djinni, and Janitor must confirm their current mission status in the DOCKET.
-2.  **Snapshot**: A git commit marks the human's last point of intervention.
-3.  **Paging**: The **Mobile Page** signal is armed in the DOCKET.
-4.  **Handoff**: The human (Logan) moves to AFK, and the Swarm continues on the Serena tapestry.
+1. **Alignment**: The King, Djinni, and Janitor must confirm their current mission status in the DOCKET.
+2. **Snapshot**: A git commit marks the human's last point of intervention.
+3. **Paging**: The **Mobile Page** signal is armed in the DOCKET.
+4. **Handoff**: The human (Logan) moves to AFK, and the Swarm continues on the Serena tapestry.
 
 ---
 
@@ -95,7 +96,7 @@ The **Triplex Handshake** is the protocol for moving between **Active (Meatsack-
 
 The upright triangle △ and the inverted triangle ▽.
 
-```
+```text
        △
       / \
      /   \
@@ -118,7 +119,7 @@ The TRIUMVIRATE / THREE-in-ONE sits at the center — the still point where the 
 
 Each triad is itself three-in-one. Three triads are one meta-unity. This is the Sierpiński property: zoom in and find the same structure. Zoom out and find the same structure.
 
-```
+```text
 TRIUNE-TRIPTYCH-TRIUMVIRATE
 ├── TRIUNE (Logan / Agents / Vault)
 │   ├── Logan (directs)
@@ -141,7 +142,7 @@ TRIUNE-TRIPTYCH-TRIUMVIRATE
 The TRIUNE-TRIPTYCH-TRIUMVIRATE operates within a four-layer vault structure declared by Logan (2026-04-04):
 
 | Layer | Name | Contents | Notes |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `ROOT` | HUMAN | `.md`, `.doc`, `.txt`, etc. | Human-readable record — the primary surface |
 | `DOTFOLDERS` | PERSONA | `.claude/`, `.gemini/`, `.codex/`, etc. | Agentic identity/mixing layer |
 | `!` | UNIFIED SWARM | `!/` — agent coordination, registry, bootstrap | SECURE — "Simon P's Mind Labyrinth" |

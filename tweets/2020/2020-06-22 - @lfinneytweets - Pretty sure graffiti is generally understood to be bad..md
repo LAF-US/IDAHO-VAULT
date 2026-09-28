@@ -1,4 +1,5 @@
 ---
+title: "Pretty sure graffiti is generally understood to be bad."
 date: 2020-06-22
 time: 20:07:27
 tweet_id: "1275158479322284032"

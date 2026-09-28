@@ -1,4 +1,5 @@
 ---
+title: "RT @SenatorRisch I met with several nominees this week to..."
 date: 2024-12-05
 time: 17:16:38
 tweet_id: "1864720549454450765"

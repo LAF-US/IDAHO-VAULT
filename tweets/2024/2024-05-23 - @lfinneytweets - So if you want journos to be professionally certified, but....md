@@ -1,4 +1,5 @@
 ---
+title: "So if you want journos to be professionally certified, but..."
 date: 2024-05-23
 time: 16:07:19
 tweet_id: "1793675085548785904"

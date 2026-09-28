@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune A historic 19 Republican lawmakers lost..."
 date: 2022-05-19
 time: 19:01:19
 tweet_id: "1527363789749792775"

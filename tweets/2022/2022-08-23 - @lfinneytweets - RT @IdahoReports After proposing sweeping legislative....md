@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports After proposing sweeping legislative..."
 date: 2022-08-23
 time: 21:06:29
 tweet_id: "1562184526905761792"

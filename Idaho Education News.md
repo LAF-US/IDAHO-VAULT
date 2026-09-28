@@ -7,4 +7,4 @@ related:
 - State of Idaho
 authority: LOGAN
 ---
-State of Idaho education online news outlet based in Boise 
+State of Idaho education online news outlet based in Boise

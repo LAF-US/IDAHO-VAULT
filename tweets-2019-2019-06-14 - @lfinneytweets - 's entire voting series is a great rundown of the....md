@@ -18,10 +18,11 @@ related:
 ---
 
 @LouFoglia @cgpgrey's entire voting series is a great rundown of the structural obstacles a third party faces in the US vs other democracies
-https://t.co/T6vXFxe87t
+<https://t.co/T6vXFxe87t>
 
 ## Links
-- https://www.youtube.com/playlist?list=PLNCHVwtpeBY4mybPkHEnRxSOb7FQ2vF9c
+
+- <https://www.youtube.com/playlist?list=PLNCHVwtpeBY4mybPkHEnRxSOb7FQ2vF9c>
 
 *In reply to [@LouFoglia](https://twitter.com/LouFoglia)*
 

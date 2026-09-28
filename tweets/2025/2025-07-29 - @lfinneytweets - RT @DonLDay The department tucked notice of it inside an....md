@@ -1,4 +1,5 @@
 ---
+title: "RT @DonLDay The department tucked notice of it inside an..."
 date: 2025-07-29
 time: 23:23:57
 tweet_id: "1950336525436408243"

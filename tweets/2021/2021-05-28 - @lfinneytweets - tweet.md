@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-05-28
 time: 08:37:50
 tweet_id: "1398196806538825733"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/2Pgrcutt72
+<https://t.co/2Pgrcutt72>
 
 ## Links
-- https://x.com/lfinneytweets/status/1398033854540095489
+- <https://x.com/lfinneytweets/status/1398033854540095489>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

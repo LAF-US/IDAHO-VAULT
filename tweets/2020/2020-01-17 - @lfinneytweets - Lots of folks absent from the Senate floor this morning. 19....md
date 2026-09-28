@@ -1,4 +1,5 @@
 ---
+title: "Lots of folks absent from the Senate floor this morning. 19..."
 date: 2020-01-17
 time: 18:04:36
 tweet_id: "1218232670121009154"

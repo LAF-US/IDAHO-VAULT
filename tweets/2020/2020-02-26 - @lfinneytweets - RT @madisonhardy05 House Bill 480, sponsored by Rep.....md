@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 House Bill 480, sponsored by Rep...."
 date: 2020-02-26
 time: 23:50:11
 tweet_id: "1232815154103873536"

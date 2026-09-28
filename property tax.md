@@ -7,8 +7,7 @@ authority: LOGAN
 ---
 **Legislative History**
 Bills go through House Revenue and Taxation & Senate Local Government and Taxation
-- 
-
+-
 
 !History of Property Tax in Idaho.pdf
 

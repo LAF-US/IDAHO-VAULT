@@ -1,4 +1,5 @@
 ---
+title: "63% of Idaho is federal land. Locals can do a better job of..."
 date: 2018-03-10
 time: 23:17:11
 tweet_id: "972612358458822656"

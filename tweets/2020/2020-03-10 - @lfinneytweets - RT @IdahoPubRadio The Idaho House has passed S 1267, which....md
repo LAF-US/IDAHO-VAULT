@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The Idaho House has passed S 1267, which..."
 date: 2020-03-10
 time: 20:41:51
 tweet_id: "1237478798519439360"

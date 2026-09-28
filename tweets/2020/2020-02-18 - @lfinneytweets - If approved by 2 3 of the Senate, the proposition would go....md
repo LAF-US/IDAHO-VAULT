@@ -1,4 +1,5 @@
 ---
+title: "If approved by 2 3 of the Senate, the proposition would go..."
 date: 2020-02-18
 time: 18:30:21
 tweet_id: "1229835560811843584"

@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVB Idaho will see part of an annular solar eclipse on..."
 date: 2023-10-10
 time: 21:20:40
 tweet_id: "1711854281706647694"

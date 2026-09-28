@@ -1,4 +1,5 @@
 ---
+title: "And based on that voice vote for adjournment, it wasn't..."
 date: 2022-02-02
 time: 19:35:56
 tweet_id: "1488959387796344832"

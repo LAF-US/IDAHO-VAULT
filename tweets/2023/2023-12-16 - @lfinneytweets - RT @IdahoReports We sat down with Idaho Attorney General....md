@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports We sat down with Idaho Attorney General..."
 date: 2023-12-16
 time: 05:01:23
 tweet_id: "1735887825432940615"

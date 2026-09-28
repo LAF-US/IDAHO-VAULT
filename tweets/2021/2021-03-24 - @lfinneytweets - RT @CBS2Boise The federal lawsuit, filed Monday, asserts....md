@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise The federal lawsuit, filed Monday, asserts..."
 date: 2021-03-24
 time: 17:52:36
 tweet_id: "1374781208559714304"

@@ -1,4 +1,5 @@
 ---
+title: "Shout-out to @ryansuppe for getting me to actually dive..."
 date: 2024-04-20
 time: 02:03:20
 tweet_id: "1781503888727982553"
@@ -16,9 +17,10 @@ related:
   - lfinneytweets
 ---
 
-Shout-out to @ryansuppe for getting me to actually dive into @letterboxd https://t.co/QbO4E8sXNp
+Shout-out to @ryansuppe for getting me to actually dive into @letterboxd <https://t.co/QbO4E8sXNp>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GLksWKjb0AAaffC.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/GLksWKjb0AAaffC.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1781503888727982553)

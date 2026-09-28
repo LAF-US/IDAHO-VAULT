@@ -1,3 +1,6 @@
+---
+title: SLACK
+---
 # SLACK.md — IDAHO-VAULT
 
 **Load mechanism:** Slack CLI reads `.slack/hooks.json` and `.slack/config.json` (official CLI auto-load). This governance shim covers Slack AI and any Slack-based agent coordination.
@@ -36,4 +39,4 @@ See `VAULT-CONVENTIONS.md` — specifically the Vault ↔ Linear Operating Model
 - `CONSTITUTION.md` — Canonical vault governance authority
 - `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 - `!/AGENTS.md` — Full agent registry, capability tiers, and boundary rules
-- `!/__!__/!/! The world is quiet here/DOCKET.md` — Live swarm status board
+- [[DOCKET-POSTURE]] — the DOCKET coordination posture (canonical, single-source): THE DOCKET is the Court's register, **not** a live swarm status board

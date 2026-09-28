@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews Idaho provided $8 more per K-12 public..."
 date: 2020-07-03
 time: 17:57:44
 tweet_id: "1279112103626862592"

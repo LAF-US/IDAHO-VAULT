@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Senate fails, by one vote,..."
 date: 2021-04-19
 time: 17:49:17
 tweet_id: "1384202457882927107"

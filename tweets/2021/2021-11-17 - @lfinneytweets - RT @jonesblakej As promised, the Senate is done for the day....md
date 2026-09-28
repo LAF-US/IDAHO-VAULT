@@ -1,4 +1,5 @@
 ---
+title: "RT @jonesblakej As promised, the Senate is done for the day..."
 date: 2021-11-17
 time: 00:35:31
 tweet_id: "1460768527862824961"

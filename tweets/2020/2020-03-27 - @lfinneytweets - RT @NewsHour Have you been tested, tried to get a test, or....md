@@ -1,4 +1,5 @@
 ---
+title: "RT @NewsHour Have you been tested, tried to get a test, or..."
 date: 2020-03-27
 time: 20:47:29
 tweet_id: "1243640809448038400"

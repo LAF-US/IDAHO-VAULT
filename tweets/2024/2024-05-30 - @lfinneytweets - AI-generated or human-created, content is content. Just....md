@@ -1,4 +1,5 @@
 ---
+title: "AI-generated or human-created, content is content. Just..."
 date: 2024-05-30
 time: 01:50:43
 tweet_id: "1795996228062200080"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-AI-generated or human-created, content is content. 
+AI-generated or human-created, content is content.
 
 Just like a 2x4 and a sheet of particle board are both wood.
 

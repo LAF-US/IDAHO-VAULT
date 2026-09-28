@@ -1,4 +1,5 @@
 ---
+title: "RT @mckaycoppins Turns out one of the ringleaders of..."
 date: 2021-07-22
 time: 18:51:44
 tweet_id: "1418282633906167814"

@@ -1,4 +1,5 @@
 ---
+title: "#idleg #idpol"
 date: 2023-04-06
 time: 23:31:59
 tweet_id: "1644120797861277696"
@@ -18,9 +19,9 @@ related:
   - idpol
 ---
 
-#idleg #idpol https://t.co/aXIAOiE4KG
+\#idleg #idpol <https://t.co/aXIAOiE4KG>
 
 ## Links
-- https://x.com/sslibfriends/status/1644120626012082178
+- <https://x.com/sslibfriends/status/1644120626012082178>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1644120797861277696)

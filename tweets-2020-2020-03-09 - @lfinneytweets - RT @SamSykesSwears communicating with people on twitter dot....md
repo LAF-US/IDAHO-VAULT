@@ -15,9 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @SamSykesSwears: communicating with people on twitter dot com: https://t.co/R8WPlzVwyy
+RT @SamSykesSwears: communicating with people on twitter dot com: <https://t.co/R8WPlzVwyy>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/ESsj5NzU0AU1Z_y.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237133413813026818)

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The committee heard two hours of virtual..."
 date: 2023-02-08
 time: 02:00:04
 tweet_id: "1623139570115280896"

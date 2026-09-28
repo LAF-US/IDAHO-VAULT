@@ -1,4 +1,5 @@
 ---
+title: "RT @Poynter Begin with the idea that you are the writer,..."
 date: 2018-03-07
 time: 04:22:55
 tweet_id: "971239748944777218"

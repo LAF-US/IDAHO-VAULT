@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 In response to Rep. Goesling's..."
 date: 2020-01-22
 time: 18:19:08
 tweet_id: "1220048264382148608"

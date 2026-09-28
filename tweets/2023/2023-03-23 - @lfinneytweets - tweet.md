@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2023-03-23
 time: 21:02:59
 tweet_id: "1639009872015667200"
@@ -16,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@LorienScribbles https://t.co/dFG2dDTbyQ
+@LorienScribbles <https://t.co/dFG2dDTbyQ>
 
 ## Media
-- ![](https://pbs.twimg.com/media/Fr7uyv2aUAAS0g-.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/Fr7uyv2aUAAS0g-.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

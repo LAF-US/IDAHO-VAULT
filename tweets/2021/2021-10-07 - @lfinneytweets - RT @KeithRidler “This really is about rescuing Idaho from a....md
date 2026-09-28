@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler \u201cThis really is about rescuing Idaho from a..."
 date: 2021-10-07
 time: 20:27:39
 tweet_id: "1446210634366926867"

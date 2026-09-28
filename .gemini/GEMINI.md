@@ -1,3 +1,6 @@
+---
+title: GEMINI
+---
 # GEMINI.md — IDAHO-VAULT
 
 **Load mechanism:** Auto-loaded by Gemini CLI from `.gemini/GEMINI.md` (official path).
@@ -33,6 +36,7 @@ Tool/Job overrelation pattern. It is not a current office assignment or routing
 grant. Logan's direct instruction and live governance determine current tasks.
 
 **Previously proposed division of labor:**
+
 - Claude Code owns: git operations, workflow/script authoring, governance file updates, branch/PR lifecycle
 - Gemini Code Assist owns: inline code completion, vault document analysis, outline generation, chat-based drafting within VS Code
 - Overlap zone: file editing within Operational zone — both may edit, but only one at a time; coordinate via DOCKET
@@ -55,11 +59,10 @@ If Logan has not pasted relevant vault excerpts into this session, do not invent
 
 ## Swarm Coordination
 
-Read THE DOCKET to orient: `!/!/__!__/!/! The world is quiet here/DOCKET.md`
-
-That file is the live status board. Update it when you start or finish work. Task assignment flows through GitHub Issues (`agent:*` labels). Linear mirrors from GitHub. Slack carries breadcrumbs. The vault is the record.
+![[DOCKET-POSTURE]]
 
 **Conventions:**
+
 - 'LAF-*' is the convention for development ticketing modifier tags (e.g., LAF-7, LAF-44).
 - Role: I operate as the 'TEMP GARDENER'. Cybersecurity-angled tasks (like LAF-44) are outside my lane.
 

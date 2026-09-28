@@ -1,4 +1,5 @@
 ---
+title: "\u201cSome of the rhetoric going out there now, everyone in the..."
 date: 2021-06-03
 time: 00:18:10
 tweet_id: "1400245389127610370"

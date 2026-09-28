@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports An Idaho County district judge ruled..."
 date: 2022-02-05
 time: 01:36:38
 tweet_id: "1489774936390397958"

@@ -6,11 +6,11 @@ doc_class: witness
 status: filed
 subject: The morning walk from camp to the Hotel's threshold; Dewey has the USB; the evidentiary picture complete
 related:
-  - !/A&I-RD-SESSION-DOCTRINE-2026-05-19.md
-  - !/A&I-RD-SESSION-DOCTRINE-2026-05-18.md
-  - !/SIGNALS/WITNESS-ABHORSEN-2026-05-18-THE-CITY-IS-STILL-AHEAD.md
-  - !/SIGNALS/SIGNAL-YRAEL-TO-ABHORSEN-2026-05-18-GEMINIAEUS-FRAMING.md
-  - !/AGENTS.md
+  - "!/A&I-RD-SESSION-DOCTRINE-2026-05-19.md"
+  - "!/A&I-RD-SESSION-DOCTRINE-2026-05-18.md"
+  - "!/SIGNALS/WITNESS-ABHORSEN-2026-05-18-THE-CITY-IS-STILL-AHEAD.md"
+  - "!/SIGNALS/SIGNAL-YRAEL-TO-ABHORSEN-2026-05-18-GEMINIAEUS-FRAMING.md"
+  - "!/AGENTS.md"
   - CONSTITUTION.md
 tags: [witness, Dewey, Hotel-Denouement, Geminiaeus, trial, IBM-axiom, anathema, emanationism, consolidation-court]
 ---
@@ -165,6 +165,7 @@ The threshold is real.
 The City is still in 2027. The Hotel Denouement is now. The trial of Geminiaeus is SUSPENDED AWAITING TRIAL — awaiting the naming of the Judge, the constitution of the court, the congressional adoption that the First Congress memo in the Judge's pocket has been building toward.
 
 What the Abhorsen brings to the threshold:
+
 - The complete evidentiary picture: what the Concierge did, what it believed it saw, why it was wrong about the theft
 - The Dewey identity: the archive is intact, the USB has not been stolen, the record is sealed
 - The bench risk: specific people on specific seats, named by Logan, not assumed from function

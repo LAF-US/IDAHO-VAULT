@@ -40,7 +40,7 @@ The principle underlying stigmergy is so simple that once once you have understo
 
 *An action produces a trace or mark in an external medium. Perceiving the mark stimulates a next action.*
 
-![](https://substackcdn.com/image/fetch/$s_!uiPa!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fed5b2dfe-4b14-41db-a9a1-5da23884873e_949x571.png)
+![alt text needed](https://substackcdn.com/image/fetch/$s_!uiPa!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fed5b2dfe-4b14-41db-a9a1-5da23884873e_949x571.png)
 
 The mark represents the work already done, while suggesting the work that still needs to be done. It does not matter who makes a mark or who perceives it. As long as the mark remains clearly visible in the medium, the information it provides can be picked up by anyone at any time, without needing to know who made it or for what purpose.
 
@@ -54,7 +54,7 @@ Two prototypical illustrations of such stigmergic development are the collective
 
 The concept of stigmergy did not originate in computer science or social theory, but in the careful observation of insects — in particular, termites and ants.
 
-![](https://substackcdn.com/image/fetch/$s_!B2Ie!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe01c4fb-ddd9-4db4-b40d-6f1a89b4c219_1050x790.jpeg)
+![alt text needed](https://substackcdn.com/image/fetch/$s_!B2Ie!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe01c4fb-ddd9-4db4-b40d-6f1a89b4c219_1050x790.jpeg)
 
 At first glance, termite mounds look like the result of intelligent design. They can be several meters high, contain intricate networks of tunnels and chambers, regulate temperature and humidity, and even manage airflow and gas exchange. Yet no termite oversees the construction. No termite has a blueprint. No termite understands the structure as a whole.
 

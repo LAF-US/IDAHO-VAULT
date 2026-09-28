@@ -1,4 +1,5 @@
 ---
+title: "Concurrent resolution to end the state of emergency heads..."
 date: 2020-08-25
 time: 01:28:05
 tweet_id: "1298069603566854144"

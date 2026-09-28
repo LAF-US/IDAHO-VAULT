@@ -1,4 +1,5 @@
 ---
+title: "RT @pbump I did something good I made Juneteenth very..."
 date: 2020-06-19
 time: 01:25:36
 tweet_id: "1273788995248328704"

@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin While overall state general fund spending..."
 date: 2021-05-19
 time: 15:26:59
 tweet_id: "1395038280593248261"

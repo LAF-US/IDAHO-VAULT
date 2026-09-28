@@ -1,4 +1,5 @@
 ---
+title: "RT @sallykrutzig Last year, Utah and Alabama became the..."
 date: 2024-01-09
 time: 00:07:17
 tweet_id: "1744511122886312063"

@@ -1,4 +1,5 @@
 ---
+title: "\ud83d\udd14 it's only the first day has entered the special session..."
 date: 2020-08-24
 time: 22:11:41
 tweet_id: "1298020179180494849"
@@ -16,9 +17,9 @@ related:
   - idleg
 ---
 
-🔔 "it's only the first day" has entered the special session lexicon. Buckle down, folks. #idleg https://t.co/skprOTg2cD
+🔔 "it's only the first day" has entered the special session lexicon. Buckle down, folks. #idleg <https://t.co/skprOTg2cD>
 
 ## Links
-- https://x.com/RuthBrownNews/status/1298019191291699201
+- <https://x.com/RuthBrownNews/status/1298019191291699201>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1298020179180494849)

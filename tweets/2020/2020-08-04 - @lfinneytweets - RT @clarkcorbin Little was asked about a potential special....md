@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Little was asked about a potential special..."
 date: 2020-08-04
 time: 18:39:08
 tweet_id: "1290718933591265280"

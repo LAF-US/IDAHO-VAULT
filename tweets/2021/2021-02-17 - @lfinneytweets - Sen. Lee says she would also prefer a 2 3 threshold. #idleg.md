@@ -1,4 +1,5 @@
 ---
+title: "Sen. Lee says she would also prefer a 2 3 threshold. #idleg"
 date: 2021-02-17
 time: 16:19:14
 tweet_id: "1362074133207470082"

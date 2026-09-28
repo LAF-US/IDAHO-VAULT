@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The legislature's budget process can be..."
 date: 2026-02-20
 time: 19:59:49
 tweet_id: "2024937051930722408"

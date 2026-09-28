@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Dem race for governor takes..."
 date: 2022-04-18
 time: 16:46:59
 tweet_id: "1516095961377910785"

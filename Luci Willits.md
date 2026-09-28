@@ -5,4 +5,5 @@ related:
 authority: LOGAN
 ---
 Residence: Boise
-- Republican member of Boise city council 
+
+- Republican member of Boise city council

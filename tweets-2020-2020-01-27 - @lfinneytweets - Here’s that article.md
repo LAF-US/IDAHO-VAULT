@@ -16,10 +16,11 @@ related:
   - lfinneytweets
 ---
 
-@TheIdahoPress Here’s that article: https://t.co/nTh5JvDxLX
+@TheIdahoPress Here’s that article: <https://t.co/nTh5JvDxLX>
 
 ## Links
-- https://www.idahopress.com/community/the-true-story-of-chicken-dinner-road/article_f1f3d66d-fc93-527a-af6b-93b22bfc7788.html
+
+- <https://www.idahopress.com/community/the-true-story-of-chicken-dinner-road/article_f1f3d66d-fc93-527a-af6b-93b22bfc7788.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

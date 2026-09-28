@@ -1,4 +1,5 @@
 ---
+title: "After living in the valley for a few months, I appreciate..."
 date: 2020-05-06
 time: 21:52:09
 tweet_id: "1258152596985933824"

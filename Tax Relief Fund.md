@@ -1,3 +1,3 @@
 ---
 ---
-Fund for tax relief for the Legislature 
+Fund for tax relief for the Legislature

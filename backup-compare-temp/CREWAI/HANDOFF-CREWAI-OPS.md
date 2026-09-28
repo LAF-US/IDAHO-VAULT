@@ -14,6 +14,7 @@ How to run, inspect, and extend the CrewAI harbor in IDAHO-VAULT.
 ## Prerequisites
 
 1. **Python 3.13+** with venv active:
+
    ```bash
    cd /path/to/IDAHO-VAULT
    source .venv/bin/activate  # Linux/macOS
@@ -21,15 +22,19 @@ How to run, inspect, and extend the CrewAI harbor in IDAHO-VAULT.
    ```
 
 2. **Dependencies installed:**
+
    ```bash
    pip install -r requirements.txt
    ```
+
    Key packages: `crewai[tools,anthropic]>=1.12.0`, `python-dotenv>=1.0.0`
 
 3. **API key in `.env`** (gitignored — never committed):
-   ```
+
+   ```text
    ANTHROPIC_API_KEY=sk-ant-...
    ```
+
    Fetch from [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys).
    Account must have API credits loaded at [console.anthropic.com/settings/plans](https://console.anthropic.com/settings/plans).
 
@@ -45,12 +50,14 @@ python .crewai/run_jfac.py
 ```
 
 **What happens:**
+
 1. Loads `.env` for API key
 2. Instantiates 3 agents (Budget Scout, Legislative Tracker, H911 Parser)
 3. Runs 5 sequential tasks (WHO, WHAT, WHEN, WHERE, WHY)
 4. Writes output to `!/CREWAI/jfac-analysis-{run_id}.md`
 
 **Inputs consumed:**
+
 - `minidata-*.csv` — dated JFAC minidata snapshots (vault root)
 - `legislature.idaho.gov` — live bill status (scraped by bill_status_checker tool)
 
@@ -81,7 +88,7 @@ crew_run_id: "{run_id}"
 ## Ephemeral vs. Durable
 
 | Surface | Persisted? | Location |
-|---|---|---|
+| --- | --- | --- |
 | Crew output (analysis files) | **Yes** — committed to vault | `!/CREWAI/` |
 | Runtime cache | No — gitignored | `.crewai_cache/` |
 | Execution logs | No — gitignored | `.crewai/logs/` |
@@ -123,7 +130,7 @@ crew_run_id: "{run_id}"
 
 ## Architecture
 
-```
+```text
 .crewai/                    ← Code/config (committed)
   crews/                    ← Crew definitions
     jfac_crew.py            ← JFAC Parser (active)

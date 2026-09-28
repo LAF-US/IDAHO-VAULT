@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Season 50, Episode 11 K-12 Wishlist......"
 date: 2022-01-22
 time: 03:17:50
 tweet_id: "1484726974622748678"
@@ -21,9 +22,9 @@ related:
 ---
 
 RT @IdahoReports: Season 50, Episode 11: K-12 Wishlist... #idleg #idpol 
-https://t.co/PSrqOO0kSA
+<https://t.co/PSrqOO0kSA>
 
 ## Links
-- https://video.idahoptv.org/video/k-12-wish-list-wpysel/
+- <https://video.idahoptv.org/video/k-12-wish-list-wpysel/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1484726974622748678)

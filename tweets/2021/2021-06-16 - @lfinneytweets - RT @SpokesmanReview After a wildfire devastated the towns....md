@@ -1,4 +1,5 @@
 ---
+title: "RT @SpokesmanReview After a wildfire devastated the towns..."
 date: 2021-06-16
 time: 00:02:09
 tweet_id: "1404952398972420096"

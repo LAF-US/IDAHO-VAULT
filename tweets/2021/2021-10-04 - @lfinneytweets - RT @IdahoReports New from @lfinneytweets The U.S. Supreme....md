@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports New from @lfinneytweets The U.S. Supreme..."
 date: 2021-10-04
 time: 19:57:30
 tweet_id: "1445115886663135237"

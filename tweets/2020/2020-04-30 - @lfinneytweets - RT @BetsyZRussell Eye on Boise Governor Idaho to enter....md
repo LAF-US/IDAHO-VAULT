@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Governor Idaho to enter..."
 date: 2020-04-30
 time: 19:32:34
 tweet_id: "1255943143326793728"

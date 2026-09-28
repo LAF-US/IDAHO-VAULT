@@ -1,4 +1,5 @@
 ---
+title: "I guess if you social distance well enough in Bonners Ferry..."
 date: 2020-04-09
 time: 19:57:42
 tweet_id: "1248339322597543937"

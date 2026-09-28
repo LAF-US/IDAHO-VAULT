@@ -13,9 +13,10 @@ related:
   - lfinneytweets
 ---
 
-Similar language remains in the state constitution as well. If a new post-Kennedy, conservative-leaning Supreme Court chose to overrule Obergefell v. Hodges, how would that affect Idaho's same-sex couples? https://t.co/xiwpSHWYV1
+Similar language remains in the state constitution as well. If a new post-Kennedy, conservative-leaning Supreme Court chose to overrule Obergefell v. Hodges, how would that affect Idaho's same-sex couples? <https://t.co/xiwpSHWYV1>
 
 ## Links
-- https://x.com/kkruesi/status/1013105602736689152
+
+- <https://x.com/kkruesi/status/1013105602736689152>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1013181399761735681)

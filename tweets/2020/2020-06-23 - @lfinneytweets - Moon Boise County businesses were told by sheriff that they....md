@@ -1,4 +1,5 @@
 ---
+title: "Moon Boise County businesses were told by sheriff that they..."
 date: 2020-06-23
 time: 15:42:55
 tweet_id: "1275454295295422466"

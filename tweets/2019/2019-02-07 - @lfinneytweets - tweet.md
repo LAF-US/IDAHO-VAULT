@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2019-02-07
 time: 17:28:38
 tweet_id: "1093562190156558336"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/v2XcGG8UOc
+<https://t.co/v2XcGG8UOc>
 
 ## Links
-- https://issuu.com/uiargonaut/docs/the_argonaut___feb._7__2019
+- <https://issuu.com/uiargonaut/docs/the_argonaut___feb._7__2019>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

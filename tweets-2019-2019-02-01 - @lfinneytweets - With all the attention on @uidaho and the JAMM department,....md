@@ -18,10 +18,11 @@ related:
   - reinstatedenise
 ---
 
-With all the attention on @uidaho and the JAMM department, we're trying to raise funds for the studio and student equipment checkout. Help out if you can! #reinstatedenise 
-https://t.co/KMwZuxFyCd
+With all the attention on @uidaho and the JAMM department, we're trying to raise funds for the studio and student equipment checkout. Help out if you can! #reinstatedenise
+<https://t.co/KMwZuxFyCd>
 
 ## Links
-- https://www.gofundme.com/uidaho-jamm-education
+
+- <https://www.gofundme.com/uidaho-jamm-education>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1091433180140167168)

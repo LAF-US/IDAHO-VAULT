@@ -8,7 +8,7 @@ REM   phone-link-intake.bat --dry-run    (preview only)
 REM   phone-link-intake.bat --copy       (copy instead of move)
 
 cd /d "%~dp0"
-python .github/scripts/phone_link_intake.py %*
+python scripts_scripts/phone_link_intake.py %*
 if %ERRORLEVEL% NEQ 0 (
     echo.
     echo Intake failed. Check output above.

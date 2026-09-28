@@ -5,4 +5,4 @@ related:
 - Idaho Republican Party
 authority: LOGAN
 ---
-Local Idaho Republican Party precinct committee for Gem County 
+Local Idaho Republican Party precinct committee for Gem County

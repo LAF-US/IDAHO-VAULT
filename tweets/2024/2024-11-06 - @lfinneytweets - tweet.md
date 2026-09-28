@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2024-11-06
 time: 09:41:17
 tweet_id: "1854096710064275858"
@@ -15,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-@HurstforIdaho https://t.co/xxllcbJEcW
+@HurstforIdaho <https://t.co/xxllcbJEcW>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GbsTIE0boAEIuGz.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GbsTIE0boAEIuGz.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1854096710064275858)

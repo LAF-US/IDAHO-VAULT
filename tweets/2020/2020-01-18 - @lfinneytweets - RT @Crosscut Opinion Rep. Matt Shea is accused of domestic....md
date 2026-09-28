@@ -1,4 +1,5 @@
 ---
+title: "RT @Crosscut Opinion Rep. Matt Shea is accused of domestic..."
 date: 2020-01-18
 time: 05:27:34
 tweet_id: "1218404542422736897"

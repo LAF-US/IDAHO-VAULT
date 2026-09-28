@@ -1,4 +1,5 @@
 ---
+title: "RT @NWPBroadcasting The Idaho Senate voted unanimously to..."
 date: 2021-02-19
 time: 01:23:18
 tweet_id: "1362573439412948995"

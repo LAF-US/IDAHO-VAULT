@@ -15,9 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @CBS2Boise: You can see the Treefort's countdown was... slightly adjusted in downtown Boise Wednesday. https://t.co/tMz18ECkZu https://t…
+RT @CBS2Boise: You can see the Treefort's countdown was... slightly adjusted in downtown Boise Wednesday. <https://t.co/tMz18ECkZu> <https://t…>
 
 ## Links
-- https://bit.ly/33bUalo
+
+- <https://bit.ly/33bUalo>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237857730460712960)

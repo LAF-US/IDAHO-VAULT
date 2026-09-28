@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Inspectors detected and cleaned the..."
 date: 2024-03-13
 time: 23:19:09
 tweet_id: "1768054220035637551"

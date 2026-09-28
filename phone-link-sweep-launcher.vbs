@@ -1,8 +1,12 @@
-Dim oShell, oEnv, sScript
+Dim oShell, fso, scriptDir, launcher
 Set oShell = CreateObject("WScript.Shell")
-Set oEnv = oShell.Environment("Process")
-oEnv("SWEEP_SCRIPT") = "C:\Users\loganf\Documents\IDAHO-VAULT\phone-link-auto-sweep.ps1"
-sScript = "powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File ""%SWEEP_SCRIPT%"""
-oShell.Run sScript, 0, False
+Set fso = CreateObject("Scripting.FileSystemObject")
+
+scriptDir = fso.GetParentFolderName(WScript.ScriptFullName)
+launcher = fso.BuildPath(scriptDir, "START-PHONE-LINK-SWEEP.cmd")
+
+oShell.Run """" & launcher & """", 0, False
+
+Set fso = Nothing
 Set oShell = Nothing
 WScript.Quit 0

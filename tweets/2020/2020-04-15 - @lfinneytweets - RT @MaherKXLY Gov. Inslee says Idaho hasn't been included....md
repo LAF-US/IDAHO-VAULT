@@ -1,4 +1,5 @@
 ---
+title: "RT @MaherKXLY Gov. Inslee says Idaho hasn't been included..."
 date: 2020-04-15
 time: 00:07:39
 tweet_id: "1250214165530021888"

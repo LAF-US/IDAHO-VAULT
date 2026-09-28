@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoMtExpress The #wind project\u2014proposed by Magic..."
 date: 2023-03-04
 time: 01:22:21
 tweet_id: "1631827385954828289"

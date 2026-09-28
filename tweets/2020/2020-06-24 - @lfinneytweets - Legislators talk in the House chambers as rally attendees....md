@@ -1,4 +1,5 @@
 ---
+title: "Legislators talk in the House chambers as rally attendees..."
 date: 2020-06-24
 time: 04:50:33
 tweet_id: "1275652510351527939"
@@ -14,11 +15,12 @@ related:
   - lfinneytweets
 ---
 
-Legislators talk in the House chambers as rally attendees enter the gallery. https://t.co/ayT2K9ARGC
+Legislators talk in the House chambers as rally attendees enter the gallery. <https://t.co/ayT2K9ARGC>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQDMPEXQAAYVco.jpg)
-- ![](https://pbs.twimg.com/media/EbQDMPDWAAAF_a3.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EbQDMPEXQAAYVco.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQDMPDWAAAF_a3.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

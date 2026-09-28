@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 Some education leaders and lobbyists are..."
 date: 2022-01-27
 time: 17:04:26
 tweet_id: "1486746935369166848"

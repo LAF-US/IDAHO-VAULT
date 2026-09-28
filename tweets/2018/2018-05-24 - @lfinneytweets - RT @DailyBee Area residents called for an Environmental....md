@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee Area residents called for an Environmental..."
 date: 2018-05-24
 time: 19:38:25
 tweet_id: "999736394946760704"

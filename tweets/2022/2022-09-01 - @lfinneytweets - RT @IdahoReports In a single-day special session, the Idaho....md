@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports In a single-day special session, the Idaho..."
 date: 2022-09-01
 time: 23:56:30
 tweet_id: "1565488801899618306"

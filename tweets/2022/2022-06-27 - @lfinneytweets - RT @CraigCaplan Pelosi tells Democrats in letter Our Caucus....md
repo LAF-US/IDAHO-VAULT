@@ -1,4 +1,5 @@
 ---
+title: "RT @CraigCaplan Pelosi tells Democrats in letter Our Caucus..."
 date: 2022-06-27
 time: 21:01:15
 tweet_id: "1541527099265077248"

@@ -1,4 +1,5 @@
 ---
+title: "Post-election audit in Valley County, ID #idleg #idpol..."
 date: 2024-06-03
 time: 20:42:25
 tweet_id: "1797730581868159483"
@@ -20,12 +21,13 @@ related:
   - idpol
 ---
 
-Post-election audit in Valley County, ID #idleg #idpol @IDSecOfState https://t.co/fMoYoitTZX
+Post-election audit in Valley County, ID #idleg #idpol @IDSecOfState <https://t.co/fMoYoitTZX>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GPLSb1ZasAUj9Qf.jpg)
-- ![](https://pbs.twimg.com/media/GPLSb3dakAESQiD.jpg)
-- ![](https://pbs.twimg.com/media/GPLSb0fasAAa1kB.jpg)
-- ![](https://pbs.twimg.com/media/GPLSb7wakAApUR-.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/GPLSb1ZasAUj9Qf.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GPLSb3dakAESQiD.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GPLSb0fasAAa1kB.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GPLSb7wakAApUR-.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1797730581868159483)

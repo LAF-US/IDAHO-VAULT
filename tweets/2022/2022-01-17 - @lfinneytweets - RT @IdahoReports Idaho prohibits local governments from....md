@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Idaho prohibits local governments from..."
 date: 2022-01-17
 time: 23:13:45
 tweet_id: "1483215996970143747"

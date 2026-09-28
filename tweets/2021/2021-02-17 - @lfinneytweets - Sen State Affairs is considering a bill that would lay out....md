@@ -1,4 +1,5 @@
 ---
+title: "Sen State Affairs is considering a bill that would lay out..."
 date: 2021-02-17
 time: 15:44:39
 tweet_id: "1362065431943540736"

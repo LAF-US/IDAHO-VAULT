@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPTV \u201cAre you OK Why are you so sad Can we talk \u201d..."
 date: 2022-06-24
 time: 00:01:17
 tweet_id: "1540122856851329024"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPTV: “Are you OK? Why are you so sad? Can we talk?” 
+RT @IdahoPTV: “Are you OK? Why are you so sad? Can we talk?”
 
 Join IdahoPTV for a special discussion to learn how to have those difficult…
 

@@ -1,4 +1,5 @@
 ---
+title: "If you take the time to listen to both of them, they both..."
 date: 2020-07-17
 time: 16:46:23
 tweet_id: "1284167574658285570"
@@ -17,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-@Baby_Drool_17 @danielwinlander If you take the time to listen to both of them, they both genuinely believe that of the other side. Which means somebody's missing something here. 
+@Baby_Drool_17 @danielwinlander If you take the time to listen to both of them, they both genuinely believe that of the other side. Which means somebody's missing something here.
 
 I'm not interested in causes and ideological framing, I'm interested in people's actual lived experiences.
 

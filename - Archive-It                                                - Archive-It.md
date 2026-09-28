@@ -95,7 +95,7 @@ Preserving Virtual Worlds collection focusing on standalone digital games.
 
 [View collection](https://archive-it.org/collections/1023)
 
-![](https://media.archive-it.org/ait-public-site/images/UCS_logo_.format-avif.max-300x200.avif)
+![alt text needed](https://media.archive-it.org/ait-public-site/images/UCS_logo_.format-avif.max-300x200.avif)
 
 ### UCS Columns
 
@@ -143,7 +143,7 @@ The Marshall-Lyon County Library is comprised of three libraries in Southwestern
 
 [View collections](https://archive-it.org/organizations/1327)
 
-![](https://media.archive-it.org/ait-public-site/images/lincoln_center_icon.format-avif.max-300x200.avif)
+![alt text needed](https://media.archive-it.org/ait-public-site/images/lincoln_center_icon.format-avif.max-300x200.avif)
 
 ### Lincoln Center
 

@@ -1,4 +1,5 @@
 ---
+title: "Workers can\u2019t work if they can\u2019t afford to live where they..."
 date: 2021-10-05
 time: 18:06:29
 tweet_id: "1445450333165998081"
@@ -22,9 +23,9 @@ related:
 ---
 
 Workers can’t work if they can’t afford to live where they work. (via @lyndsie_kiebert @sndpnt_reader) #idleg #idpol 
-https://t.co/L3EzzfYvce
+<https://t.co/L3EzzfYvce>
 
 ## Links
-- https://sandpointreader.com/where-are-all-the-workers-part-iii/
+- <https://sandpointreader.com/where-are-all-the-workers-part-iii/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1445450333165998081)

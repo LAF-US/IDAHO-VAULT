@@ -1,4 +1,5 @@
 ---
+title: "I'll have a story on this proposal next week. #idleg"
 date: 2021-10-29
 time: 22:22:30
 tweet_id: "1454212070820364289"
@@ -16,9 +17,9 @@ related:
   - idleg
 ---
 
-I'll have a story on this proposal next week. #idleg https://t.co/7Mh8Ckkoif
+I'll have a story on this proposal next week. #idleg <https://t.co/7Mh8Ckkoif>
 
 ## Links
-- https://x.com/NecocheaforID/status/1454140624530149376
+- <https://x.com/NecocheaforID/status/1454140624530149376>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1454212070820364289)

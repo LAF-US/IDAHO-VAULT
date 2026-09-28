@@ -1,4 +1,5 @@
 ---
+title: "RT @Mikeemoyle The Senate just passed our $253 million..."
 date: 2025-03-04
 time: 19:18:28
 tweet_id: "1897003730408808560"

@@ -1,4 +1,5 @@
 ---
+title: "House Speaker Scott Bedke says the top priority for the..."
 date: 2021-01-11
 time: 22:01:21
 tweet_id: "1348751880134959111"

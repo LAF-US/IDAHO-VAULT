@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Marshall By us removing the standards right..."
 date: 2020-02-04
 time: 16:41:46
 tweet_id: "1224734804148539392"

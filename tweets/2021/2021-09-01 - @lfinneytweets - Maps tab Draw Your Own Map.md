@@ -1,4 +1,5 @@
 ---
+title: "Maps tab Draw Your Own Map"
 date: 2021-09-01
 time: 21:42:00
 tweet_id: "1433183385346658309"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/7DE15LQzx3 > Maps tab > Draw Your Own Map
+<https://t.co/7DE15LQzx3> > Maps tab > Draw Your Own Map
 
 ## Links
-- http://redistricting.idaho.gov
+- <http://redistricting.idaho.gov>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

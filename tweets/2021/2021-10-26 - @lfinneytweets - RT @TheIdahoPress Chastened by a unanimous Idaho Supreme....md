@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress Chastened by a unanimous Idaho Supreme..."
 date: 2021-10-26
 time: 22:54:26
 tweet_id: "1453132942742474753"

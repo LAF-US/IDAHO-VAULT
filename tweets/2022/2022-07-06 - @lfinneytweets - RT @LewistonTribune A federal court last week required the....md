@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune A federal court last week required the..."
 date: 2022-07-06
 time: 16:16:57
 tweet_id: "1544717042783117312"

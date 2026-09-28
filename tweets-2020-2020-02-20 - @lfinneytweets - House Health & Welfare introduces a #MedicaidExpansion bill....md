@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-House Health & Welfare introduces a #MedicaidExpansion bill that would phase out county indigent care programs & state catastrophic health care fund over the course of a year. 
+House Health & Welfare introduces a #MedicaidExpansion bill that would phase out county indigent care programs & state catastrophic health care fund over the course of a year.
 The bill would take a portion of counties’ share of sales taxes to help fund expansion. #idleg #idpol
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230527026097844224)

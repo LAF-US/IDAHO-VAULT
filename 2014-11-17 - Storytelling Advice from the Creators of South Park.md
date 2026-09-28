@@ -22,7 +22,7 @@ Advertisement
 
 <iframe title="New York Times Video - Embed Player" src="https://static01.nyt.com/video/players/offsite/index.html?videoId=100000001039812" width="800px" height="400px" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
-## Recap!
+## Recap
 
 The rule is simple:
 

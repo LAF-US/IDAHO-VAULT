@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise My Sun. column Feeling the..."
 date: 2020-03-09
 time: 03:29:39
 tweet_id: "1236856649496891392"

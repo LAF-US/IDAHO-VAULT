@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune Life Care Center of Lewiston issued a..."
 date: 2020-04-18
 time: 00:44:53
 tweet_id: "1251310699386560513"

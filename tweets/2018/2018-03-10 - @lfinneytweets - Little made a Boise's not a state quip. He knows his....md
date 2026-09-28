@@ -1,4 +1,5 @@
 ---
+title: "Little made a Boise's not a state quip. He knows his..."
 date: 2018-03-10
 time: 23:18:49
 tweet_id: "972612769273978880"

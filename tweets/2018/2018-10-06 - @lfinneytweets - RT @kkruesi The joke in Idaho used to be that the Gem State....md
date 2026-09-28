@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi The joke in Idaho used to be that the Gem State..."
 date: 2018-10-06
 time: 08:39:37
 tweet_id: "1048492963528040448"

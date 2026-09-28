@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Professor whose work is..."
 date: 2020-03-20
 time: 02:51:02
 tweet_id: "1240833198575108096"

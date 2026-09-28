@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune Here is Thursday's @LewistonTribune..."
 date: 2020-05-07
 time: 07:23:12
 tweet_id: "1258296307258548224"

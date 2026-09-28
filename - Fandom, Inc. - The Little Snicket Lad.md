@@ -164,19 +164,19 @@ In a letter to Professor [Charley Patton](https://snicket.fandom.com/wiki/Charle
 Who took this?
 
 - First Verse:
-	- Snicket was not born on a cattle farm, but on [Valorous Farms Dairy](https://snicket.fandom.com/wiki/Valorous_Farms_Dairy "Valorous Farms Dairy"), a dairy farm that did not slaughter cattle. His family became associates with the cheesemakers after they helped with his delivery.
-		- He claims that his father, [Jacob Snicket](https://snicket.fandom.com/wiki/Jacob_Snicket "Jacob Snicket"), was only "known as Jake" to his longtime bridge partner, and was known as Jacob to everyone else.
-		- He also says that Robber Road is located across the country from where he was born, though the name may have been chosen to emphasize the thieving nature of the chorus.
+  - Snicket was not born on a cattle farm, but on [Valorous Farms Dairy](https://snicket.fandom.com/wiki/Valorous_Farms_Dairy "Valorous Farms Dairy"), a dairy farm that did not slaughter cattle. His family became associates with the cheesemakers after they helped with his delivery.
+    - He claims that his father, [Jacob Snicket](https://snicket.fandom.com/wiki/Jacob_Snicket "Jacob Snicket"), was only "known as Jake" to his longtime bridge partner, and was known as Jacob to everyone else.
+    - He also says that Robber Road is located across the country from where he was born, though the name may have been chosen to emphasize the thieving nature of the chorus.
 - Verse Two:
-	- Snicket says that his parents would never have indulged in silver cribs and silk diapers. He encloses a photograph taken by his stalkers as proof.
+  - Snicket says that his parents would never have indulged in silver cribs and silk diapers. He encloses a photograph taken by his stalkers as proof.
 - Verse Three:
-	- [Jacques Snicket](https://snicket.fandom.com/wiki/Jacques_Snicket "Jacques Snicket") insisted he was allowed to finish his tea before departure, but Snicket claims this was disputed over the years.
+  - [Jacques Snicket](https://snicket.fandom.com/wiki/Jacques_Snicket "Jacques Snicket") insisted he was allowed to finish his tea before departure, but Snicket claims this was disputed over the years.
 - Chorus:
-	- Snicket tried without success to look up the date of his kidnapping in an almanac, but was unable to verify that the moon was indeed gray.
-		- He claims that he was not taken while still in diapers or still crawling. He claims he will attach a photo of himself at the age he was taken; however, the photo he attaches seems to be of another child of the same age, implying that he is incorrect about this.
-		- Snicket also claims that he did return at some point; however, considering that [Gifford](https://snicket.fandom.com/wiki/Gifford "Gifford") and [Ghede](https://snicket.fandom.com/wiki/Ghede "Ghede") thought they would be able to impersonate his parents in order to abduct him,[^4] which implies that he would not know what his parents looked like, this could also be incorrect.
+  - Snicket tried without success to look up the date of his kidnapping in an almanac, but was unable to verify that the moon was indeed gray.
+    - He claims that he was not taken while still in diapers or still crawling. He claims he will attach a photo of himself at the age he was taken; however, the photo he attaches seems to be of another child of the same age, implying that he is incorrect about this.
+    - Snicket also claims that he did return at some point; however, considering that [Gifford](https://snicket.fandom.com/wiki/Gifford "Gifford") and [Ghede](https://snicket.fandom.com/wiki/Ghede "Ghede") thought they would be able to impersonate his parents in order to abduct him,[^4] which implies that he would not know what his parents looked like, this could also be incorrect.
 - Coda:
-	- Snicket says this is entirely accurate, though he does not see why it is in quotations.
+  - Snicket says this is entirely accurate, though he does not see why it is in quotations.
 
 ## Trivia
 
@@ -211,6 +211,7 @@ He fell upon the darkened ground and tried to crawl away...
 ## Appearances
 
 **Books**
+
 - *[Lemony Snicket: The Unauthorized Autobiography](https://snicket.fandom.com/wiki/Lemony_Snicket:_The_Unauthorized_Autobiography "Lemony Snicket: The Unauthorized Autobiography")*
 
 ## Sources

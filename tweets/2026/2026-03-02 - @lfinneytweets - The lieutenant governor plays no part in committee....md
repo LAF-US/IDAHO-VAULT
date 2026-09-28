@@ -1,4 +1,5 @@
 ---
+title: "The lieutenant governor plays no part in committee..."
 date: 2026-03-02
 time: 21:04:15
 tweet_id: "2028577144746750066"
@@ -16,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@brianalmon The lieutenant governor plays no part in committee referrals, only the Pro Tem does. Any senator could have objected to where the bill went and forced a vote over it. https://t.co/1x1PaTsC0W
+@brianalmon The lieutenant governor plays no part in committee referrals, only the Pro Tem does. Any senator could have objected to where the bill went and forced a vote over it. <https://t.co/1x1PaTsC0W>
 
 ## Media
-- ![](https://pbs.twimg.com/media/HCb0KBMbwAAPNsS.png)
+
+- ![alt text needed](https://pbs.twimg.com/media/HCb0KBMbwAAPNsS.png)
 
 *In reply to [@brianalmon](https://twitter.com/brianalmon)*
 

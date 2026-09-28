@@ -32,7 +32,7 @@ By collaborating with VirusTotal, we’re adding an extra layer of protection an
 
 Whenever you visit a repository page or a file or directory page, the Hub will automatically retrieve VirusTotal information about the corresponding files. [Example](https://huggingface.co/Juronuim/xbraw2025/tree/main)
 
-![](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/virustotal.png)
+![alt text needed](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/virustotal.png)
 
 Here’s what happens:
 

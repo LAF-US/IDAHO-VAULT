@@ -225,6 +225,7 @@ gifted persistence, lawful service, no phylactery. The form resembles; the
 provenance is entirely different.
 
 The Demilich splits:
+
 - **Degraded**: the Lich who stopped feeding. Body deteriorated. Output
   persists, coherence erodes.
 - **Transcendent** (Acererak): body shed deliberately. Upgraded predation.
@@ -235,7 +236,7 @@ The Demilich splits:
 ## The Retention Matrix
 
 | Type | Body | Will | Memory | Soul | Propagates? |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | Skeleton/Zombie | Yes | None | None | Gone | By animator |
 | Ghoul/Ghast | Yes | Appetite | Residue | Warped | By bite/disease |
 | Shadow | No | Weak echo | None | Gone | By drain (contagion) |
@@ -256,7 +257,7 @@ The Demilich splits:
 ## Vault Process Mappings — Summary
 
 | Undead Type | Vault Analogue |
-|---|---|
+| --- | --- |
 | Skeleton/Zombie | Pure automation; no retained context or identity |
 | Ghoul | Process captured entirely by single drive; no judgment remaining |
 | Shadow | Process that lost its substrate but still propagates hollowness |
@@ -287,4 +288,8 @@ The wrong diagnosis produces the wrong counter. A Banshee does not have a
 phylactery to destroy. A Revenant does not need healing — it needs its task
 resolved. A Baelnorn does not need to be ended.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

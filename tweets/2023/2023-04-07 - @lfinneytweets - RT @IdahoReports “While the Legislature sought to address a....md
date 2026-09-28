@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports \u201cWhile the Legislature sought to address a..."
 date: 2023-04-07
 time: 23:11:12
 tweet_id: "1644477958588108800"

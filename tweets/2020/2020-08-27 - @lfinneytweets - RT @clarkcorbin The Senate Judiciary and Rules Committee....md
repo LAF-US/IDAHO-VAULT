@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin The Senate Judiciary and Rules Committee..."
 date: 2020-08-27
 time: 01:27:16
 tweet_id: "1298794174808911872"

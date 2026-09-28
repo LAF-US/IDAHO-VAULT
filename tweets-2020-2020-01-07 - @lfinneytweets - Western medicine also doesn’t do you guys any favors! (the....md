@@ -13,10 +13,11 @@ related:
   - lfinneytweets
 ---
 
-@davlinnews Western medicine also doesn’t do you guys any favors! https://t.co/BrME430uJU
+@davlinnews Western medicine also doesn’t do you guys any favors! <https://t.co/BrME430uJU>
 (the article mostly talks about toilets but it touches on birth near the end)
 
 ## Links
-- https://qz.com/quartzy/1121077/to-solve-problems-caused-by-sitting-learn-to-squat/
+
+- <https://qz.com/quartzy/1121077/to-solve-problems-caused-by-sitting-learn-to-squat/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1214634469157564416)

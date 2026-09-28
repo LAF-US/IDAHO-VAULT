@@ -1,4 +1,5 @@
 ---
+title: "Censure is a formal expression of disapproval. Committee..."
 date: 2021-08-03
 time: 18:54:23
 tweet_id: "1422631951928725506"

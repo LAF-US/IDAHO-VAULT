@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week, Senator @lori_denhartog..."
 date: 2021-01-16
 time: 01:02:02
 tweet_id: "1350246900323155970"

@@ -33,7 +33,7 @@ Push rules do not require any branch targeting because they apply to every push 
 Push rulesets allow you to:
 
 - **Restrict file paths:** Prevent commits that include changes in specified file paths from being pushed.
-	You can use `fnmatch` syntax for this. For example, a restriction targeting `test/demo/**/*` prevents any pushes to files or folders in the `test/demo/` directory. A restriction targeting `test/docs/pushrules.md` prevents pushes specifically to the `pushrules.md` file in the `test/docs/` directory. For more information, see [Creating rulesets for a repository](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository#using-fnmatch-syntax).
+ You can use `fnmatch` syntax for this. For example, a restriction targeting `test/demo/**/*` prevents any pushes to files or folders in the `test/demo/` directory. A restriction targeting `test/docs/pushrules.md` prevents pushes specifically to the `pushrules.md` file in the `test/docs/` directory. For more information, see [Creating rulesets for a repository](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository#using-fnmatch-syntax).
 - **Restrict file path length:** Prevent commits that include file paths that exceed a specified character limit from being pushed.
 - **Restrict file extensions:** Prevent commits that include files with specified file extensions from being pushed.
 - **Restrict file size:** Prevent commits that exceed a specified file size limit from being pushed.

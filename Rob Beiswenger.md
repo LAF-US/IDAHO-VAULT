@@ -8,5 +8,5 @@ related:
 - primary election
 authority: LOGAN
 ---
-Rep. from Legislative District 8 
-defeated Matt Bundy in primary election 
+Rep. from Legislative District 8
+defeated Matt Bundy in primary election

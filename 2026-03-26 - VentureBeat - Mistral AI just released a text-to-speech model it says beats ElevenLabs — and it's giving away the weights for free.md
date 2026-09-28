@@ -7,11 +7,11 @@ created: 2026-04-17
 ---
 Featured
 
-![nuneybits Vector art of burnt orange voice waves rising from a b4e149ce-8692-4f29-8c57-9d1ac9c21a08](https://venturebeat.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F72D5HGgYf4s3Pux8zzbC4I%2Fdce882939be8e43c79c3fe9baf9a5400%2Fnuneybits_Vector_a***REMOVED***of_burnt_orange_voice_waves_rising_from_a__b4e149ce-8692-4f29-8c57-9d1ac9c21a08.webp%3Fw%3D1000%26q%3D100&w=3840&q=85)
+![nuneybits Vector art of burnt orange voice waves rising from a b4e149ce-8692-4f29-8c57-9d1ac9c21a08](https://venturebeat.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F72D5HGgYf4s3Pux8zzbC4I%2Fdce882939be8e43c79c3fe9baf9a5400%2Fnuneybits_Vector_art_of_burnt_orange_voice_waves_rising_from_a__b4e149ce-8692-4f29-8c57-9d1ac9c21a08.webp%3Fw%3D1000%26q%3D100&w=3840&q=85)
 
 Credit: VentureBeat made with Midjourney
 
-The enterprise voice AI market is in the middle of a land grab. [ElevenLabs](https://newsroom.ibm.com/2026-03-25-enterprise-ai-finds-its-voice-elevenlabs-and-ibm-bring-premium-voice-capabilities-to-agentic-ai) and [IBM](https://newsroom.ibm.com/2026-03-25-enterprise-ai-finds-its-voice-elevenlabs-and-ibm-bring-premium-voice-capabilities-to-agentic-ai) announced a collaboration just this week to bring premium voice capabilities into IBM's watsonx Orchestrate platform. [Google Cloud](https://techcrunch.com/2025/03/17/google-adds-its-hd-voice-model-chirp-3-to-its-vertex-ai-platform/) has been expanding its Chirp 3 HD voices. [OpenAI](https://developers.openai.com/api/docs/guides/text-to-speech) continues to iterate on its own speech synthesis. And the market underpinning all of this activity is enormous — voice AI crossed $22 billion globally in 2026, with the voice AI agents segment alone projected to reach [$47.5 billion by 2034](https://www.londondaily.news/__sentry?ctype=balanced&uri=/voice-ai-agents-market-to-hit-usd-47-5-billion-by-2034/), according to industry estimates.
+The enterprise voice AI market is in the middle of a land grab. [ElevenLabs](https://newsroom.ibm.com/2026-03-25-enterprise-ai-finds-its-voice-elevenlabs-and-ibm-bring-premium-voice-capabilities-to-agentic-ai) and [IBM](https://newsroom.ibm.com/2026-03-25-enterprise-ai-finds-its-voice-elevenlabs-and-ibm-bring-premium-voice-capabilities-to-agentic-ai) announced a collaboration just this week to bring premium voice capabilities into IBM's watsonx Orchestrate platform. [Google Cloud](https://techcrunch.com/2025/03/17/google-adds-its-hd-voice-model-chirp-3-to-its-vertex-ai-platform/) has been expanding its Chirp 3 HD voices. [OpenAI](https://developers.openai.com/api/docs/guides/text-to-speech) continues to iterate on its own speech synthesis. And the market underpinning all of this activity is enormous — voice AI crossed $22 billion globally in 2026, with the voice AI agents segment alone projected to reach [$47.5 billion by 2034](<https://www.londondaily.news/__sentry?ctype=balanced&uri=/voice-ai-agents-market-to-hit-usd-47-5-billion-by-2034/>), according to industry estimates.
 
 On Thursday morning, [Mistral AI](https://mistral.ai/) entered that fight with a fundamentally different proposition. The Paris-based AI startup released [Voxtral TTS](https://mistral.ai/news/voxtral-tts), what it calls the first frontier-quality, open-weight text-to-speech model designed specifically for enterprise use. Where every major competitor in the space operates a proprietary, API-first business — enterprises rent the voice, they don't own it — Mistral is releasing the full model weights, inviting companies to download [Voxtral TTS](https://mistral.ai/news/voxtral-tts), run it on their own servers or even on a smartphone, and never send a single audio frame to a third party.
 
@@ -21,7 +21,7 @@ It is a bet that the future of enterprise voice AI will not be shaped by whoever
 
 "We see audio as a big bet and as a critical and maybe the only future interface with all the AI models," Pierre Stock, Mistral's vice president of science and the first employee hired at the company, said in an exclusive interview with VentureBeat. "This is something customers have been asking for."
 
-![](https://www.youtube.com/watch?v=_N-ZGjGSVls)
+![alt text needed](https://www.youtube.com/watch?v=_N-ZGjGSVls)
 
 ## A 3-billion-parameter model that fits on a laptop and runs six times faster than real-time speech
 

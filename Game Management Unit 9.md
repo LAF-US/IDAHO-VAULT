@@ -4,4 +4,4 @@ related:
 - Shoshone County
 authority: LOGAN
 ---
-southern Shoshone County 
+southern Shoshone County

@@ -15,9 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @k_talerico: Let's be blunt, Idaho: you're smoking a lot of Oregon weed. https://t.co/0mhDssfhxq
+RT @k_talerico: Let's be blunt, Idaho: you're smoking a lot of Oregon weed. <https://t.co/0mhDssfhxq>
 
 ## Links
-- https://www.idahostatesman.com/news/business/article239406113.html
+
+- <https://www.idahostatesman.com/news/business/article239406113.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1218323670264733696)

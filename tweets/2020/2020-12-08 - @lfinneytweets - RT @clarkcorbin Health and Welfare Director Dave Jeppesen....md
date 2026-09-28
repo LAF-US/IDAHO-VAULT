@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Health and Welfare Director Dave Jeppesen..."
 date: 2020-12-08
 time: 20:02:43
 tweet_id: "1336400838713987072"

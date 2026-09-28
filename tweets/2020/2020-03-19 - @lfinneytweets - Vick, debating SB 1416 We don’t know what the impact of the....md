@@ -1,4 +1,5 @@
 ---
+title: "Vick, debating SB 1416 We don\u2019t know what the impact of the..."
 date: 2020-03-19
 time: 21:15:29
 tweet_id: "1240748754749145089"

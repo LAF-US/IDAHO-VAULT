@@ -1,4 +1,5 @@
 ---
+title: "As usual, the tweet is missing major context from the..."
 date: 2019-05-27
 time: 17:30:53
 tweet_id: "1133063033763221512"

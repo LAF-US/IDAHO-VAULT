@@ -1,4 +1,5 @@
 ---
+title: "RT @pewresearch Since late March, the share of Republicans..."
 date: 2020-05-13
 time: 17:50:22
 tweet_id: "1260628467973910529"

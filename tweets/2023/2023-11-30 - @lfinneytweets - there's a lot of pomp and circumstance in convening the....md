@@ -1,4 +1,5 @@
 ---
+title: "there's a lot of pomp and circumstance in convening the..."
 date: 2023-11-30
 time: 02:21:26
 tweet_id: "1730049366080032830"

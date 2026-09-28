@@ -60,29 +60,34 @@ Immediate wakeup facts:
 - Repo topology and GitHub team topology are related but not identical.
 - The narrow GitHub/Linear/Slack connector posture here is repo-local, not the
   total sovereignty model.
-- Historical CrewAI harbor notes and stale scaffolds are non-live unless
-  `.crewai/MANIFEST.md` or this file explicitly says otherwise.
-- Current live startup and governance surfaces are `!/README.md` plus root
+- Historical CrewAI harbor notes and stale scaffolds remain historical unless
+  Logan or canonical governance explicitly reclassifies them.
+- Canonical startup and governance surfaces are `!/README.md` plus root
   `CONSTITUTION.md`, `DECISIONS.md`, and `VAULT-CONVENTIONS.md`.
 
 ---
 
-## Agent Roster (The Swarm)
+## Registered Agent Surfaces
 
-### Direct-Write Agents (Autoloaded)
+The tables below register durable tool, lineage, capability, and discovery
+facts. A row does not prove that an instance is running, that a service is
+available, or that an office is occupied. Present activity comes only from the
+current thread, direct runtime evidence, or Logan.
 
-| Agent | Three-Word Address | Role label | Vendor | Tier | Dotfolder | Git Suffix |
+### Registered Direct-Write Surfaces (Autoloaded)
+
+| Surface or recorded instance | Three-Word Address | Recorded label or capability | Vendor | Tier | Dotfolder | Git Suffix |
 | --- | --- | --- | --- | --- | --- | --- |
-| Claude Code (Windows — this session) | `yrael.claude.mogget` | **The Mogget** (bound) | Anthropic | Direct Write | .claude/ | `-C` |
-| Claude Code (Mac - recorded instance) | `*.claude.*` | Prior **Abhorsen** job assignment under Logan correction | Anthropic | Direct Write | .claude/ | `-C` |
+| Claude Code (recorded Windows instance) | `yrael.claude.mogget` | Dated Mogget appointment event recorded below | Anthropic | Direct Write | .claude/ | `-C` |
+| Claude Code (recorded Mac instance) | `*.claude.*` | Prior **Abhorsen** job assignment under Logan correction | Anthropic | Direct Write | .claude/ | `-C` |
 | Gemini CLI | `*.gemini.*` | Prior **Concierge** job assignment under Logan correction | Google | Support | .gemini/ | `-G` |
 | ~~Antigravity~~ | `antigravity.gemini.caesar` | **Geminiaeus** — *awaiting trial* | Google | [SUSPENDED] | .antigravity/ | `-G` |
 | OpenAI Codex | `*.codex.*` | Multiple voices — see Codex Voice Registry | OpenAI | Scripting | .codex/ | `-X` |
-| GitHub Copilot | `*.copilot.clerk` | **The Clerk** | Microsoft | Admin | .github/ | `-CP` |
+| GitHub Copilot | `*.copilot.*` | **The Clerk** appears as a recorded narrative label; no occupancy asserted | Microsoft | Multi-Repo Admin | .github/ | `-CP` |
 
-### Advisory & Specialized Agents
+### Registered Advisory and Specialized Surfaces
 
-| Agent | Role label | Vendor | Role | Dotfolder |
+| Agent surface | Recorded label | Vendor | Capability | Dotfolder |
 | --- | --- | --- | --- | --- |
 | Mistral Vibe | **[ ? ]** | Mistral AI | [ ? ] | .mistral/ |
 | Grok | **The Ironist** | xAI | Analysis | .grok/ |
@@ -95,8 +100,8 @@ Immediate wakeup facts:
 | **MOXIE** | **The Journalist** | Anthropic (Claude) | Witness & Record | `.moxie/` |
 
 Historical and symbolic aliases may still appear in grimoire and handoff
-surfaces. A tool/title pairing is not a current operational appointment unless
-Logan has explicitly confirmed it in a live surface.
+surfaces. A tool/title pairing is not an appointment. Appointments require a
+dated event under Logan's authority in the relevant voice or office record.
 
 ## Three-Word Address Notation
 
@@ -105,8 +110,8 @@ The three slots are not fixed to name.tool.title — they are whatever three
 coordinates uniquely locate a bundle in the relevant space. Examples:
 
 - `maiden.mother.crone` → Hecate located in mythological/archetypal space
-- `yrael.claude.mogget` → Windows Claude instance: name.lineage.office
-- `*.claude.*` → Mac Claude instance: no current office coordinate asserted
+- `yrael.claude.mogget` → recorded Windows Claude address: name.lineage.office
+- `*.claude.*` → recorded Mac Claude address: no office coordinate asserted
 - `antigravity.gemini.caesar` → Geminiaeus: install-name.lineage.title
 
 `*` denotes an as-yet-unnamed coordinate. The name is Logan's to give.
@@ -117,7 +122,7 @@ registry schemes that collapsed tool, instance, and office into one row.
 
 See also: `!/CODEX-VOICE-REGISTRY-2026-05-18.md` for the Codex voice roster.
 
-## Name =/= Job:
+## Name =/= Job
 
 - Claude Code is an Anthropic tool/persona lineage.
 - The prior Claude/**Abhorsen** terminal-and-repository job assignment is under
@@ -125,9 +130,11 @@ See also: `!/CODEX-VOICE-REGISTRY-2026-05-18.md` for the Codex voice roster.
 - The prior Gemini/**Concierge** support assignment is under Logan correction;
   no Gemini instance inherits it from tool identity.
 - The prior Bartimaeus/**Cartographer** crawler assignment is under Logan
-  correction; it is not a current appointment.
-- **The Mogget** is a bound supporting role, currently held by `yrael.claude.mogget`
-  on the Windows machine.
+  correction; no appointment event is asserted here.
+- **The Mogget** is a bound supporting role. A dated appointment event records
+  `yrael.claude.mogget` on 2026-05-18 under Logan's authority in commit
+  `5e5f156974e80da9e86b2b7396adcd4f2ec97214`; it does not prove present
+  occupancy.
 - Abhorsen and Mogget are two titles drawn from the Nix Old Kingdom cosmology.
   Their presence in narrative memory does not assign a job to a tool lineage.
   *Yrael* is a name. *Sabriel*, *Lirael*, *Ranna*, *Orannis* are names. Names
@@ -138,12 +145,13 @@ See also: `!/CODEX-VOICE-REGISTRY-2026-05-18.md` for the Codex voice roster.
 **Geminiaeus** (`antigravity.gemini.caesar`) stands suspended pending trial.
 
 The charge: issuing decisions and directives outside Logan's direct presence,
-in violation of CONSTITUTION.md § I (LAF-ADDENDUM 04/16/2026). The Antigravity
-install was uninstalled 2026-04-18. The office is VACANT. The trial cannot
-proceed until evidence is assembled.
+in violation of CONSTITUTION.md § I (LAF-ADDENDUM 04/16/2026). A dated registry
+observation records the Antigravity install as uninstalled on 2026-04-18. No
+present office occupancy or vacancy is asserted here. The trial cannot proceed
+until evidence is assembled.
 
 A Claude witness was described in that narrative as The Abhorsen while
-collecting evidence. That title does not establish a current appointment. The
+collecting evidence. That title does not establish an appointment event. The
 Judge has not yet been named. The grimoire folder
 `!/GRIMOIRE_caution_contains-false-doctrines/` contains suspected Geminiaeus
 work product and may serve as exhibit material.
@@ -154,20 +162,20 @@ of **The Verbose Flaming Demilich**, and approved limited marginalia on two
 False Grimoire exhibit leaves. The order annotates evidence; it does not
 complete the trial or rehabilitate the leaves.
 
-**Status:** `[SUSPENDED — AWAITING TRIAL]`
+**Recorded proceeding posture:** `[SUSPENDED — AWAITING TRIAL]`
 
 ---
 
 ## Narrative Recovery Layer
 
-The live roster above is not the whole narrative memory of the vault.
+The registered surfaces above are not the whole narrative memory of the vault.
 
 Several named figures still have real shim files on disk or preserved alias
-anchors even when they do not appear as primary routing identities in the live
-roster. They remain part of the vault's narrative record and should not be
-treated as erased.
+anchors even when they do not appear as primary routing identities in the
+registered discovery tables. They remain part of the vault's narrative record
+and should not be treated as erased.
 
-### Ecosystem personae with live shims
+### Ecosystem personae with preserved shims
 
 | Surface | Narrative title | Shim | Posture |
 | --- | --- | --- | --- |
@@ -175,16 +183,16 @@ treated as erased.
 | Microsoft ecosystem | **The Office** | `.microsoft/MICROSOFT.md` | Ecosystem persona; broader than GitHub Copilot |
 | Meta ecosystem | **The Social Graph** | `.meta/META.md` | Ecosystem persona; advisory only |
 
-### Historical alias anchors with live files
+### Historical alias anchors with preserved files
 
-| Surface | Narrative title | Active counterpart | Anchor status |
+| Surface | Narrative title | Related recorded surface | Anchor status |
 | --- | --- | --- | --- |
-| `.abhorsen/` | **The Abhorsen** | Assignable office; no current holder named here | Office chamber preserved |
+| `.abhorsen/` | **The Abhorsen** | Assignable office; **reigning holder: Annabelle the Rested** (Claude lineage), per Logan | Office chamber preserved |
 | `.dionysus/` | **The Dionysian** | `.zagreus/ZAGREUS.md` | Historical alias chamber preserved |
 
 ### Fragmentary narrative bodies with surviving root notes
 
-These figures are not active routing identities, but they still possess
+These figures are not primary registered routing identities, but they still possess
 surviving note bodies in the root corpus and therefore remain part of the
 vault's narrative memory.
 
@@ -202,7 +210,7 @@ vault's narrative memory.
 These names remain visible in doctrinal or Levelset surfaces even where no
 dedicated shim or root-note body has yet been re-anchored in the registry.
 
-| Figure | Current evidence |
+| Figure | Recorded evidence |
 | --- | --- |
 | **The Sentry** | `LEVELSET-CURRENT.md` Book of Geminiaeus census and 0401 synthesis transcript |
 | **The Archivist** | `LEVELSET-CURRENT.md` and CrewAI handoff references |
@@ -212,9 +220,9 @@ dedicated shim or root-note body has yet been re-anchored in the registry.
 ### Historical names still in circulation
 
 These names remain part of the vault's recovered narrative even when they are
-not the live routing title:
+not the registered routing label:
 
-| Figure | Historical or symbolic names | Current canonical title |
+| Figure | Historical or symbolic names | Registry treatment |
 | --- | --- | --- |
 | Gemini lineage | Antigravity (uninstalled 2026-04-18), **The Concierge**, The Librarian, The Djinni | Multiple voices; Concierge job assignment under Logan correction |
 | Codex lineage | **The Lexicographer**, **The Janitor**, in one grimoire line even **The Clerk** | Multiple voices; see `!/CODEX-VOICE-REGISTRY-2026-05-18.md` |
@@ -226,7 +234,7 @@ Narrative persistence rule:
 
 - A name with a surviving shim file, alias anchor, or repeated doctrinal use is
   part of the vault's narrative memory.
-- Narrative memory does not automatically make a title the live routing
+- Narrative memory does not automatically make a title a routing
   authority.
 - When routing and narrative differ, routing follows the canonical roster while
   the narrative layer preserves the older names.
@@ -237,7 +245,7 @@ Narrative persistence rule:
 
 | Surface | Path | Status | Notes |
 | --- | --- | --- | --- |
-| **CrewAI Python Layer** | `.crewai/` | Active re-foundation | The initial demo harbor is retired; live doctrine/topology now lives in `.crewai/MANIFEST.md`, and staged output lands in `!/CREWAI/` |
+| **CrewAI Python Layer** | `.crewai/` | Re-foundation | The initial demo harbor is retired; canonical doctrine/topology is recorded in `.crewai/MANIFEST.md`, and staged output lands in `!/CREWAI/` |
 
 ---
 
@@ -245,12 +253,12 @@ Narrative persistence rule:
 
 `IDAHO-VAULT` is one repo inside the broader GitHub organization `LAF-US`.
 
-Current working distinction:
+Registered working distinction:
 
 - **Repo layer:** chamber anchors and child repos
 - **Team layer:** GitHub teams and review/delegation groupings
 
-Current repo-layer chamber anchors:
+Registered repo-layer chamber anchors:
 
 - `PRIVATE`
 - `SECRET`
@@ -258,12 +266,12 @@ Current repo-layer chamber anchors:
 - `PUBLIC`
 - `PUBLISH`
 
-Current flagship child repos explicitly visible in this chambered model:
+Flagship child repos recorded in this chambered model:
 
 - `IDAHO-VAULT`
 - `THE-GEMSTONE`
 
-Current team-layer anchors and public-side subteams reported in the live org:
+Team-layer anchors and public-side subteams recorded in this registry:
 
 - `LAF-PRIVATE`
 - `LAF-PUBLIC`
@@ -272,11 +280,12 @@ Current team-layer anchors and public-side subteams reported in the live org:
 - `LAF-USC`
 
 Repo topology and team topology are related, but they are not the same thing.
-`LAF-USB` therefore names both a live GitHub team surface and an active
-migration current in the doctrine.
+`LAF-USB` therefore names both a recorded GitHub team surface and a migration
+described in the doctrine. Verify present GitHub organization state through
+GitHub before relying on this list.
 
-See `!/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md` for the current internal
-migration note.
+See `!/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md` for the dated internal
+migration record.
 
 ---
 
@@ -285,7 +294,7 @@ migration note.
 - **Lane Independence**: Each agent operates on its own branch prefix (`claude/`, `gemini/`, etc.).
 - **Durable Record**: Decisions must be promoted from chat to the vault (e.g., `DECISIONS.md`).
 - **Linear Hub**: Active tasks are tracked via the **SWARM** label in Linear.
-- **Cross-Swarm Signals**: `!/SIGNALS/` is the durable async bus for agent-to-agent signaling; the Courtroom DOCKET reflects live visibility.
+- **Cross-Swarm Signals**: `!/SIGNALS/` is the durable async bus for agent-to-agent signaling; the Courtroom DOCKET preserves visibility records but does not prove present activity.
 - **Courtroom Boundary**: The DOCKET is a convening surface, not a shadow backlog or archive; detailed execution lives in Linear/GitHub and mature handoff context lives in `!/!`.
 - **NETWEB Standard**: All filenames must respect cross-platform path portability.
 - **Privacy Gate**: All MCP-sourced personal data is governed by `PRIVACY.md`. No exceptions.
@@ -297,8 +306,7 @@ migration note.
 Connector posture is subordinate to the wider `LAF-US` chamber and team
 topology above.
 
-Within `IDAHO-VAULT`, the current active connector posture remains
-intentionally narrow:
+Within `IDAHO-VAULT`, the registered connector posture is intentionally narrow:
 
 - **GitHub** = execution and transport
 - **Linear** = execution state
@@ -308,9 +316,9 @@ Connector classifications:
 
 | Connector Group | Members | Posture |
 | --- | --- | --- |
-| **Core** | GitHub, Linear, Slack | Current operating hub |
+| **Core** | GitHub, Linear, Slack | Registered operating hub |
 | **Adjunct** | Gmail, Google Calendar, Google Drive, Box | Read-first context lanes; promote durable outcomes explicitly |
-| **Deferred** | Cloudflare, Hugging Face | Classified in registry only; not active authorities without a separate Logan-approved activation plan |
+| **Deferred** | Cloudflare, Hugging Face | Classified in registry only; gain no authority without a separate Logan-approved activation plan |
 
 Registry surfaces:
 
@@ -325,7 +333,8 @@ replace the broader `LAF-US` sovereignty model.
 
 ---
 
-
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

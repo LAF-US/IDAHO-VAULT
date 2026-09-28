@@ -1,4 +1,5 @@
 ---
+title: "Plenty of FOMO not attending @IRE_NICAR this week (even..."
 date: 2024-03-10
 time: 23:28:59
 tweet_id: "1766969531157582007"

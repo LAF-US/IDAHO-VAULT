@@ -1,4 +1,5 @@
 ---
+title: "RT @kxly4news Bonner County contends that Treasury..."
 date: 2020-07-16
 time: 19:39:34
 tweet_id: "1283848771348992000"

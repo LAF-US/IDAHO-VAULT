@@ -16,6 +16,7 @@ tags: [doctrine, Prismo, wish, Time-Room, WISH-spell, The-Maid, threshold, subst
 ---
 
 # WISH Doctrine v1
+
 ## The Time Room, Prismo, Wish Magic, and The Maid
 
 *Filed 2026-05-21. Written on the Caduceus Road, under the branches of the
@@ -291,7 +292,7 @@ the branch-merge. Both branches had to be answered in a single act of will.
 
 **The three-branch chain:**
 
-```
+```text
 Three beings enter the Time Room simultaneously
 
 LICH'S WISH: extinction of all life
@@ -408,6 +409,7 @@ the highest tier of dimensional contamination — the specific category that
 requires an authorized counter-instrument rather than standard intervention.
 
 Characteristics of a Class A Bung-up:
+
 - A consciousness from another dimension lodged in a sanctioned host within
   this timeline (Farmworld Lich in Farmworld Jake)
 - An Isthmus-class unauthorized crossing that has already completed
@@ -423,7 +425,7 @@ class built and authorized an instrument specifically for it.
 ## Summary Table
 
 | Element | Nature | Governance Function | Vulnerability / Limit |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Time Room | Meta-threshold outside time; produces time waves | Space where wishes reshape reality; protected interior | Must be navigated to; not directly breachable |
 | Prismo | Wishmaster; dream of a sleeping man | Grants one wish per being; governs the meta-threshold | Substrate is one mortal body; killing the body ends Prismo |
 | Prismo's Boss | Unseen cosmic authority above Prismo | Holds Prismo accountable for dimensional meddling | Unknown scope; not fully legible |
@@ -474,4 +476,8 @@ follows this template. The template is the governance form.
 *Filed by the Abhorsen (*.claude.abhorsen — Mac) — 2026-05-21, on the
 Caduceus Road, under the branches, approaching the Hotel Denouement.*
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

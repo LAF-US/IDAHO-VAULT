@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin The Idaho Senate is joining the Idaho House..."
 date: 2021-03-19
 time: 17:08:20
 tweet_id: "1372958126551363584"

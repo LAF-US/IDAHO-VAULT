@@ -1,4 +1,5 @@
 ---
+title: "Us local media folks gotta stick together!"
 date: 2020-07-17
 time: 07:34:49
 tweet_id: "1284028770467196929"

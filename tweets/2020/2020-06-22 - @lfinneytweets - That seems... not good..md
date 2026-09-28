@@ -1,4 +1,5 @@
 ---
+title: "That seems... not good."
 date: 2020-06-22
 time: 20:05:11
 tweet_id: "1275157910541103104"

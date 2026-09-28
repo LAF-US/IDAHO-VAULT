@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Parents, students and teachers aren\u2019t the..."
 date: 2020-09-12
 time: 00:09:50
 tweet_id: "1304572893276205056"

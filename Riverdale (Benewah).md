@@ -5,4 +5,4 @@ related:
 - Franklin
 authority: LOGAN
 ---
-> disamb: Riverdale (Franklin) 
+> disamb: Riverdale (Franklin)

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Economists on Monday published findings..."
 date: 2022-09-13
 time: 19:03:17
 tweet_id: "1569763666651934720"

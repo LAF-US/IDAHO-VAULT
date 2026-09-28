@@ -1,4 +1,5 @@
 ---
+title: "Yes, I do have thirty Tweetdeck columns. No, I do not think..."
 date: 2022-12-14
 time: 18:40:14
 tweet_id: "1603097550399340545"

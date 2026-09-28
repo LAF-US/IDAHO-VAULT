@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Mason calls the policy irresponsible. 
+Mason calls the policy irresponsible.
 
 "Let’s be careful with our adjectives,” Bedke says.
 

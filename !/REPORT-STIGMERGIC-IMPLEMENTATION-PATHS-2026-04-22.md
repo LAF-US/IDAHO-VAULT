@@ -59,7 +59,7 @@ That gives the vault a real stigmergic substrate without overbuilding.
 The stigmergy field is not separate from the vault's protocol stack - it serves as the live backend for the Constitution's protocol system (Section III).
 
 | Protocol (CONSTITUTION.md) | Stigmergy Hook | Implementation |
-|----------------------------|----------------|---------------|
+| ---------------------------- | ---------------- | --------------- |
 | AWAKEN v0.0 | `arrive` | Agent registration on wake |
 | ORIENT v0.1 | `brief` | Field briefing at startup |
 | HANDSHAKE | `arrive` + `claim` | Triune sync preparation |

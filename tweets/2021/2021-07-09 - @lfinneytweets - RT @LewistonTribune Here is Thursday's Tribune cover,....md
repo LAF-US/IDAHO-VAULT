@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune Here is Thursday's Tribune cover,..."
 date: 2021-07-09
 time: 21:04:06
 tweet_id: "1413604901087678465"

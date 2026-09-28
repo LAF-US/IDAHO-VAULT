@@ -1,4 +1,5 @@
 ---
+title: "RT @mpdailynews BREAKING The Washington State Patrol is..."
 date: 2018-02-10
 time: 00:36:06
 tweet_id: "962122972575100930"

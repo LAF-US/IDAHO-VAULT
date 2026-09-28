@@ -1,4 +1,5 @@
 ---
+title: "Yeah I imagine that's a headache in real time with them..."
 date: 2024-05-22
 time: 01:46:13
 tweet_id: "1793095991010394364"

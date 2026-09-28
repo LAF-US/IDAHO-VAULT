@@ -1,4 +1,5 @@
 ---
+title: "please tell me you remember this talk at the Zions building..."
 date: 2020-07-25
 time: 02:11:10
 tweet_id: "1286846423082741762"

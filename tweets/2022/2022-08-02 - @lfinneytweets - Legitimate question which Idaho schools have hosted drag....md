@@ -1,4 +1,5 @@
 ---
+title: "Legitimate question which Idaho schools have hosted drag..."
 date: 2022-08-02
 time: 16:40:56
 tweet_id: "1554507554469752833"

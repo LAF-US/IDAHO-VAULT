@@ -1,4 +1,5 @@
 ---
+title: "RT @GovernorLittle The hardworking taxpayers of Idaho..."
 date: 2019-09-02
 time: 03:06:19
 tweet_id: "1168359470532947968"

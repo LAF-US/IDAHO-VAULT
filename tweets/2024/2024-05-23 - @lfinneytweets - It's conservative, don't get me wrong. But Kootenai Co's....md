@@ -1,4 +1,5 @@
 ---
+title: "It's conservative, don't get me wrong. But Kootenai Co's..."
 date: 2024-05-23
 time: 00:33:11
 tweet_id: "1793440003349164307"

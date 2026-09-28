@@ -11,7 +11,7 @@ date modified: Tuesday, April 28th 2026, 6:25:47 pm
 
 If you try to sign up your domain for a Google service such as Google Workspace or Cloud Identity, and you get an error message, here's what to do.
 
-![](https://www.youtube.com/watch?v=_zD17WI1CFk)
+![alt text needed](https://www.youtube.com/watch?v=_zD17WI1CFk)
 
 ## Which error message did you receive?
 

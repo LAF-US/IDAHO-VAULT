@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews Analysis On Thursday, a search committee..."
 date: 2025-10-02
 time: 17:48:21
 tweet_id: "1973807278534128029"

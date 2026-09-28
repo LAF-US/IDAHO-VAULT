@@ -1,4 +1,5 @@
 ---
+title: "RT @CraigSilverman SCOOP Facebok employees collected..."
 date: 2020-08-06
 time: 18:29:05
 tweet_id: "1291441180350111744"

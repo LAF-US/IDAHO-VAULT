@@ -1,4 +1,5 @@
 ---
+title: "'Land of the Giants' by @TheCut @TheVerge is about the tech..."
 date: 2023-04-27
 time: 16:03:28
 tweet_id: "1651618070560133120"

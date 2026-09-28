@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Sen. Jim Guthrie said the new draft..."
 date: 2023-03-30
 time: 19:06:48
 tweet_id: "1641517348224942080"

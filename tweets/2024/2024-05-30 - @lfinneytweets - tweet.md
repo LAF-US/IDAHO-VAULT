@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2024-05-30
 time: 21:08:01
 tweet_id: "1796287472420442133"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/JXGNaschis
+<https://t.co/JXGNaschis>
 
 ## Links
-- https://x.com/IdahoReports/status/1796286288363958326?t=eDBK-OlAsqPWENjcHuTbUQ
+- <https://x.com/IdahoReports/status/1796286288363958326?t=eDBK-OlAsqPWENjcHuTbUQ>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

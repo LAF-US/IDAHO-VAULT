@@ -138,8 +138,8 @@ This file has been normalized from a noisier Perplexity export.
 
 ## Sources
 
-- https://docs.langchain.com/oss/python/langchain/overview
-- https://cloud.google.com/use-cases/langchain
-- https://aws.amazon.com/what-is/langchain/
-- https://docs.crewai.com/en/tools/ai-ml/langchaintool
-- https://pypi.org/project/crewai/
+- <https://docs.langchain.com/oss/python/langchain/overview>
+- <https://cloud.google.com/use-cases/langchain>
+- <https://aws.amazon.com/what-is/langchain/>
+- <https://docs.crewai.com/en/tools/ai-ml/langchaintool>
+- <https://pypi.org/project/crewai/>

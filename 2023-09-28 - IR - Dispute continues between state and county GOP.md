@@ -29,6 +29,7 @@ A dispute between the state Republican party and a local party continued in cour
 Former Bingham County Republican chairman Dan Cravens announced his intent to resign earlier this year and called a meeting to elect his replacement in July. Idaho Republican Party chairwoman Dorothy Moon later declared the elections void after she received a complaint about the conduct of the meeting. The individuals behind the complaint have not been publicly identified.
 
 ## An intra-party dispute
+
 The Bingham County GOP is represented by Greg Chaney, a Caldwell attorney and former state lawmaker, while the Idaho GOP is represented by Bryan Smith, an Idaho Falls attorney and the state party’s national committeeman.
 
 Throughout the disagreement, both sides say the other has not followed the party rules.
@@ -62,6 +63,7 @@ Idaho Reports originally reported that the executive committee would take up the
 “As a member of that executive committee, our rules require a 14 day notice for such an appeal, and no such notice was issued two weeks ago,” former party chair Trent Clark told Idaho Reports over email last week. He also said Smith had “requested from the Bingham GOP’s attorney a ‘waiver of the 14 day notice’ (something he can’t ‘waive’ because it’s there to protect both the appellant and members of the executive committee, I.e. me).”
 
 ## What comes next
+
 The hearing this week did not evaluate the merits of the case – only whether the court will continue to block the state party from conducting a new election for Bingham County chairman until the internal party appeal is completed.
 
 7th Judicial District Judge Darren Simpson extended the temporary restraining order until he issues a decision by the end of next week on whether to grant a preliminary injunction.

@@ -1,4 +1,5 @@
 ---
+title: "to lead is to be followed"
 date: 2024-12-06
 time: 02:55:19
 tweet_id: "1864866179107688562"

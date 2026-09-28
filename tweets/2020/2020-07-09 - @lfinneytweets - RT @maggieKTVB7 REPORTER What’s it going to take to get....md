@@ -1,4 +1,5 @@
 ---
+title: "RT @maggieKTVB7 REPORTER What\u2019s it going to take to get..."
 date: 2020-07-09
 time: 19:30:35
 tweet_id: "1281309797409648640"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @maggieKTVB7: REPORTER: What’s it going to take to get Idaho back on track? 
+RT @maggieKTVB7: REPORTER: What’s it going to take to get Idaho back on track?
 
 (@GovernorLittle puts on his mask, throws his hands up...)
 

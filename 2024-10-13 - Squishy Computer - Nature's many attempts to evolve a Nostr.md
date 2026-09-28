@@ -25,7 +25,7 @@ AI insights screen.
 
 The **Topics** view shows how individual topics perform over time and lists the questions related to each one.
 
-![](https://gitbook.com/docs/~gitbook/image?url=https%3A%2F%2F1050631731-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FNkEGS7hzeqa35sMXQZ4X%252Fuploads%252FZ2Wi4qNiIZwAd72YGDaJ%252F26_03_30_site_insights_topic%25402x.png%3Falt%3Dmedia%26token%3D77fcddbc-fc81-401f-b377-bee819359e18&width=768&dpr=3&quality=100&sign=27d67f16&sv=2)
+![alt text needed](https://gitbook.com/docs/~gitbook/image?url=https%3A%2F%2F1050631731-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FNkEGS7hzeqa35sMXQZ4X%252Fuploads%252FZ2Wi4qNiIZwAd72YGDaJ%252F26_03_30_site_insights_topic%25402x.png%3Falt%3Dmedia%26token%3D77fcddbc-fc81-401f-b377-bee819359e18&width=768&dpr=3&quality=100&sign=27d67f16&sv=2)
 
 Topic detail view in AI insights.
 
@@ -41,7 +41,7 @@ The **Questions** view shows how GitBook Assistant handled an individual visitor
 
 When you click a question, the detail view opens. At the top of the screen, you can review the question itself, how often visitors asked it, its type, and the topics it belongs to.
 
-![](https://gitbook.com/docs/~gitbook/image?url=https%3A%2F%2F1050631731-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FNkEGS7hzeqa35sMXQZ4X%252Fuploads%252FQWtrJPVNFzHQNFaYlmW7%252F26_03_30_site_insights_question%25402x.png%3Falt%3Dmedia%26token%3D6b43e8e7-c494-4df6-b220-42fab0a5a333&width=768&dpr=3&quality=100&sign=8b195a24&sv=2)
+![alt text needed](https://gitbook.com/docs/~gitbook/image?url=https%3A%2F%2F1050631731-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FNkEGS7hzeqa35sMXQZ4X%252Fuploads%252FQWtrJPVNFzHQNFaYlmW7%252F26_03_30_site_insights_question%25402x.png%3Falt%3Dmedia%26token%3D6b43e8e7-c494-4df6-b220-42fab0a5a333&width=768&dpr=3&quality=100&sign=8b195a24&sv=2)
 
 Question detail view in AI insights.
 

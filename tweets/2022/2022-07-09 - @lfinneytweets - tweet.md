@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2022-07-09
 time: 22:44:57
 tweet_id: "1545901850750160896"
@@ -13,9 +14,9 @@ related:
   - lfinneytweets
 ---
 
-@ChubbyPrimate https://t.co/4JTggYhE58
+@ChubbyPrimate <https://t.co/4JTggYhE58>
 
 ## Links
-- https://youtu.be/s7tWHJfhiyo
+- <https://youtu.be/s7tWHJfhiyo>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1545901850750160896)

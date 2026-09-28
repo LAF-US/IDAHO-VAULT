@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports In 2022, there were more than 1.2 million..."
 date: 2023-04-20
 time: 22:14:13
 tweet_id: "1649174659424989184"

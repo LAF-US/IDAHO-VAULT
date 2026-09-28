@@ -1,4 +1,5 @@
 ---
+title: "HB 512 passes the Senate."
 date: 2020-03-17
 time: 21:11:06
 tweet_id: "1240022876196982784"

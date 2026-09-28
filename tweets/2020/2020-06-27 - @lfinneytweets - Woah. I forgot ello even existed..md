@@ -1,4 +1,5 @@
 ---
+title: "Woah. I forgot ello even existed."
 date: 2020-06-27
 time: 02:28:46
 tweet_id: "1276703994316914688"

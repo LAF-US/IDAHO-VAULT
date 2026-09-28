@@ -1,4 +1,5 @@
 ---
+title: "RT @SpokesmanReview Idaho pastor and state Rep. Tim..."
 date: 2020-04-02
 time: 02:33:48
 tweet_id: "1245539903670083584"

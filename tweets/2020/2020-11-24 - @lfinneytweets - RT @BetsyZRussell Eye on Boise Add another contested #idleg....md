@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Add another contested #idleg..."
 date: 2020-11-24
 time: 01:05:05
 tweet_id: "1331041113025564672"

@@ -4,6 +4,7 @@ date: 2026-05-17
 status: active
 authority: LOGAN
 related:
+  - STORAGE-LFS-USB-CONSTELLATION-INDEX-2026-06-17
   - .gitignore
   - .gitattributes
   - Git LFS
@@ -109,4 +110,4 @@ The safe direction is to narrow those rules so future source material remains
 visible by default. That cleanup should be committed only with this chronology
 in mind.
 
-###### The world is quiet here.
+###### The world is quiet here

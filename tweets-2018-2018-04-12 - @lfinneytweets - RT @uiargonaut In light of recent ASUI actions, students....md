@@ -16,7 +16,7 @@ related:
 ---
 
 RT @uiargonaut: In light of recent ASUI actions, students should engage more with student government
-Read Our View here. 
-https://t.co/TS8N…
+Read Our View here.
+<https://t.co/TS8N…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/984542184354410496)

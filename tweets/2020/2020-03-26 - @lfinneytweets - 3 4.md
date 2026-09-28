@@ -1,4 +1,5 @@
 ---
+title: "3 4"
 date: 2020-03-26
 time: 01:58:15
 tweet_id: "1242994240386289664"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-3/4 https://t.co/cMletSmCGm
+3/4 <https://t.co/cMletSmCGm>
 
 ## Media
-- ![](https://pbs.twimg.com/media/ET__u4AUwAA4Keq.png)
+
+- ![alt text needed](https://pbs.twimg.com/media/ET__u4AUwAA4Keq.png)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

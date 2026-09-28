@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Historically, the Joint Legislative..."
 date: 2023-03-14
 time: 20:04:24
 tweet_id: "1635733636405403648"

@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Lately, people seem to claim the Board of..."
 date: 2020-10-21
 time: 00:04:35
 tweet_id: "1318704699005173760"

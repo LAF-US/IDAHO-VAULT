@@ -1,4 +1,5 @@
 ---
+title: "RT @DonLDay Albertsons' stock, dropped. And, it appears,..."
 date: 2022-10-24
 time: 22:22:31
 tweet_id: "1584671707863740416"

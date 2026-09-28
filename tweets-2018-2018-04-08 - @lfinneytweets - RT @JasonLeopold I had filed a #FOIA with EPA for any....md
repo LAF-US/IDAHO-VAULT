@@ -18,7 +18,7 @@ related:
   - FOIA
 ---
 
-RT @JasonLeopold: I had filed a #FOIA with EPA for any records of death threats made against Scott Pruitt. 
+RT @JasonLeopold: I had filed a #FOIA with EPA for any records of death threats made against Scott Pruitt.
 
 EPA said it had zero recorss.…
 

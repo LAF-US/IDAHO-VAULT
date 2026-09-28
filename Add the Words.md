@@ -6,4 +6,4 @@ related:
 - LGBTQ+ issues
 ---
 
-LGBTQ+ issues Idaho Constitution 
+LGBTQ+ issues Idaho Constitution

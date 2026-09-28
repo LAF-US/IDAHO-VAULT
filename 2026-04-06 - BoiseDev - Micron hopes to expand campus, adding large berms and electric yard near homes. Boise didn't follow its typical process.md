@@ -7,7 +7,7 @@ created: 2026-04-07
 ---
 ## Micron hopes to expand campus, adding large berms and electric yard near homes. Boise didn’t follow its typical process
 
-![](https://boisedev.com/wp-content/uploads/2026/04/micron-hopes-to-expand-campus-adding-large-berms-and-electic-substation-near-homes-boise-didnt-follow-its-typical-process-Screenshot-2026-04-0.jpeg)
+![alt text needed](https://boisedev.com/wp-content/uploads/2026/04/micron-hopes-to-expand-campus-adding-large-berms-and-electic-substation-near-homes-boise-didnt-follow-its-typical-process-Screenshot-2026-04-0.jpeg)
 
 A rendering of a planned electrical yard & berms near Micron's Boise expansion. Rendering: Via Jacobs
 
@@ -23,7 +23,7 @@ Micron applied with the City of Boise to annex more than 238 acres spread across
 
 Regence - 2:1 - Business Grow
 
-![](https://boisedev.com/wp-content/uploads/2026/04/micron-hopes-to-expand-campus-adding-large-berms-and-electic-substation-near-homes-boise-didnt-follow-its-typical-process-Screenshot-2026-04-0.png)
+![alt text needed](https://boisedev.com/wp-content/uploads/2026/04/micron-hopes-to-expand-campus-adding-large-berms-and-electic-substation-near-homes-boise-didnt-follow-its-typical-process-Screenshot-2026-04-0.png)
 
 Map: via Micron
 
@@ -37,7 +37,7 @@ Immediately behind the homes, Micron says it plans to build a 40-foot-tall earth
 
 Sundance Company
 
-![](https://boisedev.com/wp-content/uploads/2026/04/micron-hopes-to-expand-campus-adding-large-berms-and-electic-substation-near-homes-boise-didnt-follow-its-typical-process-Screenshot-2026-04-0-1.jpeg)
+![alt text needed](https://boisedev.com/wp-content/uploads/2026/04/micron-hopes-to-expand-campus-adding-large-berms-and-electic-substation-near-homes-boise-didnt-follow-its-typical-process-Screenshot-2026-04-0-1.jpeg)
 
 A rendering of planned berms near Micron’s Boise expansion. Rendering: Via Jacobs
 
@@ -53,7 +53,7 @@ Visit Boise - 2:1 - Easier to brag 1
 
 ## Atypical process
 
-![](https://boisedev.com/wp-content/uploads/2026/04/micron-hopes-to-expand-campus-adding-large-berms-and-electic-substation-near-homes-boise-didnt-follow-its-typical-process-Screenshot-2026-04-0-1.png)
+![alt text needed](https://boisedev.com/wp-content/uploads/2026/04/micron-hopes-to-expand-campus-adding-large-berms-and-electic-substation-near-homes-boise-didnt-follow-its-typical-process-Screenshot-2026-04-0-1.png)
 
 The City of Boise’s planning process is not followed for all applications, it says. Via City of Boise
 
@@ -91,7 +91,6 @@ The annexation will require several sign-offs from the city in the coming months
 
 “…There will be public hearings at the planning and zoning commission and city council to ensure community engagement and invite feedback,” she wrote. “Nothing in the flexibility that we provide applicants during the pre-submittal steps affects the required public hearings, nor does it subvert the ability of residents to meaningfully participate in the process.”  
   
-
 ### Latest Stories
 
 A U.S. District Court judge ruled that the City of Boise didn't violate federal law when it condemned the historic Union Block building, but...

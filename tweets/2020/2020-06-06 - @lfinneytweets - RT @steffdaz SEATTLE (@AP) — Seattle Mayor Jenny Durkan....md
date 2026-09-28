@@ -1,4 +1,5 @@
 ---
+title: "RT @steffdaz SEATTLE (@AP) \u2014 Seattle Mayor Jenny Durkan..."
 date: 2020-06-06
 time: 16:57:11
 tweet_id: "1269312389775716352"

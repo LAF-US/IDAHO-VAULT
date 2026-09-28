@@ -11,4 +11,4 @@ date: 1938-12-01
 
 ---
 
-- [[1938 Borah - Committee Monopoly Inquiry]] 
+- [[1938 Borah - Committee Monopoly Inquiry]]

@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-10-15
 time: 20:24:10
 tweet_id: "1449108860367622145"
@@ -16,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@clarkcorbin @davlinnews @davlinnews https://t.co/gpzPWjjsqB
+@clarkcorbin @davlinnews @davlinnews <https://t.co/gpzPWjjsqB>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FBxExTaVUAI-w-v.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/FBxExTaVUAI-w-v.jpg)
 
 *In reply to [@clarkcorbin](https://twitter.com/clarkcorbin)*
 

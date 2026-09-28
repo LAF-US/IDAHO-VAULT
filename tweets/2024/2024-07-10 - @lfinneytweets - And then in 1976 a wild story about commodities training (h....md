@@ -1,4 +1,5 @@
 ---
+title: "And then in 1976 a wild story about commodities training (h..."
 date: 2024-07-10
 time: 05:41:01
 tweet_id: "1810912088707236157"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-And then in 1976: a wild story about commodities training (h/t @planetmoney)  https://t.co/qZd0SGmuu5
+And then in 1976: a wild story about commodities training (h/t @planetmoney)  <https://t.co/qZd0SGmuu5>
 
 ## Links
-- https://www.npr.org/transcripts/1197956482
+- <https://www.npr.org/transcripts/1197956482>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -1,4 +1,5 @@
 ---
+title: "What The original tweet you quoted isn't my opinion, it's..."
 date: 2021-11-17
 time: 22:05:42
 tweet_id: "1461093212093771778"

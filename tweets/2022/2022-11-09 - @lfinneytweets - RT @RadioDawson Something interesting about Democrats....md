@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson Something interesting about Democrats..."
 date: 2022-11-09
 time: 19:24:10
 tweet_id: "1590425029879427072"

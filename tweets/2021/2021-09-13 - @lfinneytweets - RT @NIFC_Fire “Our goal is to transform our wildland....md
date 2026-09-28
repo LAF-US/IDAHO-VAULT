@@ -1,4 +1,5 @@
 ---
+title: "RT @NIFC_Fire \u201cOur goal is to transform our wildland..."
 date: 2021-09-13
 time: 22:19:31
 tweet_id: "1437541479627444226"

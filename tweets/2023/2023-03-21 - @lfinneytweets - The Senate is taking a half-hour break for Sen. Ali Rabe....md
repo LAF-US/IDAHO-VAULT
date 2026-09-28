@@ -1,4 +1,5 @@
 ---
+title: "The Senate is taking a half-hour break for Sen. Ali Rabe..."
 date: 2023-03-21
 time: 22:02:17
 tweet_id: "1638300021329375233"

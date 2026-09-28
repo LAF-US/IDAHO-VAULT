@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell Both bills just OK'd in committee. Last..."
 date: 2020-02-18
 time: 22:22:18
 tweet_id: "1229893932252684298"

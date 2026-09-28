@@ -1,4 +1,5 @@
 ---
+title: "#COVID19 response funds passed unanimously by both the..."
 date: 2020-03-12
 time: 17:41:30
 tweet_id: "1238158187804557313"
@@ -23,7 +24,7 @@ related:
   - idpol
 ---
 
-#COVID19 response funds passed unanimously by both the Senate and House, headed to @GovernorLittle ’s desk. #idleg #idpol
+\#COVID19 response funds passed unanimously by both the Senate and House, headed to @GovernorLittle ’s desk. #idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

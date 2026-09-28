@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson Sen. Steve Vick just pulled back a..."
 date: 2021-01-27
 time: 18:25:14
 tweet_id: "1354495698876522497"

@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel A Nampa legislator is still working on a bill..."
 date: 2024-03-27
 time: 19:35:27
 tweet_id: "1773071354322903322"

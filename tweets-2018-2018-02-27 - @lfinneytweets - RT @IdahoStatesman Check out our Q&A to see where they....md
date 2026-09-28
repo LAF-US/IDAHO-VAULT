@@ -20,10 +20,11 @@ related:
   - idpol
 ---
 
-RT @IdahoStatesman: Check out our Q&A to see where they stand. #idleg #idpol 
-https://t.co/TrWXiZlZw6
+RT @IdahoStatesman: Check out our Q&A to see where they stand. #idleg #idpol
+<https://t.co/TrWXiZlZw6>
 
 ## Links
-- http://www.idahostatesman.com/news/politics-government/election/article202119259.html
+
+- <http://www.idahostatesman.com/news/politics-government/election/article202119259.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/968344391436963841)

@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *It doesn't matter if you're interested or not. Look around you. You're hopelessly outnumbered. Wherever we go, we find new comrades who are eager to assist us in our work.* | ” |
 | --- | --- | --- |
-|  | — The Woman with Hair but No Beard, *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")* |
+| | — The Woman with Hair but No Beard, *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")* |
 
 The **Woman With Hair But No Beard** is a villainess and arsonist, with an "aura of menace" that even frightens [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf"), and [Lemony Snicket](https://snicket.fandom.com/wiki/Lemony_Snicket "Lemony Snicket") refuses to write down her name. She is associates with the [Man with a Beard but No Hair](https://snicket.fandom.com/wiki/Man_with_a_Beard_but_No_Hair "Man with a Beard but No Hair").
 
@@ -35,7 +35,7 @@ The two of them somehow manage to acquire the [Snicket File](https://snicket.fan
 
 | “ | *Oh, it was wonderful. First we burned down the kitchen. Then we burned down the dining room. Then we burned down the parlor, and then the disguise center, the movie room, and the stables. Then we moved on to the gymnasium and the training center, and the garage and all six of the laboratories. We burned down the dormitories and schoolrooms, the lounge, the theater, and the music room, as well as the museum and the ice cream shop. Then we burned down the rehearsal studios and the testing centers and the swimming pool, which was very hard to burn down. Then we burned down all the bathrooms, and then finally, we burned down the V.F.D. library last night. That was my favorite part- books and books and books, all turned to ashes so no one could read them. You should have been there, Olaf!* | ” |
 | --- | --- | --- |
-|  | — The Woman with Hair but No Beard, *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")* |
+| | — The Woman with Hair but No Beard, *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")* |
 
 The Woman and Man arrive at the V.F.D. headquarters and slowly burn it down, room by room in order to keep the smoke to a minimum so they would not be spotted. Every morning of the arson, the two of them would celebrate with a bottle of wine and finger puppets. They do did attempt to search the headquarters for the [Sugar Bowl](https://snicket.fandom.com/wiki/Sugar_Bowl "Sugar Bowl"), but are unable to find it.
 
@@ -65,7 +65,7 @@ It is unknown if she and the Man with a Beard but No Hair survived the [Hotel De
 
 ## Netflix Series Divergent Canon
 
-In the TV series, The Man with a Beard but No Hair and the Woman with Hair but No Beard are first seen in [The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***One "The Slippery Slope: Part One"), chasing [Kit Snicket](https://snicket.fandom.com/wiki/Kit_Snicket "Kit Snicket") around the top of [Mount Fraught](https://snicket.fandom.com/wiki/Mount_Fraught "Mount Fraught"). After Kit jumps off, the pair runs into [Hugo](https://snicket.fandom.com/wiki/Hugo "Hugo"), [Colette](https://snicket.fandom.com/wiki/Colette "Colette") and [Kevin](https://snicket.fandom.com/wiki/Kevin "Kevin") who they threaten with swords. It is later implied that they killed them.
+In the TV series, The Man with a Beard but No Hair and the Woman with Hair but No Beard are first seen in [The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Part_One "The Slippery Slope: Part One"), chasing [Kit Snicket](https://snicket.fandom.com/wiki/Kit_Snicket "Kit Snicket") around the top of [Mount Fraught](https://snicket.fandom.com/wiki/Mount_Fraught "Mount Fraught"). After Kit jumps off, the pair runs into [Hugo](https://snicket.fandom.com/wiki/Hugo "Hugo"), [Colette](https://snicket.fandom.com/wiki/Colette "Colette") and [Kevin](https://snicket.fandom.com/wiki/Kevin "Kevin") who they threaten with swords. It is later implied that they killed them.
 
 When they visit Olaf, it is revealed they raised him as mentors. They don't congratulate him for perpetrating the fire that burned Caligari Carnival to the ground and revealed that they burnt down the VFD headquarters. At the same time, they were also quite disappointed in Olaf's failures to capture the Baudelaires. Because of this, Olaf attempts to kill [Sunny Baudelaire](https://snicket.fandom.com/wiki/Sunny_Baudelaire "Sunny Baudelaire") in order to gain their respect, but fails miserably. They actually take a shine to [Esmé Squalor](https://snicket.fandom.com/wiki/Esm%C3%A9_Squalor "Esmé Squalor"), much to Olaf's envy. Olaf is desperate to please her and The Man with a Beard but No Hair, but they continually look down upon him. Later, the Man and Woman are seen watching various fires throughout [the City](https://snicket.fandom.com/wiki/The_City "The City") burn.
 
@@ -79,7 +79,7 @@ She is portrayed by [Beth Grant](https://snicket.fandom.com/wiki/Beth_Grant "Bet
 
 | “ | *Having an aura of menace is like having a pet weasel, because you rarely meet someone who has one, and when you do it makes you want to hide under the coffee table. An aura of menace is simply a distinct feeling of evil that accompanies the arrival of certain people, and very few individuals are evil enough to produce an aura of menace that is very strong\[...\] But when two visitors arrived at the highest peak of the Mortmain Mountains, their aura of menace was unmistakable.* | ” |
 | --- | --- | --- |
-|  |  |
+| | |
 
 In the books, she is described as having an aura of menace first and foremost, scaring even [Esmé Squalor](https://snicket.fandom.com/wiki/Esm%C3%A9_Squalor "Esmé Squalor") and [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf"). She is known to have hair, though no facial hair, as well as a deep, low voice and horrible laugh. She and the Man with a Beard but No Hair dress in fireproof suits in order to better cause arson, which are made of a shiny blue fabric with two large shoulder pads.
 
@@ -95,7 +95,7 @@ In the netflix Series she's slightly shorter than her partner, have very thin li
 
 | “ | *It's good to see you, Olaf. I was worried that the authorities might have captured you.* | ” |
 | --- | --- | --- |
-|  | — Chapter Six |
+| | — Chapter Six |
 
 **Woman with Hair but No Beard**: *There's an important piece of evidence that V.F.D. has hidden in a figurine sold at [Caligari Carnival](https://snicket.fandom.com/wiki/Caligari_Carnival "Caligari Carnival"), so we need to go burn it down.*  
 
@@ -111,15 +111,15 @@ In the netflix Series she's slightly shorter than her partner, have very thin li
 
 | “ | *Besides, there's no reason to toss a baby off a mountain unless you absolutely have to.* | ” |
 | --- | --- | --- |
-|  | — Chapter Nine |
+| | — Chapter Nine |
 
 | “ | *The last safe place. We have to find it and burn it down.* | ” |
 | --- | --- | --- |
-|  | — Chapter Nine |
+| | — Chapter Nine |
 
 | “ | *Not in front of the toothy orphan. If she learned what we were up to, she'd never sleep again, and you need your infant servant full of energy. Send her away, and we'll make our plans.* | ” |
 | --- | --- | --- |
-|  | — Chapter Nine |
+| | — Chapter Nine |
 
 **[Esmé Squalor](https://snicket.fandom.com/wiki/Esm%C3%A9_Squalor "Esmé Squalor")**: *Why should we do it?*  
 
@@ -127,7 +127,7 @@ In the netflix Series she's slightly shorter than her partner, have very thin li
 
 | “ | *It's hard to find everything in all those ashes. We searched for days and couldn't find the sugar bowl.* | ” |
 | --- | --- | --- |
-|  | — Chapter Ten |
+| | — Chapter Ten |
 
 **[Man with a Beard but No Hair](https://snicket.fandom.com/wiki/Man_with_a_Beard_but_No_Hair "Man with a Beard but No Hair")**: *That's enough! Our recruitment scheme is about to be put into action. We can't have you arguing all day long.*  
 
@@ -139,7 +139,7 @@ In the netflix Series she's slightly shorter than her partner, have very thin li
 
 | “ | *In that case, there's no reason to worry about that stupid baby any longer.* | ” |
 | --- | --- | --- |
-|  | — Chapter Thirteen |
+| | — Chapter Thirteen |
 
 **Woman with Hair but No Beard**: *You get the sugar bowl from those bratty orphans, Olaf, and we'll all meet up at the last safe place!*  
 
@@ -149,7 +149,7 @@ In the netflix Series she's slightly shorter than her partner, have very thin li
 
 | “ | *Go on. [Justice Strauss](https://snicket.fandom.com/wiki/Justice_Strauss "Justice Strauss") was merely being thoughtful.* | ” |
 | --- | --- | --- |
-|  | — Chapter Eleven |
+| | — Chapter Eleven |
 
 **Woman with Hair but No Beard**: *What are you waiting for, orphans?*  
 
@@ -157,7 +157,7 @@ In the netflix Series she's slightly shorter than her partner, have very thin li
 
 | “ | *Justice Strauss is enjoying a piece of saltwater taffy! That's why she's talking in hmms!* | ” |
 | --- | --- | --- |
-|  | — Chapter Twelve |
+| | — Chapter Twelve |
 
 **Man with a Beard but No Hair**: *The children are trying to trick you! Keep your blindfolds on!*  
 
@@ -165,7 +165,7 @@ In the netflix Series she's slightly shorter than her partner, have very thin li
 
 | “ | *They're escaping!* | ” |
 | --- | --- | --- |
-|  | — Chapter Twelve |
+| | — Chapter Twelve |
 
 **Man with a Beard but No Hair**: *The authorities are guarding the entrance! The Baudelaires are running toward the elevatos! Capture them!*  
 
@@ -173,7 +173,7 @@ In the netflix Series she's slightly shorter than her partner, have very thin li
 
 | “ | *In the elevator!* | ” |
 | --- | --- | --- |
-|  | — Chapter Thirteen |
+| | — Chapter Thirteen |
 
 ## Appearances
 
@@ -187,7 +187,7 @@ Concept Art.
 
 [!["The Penultimate Peril: Part Two" Concept Art.](https://static.wikia.nocookie.net/snicket/images/7/7f/Judgewomanconcept.jpg/revision/latest/scale-to-width-down/179?cb=20200217030905 "Judgewomanconcept.jpg (497 KB)")](https://snicket.fandom.com/wiki/File:Judgewomanconcept.jpg "Judgewomanconcept.jpg (497 KB)")
 
-" [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Pa***REMOVED***Two "The Penultimate Peril: Part Two") " Concept Art.
+" [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_Two "The Penultimate Peril: Part Two") " Concept Art.
 
 [![Meeting Olaf on Mount Fraught.](https://static.wikia.nocookie.net/snicket/images/3/3d/43443891_745503982458768_7130670675240419328_n.jpg/revision/latest/scale-to-width-down/148?cb=20181027023413 "43443891 745503982458768 7130670675240419328 n.jpg (63 KB)")](https://snicket.fandom.com/wiki/File:43443891_745503982458768_7130670675240419328_n.jpg "43443891 745503982458768 7130670675240419328 n.jpg (63 KB)")
 

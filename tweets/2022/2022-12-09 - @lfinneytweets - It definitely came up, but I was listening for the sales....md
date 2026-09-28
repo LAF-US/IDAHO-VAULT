@@ -1,4 +1,5 @@
 ---
+title: "It definitely came up, but I was listening for the sales..."
 date: 2022-12-09
 time: 03:42:31
 tweet_id: "1601059690892648448"

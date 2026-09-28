@@ -96,6 +96,7 @@ Visible current agent roles in `AGENTS.md`:
 - Additional read/analysis entities include PERSISTENT: IMPLEMENTATION, TASK: LEVELSET reports, STORY: JFAC Open Meetings, Grok, M365 Copilot, NotebookLM, PUBLIC: CONVERSATION.
 
 Current communication model:
+
 - GitHub Issues and PRs are the active coordination layer.
 - Vault files are the durable record.
 - `!/` and `!/!/` are active storage locations for prompts, routing, and context packages.
@@ -161,11 +162,13 @@ Use those files when Logan wants to brief a specific agent quickly.
 **State:** Ready for relay.
 
 **What is done:**
+
 - Shared repo-visible context has been condensed into a current packet.
 - Agent-specific handoffs have been prepared for Gemini and Claude.
 - Materials are stored in `!/!/CONTEXTS/` for re-use.
 
 **What is not done:**
+
 - No claims are made here about Slack bot setup, live private conversations, or external services.
 - No new decisions were made.
 - No existing agent output outside the repo was treated as verified unless committed in files.

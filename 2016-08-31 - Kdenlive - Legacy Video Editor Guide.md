@@ -73,7 +73,7 @@ rolling edit
 
 A ripple action trims a clip and shifts following clips in the track by the number of frames you trim. When you shorten a clip by this action all clips that follow the cut shift back in time, contrariwise, when you extend a clip the clips after the cut shift forward in time. If an empty space is on the track it behaves as a clip and it shifts in time as a standard clip would be.
 
-![](https://kdenlive.org/video-editing-applications-handbook/ripple.png)
+![alt text needed](https://kdenlive.org/video-editing-applications-handbook/ripple.png)
 
 ### Slip
 
@@ -101,9 +101,9 @@ In all major video editing systems, we can find a trim window or a trim mode whe
 1. It gives you access to control the trim by keyboard (frame by frame control, 5 or more frames control, depending on the software, and jog function in both directions).
 2. It allows switching between different modalities (rolling, ripple, slip and slide)
 3. In rolling and ripple modes you can watch simultaneously the new IN and OUT point of both clips so you can decide where is the best point for the new cut.![Premiere CS6 trim view](https://kdenlive.org/video-editing-applications-handbook/trim-view-premiere6.png)
-	Premiere CS6 trim view
-	![FCP trim mode](https://kdenlive.org/video-editing-applications-handbook/trim-view-finalcut.jpg)
-	FCP trim mode
+ Premiere CS6 trim view
+ ![FCP trim mode](https://kdenlive.org/video-editing-applications-handbook/trim-view-finalcut.jpg)
+ FCP trim mode
 4. In slip and slide modes you can watch the OUT point of the previous clip, the IN and the OUT points of the clip you are trimming and the IN point of the following clip. (Slip mode it is very useful for news and documentary editing on speech or interview)
 ![Premiere pro slip tool](https://kdenlive.org/video-editing-applications-handbook/slip-premiere-cc.jpg)
 
@@ -179,9 +179,9 @@ On the timeline, the editor sets the volume automations, places transitions and 
 ## Timeline Workflow
 
 - Automations: in my experience the best way to creates automations in video editor apps is to cut the audio track where you have to make an automation, then you put a crossfade audio transition (which in all professional applications you can use on single track) and lift up or down the gain of the clip you have to modify. This technique is the fastest way to create automations on the timeline. It's true that you can use keyframes (and sometimes they are very useful) but this way it's slower mostly if you have to later modify. By using transitions you can move the automation point by using a standard rolling operation, you can refine the length of the automation by change the duration of the transition, you can change the start and the end point of the automaton by sliding the transition. For changing the gain of the clip you have to modify we have different approaches: on AVID, you select the clip on the timeline and you modify the gain by the mixer (the mixer acts on the clip when selected and on all the track when nothing is selected). On Premiere, you have the gain menu in the contextual (right-click) menu and in FCP you have the volume of the clip in the effects stack (I think that the FCP approach is probably the best one).
-	![AVID audio crossfades](https://kdenlive.org/video-editing-applications-handbook/crossfades-avid-0.jpg)
-	AVID audio crossfades
-	*Audio crossfades in AVID*
+ ![AVID audio crossfades](https://kdenlive.org/video-editing-applications-handbook/crossfades-avid-0.jpg)
+ AVID audio crossfades
+ *Audio crossfades in AVID*
 - Filters are not generally used on the timeline except for managing audio channels or to fix some main issue of a specific clip. You can use filters on the timeline also when you have to create some specific special effect (eg: echo bounce, distortions, etc) on short clips.
 - On Kdenlive and other FLOSS video editors based on MLT, we have audio embedded on video clips as it is on iMovie or in Windows MovieMaker. No professional tools use this approach because it creates some issues: you find all the video tracks on the audio mixer, you can't create audio splits (audio splits is when audio and video cuts have different times. eg: audio anticipate the video cut or the opposite), if you dissolve video you do the same with audio, etc. In my personal opinion, I think that this feature can be preserved for a simplified layout (which Kdenlive could have for helping newbies and amateurs) but I believe that when you select the automatic audio/video separation button (as I done) the option to put audio clips on the video tracks must be disabled.
 ![Audio split](https://kdenlive.org/video-editing-applications-handbook/audio-split_0.jpg)
@@ -215,9 +215,10 @@ AVID media composer mixer
 Premiere pro audio mixer
 
 *Premiere Pro Audio Mixer*
+
 - I don't know if my proposal to watch at the qtractor code is good because this software has midi channels, which Kdenlive does not need, and I guess it is based on Jack.![QTractor audio mixer](https://kdenlive.org/video-editing-applications-handbook/audio-mixer-qtractor.jpg)
-	QTractor audio mixer
-	*QTractor Audio Mixer*
+ QTractor audio mixer
+ *QTractor Audio Mixer*
 
 ### Mono, Stereo and Multichannel Audio
 
@@ -557,9 +558,9 @@ Spotlights – This is another important feature which in FLOSS sofware we can a
 
 comparation
 
-![](https://kdenlive.org/video-editing-applications-handbook/color-correction-secondary-premiere-3a.jpg)
+![alt text needed](https://kdenlive.org/video-editing-applications-handbook/color-correction-secondary-premiere-3a.jpg)
 
-![](https://kdenlive.org/video-editing-applications-handbook/color-correction-secondary-premiere-3b.jpg)
+![alt text needed](https://kdenlive.org/video-editing-applications-handbook/color-correction-secondary-premiere-3b.jpg)
 
 *Spotlights combined with secondary color correction in Premiere Pro CS3*
 
@@ -569,7 +570,7 @@ The concept is based on the vignette filters. In Premiere this filter is called 
 
 lighteffect
 
-![](https://kdenlive.org/video-editing-applications-handbook/lightning-premiere-1.jpg)
+![alt text needed](https://kdenlive.org/video-editing-applications-handbook/lightning-premiere-1.jpg)
 
 *The lighting effects concept in Premiere Pro*
 
@@ -599,7 +600,7 @@ I saw that in the latest versions of Kdenlive there are already some improvement
 
 FCP motion
 
-![](https://kdenlive.org/video-editing-applications-handbook/build-in-effects-premiere.jpg)
+![alt text needed](https://kdenlive.org/video-editing-applications-handbook/build-in-effects-premiere.jpg)
 
 *Bulit in effects in FCP and Premiere*
 

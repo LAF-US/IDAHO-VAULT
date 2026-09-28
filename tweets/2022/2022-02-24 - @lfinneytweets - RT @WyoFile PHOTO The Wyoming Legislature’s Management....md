@@ -1,4 +1,5 @@
 ---
+title: "RT @WyoFile PHOTO The Wyoming Legislature\u2019s Management..."
 date: 2022-02-24
 time: 18:41:10
 tweet_id: "1496918139115687936"

@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi GOP Sen. Dan Foreman, a state lawmaker who..."
 date: 2018-04-25
 time: 20:28:17
 tweet_id: "989239696612978688"
@@ -20,6 +21,6 @@ related:
   - idpol
 ---
 
-RT @kkruesi: GOP Sen. Dan Foreman, a state lawmaker who represents Moscow, calls Moscow a "cesspool of liberals." #idleg #idpol https://t.c…
+RT @kkruesi: GOP Sen. Dan Foreman, a state lawmaker who represents Moscow, calls Moscow a "cesspool of liberals." #idleg #idpol <https://t.c…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/989239696612978688)

@@ -1,4 +1,5 @@
 ---
+title: "2 2"
 date: 2023-07-09
 time: 21:29:22
 tweet_id: "1678154399640854528"
@@ -19,10 +20,10 @@ related:
   - lfinneytweets
 ---
 
-@chopchopcda @stopidahorinos @RodFurniss1 @GovernorLittle 2/2 https://t.co/qAbWeiKg8k
+@chopchopcda @stopidahorinos @RodFurniss1 @GovernorLittle 2/2 <https://t.co/qAbWeiKg8k>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2023/07/07/parties-prep-for-presidential-caucus-special-session-not-likely/
+- <https://blog.idahoreports.idahoptv.org/2023/07/07/parties-prep-for-presidential-caucus-special-session-not-likely/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

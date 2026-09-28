@@ -67,7 +67,7 @@ authority: "<who has decision authority>"
 ### Required Header Fields
 
 | Field | Type | Rule | Example |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `title` | string | Exact document title in plain text | `"VAULT-METADATA-STANDARD — Header and Footer Standard"` |
 | `updated` | date | Last substantive edit date, `YYYY-MM-DD` | `2026-03-25` |
 | `status` | enum | One of: `draft`, `active`, `superseded`, `archived` | `active` |
@@ -78,7 +78,7 @@ authority: "<who has decision authority>"
 Use only when useful; avoid metadata bloat.
 
 | Field | Type | Use |
-|---|---|---|
+| --- | --- | --- |
 | `created` | date | Original creation date if different from `updated` |
 | `authors` | list[string] | Multiple contributors |
 | `source` | string or list[string] | Provenance (`interview`, `commit`, `issue`, URL, etc.) |

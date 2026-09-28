@@ -1,4 +1,5 @@
 ---
+title: "RT @robcurley University of Idaho administrators double..."
 date: 2019-02-01
 time: 20:02:17
 tweet_id: "1091426533200130048"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @robcurley: University of Idaho administrators double down amid criticism of text alert implying professor was a safety threat https://t…
+RT @robcurley: University of Idaho administrators double down amid criticism of text alert implying professor was a safety threat <https://t…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1091426533200130048)

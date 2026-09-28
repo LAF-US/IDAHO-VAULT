@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy A 6th grade student at Rigby Middle School was..."
 date: 2021-05-06
 time: 20:03:02
 tweet_id: "1390396710480846848"

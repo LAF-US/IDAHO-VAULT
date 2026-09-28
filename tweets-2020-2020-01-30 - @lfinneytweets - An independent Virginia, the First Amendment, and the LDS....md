@@ -20,10 +20,11 @@ related:
   - idpol
 ---
 
-An independent Virginia, the First Amendment, and the LDS Church. My latest for @IdahoPubRadio 👇 #idleg #idpol 
-https://t.co/SkCRc6pdM5
+An independent Virginia, the First Amendment, and the LDS Church. My latest for @IdahoPubRadio 👇 #idleg #idpol
+<https://t.co/SkCRc6pdM5>
 
 ## Links
-- https://idahopublicradio.wordpress.com/2020/01/30/committee-holds-religious-freedom-day-resolution/
+
+- <https://idahopublicradio.wordpress.com/2020/01/30/committee-holds-religious-freedom-day-resolution/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1222919416645468167)

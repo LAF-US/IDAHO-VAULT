@@ -1,4 +1,5 @@
 ---
+title: "It's a weirdly weird detail!"
 date: 2023-03-29
 time: 23:23:03
 tweet_id: "1641219449045884929"

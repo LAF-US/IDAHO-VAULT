@@ -1,4 +1,5 @@
 ---
+title: "That's great. However the media did not refuse to go in. We..."
 date: 2024-06-15
 time: 22:59:32
 tweet_id: "1802113743985480156"

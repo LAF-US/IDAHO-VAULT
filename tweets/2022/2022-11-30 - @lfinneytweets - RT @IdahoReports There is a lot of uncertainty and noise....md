@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports There is a lot of uncertainty and noise..."
 date: 2022-11-30
 time: 19:05:09
 tweet_id: "1598030389553278976"

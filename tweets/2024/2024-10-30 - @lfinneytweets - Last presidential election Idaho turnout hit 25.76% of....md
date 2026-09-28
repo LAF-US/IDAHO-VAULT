@@ -1,4 +1,5 @@
 ---
+title: "Last presidential election Idaho turnout hit 25.76% of..."
 date: 2024-10-30
 time: 20:20:42
 tweet_id: "1851720909901725772"
@@ -14,9 +15,9 @@ related:
 ---
 
 @bogeyc62 Last presidential election Idaho turnout hit 25.76% of registered voters, or 17.34% of voting age population.
-https://t.co/w2rsdDkzG5
+<https://t.co/w2rsdDkzG5>
 
 ## Links
-- https://sos.idaho.gov/elect/voterreg/turnout.html
+- <https://sos.idaho.gov/elect/voterreg/turnout.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1851720909901725772)

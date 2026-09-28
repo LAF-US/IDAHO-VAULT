@@ -4,4 +4,4 @@ related:
 - DEFINE
 ---
 
-DEFINE term 
+DEFINE term

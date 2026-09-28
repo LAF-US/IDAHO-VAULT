@@ -1,4 +1,5 @@
 ---
+title: "From a political science view, reactionary is a relevant..."
 date: 2024-05-22
 time: 17:58:31
 tweet_id: "1793340680791818665"

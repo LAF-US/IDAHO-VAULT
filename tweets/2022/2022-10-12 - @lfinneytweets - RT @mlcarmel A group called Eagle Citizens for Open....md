@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel A group called Eagle Citizens for Open..."
 date: 2022-10-12
 time: 18:20:24
 tweet_id: "1580262123237564417"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: A group called Eagle Citizens for Open Government filed petitions last week to recall the entire leadership of Eagle. 
+RT @mlcarmel: A group called Eagle Citizens for Open Government filed petitions last week to recall the entire leadership of Eagle.
 
 To ge…
 

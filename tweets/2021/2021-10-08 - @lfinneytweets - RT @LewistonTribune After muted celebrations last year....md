@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune After muted celebrations last year..."
 date: 2021-10-08
 time: 19:22:22
 tweet_id: "1446556595148574721"

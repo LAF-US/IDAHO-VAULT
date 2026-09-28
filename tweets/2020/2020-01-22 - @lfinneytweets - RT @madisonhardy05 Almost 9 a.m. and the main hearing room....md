@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Almost 9 a.m. and the main hearing room..."
 date: 2020-01-22
 time: 16:09:06
 tweet_id: "1220015542825672704"

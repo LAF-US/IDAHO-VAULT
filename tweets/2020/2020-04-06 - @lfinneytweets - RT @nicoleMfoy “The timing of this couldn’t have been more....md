@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy \u201cThe timing of this couldn\u2019t have been more..."
 date: 2020-04-06
 time: 23:25:12
 tweet_id: "1247304381378072576"

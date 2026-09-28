@@ -30,7 +30,7 @@ related:
 - parents
 authority: LOGAN
 ---
-https://www.idahoednews.org/news/indoctrination-task-force-pivots-to-k-12-in-hours-long-meeting/ 
+<https://www.idahoednews.org/news/indoctrination-task-force-pivots-to-k-12-in-hours-long-meeting/>
 
 Blake Jones, Idaho Education News
 

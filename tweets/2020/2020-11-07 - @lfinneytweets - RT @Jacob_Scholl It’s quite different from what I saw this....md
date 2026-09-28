@@ -1,4 +1,5 @@
 ---
+title: "RT @Jacob_Scholl It\u2019s quite different from what I saw this..."
 date: 2020-11-07
 time: 19:48:46
 tweet_id: "1325163304340365312"

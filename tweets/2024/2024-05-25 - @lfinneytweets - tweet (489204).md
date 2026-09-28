@@ -1,4 +1,5 @@
 ---
+title: "tweet (489204)"
 date: 2024-05-25
 time: 00:52:12
 tweet_id: "1794169560922489204"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/VlQF4XbMbx
+<https://t.co/VlQF4XbMbx>
 
 ## Links
-- https://cdapress.com/news/2024/may/24/defense-rests-in-defamation-case/
+- <https://cdapress.com/news/2024/may/24/defense-rests-in-defamation-case/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

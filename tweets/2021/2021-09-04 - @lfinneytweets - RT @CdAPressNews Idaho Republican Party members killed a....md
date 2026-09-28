@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews Idaho Republican Party members killed a..."
 date: 2021-09-04
 time: 16:56:09
 tweet_id: "1434198611672199171"

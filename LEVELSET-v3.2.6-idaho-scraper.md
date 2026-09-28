@@ -39,7 +39,7 @@ LEVELSET Claude Code – Idaho Legislature Scraper — 2026-03-14
 ## 2. WHAT I'VE DONE
 
 | File | Type | Commit | Action |
-|------|------|--------|--------|
+| ------ | ------ | -------- | -------- |
 | `.github/scripts/idaho_leg_scraper.py` | Python | `449d365`, `ebd9df6` | Created; 7 robustness fixes |
 | `.github/workflows/idaho-leg-scraper.yml` | YAML | `449d365`, `ebd9df6` | Created; updated |
 | `.github/scripts/post_digest.py` | Python | `ebd9df6` | Created — GitHub Issues daily digest |
@@ -48,6 +48,7 @@ LEVELSET Claude Code – Idaho Legislature Scraper — 2026-03-14
 | `!ADMINISTRATION/LEVELSET-v3.2.6-idaho-scraper.md` | Administrative | this commit | This report |
 
 **Decisions Logan approved:**
+
 - Exact `last_action:` frontmatter key as change-detection sentinel
 - Dynamic legislature/session number via `_idaho_legislature_number(year)`
 - Multi-letter bill prefix URL padding fix (`HCR001` not `HCR0001`)
@@ -69,7 +70,7 @@ LEVELSET Claude Code – Idaho Legislature Scraper — 2026-03-14
 ## 4. CONVERSATION AWARENESS
 
 | Conversation | Known role | My visibility |
-|---|---|---|
+| --- | --- | --- |
 | PERSISTENT: ADMINISTRATION | Tier 2, constitutional layer | None — `Claude.md` absent confirms it hasn't committed yet |
 | PERSISTENT: CODE AUTHORITY | Tier 1, Opus 4.6, direct repo | None |
 | PERSISTENT: IMPLEMENTATION | Tier 3, governance/architecture | None |

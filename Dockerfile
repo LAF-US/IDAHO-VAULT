@@ -1,13 +1,15 @@
-FROM python:3.9-slim
+FROM python:3.13-slim
 
 # Set environment variables
-ENV PYTHONUNBUFFERED True
-ENV APP_HOME /app
+ENV PYTHONUNBUFFERED=True
+ENV APP_HOME=/app
 WORKDIR $APP_HOME
 
 # Install dependencies.
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY pyproject.toml .
+COPY src ./src
+RUN pip install --no-cache-dir -r requirements.txt gunicorn==23.0.0
 
 # Copy the application code.
 # Only copy the specific application files needed.
@@ -23,4 +25,4 @@ USER appuser
 
 # Run the web service on container startup.
 # Use gunicorn for production. Cloud Run sets the PORT environment variable.
-CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 120 main:app
+CMD ["sh", "-c", "exec gunicorn --bind :${PORT:-8080} --workers 1 --threads 8 --timeout 120 main:app"]

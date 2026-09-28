@@ -1,4 +1,5 @@
 ---
+title: "RT @twinfallstn Nevada voters overwhelmingly agreed Tuesday..."
 date: 2020-11-06
 time: 18:16:18
 tweet_id: "1324777645515530240"

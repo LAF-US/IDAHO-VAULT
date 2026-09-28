@@ -1,4 +1,5 @@
 ---
+title: "American Progressives in the early 1900s yo dawg we heard..."
 date: 2024-05-22
 time: 17:51:12
 tweet_id: "1793338837621788813"

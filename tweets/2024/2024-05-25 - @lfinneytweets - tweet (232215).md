@@ -1,4 +1,5 @@
 ---
+title: "tweet (232215)"
 date: 2024-05-25
 time: 22:02:31
 tweet_id: "1794489247057232215"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/pjvWAyyvts
+<https://t.co/pjvWAyyvts>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GOdOddcbwAAHIoy.png)
+
+- ![alt text needed](https://pbs.twimg.com/media/GOdOddcbwAAHIoy.png)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

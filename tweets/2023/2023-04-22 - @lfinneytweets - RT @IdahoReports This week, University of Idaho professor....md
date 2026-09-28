@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week, University of Idaho professor..."
 date: 2023-04-22
 time: 01:51:32
 tweet_id: "1649591737084694529"

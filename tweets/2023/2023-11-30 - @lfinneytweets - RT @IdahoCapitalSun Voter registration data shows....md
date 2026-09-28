@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Voter registration data shows..."
 date: 2023-11-30
 time: 01:42:41
 tweet_id: "1730039616806531310"

@@ -36,7 +36,7 @@ Scope:
 ## Chronology
 
 | Date range | What changed | Anchor docs |
-|---|---|---|
+| --- | --- | --- |
 | 2026-01 to 2026-03-15 | Early-year source captures and daily notes set the background; the vault is already using timeline-oriented capture and reporting habits before the governance stack settles. | `2026-03-16.md`, `2026-03-10 - I Built My Own Local AI Agent with OpenClaw + Obsidian What Nobody Tells You.md`, early 2026 source notes |
 | 2026-03-16 | The first big governance surface lands: constitution language, metadata doctrine, and early swarm/levelset work appear together. The vault starts formalizing durable records instead of leaving everything in chat. | [CONSTITUTION.md](/Users/logan/IDAHO-VAULT/CONSTITUTION.md), [VAULT-METADATA-STANDARD.md](/Users/logan/IDAHO-VAULT/VAULT-METADATA-STANDARD.md), `2026-03-16.md`, `LEVELSET-CASCADE-2026-03-16.md` |
 | 2026-03-25 to 2026-03-29 | Metadata rules are formalized, then the swarm directive narrows the safe operating mode: analyze, draft, checkpoint, avoid destructive changes. Coordination shifts from ad hoc conversation toward explicit task lanes. | [VAULT-METADATA-STANDARD.md](/Users/logan/IDAHO-VAULT/VAULT-METADATA-STANDARD.md), [2026-03-29 SWARM DIRECTIVE via Linear.md](/Users/logan/IDAHO-VAULT/2026-03-29%20SWARM%20DIRECTIVE%20via%20Linear.md), `HANDOFF-Swarm-Coordination-2026-03-29.md` |

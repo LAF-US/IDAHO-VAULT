@@ -1,4 +1,5 @@
 ---
+title: "Lee speaks in favor of the resolution, says that this is a..."
 date: 2021-01-19
 time: 16:24:25
 tweet_id: "1351566190347386881"

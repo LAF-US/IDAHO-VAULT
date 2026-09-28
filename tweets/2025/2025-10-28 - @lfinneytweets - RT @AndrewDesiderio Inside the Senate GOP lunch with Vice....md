@@ -1,4 +1,5 @@
 ---
+title: "RT @AndrewDesiderio Inside the Senate GOP lunch with Vice..."
 date: 2025-10-28
 time: 18:53:50
 tweet_id: "1983245841109520490"

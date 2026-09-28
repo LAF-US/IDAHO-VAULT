@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews The Idaho Senate passed a bill in a 24-10..."
 date: 2024-03-20
 time: 00:05:20
 tweet_id: "1770240169087775201"

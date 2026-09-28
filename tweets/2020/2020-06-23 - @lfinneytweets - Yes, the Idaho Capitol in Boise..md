@@ -1,4 +1,5 @@
 ---
+title: "Yes, the Idaho Capitol in Boise."
 date: 2020-06-23
 time: 19:01:55
 tweet_id: "1275504377361346560"

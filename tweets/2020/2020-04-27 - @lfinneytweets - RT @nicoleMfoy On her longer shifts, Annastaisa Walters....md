@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy On her longer shifts, Annastaisa Walters..."
 date: 2020-04-27
 time: 21:38:37
 tweet_id: "1254887700760424448"

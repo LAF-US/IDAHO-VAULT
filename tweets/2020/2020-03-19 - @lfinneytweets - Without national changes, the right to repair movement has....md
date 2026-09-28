@@ -1,4 +1,5 @@
 ---
+title: "Without national changes, the right to repair movement has..."
 date: 2020-03-19
 time: 13:33:07
 tweet_id: "1240632396606615554"

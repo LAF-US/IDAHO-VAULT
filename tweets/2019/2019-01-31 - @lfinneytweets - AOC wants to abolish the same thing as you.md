@@ -1,4 +1,5 @@
 ---
+title: "AOC wants to abolish the same thing as you"
 date: 2019-01-31
 time: 05:53:48
 tweet_id: "1090850616803377152"

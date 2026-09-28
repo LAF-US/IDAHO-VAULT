@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2022-10-18
 time: 21:14:19
 tweet_id: "1582480216286711808"
@@ -16,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@thenextbarstool @dugganreports @davlinnews https://t.co/aDPf5JwNVl
+@thenextbarstool @dugganreports @davlinnews <https://t.co/aDPf5JwNVl>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/FfYZXW-acAArXjI.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FfYZXW-acAArXjI.jpg)
 
 *In reply to [@thenextbarstool](https://twitter.com/thenextbarstool)*
 

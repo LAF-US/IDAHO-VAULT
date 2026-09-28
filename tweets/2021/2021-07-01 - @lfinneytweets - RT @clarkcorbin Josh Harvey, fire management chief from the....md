@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Josh Harvey, fire management chief from the..."
 date: 2021-07-01
 time: 20:51:17
 tweet_id: "1410702571254157313"

@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 \u201cAlthough movie-making isn't all that..."
 date: 2022-03-29
 time: 05:03:56
 tweet_id: "1508671276235169798"

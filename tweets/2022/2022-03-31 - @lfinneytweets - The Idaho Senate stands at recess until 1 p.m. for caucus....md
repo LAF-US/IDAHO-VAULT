@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Senate stands at recess until 1 p.m. for caucus..."
 date: 2022-03-31
 time: 17:16:18
 tweet_id: "1509580356852219907"

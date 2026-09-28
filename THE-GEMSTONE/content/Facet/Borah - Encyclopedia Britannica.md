@@ -14,8 +14,8 @@ Borah did not object to international compacts so long as the enforcement mechan
 
 During the Great Depression of the 1930s, Borah supported many New Deal measures designed to relieve internal economic conditions. As European tensions mounted, however, he held fast to his isolationist stance by resisting all attempts to involve the U.S. on the side of the Allies.
 
---- 
+---
 
 [^1] "[William E. Borah](https://www.britannica.com/biography/William-E-Borah)". From *Encyclopedia Britannica*.
 
---- 
+---

@@ -1,4 +1,5 @@
 ---
+title: "Senate Standard Time @BerntForIdaho #idleg"
 date: 2025-03-20
 time: 21:05:02
 tweet_id: "1902828753694363719"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise AP Ybarra charges lawmakers..."
 date: 2020-04-28
 time: 16:15:37
 tweet_id: "1255168803769442304"

@@ -1,4 +1,5 @@
 ---
+title: "A new cohort of Idaho lawmakers will gather in Boise this..."
 date: 2024-12-02
 time: 19:53:50
 tweet_id: "1863672945685696935"

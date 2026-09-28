@@ -1,4 +1,5 @@
 ---
+title: "RT @NWSSpokane #Hilary brought beneficial rains to Eastern..."
 date: 2023-08-24
 time: 21:01:46
 tweet_id: "1694817296110473357"

@@ -33,23 +33,23 @@ It is not doctrine.
 ## External Sources Used
 
 1. L. Frank Baum, *The Wonderful Wizard of Oz*, Project Gutenberg.
-   - URL: https://www.gutenberg.org/files/55/55-h/55-h
+   - URL: <https://www.gutenberg.org/files/55/55-h/55-h>
    - Used for Baum's own introductory framing of the book as a modernized fairy
      tale for children and for the Great Humbug structure.
 
 2. Gregory Maguire, FAQ.
-   - URL: https://gregorymaguire.com/faq/
+   - URL: <https://gregorymaguire.com/faq/>
    - Used for Maguire's own explanation that *Wicked* grew from questions about
      evil, the inhuman enemy, and legitimized violence, using Baum's Wicked
      Witch as a pre-understood figure.
 
 3. Gregory Maguire, *The Wicked Series Box Set* page.
-   - URL: https://gregorymaguire.com/publication/the-wicked-series-box-set/
+   - URL: <https://gregorymaguire.com/publication/the-wicked-series-box-set/>
    - Used for the series composition: *Wicked*, *Son of a Witch*, *A Lion Among
      Men*, and *Out of Oz*.
 
 4. Gregory Maguire, Theater & Film page.
-   - URL: https://gregorymaguire.com/theater-film/
+   - URL: <https://gregorymaguire.com/theater-film/>
    - Used for adaptation context: the musical and film layer are downstream of
      the novel and should not be collapsed into Maguire's prose project.
 
@@ -63,4 +63,3 @@ It is not doctrine.
   propaganda, scapegoating, and institutional violence.
 - The Vault's current doctrine already keeps both tellings in play rather than
   choosing one as total replacement for the other.
-

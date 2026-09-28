@@ -1,4 +1,5 @@
 ---
+title: "University of Idaho welcoming students back for fall...to..."
 date: 2020-07-17
 time: 02:49:06
 tweet_id: "1283956865173340163"
@@ -18,9 +19,9 @@ related:
   - GoVandals
 ---
 
-University of Idaho welcoming students back for fall...to go online-only after Thanksgiving break. #IdahoCOVID19 #GoVandals https://t.co/DJdANtaVkV
+University of Idaho welcoming students back for fall...to go online-only after Thanksgiving break. #IdahoCOVID19 #GoVandals <https://t.co/DJdANtaVkV>
 
 ## Links
-- https://x.com/uiargonaut/status/1283886689442652160
+- <https://x.com/uiargonaut/status/1283886689442652160>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1283956865173340163)

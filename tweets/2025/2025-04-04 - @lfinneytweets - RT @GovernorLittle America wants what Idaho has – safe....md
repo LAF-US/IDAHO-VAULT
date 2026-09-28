@@ -1,4 +1,5 @@
 ---
+title: "RT @GovernorLittle America wants what Idaho has \u2013 safe..."
 date: 2025-04-04
 time: 22:58:33
 tweet_id: "1908293138923610164"

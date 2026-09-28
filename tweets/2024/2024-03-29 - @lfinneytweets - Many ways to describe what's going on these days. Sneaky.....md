@@ -1,4 +1,5 @@
 ---
+title: "Many ways to describe what's going on these days. Sneaky...."
 date: 2024-03-29
 time: 02:35:55
 tweet_id: "1773539553820950638"

@@ -1,4 +1,5 @@
 ---
+title: "Mendive After state revenues have taken a hit from the..."
 date: 2020-06-23
 time: 16:16:25
 tweet_id: "1275462724705632256"

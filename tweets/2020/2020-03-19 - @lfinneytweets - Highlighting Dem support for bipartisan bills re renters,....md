@@ -1,4 +1,5 @@
 ---
+title: "Highlighting Dem support for bipartisan bills re renters,..."
 date: 2020-03-19
 time: 22:39:06
 tweet_id: "1240769797618413568"

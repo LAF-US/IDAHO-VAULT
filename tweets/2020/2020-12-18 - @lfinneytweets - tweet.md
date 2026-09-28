@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-12-18
 time: 19:29:21
 tweet_id: "1340016318997700608"
@@ -17,10 +18,10 @@ related:
   - lfinneytweets
 ---
 
-@danielwinlander @audreydutton https://t.co/wjgHvpuGNA
+@danielwinlander @audreydutton <https://t.co/wjgHvpuGNA>
 
 ## Links
-- https://youtu.be/vcMCIfvfEPA
+- <https://youtu.be/vcMCIfvfEPA>
 
 *In reply to [@danielwreporter](https://twitter.com/danielwreporter)*
 

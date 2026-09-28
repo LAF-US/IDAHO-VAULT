@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Gov. Brad Little is discussing the public..."
 date: 2020-07-09
 time: 15:04:25
 tweet_id: "1281242812831248384"

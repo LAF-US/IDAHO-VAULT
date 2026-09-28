@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Idaho will receive $9,256,589 in federal..."
 date: 2023-06-20
 time: 20:57:44
 tweet_id: "1671261072203091969"

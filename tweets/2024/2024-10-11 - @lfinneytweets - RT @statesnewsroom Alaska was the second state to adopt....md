@@ -1,4 +1,5 @@
 ---
+title: "RT @statesnewsroom Alaska was the second state to adopt..."
 date: 2024-10-11
 time: 22:55:57
 tweet_id: "1844874610711625787"

@@ -1,4 +1,5 @@
 ---
+title: "Stennett \u201cWhen we\u2019re talking about initiatives, we\u2019re not..."
 date: 2021-02-17
 time: 16:26:29
 tweet_id: "1362075957494837253"

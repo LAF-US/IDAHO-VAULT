@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress Republican Senate leaders are trying to..."
 date: 2023-08-30
 time: 03:26:17
 tweet_id: "1696726002767208508"

@@ -1,4 +1,5 @@
 ---
+title: "Rep. Tammy Nichols (R-Middleton)"
 date: 2020-06-24
 time: 04:50:42
 tweet_id: "1275652546426789891"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-Rep. Tammy Nichols (R-Middleton) https://t.co/ejv5D7PKcN
+Rep. Tammy Nichols (R-Middleton) <https://t.co/ejv5D7PKcN>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQFOE8XsAAAFWT.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EbQFOE8XsAAAFWT.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin The new Idaho bill is nearly identical to a..."
 date: 2023-02-09
 time: 21:59:48
 tweet_id: "1623803879467909120"

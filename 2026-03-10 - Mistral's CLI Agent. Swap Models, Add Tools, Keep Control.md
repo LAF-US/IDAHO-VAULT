@@ -34,7 +34,7 @@ Beyond the manageable codebase:
 
 Vibe follows a clean layered architecture. Here’s the high-level view:
 
-![](https://substackcdn.com/image/fetch/$s_!NVaj!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8f13e728-11ff-41dc-94cc-2b9b9128e153_4346x3685.png)
+![alt text needed](https://substackcdn.com/image/fetch/$s_!NVaj!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8f13e728-11ff-41dc-94cc-2b9b9128e153_4346x3685.png)
 
 Well organized and approachable architecture
 
@@ -48,7 +48,7 @@ The conversation loop in `agent.py` is straightforward: receive user input, buil
 
 The `~/.vibe/` directory deserves special mention. The Vibe team did an excellent job extracting configuration from the codebase into this single location. Most changes or extensions you might want to undertake can be accomplished in this directory.
 
-![](https://substackcdn.com/image/fetch/$s_!A8jD!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faf38b1b5-164b-4182-b2ad-5c645847a287_1760x1084.png)
+![alt text needed](https://substackcdn.com/image/fetch/$s_!A8jD!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faf38b1b5-164b-4182-b2ad-5c645847a287_1760x1084.png)
 
 Get to know your Vibe user directory
 
@@ -64,7 +64,7 @@ The system prompt is where Vibe’s behavior is defined. Understanding how it’
 
 The assembly happens in `core/system_prompt.py`. Each section is conditionally included based on config flags:
 
-![](https://substackcdn.com/image/fetch/$s_!mAXF!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4273a4b8-4be8-42c2-9cee-d4869e11b625_1360x4070.png)
+![alt text needed](https://substackcdn.com/image/fetch/$s_!mAXF!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4273a4b8-4be8-42c2-9cee-d4869e11b625_1360x4070.png)
 
 All the components of the System Prompt
 
@@ -189,7 +189,7 @@ When Vibe starts, the Tool Manager scans a hierarchy of directories for Python f
 2. `.vibe/tools/` - Project-local tools
 3. `~/.vibe/tools/` - Global user tools
 
-![](https://substackcdn.com/image/fetch/$s_!-UkC!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa41b4978-e903-4ddf-b57e-376be6826401_3859x4387.png)
+![alt text needed](https://substackcdn.com/image/fetch/$s_!-UkC!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa41b4978-e903-4ddf-b57e-376be6826401_3859x4387.png)
 
 Tool runtime workflow
 
@@ -199,7 +199,7 @@ Each tool exposes its name, description, and parameter schema. This is what is s
 
 Every tool consists of four Pydantic models plus the tool class. Here’s a minimal weather tool to illustrate the pattern:
 
-![](https://substackcdn.com/image/fetch/$s_!uKMS!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe2238eaf-9ef2-404f-a5c0-d71ce932263a_1514x1156.png)
+![alt text needed](https://substackcdn.com/image/fetch/$s_!uKMS!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe2238eaf-9ef2-404f-a5c0-d71ce932263a_1514x1156.png)
 
 The basics of a Vibe Tool
 

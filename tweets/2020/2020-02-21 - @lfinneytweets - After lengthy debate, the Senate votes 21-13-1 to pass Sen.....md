@@ -1,4 +1,5 @@
 ---
+title: "After lengthy debate, the Senate votes 21-13-1 to pass Sen...."
 date: 2020-02-21
 time: 18:29:35
 tweet_id: "1230922529251815424"

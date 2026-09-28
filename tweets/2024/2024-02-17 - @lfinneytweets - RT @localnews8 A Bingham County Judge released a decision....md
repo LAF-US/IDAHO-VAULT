@@ -1,4 +1,5 @@
 ---
+title: "RT @localnews8 A Bingham County Judge released a decision..."
 date: 2024-02-17
 time: 02:31:07
 tweet_id: "1758680445892657317"

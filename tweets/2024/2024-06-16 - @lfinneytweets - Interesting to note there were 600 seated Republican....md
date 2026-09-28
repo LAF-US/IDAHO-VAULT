@@ -1,4 +1,5 @@
 ---
+title: "Interesting to note there were 600 seated Republican..."
 date: 2024-06-16
 time: 05:52:10
 tweet_id: "1802217585737711950"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Senate State Affairs Committee moved..."
 date: 2022-02-17
 time: 00:04:45
 tweet_id: "1494100469865943040"

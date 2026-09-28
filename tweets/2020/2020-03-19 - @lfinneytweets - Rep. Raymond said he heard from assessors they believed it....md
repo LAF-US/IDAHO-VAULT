@@ -1,4 +1,5 @@
 ---
+title: "Rep. Raymond said he heard from assessors they believed it..."
 date: 2020-03-19
 time: 00:10:17
 tweet_id: "1240430356689350656"

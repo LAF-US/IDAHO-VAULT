@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-07-31
 time: 17:19:34
 tweet_id: "1421520927670509570"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/PMj0elfWiB
+<https://t.co/PMj0elfWiB>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2021/07/16/governor-statewide-law-enforcement-say-growing-meth-and-fentanyl-trade-threatens-idaho-way-of-life/
+- <https://blog.idahoreports.idahoptv.org/2021/07/16/governor-statewide-law-enforcement-say-growing-meth-and-fentanyl-trade-threatens-idaho-way-of-life/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

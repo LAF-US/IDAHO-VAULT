@@ -1,4 +1,5 @@
 ---
+title: "RT @kiphillreporter Among the many things I learned in this..."
 date: 2021-06-05
 time: 00:47:35
 tweet_id: "1400977565301366786"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @kiphillreporter: Among the many things I learned in this @Ted_Spokesman piece is that there's a "Good Grief" Idaho. https://t.co/VB1diF…
+RT @kiphillreporter: Among the many things I learned in this @Ted_Spokesman piece is that there's a "Good Grief" Idaho. <https://t.co/VB1diF…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1400977565301366786)

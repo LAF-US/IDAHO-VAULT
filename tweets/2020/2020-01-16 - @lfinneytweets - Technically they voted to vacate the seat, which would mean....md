@@ -1,4 +1,5 @@
 ---
+title: "Technically they voted to vacate the seat, which would mean..."
 date: 2020-01-16
 time: 20:57:10
 tweet_id: "1217913707914653696"

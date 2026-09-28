@@ -1,4 +1,5 @@
 ---
+title: "RT @gemstatebrian Rep. Kevin Andrus reveals that he had..."
 date: 2024-03-19
 time: 22:27:53
 tweet_id: "1770215646942683635"

@@ -1,4 +1,5 @@
 ---
+title: "Always commit to the bit"
 date: 2022-02-04
 time: 07:33:37
 tweet_id: "1489502386523545601"

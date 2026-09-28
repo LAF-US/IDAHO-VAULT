@@ -1,4 +1,5 @@
 ---
+title: "RT @apalermotweets design a flag that reflects boise, they..."
 date: 2025-04-09
 time: 19:11:53
 tweet_id: "1910048038082752739"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @apalermotweets: design a flag that reflects boise, they said https://t.co/dln5MXeOFQ
+RT @apalermotweets: design a flag that reflects boise, they said <https://t.co/dln5MXeOFQ>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1910048038082752739)

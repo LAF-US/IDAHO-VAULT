@@ -1,4 +1,5 @@
 ---
+title: "I hate this."
 date: 2022-12-12
 time: 18:12:47
 tweet_id: "1602365864136740867"

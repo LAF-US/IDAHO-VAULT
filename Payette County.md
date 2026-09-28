@@ -9,4 +9,4 @@ authority: LOGAN
 ---
 Seat: Payette
 Municipalities: Fruitland, New Plymouth
-Communities: Hamilton Corner, Sand Hollow 
+Communities: Hamilton Corner, Sand Hollow

@@ -1,4 +1,5 @@
 ---
+title: "RT @AdaElections Here it is! Idaho's 2020 I Voted Sticker..."
 date: 2020-01-10
 time: 19:50:23
 tweet_id: "1215722574941810688"

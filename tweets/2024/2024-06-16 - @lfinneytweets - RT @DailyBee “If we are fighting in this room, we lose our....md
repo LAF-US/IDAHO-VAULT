@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee \u201cIf we are fighting in this room, we lose our..."
 date: 2024-06-16
 time: 16:05:39
 tweet_id: "1802371971931582546"

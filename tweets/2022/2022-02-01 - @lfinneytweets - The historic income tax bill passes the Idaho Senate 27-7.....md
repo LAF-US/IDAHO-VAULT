@@ -1,4 +1,5 @@
 ---
+title: "The historic income tax bill passes the Idaho Senate 27-7...."
 date: 2022-02-01
 time: 19:44:04
 tweet_id: "1488599047430565890"

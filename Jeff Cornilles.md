@@ -4,4 +4,3 @@ related:
 authority: LOGAN
 ---
 Residence: Nampa
-

@@ -1,4 +1,5 @@
 ---
+title: "The House tax committee also passed a bill to raise the..."
 date: 2022-02-01
 time: 17:26:56
 tweet_id: "1488564536588181506"

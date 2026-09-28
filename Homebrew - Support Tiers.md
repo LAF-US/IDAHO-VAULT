@@ -32,8 +32,8 @@ To qualify as Tier 1, a macOS configuration must meet all of the following:
 - On official Apple hardware (not a Hackintosh or virtual machine)
 - Running the latest patch release of a macOS version supported by Apple for that hardware and included in Homebrew’s CI coverage (typically the latest stable or prerelease version and the two preceding versions)
 - Installed in the default prefix:
-	- `/opt/homebrew` on Apple Silicon
-		- `/usr/local` on Intel x86\_64
+  - `/opt/homebrew` on Apple Silicon
+    - `/usr/local` on Intel x86\_64
 - Using a supported architecture (Apple Silicon or Intel x86\_64)
 - Not building official packages from source (i.e. using bottles)
 - Installed on the Mac’s internal storage (not external or removable drives)
@@ -45,8 +45,8 @@ To qualify as Tier 1, a macOS configuration must meet all of the following:
 To qualify as Tier 1, a Linux configuration must meet all of the following:
 
 - Running on:
-	- Ubuntu within its [standard support window](https://ubuntu.com/about/release-cycle) or
-		- a Homebrew-provided Docker image
+  - Ubuntu within its [standard support window](https://ubuntu.com/about/release-cycle) or
+    - a Homebrew-provided Docker image
 - Using a system `glibc` version ≥ 2.35
 - Using a Linux kernel version ≥ 3.2
 - Installed in the default prefix: `/home/linuxbrew/.linuxbrew`
@@ -135,27 +135,27 @@ Apple has announced that macOS Tahoe 26 will be the final version of macOS to su
 The following timeline outlines expected Tier classifications based on Apple’s release cycle and Homebrew’s CI coverage.
 
 - As of November 2025:
-	Apple Silicon:
-	- Tier 1: macOS Tahoe 26, Sequoia 15, Sonoma 14
-		- Tier 3: macOS Big Sur 11 through Ventura 13
-	Intel x86\_64:
-	- Tier 1: macOS Tahoe 26, Sequoia 15, Sonoma 14
-		- Tier 3: macOS Catalina 10.15 through Ventura 13
-		- Unsupported: macOS Mojave 10.14 and earlier
+ Apple Silicon:
+  - Tier 1: macOS Tahoe 26, Sequoia 15, Sonoma 14
+    - Tier 3: macOS Big Sur 11 through Ventura 13
+ Intel x86\_64:
+  - Tier 1: macOS Tahoe 26, Sequoia 15, Sonoma 14
+    - Tier 3: macOS Catalina 10.15 through Ventura 13
+    - Unsupported: macOS Mojave 10.14 and earlier
 - Expected in or after September 2026:
-	Apple Silicon:
-	- Tier 1: macOS 27, Tahoe 26, Sequoia 15
-		- Tier 3: macOS Big Sur 11 through Sonoma 14
-	Intel x86\_64:
-	- Tier 3: macOS Big Sur 11 through Tahoe 26
-		- Unsupported: macOS Catalina 10.15 and earlier
+ Apple Silicon:
+  - Tier 1: macOS 27, Tahoe 26, Sequoia 15
+    - Tier 3: macOS Big Sur 11 through Sonoma 14
+ Intel x86\_64:
+  - Tier 3: macOS Big Sur 11 through Tahoe 26
+    - Unsupported: macOS Catalina 10.15 and earlier
 - Expected in or after September 2027:
-	Apple Silicon:
-	- Tier 1: macOS 28, 27, Tahoe 26
-		- Tier 3: macOS Monterey 12 through Sequoia 15
-		- Unsupported: macOS Big Sur 11
-	Intel x86\_64:
-	- Unsupported: all macOS versions
+ Apple Silicon:
+  - Tier 1: macOS 28, 27, Tahoe 26
+    - Tier 3: macOS Monterey 12 through Sequoia 15
+    - Unsupported: macOS Big Sur 11
+ Intel x86\_64:
+  - Unsupported: all macOS versions
 
 ### Rosetta 2
 

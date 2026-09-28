@@ -4,4 +4,4 @@ related:
 - Franklin County
 authority: LOGAN
 ---
-Franklin County 
+Franklin County

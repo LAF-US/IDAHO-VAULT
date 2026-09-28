@@ -11,8 +11,8 @@ related:
 ---
 
 Bible
-Torah 
-Quran 
+Torah
+Quran
 
 religion
 religiosity

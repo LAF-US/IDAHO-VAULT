@@ -1,4 +1,5 @@
 ---
+title: "The board doesn't teach the classes, take the classes, or..."
 date: 2022-12-16
 time: 19:39:07
 tweet_id: "1603837145491607552"

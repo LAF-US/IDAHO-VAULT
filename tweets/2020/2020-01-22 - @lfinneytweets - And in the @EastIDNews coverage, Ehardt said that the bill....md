@@ -1,4 +1,5 @@
 ---
+title: "And in the @EastIDNews coverage, Ehardt said that the bill..."
 date: 2020-01-22
 time: 16:59:43
 tweet_id: "1220028277412122624"

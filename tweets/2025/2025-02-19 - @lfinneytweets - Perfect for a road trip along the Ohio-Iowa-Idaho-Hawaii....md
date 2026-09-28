@@ -1,4 +1,5 @@
 ---
+title: "Perfect for a road trip along the Ohio-Iowa-Idaho-Hawaii..."
 date: 2025-02-19
 time: 19:25:32
 tweet_id: "1892294465475244326"

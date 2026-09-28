@@ -1,4 +1,5 @@
 ---
+title: "New cases per day"
 date: 2020-04-10
 time: 04:48:06
 tweet_id: "1248472802136428544"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-New cases per day https://t.co/8xwAoM4nPJ
+New cases per day <https://t.co/8xwAoM4nPJ>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EVN3CknU0AE1biC.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EVN3CknU0AE1biC.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

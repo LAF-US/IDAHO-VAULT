@@ -5,4 +5,4 @@ related:
 - Nampa
 authority: LOGAN
 ---
-House Judiciary, Rules and Administration chair 
+House Judiciary, Rules and Administration chair

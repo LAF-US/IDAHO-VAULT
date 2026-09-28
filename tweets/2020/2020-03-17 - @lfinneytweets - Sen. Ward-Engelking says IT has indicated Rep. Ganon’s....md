@@ -1,4 +1,5 @@
 ---
+title: "Sen. Ward-Engelking says IT has indicated Rep. Ganon\u2019s..."
 date: 2020-03-17
 time: 20:17:04
 tweet_id: "1240009276124311552"

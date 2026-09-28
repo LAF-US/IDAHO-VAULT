@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Today, @GovernorLittle said the state will..."
 date: 2020-12-11
 time: 01:41:34
 tweet_id: "1337210889062117376"

@@ -1,4 +1,5 @@
 ---
+title: "RT @KayeThornbrugh \ud83d\udea8 A Kootenai County judge has ordered..."
 date: 2023-03-04
 time: 02:28:03
 tweet_id: "1631843922191286273"

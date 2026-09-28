@@ -23,7 +23,7 @@ related:
   - idpol
 ---
 
-#COVID19 response funds passed unanimously by both the Senate and House, headed to @GovernorLittle ’s desk. #idleg #idpol
+# COVID19 response funds passed unanimously by both the Senate and House, headed to @GovernorLittle ’s desk. #idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

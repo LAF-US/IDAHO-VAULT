@@ -18,9 +18,10 @@ related:
   - idleg
 ---
 
-Rep. Heather Scott is calling her abortion ban bill forward from committee. The Ways and Means chairman made a motion to prevent that. The House is debating now, will need a majority vote to block it from moving forward. #idpol #idleg https://t.co/VGfZZ2ZqGG
+Rep. Heather Scott is calling her abortion ban bill forward from committee. The Ways and Means chairman made a motion to prevent that. The House is debating now, will need a majority vote to block it from moving forward. #idpol #idleg <https://t.co/VGfZZ2ZqGG>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/ER4QiIvUEAADyic.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1233441640758444032)

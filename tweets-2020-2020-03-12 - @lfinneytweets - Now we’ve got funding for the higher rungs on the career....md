@@ -17,11 +17,12 @@ related:
 ---
 
 @BetsyZRussell Now we’ve got funding for the higher rungs on the career ladder
-Passes unanimously. 
-https://t.co/SofZeUh3Ko
+Passes unanimously.
+<https://t.co/SofZeUh3Ko>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/2020/legislation/H0523/
+
+- <https://legislature.idaho.gov/sessioninfo/2020/legislation/H0523/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

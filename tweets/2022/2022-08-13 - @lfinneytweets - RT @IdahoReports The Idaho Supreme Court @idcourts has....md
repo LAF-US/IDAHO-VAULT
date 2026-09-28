@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho Supreme Court @idcourts has..."
 date: 2022-08-13
 time: 02:07:56
 tweet_id: "1558274122982965248"

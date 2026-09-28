@@ -1,4 +1,4 @@
-# Final verification of stabilization system
+﻿# Final verification of stabilization system
 
 try {
     # Import module

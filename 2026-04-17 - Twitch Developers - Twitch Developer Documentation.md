@@ -7,7 +7,7 @@ date created: Thursday, April 23rd 2026, 7:22:00 pm
 date modified: Thursday, April 23rd 2026, 7:22:06 pm
 ---
 
-[Contents](#)
+Contents
 
 > Reviews for chatbot verification continue to be temporarily paused while we revise our processes. Reviews for Extensions, developer organizations, and game ownership have resumed. Thank you for your patience and understanding.
 

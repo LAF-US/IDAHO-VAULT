@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress A new observatory in Bruneau Dunes State..."
 date: 2023-05-30
 time: 17:12:17
 tweet_id: "1663594190486511616"

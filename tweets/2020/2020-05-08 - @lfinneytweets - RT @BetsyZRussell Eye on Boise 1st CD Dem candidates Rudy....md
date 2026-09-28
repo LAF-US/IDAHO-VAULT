@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise 1st CD Dem candidates Rudy..."
 date: 2020-05-08
 time: 19:32:30
 tweet_id: "1258842231240183808"

@@ -1,4 +1,5 @@
 ---
+title: "RT @Wilsoncriscione It\u2019s a simple question, but it revealed..."
 date: 2021-08-26
 time: 16:42:52
 tweet_id: "1430933778218721289"

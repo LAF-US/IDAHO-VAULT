@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise GOP rivals for Secty of..."
 date: 2022-04-29
 time: 06:28:12
 tweet_id: "1519926506985705473"

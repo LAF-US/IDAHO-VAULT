@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Debate between Rep. Bryan Zollinger,..."
 date: 2020-04-23
 time: 21:28:58
 tweet_id: "1253435721634836482"

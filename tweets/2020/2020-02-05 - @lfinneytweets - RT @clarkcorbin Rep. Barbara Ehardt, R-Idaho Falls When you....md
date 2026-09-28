@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Rep. Barbara Ehardt, R-Idaho Falls When you..."
 date: 2020-02-05
 time: 17:29:07
 tweet_id: "1225109109785030656"

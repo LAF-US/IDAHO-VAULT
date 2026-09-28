@@ -1,4 +1,5 @@
 ---
+title: "Astronomists are just like that lol. Great similar examples..."
 date: 2024-04-08
 time: 23:46:02
 tweet_id: "1777483070997983238"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports If I have a goal today, it is to help us..."
 date: 2023-08-09
 time: 23:26:06
 tweet_id: "1689417800165765121"

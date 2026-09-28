@@ -1,4 +1,5 @@
 ---
+title: "RT @boiseboone The Idaho Press Club is suing Lt. Gov...."
 date: 2021-07-21
 time: 20:15:15
 tweet_id: "1417941262879969280"

@@ -1,4 +1,5 @@
 ---
+title: "2. This restriction shall not apply to the use of exotic..."
 date: 2024-02-14
 time: 23:07:35
 tweet_id: "1757904446762442793"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-2. This restriction shall not apply to the use of exotic wildlife:
+2\. This restriction shall not apply to the use of exotic wildlife:
 a. In an exhibition at a nonmobile, permanent institution or facility;
 b. As part of an outreach program for educational or conservation purposes by a nonprofit organization, if...
 

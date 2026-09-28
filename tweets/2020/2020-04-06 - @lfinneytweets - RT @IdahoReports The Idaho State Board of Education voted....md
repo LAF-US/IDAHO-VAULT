@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho State Board of Education voted..."
 date: 2020-04-06
 time: 22:15:05
 tweet_id: "1247286734796156928"

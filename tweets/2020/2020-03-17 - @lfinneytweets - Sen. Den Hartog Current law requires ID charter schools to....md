@@ -1,4 +1,5 @@
 ---
+title: "Sen. Den Hartog Current law requires ID charter schools to..."
 date: 2020-03-17
 time: 21:07:34
 tweet_id: "1240021986077634560"

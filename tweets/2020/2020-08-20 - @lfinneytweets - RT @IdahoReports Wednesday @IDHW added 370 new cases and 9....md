@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Wednesday @IDHW added 370 new cases and 9..."
 date: 2020-08-20
 time: 00:04:56
 tweet_id: "1296236741699936256"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@GovernorLittle will deliver his State..."
 date: 2022-01-10
 time: 19:25:51
 tweet_id: "1480621931372027908"

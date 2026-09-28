@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy Last week, I spent hours inside a small..."
 date: 2020-11-19
 time: 02:09:39
 tweet_id: "1329245422418763777"

@@ -1,4 +1,5 @@
 ---
+title: "Thanks for the update. I just copy pasted the article lede \ud83d\ude2c"
 date: 2020-03-26
 time: 20:20:02
 tweet_id: "1243271512666148864"

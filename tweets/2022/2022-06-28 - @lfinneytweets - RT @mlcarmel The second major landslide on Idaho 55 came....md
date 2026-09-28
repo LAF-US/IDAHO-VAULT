@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel The second major landslide on Idaho 55 came..."
 date: 2022-06-28
 time: 16:53:25
 tweet_id: "1541827118274818049"

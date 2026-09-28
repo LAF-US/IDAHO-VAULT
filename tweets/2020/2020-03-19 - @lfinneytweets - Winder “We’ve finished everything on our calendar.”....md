@@ -1,4 +1,5 @@
 ---
+title: "Winder \u201cWe\u2019ve finished everything on our calendar.\u201d..."
 date: 2020-03-19
 time: 20:01:01
 tweet_id: "1240730014108110849"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-Winder: “We’ve finished everything on our calendar.” 
+Winder: “We’ve finished everything on our calendar.”
 Senators are making remarks while they transmit the last few bills. #idleg #idpol
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240730014108110849)

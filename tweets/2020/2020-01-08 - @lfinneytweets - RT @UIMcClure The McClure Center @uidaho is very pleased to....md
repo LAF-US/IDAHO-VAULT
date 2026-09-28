@@ -1,4 +1,5 @@
 ---
+title: "RT @UIMcClure The McClure Center @uidaho is very pleased to..."
 date: 2020-01-08
 time: 18:12:35
 tweet_id: "1214973186850209792"

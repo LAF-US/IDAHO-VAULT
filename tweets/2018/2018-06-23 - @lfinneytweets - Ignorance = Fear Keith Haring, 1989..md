@@ -1,4 +1,5 @@
 ---
+title: "Ignorance = Fear Keith Haring, 1989."
 date: 2018-06-23
 time: 21:44:31
 tweet_id: "1010639763513081856"
@@ -15,10 +16,11 @@ related:
 ---
 
 Ignorance = Fear
-Keith Haring, 1989. https://t.co/XHmlSKKgvZ
+Keith Haring, 1989. <https://t.co/XHmlSKKgvZ>
 
 ## Media
-- ![](https://pbs.twimg.com/media/DgaDgBjUYAA1u7Z.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/DgaDgBjUYAA1u7Z.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

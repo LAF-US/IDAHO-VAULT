@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Republican leaders in the Idaho..."
 date: 2021-07-06
 time: 19:04:42
 tweet_id: "1412487691187277824"

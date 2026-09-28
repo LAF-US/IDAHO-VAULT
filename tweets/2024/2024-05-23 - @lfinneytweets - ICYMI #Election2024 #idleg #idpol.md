@@ -1,4 +1,5 @@
 ---
+title: "ICYMI #Election2024 #idleg #idpol"
 date: 2024-05-23
 time: 03:53:27
 tweet_id: "1793490399350366656"
@@ -21,9 +22,9 @@ related:
 ---
 
 ICYMI #Election2024 #idleg #idpol 
-https://t.co/Prp0uBc5gL
+<https://t.co/Prp0uBc5gL>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/05/22/2024-idaho-legislative-primary-results/
+- <https://blog.idahoreports.idahoptv.org/2024/05/22/2024-idaho-legislative-primary-results/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1793490399350366656)

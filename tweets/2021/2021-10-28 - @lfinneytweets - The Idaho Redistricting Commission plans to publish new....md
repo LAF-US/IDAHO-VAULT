@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Redistricting Commission plans to publish new..."
 date: 2021-10-28
 time: 19:50:37
 tweet_id: "1453811459490672656"

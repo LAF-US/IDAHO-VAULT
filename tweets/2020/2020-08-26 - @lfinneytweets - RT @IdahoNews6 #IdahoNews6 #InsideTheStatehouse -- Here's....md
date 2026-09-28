@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 #IdahoNews6 #InsideTheStatehouse -- Here's..."
 date: 2020-08-26
 time: 01:12:15
 tweet_id: "1298428008991055872"

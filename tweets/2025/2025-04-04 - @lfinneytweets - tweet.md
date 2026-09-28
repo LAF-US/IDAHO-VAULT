@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2025-04-04
 time: 01:05:53
 tweet_id: "1907962796903710726"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/H8w3EDYcFk
+<https://t.co/H8w3EDYcFk>
 
 ## Links
-- https://x.com/wendyhorman/status/1907952085901127806
+- <https://x.com/wendyhorman/status/1907952085901127806>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

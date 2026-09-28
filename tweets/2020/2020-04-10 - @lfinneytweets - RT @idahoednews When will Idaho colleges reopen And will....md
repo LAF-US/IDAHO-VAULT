@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews When will Idaho colleges reopen And will..."
 date: 2020-04-10
 time: 05:55:39
 tweet_id: "1248489801411522561"

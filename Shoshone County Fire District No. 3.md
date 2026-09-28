@@ -7,5 +7,6 @@ related:
 - fire
 authority: LOGAN
 ---
-Silver Valley fire district in Shoshone County 
-- Mullan area 
+Silver Valley fire district in Shoshone County
+
+- Mullan area

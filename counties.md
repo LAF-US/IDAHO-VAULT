@@ -114,9 +114,12 @@ related:
 - Weiser
 authority: LOGAN
 ---
-Counties are the local administrative organs of the State of Idaho. 
+Counties are the local administrative organs of the State of Idaho.
+
 # County Officers
+
 Generally serve 4-year terms.
+
 - County Assessor
 - County Clerk
 - County Commissioners
@@ -124,7 +127,9 @@ Generally serve 4-year terms.
 - Prosecuting Attorney
 - County Sheriff
 - County Treasurer
+
 # Counties - Seats
+
 - Ada County - Boise
 - Adams County - Council
 - Bannock County - Pocatello
@@ -146,7 +151,7 @@ Generally serve 4-year terms.
 - Custer County - Challis
 - Elmore County - Mountain Home
 - Franklin County - Preston
-- Fremont County - St. Anthony 
+- Fremont County - St. Anthony
 - Gem County - Emmett
 - Gooding County - Gooding
 - Idaho County - Grangeville

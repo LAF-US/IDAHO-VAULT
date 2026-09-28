@@ -16,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: Sights of the season— the Idaho State Capitol, Boise. (@randarae photos) https://t.co/zVEwAfhk5L
+RT @IdahoPubRadio: Sights of the season— the Idaho State Capitol, Boise. (@randarae photos) <https://t.co/zVEwAfhk5L>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/EMZuFlnUYAECRtP.jpg)
 - ![](https://pbs.twimg.com/media/EMZuFlhU0AI9Vat.jpg)
 - ![](https://pbs.twimg.com/media/EMZuFljVUAE7s19.jpg)

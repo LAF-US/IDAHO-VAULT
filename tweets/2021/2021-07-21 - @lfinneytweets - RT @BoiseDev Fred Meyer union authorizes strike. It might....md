@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev Fred Meyer union authorizes strike. It might..."
 date: 2021-07-21
 time: 19:29:11
 tweet_id: "1417929667407843333"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @BoiseDev: Fred Meyer union authorizes strike. It might impact Boise-area stores https://t.co/xoB4aWAwaN
+RT @BoiseDev: Fred Meyer union authorizes strike. It might impact Boise-area stores <https://t.co/xoB4aWAwaN>
 
 ## Links
-- https://boisedev.com/news/2021/07/20/fred-meyer-strike-boise/
+- <https://boisedev.com/news/2021/07/20/fred-meyer-strike-boise/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1417929667407843333)

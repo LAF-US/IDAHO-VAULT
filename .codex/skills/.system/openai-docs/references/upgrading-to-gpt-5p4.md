@@ -45,7 +45,7 @@ Upgrade with the narrowest safe change set:
 
 Output rule:
 
-- Always emit a starting `reasoning_effo***REMOVED***recommendation` for each usage site.
+- Always emit a starting `reasoning_effort_recommendation` for each usage site.
 - If the repo exposes the current reasoning setting, preserve it first unless the source guide says otherwise.
 - If the repo does not expose the current setting, use the source-family starting mapping instead of returning `null`.
 

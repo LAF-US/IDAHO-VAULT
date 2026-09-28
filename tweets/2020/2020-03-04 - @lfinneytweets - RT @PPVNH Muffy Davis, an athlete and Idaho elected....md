@@ -1,4 +1,5 @@
 ---
+title: "RT @PPVNH Muffy Davis, an athlete and Idaho elected..."
 date: 2020-03-04
 time: 02:00:21
 tweet_id: "1235022238773960704"
@@ -20,7 +21,7 @@ related:
   - hb509
 ---
 
-RT @PPVNH: Muffy Davis, an athlete and Idaho elected official, said #hb500 and #hb509 are unsound. 
+RT @PPVNH: Muffy Davis, an athlete and Idaho elected official, said #hb500 and #hb509 are unsound.
 
 “Saying a person would transition to c…
 

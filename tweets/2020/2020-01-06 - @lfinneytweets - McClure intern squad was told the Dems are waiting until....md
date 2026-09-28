@@ -1,4 +1,5 @@
 ---
+title: "McClure intern squad was told the Dems are waiting until..."
 date: 2020-01-06
 time: 20:57:33
 tweet_id: "1214289925123690496"

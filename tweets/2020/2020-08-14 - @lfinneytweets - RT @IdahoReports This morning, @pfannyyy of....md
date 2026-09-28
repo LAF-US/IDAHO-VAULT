@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This morning, @pfannyyy of..."
 date: 2020-08-14
 time: 20:58:39
 tweet_id: "1294377919427428353"

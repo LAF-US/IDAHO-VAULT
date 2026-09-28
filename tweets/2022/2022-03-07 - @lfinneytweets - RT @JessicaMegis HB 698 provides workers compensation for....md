@@ -1,4 +1,5 @@
 ---
+title: "RT @JessicaMegis HB 698 provides workers compensation for..."
 date: 2022-03-07
 time: 23:06:58
 tweet_id: "1500971294870835204"

@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 To have people working in our polling..."
 date: 2022-02-10
 time: 02:24:24
 tweet_id: "1491598897398968322"

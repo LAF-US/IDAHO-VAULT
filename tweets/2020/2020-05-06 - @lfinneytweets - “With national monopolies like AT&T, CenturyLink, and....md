@@ -1,4 +1,5 @@
 ---
+title: "\u201cWith national monopolies like AT&T, CenturyLink, and..."
 date: 2020-05-06
 time: 20:57:59
 tweet_id: "1258138966886240256"

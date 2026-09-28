@@ -1,4 +1,5 @@
 ---
+title: "not me typing is 40 grams of meth a lot into Google"
 date: 2023-10-31
 time: 21:58:45
 tweet_id: "1719474010604310918"

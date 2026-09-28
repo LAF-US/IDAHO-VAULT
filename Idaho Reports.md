@@ -9,4 +9,4 @@ related:
 - State of Idaho
 authority: LOGAN
 ---
-Idaho Legislature and State of Idaho news program at Idaho Public Television based in Boise 
+Idaho Legislature and State of Idaho news program at Idaho Public Television based in Boise

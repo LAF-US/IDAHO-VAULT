@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews Analysis Is the state\u2019s method for building..."
 date: 2025-05-22
 time: 20:39:59
 tweet_id: "1925652884055589010"

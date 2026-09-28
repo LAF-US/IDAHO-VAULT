@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress Did the [unemployment] system fail Yes,..."
 date: 2020-06-11
 time: 16:26:38
 tweet_id: "1271116641712005123"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise IDOC deal with CoreCivic for..."
 date: 2020-08-18
 time: 18:16:35
 tweet_id: "1295786687109296128"

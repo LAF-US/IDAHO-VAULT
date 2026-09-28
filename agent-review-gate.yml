@@ -1,0 +1,146 @@
+name: Agent Review Gate
+
+# PARKED — this file sits at the repository ROOT, not in .github/workflows/.
+# Actions only reads that directory, so nothing under `on:` below can fire from
+# here, whatever it says. Position is the switch, not a key inside the file:
+# parked by 063cdaa24 ("`.github` cleaned", 2026-08-21) along with the rest of
+# the suite, and activated only by moving the file back — see e280d8d03,
+# "restore opencode.yml to .github/workflows so its triggers fire". Editing the
+# triggers while the file is here changes nothing.
+#
+# Reconcile/backlog sweep (reconcile-open-prs) — ENGINE REBUILT, CLOCK RESERVED.
+#
+# What it does per run: restamps every open PR's risk labels from the classifier
+# (the backfill — legacy/unmarked PRs migrate to the pair grammar), clears
+# completed lanes, arms clear pairs. Fails SAFE on classification errors (labels
+# untouched, nothing arms); exits non-zero ONLY on a true risk-marker invariant
+# violation (the loud path, without starving other PRs).
+#
+# Trigger is workflow_dispatch ONLY — deliberately. The prior hold ("manual tool
+# until the gate is rebuilt on the current PR-readiness schema") was satisfied by
+# the 2026-07-06 landings (#764, #771), so DISPATCH now works and
+# is safe. But the CADENCE is a chron_clock decision reserved to Logan: the
+# vault's established clock is once-daily/weekly ticks (see the TIME audit on PR
+# #775), and no repeating-interval cron joins it without Logan setting that norm.
+# When the chron_clock is established, add the schedule trigger here — and note
+# that it takes both acts to run on a clock: the trigger, and the move back into
+# .github/workflows/ described above.
+#
+# History: 4h cron (disabled_manually 2026-05-26 — the RETIRED engine was
+# failing/noisy); #578 wrongly re-pointed it at push-on-main; reverted to
+# dispatch-only pending the rebuild; rebuild landed 2026-07-06.
+
+on:
+  workflow_dispatch:
+    inputs:
+      grace_minutes:
+        description: "Legacy review-state compatibility window"
+        required: false
+        default: "30"
+
+permissions:
+  pull-requests: write
+  contents: read
+  issues: write
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    permissions:
+      # contents: write is required because reconcile-open-prs now resolves outdated bot
+      # threads through the WITNESSED helper (attest_and_resolve), and resolveReviewThread
+      # is gated on Contents: Read & Write (same family as #546). The prior legacy resolver
+      # also called resolveReviewThread, but under contents:read it silently FORBIDDEN-
+      # skipped, so reconcile never actually resolved; the witness path posts an attestation
+      # reply *then* resolves, so without write it would re-post the attestation every run.
+      # Job-level block replaces the workflow floor, so all scopes the job uses are listed.
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Checkout trusted workflow surfaces
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Reconcile open PR review state
+        id: reconcile
+        # The arm actor becomes the future enqueue actor, and GITHUB_TOKEN-actored
+        # events never dispatch workflow runs (GitHub anti-recursion) — prefer the
+        # user-scoped MERGE_QUEUE_TOKEN so armed PRs enqueue with a dispatching actor.
+        env:
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
+          GRACE_MINUTES: ${{ github.event.inputs.grace_minutes || '30' }}
+        run: |
+          # Repo name derived from GITHUB_REPOSITORY, not the event payload (event
+          # payloads vary by trigger). Guard the owner/name shape before use.
+          case "$GITHUB_REPOSITORY" in
+            */*/*|"") echo "::error::unexpected GITHUB_REPOSITORY: '$GITHUB_REPOSITORY'"; exit 1 ;;
+            */*) REPO_NAME="${GITHUB_REPOSITORY#*/}" ;;
+            *) echo "::error::unexpected GITHUB_REPOSITORY: '$GITHUB_REPOSITORY'"; exit 1 ;;
+          esac
+          python3 .github/scripts/review_feedback_loop.py \
+            reconcile-open-prs \
+            --owner "${{ github.repository_owner }}" \
+            --repo "$REPO_NAME" \
+            --grace-minutes "$GRACE_MINUTES" > pr-loop-reconcile.json
+          cat pr-loop-reconcile.json
+
+      - name: Build PR loop watchdog report
+        id: watchdog
+        run: |
+          python3 .github/scripts/pr_loop_watchdog.py \
+            --report-json pr-loop-reconcile.json \
+            --report-path pr-loop-watchdog.md
+
+      - name: Sweep action_required runs
+        # IF 8 (action_required runs are a triage surface distinct from PR state)
+        # per !/ARBORSCAPE-PR-EXPANSION-2026-05-22.md. Folds findings into the
+        # existing PR Loop Watchdog report rather than creating a separate issue.
+        id: action_required
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          runs=$(gh run list \
+            --repo "$REPO" \
+            --limit 100 \
+            --json conclusion,name,headBranch,databaseId,createdAt,event)
+          ar=$(echo "$runs" | jq '[.[] | select(.conclusion=="action_required")]')
+          count=$(echo "$ar" | jq 'length')
+          if [ "$count" -eq 0 ]; then
+            echo "has_action_required=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::action_required queue is empty"
+            exit 0
+          fi
+          echo "has_action_required=true" >> "$GITHUB_OUTPUT"
+          echo "::notice::action_required queue has $count runs"
+          {
+            echo ""
+            echo "## Action Required Queue"
+            echo ""
+            echo "Workflow runs waiting on human action: **$count**"
+            echo ""
+            echo "$ar" | jq -r '.[] | "- run #\(.databaseId): `\(.name)` on `\(.headBranch)` — \(.event), \(.createdAt[0:16])"'
+          } >> pr-loop-watchdog.md
+
+      - name: Publish PR loop summary
+        run: cat pr-loop-watchdog.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Sync PR loop watchdog issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          watchdog_findings="${{ steps.watchdog.outputs.has_findings }}"
+          action_required_findings="${{ steps.action_required.outputs.has_action_required }}"
+          if [ "$watchdog_findings" = "true" ] || [ "$action_required_findings" = "true" ]; then
+            combined="true"
+          else
+            combined="false"
+          fi
+          python3 .github/scripts/issue_reconciler.py \
+            --title "[PR Loop Watchdog] Reconciliation report" \
+            --body-file pr-loop-watchdog.md \
+            --has-findings "$combined" \
+            --resolved-comment "Resolved automatically: the latest PR reconciliation found no unresolved blockers."

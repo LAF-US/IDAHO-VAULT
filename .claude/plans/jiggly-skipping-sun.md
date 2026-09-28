@@ -9,13 +9,14 @@ The live question is from the Quartermaster (2026-04-10): *"What key assumptions
 ## Ground Truth (verified 2026-04-10)
 
 | Claim | Reality |
-|---|---|
+| --- | --- |
 | `MANIFEST-ARTIFACTS.json` exists | **FALSE.** No such file anywhere in the repo. Not in `.crewai/`, not at root, not in `!/CREWAI/`. |
 | "HOME layer" is a live doctrinal concept | **FALSE.** The phrase only appears in gitignored `_private/` snapshots (crewai-bootstrap, rewrite-prep-dirty, touchstone-repair) — all pre-flatten archives. It is not in current governance. |
 | CrewAI local scaffold is the blocker | **FALSE.** `.crewai/manifest.json` reports `status: refoundation`, `active_runners: []`, `crews: []`. The local layer is a disposable runtime slice, already acknowledged as a re-foundation. |
 | 30-minute schema task will unblock Loop Closer | **FALSE.** Screenshot shows CrewAI **Enterprise** (`app.crewai.com`) with two hard errors: ❌ Linear integration not connected, ❌ GitHub integration not connected. No schema change fixes an OAuth gap on a hosted platform. |
 
 The canonical CrewAI surfaces:
+
 - `.crewai/manifest.json` — machine-readable layer registry (v0.3.0)
 - `.crewai/MANIFEST.md` — human doctrine
 - `!/CREWAI/` — output staging (HANDOFF-CREWAI-OPS.md marked `status: historical`)
@@ -26,6 +27,7 @@ The canonical CrewAI surfaces:
 The Quartermaster is pattern-matching from a pre-flatten snapshot they found in `_private/`, then designing local architecture (`MANIFEST-ARTIFACTS.json` extension, HOME-layer artifact tracking, session-coherence semantics) to solve a problem that does not live in local code. This is the same failure mode as the Gemini/UCC-Article-12 episode four days ago: a confident invented framework built on a citation that does not exist in the current vault.
 
 **The actual Loop Closer blocker is platform configuration:**
+
 1. CrewAI Enterprise project "VAULT Loop Closer" exists (Sequential; two agents on gpt-4o-mini).
 2. Linear OAuth is not connected → agent cannot read LAF-16, LAF-23, LAF-36.
 3. GitHub OAuth is not connected → agent cannot walk branches or close issues.

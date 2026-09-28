@@ -1,4 +1,5 @@
 ---
+title: "This might become my new go-to #idleg webpage"
 date: 2026-01-15
 time: 02:06:31
 tweet_id: "2011620985527812481"
@@ -17,9 +18,9 @@ related:
 ---
 
 This might become my new go-to #idleg webpage 
-https://t.co/kVzUp8NiNx
+<https://t.co/kVzUp8NiNx>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/agenda/meeting-summary/
+- <https://legislature.idaho.gov/sessioninfo/agenda/meeting-summary/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/2011620985527812481)

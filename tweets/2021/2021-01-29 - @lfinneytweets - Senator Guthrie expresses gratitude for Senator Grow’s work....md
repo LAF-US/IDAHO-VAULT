@@ -1,4 +1,5 @@
 ---
+title: "Senator Guthrie expresses gratitude for Senator Grow\u2019s work..."
 date: 2021-01-29
 time: 15:52:21
 tweet_id: "1355182000001277952"

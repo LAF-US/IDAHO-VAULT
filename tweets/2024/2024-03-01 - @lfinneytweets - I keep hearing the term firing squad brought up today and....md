@@ -1,4 +1,5 @@
 ---
+title: "I keep hearing the term firing squad brought up today and..."
 date: 2024-03-01
 time: 02:34:18
 tweet_id: "1763392286732529898"

@@ -1,4 +1,5 @@
 ---
+title: "These results confirm to me the new District 6 (Latah +..."
 date: 2024-05-22
 time: 09:01:08
 tweet_id: "1793205444443529689"

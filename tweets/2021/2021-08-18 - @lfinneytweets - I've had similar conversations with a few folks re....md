@@ -1,4 +1,5 @@
 ---
+title: "I've had similar conversations with a few folks re..."
 date: 2021-08-18
 time: 20:44:07
 tweet_id: "1428095385206099973"

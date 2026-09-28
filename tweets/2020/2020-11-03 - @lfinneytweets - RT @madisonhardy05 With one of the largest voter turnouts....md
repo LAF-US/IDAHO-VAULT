@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 With one of the largest voter turnouts..."
 date: 2020-11-03
 time: 22:04:23
 tweet_id: "1323747880134307840"

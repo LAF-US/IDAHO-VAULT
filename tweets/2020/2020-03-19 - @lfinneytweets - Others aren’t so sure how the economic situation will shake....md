@@ -1,4 +1,5 @@
 ---
+title: "Others aren\u2019t so sure how the economic situation will shake..."
 date: 2020-03-19
 time: 21:14:00
 tweet_id: "1240748379853869056"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Others aren’t so sure how the economic situation will shake out. 
+Others aren’t so sure how the economic situation will shake out.
 Sen. Vick earlier: “It’s like living in a movie...it is the closest I’ve ever seen Bose to being a ghost town. Two cars driving down the road, in the mile I walked home.”
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

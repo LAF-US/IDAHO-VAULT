@@ -1,4 +1,5 @@
 ---
+title: "Rep. Giddings is really paying attention to these fiscal..."
 date: 2020-02-04
 time: 16:22:28
 tweet_id: "1224729946590859265"

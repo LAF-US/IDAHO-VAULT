@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel Many legislators argued against mandatory..."
 date: 2024-02-14
 time: 18:25:25
 tweet_id: "1757833439481598337"

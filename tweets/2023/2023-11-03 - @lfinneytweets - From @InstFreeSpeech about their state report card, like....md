@@ -1,4 +1,5 @@
 ---
+title: "From @InstFreeSpeech about their state report card, like..."
 date: 2023-11-03
 time: 14:57:22
 tweet_id: "1720455129395281962"

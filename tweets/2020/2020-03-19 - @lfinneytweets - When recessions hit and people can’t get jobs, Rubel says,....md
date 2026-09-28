@@ -1,4 +1,5 @@
 ---
+title: "When recessions hit and people can\u2019t get jobs, Rubel says,..."
 date: 2020-03-19
 time: 22:54:37
 tweet_id: "1240773700971978754"

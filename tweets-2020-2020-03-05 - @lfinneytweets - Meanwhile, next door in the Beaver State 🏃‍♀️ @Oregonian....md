@@ -20,10 +20,11 @@ related:
   - orpol
 ---
 
-Meanwhile, next door in the Beaver State 🏃‍♀️ @Oregonian #orleg #orpol 
-https://t.co/mz6vgploPq
+Meanwhile, next door in the Beaver State 🏃‍♀️ @Oregonian #orleg #orpol
+<https://t.co/mz6vgploPq>
 
 ## Links
-- https://www.oregonlive.com/news/2020/02/oregon-house-democrats-vote-to-subpoena-missing-republicans.html
+
+- <https://www.oregonlive.com/news/2020/02/oregon-house-democrats-vote-to-subpoena-missing-republicans.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1235577054512459776)

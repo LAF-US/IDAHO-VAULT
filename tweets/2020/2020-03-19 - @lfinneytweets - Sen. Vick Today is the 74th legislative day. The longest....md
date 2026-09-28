@@ -1,4 +1,5 @@
 ---
+title: "Sen. Vick Today is the 74th legislative day. The longest..."
 date: 2020-03-19
 time: 18:17:26
 tweet_id: "1240703945598586881"

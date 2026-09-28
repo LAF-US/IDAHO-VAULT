@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel Rep. Mike Moyle is back with more legislation..."
 date: 2022-02-18
 time: 17:39:19
 tweet_id: "1494728246231171075"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: Rep. Mike Moyle is back with more legislation to slow growth in local government budgets to bring property tax relief. 
+RT @mlcarmel: Rep. Mike Moyle is back with more legislation to slow growth in local government budgets to bring property tax relief.
 
 It's…
 

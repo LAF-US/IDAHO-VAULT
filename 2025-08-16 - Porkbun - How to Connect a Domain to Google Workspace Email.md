@@ -15,35 +15,35 @@ The steps to connect your Porkbun domain to Google Workspace email servers are s
 
 Log in. You should arrive at the Domain Management screen. If you're already logged in, click on ACCOUNT in the top-right corner and select Domain Management.
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5854c918c697912ffd6c1d7a/images/685483ee64686949c258357c/file-CxJ3zd12Vm.png)
+![alt text needed](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5854c918c697912ffd6c1d7a/images/685483ee64686949c258357c/file-CxJ3zd12Vm.png)
 
 2
 
 Locate the domain you're connecting to Google Workspace. Click the "Details" button to the far right of the domain name. On the domain details menu, locate "DNS RECORDS" and click the edit icon.
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5854c918c697912ffd6c1d7a/images/68601f9dc48e8e0fccf135a1/file-XZLb6qKPLR.png)
+![alt text needed](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5854c918c697912ffd6c1d7a/images/68601f9dc48e8e0fccf135a1/file-XZLb6qKPLR.png)
 
 3
 
 On the "Manage DNS Records" menu that appears, scroll down until you see our "Quick DNS Config" section.
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5854c918c697912ffd6c1d7a/images/68601fe207cc414af6e164f1/file-VvoT3QxlyS.png)
+![alt text needed](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5854c918c697912ffd6c1d7a/images/68601fe207cc414af6e164f1/file-VvoT3QxlyS.png)
 
 4
 
 In the Quick DNS Config section, select the "Google Workspace" button.
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5854c918c697912ffd6c1d7a/images/68602471c48e8e0fccf135a5/file-vJK4TlUuPq.png)
+![alt text needed](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5854c918c697912ffd6c1d7a/images/68602471c48e8e0fccf135a5/file-vJK4TlUuPq.png)
 
 A pop-up will appear asking if you want to reconfigure your domain's DNS records. Select the "OK" button to continue.
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5854c918c697912ffd6c1d7a/images/686024c03eb0c1274cc669ba/file-fjfNwhu5HA.png)
+![alt text needed](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5854c918c697912ffd6c1d7a/images/686024c03eb0c1274cc669ba/file-fjfNwhu5HA.png)
 
 5
 
 A success message will appear, letting you know that we were able to update your DNS records. You can now scroll down on the Manage DNS Records menu, and under the "Current Records" section you'll see the Google Workspace records added to your domain.
 
-![](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5854c918c697912ffd6c1d7a/images/686025b3c7a79a323c924bb5/file-TFly055MLV.png)
+![alt text needed](https://d33v4339jhl8k0.cloudfront.net/docs/assets/5854c918c697912ffd6c1d7a/images/686025b3c7a79a323c924bb5/file-TFly055MLV.png)
 
 ### Note
 

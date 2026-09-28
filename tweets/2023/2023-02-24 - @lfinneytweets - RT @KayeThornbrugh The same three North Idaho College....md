@@ -1,4 +1,5 @@
 ---
+title: "RT @KayeThornbrugh The same three North Idaho College..."
 date: 2023-02-24
 time: 22:59:10
 tweet_id: "1629254637282009088"

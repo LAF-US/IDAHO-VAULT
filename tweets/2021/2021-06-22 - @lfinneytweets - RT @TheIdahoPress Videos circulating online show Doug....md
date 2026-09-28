@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress Videos circulating online show Doug..."
 date: 2021-06-22
 time: 02:57:21
 tweet_id: "1407170817608220672"

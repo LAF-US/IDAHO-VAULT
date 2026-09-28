@@ -1,4 +1,5 @@
 ---
+title: "there oughta be a law \u2190 someone, probably"
 date: 2024-10-30
 time: 22:47:11
 tweet_id: "1851757771060056193"

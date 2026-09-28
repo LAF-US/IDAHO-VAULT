@@ -15,9 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @Acyn: Senator John Kennedy on Nancy Pelosi: I don’t mean any disrespect but it must suck to be that dumb https://t.co/Z9A9hTjrnC
+RT @Acyn: Senator John Kennedy on Nancy Pelosi: I don’t mean any disrespect but it must suck to be that dumb <https://t.co/Z9A9hTjrnC>
 
 ## Media
+
 - ![](https://pbs.twimg.com/ext_tw_video_thumb/1192268701845749761/pu/img/iBuHGSXytq24EDjf.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1192312264277123072)

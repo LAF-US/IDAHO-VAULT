@@ -20,9 +20,10 @@ related:
   - idpol
 ---
 
-Idaho members of the National Association of Social Workers @naswidaho stand outside the House Floor doors to greet members and urge them to oppose bills they say target the vulnerable population of transgender Idahoans. #idleg #idpol https://t.co/wSUErLowjH
+Idaho members of the National Association of Social Workers @naswidaho stand outside the House Floor doors to greet members and urge them to oppose bills they say target the vulnerable population of transgender Idahoans. #idleg #idpol <https://t.co/wSUErLowjH>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/ERpWFZkU4AAEqHa.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1232392106796371968)

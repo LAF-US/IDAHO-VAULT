@@ -1,4 +1,5 @@
 ---
+title: "RT @HDruzin Oregon has well over twice Idaho's population..."
 date: 2020-09-25
 time: 22:10:27
 tweet_id: "1309616279355977728"

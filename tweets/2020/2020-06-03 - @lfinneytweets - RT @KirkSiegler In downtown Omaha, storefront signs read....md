@@ -1,4 +1,5 @@
 ---
+title: "RT @KirkSiegler In downtown Omaha, storefront signs read..."
 date: 2020-06-03
 time: 19:25:22
 tweet_id: "1268262520889856000"

@@ -169,7 +169,7 @@ I can help with either:
 
 ## User
 
-Let's start simple 
+Let's start simple
 
 ## Assistant
 
@@ -339,7 +339,7 @@ Say **write the working version** and I’ll draft it.
 
 ## User
 
-@codex chip in if you can 
+@codex chip in if you can
 
 ## Assistant
 
@@ -352,7 +352,7 @@ I can do either:
 
 ## User
 
-If you can't do it directly, pass it off to another agent 
+If you can't do it directly, pass it off to another agent
 
 ## Assistant
 
@@ -362,7 +362,7 @@ I’ll stay on it unless you want me to delegate a specific issue to another age
 
 ## User
 
-Yes. Let's pick up the pace a little. 
+Yes. Let's pick up the pace a little.
 
 ## Assistant
 
@@ -542,7 +542,7 @@ Created [LAF-14](https://linear.app/loganfinney/issue/LAF-14/add-github-action-t
 
 ## User
 
-Fantastic, please do. 
+Fantastic, please do.
 
 ## Assistant
 

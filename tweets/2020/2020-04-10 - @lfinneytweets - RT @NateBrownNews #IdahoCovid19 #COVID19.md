@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews #IdahoCovid19 #COVID19"
 date: 2020-04-10
 time: 19:07:56
 tweet_id: "1248689185772294144"

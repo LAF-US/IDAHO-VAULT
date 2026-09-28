@@ -1,4 +1,5 @@
 ---
+title: "RT @Raul_Labrador I\u2019ve joined AGs across the country in..."
 date: 2025-04-11
 time: 01:06:13
 tweet_id: "1910499596029354430"

@@ -1,4 +1,5 @@
 ---
+title: "RT @FrankLuntz Last week\u2019s Senate and Presidential races..."
 date: 2020-11-10
 time: 22:18:16
 tweet_id: "1326288090365767680"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise @KBSX915 Governor on 'Idaho..."
 date: 2020-05-07
 time: 22:46:28
 tweet_id: "1258528654021124098"

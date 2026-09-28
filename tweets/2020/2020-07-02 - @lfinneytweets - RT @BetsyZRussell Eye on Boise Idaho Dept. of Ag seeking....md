@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Idaho Dept. of Ag seeking..."
 date: 2020-07-02
 time: 20:36:34
 tweet_id: "1278789687285444608"

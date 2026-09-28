@@ -1,4 +1,5 @@
 ---
+title: "University of Idaho announces no classes will be held in..."
 date: 2020-03-14
 time: 03:52:51
 tweet_id: "1238674428826775554"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio SB 1078, to establish a voters guide to..."
 date: 2023-03-01
 time: 19:21:02
 tweet_id: "1631011682293252096"

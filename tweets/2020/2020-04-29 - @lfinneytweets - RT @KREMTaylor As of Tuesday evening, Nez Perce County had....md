@@ -1,4 +1,5 @@
 ---
+title: "RT @KREMTaylor As of Tuesday evening, Nez Perce County had..."
 date: 2020-04-29
 time: 04:04:37
 tweet_id: "1255347228794851329"

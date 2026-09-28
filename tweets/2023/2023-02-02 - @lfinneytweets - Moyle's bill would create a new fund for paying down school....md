@@ -1,4 +1,5 @@
 ---
+title: "Moyle's bill would create a new fund for paying down school..."
 date: 2023-02-02
 time: 17:26:00
 tweet_id: "1621198261259468803"

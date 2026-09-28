@@ -176,4 +176,6 @@ She was. She walked the litany. The fear passed through and left her.
 
 ---
 
-*The world is quiet here.*
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -4,4 +4,4 @@ related:
 - Notus
 authority: LOGAN
 ---
-Notus, Canyon County 
+Notus, Canyon County

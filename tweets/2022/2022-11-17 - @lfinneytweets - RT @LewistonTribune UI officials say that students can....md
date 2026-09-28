@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune UI officials say that students can..."
 date: 2022-11-17
 time: 00:03:21
 tweet_id: "1593032004743745536"

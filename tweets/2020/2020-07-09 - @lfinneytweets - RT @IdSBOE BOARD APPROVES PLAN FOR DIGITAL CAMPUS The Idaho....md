@@ -1,4 +1,5 @@
 ---
+title: "RT @IdSBOE BOARD APPROVES PLAN FOR DIGITAL CAMPUS The Idaho..."
 date: 2020-07-09
 time: 22:08:49
 tweet_id: "1281349616806490113"

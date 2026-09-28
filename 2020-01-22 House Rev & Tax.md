@@ -26,7 +26,7 @@ authority: LOGAN
 ---
 House Revenue and Taxation
 
-Ch. Gary Collins 
+Ch. Gary Collins
 
 RS: grocery tax Credit – Speaker Scott Bedke
 

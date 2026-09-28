@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Idaho GOP leaders react to..."
 date: 2020-11-10
 time: 22:34:21
 tweet_id: "1326292138984812544"

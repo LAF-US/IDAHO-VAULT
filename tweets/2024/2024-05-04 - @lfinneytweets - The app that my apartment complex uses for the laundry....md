@@ -1,4 +1,5 @@
 ---
+title: "The app that my apartment complex uses for the laundry..."
 date: 2024-05-04
 time: 19:47:44
 tweet_id: "1786845184460025987"

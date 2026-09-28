@@ -1,4 +1,5 @@
 ---
+title: "Twitter imposed the 12-hour timeout on Monday, saying some..."
 date: 2021-07-21
 time: 15:36:09
 tweet_id: "1417871024113078275"

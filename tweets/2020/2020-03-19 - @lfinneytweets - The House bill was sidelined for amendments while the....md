@@ -1,4 +1,5 @@
 ---
+title: "The House bill was sidelined for amendments while the..."
 date: 2020-03-19
 time: 13:33:08
 tweet_id: "1240632399265812481"

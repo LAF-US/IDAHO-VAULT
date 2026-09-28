@@ -1,4 +1,5 @@
 ---
+title: "The text of the initiative explicitly says so!"
 date: 2023-09-27
 time: 18:01:17
 tweet_id: "1707093062693118455"

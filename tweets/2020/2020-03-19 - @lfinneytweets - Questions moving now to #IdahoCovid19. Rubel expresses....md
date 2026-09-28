@@ -1,4 +1,5 @@
 ---
+title: "Questions moving now to #IdahoCovid19. Rubel expresses..."
 date: 2020-03-19
 time: 22:44:40
 tweet_id: "1240771198012682241"

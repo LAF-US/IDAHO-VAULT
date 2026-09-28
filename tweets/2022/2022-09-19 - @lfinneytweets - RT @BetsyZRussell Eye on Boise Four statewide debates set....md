@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Four statewide debates set..."
 date: 2022-09-19
 time: 21:12:10
 tweet_id: "1571970429857988609"

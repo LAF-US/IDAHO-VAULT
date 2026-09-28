@@ -1,4 +1,5 @@
 ---
+title: "RT @GoldsteinStreet Several protests over the last week..."
 date: 2020-06-10
 time: 15:29:30
 tweet_id: "1270739876384657409"

@@ -1,4 +1,5 @@
 ---
+title: "Campus will remain open with all regular services..."
 date: 2020-03-14
 time: 03:52:52
 tweet_id: "1238674431783755776"

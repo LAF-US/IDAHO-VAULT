@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 My first story for the @CdAPressNews..."
 date: 2020-06-04
 time: 21:59:57
 tweet_id: "1268663811277418497"

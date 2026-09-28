@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev Legislation requiring \u2018best practices\u2019 from..."
 date: 2022-02-23
 time: 16:33:15
 tweet_id: "1496523558675435521"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @BoiseDev: Legislation requiring ‘best practices’ from landlords during rental application process heads to House floor https://t.co/Nyc…
+RT @BoiseDev: Legislation requiring ‘best practices’ from landlords during rental application process heads to House floor <https://t.co/Nyc…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1496523558675435521)

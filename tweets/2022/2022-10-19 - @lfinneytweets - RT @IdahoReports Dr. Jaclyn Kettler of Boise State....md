@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Dr. Jaclyn Kettler of Boise State..."
 date: 2022-10-19
 time: 18:17:50
 tweet_id: "1582798191207989249"

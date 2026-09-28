@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseState \u2066.@Ximena_Bustillo\u2069 graduated from..."
 date: 2020-06-07
 time: 21:47:53
 tweet_id: "1269747937224962048"

@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel The Senate just held three bills that are very..."
 date: 2023-03-28
 time: 21:04:22
 tweet_id: "1640822161253212162"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: The Senate just held three bills that are very important to House leadership: 25, 287 and 337. 
+RT @mlcarmel: The Senate just held three bills that are very important to House leadership: 25, 287 and 337.
 
 Threatening to continue hold…
 

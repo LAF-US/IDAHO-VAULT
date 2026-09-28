@@ -9,7 +9,7 @@ date created: Saturday, June 6th 2026, 2:46:16 pm
 date modified: Saturday, June 6th 2026, 2:48:54 pm
 ---
 
-![](https://rits.shanghai.nyu.edu/_gatsby/image/59d64a8cbfdfc970b25d1a59da33b3fb/0db60e3c38175a321aaf6571856e2bf7/leanstral-featured.avif?u=https%3A%2F%2Fwordpress.ritsdev.top%2Fwp-content%2Fuploads%2F2026%2F03%2Fleanstral-featured.png&a=w%3D400%26h%3D400%26fm%3Davif%26q%3D75&cd=a3f1f1f08c47a49a3180783fbe2d3228)
+![alt text needed](https://rits.shanghai.nyu.edu/_gatsby/image/59d64a8cbfdfc970b25d1a59da33b3fb/0db60e3c38175a321aaf6571856e2bf7/leanstral-featured.avif?u=https%3A%2F%2Fwordpress.ritsdev.top%2Fwp-content%2Fuploads%2F2026%2F03%2Fleanstral-featured.png&a=w%3D400%26h%3D400%26fm%3Davif%26q%3D75&cd=a3f1f1f08c47a49a3180783fbe2d3228)
 
 On March 16, 2026, Mistral AI released **Leanstral** — the first open-source AI agent purpose-built for [Lean 4](https://lean-lang.org/), the formal proof assistant used across mathematical research and verified software development. With 120 billion total parameters but only 6 billion active per token, Leanstral can formally prove that AI-generated code meets its specifications — addressing one of the biggest bottlenecks in trustworthy AI coding. The model is released under the Apache 2.0 license.
 

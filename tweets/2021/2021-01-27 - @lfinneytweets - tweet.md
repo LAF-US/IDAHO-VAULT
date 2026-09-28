@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-01-27
 time: 18:21:24
 tweet_id: "1354494733557485569"
@@ -17,10 +18,10 @@ related:
   - lfinneytweets
 ---
 
-@bsubronco2003 @McCrostie4Idaho https://t.co/pwNDiZ7crf
+@bsubronco2003 @McCrostie4Idaho <https://t.co/pwNDiZ7crf>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/2021/legislation/S1030/
+- <https://legislature.idaho.gov/sessioninfo/2021/legislation/S1030/>
 
 *In reply to [@bsubronco2003](https://twitter.com/bsubronco2003)*
 

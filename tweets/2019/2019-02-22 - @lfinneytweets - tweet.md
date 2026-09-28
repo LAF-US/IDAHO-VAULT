@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2019-02-22
 time: 04:57:15
 tweet_id: "1098808916329193472"
@@ -17,10 +18,10 @@ related:
   - lfinneytweets
 ---
 
-@m_r_j_smith @RBnorth66 @lukemayville https://t.co/4Kbz8Ji1gs
+@m_r_j_smith @RBnorth66 @lukemayville <https://t.co/4Kbz8Ji1gs>
 
 ## Links
-- https://www.buzzfeednews.com/article/annehelenpetersen/wackadoodles-north-idaho
+- <https://www.buzzfeednews.com/article/annehelenpetersen/wackadoodles-north-idaho>
 
 *In reply to [@m_r_j_smith](https://twitter.com/m_r_j_smith)*
 

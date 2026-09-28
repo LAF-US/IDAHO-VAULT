@@ -8,4 +8,4 @@ related:
 - State of Idaho
 authority: LOGAN
 ---
-State of Idaho Governor, Secretary of State, Attorney General, Superintendent, and Controller. Directs the Department of Lands and oversees state endowment public lands. 
+State of Idaho Governor, Secretary of State, Attorney General, Superintendent, and Controller. Directs the Department of Lands and oversees state endowment public lands.

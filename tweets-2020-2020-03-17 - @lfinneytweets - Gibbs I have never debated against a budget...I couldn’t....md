@@ -14,11 +14,12 @@ related:
   - lfinneytweets
 ---
 
-Gibbs: "I have never debated against a budget...I couldn’t set back and allow the Soil and Water Commission budget to go forward without pointing out the problem that Franklin County is experiencing. I was not trying to kill the budget.” 
-https://t.co/hc3Ancylog
+Gibbs: "I have never debated against a budget...I couldn’t set back and allow the Soil and Water Commission budget to go forward without pointing out the problem that Franklin County is experiencing. I was not trying to kill the budget.”
+<https://t.co/hc3Ancylog>
 
 ## Links
-- https://www.hjnews.com/preston/legislative-update-bill-stands-up-for-fc-soil-and-water/article_51816a62-f4e9-5235-bad1-5bde7b70e22b.html
+
+- <https://www.hjnews.com/preston/legislative-update-bill-stands-up-for-fc-soil-and-water/article_51816a62-f4e9-5235-bad1-5bde7b70e22b.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

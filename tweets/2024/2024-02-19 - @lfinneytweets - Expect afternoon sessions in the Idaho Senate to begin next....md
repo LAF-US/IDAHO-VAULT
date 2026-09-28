@@ -1,4 +1,5 @@
 ---
+title: "Expect afternoon sessions in the Idaho Senate to begin next..."
 date: 2024-02-19
 time: 19:02:15
 tweet_id: "1759654648242446851"

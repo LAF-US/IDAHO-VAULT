@@ -1,4 +1,5 @@
 ---
+title: "House Minority Leader @IlanaRubel \u201cI was really quite..."
 date: 2020-05-02
 time: 01:23:47
 tweet_id: "1256393917425057792"
@@ -23,9 +24,9 @@ related:
 ---
 
 House Minority Leader @IlanaRubel: “I was really quite pleased with the governor’s approach to this. 
-I though the stay-home order…really helped save us from a much bigger spike in deaths and infections. I know he’s caught a lot of heat for it.” #idleg #idpol #IdahoCOVID19 https://t.co/HJxQdK6fqR
+I though the stay-home order…really helped save us from a much bigger spike in deaths and infections. I know he’s caught a lot of heat for it.” #idleg #idpol #IdahoCOVID19 <https://t.co/HJxQdK6fqR>
 
 ## Links
-- https://x.com/the208KTVB/status/1256372948920864769
+- <https://x.com/the208KTVB/status/1256372948920864769>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1256393917425057792)

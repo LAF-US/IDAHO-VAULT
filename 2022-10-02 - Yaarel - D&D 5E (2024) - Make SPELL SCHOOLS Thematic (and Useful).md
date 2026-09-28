@@ -29,7 +29,6 @@ Seven spell schools remain. Each of these seven schools is salient and flavorful
   
 Each spell school is a collection of tropes relating to a theme.  
   
-
 **CONJURATION**  
 *\= to conjure across the planes of the multiverse*  
   
@@ -104,8 +103,6 @@ Transmutations include the subschools of Animal, Plant, and Healing. Animal exte
 • Healing (ideal lifeform, regenerating, enlivening, healing, resurrecting)  
 • Plant (Plant, vegetation, plant products, crafting)
 
-  
-  
 **SPELL LISTS**  
   
 The spells lists finetune which spells go to which school and subschool. Each list is thematically tight. Build a character concept by deciding which thematic lists are appropriate for it.  
@@ -160,7 +157,6 @@ Mass Heal
 Power Word Heal  
 True Resurrection* (Create Body)
 
-  
 CONJURATION  
 *\= Planar Magic*  
 
@@ -214,7 +210,6 @@ Temple*
 9th-Level Spells  
 *Gate*
 
-  
 DIVINATION  
 *\= Spacetime Navigation*  
 
@@ -272,7 +267,6 @@ Skill Empowerment*
 *Astral Projection  
 Foresight*
 
-  
 TELEPORTATION  
 
 0-Level Spells (Cantrips)  
@@ -312,7 +306,6 @@ Maze*
 *Imprisonment  
 Time Stop*
 
-  
 DUNOMANCY  
 *\= Force Magic*  
 
@@ -363,7 +356,6 @@ Reverse Gravity*
 9th-Level Spells  
 *Blade of Disaster*
 
-  
 ENCHANTMENT  
 *\= Mind Magic*  
 
@@ -441,7 +433,6 @@ Telepathy*
 9th-Level Spells  
 *Psychic Scream*
 
-  
 EVOCATION  
 *\= Elemental Magic*  
 
@@ -502,7 +493,6 @@ Mighty Fortress*
 9th-Level Spells  
 Meteor Storm
 
-  
 WATER  
 
 0-Level Spells (Cantrips)  
@@ -552,7 +542,6 @@ Wall of Ice*
 9th-Level Spells  
 −
 
-  
 AIR  
 
 0-Level Spells (Cantrips)  
@@ -609,7 +598,6 @@ Wind Walk*
 9th-Level Spells  
 *Storm of Vengeance*
 
-  
 FIRE  
 
 0-Level Spells (Cantrips)  
@@ -683,7 +671,6 @@ Sunburst*
 9th-Level Spells  
 *−*
 
-  
 PRIMORDIAL  
 
 0-Level Spells (Cantrips)  
@@ -724,7 +711,6 @@ Vitriolic Sphere*
 9th-Level Spells  
 *Prismatic Wall*
 
-  
 ILLUSION  
 *\= Play with Reality*  
 
@@ -777,7 +763,6 @@ Maddening Darkness*
 9th-Level Spells  
 *Weird*
 
-  
 NECROMANCY  
 *\= Darkside*  
 
@@ -832,7 +817,6 @@ Summon Fiend*
 9th-Level Spells  
 *Power Word Kill*
 
-  
 TRANSMUTATION  
 *\= Shapeshifting*  
 
@@ -903,7 +887,6 @@ Power Word Stun*
 Shapechange  
 True Polymorph*
 
-  
 PLANT  
 
 *0-Level Spells (Cantrips)  
@@ -959,7 +942,6 @@ Wall of Thorns*
 9th-Level Spells  
 −
 
-  
 UNIVERSAL  
 *\= Magic of Magic*  
 
@@ -999,11 +981,7 @@ Globe of Invulnerability (Anti-Spell)*
 
 Last edited:
 
-  
-
 log in or [register](https://www.enworld.org/register/) to remove this ad
-
-  
 
 #### Yaarel
 
@@ -1055,10 +1033,10 @@ Tradition.
 ##### Limit Break Dancing (He/They)
 
 > [UngeheuerLich said:](https://www.enworld.org/goto/post?id=8789211)
-> 
+>
 > This just won't work.  
 > Tradition.
-> 
+>
 > Click to expand...
 
 Come on, man.
@@ -1122,15 +1100,15 @@ So if you stood outside a dead magic zone you could still launch acid arrows int
 ##### 🇮🇱 🇺🇦 He-Mage
 
 > [Edwin Suijkerbuijk said:](https://www.enworld.org/goto/post?id=8790880)
-> 
+>
 > in older editions like ADnD 2nd certain spells had some advantages based on their school.  
->   
+>
 > Acid arrow was a conjuration.  
 > Creating a vaguely arrow shaped blob of acid that was flying toward your target.  
->   
+>
 > But only conjuring the blob of acid moving at speed was magical, the blob of acid itself was not.  
 > So if you stood outside a dead magic zone you could still launch acid arrows into the dead magic zone.
-> 
+>
 > Click to expand...
 
 There are magic spells that produce nonmagical effects. For example, the Create/Destroy Water spell produces water that is presumably nonmagical water.  

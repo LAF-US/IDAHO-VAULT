@@ -1,4 +1,5 @@
 ---
+title: "RT @TheInlander Sometimes a simple phone call can provide a..."
 date: 2022-09-16
 time: 04:17:53
 tweet_id: "1570628011812352001"

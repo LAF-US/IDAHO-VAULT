@@ -1,4 +1,5 @@
 ---
+title: "RS 28188 - changes to the State Disaster Preparedness Act,..."
 date: 2021-01-12
 time: 17:57:09
 tweet_id: "1349052812756348928"

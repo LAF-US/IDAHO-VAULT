@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Through the coronavirus pandemic and what..."
 date: 2020-03-19
 time: 18:12:42
 tweet_id: "1240702755498418176"

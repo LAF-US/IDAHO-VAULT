@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Idaho currently does not have a facility..."
 date: 2023-03-23
 time: 20:03:04
 tweet_id: "1638994795271176194"

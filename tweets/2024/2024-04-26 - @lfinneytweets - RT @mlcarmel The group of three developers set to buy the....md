@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel The group of three developers set to buy the..."
 date: 2024-04-26
 time: 18:45:51
 tweet_id: "1783930506155069735"

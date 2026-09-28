@@ -40,9 +40,9 @@ It is possible that Gregor and Ike are on the [Snicket family tree](https://snic
 
 ## Gallery
 
- [![](https://static.wikia.nocookie.net/snicket/images/a/a3/Ikefilmsquare.jpg/revision/latest/scale-to-width-down/185?cb=20191209210412 "Ikefilmsquare.jpg (33 KB)") ![](https://static.wikia.nocookie.net/snicket/images/a/a3/Ikefilmsquare.jpg/revision/latest/scale-to-width-down/185?cb=20191209210412 "Ikefilmsquare.jpg (33 KB)")](https://snicket.fandom.com/wiki/File:Ikefilmsquare.jpg "Ikefilmsquare.jpg (33 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/a/a3/Ikefilmsquare.jpg/revision/latest/scale-to-width-down/185?cb=20191209210412 "Ikefilmsquare.jpg (33 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/a/a3/Ikefilmsquare.jpg/revision/latest/scale-to-width-down/185?cb=20191209210412 "Ikefilmsquare.jpg (33 KB)")](https://snicket.fandom.com/wiki/File:Ikefilmsquare.jpg "Ikefilmsquare.jpg (33 KB)")
 
- [![](https://static.wikia.nocookie.net/snicket/images/6/65/JosephineIkeParty.png/revision/latest/scale-to-width-down/185?cb=20180509092442 "JosephineIkeParty.png (802 KB)") ![](https://static.wikia.nocookie.net/snicket/images/6/65/JosephineIkeParty.png/revision/latest/scale-to-width-down/185?cb=20180509092442 "JosephineIkeParty.png (802 KB)")](https://snicket.fandom.com/wiki/File:JosephineIkeParty.png "JosephineIkeParty.png (802 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/6/65/JosephineIkeParty.png/revision/latest/scale-to-width-down/185?cb=20180509092442 "JosephineIkeParty.png (802 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/6/65/JosephineIkeParty.png/revision/latest/scale-to-width-down/185?cb=20180509092442 "JosephineIkeParty.png (802 KB)")](https://snicket.fandom.com/wiki/File:JosephineIkeParty.png "JosephineIkeParty.png (802 KB)")
 
 ## Appearances
 

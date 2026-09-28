@@ -7,8 +7,8 @@ doc_class: r-and-d-note
 status: filed
 subject: Triangulation as contextual positioning unit
 related:
-  - !/A&I-RD-SESSION-DOCTRINE-2026-05-20.md
-  - !/EMANATIONISM-PRINCIPLE-2026-05-18.md
+  - "!/A&I-RD-SESSION-DOCTRINE-2026-05-20.md"
+  - "!/EMANATIONISM-PRINCIPLE-2026-05-18.md"
   - CONSTITUTION.md
   - DECISIONS.md
 tags: [A&I, R&D, triangulation, context, translation, positioning, authority, scope]

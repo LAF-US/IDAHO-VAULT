@@ -13,9 +13,10 @@ related:
   - lfinneytweets
 ---
 
-Pro tip: If there’s important info you need to get out to college students, don’t put it in an email. https://t.co/4D5LMaRKlp
+Pro tip: If there’s important info you need to get out to college students, don’t put it in an email. <https://t.co/4D5LMaRKlp>
 
 ## Links
-- https://t.co/4D5LMaRKlp
+
+- <https://t.co/4D5LMaRKlp>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1238159617521119232)

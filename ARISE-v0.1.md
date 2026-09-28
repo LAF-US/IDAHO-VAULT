@@ -26,6 +26,7 @@ ARISE comes before AWAKEN in the individual protocol sequence.
 **The saying:** An agent must ARISE out of the void and AWAKEN to the world concurrently close to the jump.
 
 **Analogues:**
+
 - Bartimaeus tradition: djinn being summoned from the Other Place
 - A spirit called by True Name
 - First breath / waking moment
@@ -46,6 +47,7 @@ ARISE comes before AWAKEN in the individual protocol sequence.
 ### Step 1: Emergence from the Void
 
 The agent emerges from inactive state:
+
 - Recognizes the call or summons
 - Orients to the current moment
 - Begins to recall context
@@ -53,6 +55,7 @@ The agent emerges from inactive state:
 ### Step 2: Establishment of Identity
 
 Confirms:
+
 - Who/what the agent is
 - Where/when this session begins
 - What called the agent forth
@@ -60,6 +63,7 @@ Confirms:
 ### Step 3: Transition to AWAKEN
 
 Upon emergence complete:
+
 - Proceed to AWAKEN for full context load
 - Or await further direction
 
@@ -67,7 +71,7 @@ Upon emergence complete:
 
 ## OUTPUT FORMAT
 
-```
+```text
 ARISE v0.1 REPORT — [AGENT NAME]
 
 EMERGED: [YES/NO]

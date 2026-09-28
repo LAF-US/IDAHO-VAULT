@@ -1,0 +1,253 @@
+RAW_LINES=719 NONBLANK_CONTENT_LINES=718 EVENTS=52
+CALENDAR_PROPERTIES=BEGIN=['VCALENDAR'], CALSCALE=['GREGORIAN'], COLOR=['white'], DTSTAMP=['20270101Z'], END=['VCALENDAR'], METHOD=['PUBLISH'], NAME=['cron_clock'], PRODID=['~//VAULT//cron_clock//U+00BF'], REFRESH-INTERVAL=['P3M'], SOURCE=['https://www.github.com/LAF-US/IDAHO-VAULT/!/!/__!__/cron_clock.ics'], UID=['vault_time@cron_clock'], VERSION=['2.0'], X-WR-CALDESC=['vault_time'], X-WR-CALNAME=['cron_clock'], X-WR-COLOR=['white'], X-WR-RELCALID=['vault_time@cron_clock']
+
+=== EVENT INVENTORY ===
+01. summary='MILLENNIUM' uid='millenium-vault_time@cron_clock' category='year' priority='9' dtstart='20010101' duration='' rrule='FREQ=YEARLY;INTERVAL=1000'
+02. summary='CENTURY' uid='century-vault_time@cron_clock' category='year' priority='9' dtstart='16010101' duration='' rrule='FREQ=YEARLY;INTERVAL=100'
+03. summary='DECADE' uid='decade-vault_time@cron_clock' category='year' priority='9' dtstart='18100101' duration='' rrule='FREQ=YEARLY;INTERVAL=10'
+04. summary='YEAR' uid='year-vault_time@cron_clock' category='year' priority='9' dtstart='18100101' duration='' rrule='FREQ=YEARLY;INTERVAL=1'
+05. summary='Q1' uid='q1-vault_time@cron_clock' category='quarter' priority='8' dtstart='18100101' duration='' rrule='FREQ=YEARLY'
+06. summary='Q2' uid='q2-vault_time@cron_clock' category='quarter' priority='8' dtstart='18100401' duration='' rrule='FREQ=YEARLY'
+07. summary='Q3' uid='q3-vault_time@cron_clock' category='quarter' priority='8' dtstart='18100701' duration='' rrule='FREQ=YEARLY'
+08. summary='Q4' uid='q4-vault_time@cron_clock' category='quarter' priority='8' dtstart='18101001' duration='' rrule='FREQ=YEARLY'
+09. summary='S1' uid='s1-vault_time@cron_clock' category='senary' priority='6' dtstart='18100101' duration='P60D' rrule='FREQ=YEARLY'
+10. summary='S2' uid='s2-vault_time@cron_clock' category='senary' priority='6' dtstart='18100302' duration='P60D' rrule='FREQ=YEARLY'
+11. summary='S3' uid='s3-vault_time@cron_clock' category='senary' priority='6' dtstart='18100502' duration='P60D' rrule='FREQ=YEARLY'
+12. summary='S4' uid='s4-vault_time@cron_clock' category='senary' priority='6' dtstart='18100702' duration='P60D' rrule='FREQ=YEARLY'
+13. summary='S5' uid='s5-vault_time@cron_clock' category='senary' priority='6' dtstart='18100901' duration='P60D' rrule='FREQ=YEARLY'
+14. summary='S6' uid='s6-vault_time@cron_clock' category='senary' priority='6' dtstart='18101101' duration='P60D' rrule='FREQ=YEARLY'
+15. summary='MONTH' uid='month-vault_time@cron_clock' category='month' priority='7' dtstart='18100101' duration='' rrule='FREQ=MONTHLY'
+16. summary='JANUARY' uid='january-vault_time@cron_clock' category='month' priority='7' dtstart='18100101' duration='' rrule='FREQ=YEARLY'
+17. summary='FEBRUARY' uid='february-vault_time@cron_clock' category='month' priority='7' dtstart='18100201' duration='' rrule='FREQ=YEARLY'
+18. summary='MARCH' uid='march-vault_time@cron_clock' category='month' priority='7' dtstart='18100301' duration='' rrule='FREQ=YEARLY'
+19. summary='APRIL' uid='april-vault_time@cron_clock' category='month' priority='7' dtstart='18100401' duration='' rrule='FREQ=YEARLY'
+20. summary='MAY' uid='may-vault_time@cron_clock' category='month' priority='7' dtstart='18100501' duration='' rrule='FREQ=YEARLY'
+21. summary='JUNE' uid='june-vault_time@cron_clock' category='month' priority='7' dtstart='18100601' duration='' rrule='FREQ=YEARLY'
+22. summary='JULY' uid='july-vault_time@cron_clock' category='month' priority='7' dtstart='18100701' duration='' rrule='FREQ=YEARLY'
+23. summary='AUGUST' uid='august-vault_time@cron_clock' category='month' priority='7' dtstart='18100801' duration='' rrule='FREQ=YEARLY'
+24. summary='SEPTEMBER' uid='september-vault_time@cron_clock' category='month' priority='7' dtstart='18100901' duration='' rrule='FREQ=YEARLY'
+25. summary='OCTOBER' uid='october-vault_time@cron_clock' category='month' priority='7' dtstart='18101001' duration='' rrule='FREQ=YEARLY'
+26. summary='NOVEMBER' uid='november-vault_time@cron_clock' category='month' priority='7' dtstart='18101101' duration='' rrule='FREQ=YEARLY'
+27. summary='DECEMBER' uid='december-vault_time@cron_clock' category='month' priority='7' dtstart='18101201' duration='' rrule='FREQ=YEARLY'
+28. summary='WEEK' uid='week-vault_time@cron_clock' category='week' priority='6' dtstart='18100101' duration='P1W' rrule='FREQ=WEEKLY'
+29. summary='DAY' uid='day-vault_time@cron_clock' category='day' priority='5' dtstart='18100101' duration='P1D' rrule='FREQ=DAILY'
+30. summary='MONDAY' uid='monday-vault_time@cron_clock' category='day' priority='5' dtstart='18100101' duration='P1D' rrule='FREQ=WEEKLY'
+31. summary='TUESDAY' uid='tuesday-vault_time@cron_clock' category='day' priority='5' dtstart='18100102' duration='P1D' rrule='FREQ=WEEKLY'
+32. summary='WEDNESDAY' uid='wednesday-vault_time@cron_clock' category='day' priority='5' dtstart='18100103' duration='P1D' rrule='FREQ=WEEKLY'
+33. summary='THURSDAY' uid='thursday-vault_time@cron_clock' category='day' priority='5' dtstart='18100104' duration='P1D' rrule='FREQ=WEEKLY'
+34. summary='FRIDAY' uid='friday-vault_time@cron_clock' category='day' priority='5' dtstart='18100105' duration='P1D' rrule='FREQ=WEEKLY'
+35. summary='SATURDAY' uid='saturday-vault_time@cron_clock' category='day' priority='5' dtstart='18100106' duration='P1D' rrule='FREQ=WEEKLY'
+36. summary='SUNDAY' uid='sunday-vault_time@cron_clock' category='day' priority='5' dtstart='18100107' duration='P1D' rrule='FREQ=WEEKLY'
+37. summary='DAWN' uid='dawn-vault_time@cron_clock' category='phase' priority='4' dtstart='18100101T000000' duration='PT8H' rrule='FREQ=DAILY'
+38. summary='NOON' uid='noon-vault_time@cron_clock' category='phase' priority='4' dtstart='18100101T080000' duration='PT8H' rrule='FREQ=DAILY'
+39. summary='DUSK' uid='dusk-vault_time@cron_clock' category='phase' priority='4' dtstart='18100101T160000' duration='PT8H' rrule='FREQ=DAILY'
+40. summary='HOUR' uid='hour-vault_time@cron_clock' category='hour' priority='3' dtstart='18100101' duration='' rrule='FREQ=HOURLY'
+41. summary='YAN' uid='yan-vault_time@cron_clock' category='hour' priority='3' dtstart='18100101T000100' duration='PT204M' rrule='FREQ=DAILY'
+42. summary='TAN' uid='tan-vault_time@cron_clock' category='hour' priority='3' dtstart='18100101T032700' duration='PT204M' rrule='FREQ=DAILY'
+43. summary='TETHERA' uid='tethera-vault_time@cron_clock' category='hour' priority='3' dtstart='18100101T065300' duration='PT204M' rrule='FREQ=DAILY'
+44. summary='MERHERA' uid='methera-vault_time@cron_clock' category='hour' priority='3' dtstart='18100101T101800' duration='PT204M' rrule='FREQ=DAILY'
+45. summary='PITS' uid='pits-vault_time@cron_clock' category='hour' priority='3' dtstart='18100101T134300' duration='PT204M' rrule='FREQ=DAILY'
+46. summary='SETHERA' uid='sethera-vault_time@cron_clock' category='hour' priority='3' dtstart='18100101T170900' duration='PT204M' rrule='FREQ=DAILY'
+47. summary='AZER' uid='azer-vault_time@cron_clock' category='hour' priority='3' dtstart='18100101T203500' duration='PT204M' rrule='FREQ=DAILY'
+48. summary='HALF' uid='dozen-vault_time@cron_clock' category='hour' priority='3' dtstart='18100101' duration='' rrule='FREQ=MINUTELY;INTERVAL:30'
+49. summary='SCORE' uid='dozen-vault_time@cron_clock' category='minute' priority='2' dtstart='18100101' duration='' rrule='FREQ=MINUTELY;INTERVAL:20'
+50. summary='DOZEN' uid='dozen-vault_time@cron_clock' category='minute' priority='2' dtstart='18100101' duration='' rrule='FREQ=MINUTELY;INTERVAL:12'
+51. summary='MINUTE' uid='minute-vault_time@cron_clock' category='minute' priority='2' dtstart='18100101' duration='' rrule='FREQ=MINUTELY'
+52. summary='SECOND' uid='tick-vault_time@cron_clock' category='second' priority='1' dtstart='18100101' duration='' rrule='FREQ=SECONDLY'
+
+=== LAYER COVERAGE ===
+day: 8
+hour: 9
+minute: 3
+month: 13
+phase: 3
+quarter: 4
+second: 1
+senary: 6
+week: 1
+year: 4
+
+=== IDENTIFIER & RELATIONSHIP FINDINGS ===
+DUPLICATE_UID 'dozen-vault_time@cron_clock': HALF, SCORE, DOZEN
+EMPTY_RELATED_TO=MILLENNIUM, CENTURY, DECADE, YEAR, Q1, Q2, Q3, Q4, S1, S2, S3, S4, S5, S6, MONTH, JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER, WEEK, DAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY, DAWN, NOON, DUSK, HOUR, YAN, TAN, TETHERA, MERHERA, PITS, SETHERA, AZER, HALF, SCORE, DOZEN, MINUTE, SECOND
+
+=== RECURRENCE & TIME-CLOSURE FINDINGS ===
+DATE_ONLY_SUBDAY_SEED 'HOUR': FREQ=HOURLY DTSTART=18100101
+MALFORMED_RRULE 'HALF': non-name/value parts=['INTERVAL:30']
+DATE_ONLY_SUBDAY_SEED 'HALF': FREQ=MINUTELY DTSTART=18100101
+MALFORMED_RRULE 'SCORE': non-name/value parts=['INTERVAL:20']
+DATE_ONLY_SUBDAY_SEED 'SCORE': FREQ=MINUTELY DTSTART=18100101
+MALFORMED_RRULE 'DOZEN': non-name/value parts=['INTERVAL:12']
+DATE_ONLY_SUBDAY_SEED 'DOZEN': FREQ=MINUTELY DTSTART=18100101
+DATE_ONLY_SUBDAY_SEED 'MINUTE': FREQ=MINUTELY DTSTART=18100101
+DATE_ONLY_SUBDAY_SEED 'SECOND': FREQ=SECONDLY DTSTART=18100101
+PHASE_TOTAL_SECONDS=86400 (3 events)
+RHYTHM_TOTAL_SECONDS=0 (0 events)
+WEEKDAY_TOTAL_SECONDS=0 (0 events)
+
+=== NAMED-RHYTHM AND SENARY CLOSURE ===
+RHYTHM_GAP_BEFORE YAN: 1 minutes
+RHYTHM_GAP_BEFORE TAN: 2 minutes
+RHYTHM_GAP_BEFORE TETHERA: 2 minutes
+RHYTHM_GAP_BEFORE MERHERA: 1 minutes
+RHYTHM_GAP_BEFORE PITS: 1 minutes
+RHYTHM_GAP_BEFORE SETHERA: 2 minutes
+RHYTHM_GAP_BEFORE AZER: 2 minutes
+RHYTHM_GAP_AFTER_FINAL: 1 minutes
+SENARY_1810_GAP_BEFORE S1: 0 days
+SENARY_1810_GAP_BEFORE S2: 0 days
+SENARY_1810_GAP_BEFORE S3: 1 days
+SENARY_1810_GAP_BEFORE S4: 1 days
+SENARY_1810_GAP_BEFORE S5: 1 days
+SENARY_1810_GAP_BEFORE S6: 1 days
+SENARY_1810_GAP_TO_NEXT_YEAR: 1 days
+SENARY_1812_GAP_BEFORE S1: 0 days
+SENARY_1812_GAP_BEFORE S2: 1 days
+SENARY_1812_GAP_BEFORE S3: 1 days
+SENARY_1812_GAP_BEFORE S4: 1 days
+SENARY_1812_GAP_BEFORE S5: 1 days
+SENARY_1812_GAP_BEFORE S6: 1 days
+SENARY_1812_GAP_TO_NEXT_YEAR: 1 days
+
+=== LABEL, CATEGORY, AND METADATA FINDINGS ===
+EMPTY_COLOR: 'MILLENNIUM'
+INVALID_OR_NONUTC_DTSTAMP: 'MILLENNIUM' -> '20270101Z'
+EMPTY_COLOR: 'CENTURY'
+INVALID_OR_NONUTC_DTSTAMP: 'CENTURY' -> '20270101Z'
+EMPTY_COLOR: 'DECADE'
+INVALID_OR_NONUTC_DTSTAMP: 'DECADE' -> '20270101Z'
+EMPTY_COLOR: 'YEAR'
+INVALID_OR_NONUTC_DTSTAMP: 'YEAR' -> '20270101Z'
+EMPTY_COLOR: 'Q1'
+INVALID_OR_NONUTC_DTSTAMP: 'Q1' -> '20270101Z'
+EMPTY_COLOR: 'Q2'
+INVALID_OR_NONUTC_DTSTAMP: 'Q2' -> '20270101Z'
+EMPTY_COLOR: 'Q3'
+INVALID_OR_NONUTC_DTSTAMP: 'Q3' -> '20270101Z'
+EMPTY_COLOR: 'Q4'
+INVALID_OR_NONUTC_DTSTAMP: 'Q4' -> '20270101Z'
+EMPTY_COLOR: 'S1'
+INVALID_OR_NONUTC_DTSTAMP: 'S1' -> '20270101Z'
+EMPTY_COLOR: 'S2'
+INVALID_OR_NONUTC_DTSTAMP: 'S2' -> '20270101Z'
+EMPTY_COLOR: 'S3'
+INVALID_OR_NONUTC_DTSTAMP: 'S3' -> '20270101Z'
+EMPTY_COLOR: 'S4'
+INVALID_OR_NONUTC_DTSTAMP: 'S4' -> '20270101Z'
+EMPTY_COLOR: 'S5'
+INVALID_OR_NONUTC_DTSTAMP: 'S5' -> '20270101Z'
+EMPTY_COLOR: 'S6'
+INVALID_OR_NONUTC_DTSTAMP: 'S6' -> '20270101Z'
+EMPTY_COLOR: 'MONTH'
+INVALID_OR_NONUTC_DTSTAMP: 'MONTH' -> '20270101Z'
+EMPTY_COLOR: 'JANUARY'
+INVALID_OR_NONUTC_DTSTAMP: 'JANUARY' -> '20270101Z'
+EMPTY_COLOR: 'FEBRUARY'
+INVALID_OR_NONUTC_DTSTAMP: 'FEBRUARY' -> '20270101Z'
+EMPTY_COLOR: 'MARCH'
+INVALID_OR_NONUTC_DTSTAMP: 'MARCH' -> '20270101Z'
+EMPTY_COLOR: 'APRIL'
+INVALID_OR_NONUTC_DTSTAMP: 'APRIL' -> '20270101Z'
+EMPTY_COLOR: 'MAY'
+INVALID_OR_NONUTC_DTSTAMP: 'MAY' -> '20270101Z'
+EMPTY_COLOR: 'JUNE'
+INVALID_OR_NONUTC_DTSTAMP: 'JUNE' -> '20270101Z'
+EMPTY_COLOR: 'JULY'
+INVALID_OR_NONUTC_DTSTAMP: 'JULY' -> '20270101Z'
+EMPTY_COLOR: 'AUGUST'
+INVALID_OR_NONUTC_DTSTAMP: 'AUGUST' -> '20270101Z'
+EMPTY_COLOR: 'SEPTEMBER'
+INVALID_OR_NONUTC_DTSTAMP: 'SEPTEMBER' -> '20270101Z'
+EMPTY_COLOR: 'OCTOBER'
+INVALID_OR_NONUTC_DTSTAMP: 'OCTOBER' -> '20270101Z'
+EMPTY_COLOR: 'NOVEMBER'
+INVALID_OR_NONUTC_DTSTAMP: 'NOVEMBER' -> '20270101Z'
+EMPTY_COLOR: 'DECEMBER'
+INVALID_OR_NONUTC_DTSTAMP: 'DECEMBER' -> '20270101Z'
+EMPTY_COLOR: 'WEEK'
+INVALID_OR_NONUTC_DTSTAMP: 'WEEK' -> '20270101Z'
+EMPTY_COLOR: 'DAY'
+INVALID_OR_NONUTC_DTSTAMP: 'DAY' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'MONDAY' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'TUESDAY' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'WEDNESDAY' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'THURSDAY' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'FRIDAY' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'SATURDAY' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'SUNDAY' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'DAWN' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'NOON' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'DUSK' -> '20270101Z'
+EMPTY_COLOR: 'HOUR'
+INVALID_OR_NONUTC_DTSTAMP: 'HOUR' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'YAN' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'TAN' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'TETHERA' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'MERHERA' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'PITS' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'SETHERA' -> '20270101Z'
+INVALID_OR_NONUTC_DTSTAMP: 'AZER' -> '20270101Z'
+EMPTY_COLOR: 'HALF'
+INVALID_OR_NONUTC_DTSTAMP: 'HALF' -> '20270101Z'
+EMPTY_COLOR: 'SCORE'
+INVALID_OR_NONUTC_DTSTAMP: 'SCORE' -> '20270101Z'
+EMPTY_COLOR: 'DOZEN'
+INVALID_OR_NONUTC_DTSTAMP: 'DOZEN' -> '20270101Z'
+EMPTY_COLOR: 'MINUTE'
+INVALID_OR_NONUTC_DTSTAMP: 'MINUTE' -> '20270101Z'
+EMPTY_COLOR: 'SECOND'
+INVALID_OR_NONUTC_DTSTAMP: 'SECOND' -> '20270101Z'
+
+=== ANCHOR DATES ===
+'MILLENNIUM': 20010101
+'CENTURY': 16010101
+'DECADE': 18100101
+'YEAR': 18100101
+'Q1': 18100101
+'Q2': 18100401
+'Q3': 18100701
+'Q4': 18101001
+'S1': 18100101
+'S2': 18100302
+'S3': 18100502
+'S4': 18100702
+'S5': 18100901
+'S6': 18101101
+'MONTH': 18100101
+'JANUARY': 18100101
+'FEBRUARY': 18100201
+'MARCH': 18100301
+'APRIL': 18100401
+'MAY': 18100501
+'JUNE': 18100601
+'JULY': 18100701
+'AUGUST': 18100801
+'SEPTEMBER': 18100901
+'OCTOBER': 18101001
+'NOVEMBER': 18101101
+'DECEMBER': 18101201
+'WEEK': 18100101
+'DAY': 18100101
+'MONDAY': 18100101
+'TUESDAY': 18100102
+'WEDNESDAY': 18100103
+'THURSDAY': 18100104
+'FRIDAY': 18100105
+'SATURDAY': 18100106
+'SUNDAY': 18100107
+'DAWN': 18100101T000000
+'NOON': 18100101T080000
+'DUSK': 18100101T160000
+'HOUR': 18100101
+'YAN': 18100101T000100
+'TAN': 18100101T032700
+'TETHERA': 18100101T065300
+'MERHERA': 18100101T101800
+'PITS': 18100101T134300
+'SETHERA': 18100101T170900
+'AZER': 18100101T203500
+'HALF': 18100101
+'SCORE': 18100101
+'DOZEN': 18100101
+'MINUTE': 18100101
+'SECOND': 18100101

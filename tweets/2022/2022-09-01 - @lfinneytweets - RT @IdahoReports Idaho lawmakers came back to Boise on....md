@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Idaho lawmakers came back to Boise on..."
 date: 2022-09-01
 time: 15:06:41
 tweet_id: "1565355470486810625"

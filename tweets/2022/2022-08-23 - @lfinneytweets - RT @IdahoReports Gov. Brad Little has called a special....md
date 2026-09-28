@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Gov. Brad Little has called a special..."
 date: 2022-08-23
 time: 19:57:58
 tweet_id: "1562167281387417600"

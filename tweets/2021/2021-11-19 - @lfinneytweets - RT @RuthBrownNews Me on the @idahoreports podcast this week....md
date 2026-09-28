@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Me on the @idahoreports podcast this week..."
 date: 2021-11-19
 time: 20:56:06
 tweet_id: "1461800472591798272"

@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Here's the initial rundown of what Lt...."
 date: 2021-05-20
 time: 04:03:45
 tweet_id: "1395228730025406468"

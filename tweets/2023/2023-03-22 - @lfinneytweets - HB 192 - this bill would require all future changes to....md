@@ -1,4 +1,5 @@
 ---
+title: "HB 192 - this bill would require all future changes to..."
 date: 2023-03-22
 time: 22:58:43
 tweet_id: "1638676610680500226"

@@ -1,4 +1,5 @@
 ---
+title: "Speaker Bedke at the Idaho Environmental Forum, says he..."
 date: 2020-01-15
 time: 21:40:43
 tweet_id: "1217562279379492864"

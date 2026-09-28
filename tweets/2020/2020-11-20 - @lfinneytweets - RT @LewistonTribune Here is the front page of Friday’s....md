@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune Here is the front page of Friday\u2019s..."
 date: 2020-11-20
 time: 15:06:40
 tweet_id: "1329803351198875651"

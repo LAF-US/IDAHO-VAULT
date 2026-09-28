@@ -38,7 +38,7 @@ Fludd: *Utriusque Cosmi….*, Tract 2, Part 2, Book 1, p. 161
 
 Here, Fludd has constructed a façade of music, where every element is telling. Starting from the bottom, on the left, we have an image of a lute, then we look into a room showing Pythagoras listening to the blows of the hammers on anvils (tuning). On the right side, we have the pitches shown by duration going up the front of the building.
 
-![](https://interlude-cdn-blob-prod.azureedge.net/interlude-blob-storage-prod/2025/10/Screenshot-2025-10-10-at-8.29.07-PM_processed.jpg)
+![alt text needed](https://interlude-cdn-blob-prod.azureedge.net/interlude-blob-storage-prod/2025/10/Screenshot-2025-10-10-at-8.29.07-PM_processed.jpg)
 
 On the left side of the note values is a bass clef showing where ‘F’ would be. Above the note values are hidden a Flat sign and a natural sign.
 
@@ -60,4 +60,4 @@ In the centre building, the two doorways are surrounded by musical instruments: 
 
 It’s an amazing construction, particularly how Fludd is able to include so many different elements of music into the image, including quite complex scales in the hexachords. What’s in your temple of music?
 
-*For more of the best in classical music, [sign up](#) for our E-Newsletter*
+*For more of the best in classical music, sign up for our E-Newsletter*

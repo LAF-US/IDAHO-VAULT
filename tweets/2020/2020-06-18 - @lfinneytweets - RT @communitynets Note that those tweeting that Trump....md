@@ -1,4 +1,5 @@
 ---
+title: "RT @communitynets Note that those tweeting that Trump..."
 date: 2020-06-18
 time: 15:53:16
 tweet_id: "1273644962664472583"

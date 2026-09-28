@@ -7,4 +7,4 @@ related:
 - hunting
 authority: LOGAN
 ---
-Idaho Fish and Game Commission, Game Management Units, hunting, fishing 
+Idaho Fish and Game Commission, Game Management Units, hunting, fishing

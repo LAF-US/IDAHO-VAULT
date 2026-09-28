@@ -1,4 +1,5 @@
 ---
+title: "RT @NewsHour At the U.S. Capitol, Rep. Jim Jordan is out of..."
 date: 2023-10-20
 time: 23:20:10
 tweet_id: "1715508236085010466"

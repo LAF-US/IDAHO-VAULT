@@ -1,4 +1,5 @@
 ---
+title: "RT @sadiedittenber Take a look at how this resort town..."
 date: 2023-07-31
 time: 22:25:29
 tweet_id: "1686141055107022854"

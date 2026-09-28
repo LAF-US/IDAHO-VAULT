@@ -1,4 +1,5 @@
 ---
+title: ".@RepHeatherScott's Little Hitler comments have made it..."
 date: 2020-04-22
 time: 16:52:20
 tweet_id: "1253003718766690304"
@@ -22,9 +23,9 @@ related:
 ---
 
 .@RepHeatherScott's "Little Hitler" comments have made it into the @Independent. #idleg #idpol 
-https://t.co/VaWlWVtG9B
+<https://t.co/VaWlWVtG9B>
 
 ## Links
-- https://www.independent.co.uk/news/world/americas/coronavirus-lockdown-holocaust-hitler-heather-scott-brad-little-protest-a9475121.html
+- <https://www.independent.co.uk/news/world/americas/coronavirus-lockdown-holocaust-hitler-heather-scott-brad-little-protest-a9475121.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253003718766690304)

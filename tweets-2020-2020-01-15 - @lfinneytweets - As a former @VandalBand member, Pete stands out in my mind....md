@@ -15,9 +15,10 @@ related:
   - lfinneytweets
 ---
 
-As a former @VandalBand member, Pete stands out in my mind as our most enthusiastic supporter from Athletics. What a loss for the Vandal family & the state of Idaho. https://t.co/72KeLelwFP
+As a former @VandalBand member, Pete stands out in my mind as our most enthusiastic supporter from Athletics. What a loss for the Vandal family & the state of Idaho. <https://t.co/72KeLelwFP>
 
 ## Links
-- https://x.com/Idaho_Vandals/status/1217238742328463362
+
+- <https://x.com/Idaho_Vandals/status/1217238742328463362>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1217490112159707138)

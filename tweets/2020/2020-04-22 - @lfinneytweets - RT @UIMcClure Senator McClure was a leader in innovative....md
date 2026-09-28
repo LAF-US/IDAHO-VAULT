@@ -1,4 +1,5 @@
 ---
+title: "RT @UIMcClure Senator McClure was a leader in innovative..."
 date: 2020-04-22
 time: 16:52:59
 tweet_id: "1253003880406761472"

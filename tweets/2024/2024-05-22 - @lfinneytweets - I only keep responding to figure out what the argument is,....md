@@ -1,4 +1,5 @@
 ---
+title: "I only keep responding to figure out what the argument is,..."
 date: 2024-05-22
 time: 19:39:45
 tweet_id: "1793366155522080817"

@@ -9,6 +9,7 @@ After the Sunday swarm session, `main` has 4 modified files and 2 untracked refe
 ## Commit 1 — Infrastructure docs (direct to main)
 
 Files:
+
 - `.claude/CLAUDE.md` — Windows Prerequisite section added (Git Bash + PATH env var)
 - `AGENTS.md` — Claude Code row updated with same Windows Git Bash note
 
@@ -19,6 +20,7 @@ Message: `docs: add Windows Git Bash prerequisite to CLAUDE.md and AGENTS.md`
 ## Commit 2 — Reference captures (direct to main)
 
 Files:
+
 - `- - Model Context Protocol – Codex OpenAI Developers.md` (untracked)
 - `OpenAI - Documentation - CLI – Codex OpenAI Developers.md` (untracked)
 - `- and.md` — Obsidian auto-frontmatter only; bundle here to clear the diff
@@ -38,6 +40,7 @@ Message: `chore: commit Obsidian reference captures and auto-frontmatter touch`
 Branch: `claude/levelset-refresh-2026-03-29`
 
 Update `!/!/LEVELSET-CURRENT.md`:
+
 - Date → 2026-03-29
 - Active branch → `main` (no active feature branch)
 - Last commit → reflect today's commits

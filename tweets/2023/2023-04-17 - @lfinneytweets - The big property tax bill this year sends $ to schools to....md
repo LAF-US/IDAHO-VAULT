@@ -1,4 +1,5 @@
 ---
+title: "The big property tax bill this year sends $ to schools to..."
 date: 2023-04-17
 time: 18:09:58
 tweet_id: "1648026028705726466"

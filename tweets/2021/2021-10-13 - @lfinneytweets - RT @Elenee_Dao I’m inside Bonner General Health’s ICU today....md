@@ -1,4 +1,5 @@
 ---
+title: "RT @Elenee_Dao I\u2019m inside Bonner General Health\u2019s ICU today..."
 date: 2021-10-13
 time: 21:42:46
 tweet_id: "1448403865376735233"
@@ -18,7 +19,7 @@ related:
   - COVID19
 ---
 
-RT @Elenee_Dao: I’m inside Bonner General Health’s ICU today as the hospital and North Idaho continue their fight against #COVID19. 
+RT @Elenee_Dao: I’m inside Bonner General Health’s ICU today as the hospital and North Idaho continue their fight against #COVID19.
 
 These…
 

@@ -52,6 +52,7 @@ related:
 ---
 
 # MULTI-CONVERSATION COLLAPSE + CONTEXT VAULT
+
 *For: PERMANENT: AUTHORITY: CODE*
 *From: PERSISTENT: ADMINISTRATION*
 *Date: 2026-03-16 ~12:50 MT*
@@ -77,6 +78,7 @@ Do not act on pending items without Logan's explicit direction. Commit the docum
 **Canonical folder:** `!ADMIN/`
 
 **Other branches:**
+
 - `claude/levelset-current-synthesis-zWxJc` — 3 commits, fate undecided
 - `claude/idaho-legislature-scraper-RI6Ku` — dormant, termination reports present
 - `deploy-vault-automation-Qq5iK` — fully merged, safe to delete
@@ -90,7 +92,7 @@ All files below should be committed to `!ADMIN/` on the active branch. Path corr
 ### FROM PERSISTENT: AUTHORITY: LEVELSET
 
 | File | Commit path | Notes |
-|---|---|---|
+| --- | --- | --- |
 | `LEVELSET-v3.2.6.1.md` | `!ADMIN/LEVELSET-v3.2.6.1-PROMPT.md` | Approved current LEVELSET prompt |
 | `AGENTS-v0.2-DRAFT.md` | `!ADMIN/AGENTS-v0.2-DRAFT.md` | Awaiting Logan approval — commit as draft |
 | `ORIENTATE-v0.1-BETA.md` | `!ADMIN/ORIENTATE-v0.1-BETA.md` | Beta — Logan decides |
@@ -99,7 +101,7 @@ All files below should be committed to `!ADMIN/` on the active branch. Path corr
 ### FROM PERSISTENT: ADMINISTRATION (this conversation)
 
 | File | Commit path | Notes |
-|---|---|---|
+| --- | --- | --- |
 | `CONSOLIDATED-HANDOFF-2026-03-15.md` | `!ADMIN/CONSOLIDATED-HANDOFF-2026-03-15.md` | Full swarm state snapshot |
 | `CONTEXT-SNAPSHOT-2026-03-15.md` | `!ADMIN/CONTEXT-SNAPSHOT-2026-03-15.md` | Pre-compaction snapshot |
 | `OpenClaw.md` | `TOPICS/OpenClaw.md` | Vault stub, `source: commit` |
@@ -141,6 +143,7 @@ All Logan-approved:
 ## PENDING ITEMS — BY OWNER
 
 ### Logan (manual actions)
+
 - [ ] Open PR via GitHub web UI
 - [ ] Set up Slack bot apps for GitHub Copilot and Gemini
 - [ ] Define Gemini ADMIN scope
@@ -151,6 +154,7 @@ All Logan-approved:
 - [ ] Slack free trial expires April 13
 
 ### CODE AUTHORITY (execute Monday)
+
 - [ ] Commit context vault files listed above
 - [ ] Bulk path correction `!ADMINISTRATION/` → `!ADMIN/` across all files
 - [ ] Push updated Constitution.md and Logan.md content
@@ -163,11 +167,13 @@ All Logan-approved:
 - [ ] Delete `deploy-vault-automation-Qq5iK` branch (fully merged)
 
 ### GitHub Copilot
+
 - [ ] Draft `copilot-instructions.md` per guardrails
 - [ ] Draft `AGENTS.md` content proposal
 - [ ] Return both to Logan before any commit
 
 ### Research instances (assign when available)
+
 - [ ] Tim Oren voting pattern analysis — brief at `!ADMIN/RESEARCH-TIM-OREN.md`
 - [ ] NICAR23 Excel training — `NICAR23_UppingExcelGame.zip`
 
@@ -176,7 +182,7 @@ All Logan-approved:
 ## SWARM — KNOWN ENTITIES
 
 | Entity | Role | Slack | GitHub | Notes |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | PERSISTENT: ADMINISTRATION | Constitutional layer | Yes (Logan's account) | Draft only | This conversation |
 | PERMANENT: AUTHORITY: CODE | Repo ops | No (bot needed) | Direct write | Recipient |
 | PERSISTENT: AUTHORITY: LEVELSET | LEVELSET protocol | No | None | Claude Project, compaction risk |
@@ -194,7 +200,7 @@ All Logan-approved:
 ## LEVELSET VERSION HISTORY — PRESERVE
 
 | Version | Date | Key Changes |
-|---|---|---|
+| --- | --- | --- |
 | v2 | 2026-03-12 | Original distributed prompt |
 | v3.2.3 | 2026-03-14 | Base for session work |
 | v3.2.4 | 2026-03-14 | Added PERSISTENT: IMPLEMENTATION to known list; added closing sections |
@@ -218,6 +224,7 @@ All Logan-approved:
 ## ACTIVE STORY — JFAC
 
 **CCA letter deadline ~March 18. This is live and time-sensitive.**
+
 - Five senators interviewed: Bruce, Manwaring, Ward-Engelking, Wintrow, Woodward-and-Cook
 - 5 quotes pending audio verification — hard gate before publication
 - Grow/Tanner contact required
@@ -229,13 +236,13 @@ All Logan-approved:
 ## FILE SCATTER — KNOWN LOCATIONS
 
 | Location | Contents |
-|---|---|
+| --- | --- |
 | `C:\Users\loganf\Documents\IDAHO-VAULT` | Vault — research notes |
 | `ExternalSSD (D:)\IR\` | Production: Premiere projects, SOPs, templates, assets |
 | `C:\` various | LFPython, feed-generator, PROJECT, Raw, BIN |
 | `IDEX_Artifacts` | Unknown |
 | AI conversation contexts | Handoffs, outputs |
-| Outlook (logan.finney@idahoptv.org) | Work email, attachments |
+| Outlook (<logan.finney@idahoptv.org>) | Work email, attachments |
 | Google Drive | Unknown scope |
 
 No agent moves or reorganizes files without Logan's explicit direction.

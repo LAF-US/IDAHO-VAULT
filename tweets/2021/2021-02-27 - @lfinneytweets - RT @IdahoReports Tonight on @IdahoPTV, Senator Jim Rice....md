@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Tonight on @IdahoPTV, Senator Jim Rice..."
 date: 2021-02-27
 time: 00:56:31
 tweet_id: "1365465802682503170"

@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Elmore County courthouse 
+magistrate court Elmore County courthouse

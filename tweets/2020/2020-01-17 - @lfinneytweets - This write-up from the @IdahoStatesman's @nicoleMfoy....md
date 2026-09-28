@@ -1,4 +1,5 @@
 ---
+title: "This write-up from the @IdahoStatesman's @nicoleMfoy..."
 date: 2020-01-17
 time: 13:30:37
 tweet_id: "1218163720045522944"
@@ -23,10 +24,10 @@ related:
 ---
 
 This write-up from the @IdahoStatesman's @nicoleMfoy highlights last night's conflict between the panel and anti-vaccine advocates in the audience. #idpol #idleg 
-https://t.co/rTS5mEthsk
+<https://t.co/rTS5mEthsk>
 
 ## Links
-- https://amp.idahostatesman.com/news/politics-government/state-politics/article239252198.html
+- <https://amp.idahostatesman.com/news/politics-government/state-politics/article239252198.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

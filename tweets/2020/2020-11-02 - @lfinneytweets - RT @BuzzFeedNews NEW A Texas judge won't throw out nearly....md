@@ -1,4 +1,5 @@
 ---
+title: "RT @BuzzFeedNews NEW A Texas judge won't throw out nearly..."
 date: 2020-11-02
 time: 21:37:55
 tweet_id: "1323378830749257729"

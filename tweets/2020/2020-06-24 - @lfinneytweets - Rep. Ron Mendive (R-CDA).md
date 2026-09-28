@@ -1,4 +1,5 @@
 ---
+title: "Rep. Ron Mendive (R-CDA)"
 date: 2020-06-24
 time: 04:50:39
 tweet_id: "1275652536935079942"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-Rep. Ron Mendive (R-CDA) https://t.co/BUrkX8KMCA
+Rep. Ron Mendive (R-CDA) <https://t.co/BUrkX8KMCA>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQE092XYAMkSVw.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EbQE092XYAMkSVw.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

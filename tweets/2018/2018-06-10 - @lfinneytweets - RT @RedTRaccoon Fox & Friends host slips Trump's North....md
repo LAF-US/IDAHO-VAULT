@@ -1,4 +1,5 @@
 ---
+title: "RT @RedTRaccoon Fox & Friends host slips Trump's North..."
 date: 2018-06-10
 time: 15:48:12
 tweet_id: "1005839054984736768"

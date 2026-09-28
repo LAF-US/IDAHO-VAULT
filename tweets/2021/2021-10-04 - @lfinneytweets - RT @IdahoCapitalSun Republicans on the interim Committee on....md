@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Republicans on the interim Committee on..."
 date: 2021-10-04
 time: 22:05:05
 tweet_id: "1445147993410183176"

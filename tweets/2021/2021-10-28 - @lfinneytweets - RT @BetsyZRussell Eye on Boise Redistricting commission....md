@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Redistricting commission..."
 date: 2021-10-28
 time: 21:26:35
 tweet_id: "1453835612520214530"
@@ -20,6 +21,6 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: Redistricting commission makes substantial progress on legislative district map #idleg #idpol  https://t.c…
+RT @BetsyZRussell: Eye on Boise: Redistricting commission makes substantial progress on legislative district map #idleg #idpol  <https://t.c…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1453835612520214530)

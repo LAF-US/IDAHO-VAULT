@@ -1,4 +1,5 @@
 ---
+title: "RT @boiseboone States are the \u201claboratories of democracy,\u201d..."
 date: 2021-01-07
 time: 21:45:43
 tweet_id: "1347298392519581696"

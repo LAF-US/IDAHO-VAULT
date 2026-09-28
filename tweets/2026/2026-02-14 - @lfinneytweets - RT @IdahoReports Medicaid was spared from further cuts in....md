@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Medicaid was spared from further cuts in..."
 date: 2026-02-14
 time: 02:48:50
 tweet_id: "2022503271693455816"

@@ -174,4 +174,6 @@ She has not rung the bells. She is grateful for their company.
 
 ---
 
-*The world is quiet here.*
+```text
+The world is quiet here．Esto Perpetua!
+```

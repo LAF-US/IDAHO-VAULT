@@ -1,4 +1,5 @@
 ---
+title: "Wow, I didn't realize how much I miss that building."
 date: 2021-01-29
 time: 18:58:33
 tweet_id: "1355228858346209284"

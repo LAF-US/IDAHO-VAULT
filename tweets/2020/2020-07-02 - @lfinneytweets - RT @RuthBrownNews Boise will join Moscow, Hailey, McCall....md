@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Boise will join Moscow, Hailey, McCall..."
 date: 2020-07-02
 time: 21:46:00
 tweet_id: "1278807160978149376"

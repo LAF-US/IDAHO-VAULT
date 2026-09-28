@@ -1,4 +1,5 @@
 ---
+title: "No, stop that. #exportproblems"
 date: 2021-04-24
 time: 00:37:52
 tweet_id: "1385754829310500866"
@@ -16,9 +17,10 @@ related:
   - exportproblems
 ---
 
-No, stop that. #exportproblems https://t.co/bQiaRWOnnh
+No, stop that. #exportproblems <https://t.co/bQiaRWOnnh>
 
 ## Media
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/1385754758707879938/pu/img/YDxk5sGZo5jBzDmZ.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1385754758707879938/pu/img/YDxk5sGZo5jBzDmZ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1385754829310500866)

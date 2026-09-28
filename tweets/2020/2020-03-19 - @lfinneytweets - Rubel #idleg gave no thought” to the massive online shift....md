@@ -1,4 +1,5 @@
 ---
+title: "Rubel #idleg gave no thought\u201d to the massive online shift..."
 date: 2020-03-19
 time: 22:52:31
 tweet_id: "1240773173261422593"

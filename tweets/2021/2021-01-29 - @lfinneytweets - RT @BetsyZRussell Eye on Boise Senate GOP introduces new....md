@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Senate GOP introduces new..."
 date: 2021-01-29
 time: 18:07:12
 tweet_id: "1355215934437249026"

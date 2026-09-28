@@ -1,4 +1,5 @@
 ---
+title: "RT @the208KTVB These are the most common reasons absentee..."
 date: 2020-10-01
 time: 03:24:02
 tweet_id: "1311507137336541185"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @the208KTVB: These are the most common reasons absentee ballots are rejected in Idaho, according to election experts https://t.co/m7AKHK…
+RT @the208KTVB: These are the most common reasons absentee ballots are rejected in Idaho, according to election experts <https://t.co/m7AKHK…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1311507137336541185)

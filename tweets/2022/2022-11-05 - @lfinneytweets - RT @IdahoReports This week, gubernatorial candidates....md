@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week, gubernatorial candidates..."
 date: 2022-11-05
 time: 02:35:13
 tweet_id: "1588721566778822656"

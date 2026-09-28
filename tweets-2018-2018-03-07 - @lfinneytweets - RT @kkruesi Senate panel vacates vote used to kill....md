@@ -20,9 +20,10 @@ related:
   - idols
 ---
 
-RT @kkruesi: Senate panel vacates vote used to kill marijuana oil bill, political candidates respond #idleg #idols  https://t.co/mDowGiGeFV
+RT @kkruesi: Senate panel vacates vote used to kill marijuana oil bill, political candidates respond #idleg #idols  <https://t.co/mDowGiGeFV>
 
 ## Links
-- https://apnews.com/df4ce58fd95b47e5b52cecb1e58ab45a
+
+- <https://apnews.com/df4ce58fd95b47e5b52cecb1e58ab45a>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/971198257178161152)

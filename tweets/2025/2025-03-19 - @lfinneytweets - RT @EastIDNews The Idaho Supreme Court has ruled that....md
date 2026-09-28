@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews The Idaho Supreme Court has ruled that..."
 date: 2025-03-19
 time: 17:41:06
 tweet_id: "1902415045067485413"

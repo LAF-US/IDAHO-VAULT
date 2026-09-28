@@ -1,4 +1,5 @@
 ---
+title: "Little says his son helped come up with the idea. Costco,..."
 date: 2020-01-06
 time: 21:32:31
 tweet_id: "1214298726379900928"

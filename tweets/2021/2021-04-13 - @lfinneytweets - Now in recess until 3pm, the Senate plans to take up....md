@@ -1,4 +1,5 @@
 ---
+title: "Now in recess until 3pm, the Senate plans to take up..."
 date: 2021-04-13
 time: 18:18:59
 tweet_id: "1382035602032402433"

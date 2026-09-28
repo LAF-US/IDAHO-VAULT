@@ -14,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-Here’s that vote breakdown: https://t.co/diRyIcriC0
+Here’s that vote breakdown: <https://t.co/diRyIcriC0>
 
 ## Links
-- https://x.com/RadioDawson/status/1239600227490775040
+
+- <https://x.com/RadioDawson/status/1239600227490775040>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

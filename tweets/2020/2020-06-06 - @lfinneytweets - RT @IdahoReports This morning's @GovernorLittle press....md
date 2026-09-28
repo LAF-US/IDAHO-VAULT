@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This morning's @GovernorLittle press..."
 date: 2020-06-06
 time: 01:41:58
 tweet_id: "1269082069197438976"

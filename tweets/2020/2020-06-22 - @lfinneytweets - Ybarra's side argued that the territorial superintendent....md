@@ -1,4 +1,5 @@
 ---
+title: "Ybarra's side argued that the territorial superintendent..."
 date: 2020-06-22
 time: 23:25:31
 tweet_id: "1275208324632375296"

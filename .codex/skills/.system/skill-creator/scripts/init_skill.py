@@ -10,7 +10,7 @@ Examples:
     init_skill.py my-new-skill --path skills/public --resources scripts,references
     init_skill.py my-api-helper --path skills/private --resources scripts --examples
     init_skill.py custom-skill --path /custom/location
-    init_skill.py my-skill --path skills/public --interface sho***REMOVED***description="Short UI label"
+    init_skill.py my-skill --path skills/public --interface short_description="Short UI label"
 """
 
 import argparse
@@ -119,7 +119,7 @@ Replace with actual implementation or delete if not needed.
 
 Example real scripts from other skills:
 - pdf/scripts/fill_fillable_fields.py - Fills PDF form fields
-- pdf/scripts/conve***REMOVED***pdf_to_images.py - Converts PDF pages to images
+- pdf/scripts/convert_pdf_to_images.py - Converts PDF pages to images
 """
 
 def main():

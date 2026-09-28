@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Federal lawsuit charges ADA..."
 date: 2021-01-08
 time: 00:49:54
 tweet_id: "1347344746599960581"

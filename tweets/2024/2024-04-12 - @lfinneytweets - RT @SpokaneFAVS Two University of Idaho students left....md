@@ -1,4 +1,5 @@
 ---
+title: "RT @SpokaneFAVS Two University of Idaho students left..."
 date: 2024-04-12
 time: 23:13:04
 tweet_id: "1778924323186868611"

@@ -1,4 +1,5 @@
 ---
+title: "RT @sallykrutzig @brandendurst Note Idaho newspapers do..."
 date: 2021-02-05
 time: 21:37:39
 tweet_id: "1357805610981498880"

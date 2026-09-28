@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The state obtained the new death warrant..."
 date: 2023-02-24
 time: 22:55:31
 tweet_id: "1629253717609332736"

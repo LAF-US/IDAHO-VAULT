@@ -22,7 +22,7 @@ OpenRouter integrates seamlessly with popular AI frameworks and SDKs. Choose you
 - **[TanStack AI](https://openrouter.ai/docs/community/tanstack-ai)** - Integration with TanStack AI for React, Solid, and Preact applications
 - **[Vercel AI SDK](https://openrouter.ai/docs/community/vercel-ai-sdk)** - Integration with Next.js applications using the Vercel AI SDK
 
-## Other Integrations:
+## Other Integrations
 
 - **[Aider](https://aider.chat/docs/llms/openrouter.html)** - Integration with Aider coding assistant
 - **[Cline](https://docs.cline.bot/provider-config/openrouter)** - Integration with Cline coding assistant

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week @lfinneytweets and @KevinRichert..."
 date: 2023-10-11
 time: 19:05:30
 tweet_id: "1712182655926882489"

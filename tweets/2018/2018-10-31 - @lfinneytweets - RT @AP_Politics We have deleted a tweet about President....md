@@ -1,4 +1,5 @@
 ---
+title: "RT @AP_Politics We have deleted a tweet about President..."
 date: 2018-10-31
 time: 03:27:00
 tweet_id: "1057473986961977345"

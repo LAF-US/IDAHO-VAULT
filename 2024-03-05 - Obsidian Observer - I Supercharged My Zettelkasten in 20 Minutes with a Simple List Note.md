@@ -18,9 +18,9 @@ Welcome to The Obsidian Observer, a hub for all Obsidian enthusiasts. Whether yo
 
 ## Obsidian Plugin Review
 
-## The Breadcrumbs plugin solves my fundamental issue with digital zettelkasten using a plaintext outline.
+## The Breadcrumbs plugin solves my fundamental issue with digital zettelkasten using a plaintext outline
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*YkoYKBulXEWr_BiL)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*YkoYKBulXEWr_BiL)
 
 Photo by Rick Mason on Unsplash
 
@@ -32,7 +32,7 @@ It was, and I mean this positively, like drinking from a firehose.
 
 The arduous study and discussion drove me to build a digital zettelkasten. “Most of what I’m doing is drawing connections between different historical processes,” I figured. “Surely the zettelkasten method can help with that.”
 
-## Logan, become a member to read this story, and all of Medium.
+## Logan, become a member to read this story, and all of Medium
 
 David Rhoades put this story behind our paywall, so it’s only available to read with a paid Medium membership, which comes with a host of benefits:
 

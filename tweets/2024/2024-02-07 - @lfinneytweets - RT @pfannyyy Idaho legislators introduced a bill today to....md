@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy Idaho legislators introduced a bill today to..."
 date: 2024-02-07
 time: 20:23:43
 tweet_id: "1755326493222461628"

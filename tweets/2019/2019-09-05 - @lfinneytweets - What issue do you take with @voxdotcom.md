@@ -1,4 +1,5 @@
 ---
+title: "What issue do you take with @voxdotcom"
 date: 2019-09-05
 time: 22:05:07
 tweet_id: "1169733221761703936"

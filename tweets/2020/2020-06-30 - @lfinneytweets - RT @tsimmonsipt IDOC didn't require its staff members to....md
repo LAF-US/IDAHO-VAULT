@@ -1,4 +1,5 @@
 ---
+title: "RT @tsimmonsipt IDOC didn't require its staff members to..."
 date: 2020-06-30
 time: 19:39:35
 tweet_id: "1278050568456433665"

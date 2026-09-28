@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews Four-day school advocates took on some of..."
 date: 2024-12-18
 time: 20:12:44
 tweet_id: "1869475907175632985"

@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Benewah County courthouse 
+magistrate court Benewah County courthouse

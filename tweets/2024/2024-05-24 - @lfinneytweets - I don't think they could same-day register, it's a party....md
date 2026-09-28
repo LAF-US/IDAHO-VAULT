@@ -1,4 +1,5 @@
 ---
+title: "I don't think they could same-day register, it's a party..."
 date: 2024-05-24
 time: 05:25:48
 tweet_id: "1793876027103682630"

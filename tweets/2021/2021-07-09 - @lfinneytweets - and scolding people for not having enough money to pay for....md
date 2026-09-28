@@ -1,4 +1,5 @@
 ---
+title: "and scolding people for not having enough money to pay for..."
 date: 2021-07-09
 time: 00:32:39
 tweet_id: "1413294994119561220"

@@ -1,4 +1,5 @@
 ---
+title: "Assorted immediate reactions - Anthon I'm not taking any..."
 date: 2024-04-03
 time: 20:42:26
 tweet_id: "1775624924469854212"
@@ -14,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-Assorted immediate reactions - 
+Assorted immediate reactions -
 Anthon: "I'm not taking any words today."
-Moyle: "Bedke can't hear." 
+Moyle: "Bedke can't hear."
 Horman: "Unbelievable."
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

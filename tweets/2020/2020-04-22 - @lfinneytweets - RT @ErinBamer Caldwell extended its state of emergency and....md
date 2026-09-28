@@ -1,4 +1,5 @@
 ---
+title: "RT @ErinBamer Caldwell extended its state of emergency and..."
 date: 2020-04-22
 time: 17:07:42
 tweet_id: "1253007585126436865"

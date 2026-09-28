@@ -6,7 +6,7 @@ created: 2026-04-20
 ---
 ## Programatically read 1Password Environments Beta
 
-You can programatically retrieve environment variables from [1Password Environments](https://developer.1password.com/docs/environments) using [1Password SDKs](#sdks) or [1Password CLI](#cli). Both tools support local authentication with the 1Password desktop app or automated authentication with service accounts scoped to specific Environments.
+You can programatically retrieve environment variables from [1Password Environments](https://developer.1password.com/docs/environments) using [1Password SDKs](#read-environments-with-1password-sdks) or [1Password CLI](#read-environments-with-1password-cli). Both tools support local authentication with the 1Password desktop app or automated authentication with service accounts scoped to specific Environments.
 
 ## Choose your configuration
 
@@ -26,16 +26,16 @@ Use the table below to find the best tool and authentication method for your spe
 
 | Use case | Recommended tool | Authentication method | Why this approach |
 | --- | --- | --- | --- |
-| **Local development** on your machine | [CLI](#cli) or [SDK](#sdks) | Desktop app | Uses existing 1Password account credentials, making it seamless for individual developers working locally. No token management. |
-| **Quick testing** and exploration | [CLI](#cli) | Desktop app | Fastest way to test. Uses existing 1Password account credentials with minimal setup required. |
-| **Desktop applications** | [SDK](#sdks) | Desktop app | Better integration with application code. Desktop app authentication allows end users to authenticate with their own 1Password accounts. |
-| **Shell scripts** and automation tasks | [CLI](#cli) | Desktop app or service account | 1Password CLI is designed for shell scripting. Use 1Password desktop app for personal scripts, service accounts for shared/automated scripts. |
-| **CI/CD pipelines** (GitHub Actions, GitLab CI, etc.) | [CLI](#cli) | Service account | Service accounts provide non-interactive authentication perfect for automated workflows. 1Password CLI is lightweight and easy to integrate into pipeline scripts. |
-| **Application runtime** (production services) | [SDK](#sdks) | Service account | 1Password SDKs offer native language integration with better error handling and type safety. Service accounts enable secure, automated access without user interaction. |
-| **Server-side applications** | [SDK](#sdks) | Service account | 1Password SDKs offer robust error handling and connection pooling. Service accounts enable headless server authentication. |
-| **Docker containers and Kubernetes** | [SDK](#sdks) or [CLI](#cli) | Service account | Service accounts work well in containerized environments. Choose 1Password SDKs for application containers, 1Password CLI for init containers or sidecars. |
-| **Infrastructure as Code** (Terraform, Pulumi, etc.) | [CLI](#cli) | Service account | 1Password CLI can be easily invoked from IaC tools. Service accounts enable automated infrastructure provisioning. |
-| **Build tools and task runners** | [CLI](#cli) | Desktop app or service account | 1Password CLI integrates easily with build tools like Make, Gradle, or npm scripts. Use 1Password desktop app for developer builds. Service accounts support shared building. |
+| **Local development** on your machine | [CLI](#read-environments-with-1password-cli) or [SDK](#read-environments-with-1password-sdks) | Desktop app | Uses existing 1Password account credentials, making it seamless for individual developers working locally. No token management. |
+| **Quick testing** and exploration | [CLI](#read-environments-with-1password-cli) | Desktop app | Fastest way to test. Uses existing 1Password account credentials with minimal setup required. |
+| **Desktop applications** | [SDK](#read-environments-with-1password-sdks) | Desktop app | Better integration with application code. Desktop app authentication allows end users to authenticate with their own 1Password accounts. |
+| **Shell scripts** and automation tasks | [CLI](#read-environments-with-1password-cli) | Desktop app or service account | 1Password CLI is designed for shell scripting. Use 1Password desktop app for personal scripts, service accounts for shared/automated scripts. |
+| **CI/CD pipelines** (GitHub Actions, GitLab CI, etc.) | [CLI](#read-environments-with-1password-cli) | Service account | Service accounts provide non-interactive authentication perfect for automated workflows. 1Password CLI is lightweight and easy to integrate into pipeline scripts. |
+| **Application runtime** (production services) | [SDK](#read-environments-with-1password-sdks) | Service account | 1Password SDKs offer native language integration with better error handling and type safety. Service accounts enable secure, automated access without user interaction. |
+| **Server-side applications** | [SDK](#read-environments-with-1password-sdks) | Service account | 1Password SDKs offer robust error handling and connection pooling. Service accounts enable headless server authentication. |
+| **Docker containers and Kubernetes** | [SDK](#read-environments-with-1password-sdks) or [CLI](#read-environments-with-1password-cli) | Service account | Service accounts work well in containerized environments. Choose 1Password SDKs for application containers, 1Password CLI for init containers or sidecars. |
+| **Infrastructure as Code** (Terraform, Pulumi, etc.) | [CLI](#read-environments-with-1password-cli) | Service account | 1Password CLI can be easily invoked from IaC tools. Service accounts enable automated infrastructure provisioning. |
+| **Build tools and task runners** | [CLI](#read-environments-with-1password-cli) | Desktop app or service account | 1Password CLI integrates easily with build tools like Make, Gradle, or npm scripts. Use 1Password desktop app for developer builds. Service accounts support shared building. |
 
 ## Get an Environment's ID
 
@@ -63,7 +63,7 @@ Each environment variable in the response contains the environment variable's na
 
 > [!-secondary] -secondary
 > note
-> 
+>
 > By default, 1Password Environment variables have **"Hide value by default"** turned on. To change this, open an Environment, select the verticle ellipsis next to the variable, then select **Show value by default**.
 
 #### Examples
@@ -83,7 +83,7 @@ Before you get started, install the [latest beta build of 1Password CLI](https:/
 
 To read environment variables from a 1Password Environment, use `op environment read` with the [Environment's ID](#get-an-environments-id). 1Password CLI will return a list of environment variables for the Environment formatted as key-value pairs.
 
-op environment read <environmentID>
+`op environment read <environmentID>`
 
 #### Examples
 
@@ -107,11 +107,11 @@ op environment read blgexucrwfr2dtsxe2q4uu7dp4 | grep DB\_
 
 To pass environment variables from a 1Password Environment to an application or script, use [`op run`](https://developer.1password.com/docs/cli/reference/commands/run) with the `--environment` flag and the [Environment's ID](#get-an-environments-id), then pass the results to the application or script. 1Password CLI runs the application or script as a subprocess with your secrets loaded into the environment for the duration of the process.
 
-op run --environment <environmentID> -- <command>
+`op run --environment <environmentID> -- <command>`
 
 > [!-secondary] -secondary
 > note
-> 
+>
 > By default, 1Password Environment variables have **"Hide value by default"** turned on. Hidden variables are automatically concealed in stdout and stderr output. To change this, open an Environment, select the verticle ellipsis next to the variable, then select **Show value by default**. Or use the `--no-masking` flag with `op run`.
 
 #### Use with environment variables from multiple sources

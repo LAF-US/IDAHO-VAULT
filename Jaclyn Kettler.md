@@ -7,4 +7,4 @@ related:
 - Idaho Reports
 authority: LOGAN
 ---
-Boise State University BSU School of Public Service political scientist, Idaho Reports guest 
+Boise State University BSU School of Public Service political scientist, Idaho Reports guest

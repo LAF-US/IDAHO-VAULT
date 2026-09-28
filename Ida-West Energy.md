@@ -4,4 +4,4 @@ related:
 - IDACORP
 ---
 
-IDACORP 
+IDACORP

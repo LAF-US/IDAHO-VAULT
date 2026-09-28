@@ -1,4 +1,5 @@
 ---
+title: "RT @fay_trevor City council meeting at Twin Falls to..."
 date: 2020-11-10
 time: 00:59:17
 tweet_id: "1325966222815453184"
@@ -15,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @fay_trevor: City council meeting at Twin Falls to discuss possible mask mandate. https://t.co/c1f2qJWUKB
+RT @fay_trevor: City council meeting at Twin Falls to discuss possible mask mandate. <https://t.co/c1f2qJWUKB>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EmbBXS-VMAAZ7sJ.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EmbBXS-VMAAZ7sJ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1325966222815453184)

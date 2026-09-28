@@ -1,4 +1,5 @@
 ---
+title: "... Sen. Regina Bayer (Meridian); Rep. Priscilla Giddings..."
 date: 2021-01-11
 time: 17:28:06
 tweet_id: "1348683116370481152"

@@ -1,4 +1,5 @@
 ---
+title: "Senate rejects Lenney's anti-SLAPP bill 15-20...."
 date: 2024-03-01
 time: 00:16:42
 tweet_id: "1763357658860650795"

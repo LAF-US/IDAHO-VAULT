@@ -1,4 +1,5 @@
 ---
+title: "Idaho Senate bulletin Page graduation is this morning. In..."
 date: 2023-03-23
 time: 16:25:11
 tweet_id: "1638939963399208961"

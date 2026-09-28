@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews The Constitution grants the @IdSBOE general..."
 date: 2023-05-12
 time: 18:21:34
 tweet_id: "1657088642731642880"

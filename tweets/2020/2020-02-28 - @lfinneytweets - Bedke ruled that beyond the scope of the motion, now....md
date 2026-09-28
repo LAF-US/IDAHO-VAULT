@@ -1,4 +1,5 @@
 ---
+title: "Bedke ruled that beyond the scope of the motion, now..."
 date: 2020-02-28
 time: 17:23:38
 tweet_id: "1233442649987678208"

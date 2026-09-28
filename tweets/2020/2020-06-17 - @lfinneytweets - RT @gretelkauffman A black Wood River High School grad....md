@@ -1,4 +1,5 @@
 ---
+title: "RT @gretelkauffman A black Wood River High School grad..."
 date: 2020-06-17
 time: 17:26:52
 tweet_id: "1273306129028677634"

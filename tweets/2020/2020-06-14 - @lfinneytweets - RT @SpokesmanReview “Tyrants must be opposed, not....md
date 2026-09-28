@@ -1,4 +1,5 @@
 ---
+title: "RT @SpokesmanReview \u201cTyrants must be opposed, not..."
 date: 2020-06-14
 time: 22:55:17
 tweet_id: "1272301611696525312"

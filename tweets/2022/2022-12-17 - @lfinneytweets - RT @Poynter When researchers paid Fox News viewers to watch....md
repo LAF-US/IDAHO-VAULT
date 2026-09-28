@@ -1,4 +1,5 @@
 ---
+title: "RT @Poynter When researchers paid Fox News viewers to watch..."
 date: 2022-12-17
 time: 21:30:10
 tweet_id: "1604227477920178176"

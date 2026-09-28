@@ -1,4 +1,5 @@
 ---
+title: "RT @AP Alaska voters won't have party primaries this year...."
 date: 2022-01-16
 time: 22:06:33
 tweet_id: "1482836701085003779"

@@ -1,4 +1,5 @@
 ---
+title: "The committee killed the bill 6-12. Blog post soon."
 date: 2021-11-15
 time: 21:58:18
 tweet_id: "1460366573554724864"

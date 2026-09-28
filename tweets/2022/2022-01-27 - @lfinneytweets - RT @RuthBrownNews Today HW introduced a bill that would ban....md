@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Today HW introduced a bill that would ban..."
 date: 2022-01-27
 time: 18:00:35
 tweet_id: "1486761064276525057"

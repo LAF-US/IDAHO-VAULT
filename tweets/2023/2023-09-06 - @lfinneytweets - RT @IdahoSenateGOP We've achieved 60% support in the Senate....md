@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoSenateGOP We've achieved 60% support in the Senate..."
 date: 2023-09-06
 time: 16:32:57
 tweet_id: "1699460690137014538"

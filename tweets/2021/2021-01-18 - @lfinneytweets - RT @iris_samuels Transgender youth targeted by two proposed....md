@@ -1,4 +1,5 @@
 ---
+title: "RT @iris_samuels Transgender youth targeted by two proposed..."
 date: 2021-01-18
 time: 23:17:47
 tweet_id: "1351307829269807107"
@@ -16,9 +17,9 @@ related:
   - lfinneytweets
 ---
 
-RT @iris_samuels: Transgender youth targeted by two proposed Montana bills (from @AP) https://t.co/fXEtxyCkGu
+RT @iris_samuels: Transgender youth targeted by two proposed Montana bills (from @AP) <https://t.co/fXEtxyCkGu>
 
 ## Links
-- https://apnews.com/article/7ca8d05e0b4ef196bacca14df611799c
+- <https://apnews.com/article/7ca8d05e0b4ef196bacca14df611799c>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1351307829269807107)

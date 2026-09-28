@@ -1,4 +1,5 @@
 ---
+title: "I have my camera! It's a DSLR though so the photo dump will..."
 date: 2020-06-23
 time: 15:00:44
 tweet_id: "1275443678702530566"

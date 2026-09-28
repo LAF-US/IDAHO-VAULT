@@ -1,4 +1,5 @@
 ---
+title: "Not saying they'll go anywhere, just noting they've been..."
 date: 2021-01-26
 time: 00:50:21
 tweet_id: "1353867841271783425"

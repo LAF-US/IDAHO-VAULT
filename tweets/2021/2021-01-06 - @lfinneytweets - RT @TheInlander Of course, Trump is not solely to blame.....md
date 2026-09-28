@@ -1,4 +1,5 @@
 ---
+title: "RT @TheInlander Of course, Trump is not solely to blame...."
 date: 2021-01-06
 time: 23:41:24
 tweet_id: "1346965118370729987"

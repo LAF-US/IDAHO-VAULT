@@ -42,7 +42,7 @@ If you worked and paid taxes in 2025:
 
 ## Your Tax Receipt
 
-|  | Average tax paid | Days worked to pay taxes |
+| | Average tax paid | Days worked to pay taxes |
 | --- | --- | --- |
 | **Health Total** | **$5,852.77** | **72.2** |
 | Medicaid | $2,491.64 | 30.7 |

@@ -1,4 +1,5 @@
 ---
+title: "On a divided Senate voice vote, Dept of Admin budget (HB..."
 date: 2024-03-26
 time: 18:10:06
 tweet_id: "1772687485170008072"

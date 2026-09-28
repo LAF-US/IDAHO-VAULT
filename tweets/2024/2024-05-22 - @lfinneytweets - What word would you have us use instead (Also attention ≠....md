@@ -1,4 +1,5 @@
 ---
+title: "What word would you have us use instead (Also attention \u2260..."
 date: 2024-05-22
 time: 19:31:02
 tweet_id: "1793363962005987703"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports As Idaho communities have grown unevenly..."
 date: 2021-11-01
 time: 16:09:09
 tweet_id: "1455205278564040708"

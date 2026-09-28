@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2023-09-27
 time: 18:10:26
 tweet_id: "1707095365965750324"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/wEMuQLVbww
+<https://t.co/wEMuQLVbww>
 
 ## Media
-- ![](https://pbs.twimg.com/media/F7DSLiwaoAATCFA.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/F7DSLiwaoAATCFA.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

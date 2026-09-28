@@ -14,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-Christensen: "I am definitely on board with getting rid of the commission and appropriating the funds directly to local districts...I talked many people into changing their votes to ‘no.’ We had more [no] votes than we needed to kill it.” https://t.co/AUA2sRr8Pv
+Christensen: "I am definitely on board with getting rid of the commission and appropriating the funds directly to local districts...I talked many people into changing their votes to ‘no.’ We had more [no] votes than we needed to kill it.” <https://t.co/AUA2sRr8Pv>
 
 ## Links
-- https://www.hjnews.com/preston/legislative-update-killing-hb-benefits-franklin-county/article_e0dab815-cf49-5190-94b4-33f2557609f0.html
+
+- <https://www.hjnews.com/preston/legislative-update-killing-hb-benefits-franklin-county/article_e0dab815-cf49-5190-94b4-33f2557609f0.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

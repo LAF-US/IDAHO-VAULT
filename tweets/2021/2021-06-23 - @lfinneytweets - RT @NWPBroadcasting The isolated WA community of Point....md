@@ -1,4 +1,5 @@
 ---
+title: "RT @NWPBroadcasting The isolated WA community of Point..."
 date: 2021-06-23
 time: 23:23:27
 tweet_id: "1407841763255996421"

@@ -1,4 +1,5 @@
 ---
+title: "RT @maggieKTVB7 Meridian mayor @robertsimison has issued a..."
 date: 2020-07-15
 time: 00:20:42
 tweet_id: "1283194746848993281"

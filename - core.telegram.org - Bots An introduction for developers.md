@@ -70,7 +70,7 @@ Mini apps can **seamlessly integrate** with third-party services, APIs and devic
 
 Likewise, many popular platforms already have official Telegram bots, which allow users to comfortably access content in one app – or perform quick searches using [inline mode](https://core.telegram.org/bots/inline).
 
-[![](https://core.telegram.org/file/464001186/11e04/7XO37b9iccE.133932/a29f8bf593af567fcc)](https://core.telegram.org/file/464001186/11e04/7XO37b9iccE.133932/a29f8bf593af567fcc)
+[![alt text needed](https://core.telegram.org/file/464001186/11e04/7XO37b9iccE.133932/a29f8bf593af567fcc)](https://core.telegram.org/file/464001186/11e04/7XO37b9iccE.133932/a29f8bf593af567fcc)
 
 > Try [@GMailBot](https://t.me/gmailbot), [@GitHubBot](https://t.me/githubbot), [@Bing](https://t.me/bing), [@YouTube](https://t.me/youtube), [@wiki](https://t.me/wiki) and more.
 

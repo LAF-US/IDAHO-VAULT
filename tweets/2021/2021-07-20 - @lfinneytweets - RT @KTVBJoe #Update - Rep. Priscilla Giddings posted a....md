@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe #Update - Rep. Priscilla Giddings posted a..."
 date: 2021-07-20
 time: 23:42:49
 tweet_id: "1417631110360567810"

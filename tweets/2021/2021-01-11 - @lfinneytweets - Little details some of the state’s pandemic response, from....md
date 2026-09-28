@@ -1,4 +1,5 @@
 ---
+title: "Little details some of the state\u2019s pandemic response, from..."
 date: 2021-01-11
 time: 20:10:57
 tweet_id: "1348724096821989376"

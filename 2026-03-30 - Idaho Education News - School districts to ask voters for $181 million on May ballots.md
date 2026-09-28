@@ -444,6 +444,6 @@ The ask comes after Middleton trustees [decided to pursue a new state grant to b
 
 **Impact?** The levy would cost taxpayers $256.12 per $100,000 of taxable assessed value a $2.32 decrease from the expiring supplemental levy. See [sample ballot here.](https://www.idahoednews.org/wp-content/uploads/2026/03/Whitepine-supplemental.pdf)
 
-*If your school district’s ballot measure is missing from this list email emma@idahoednews.org.*
+*If your school district’s ballot measure is missing from this list email <emma@idahoednews.org>.*
 
 *Ed News Data Analyst Randy Schrader contributed to this story.*

@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Rep. Ehardt's bill to restrict..."
 date: 2020-02-18
 time: 19:10:19
 tweet_id: "1229845617645506561"

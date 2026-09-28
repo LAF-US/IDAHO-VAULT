@@ -1,4 +1,5 @@
 ---
+title: "You've got a friend with @BigBird & the @IdahoReports team..."
 date: 2020-05-01
 time: 06:11:56
 tweet_id: "1256104047343398913"
@@ -20,9 +21,9 @@ related:
   - IdahoCOVID19
 ---
 
-You've got a friend with @BigBird & the @IdahoReports team at @IdahoPTV! 😷 #IdahoCOVID19 https://t.co/PklG8t76nL
+You've got a friend with @BigBird & the @IdahoReports team at @IdahoPTV! 😷 #IdahoCOVID19 <https://t.co/PklG8t76nL>
 
 ## Links
-- https://x.com/IdahoMarissa/status/1256061560088170496
+- <https://x.com/IdahoMarissa/status/1256061560088170496>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1256104047343398913)

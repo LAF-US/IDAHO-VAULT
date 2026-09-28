@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun The move is seen as a major step in..."
 date: 2023-07-29
 time: 19:01:55
 tweet_id: "1685365052562702336"

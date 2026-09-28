@@ -13,3 +13,10 @@
 [safe]
 	directory = Z:\\
 	directory = %(prefix)///10.93.91.25/IDEX_Artifacts/
+
+[commit]
+	gpgsign = true
+[gpg]
+	format = x509
+[gpg "x509"]
+	program = gitsign

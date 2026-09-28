@@ -1,4 +1,5 @@
 ---
+title: "RT @motherboard His crime Clicking view source on a..."
 date: 2021-10-14
 time: 21:00:11
 tweet_id: "1448755536883707927"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @motherboard: His "crime?" Clicking "view source" on a publicly available webpage. https://t.co/Hvwu3k2T20
+RT @motherboard: His "crime?" Clicking "view source" on a publicly available webpage. <https://t.co/Hvwu3k2T20>
 
 ## Links
-- https://trib.al/K9MFagV
+- <https://trib.al/K9MFagV>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1448755536883707927)

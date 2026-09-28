@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews The contributions went to five Republicans..."
 date: 2024-05-03
 time: 16:57:06
 tweet_id: "1786439854857040345"

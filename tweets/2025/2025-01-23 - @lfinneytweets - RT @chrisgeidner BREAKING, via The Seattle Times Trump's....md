@@ -1,4 +1,5 @@
 ---
+title: "RT @chrisgeidner BREAKING, via The Seattle Times Trump's..."
 date: 2025-01-23
 time: 19:34:11
 tweet_id: "1882512170518516206"

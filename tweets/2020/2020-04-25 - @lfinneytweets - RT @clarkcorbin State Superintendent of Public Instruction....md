@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin State Superintendent of Public Instruction..."
 date: 2020-04-25
 time: 02:53:53
 tweet_id: "1253879878891405314"

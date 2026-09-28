@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson The Senate State Affairs Committee just..."
 date: 2020-03-13
 time: 13:52:36
 tweet_id: "1238462970276929537"

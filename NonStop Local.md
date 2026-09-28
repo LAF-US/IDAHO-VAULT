@@ -22,4 +22,4 @@ NonStop Local is a regional network and branding of all Cowles Company-owned tel
 - KFBB (Great Falls)
 - KHBB (Helena)
 - KTMF (Missoula)
-- KTRMF (Kalispell) 
+- KTRMF (Kalispell)

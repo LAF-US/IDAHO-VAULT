@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell Idaho Legislature is considering three..."
 date: 2020-02-26
 time: 21:06:54
 tweet_id: "1232774061194768384"

@@ -1,4 +1,5 @@
 ---
+title: "A live look at where my wonderful colleagues make the..."
 date: 2024-03-12
 time: 19:57:38
 tweet_id: "1767641119481795047"
@@ -18,9 +19,10 @@ related:
   - idpol
 ---
 
-A live look at where my wonderful colleagues make the #idleg #idpol streaming happen! https://t.co/7CQW2jTJ1t
+A live look at where my wonderful colleagues make the #idleg #idpol streaming happen! <https://t.co/7CQW2jTJ1t>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GIfsMv_akAAss19.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/GIfsMv_akAAss19.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1767641119481795047)

@@ -1,4 +1,5 @@
 ---
+title: "RT @kxly4news Several people were arrested and cited..."
 date: 2020-09-24
 time: 21:25:44
 tweet_id: "1309242640601235456"

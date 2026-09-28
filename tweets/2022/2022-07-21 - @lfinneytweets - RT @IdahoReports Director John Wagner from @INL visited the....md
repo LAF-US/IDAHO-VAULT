@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Director John Wagner from @INL visited the..."
 date: 2022-07-21
 time: 03:29:22
 tweet_id: "1549959692037783553"

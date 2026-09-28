@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews The full House is adjourning till 8 30..."
 date: 2020-08-24
 time: 20:28:42
 tweet_id: "1297994261653123072"

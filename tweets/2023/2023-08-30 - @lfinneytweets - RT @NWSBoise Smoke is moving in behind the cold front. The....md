@@ -1,4 +1,5 @@
 ---
+title: "RT @NWSBoise Smoke is moving in behind the cold front. The..."
 date: 2023-08-30
 time: 00:01:45
 tweet_id: "1696674529173819536"

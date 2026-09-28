@@ -1,4 +1,5 @@
 ---
+title: "RT @Kaitlin_Knapp1 #TODAY Coeur d\u2019Alene City Council could..."
 date: 2020-10-26
 time: 16:05:32
 tweet_id: "1320758471264931841"

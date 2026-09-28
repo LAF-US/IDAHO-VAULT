@@ -1,4 +1,5 @@
 ---
+title: "Ybarra argued that the bills were an attempt by the..."
 date: 2020-06-22
 time: 23:15:45
 tweet_id: "1275205868699582464"

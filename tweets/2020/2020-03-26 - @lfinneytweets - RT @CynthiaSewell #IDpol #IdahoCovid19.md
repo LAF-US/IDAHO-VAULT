@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell #IDpol #IdahoCovid19"
 date: 2020-03-26
 time: 20:40:02
 tweet_id: "1243276548360134656"
@@ -20,9 +21,9 @@ related:
   - IdahoCovid19
 ---
 
-RT @CynthiaSewell: #IDpol #IdahoCovid19 https://t.co/59fUnb9eWK
+RT @CynthiaSewell: #IDpol #IdahoCovid19 <https://t.co/59fUnb9eWK>
 
 ## Links
-- https://x.com/RepRussFulcher/status/1243227752813203461
+- <https://x.com/RepRussFulcher/status/1243227752813203461>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243276548360134656)

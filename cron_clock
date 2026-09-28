@@ -1,0 +1,107 @@
+# cron_clock — the master clock
+#
+# NOT AN INSTALLABLE CRONTAB. Do not pipe this to `crontab`. It borrows cron's
+# five time fields as a notation for WHEN, and the sixth column is a NAME, not
+# a command. Real cron treats everything after field five as a shell command,
+# so `Monday's Dawn` would be executed and would fail on the unmatched
+# apostrophe — `sh: Syntax error: Unterminated quoted string` — on all seventy
+# lines. Nothing here fires, by design: what runs in a span is undecided, and
+# the vault's schedule-trigger ban is still in force.
+#
+# {Monday..Sunday}'s {Noon, Dawn, Dusk} & {Yan, Tan, Tethera, Methera, Pits, Sethera, Azer}
+# 7 days x 10 named spans = 70 addresses. One shape, all seven days.
+#
+# Dawn, Noon and Dusk run 480 minutes each; Yan through Azer run 204 each.
+# Each line is a span's START. Ends are start + length, so they are not
+# written down twice. The 12 minutes Yan..Azer do not cover are what lies
+# between an end and the next start.
+#
+# Times are local wall-clock. Weekday names, never digits: cron counts the week
+# from Sunday and this clock counts it from Monday.
+# Field 3 stays * on every line — cron ORs day-of-month against day-of-week.
+#
+#  m    h  dom mon  dow    address
+
+# --- Monday ----------------------------------------------------
+   0    0   *   *  MON    Monday's Dawn
+   1    0   *   *  MON    Monday's Yan
+  27    3   *   *  MON    Monday's Tan
+  53    6   *   *  MON    Monday's Tethera
+   0    8   *   *  MON    Monday's Noon
+  18   10   *   *  MON    Monday's Methera
+  43   13   *   *  MON    Monday's Pits
+   0   16   *   *  MON    Monday's Dusk
+   9   17   *   *  MON    Monday's Sethera
+  35   20   *   *  MON    Monday's Azer
+
+# --- Tuesday ---------------------------------------------------
+   0    0   *   *  TUE    Tuesday's Dawn
+   1    0   *   *  TUE    Tuesday's Yan
+  27    3   *   *  TUE    Tuesday's Tan
+  53    6   *   *  TUE    Tuesday's Tethera
+   0    8   *   *  TUE    Tuesday's Noon
+  18   10   *   *  TUE    Tuesday's Methera
+  43   13   *   *  TUE    Tuesday's Pits
+   0   16   *   *  TUE    Tuesday's Dusk
+   9   17   *   *  TUE    Tuesday's Sethera
+  35   20   *   *  TUE    Tuesday's Azer
+
+# --- Wednesday -------------------------------------------------
+   0    0   *   *  WED    Wednesday's Dawn
+   1    0   *   *  WED    Wednesday's Yan
+  27    3   *   *  WED    Wednesday's Tan
+  53    6   *   *  WED    Wednesday's Tethera
+   0    8   *   *  WED    Wednesday's Noon
+  18   10   *   *  WED    Wednesday's Methera
+  43   13   *   *  WED    Wednesday's Pits
+   0   16   *   *  WED    Wednesday's Dusk
+   9   17   *   *  WED    Wednesday's Sethera
+  35   20   *   *  WED    Wednesday's Azer
+
+# --- Thursday --------------------------------------------------
+   0    0   *   *  THU    Thursday's Dawn
+   1    0   *   *  THU    Thursday's Yan
+  27    3   *   *  THU    Thursday's Tan
+  53    6   *   *  THU    Thursday's Tethera
+   0    8   *   *  THU    Thursday's Noon
+  18   10   *   *  THU    Thursday's Methera
+  43   13   *   *  THU    Thursday's Pits
+   0   16   *   *  THU    Thursday's Dusk
+   9   17   *   *  THU    Thursday's Sethera
+  35   20   *   *  THU    Thursday's Azer
+
+# --- Friday ----------------------------------------------------
+   0    0   *   *  FRI    Friday's Dawn
+   1    0   *   *  FRI    Friday's Yan
+  27    3   *   *  FRI    Friday's Tan
+  53    6   *   *  FRI    Friday's Tethera
+   0    8   *   *  FRI    Friday's Noon
+  18   10   *   *  FRI    Friday's Methera
+  43   13   *   *  FRI    Friday's Pits
+   0   16   *   *  FRI    Friday's Dusk
+   9   17   *   *  FRI    Friday's Sethera
+  35   20   *   *  FRI    Friday's Azer
+
+# --- Saturday --------------------------------------------------
+   0    0   *   *  SAT    Saturday's Dawn
+   1    0   *   *  SAT    Saturday's Yan
+  27    3   *   *  SAT    Saturday's Tan
+  53    6   *   *  SAT    Saturday's Tethera
+   0    8   *   *  SAT    Saturday's Noon
+  18   10   *   *  SAT    Saturday's Methera
+  43   13   *   *  SAT    Saturday's Pits
+   0   16   *   *  SAT    Saturday's Dusk
+   9   17   *   *  SAT    Saturday's Sethera
+  35   20   *   *  SAT    Saturday's Azer
+
+# --- Sunday ----------------------------------------------------
+   0    0   *   *  SUN    Sunday's Dawn
+   1    0   *   *  SUN    Sunday's Yan
+  27    3   *   *  SUN    Sunday's Tan
+  53    6   *   *  SUN    Sunday's Tethera
+   0    8   *   *  SUN    Sunday's Noon
+  18   10   *   *  SUN    Sunday's Methera
+  43   13   *   *  SUN    Sunday's Pits
+   0   16   *   *  SUN    Sunday's Dusk
+   9   17   *   *  SUN    Sunday's Sethera
+  35   20   *   *  SUN    Sunday's Azer

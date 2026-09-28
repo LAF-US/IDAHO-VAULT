@@ -1,4 +1,5 @@
 ---
+title: "RT @UWAthletics Without @huskyband in attendance tonight,..."
 date: 2018-11-25
 time: 05:23:00
 tweet_id: "1066562877547438080"
@@ -18,7 +19,7 @@ related:
 ---
 
 RT @UWAthletics: Without @huskyband in attendance tonight, @WSUCMB played our fight song.
- 
+
 Thank you for putting rivalry aside and showing…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1066562877547438080)

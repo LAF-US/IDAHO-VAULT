@@ -46,6 +46,6 @@ I wish I could physically take the time to spend more days and more weeks going 
 
 [^1] [Franklin D. Roosevelt, Remarks at Boise, Idaho](https://www.presidency.ucsb.edu/node/208784). Online by Gerhard Peters and John T. Woolley, *The American Presidency Project*. September 27, 1937.
 
---- 
+---
 
 - 1937 FDR - Boise Motorcade

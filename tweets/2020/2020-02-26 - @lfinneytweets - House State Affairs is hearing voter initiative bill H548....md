@@ -1,4 +1,5 @@
 ---
+title: "House State Affairs is hearing voter initiative bill H548..."
 date: 2020-02-26
 time: 16:09:37
 tweet_id: "1232699246912000002"

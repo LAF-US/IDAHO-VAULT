@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Tuesday update @IDHW reports 3,220 cases..."
 date: 2020-06-10
 time: 00:44:44
 tweet_id: "1270517218699145216"

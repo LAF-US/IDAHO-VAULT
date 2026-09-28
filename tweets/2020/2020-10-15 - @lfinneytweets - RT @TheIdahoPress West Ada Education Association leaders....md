@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress West Ada Education Association leaders..."
 date: 2020-10-15
 time: 17:49:22
 tweet_id: "1316798334833618945"

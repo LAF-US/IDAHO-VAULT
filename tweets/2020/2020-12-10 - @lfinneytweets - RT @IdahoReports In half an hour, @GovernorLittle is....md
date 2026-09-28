@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports In half an hour, @GovernorLittle is..."
 date: 2020-12-10
 time: 18:32:39
 tweet_id: "1337102946241110017"

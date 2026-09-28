@@ -1,4 +1,5 @@
 ---
+title: "RT @MelissaSantos1 After last week's election, Washington..."
 date: 2020-11-12
 time: 01:13:57
 tweet_id: "1326694689093738496"

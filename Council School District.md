@@ -4,4 +4,4 @@ related:
 - Council
 authority: LOGAN
 ---
-Council, Adams County 
+Council, Adams County

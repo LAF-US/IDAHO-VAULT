@@ -1,4 +1,5 @@
 ---
+title: "RT @cwarzel Wrote about Joe Biden failing the 'Hot Ones'..."
 date: 2024-07-22
 time: 16:15:37
 tweet_id: "1815420444910207331"

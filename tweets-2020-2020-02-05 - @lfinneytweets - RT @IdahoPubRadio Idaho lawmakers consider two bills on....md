@@ -16,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: Idaho lawmakers consider two bills on bond elections. @lfinneytweets has more from the Idaho State Capitol: https://t.co…
+RT @IdahoPubRadio: Idaho lawmakers consider two bills on bond elections. @lfinneytweets has more from the Idaho State Capitol: <https://t.co…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1225130371936702465)

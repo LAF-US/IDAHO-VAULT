@@ -1,4 +1,5 @@
 ---
+title: "No one can criticize the need for increased investment and..."
 date: 2020-01-06
 time: 21:44:28
 tweet_id: "1214301732286521344"

@@ -1,4 +1,5 @@
 ---
+title: "RT @boiseboone About 13,000 COVID-19 vaccines could arrive..."
 date: 2020-12-05
 time: 06:47:58
 tweet_id: "1335113668854312963"

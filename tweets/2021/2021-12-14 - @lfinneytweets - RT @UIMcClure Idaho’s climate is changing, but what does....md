@@ -1,4 +1,5 @@
 ---
+title: "RT @UIMcClure Idaho\u2019s climate is changing, but what does..."
 date: 2021-12-14
 time: 19:14:13
 tweet_id: "1470834532110635010"

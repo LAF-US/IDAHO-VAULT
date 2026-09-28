@@ -9,7 +9,7 @@ date created: Tuesday, April 28th 2026, 6:26:18 pm
 date modified: Tuesday, April 28th 2026, 6:26:29 pm
 ---
 
-![](https://archive.org/web/images/logo_wayback_210x77.png)
+![alt text needed](https://archive.org/web/images/logo_wayback_210x77.png)
 
 ## Wayback Machine APIs
 
@@ -27,7 +27,7 @@ This simple API for Wayback is a test to see if a given url is archived and curr
 
 which might return:
 
-```
+```json
 {
     "archived_snapshots": {
         "closest": {
@@ -44,20 +44,21 @@ if the url is available. When available, the **url** is the link to the archived
 
 If the url is not available (not archived or currently not accessible), the response will be:
 
-```
+```json
 {"archived_snapshots":{}}
 ```
 
 ### Other Options
 
 Additional options which may be specified are **`timestamp`** and **`callback`**
+
 - `**timestamp**` is the timestamp to look up in Wayback. If not specified, the most recenty available capture in Wayback is returned. The format of the timestamp is 1-14 digits (YYYYMMDDhhmmss) ex:
 
-  **`     http://archive.org/wayback/available?url=example.com&timestamp=20060101  `**
+  **`http://archive.org/wayback/available?url=example.com&timestamp=20060101`**
 
 may result in the following response (note that the snapshot timestamp is now close to 20060101):
 
-```
+```json
 {
     "archived_snapshots": {
         "closest": {
@@ -69,6 +70,7 @@ may result in the following response (note that the snapshot timestamp is now cl
     }
 }
 ```
+
 - **`callback`** is an optional callback which may be specified to produce a JSONP response.
 
 ## Memento API

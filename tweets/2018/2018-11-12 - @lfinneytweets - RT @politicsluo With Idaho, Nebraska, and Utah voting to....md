@@ -1,4 +1,5 @@
 ---
+title: "RT @politicsluo With Idaho, Nebraska, and Utah voting to..."
 date: 2018-11-12
 time: 06:08:11
 tweet_id: "1061863206962921473"

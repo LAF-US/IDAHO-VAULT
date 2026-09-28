@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Unanimous Idaho Supreme..."
 date: 2020-11-21
 time: 01:24:21
 tweet_id: "1329958798321061889"

@@ -1,4 +1,5 @@
 ---
+title: "RT @gregchaneyidaho We\u2019re back in session at #idleg Hopeful..."
 date: 2021-04-06
 time: 18:17:00
 tweet_id: "1379498387817435136"
@@ -22,6 +23,6 @@ related:
   - idpol
 ---
 
-RT @gregchaneyidaho: We’re back in session at #idleg Hopeful we can efficiently finish the people’s business and #sinedie #idpol https://t.…
+RT @gregchaneyidaho: We’re back in session at #idleg Hopeful we can efficiently finish the people’s business and #sinedie #idpol <https://t.…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1379498387817435136)

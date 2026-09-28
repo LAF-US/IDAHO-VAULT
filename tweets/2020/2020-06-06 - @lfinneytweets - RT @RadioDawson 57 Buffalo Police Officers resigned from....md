@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson 57 Buffalo Police Officers resigned from..."
 date: 2020-06-06
 time: 00:28:18
 tweet_id: "1269063531657228289"

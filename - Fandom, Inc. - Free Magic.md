@@ -35,5 +35,4 @@ These creatures are the remnants of Free Magic from the creation of the Charter.
 - Margrue
 - [Stilken](https://oldkingdomwiki.fandom.com/wiki/Stilken "Stilken")
 
-  
 Many Free Magic elementals who had been turned into harmless aspects of nature at The Beginning began to reappear when [Orannis](https://oldkingdomwiki.fandom.com/wiki/Orannis "Orannis") grew closer to becoming whole again. After his [re-binding](https://oldkingdomwiki.fandom.com/wiki/Orannis%27_Binding "Orannis' Binding"), they again disappeared.

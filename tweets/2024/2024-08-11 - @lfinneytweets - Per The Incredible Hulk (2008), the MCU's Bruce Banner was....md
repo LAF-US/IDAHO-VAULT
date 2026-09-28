@@ -1,4 +1,5 @@
 ---
+title: "Per The Incredible Hulk (2008), the MCU's Bruce Banner was..."
 date: 2024-08-11
 time: 02:10:22
 tweet_id: "1822455485657972930"

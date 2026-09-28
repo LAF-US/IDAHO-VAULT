@@ -1,4 +1,5 @@
 ---
+title: "RT @ZachStafford NEWS Sarah McBride has become 1st trans..."
 date: 2020-11-04
 time: 02:03:14
 tweet_id: "1323807989875179520"

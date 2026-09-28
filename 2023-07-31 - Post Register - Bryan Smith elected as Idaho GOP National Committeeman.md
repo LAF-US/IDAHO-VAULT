@@ -64,4 +64,3 @@ Smith authored the August 2022 petition that called for a special meeting of the
 Smith originally ran against Watkins for the national committeeman position at the GOP state convention in 2020, and lost by one vote, Watkins told the Post Register previously.
 
 If the RNC approves his credentials, Smith will be one of three Idaho representatives to the Republican National Committee. Moon and Idaho GOP National Committeewoman Cindy Siddoway also represent the state party on the RNC.
-

@@ -1,4 +1,5 @@
 ---
+title: "RT @voxdotcom The 5-4 decision in McGirt v. Oklahoma does..."
 date: 2020-07-10
 time: 16:43:57
 tweet_id: "1281630250087014400"

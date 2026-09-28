@@ -1,4 +1,5 @@
 ---
+title: "Cooking"
 date: 2024-10-22
 time: 23:37:43
 tweet_id: "1848871386712051869"
@@ -13,9 +14,10 @@ related:
   - lfinneytweets
 ---
 
-Cooking https://t.co/6jVPibpYsi
+Cooking <https://t.co/6jVPibpYsi>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GaiCujoboAAbzUr.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/GaiCujoboAAbzUr.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1848871386712051869)

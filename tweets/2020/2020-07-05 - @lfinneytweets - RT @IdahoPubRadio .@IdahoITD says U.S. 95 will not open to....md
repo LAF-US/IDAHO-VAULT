@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@IdahoITD says U.S. 95 will not open to..."
 date: 2020-07-05
 time: 16:13:49
 tweet_id: "1279810724890468353"

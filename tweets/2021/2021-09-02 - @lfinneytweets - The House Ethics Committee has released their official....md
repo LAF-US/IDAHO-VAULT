@@ -1,4 +1,5 @@
 ---
+title: "The House Ethics Committee has released their official..."
 date: 2021-09-02
 time: 00:43:58
 tweet_id: "1433229176429891584"
@@ -19,9 +20,9 @@ related:
 ---
 
 The House Ethics Committee has released their official report and recommendations regarding complaints against Rep. Priscilla Giddings. The matter will expire if not addressed by the full House before the end of the year. #idleg #idpol 
-https://t.co/8mmIYMkVi0
+<https://t.co/8mmIYMkVi0>
 
 ## Links
-- https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/standingcommittees/210802_HETH_Giddings%20Final%20Signed%20Report.pdf
+- <https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/standingcommittees/210802_HETH_Giddings%20Final%20Signed%20Report.pdf>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1433229176429891584)

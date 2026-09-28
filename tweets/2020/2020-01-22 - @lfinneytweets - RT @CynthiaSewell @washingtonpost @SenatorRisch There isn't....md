@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell @washingtonpost @SenatorRisch There isn't..."
 date: 2020-01-22
 time: 04:06:03
 tweet_id: "1219833580169285632"

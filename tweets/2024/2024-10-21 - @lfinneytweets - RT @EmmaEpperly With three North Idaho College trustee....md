@@ -1,4 +1,5 @@
 ---
+title: "RT @EmmaEpperly With three North Idaho College trustee..."
 date: 2024-10-21
 time: 18:31:47
 tweet_id: "1848432006646190257"

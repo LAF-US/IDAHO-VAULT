@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews The House has adjourned until 10 a.m...."
 date: 2020-03-19
 time: 02:21:45
 tweet_id: "1240463440860213248"

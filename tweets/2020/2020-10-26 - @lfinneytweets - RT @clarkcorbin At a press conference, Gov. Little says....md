@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin At a press conference, Gov. Little says..."
 date: 2020-10-26
 time: 21:22:51
 tweet_id: "1320838327399055361"

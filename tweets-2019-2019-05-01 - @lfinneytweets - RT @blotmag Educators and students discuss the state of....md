@@ -16,9 +16,10 @@ related:
 ---
 
 RT @blotmag: Educators and students discuss the state of Idaho's education system, importance of teaching
-https://t.co/kWjLLKUSnw
+<https://t.co/kWjLLKUSnw>
 
 ## Links
-- https://www.blotmagazine.com/2019/04/29/taking-a-bite-out-of-education/
+
+- <https://www.blotmagazine.com/2019/04/29/taking-a-bite-out-of-education/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1123666022962085888)

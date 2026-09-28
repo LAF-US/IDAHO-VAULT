@@ -1,4 +1,5 @@
 ---
+title: "RT @JoeParrisTV Listening to @HulkHogan, Speaker Moyle, and..."
 date: 2024-08-01
 time: 01:03:45
 tweet_id: "1818814845023813850"

@@ -34,7 +34,7 @@ This document partitions the vault into three governance zones by write-authorit
 ## Zone Definitions
 
 | Zone | Paths | Write Authority | PR Merge Authority | Risk Tier |
-|------|-------|----------------|-------------------|-----------|
+| ------ | ------- | ---------------- | ------------------- | ----------- |
 | **Constitutional** | `!/` (all nested), root governance files (`CONSTITUTION.md`, `DECISIONS.md`, `AGENTS.md`, `PROTOCOL.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `CLAUDE.md`, `GEMINI.md`, `Ethics.md`, `Logan.md`) | Logan only. Agents propose via PR — no standing write window. | Logan only | High |
 | **Operational** | `.github/workflows/`, `.github/scripts/`, `.github/actions/`, `.github/swarm/`, `swarm/` | Agents propose via PR. Logan reviews and merges. | Logan only | High |
 | **Data** | `SOURCES/`, `TOPICS/`, `PEOPLE/`, `PLACES/`, `ORGANIZATIONS/`, `GOVERNMENTS/`, `ATTACHMENTS/`, `INBOX/`, all other vault `.md` content | Agent-assignable via GitHub Issues. All writes via PR. | Logan (auto-merge eligible for low-risk per `auto-pr.yml`) | Low |
@@ -50,6 +50,7 @@ Covers `!/` and its nested structure (`!/!/`, DOCKET, LEVELSET, DECISIONS copy, 
 **Key constraint (CONSTITUTION.md Section V):** "Nothing modifies or destructively touches anything in `!/` without Logan's guiding hand."
 
 **Access model:** No agent has a standing write window to Constitutional Zone files. All changes — including from CODE AUTHORITY — require:
+
 1. A GitHub Issue or explicit Logan directive scoping the task
 2. Work on a feature branch
 3. PR submission for Logan's review
@@ -71,13 +72,12 @@ Bulk vault content (3400+ files). Already classified as low-risk in `classify_pa
 
 ---
 
-
 ## Exclamation-Space Routing Grammar
 
 The `!` path family is a nested routing system with three distinct roles:
 
 | Space | Operational role | What belongs here | Durability expectation |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `!` | **Constitutional control plane** | Active governance files and canonical system rules (`CONSTITUTION`, `PROTOCOL`, `AGENTS`, `DECISIONS`, `VAULT-ZONES`, `VAULT-CONVENTIONS`, active protocol references) | Stable + durable (authoritative record) |
 | `!/!` | **Routing workbench** | Time-scoped handoffs, levelsets, context packets, branch triage notes, protocol drafts, and in-flight coordination artifacts | Semi-stable: durable archive, but not canonical policy |
 | `!/!/!` | **Live operations board** | The Courtroom and session-level convening surface (`DOCKET.md`, immediate queue state, short operational status files) | Ephemeral exchange surface with periodic promotion |
@@ -85,16 +85,19 @@ The `!` path family is a nested routing system with three distinct roles:
 ### Stable routing vs ephemeral exchange
 
 **Stable routing** means information is preserved as retrievable instruction or record-of-decision. In practice, this includes:
+
 - governance decisions,
 - durable operating rules,
 - completed handoff bundles that future agents must be able to re-read.
 
 **Ephemeral exchange** means transient coordination traffic that is useful now but not necessarily as-is later. In practice, this includes:
+
 - session chatter,
 - in-the-moment status signals,
 - tentative notes before validation.
 
 Rule of thumb:
+
 - If another agent would need it later to avoid rework or ambiguity, route it to a stable file (`!` or archival content in `!/!`).
 - If it only helps real-time coordination, keep it in `!/!/!` until resolved, then either discard or promote.
 
@@ -134,7 +137,7 @@ This means CODE AUTHORITY's "Direct write" capability tier (per AGENTS) describe
 ## Exclamation-Space Routing Grammar
 
 | Space | Purpose | Typical contents | Routing posture |
-|-------|---------|------------------|-----------------|
+| ------- | --------- | ------------------ | ----------------- |
 | `!` | Constitutional anchor and pointer to the governance stack | `CONSTITUTION.md`, `DECISIONS.md`, `AGENTS.md`, `PROTOCOL.md`, `VAULT-CONVENTIONS.md`, `VAULT-ZONES.md`, `CLAUDE.md`, `GEMINI.md`, `Ethics.md`, `Logan.md`, `!/README.md` | **Stable only.** No scratch notes; use for canonical governance and orientation. |
 | `!/!` | Routing spine for structured coordination and context packages | `LEVELSET-*`, `HANDOFF-*`, DOCKET/READY-STATE bundles, branch triage, MCP discovery, context passovers | **Stable routing.** Updates can churn but remain in-versioned artifacts. Promote final decisions to `!/DECISIONS.md` or other constitutional files. |
 | `!/!/!` (`"The world is quiet here"`) | Live courtroom for active swarm coordination and convening | `DOCKET.md`, live status updates, short-term instructions for in-flight sessions | **Hot but stable.** Use for real-time updates and brief convening only; roll durable outcomes into `!/!/` (handoffs/LEVELSET) or `!/` (DECISIONS/PROTOCOL) once settled. |
@@ -156,7 +159,7 @@ This means CODE AUTHORITY's "Direct write" capability tier (per AGENTS) describe
 ## Alignment with Existing Systems
 
 | System | What it does | Relationship to zones |
-|--------|-------------|----------------------|
+| -------- | ------------- | ---------------------- |
 | `classify_paths.py` | Returns `high` or `low` risk tier per file path | Implements the Constitutional+Operational = high, Data = low split |
 | `CODEOWNERS` | Requires `@loganfinney27` review for gated paths | Gates Constitutional Zone (`!/`) and Operational Zone (`.github/`) |
 | `auto-pr.yml` | Auto-creates PRs from `claude/*` branches; auto-merges low-risk | Data Zone changes eligible for auto-merge |

@@ -1,4 +1,5 @@
 ---
+title: "RT @politico Chuck Schumer, the highest-ranking Jewish..."
 date: 2024-03-15
 time: 02:10:48
 tweet_id: "1768459805809922379"

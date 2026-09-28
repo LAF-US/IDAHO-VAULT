@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Senate officially took up the Medical Freedom Act..."
 date: 2025-04-03
 time: 18:54:46
 tweet_id: "1907869400738443318"

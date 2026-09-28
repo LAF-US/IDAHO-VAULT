@@ -1,4 +1,5 @@
 ---
+title: "Remaining Secretary of State candidates are Ada County..."
 date: 2021-12-17
 time: 21:21:19
 tweet_id: "1471953680194674688"

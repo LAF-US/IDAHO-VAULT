@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Idaho elected officials share their hot..."
 date: 2022-03-02
 time: 06:18:11
 tweet_id: "1498905489173741571"

@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-07-26
 time: 17:19:43
 tweet_id: "1419709025709531149"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/cHLO2iqvev
+<https://t.co/cHLO2iqvev>
 
 ## Links
-- https://x.com/steak_umm/status/1419671390324727808
+- <https://x.com/steak_umm/status/1419671390324727808>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

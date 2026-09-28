@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @KUOIFM: We'll have a DJ playing a special show for Vandal Overnight starting around 8 p.m. if you need another reason to go. https://t.…
+RT @KUOIFM: We'll have a DJ playing a special show for Vandal Overnight starting around 8 p.m. if you need another reason to go. <https://t.…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1178167780241051648)

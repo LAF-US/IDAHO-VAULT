@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel Remember the bill earlier in the session that..."
 date: 2024-03-06
 time: 21:17:12
 tweet_id: "1765486814851178687"

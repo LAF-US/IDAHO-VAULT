@@ -6,4 +6,4 @@ related:
 - Washington County
 ---
 
-County Sheriff, Washington County jail 
+County Sheriff, Washington County jail

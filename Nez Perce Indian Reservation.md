@@ -22,6 +22,6 @@ related:
 - counties
 authority: LOGAN
 ---
-Nez Perce Tribe lands in Nez Perce, Lewis, Idaho & Clearwater counties 
+Nez Perce Tribe lands in Nez Perce, Lewis, Idaho & Clearwater counties
 
-Lapwai, Culdesac, Reubens, Winchester, Craigmont, Ferdinand, Nezperce, Kamiah, Kooskia, Stites, Orofino, Lenore, Myrtle, Spalding, Greencreek Sweetwater, Greer 
+Lapwai, Culdesac, Reubens, Winchester, Craigmont, Ferdinand, Nezperce, Kamiah, Kooskia, Stites, Orofino, Lenore, Myrtle, Spalding, Greencreek Sweetwater, Greer

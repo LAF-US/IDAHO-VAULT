@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress The drought is drying up lakes across the..."
 date: 2021-07-27
 time: 23:35:26
 tweet_id: "1420165967066189830"

@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee SHS grad Kent Youngdahl used an opportunity to..."
 date: 2020-08-09
 time: 20:43:58
 tweet_id: "1292562286423367680"

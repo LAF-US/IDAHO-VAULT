@@ -1,4 +1,5 @@
 ---
+title: "Sen. Glenneda Zuiderveld on the device filter bill How will..."
 date: 2024-02-13
 time: 00:05:54
 tweet_id: "1757194350612943250"

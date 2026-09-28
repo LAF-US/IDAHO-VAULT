@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The law currently allows parents to use..."
 date: 2023-02-13
 time: 23:03:59
 tweet_id: "1625269584986259456"

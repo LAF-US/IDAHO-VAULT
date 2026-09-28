@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi NASHVILLE, Tenn. (AP) \u2014 A federal judge on..."
 date: 2023-04-01
 time: 03:48:41
 tweet_id: "1642011073669902336"

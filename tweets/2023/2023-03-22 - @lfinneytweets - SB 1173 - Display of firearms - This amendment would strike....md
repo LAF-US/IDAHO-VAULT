@@ -1,4 +1,5 @@
 ---
+title: "SB 1173 - Display of firearms - This amendment would strike..."
 date: 2023-03-22
 time: 23:33:51
 tweet_id: "1638685449333145600"

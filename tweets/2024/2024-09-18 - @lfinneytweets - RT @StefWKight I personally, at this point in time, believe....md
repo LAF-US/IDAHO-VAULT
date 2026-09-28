@@ -1,4 +1,5 @@
 ---
+title: "RT @StefWKight I personally, at this point in time, believe..."
 date: 2024-09-18
 time: 12:39:59
 tweet_id: "1836384674223989183"

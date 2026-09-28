@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Fitch Ratings announced that it has..."
 date: 2024-06-17
 time: 17:07:06
 tweet_id: "1802749827077566568"

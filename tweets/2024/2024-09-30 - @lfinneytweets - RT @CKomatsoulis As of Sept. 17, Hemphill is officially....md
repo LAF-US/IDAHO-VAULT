@@ -1,4 +1,5 @@
 ---
+title: "RT @CKomatsoulis As of Sept. 17, Hemphill is officially..."
 date: 2024-09-30
 time: 00:24:08
 tweet_id: "1840548147652898859"

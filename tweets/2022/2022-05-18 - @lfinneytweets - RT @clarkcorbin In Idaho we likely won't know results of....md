@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin In Idaho we likely won't know results of..."
 date: 2022-05-18
 time: 01:28:44
 tweet_id: "1526736510094954496"

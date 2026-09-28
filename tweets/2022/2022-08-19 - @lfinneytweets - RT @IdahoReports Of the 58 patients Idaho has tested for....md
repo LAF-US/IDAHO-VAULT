@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Of the 58 patients Idaho has tested for..."
 date: 2022-08-19
 time: 20:58:07
 tweet_id: "1560732868279615488"

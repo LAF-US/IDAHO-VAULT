@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy NEW from @sami_edge and me Teens have always..."
 date: 2020-04-20
 time: 19:02:35
 tweet_id: "1252311721852588033"

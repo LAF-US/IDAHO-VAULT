@@ -1,4 +1,5 @@
 ---
+title: "RT @StLukesAnita Before you head to the grocery store,..."
 date: 2020-04-18
 time: 18:28:22
 tweet_id: "1251578335127171074"

@@ -1,4 +1,5 @@
 ---
+title: "They have printed a bill from @McCrostie4Idaho to update..."
 date: 2020-02-12
 time: 16:25:57
 tweet_id: "1227629928268460032"

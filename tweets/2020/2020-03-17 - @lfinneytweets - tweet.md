@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-03-17
 time: 00:03:54
 tweet_id: "1239703971620511745"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/1SsNb6jEew
+<https://t.co/1SsNb6jEew>
 
 ## Links
-- https://goodsamaritanrehab.com/
+- <https://goodsamaritanrehab.com/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @CraigCaplan I knew it took an extra couple of days...."
 date: 2023-01-07
 time: 06:42:47
 tweet_id: "1611614304591294464"

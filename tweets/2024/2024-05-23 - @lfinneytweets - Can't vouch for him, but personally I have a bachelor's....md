@@ -1,4 +1,5 @@
 ---
+title: "Can't vouch for him, but personally I have a bachelor's..."
 date: 2024-05-23
 time: 04:04:24
 tweet_id: "1793493157432451532"

@@ -18,7 +18,7 @@ related:
   - idleg
 ---
 
-It appears that House Rev & Tax will be holding a third day of testimony on the property tax budget freeze tomorrow. #idpol #idleg 
+It appears that House Rev & Tax will be holding a third day of testimony on the property tax budget freeze tomorrow. #idpol #idleg
 Chairman Collins is going through his list to get through the last of folks here from outside the Treasure Valley.
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1227645811900604418)

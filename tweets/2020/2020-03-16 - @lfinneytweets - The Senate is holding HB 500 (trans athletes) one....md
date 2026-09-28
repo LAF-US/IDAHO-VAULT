@@ -1,4 +1,5 @@
 ---
+title: "The Senate is holding HB 500 (trans athletes) one..."
 date: 2020-03-16
 time: 16:45:51
 tweet_id: "1239593733588279301"

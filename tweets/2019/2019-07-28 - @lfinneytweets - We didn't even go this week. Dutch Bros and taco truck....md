@@ -1,4 +1,5 @@
 ---
+title: "We didn't even go this week. Dutch Bros and taco truck..."
 date: 2019-07-28
 time: 07:21:38
 tweet_id: "1155377761864699906"

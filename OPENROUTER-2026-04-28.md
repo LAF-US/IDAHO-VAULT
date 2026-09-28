@@ -4,15 +4,6 @@ subtitle: "Deep Research Report"
 type: research
 source: web-search-2026-04-28
 tags:
-<<<<<<< Updated upstream
-- openrouter
-- unified-api
-- llm-aggregation
-- ai-infrastructure
-- free-models
-created: 2026-04-28
-author: Logan Finney
-=======
   - openrouter
   - unified-api
   - llm-aggregation
@@ -20,12 +11,12 @@ author: Logan Finney
   - free-models
 created: 2026-04-28
 author: Logan Finney
-date created: Tuesday, April 28th 2026, 11:14:02 pm
-date modified: Friday, May 1st 2026, 4:29:47 pm
->>>>>>> Stashed changes
+date created: "Tuesday, April 28th 2026, 11:14:02 pm"
+date modified: "Friday, May 1st 2026, 4:29:47 pm"
 ---
 
 # OPENROUTER
+
 ## Deep Research Report
 
 **Date:** April 28, 2026  
@@ -55,7 +46,7 @@ date modified: Friday, May 1st 2026, 4:29:47 pm
 ### Key Stats
 
 | Metric | Value |
-|--------|-------|
+| -------- | ------- |
 | Models | 300+ |
 | Providers | 60+ |
 | Free Models | 25+ |
@@ -69,7 +60,7 @@ date modified: Friday, May 1st 2026, 4:29:47 pm
 ### Free
 
 | Feature | Limit |
-|---------|-------|
+| --------- | ------- |
 | Platform Fee | None |
 | Free Models | 25+ |
 | Free Providers | 4 |
@@ -79,7 +70,7 @@ date modified: Friday, May 1st 2026, 4:29:47 pm
 ### Pay-as-you-go
 
 | Feature | Details |
-|---------|---------|
+| --------- | --------- |
 | Platform Fee | 5.5% |
 | Models | 300+ |
 | Providers | 60+ |
@@ -90,7 +81,7 @@ date modified: Friday, May 1st 2026, 4:29:47 pm
 ### Enterprise
 
 | Feature | Details |
-|---------|---------|
+| --------- | --------- |
 | Platform Fee | Bulk discounts |
 | Rate Limits | Optional dedicated limits |
 | SLAs | Contractual SLAs |
@@ -104,7 +95,7 @@ date modified: Friday, May 1st 2026, 4:29:47 pm
 ### Top Free Models by Usage
 
 | Model | Provider | Context | Strengths |
-|-------|----------|---------|-----------|
+| ------- | ---------- | --------- | ----------- |
 | **Tencent Hy3 preview** | Tencent | 262K | Agentic workflows, code generation, reasoning |
 | **NVIDIA Nemotron 3 Super** | NVIDIA | 262K | 120B MoE, multi-agent, 1M context |
 | **inclusionAI Ling-2.6-1T** | inclusionai | 262K | Fast reasoning, SWE-bench, AIME26 |
@@ -125,14 +116,14 @@ Automatically selects a free model based on request requirements (vision, tools,
 
 ### Endpoint
 
-```
+```text
 POST https://openrouter.ai/api/v1/chat/completions
 ```
 
 ### Headers
 
 | Header | Purpose |
-|--------|---------|
+| -------- | --------- |
 | `Authorization: Bearer <KEY>` | API key (required) |
 | `HTTP-Referer` | App attribution for leaderboards |
 | `X-OpenRouter-Title` | App name for leaderboards |
@@ -151,7 +142,7 @@ POST https://openrouter.ai/api/v1/chat/completions
 ### Supported Parameters
 
 | Parameter | Range | Notes |
-|-----------|-------|-------|
+| ----------- | ------- | ------- |
 | `max_tokens` | [1, context_length) | Max completion tokens |
 | `temperature` | [0, 2] | Sampling temperature |
 | `top_p` | (0, 1] | Nucleus sampling |
@@ -344,7 +335,7 @@ fallback_providers: [ollama-light, openrouter-free]
 
 ### OpenRouter ENV Variable
 
-```
+```text
 OPENROUTER_API_KEY=sk-or-v1-xxx  # Set in ~/.hermes/.env
 ```
 
@@ -353,7 +344,7 @@ OPENROUTER_API_KEY=sk-or-v1-xxx  # Set in ~/.hermes/.env
 ## USE CASES
 
 | Use Case | Recommended Model |
-|----------|-------------------|
+| ---------- | ------------------- |
 | Code generation | `openrouter/free` or NVIDIA Nemotron |
 | Reasoning | DeepSeek R1, Gemini |
 | General chat | Llama 3.2, GPT-4o-mini (paid) |
@@ -365,7 +356,7 @@ OPENROUTER_API_KEY=sk-or-v1-xxx  # Set in ~/.hermes/.env
 ## RESOURCES & LINKS
 
 | Resource | URL |
-|----------|-----|
+| ---------- | ----- |
 | Docs | openrouter.ai/docs |
 | API Reference | openrouter.ai/docs/api/reference |
 | Models | openrouter.ai/models |

@@ -1,4 +1,5 @@
 ---
+title: "Another way to look at it is as a long history of Google\u2019s..."
 date: 2024-04-15
 time: 19:31:01
 tweet_id: "1779955609330385034"

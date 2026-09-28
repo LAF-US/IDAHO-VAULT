@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews The State Board of Education is discussing..."
 date: 2020-04-28
 time: 20:29:31
 tweet_id: "1255232701482893319"

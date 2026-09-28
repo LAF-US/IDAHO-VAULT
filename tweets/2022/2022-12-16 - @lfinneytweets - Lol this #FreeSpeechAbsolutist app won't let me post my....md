@@ -1,4 +1,5 @@
 ---
+title: "Lol this #FreeSpeechAbsolutist app won't let me post my..."
 date: 2022-12-16
 time: 03:14:21
 tweet_id: "1603589318375014401"
@@ -16,9 +17,10 @@ related:
   - FreeSpeechAbsolutist
 ---
 
-Lol this #FreeSpeechAbsolutist app won't let me post my Mastodon link https://t.co/Le8yqHclr4
+Lol this #FreeSpeechAbsolutist app won't let me post my Mastodon link <https://t.co/Le8yqHclr4>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FkEX_MWacAI-ezb.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/FkEX_MWacAI-ezb.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1603589318375014401)

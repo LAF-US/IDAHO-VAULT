@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Supporters of a bill that would cut the..."
 date: 2021-05-04
 time: 19:20:53
 tweet_id: "1389661325672927234"

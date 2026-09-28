@@ -25,12 +25,14 @@ You **MUST** consider the user input before proceeding (if not empty).
 ## Equivalence Definition
 
 **Functional Equivalence** means:
+
 - Same inputs → Same outputs (within acceptable tolerance)
 - Same business rules applied
 - Same error conditions handled
 - Same side effects produced (database writes, notifications, etc.)
 
 **NOT required for equivalence**:
+
 - Same code structure
 - Same performance characteristics (though should be comparable)
 - Same internal state representation
@@ -122,25 +124,25 @@ void orderTotalShouldEqualSumOfLineItems(@ForAll List<@Valid OrderItem> items) {
 Run both systems in parallel and compare responses.
 
 ```
-┌──────────────────────────────────────────────────────────┐
+┌─────────────────────────────────────────────────────────Ŀ
 │                    REQUEST                                │
 └────────────────────────┬─────────────────────────────────┘
                          │
-         ┌───────────────┴───────────────┐
+         ┌───────────────┴──────────────Ŀ
          ▼                               ▼
-┌─────────────────┐             ┌─────────────────┐
+┌────────────────Ŀ             ┌────────────────Ŀ
 │  SOURCE SYSTEM  │             │  TARGET SYSTEM  │
 │   (Legacy)      │             │   (New)         │
 └────────┬────────┘             └────────┬────────┘
          │                               │
          ▼                               ▼
-┌─────────────────┐             ┌─────────────────┐
+┌────────────────Ŀ             ┌────────────────Ŀ
 │ SOURCE RESPONSE │             │ TARGET RESPONSE │
 └────────┬────────┘             └────────┬────────┘
          │                               │
          └───────────────┬───────────────┘
                          ▼
-              ┌─────────────────┐
+              ┌────────────────Ŀ
               │   COMPARATOR    │
               │ - Diff fields   │
               │ - Log mismatch  │
@@ -216,7 +218,7 @@ verification_checklist:
 Document and approve these differences:
 
 | Type | Example | Handling |
-|------|---------|----------|
+| ------ | --------- | ---------- |
 | Precision | Float rounding | Document tolerance |
 | Format | Date format change | Document mapping |
 | Intentional | Improved validation | Get approval |
@@ -227,7 +229,7 @@ Document and approve these differences:
 These require fixing:
 
 | Type | Example | Action |
-|------|---------|--------|
+| ------ | --------- | -------- |
 | Logic error | Wrong calculation | Fix implementation |
 | Missing feature | Function not ported | Implement missing |
 | Data loss | Field not mapped | Add mapping |

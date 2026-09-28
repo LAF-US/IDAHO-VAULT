@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Senate is about to start amending their bills...."
 date: 2023-03-22
 time: 22:49:31
 tweet_id: "1638674293172346880"

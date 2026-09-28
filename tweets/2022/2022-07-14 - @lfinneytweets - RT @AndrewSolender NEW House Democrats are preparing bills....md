@@ -1,4 +1,5 @@
 ---
+title: "RT @AndrewSolender NEW House Democrats are preparing bills..."
 date: 2022-07-14
 time: 05:23:38
 tweet_id: "1547451733177155586"

@@ -1,4 +1,5 @@
 ---
+title: "RT @maggieKTVB7 Look at this storm damage in the North End..."
 date: 2020-04-30
 time: 23:51:54
 tweet_id: "1256008406235742208"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @maggieKTVB7: Look at this storm damage in the North End of Boise! Wow. This is Harrison and Sherman Streets. 
+RT @maggieKTVB7: Look at this storm damage in the North End of Boise! Wow. This is Harrison and Sherman Streets.
 
 Do you have storm photos…
 

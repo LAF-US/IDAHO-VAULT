@@ -1,4 +1,5 @@
 ---
+title: "RT @theappeal BREAKING A veto-proof majority of Minneapolis..."
 date: 2020-06-07
 time: 21:20:14
 tweet_id: "1269740977289179137"

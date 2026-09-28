@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Idaho homeowners started receiving..."
 date: 2022-06-15
 time: 17:16:27
 tweet_id: "1537121873929965568"

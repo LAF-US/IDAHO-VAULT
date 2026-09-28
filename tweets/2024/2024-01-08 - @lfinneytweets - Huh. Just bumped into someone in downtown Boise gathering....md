@@ -1,4 +1,5 @@
 ---
+title: "Huh. Just bumped into someone in downtown Boise gathering..."
 date: 2024-01-08
 time: 23:21:15
 tweet_id: "1744499535504941121"

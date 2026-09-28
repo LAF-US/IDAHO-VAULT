@@ -1,4 +1,5 @@
 ---
+title: "RT @HDruzin Meanwhile, up by the Canadian border Comedian..."
 date: 2021-05-27
 time: 14:29:41
 tweet_id: "1397922965166067720"

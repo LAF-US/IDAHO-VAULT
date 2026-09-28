@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Education the focus at 2020 Hispanic..."
 date: 2020-02-02
 time: 01:54:49
 tweet_id: "1223786818648170496"

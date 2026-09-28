@@ -1,4 +1,5 @@
 ---
+title: "Any updates on Bonner County precinct reporting"
 date: 2020-11-04
 time: 07:46:54
 tweet_id: "1323894477249867778"

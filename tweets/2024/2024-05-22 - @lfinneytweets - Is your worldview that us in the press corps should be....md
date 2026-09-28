@@ -1,4 +1,5 @@
 ---
+title: "Is your worldview that us in the press corps should be..."
 date: 2024-05-22
 time: 23:47:23
 tweet_id: "1793428477099843676"

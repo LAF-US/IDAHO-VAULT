@@ -13,11 +13,11 @@ created: 2026-04-17
 
 We build Enterprise AI. We teach what we learn. Join 100K+ AI practitioners on Towards AI Academy. Free: 6-day Agentic AI Engineering Email Guide: [https://email-course.towardsai.net/](https://email-course.towardsai.net/)
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*lDGYbpJINKYyPx44)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*lDGYbpJINKYyPx44)
 
 Photo by Jona on Unsplash
 
-## I built the same research agent six times. Only two of these frameworks survived my weekend.
+## I built the same research agent six times. Only two of these frameworks survived my weekend
 
 Last month, my team needed to pick an agent framework for a client project. A document analysis pipeline — pull data from PDFs, cross-reference it with a database, generate a summary, email the result. Pretty standard stuff in 2026.
 
@@ -29,7 +29,7 @@ So I did what any reasonable person would do. I blocked out a weekend, installed
 
 Here’s what I found — and it’s not what the fanboys on either side want to hear.
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*7J66QD70oyw9bJMEaBYquA.png)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*7J66QD70oyw9bJMEaBYquA.png)
 
 Running AI agents in terminals (Screenshot captured by author)
 
@@ -43,7 +43,7 @@ I picked this because it’s boring enough to be realistic. Nobody’s building 
 
 **The model:** GPT-4o across all six (where possible — more on that later).
 
-## Logan, become a member to read this story, and all of Medium.
+## Logan, become a member to read this story, and all of Medium
 
 The Dev Loop put this story behind our paywall, so it’s only available to read with a paid Medium membership, which comes with a host of benefits:
 

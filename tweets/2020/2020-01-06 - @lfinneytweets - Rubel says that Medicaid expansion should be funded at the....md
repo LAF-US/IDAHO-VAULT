@@ -1,4 +1,5 @@
 ---
+title: "Rubel says that Medicaid expansion should be funded at the..."
 date: 2020-01-06
 time: 22:14:40
 tweet_id: "1214309332214370304"

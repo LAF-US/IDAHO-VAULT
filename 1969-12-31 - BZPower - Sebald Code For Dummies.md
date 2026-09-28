@@ -22,25 +22,25 @@ Let's begin with a little history. Sebald code is named for its inventor, a volu
 The Sebald Code is an obcure code, yet a simple one to master. The Sebald Code is present in passages or films where it is introduced by the ringing of bell. The word immediately following the bell as well as every eleventh word afterwards are all code words. The coded message ends when another bell is rung. Therefore, if the passage in question was...
 
 > Secret Message #143 said:
-> 
+>
 > Suddenly, a doorbell rang. "Bionicle delivery for Mr. Lachrymose!"
-> 
+>
 > Lachrymose opened it like a Tyrannosaurus Rex eating a meal. "Great!" he said. "It's my Barraki!" The likes of a child on Christmas, he poured out the pieces. "Cheese!" he exclaimed, the bell on his hat ringing. "Oh, sorry, it's only Carapar's head." He popped the head into his mouth. "Tastes like cheese though. Hey, this ammo looks like a leech!"
 
 ...then the secret message is "Bionicle Rex likes cheese," and you know that the Evil Lord Survurlode is planning an attack. However, if the passage was...
 
 > Secret Stomache Meassage said:
-> 
+>
 > "Connor!" the mother's voice rang.
-> 
+>
 > "Brakelattabasaasta," came the reply.
-> 
+>
 > "Huh?"
-> 
+>
 > "My stomach wants you to please feed it. I'd also like you to do the same for me."
-> 
+>
 > "O rly?" the mother said, ringing the kitchen bell.
-> 
+>
 > "Ya rly."
 
 ...then the secret message is "brakelattabasaasta feed me," and you know that there is a villainous spammer who is out to get you.

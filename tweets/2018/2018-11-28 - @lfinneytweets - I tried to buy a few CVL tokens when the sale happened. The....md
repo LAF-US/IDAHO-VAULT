@@ -1,4 +1,5 @@
 ---
+title: "I tried to buy a few CVL tokens when the sale happened. The..."
 date: 2018-11-28
 time: 22:37:06
 tweet_id: "1067910282452692992"

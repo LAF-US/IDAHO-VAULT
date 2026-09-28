@@ -6,4 +6,4 @@ related:
 - web
 ---
 
-web : notes and nodes ; links 
+web : notes and nodes ; links

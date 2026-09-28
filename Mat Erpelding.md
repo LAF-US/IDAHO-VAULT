@@ -6,4 +6,5 @@ related:
 authority: LOGAN
 ---
 Residence: Boise
-- former House member and House Minority Leader 
+
+- former House member and House Minority Leader

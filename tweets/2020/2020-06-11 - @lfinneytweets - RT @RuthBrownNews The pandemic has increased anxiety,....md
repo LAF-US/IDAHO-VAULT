@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews The pandemic has increased anxiety,..."
 date: 2020-06-11
 time: 16:45:35
 tweet_id: "1271121411717750784"

@@ -1,4 +1,5 @@
 ---
+title: "Now a competing motion for a budget $500K less than the..."
 date: 2020-03-12
 time: 21:39:04
 tweet_id: "1238217973506007040"

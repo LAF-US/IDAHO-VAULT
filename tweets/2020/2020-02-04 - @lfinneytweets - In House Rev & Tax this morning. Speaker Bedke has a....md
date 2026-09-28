@@ -1,4 +1,5 @@
 ---
+title: "In House Rev & Tax this morning. Speaker Bedke has a..."
 date: 2020-02-04
 time: 16:08:10
 tweet_id: "1224726346909143040"

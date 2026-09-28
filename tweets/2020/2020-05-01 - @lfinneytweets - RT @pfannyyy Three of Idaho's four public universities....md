@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy Three of Idaho's four public universities..."
 date: 2020-05-01
 time: 06:14:31
 tweet_id: "1256104697615642624"

@@ -1,4 +1,5 @@
 ---
+title: "Two lottery stories from different states than Idaho in..."
 date: 2023-08-31
 time: 16:29:48
 tweet_id: "1697285571213988206"

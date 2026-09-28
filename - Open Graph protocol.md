@@ -24,11 +24,11 @@ To turn your web pages into graph objects, you need to add basic metadata to you
 - `og:title` - The title of your object as it should appear within the graph, e.g., "The Rock".
 - `og:type` - The [type](#types) of your object, e.g., "video.movie". Depending on the type you specify, other properties may also be required.
 - `og:image` - An image URL which should represent your object within the graph.
-- `og:url` - The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "https://www.imdb.com/title/tt0117500/".
+- `og:url` - The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "<https://www.imdb.com/title/tt0117500/>".
 
 As an example, the following is the Open Graph protocol markup for [The Rock on IMDB](https://www.imdb.com/title/tt0117500/):
 
-```
+```text
 <html prefix="og: https://ogp.me/ns#">
 <head>
 <title>The Rock (1996)</title>
@@ -56,7 +56,7 @@ The following properties are optional for any object and are generally recommend
 
 For example (line-break solely for display purposes):
 
-```
+```text
 <meta property="og:audio" content="https://example.com/bond/theme.mp3" />
 <meta property="og:description" 
   content="Sean Connery found fame and fortune as the
@@ -88,7 +88,7 @@ The `og:image` property has some optional structured properties:
 
 A full image example:
 
-```
+```text
 <meta property="og:image" content="http://example.com/ogp.jpg" />
 <meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg" />
 <meta property="og:image:type" content="image/jpeg" />
@@ -99,7 +99,7 @@ A full image example:
 
 The `og:video` tag has the identical tags as `og:image`. Here is an example:
 
-```
+```text
 <meta property="og:video" content="http://example.com/movie.swf" />
 <meta property="og:video:secure_url" content="https://secure.example.com/movie.swf" />
 <meta property="og:video:type" content="application/x-shockwave-flash" />
@@ -109,7 +109,7 @@ The `og:video` tag has the identical tags as `og:image`. Here is an example:
 
 The `og:audio` tag only has the first 3 properties available (since size doesn't make sense for sound):
 
-```
+```text
 <meta property="og:audio" content="http://example.com/sound.mp3" />
 <meta property="og:audio:secure_url" content="https://secure.example.com/sound.mp3" />
 <meta property="og:audio:type" content="audio/mpeg" />
@@ -121,7 +121,7 @@ The `og:audio` tag only has the first 3 properties available (since size doesn't
 
 If a tag can have multiple values, just put multiple versions of the same `<meta>` tag on your page. The first tag (from top to bottom) is given preference during conflicts.
 
-```
+```text
 <meta property="og:image" content="https://example.com/rock.jpg" />
 <meta property="og:image" content="https://example.com/rock2.jpg" />
 ```
@@ -130,7 +130,7 @@ Put structured properties after you declare their root tag. Whenever another roo
 
 For example:
 
-```
+```text
 <meta property="og:image" content="https://example.com/rock.jpg" />
 <meta property="og:image:width" content="300" />
 <meta property="og:image:height" content="300" />
@@ -147,13 +147,13 @@ means there are 3 images on this page, the first image is `300x300`, the middle 
 
 In order for your object to be represented within the graph, you need to specify its type. This is done using the `og:type` property:
 
-```
+```text
 <meta property="og:type" content="website" />
 ```
 
 When the community agrees on the schema for a type, it is added to the list of global types. All other objects in the type system are [CURIEs](https://en.wikipedia.org/wiki/CURIE) of the form
 
-```
+```text
 <head prefix="my_namespace: https://example.com/ns#">
 <meta property="og:type" content="my_namespace:my_type" />
 ```

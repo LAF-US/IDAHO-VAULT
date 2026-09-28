@@ -1,4 +1,5 @@
 ---
+title: "It would have to be manual."
 date: 2024-01-17
 time: 15:29:29
 tweet_id: "1747642305484607558"

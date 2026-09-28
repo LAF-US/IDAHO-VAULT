@@ -1,4 +1,5 @@
 ---
+title: "RT @MelissaKXLY4 Took this picture at the Newseum. The man..."
 date: 2020-11-04
 time: 06:20:15
 tweet_id: "1323872671726141440"

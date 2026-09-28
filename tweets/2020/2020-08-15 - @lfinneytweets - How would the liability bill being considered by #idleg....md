@@ -1,4 +1,5 @@
 ---
+title: "How would the liability bill being considered by #idleg..."
 date: 2020-08-15
 time: 01:18:32
 tweet_id: "1294443322740633601"

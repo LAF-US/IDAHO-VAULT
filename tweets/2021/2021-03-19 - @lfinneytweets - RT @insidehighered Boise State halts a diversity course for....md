@@ -1,4 +1,5 @@
 ---
+title: "RT @insidehighered Boise State halts a diversity course for..."
 date: 2021-03-19
 time: 14:55:59
 tweet_id: "1372924818291445760"

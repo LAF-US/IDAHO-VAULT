@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Little We\u2019ve had to make \u201csome of the..."
 date: 2020-04-22
 time: 20:25:53
 tweet_id: "1253057459674951680"

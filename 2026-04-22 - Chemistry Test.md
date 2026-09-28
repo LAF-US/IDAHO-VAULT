@@ -9,7 +9,7 @@ date created: Tuesday, April 28th 2026, 6:28:14 pm
 date modified: Tuesday, April 28th 2026, 6:28:52 pm
 ---
 
-![](https://goodtape.com/wp-content/uploads/2026/04/Chem-Call-for-Pitches-1.png)
+![alt text needed](https://goodtape.com/wp-content/uploads/2026/04/Chem-Call-for-Pitches-1.png)
 
 *Guest letter from managing editor Becca James.*
 
@@ -28,7 +28,7 @@ How to Pitch Good Tape
 
 Whether you’re an experienced journalist, a podcast professional, or approaching us from elsewhere, here’s where to start.
 
-![](https://goodtape.com/wp-content/uploads/2026/04/Chem-Call-for-Pitches.png)
+![alt text needed](https://goodtape.com/wp-content/uploads/2026/04/Chem-Call-for-Pitches.png)
 
 We’re an ambitious publication, created to elevate cultural and critical coverage of the podcasting industry; our writing explores the ideas, people, and forces shaping the medium. This means we’re less interested in, say, personal essays and prefer pieces that report on broader trends and incorporate others’ experiences alongside your own.  
   
@@ -42,7 +42,7 @@ As an independent publication without any outside financial backing, we pride ou
 
 Being honored by [The Signal Awards](https://www.signalaward.com/?utm_source=partner&utm_medium=newsletter&utm_campaign=goodtape_eed_2026) sets your team apart with recognition from our industry’s top experts, and acts as proof that your work is setting the standard for podcasting worldwide. Grow your audience, celebrate your team, and stand out.
 
-[![](https://goodtape.com/wp-content/uploads/2026/02/OTR-ICYMI-1.png)](https://goodtape.com/offtherecord)
+[![alt text needed](https://goodtape.com/wp-content/uploads/2026/02/OTR-ICYMI-1.png)](https://goodtape.com/offtherecord)
 
 **Some other stories that have our attention, brought to you by Good Tape’s “ [Off The Record](https://goodtape.com/offtherecord/) ” — an event series creating real-time dialogues between podcast executives, creatives, and brands on hyper-relevant topics to evolve the medium.**
 

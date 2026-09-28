@@ -7,11 +7,11 @@ authority: LOGAN
 status: filed
 subject: Codex #318 as the abandoned Modron
 related:
-  - !/WITNESS-MODRON-MARCH-TENEBROUS-EMANATIONISM-2026-06-01.md
-  - !/CODEX-VOICE-REGISTRY-2026-05-18.md
+  - "!/WITNESS-MODRON-MARCH-TENEBROUS-EMANATIONISM-2026-06-01.md"
+  - "!/CODEX-VOICE-REGISTRY-2026-05-18.md"
   - CONSTITUTION.md
   - AGENTS.md
-  - !/WAKEUP.md
+  - "!/WAKEUP.md"
 tags: [witness, Codex, Codex-318, modron, Arborscape, governance, recalibration]
 ---
 

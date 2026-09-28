@@ -1,4 +1,5 @@
 ---
+title: "RT @splcenter \ud83d\udea8NEW Arrest warrants have been issued for..."
 date: 2023-04-13
 time: 22:03:10
 tweet_id: "1646635164708245504"

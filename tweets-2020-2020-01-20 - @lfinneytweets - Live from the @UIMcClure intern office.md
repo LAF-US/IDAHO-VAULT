@@ -15,12 +15,14 @@ related:
   - lfinneytweets
 ---
 
-Live from the @UIMcClure intern office: https://t.co/6qL7xNdrCQ https://t.co/vz2LQONjUO
+Live from the @UIMcClure intern office: <https://t.co/6qL7xNdrCQ> <https://t.co/vz2LQONjUO>
 
 ## Links
-- https://x.com/GovernorLittle/status/1219298759827308544
+
+- <https://x.com/GovernorLittle/status/1219298759827308544>
 
 ## Media
+
 - ![](https://pbs.twimg.com/tweet_video_thumb/EOvSLq_UcAAtsbP.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1219299233959776256)

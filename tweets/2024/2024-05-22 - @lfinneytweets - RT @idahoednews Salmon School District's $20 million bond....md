@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews Salmon School District's $20 million bond..."
 date: 2024-05-22
 time: 06:23:45
 tweet_id: "1793165835814457406"

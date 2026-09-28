@@ -1,4 +1,5 @@
 ---
+title: "Cool, that makes sense. Thanks for explaining your..."
 date: 2021-10-13
 time: 19:32:11
 tweet_id: "1448371006146428934"

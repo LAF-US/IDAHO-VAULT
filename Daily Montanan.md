@@ -6,4 +6,4 @@ related:
 - States Newsroom
 authority: LOGAN
 ---
-online news outlet based in Montana, part of States Newsroom 
+online news outlet based in Montana, part of States Newsroom

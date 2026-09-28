@@ -1,4 +1,5 @@
 ---
+title: "RT @lfinneytweets Sandpoint High School XC is fundraising..."
 date: 2021-08-02
 time: 22:00:52
 tweet_id: "1422316494852026381"

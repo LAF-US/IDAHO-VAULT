@@ -1,4 +1,5 @@
 ---
+title: "Of course, they come out of caucus right as I send that...."
 date: 2020-01-16
 time: 20:41:43
 tweet_id: "1217909821384511488"

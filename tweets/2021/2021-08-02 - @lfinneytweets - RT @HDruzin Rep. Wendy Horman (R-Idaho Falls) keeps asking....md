@@ -1,4 +1,5 @@
 ---
+title: "RT @HDruzin Rep. Wendy Horman (R-Idaho Falls) keeps asking..."
 date: 2021-08-02
 time: 18:12:04
 tweet_id: "1422258914540720128"

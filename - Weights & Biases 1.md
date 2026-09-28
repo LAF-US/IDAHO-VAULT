@@ -52,7 +52,7 @@ Run this sample code to see the new trace.
 
 In this example, we're using W&B Inference. [Learn more](https://docs.wandb.ai/guides/inference/) about our inference API.
 
-`# Ensure your dependencies are installed with: # pip install openai weave  # Find your wandb API key at: https://wandb.ai/authorize # Ensure that your wandb API key is available at: # os.environ['WANDB_API_KEY'] = "<your_wandb_api_key>"  import os import weave from openai import OpenAI  # Find your wandb API key at: https://wandb.ai/authorize weave.init('laf-us/intro-example') # 🐝  @weave.op # 🐝 Decorator to track requests def create_completion(message: str) -> str:   client = OpenAI(       base_url='https://api.inference.wandb.ai/v1',       api_key=os.environ['WANDB_API_KEY'], # 🔑 Your wandb API key       project='laf-us/intro-example',   )   response = client.chat.completions.create(       model="OpenPipe/Qwen3-14B-Instruct",       messages=[           {"role": "system", "content": "You are a helpful assistant."},           {"role": "user", "content": message}       ],   )   return response.choices[0].message.content message = "Tell me a joke." create_completion(message) `
+`# Ensure your dependencies are installed with: # pip install openai weave  # Find your wandb API key at: https://wandb.ai/authorize # Ensure that your wandb API key is available at: # os.environ['WANDB_API_KEY'] = "<your_wandb_api_key>"  import os import weave from openai import OpenAI  # Find your wandb API key at: https://wandb.ai/authorize weave.init('laf-us/intro-example') # 🐝  @weave.op # 🐝 Decorator to track requests def create_completion(message: str) -> str:   client = OpenAI(       base_url='https://api.inference.wandb.ai/v1',       api_key=os.environ['WANDB_API_KEY'], # 🔑 Your wandb API key       project='laf-us/intro-example',   )   response = client.chat.completions.create(       model="OpenPipe/Qwen3-14B-Instruct",       messages=[           {"role": "system", "content": "You are a helpful assistant."},           {"role": "user", "content": message}       ],   )   return response.choices[0].message.content message = "Tell me a joke." create_completion(message)`
 
 - Running your first evaluation or
 
@@ -64,6 +64,6 @@ In this example, we're using W&B Inference. [Learn more](https://docs.wandb.ai/g
 
 Show more
 
-19. Get started with Playground
+ 1. Get started with Playground
 
 You can interactively develop, review, and test their prompts using our LLM playground which supports all major model providers.

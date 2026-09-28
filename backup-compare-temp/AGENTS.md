@@ -76,7 +76,7 @@ When multiple agents operate simultaneously on the same branch, the following la
 ### Lane Map
 
 | Agent | Role | Owns | Must Not Touch |
-|-------|------|------|----------------|
+| ------- | ------ | ------ | ---------------- |
 | **Claude** (Abhorsen) | Executor | `.obsidian/`, `.gitignore`, `PRIVACY.md`, CSS/snippets, plugin configs, git commits | `!/GRIMOIRE/`, DOCKET, Gemini narrative lanes |
 | **Gemini** (Antigravity) | Interpreter | `!/GRIMOIRE/`, `DOCKET`, `LEVELSET-REPORT`, `CAESARS` docs | `.obsidian/`, `.gitignore`, git operations |
 | **Codex** (Janitor) | Mechanic | Small conflict cleanup, typo repair, script/workflow validation **when assigned** | `.obsidian/`, governance docs, `!/GRIMOIRE/`, shared staging/commit flow (unless explicitly assigned) |
@@ -112,4 +112,6 @@ Logan is the sole human decision-maker. When he is away from keyboard:
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

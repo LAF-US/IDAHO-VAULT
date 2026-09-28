@@ -1,4 +1,5 @@
 ---
+title: "Yes that first tweet is a joke about algae (a.k.a. peak..."
 date: 2020-07-25
 time: 01:59:33
 tweet_id: "1286843501057990658"
@@ -15,10 +16,10 @@ related:
 ---
 
 Yes that first tweet is a joke about algae (a.k.a. peak comedy) 
-https://t.co/pqqmfVYeWw
+<https://t.co/pqqmfVYeWw>
 
 ## Links
-- https://knowyourmeme.com/memes/im-going-to-create-an-environment-that-is-so-toxic
+- <https://knowyourmeme.com/memes/im-going-to-create-an-environment-that-is-so-toxic>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoMtExpress With campaign season passed, the three..."
 date: 2020-11-13
 time: 19:44:43
 tweet_id: "1327336612116643840"

@@ -1,4 +1,5 @@
 ---
+title: "Send me to @IRE_NICAR this spring so I can get better at..."
 date: 2022-12-13
 time: 00:29:15
 tweet_id: "1602460604463460352"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The Idaho Senate has passed the Idaho..."
 date: 2020-03-09
 time: 20:00:07
 tweet_id: "1237105908850642944"

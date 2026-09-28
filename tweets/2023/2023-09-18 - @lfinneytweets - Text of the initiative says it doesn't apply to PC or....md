@@ -1,4 +1,5 @@
 ---
+title: "Text of the initiative says it doesn't apply to PC or..."
 date: 2023-09-18
 time: 15:36:30
 tweet_id: "1703795138219413543"

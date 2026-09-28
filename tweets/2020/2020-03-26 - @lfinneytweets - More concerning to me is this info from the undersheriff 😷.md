@@ -1,4 +1,5 @@
 ---
+title: "More concerning to me is this info from the undersheriff \ud83d\ude37"
 date: 2020-03-26
 time: 20:23:58
 tweet_id: "1243272505856413696"
@@ -17,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-@RadioDawson @LewistonTribune More concerning to me is this info from the undersheriff 😷 https://t.co/sHpfaHZsKI
+@RadioDawson @LewistonTribune More concerning to me is this info from the undersheriff 😷 <https://t.co/sHpfaHZsKI>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EUD9wEaU4AAgxyH.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EUD9wEaU4AAgxyH.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

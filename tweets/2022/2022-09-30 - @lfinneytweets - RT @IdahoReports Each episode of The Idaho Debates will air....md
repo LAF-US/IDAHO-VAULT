@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Each episode of The Idaho Debates will air..."
 date: 2022-09-30
 time: 21:23:17
 tweet_id: "1575959492281319427"

@@ -1,4 +1,5 @@
 ---
+title: "SB 1289 \u2013 PUBLIC LIBRARIES \u2013 Adds to existing law to..."
 date: 2024-02-22
 time: 23:30:36
 tweet_id: "1760809344159846606"

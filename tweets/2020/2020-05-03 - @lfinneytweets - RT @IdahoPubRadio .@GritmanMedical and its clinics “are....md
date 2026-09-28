@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@GritmanMedical and its clinics \u201care..."
 date: 2020-05-03
 time: 04:31:23
 tweet_id: "1256803516456132608"

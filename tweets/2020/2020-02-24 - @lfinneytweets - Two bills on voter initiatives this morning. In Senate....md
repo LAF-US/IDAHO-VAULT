@@ -1,4 +1,5 @@
 ---
+title: "Two bills on voter initiatives this morning. In Senate..."
 date: 2020-02-24
 time: 15:53:29
 tweet_id: "1231970409794326528"

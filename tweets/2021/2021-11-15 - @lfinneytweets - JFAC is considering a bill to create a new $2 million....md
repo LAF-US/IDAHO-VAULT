@@ -1,4 +1,5 @@
 ---
+title: "JFAC is considering a bill to create a new $2 million..."
 date: 2021-11-15
 time: 20:49:08
 tweet_id: "1460349167465762818"

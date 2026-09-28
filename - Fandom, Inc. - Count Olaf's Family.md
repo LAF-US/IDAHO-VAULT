@@ -35,7 +35,6 @@ In the Netflix series, Beatrice II is not Olaf's child and is known to be biolog
 
 <table><tbody><tr align="center"><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td colspan="6" rowspan="2"><a href="https://snicket.fandom.com/wiki/Count_Olaf%27s_father">Count Olaf's father</a> †</td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td><td colspan="6" rowspan="2"><a href="https://snicket.fandom.com/wiki/Count_Olaf%27s_mother">Count Olaf's mother</a> †</td></tr><tr align="center"><td colspan="2"></td><td></td><td></td><td colspan="2"></td></tr><tr align="center"><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td rowspan="2"></td><td rowspan="2"></td></tr><tr align="center"><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td rowspan="2" colspan="2"></td><td colspan="6" rowspan="2"><a href="https://snicket.fandom.com/wiki/Count_Olaf">Count Olaf</a> †</td></tr></tbody></table>
 
-  
 Olaf is known to be either the third cousin four times removed of the [Baudelaire Family](https://snicket.fandom.com/wiki/Baudelaire_Family "Baudelaire Family") or the fourth cousin three times removed. It is unknown whether this is through Beatrice's family, Bertrand's biological family, or Bertrand's adoptive family.
 
 ### Speculative Tree
@@ -56,7 +55,7 @@ Count Olaf's parents portrait.
 
 <table><tbody><tr><th colspan="2">Families</th></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events">A Series of Unfortunate Events</a></td><td><p><a href="https://snicket.fandom.com/wiki/Anwhistle_Family">Anwhistle Family</a> • <a href="https://snicket.fandom.com/wiki/Baudelaire_Family">Baudelaire Family</a> • <a href="https://snicket.fandom.com/wiki/Caliban_Family">Caliban Family</a> • <strong>Count Olaf's Family</strong> • <a href="https://snicket.fandom.com/wiki/Denouement_Family">Denouement Family</a> • <a href="https://snicket.fandom.com/wiki/Montgomery_Family">Montgomery Family</a> • <a href="https://snicket.fandom.com/wiki/Poe_Family">Poe Family</a> • <a href="https://snicket.fandom.com/wiki/Quagmire_Family">Quagmire Family</a> • <a href="https://snicket.fandom.com/wiki/Sebald_Family">Sebald Family</a> • <a href="https://snicket.fandom.com/wiki/Snicket_Clan">Snicket Clan</a> • <a href="https://snicket.fandom.com/wiki/Spats_Family">Spats Family</a> • <a href="https://snicket.fandom.com/wiki/Verhoogen_Family">Verhoogen Family</a> • <a href="https://snicket.fandom.com/wiki/Widdershins_Family">Widdershins Family</a></p></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/All_the_Wrong_Questions">All the Wrong Questions</a></td><td></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events_(TV_series)">Netflix Adaptation</a></td><td><p><a href="https://snicket.fandom.com/wiki/Normal_Happy_Family">Normal Happy Family</a></p></td></tr></tbody></table>
 
-[^1]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Vile Village: Part Two](https://snicket.fandom.com/wiki/The_Vile_Village:_Pa***REMOVED***Two "The Vile Village: Part Two")*
+[^1]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Vile Village: Part Two](https://snicket.fandom.com/wiki/The_Vile_Village:_Part_Two "The Vile Village: Part Two")*
 
 [^2]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[Shouldn't You Be in School?](https://snicket.fandom.com/wiki/Shouldn%27t_You_Be_in_School%3F "Shouldn't You Be in School?")*
 
@@ -64,4 +63,4 @@ Count Olaf's parents portrait.
 
 [^4]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The End](https://snicket.fandom.com/wiki/The_End "The End")*
 
-[^5]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Pa***REMOVED***Two "The Penultimate Peril: Part Two")*
+[^5]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_Two "The Penultimate Peril: Part Two")*

@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Bill would prohibit teaching..."
 date: 2021-03-22
 time: 19:45:17
 tweet_id: "1374084788403859456"

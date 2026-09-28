@@ -2,28 +2,29 @@
 
 This is the canonical Round 1 runtime/provider compatibility snapshot.
 
+## *FOUND **QUESTIONABLE** BY THE FAITH OF THE CLOTH*
 ## Local Runtime Surfaces
 
 | Surface | Status | Detail |
 | --- | --- | --- |
 | OpenClaw config `.openclaw-local-only.yml` | `OK` | .openclaw-local-only.yml present |
 | OpenClaw config `.openclaw-local-mesh.yml` | `OK` | .openclaw-local-mesh.yml present |
-| Documented script `health_monitor.py` | `OK` | scripts\health_monitor.py present |
-| Documented script `validate_openrouter.py` | `OK` | scripts\validate_openrouter.py present |
-| Documented script `validate_services.py` | `OK` | scripts\validate_services.py present |
+| Documented script `health_monitor.py` | `OK` | scripts/health_monitor.py present |
+| Documented script `validate_openrouter.py` | `OK` | scripts/validate_openrouter.py present |
+| Documented script `validate_services.py` | `OK` | scripts/validate_services.py present |
 
 ## OpenRouter Contract
 
 | Check | Status | Severity | Detail |
 | --- | --- | --- | --- |
-| Resolver (Python) | `OK` | `error` | !\resolve_openrouter_secret.py present |
-| Resolver (PowerShell) | `OK` | `error` | !\resolve-openrouter-secret.ps1 present |
-| Runtime launcher | `OK` | `error` | scripts\openrouter_runtime.py present |
-| Launcher `Start-CodexOpenRouter.ps1` | `OK` | `error` | scripts\Start-CodexOpenRouter.ps1 present |
-| Launcher `Start-ClaudeOpenRouter.ps1` | `OK` | `error` | scripts\Start-ClaudeOpenRouter.ps1 present |
-| Launcher `launch-codex-openrouter.cmd` | `OK` | `error` | !\launch-codex-openrouter.cmd present |
-| Launcher `launch-claude-openrouter.cmd` | `OK` | `error` | !\launch-claude-openrouter.cmd present |
-| OpenRouter env file | `OK` | `error` | .op\openrouter.env present |
+| Resolver (Python) | `OK` | `error` | !/resolve_openrouter_secret.py present |
+| Resolver (PowerShell) | `OK` | `error` | !/resolve-openrouter-secret.ps1 present |
+| Runtime launcher | `OK` | `error` | scripts/openrouter_runtime.py present |
+| Launcher `Start-CodexOpenRouter.ps1` | `OK` | `error` | scripts/Start-CodexOpenRouter.ps1 present |
+| Launcher `Start-ClaudeOpenRouter.ps1` | `OK` | `error` | scripts/Start-ClaudeOpenRouter.ps1 present |
+| Launcher `launch-codex-openrouter.cmd` | `OK` | `error` | !/launch-codex-openrouter.cmd present |
+| Launcher `launch-claude-openrouter.cmd` | `OK` | `error` | !/launch-claude-openrouter.cmd present |
+| OpenRouter env file | `OK` | `error` | .op/openrouter.env present |
 | 1Password CLI | `FAIL` | `warn` | `op` is installed but not signed in; env-file fallback is required. |
 | Env key `OPENROUTER_API_KEY` | `OK` | `error` | OpenRouter API key ref/value present |
 | Env key `OPENAI_API_KEY` | `OK` | `error` | OpenAI compatibility key ref/value present |

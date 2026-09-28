@@ -1,4 +1,5 @@
 ---
+title: "Come on Nicole, everyone knows 'let me do more reporting..."
 date: 2021-06-28
 time: 17:37:47
 tweet_id: "1409566713243312134"

@@ -1,4 +1,5 @@
 ---
+title: "Gestrin Idaho forests were closed while liquor stores..."
 date: 2020-06-23
 time: 15:40:35
 tweet_id: "1275453707967029249"

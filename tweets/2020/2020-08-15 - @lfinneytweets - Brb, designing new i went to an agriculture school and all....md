@@ -1,4 +1,5 @@
 ---
+title: "Brb, designing new i went to an agriculture school and all..."
 date: 2020-08-15
 time: 01:46:49
 tweet_id: "1294450439950229506"

@@ -1,4 +1,5 @@
 ---
+title: "Whaddya mean, is there something in the news today \ud83e\udd14"
 date: 2024-05-30
 time: 21:25:02
 tweet_id: "1796291754028883987"

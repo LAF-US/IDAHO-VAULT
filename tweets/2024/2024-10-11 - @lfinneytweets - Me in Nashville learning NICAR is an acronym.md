@@ -1,4 +1,5 @@
 ---
+title: "Me in Nashville learning NICAR is an acronym"
 date: 2024-10-11
 time: 20:03:09
 tweet_id: "1844831123727433851"

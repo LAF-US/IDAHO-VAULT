@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson ICYMI yesterday, some Idaho lawmakers don\u2019t..."
 date: 2022-07-01
 time: 16:23:27
 tweet_id: "1542906741779705856"

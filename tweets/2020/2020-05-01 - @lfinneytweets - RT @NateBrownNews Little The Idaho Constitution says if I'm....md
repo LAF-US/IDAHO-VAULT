@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Little The Idaho Constitution says if I'm..."
 date: 2020-05-01
 time: 21:17:30
 tweet_id: "1256331938542936064"

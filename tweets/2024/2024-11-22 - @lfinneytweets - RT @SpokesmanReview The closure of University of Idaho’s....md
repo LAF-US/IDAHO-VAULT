@@ -1,4 +1,5 @@
 ---
+title: "RT @SpokesmanReview The closure of University of Idaho\u2019s..."
 date: 2024-11-22
 time: 23:01:54
 tweet_id: "1860096395191201912"

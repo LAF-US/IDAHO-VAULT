@@ -1,4 +1,5 @@
 ---
+title: "Lots of other fun details I'll explore soon for..."
 date: 2024-04-17
 time: 00:00:06
 tweet_id: "1780385713185501456"

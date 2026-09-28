@@ -1,4 +1,5 @@
 ---
+title: "RT @KBSX915 #IdahoMatters chatted with @IdahoPTV about a..."
 date: 2022-06-15
 time: 18:08:24
 tweet_id: "1537134945679708160"

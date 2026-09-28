@@ -215,7 +215,7 @@ In this section, you will get a complete table for Mac Terminal commands, we wil
 | `<cmd> < file` | Uses the content of a file as input for a command. | `sort < file.txt` |
 | `<cmd> >> <file>` | Appends the output of a command to the specified file. | `echo "New text" >> myfile.txt` |
 | `<cmd> > <file>` | Redirects the output of a command into the specified file, overwriting it. | `ls > directory_list.txt` |
-| \`<cmd1> | <cmd2>\` | Sends the output of one command as input to another command (pipe). |
+| `<cmd1> \| <cmd2>` | Sends the output of one command as input to another command (pipe). | |
 
 ### HELP Commands
 

@@ -1,4 +1,5 @@
 ---
+title: "Voting plan is to go through the calendar. Appropriations..."
 date: 2020-03-17
 time: 20:49:01
 tweet_id: "1240017316651229184"

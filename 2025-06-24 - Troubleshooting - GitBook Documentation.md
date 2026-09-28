@@ -92,9 +92,9 @@ A good way to identify which GitBook account the GitHub account is already linke
 3. Go to [the Log in page](https://app.gitbook.com/login).
 4. Enter your GitHub credentials.
 5. Once logged in, go to [the account settings](https://app.gitbook.com/account) and either:
-	1. Delete the account altogether if you do not need it.
-6. Log out from the session.
-7. Log back in using your `name@email.com` GitBook account.
-8. Try to set up Git Sync again.
+6. Delete the account altogether if you do not need it.
+7. Log out from the session.
+8. Log back in using your `name@email.com` GitBook account.
+9. Try to set up Git Sync again.
 
 Last updated

@@ -1,4 +1,5 @@
 ---
+title: "Probably just border artifacts in whatever spreadsheet they..."
 date: 2022-12-02
 time: 17:48:12
 tweet_id: "1598735798966583296"

@@ -1,4 +1,5 @@
 ---
+title: "All of the historic French trapper names I grew up around..."
 date: 2021-11-20
 time: 00:57:01
 tweet_id: "1461861103672041477"

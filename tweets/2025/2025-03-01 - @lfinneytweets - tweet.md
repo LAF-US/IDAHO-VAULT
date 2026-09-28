@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2025-03-01
 time: 04:54:19
 tweet_id: "1895699096423571769"
@@ -16,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@TheDemocrats https://t.co/LWhiKD9M6B
+@TheDemocrats <https://t.co/LWhiKD9M6B>
 
 ## Media
-- ![](https://pbs.twimg.com/media/Gk7gSEDXoAAOs1M.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/Gk7gSEDXoAAOs1M.jpg)
 
 *In reply to [@TheDemocrats](https://twitter.com/TheDemocrats)*
 

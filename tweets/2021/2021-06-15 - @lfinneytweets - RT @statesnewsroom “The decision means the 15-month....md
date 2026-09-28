@@ -1,4 +1,5 @@
 ---
+title: "RT @statesnewsroom \u201cThe decision means the 15-month..."
 date: 2021-06-15
 time: 17:10:12
 tweet_id: "1404848728125575169"

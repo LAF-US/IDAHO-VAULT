@@ -1,4 +1,5 @@
 ---
+title: "RT @Elenee_Dao Bonner General activated crisis standards of..."
 date: 2021-10-13
 time: 21:42:43
 tweet_id: "1448403855394234368"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @Elenee_Dao: Bonner General activated crisis standards of care in September. 
+RT @Elenee_Dao: Bonner General activated crisis standards of care in September.
 
 They haven’t had to treat patients in hallways or outside…
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The Idaho Senate today confirmed the..."
 date: 2020-01-24
 time: 00:46:03
 tweet_id: "1220508024596381696"

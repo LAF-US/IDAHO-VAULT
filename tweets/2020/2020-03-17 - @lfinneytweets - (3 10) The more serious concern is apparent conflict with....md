@@ -1,4 +1,5 @@
 ---
+title: "(3 10) The more serious concern is apparent conflict with..."
 date: 2020-03-17
 time: 18:12:37
 tweet_id: "1239977956664999936"

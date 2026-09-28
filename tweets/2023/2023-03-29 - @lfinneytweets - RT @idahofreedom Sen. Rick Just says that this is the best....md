@@ -1,4 +1,5 @@
 ---
+title: "RT @idahofreedom Sen. Rick Just says that this is the best..."
 date: 2023-03-29
 time: 22:14:36
 tweet_id: "1641202223089700864"

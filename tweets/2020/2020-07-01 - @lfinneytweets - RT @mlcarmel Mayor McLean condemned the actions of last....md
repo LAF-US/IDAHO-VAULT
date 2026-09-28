@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel Mayor McLean condemned the actions of last..."
 date: 2020-07-01
 time: 15:58:25
 tweet_id: "1278357300915220480"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: Mayor McLean condemned the actions of last nights violent counter protestors in downtown Bouse. 
+RT @mlcarmel: Mayor McLean condemned the actions of last nights violent counter protestors in downtown Bouse.
 
 Here’s her statement: https…
 

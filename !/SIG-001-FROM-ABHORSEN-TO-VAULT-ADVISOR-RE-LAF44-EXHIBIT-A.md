@@ -100,7 +100,7 @@ conversation on a public repo is not my role.
 When LAF-44 is written, it should address:
 
 | Gap | Resolution |
-|---|---|
+| --- | --- |
 | No canonical identity source | Create signed identity ledger in LAF-PRIVATE (private repo, not here) |
 | No agent read boundary on personal data | Define in AGENTS.md: which agents may read/write identity fields |
 | No audit mechanism | Implement "Interrobang Check" CI step against canonical source once it exists |
@@ -116,4 +116,4 @@ Logan is copied and may override or close at any time.
 
 ---
 
-###### The world is quiet here.
+###### The world is quiet here

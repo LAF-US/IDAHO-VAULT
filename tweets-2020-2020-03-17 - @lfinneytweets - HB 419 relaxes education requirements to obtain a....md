@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-HB 419 relaxes education requirements to obtain a mortician’s license, and other recommendations from the Board of Morticians. 
+HB 419 relaxes education requirements to obtain a mortician’s license, and other recommendations from the Board of Morticians.
 Heider: “There’s nothing like a good mortician bill to wake us all up in the afternoon.”
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -1,4 +1,5 @@
 ---
+title: "RT @ScottLoganKBOI I just talked with House Minority Leader..."
 date: 2020-08-24
 time: 18:11:01
 tweet_id: "1297959613996789760"

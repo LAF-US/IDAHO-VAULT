@@ -1,4 +1,5 @@
 ---
+title: "RT @BuzzFeedNews Twitter is permanently suspending major..."
 date: 2021-01-08
 time: 21:53:58
 tweet_id: "1347662859258368001"

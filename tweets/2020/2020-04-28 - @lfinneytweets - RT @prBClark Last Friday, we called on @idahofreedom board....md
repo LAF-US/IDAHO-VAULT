@@ -1,4 +1,5 @@
 ---
+title: "RT @prBClark Last Friday, we called on @idahofreedom board..."
 date: 2020-04-28
 time: 19:19:03
 tweet_id: "1255214967688749058"

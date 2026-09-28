@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio From @IdahoITD \u201cWith no detected movement..."
 date: 2020-07-17
 time: 16:58:39
 tweet_id: "1284170664585265152"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Two mule deer bucks harvested during..."
 date: 2021-11-18
 time: 03:21:10
 tweet_id: "1461172604987854848"

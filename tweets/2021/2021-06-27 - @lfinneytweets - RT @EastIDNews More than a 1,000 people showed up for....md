@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews More than a 1,000 people showed up for..."
 date: 2021-06-27
 time: 23:31:08
 tweet_id: "1409293248091201537"

@@ -13,6 +13,8 @@ tags:
 ---
 # Grimoire - Caution, Contains False Doctrines
 
+# DEEMED *QUESTIONABLE* BY THE FAITH OF THE CLOTH - **QUARANTINED**
+
 This folder is quarantined mixed material.
 
 It is not pure falsehood and not pure canon. It contains true doctrine,

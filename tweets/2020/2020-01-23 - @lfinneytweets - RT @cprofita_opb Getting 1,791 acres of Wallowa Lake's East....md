@@ -1,4 +1,5 @@
 ---
+title: "RT @cprofita_opb Getting 1,791 acres of Wallowa Lake's East..."
 date: 2020-01-23
 time: 00:01:56
 tweet_id: "1220134534458396672"

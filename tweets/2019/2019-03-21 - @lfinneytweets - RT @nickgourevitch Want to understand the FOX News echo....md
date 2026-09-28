@@ -1,4 +1,5 @@
 ---
+title: "RT @nickgourevitch Want to understand the FOX News echo..."
 date: 2019-03-21
 time: 17:36:30
 tweet_id: "1108784463368974336"

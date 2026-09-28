@@ -19,6 +19,8 @@ authority: LOGAN
 ---
 # `IDAHO-VAULT/!` canonical anchor
 
+[![CodSpeed](https://img.shields.io/endpoint?url=https://codspeed.io/badge.json)](https://app.codspeed.io/LAF-US/IDAHO-VAULT?utm_source=badge)
+
 This folder is the canonical anchor for orientation inside the vault.
 It is a pointer, not a separate constitution or duplicate governance layer.
 
@@ -28,14 +30,14 @@ It is a pointer, not a separate constitution or duplicate governance layer.
 - Use this path as the top-level orientation marker when describing where the vault "starts"
 - Do not assume older path language (`!ADMINISTRATION/`) is still authoritative
 
-## Current adjacent anchors
+## Adjacent anchors
 
 - `VAULT-METADATA-STANDARD.md` — canonical metadata authority for governed notes
 
 - `CONSTITUTION.md` — canonical constitution
 - `PROTOCOL.md` — swarm operational vocabulary
 - `AGENTS.md` — agent registry and boundary rules
-- `LEVELSET.md` — current living ecosystem status
+- `LEVELSET.md` — dated ecosystem orientation and status records
 - `DECISIONS.md` — structural decision log
 - `VAULT-CONVENTIONS.md` — shared naming, frontmatter, and structure for all agents
 - `VAULT-ZONES.md` — routing grammar for `!`, `!/!`, and `!/!/!`
@@ -48,9 +50,10 @@ It is a pointer, not a separate constitution or duplicate governance layer.
 - `VAULT-CONVENTIONS.md` is the shared delegation layer for routing, naming, and write behavior.
 - `VAULT-METADATA-STANDARD.md` is the source of truth for governed-note metadata and lifecycle fields.
 - `VAULT-TEMPLATES.md` defines note classes and template expectations, subordinate to the metadata standard when fields overlap.
-- Live implementation wiring in `.obsidian/`, `.github/`, and `manifest.json` must conform to the vault governance stack and does not replace it.
+- Implementation wiring in `.obsidian/`, `.github/`, and `manifest.json` must conform to the vault governance stack and does not replace it.
 
 ## Stability note
 
-If instructions, automation, or handoff text drift from this anchor, correct them toward `IDAHO-VAULT/!` and the current root governance stack before adding new process.
+If instructions, automation, or handoff text drift from this anchor, correct them toward `IDAHO-VAULT/!` and the canonical root governance stack before adding new process.
+
 # Updated Mon Apr 27 09:40:36 MDT 2026

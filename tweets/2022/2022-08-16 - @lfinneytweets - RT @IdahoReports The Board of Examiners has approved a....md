@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Board of Examiners has approved a..."
 date: 2022-08-16
 time: 19:31:40
 tweet_id: "1559623949071355912"

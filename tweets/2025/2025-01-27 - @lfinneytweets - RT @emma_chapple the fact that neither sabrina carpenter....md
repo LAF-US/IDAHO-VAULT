@@ -1,4 +1,5 @@
 ---
+title: "RT @emma_chapple the fact that neither sabrina carpenter..."
 date: 2025-01-27
 time: 13:00:20
 tweet_id: "1883862607800750569"

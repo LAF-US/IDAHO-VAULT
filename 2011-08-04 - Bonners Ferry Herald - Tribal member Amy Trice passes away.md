@@ -5,7 +5,7 @@ author:
 published: 2011-08-04
 created: 2026-04-15
 ---
-![](https://hagadone.media.clients.ellingtoncms.com/ARTICLE_308049997_AR_0_KKVBHCXNVXZW_tx658.jpg?fabbae1045d0968743dc2748279f625e68141661)
+![alt text needed](https://hagadone.media.clients.ellingtoncms.com/ARTICLE_308049997_AR_0_KKVBHCXNVXZW_tx658.jpg?fabbae1045d0968743dc2748279f625e68141661)
 
 Tribal member Amy Trice passes away
 

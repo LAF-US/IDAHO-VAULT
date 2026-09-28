@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Idaho Statesman & ProPublica In one Idaho..."
 date: 2023-04-13
 time: 22:03:34
 tweet_id: "1646635263379271680"

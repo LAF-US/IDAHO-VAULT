@@ -1,4 +1,5 @@
 ---
+title: "One #idleg staff member and at least three lawmakers were..."
 date: 2024-12-06
 time: 02:15:06
 tweet_id: "1864856060798079164"

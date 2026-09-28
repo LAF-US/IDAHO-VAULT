@@ -1,4 +1,5 @@
 ---
+title: "Rep. Moyle has a new draft of his one-year property tax..."
 date: 2020-02-04
 time: 16:20:36
 tweet_id: "1224729478867247104"

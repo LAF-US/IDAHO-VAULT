@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Boise, I\u2019m coming home! Starting on Jan...."
 date: 2021-12-19
 time: 23:14:13
 tweet_id: "1472706867579080704"
@@ -18,7 +19,7 @@ related:
 
 RT @madisonhardy05: Boise, I’m coming home!
 
-Starting on Jan. 5 I’m joining the @IdahoNews6 team as a Multimedia Journalist. 
+Starting on Jan. 5 I’m joining the @IdahoNews6 team as a Multimedia Journalist.
 
 While I’ll m…
 

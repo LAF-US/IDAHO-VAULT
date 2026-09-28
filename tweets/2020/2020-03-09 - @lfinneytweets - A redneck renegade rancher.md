@@ -1,4 +1,5 @@
 ---
+title: "A redneck renegade rancher"
 date: 2020-03-09
 time: 20:03:36
 tweet_id: "1237106784017330178"

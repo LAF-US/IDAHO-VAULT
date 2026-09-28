@@ -1,4 +1,5 @@
 ---
+title: "Only time will tell if it\u2019s good science. Little\u2019s plan was..."
 date: 2020-10-29
 time: 01:14:23
 tweet_id: "1321621369247821825"
@@ -16,9 +17,9 @@ related:
   - idpol
 ---
 
-"Only time will tell if it’s good science. Little’s plan was not nearly enough to placate the Idahoans who want a statewide mask mandate, but more than enough to infuriate conservatives who saw a threat to business and an affront to personal choice." #idpol https://t.co/pyNYDS7phw
+"Only time will tell if it’s good science. Little’s plan was not nearly enough to placate the Idahoans who want a statewide mask mandate, but more than enough to infuriate conservatives who saw a threat to business and an affront to personal choice." #idpol <https://t.co/pyNYDS7phw>
 
 ## Links
-- https://t.co/pyNYDS7phw
+- <https://t.co/pyNYDS7phw>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1321621369247821825)

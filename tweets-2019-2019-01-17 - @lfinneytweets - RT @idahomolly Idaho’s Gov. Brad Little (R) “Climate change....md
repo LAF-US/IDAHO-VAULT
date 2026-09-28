@@ -15,9 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @idahomolly: Idaho’s Gov. Brad Little (R): “Climate change is real.” https://t.co/QxOGaHrayt
+RT @idahomolly: Idaho’s Gov. Brad Little (R): “Climate change is real.” <https://t.co/QxOGaHrayt>
 
 ## Links
-- https://x.com/BetsyZRussell/status/1085653722007429121
+
+- <https://x.com/BetsyZRussell/status/1085653722007429121>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1085796491749294080)

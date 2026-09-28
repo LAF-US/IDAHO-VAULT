@@ -1,4 +1,5 @@
 ---
+title: "Explicitly referenced a few times along the way if I recall..."
 date: 2024-03-21
 time: 04:38:31
 tweet_id: "1770671306721423511"
@@ -17,10 +18,10 @@ related:
 ---
 
 @tucker_id Explicitly referenced a few times along the way if I recall correctly
-https://t.co/fDNdxvDLSH
+<https://t.co/fDNdxvDLSH>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/01/22/bill-would-move-electioneering-boundary-to-250-feet/
+- <https://blog.idahoreports.idahoptv.org/2024/01/22/bill-would-move-electioneering-boundary-to-250-feet/>
 
 *In reply to [@tucker_id](https://twitter.com/tucker_id)*
 

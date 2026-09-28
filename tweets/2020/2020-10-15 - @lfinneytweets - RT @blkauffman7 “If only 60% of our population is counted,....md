@@ -1,4 +1,5 @@
 ---
+title: "RT @blkauffman7 \u201cIf only 60% of our population is counted,..."
 date: 2020-10-15
 time: 18:33:01
 tweet_id: "1316809320223240193"

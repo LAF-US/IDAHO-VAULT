@@ -1,4 +1,5 @@
 ---
+title: "Polls are officially closed across Idaho \u2014 a poll worker..."
 date: 2020-11-04
 time: 04:06:16
 tweet_id: "1323838952499916800"

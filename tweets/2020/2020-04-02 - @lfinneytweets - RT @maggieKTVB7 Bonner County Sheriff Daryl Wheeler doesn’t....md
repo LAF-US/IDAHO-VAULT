@@ -1,4 +1,5 @@
 ---
+title: "RT @maggieKTVB7 Bonner County Sheriff Daryl Wheeler doesn\u2019t..."
 date: 2020-04-02
 time: 22:47:38
 tweet_id: "1245845373572108288"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @maggieKTVB7: Bonner County Sheriff Daryl Wheeler doesn’t think COVID-19 is that bad. 
+RT @maggieKTVB7: Bonner County Sheriff Daryl Wheeler doesn’t think COVID-19 is that bad.
 
 According to this letter to @GovernorLittle, he…
 

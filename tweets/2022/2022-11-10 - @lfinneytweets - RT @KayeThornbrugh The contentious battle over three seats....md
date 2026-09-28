@@ -1,4 +1,5 @@
 ---
+title: "RT @KayeThornbrugh The contentious battle over three seats..."
 date: 2022-11-10
 time: 22:11:20
 tweet_id: "1590829485535809536"

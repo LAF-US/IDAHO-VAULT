@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoMtExpress Modeled after rules in Sandpoint and..."
 date: 2021-12-23
 time: 18:48:30
 tweet_id: "1474089547877126187"

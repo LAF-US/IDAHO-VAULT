@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Governor Idaho will 'opt in'..."
 date: 2020-08-17
 time: 22:40:53
 tweet_id: "1295490811304370176"

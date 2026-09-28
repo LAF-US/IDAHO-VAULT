@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun As of Monday afternoon, the state has..."
 date: 2024-08-14
 time: 15:05:44
 tweet_id: "1823737776631898274"

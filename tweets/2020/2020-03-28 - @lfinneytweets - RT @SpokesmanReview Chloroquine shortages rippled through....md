@@ -1,4 +1,5 @@
 ---
+title: "RT @SpokesmanReview Chloroquine shortages rippled through..."
 date: 2020-03-28
 time: 20:01:08
 tweet_id: "1243991532979417091"

@@ -1,4 +1,5 @@
 ---
+title: "Genuinely curious, have you been driving around Boise..."
 date: 2024-06-04
 time: 02:00:08
 tweet_id: "1797810536685638001"

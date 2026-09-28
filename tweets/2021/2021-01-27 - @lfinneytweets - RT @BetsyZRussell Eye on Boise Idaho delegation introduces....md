@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Idaho delegation introduces..."
 date: 2021-01-27
 time: 00:35:15
 tweet_id: "1354226430398263298"

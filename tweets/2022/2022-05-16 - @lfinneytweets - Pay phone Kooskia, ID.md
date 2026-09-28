@@ -1,4 +1,5 @@
 ---
+title: "Pay phone Kooskia, ID"
 date: 2022-05-16
 time: 03:47:24
 tweet_id: "1526046632122499072"
@@ -13,11 +14,12 @@ related:
   - lfinneytweets
 ---
 
-Pay phone 
+Pay phone
 
-Kooskia, ID https://t.co/s8nu4e2jlP
+Kooskia, ID <https://t.co/s8nu4e2jlP>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FS2bUPGXwAE0KTQ.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/FS2bUPGXwAE0KTQ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1526046632122499072)

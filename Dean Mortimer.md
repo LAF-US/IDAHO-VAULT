@@ -6,4 +6,5 @@ related:
 authority: LOGAN
 ---
 Residence: Idaho Falls
+
 - former Senate Education chair

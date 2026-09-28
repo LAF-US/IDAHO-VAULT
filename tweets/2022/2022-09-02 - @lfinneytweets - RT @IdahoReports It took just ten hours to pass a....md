@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports It took just ten hours to pass a..."
 date: 2022-09-02
 time: 22:10:54
 tweet_id: "1565824615271710720"

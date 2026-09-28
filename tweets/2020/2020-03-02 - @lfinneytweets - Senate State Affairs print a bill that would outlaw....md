@@ -1,4 +1,5 @@
 ---
+title: "Senate State Affairs print a bill that would outlaw..."
 date: 2020-03-02
 time: 15:28:17
 tweet_id: "1234500783137116161"

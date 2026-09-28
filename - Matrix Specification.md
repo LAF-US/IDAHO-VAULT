@@ -38,17 +38,17 @@ The principles that Matrix attempts to follow are:
 
 - Pragmatic Web-friendly APIs (i.e. JSON over REST)
 - Keep It Simple & Stupid
-	- provide a simple architecture with minimal third-party dependencies.
+  - provide a simple architecture with minimal third-party dependencies.
 - Fully open:
-	- Fully open federation - anyone should be able to participate in the global Matrix network
-		- Fully open standard - publicly documented standard with no IP or patent licensing encumbrances
+  - Fully open federation - anyone should be able to participate in the global Matrix network
+    - Fully open standard - publicly documented standard with no IP or patent licensing encumbrances
 - Empowering the end-user
-	- The user should be able to choose the server and clients they use
-		- The user should be able to control how private their communication is
-		- The user should know precisely where their data is stored
+  - The user should be able to choose the server and clients they use
+    - The user should be able to control how private their communication is
+    - The user should know precisely where their data is stored
 - Fully decentralised - no single points of control over conversations or the network as a whole
 - Learning from history to avoid repeating it
-	- Trying to take the best aspects of XMPP, SIP, IRC, SMTP, IMAP and NNTP whilst trying to avoid their failings
+  - Trying to take the best aspects of XMPP, SIP, IRC, SMTP, IMAP and NNTP whilst trying to avoid their failings
 
 The functionality that Matrix provides includes:
 
@@ -61,8 +61,8 @@ The functionality that Matrix provides includes:
 - Managing user accounts (registration, login, logout)
 - Use of 3rd Party IDs (3PIDs) such as email addresses, phone numbers, Facebook accounts to authenticate, identify and discover users on Matrix.
 - Trusted federation of identity servers for:
-	- Publishing user public keys for PKI
-		- Mapping of 3PIDs to Matrix IDs
+  - Publishing user public keys for PKI
+    - Mapping of 3PIDs to Matrix IDs
 
 The end goal of Matrix is to be a ubiquitous messaging layer for synchronising arbitrary data between sets of people, devices and services - be that for instant messages, VoIP call setups, or any other objects that need to be reliably and persistently pushed from A to B in an interoperable and federated manner.
 
@@ -104,7 +104,7 @@ How data flows between clients:
 
 Each client is associated with a user account, which is identified in Matrix using a unique “user ID”. This ID is namespaced to the homeserver which allocated the account and has the form:
 
-```
+```text
 @localpart:domain
 ```
 
@@ -138,7 +138,7 @@ To order and ease chronological comparison between the events within the graph, 
 
 A room is a conceptual place where users can send and receive events. Events are sent to a room, and all participants in that room with sufficient access will receive the event. Rooms are uniquely identified internally via “Room IDs”, which have the form:
 
-```
+```text
 !opaque_id:domain
 ```
 
@@ -148,7 +148,7 @@ See [‘Identifier Grammar’ in the appendices](https://spec.matrix.org/v1.18/a
 
 The following conceptual diagram shows an `m.room.message` event being sent to the room `!qporfwt:matrix.org`:
 
-```
+```markdown
 { @alice:matrix.org }                             { @bob:example.org }
         |                                                 ^
         |                                                 |
@@ -198,7 +198,7 @@ The state of the room at a given point is calculated by considering all events p
 
 Each room can also have multiple “Room Aliases”, which look like:
 
-```
+```text
 #room_alias:domain
 ```
 
@@ -208,7 +208,7 @@ A room alias “points” to a room ID and is the human-readable label by which 
 
 When resolving a room alias the server will also respond with a list of servers that are in the room that can be used to join via.
 
-```
+```markdown
 HTTP GET
 #matrix:example.org      !aaabaa:matrix.org
        |                    ^

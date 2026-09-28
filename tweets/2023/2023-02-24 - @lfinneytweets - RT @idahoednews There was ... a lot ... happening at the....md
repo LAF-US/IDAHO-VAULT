@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews There was ... a lot ... happening at the..."
 date: 2023-02-24
 time: 01:15:11
 tweet_id: "1628926480469344259"
@@ -20,9 +21,9 @@ related:
   - idedu
 ---
 
-RT @idahoednews: There was ... a lot ... happening at the #idleg today. Get a full, updated roundup here. #idedu https://t.co/ZhDA36JjUG
+RT @idahoednews: There was ... a lot ... happening at the #idleg today. Get a full, updated roundup here. #idedu <https://t.co/ZhDA36JjUG>
 
 ## Links
-- https://idahoednews.org/2sOLv
+- <https://idahoednews.org/2sOLv>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1628926480469344259)

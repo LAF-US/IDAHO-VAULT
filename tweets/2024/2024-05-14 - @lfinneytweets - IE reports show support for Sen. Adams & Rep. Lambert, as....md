@@ -1,4 +1,5 @@
 ---
+title: "IE reports show support for Sen. Adams & Rep. Lambert, as..."
 date: 2024-05-14
 time: 20:48:52
 tweet_id: "1790484447680430214"

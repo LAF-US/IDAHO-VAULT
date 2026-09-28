@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Supreme Court has issued a ruling today in a case..."
 date: 2020-06-22
 time: 23:15:45
 tweet_id: "1275205867843883009"

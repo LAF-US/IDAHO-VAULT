@@ -1,4 +1,5 @@
 ---
+title: "#AttentionIdahoReporters"
 date: 2022-08-16
 time: 21:47:27
 tweet_id: "1559658119948406784"
@@ -16,9 +17,9 @@ related:
   - AttentionIdahoReporters
 ---
 
-#AttentionIdahoReporters https://t.co/dk9FnBtT11
+\#AttentionIdahoReporters <https://t.co/dk9FnBtT11>
 
 ## Links
-- https://x.com/IdahoController/status/1559654764882919424
+- <https://x.com/IdahoController/status/1559654764882919424>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1559658119948406784)

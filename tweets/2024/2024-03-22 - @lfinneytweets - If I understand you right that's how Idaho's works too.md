@@ -1,4 +1,5 @@
 ---
+title: "If I understand you right that's how Idaho's works too"
 date: 2024-03-22
 time: 00:12:40
 tweet_id: "1770966790316966326"

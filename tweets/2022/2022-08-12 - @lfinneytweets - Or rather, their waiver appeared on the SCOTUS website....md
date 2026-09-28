@@ -1,4 +1,5 @@
 ---
+title: "Or rather, their waiver appeared on the SCOTUS website..."
 date: 2022-08-12
 time: 01:50:38
 tweet_id: "1557907379382935553"

@@ -1,4 +1,5 @@
 ---
+title: "Sen. Burgoyne says that if the resolution intends to..."
 date: 2021-01-19
 time: 16:14:34
 tweet_id: "1351563712486801414"

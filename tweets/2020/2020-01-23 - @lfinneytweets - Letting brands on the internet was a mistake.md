@@ -1,4 +1,5 @@
 ---
+title: "Letting brands on the internet was a mistake"
 date: 2020-01-23
 time: 22:31:12
 tweet_id: "1220474086482071554"

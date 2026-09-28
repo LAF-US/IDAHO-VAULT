@@ -1,4 +1,5 @@
 ---
+title: "RT @NWPBroadcasting Minority Republicans in Oregon's Senate..."
 date: 2021-02-27
 time: 00:47:10
 tweet_id: "1365463452555243523"

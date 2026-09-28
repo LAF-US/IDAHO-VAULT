@@ -1,4 +1,5 @@
 ---
+title: ".@RepHeatherScott If the Governor wishes to make laws,..."
 date: 2020-08-07
 time: 01:40:48
 tweet_id: "1291549824974651392"

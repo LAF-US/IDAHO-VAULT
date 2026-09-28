@@ -18,7 +18,6 @@ A vector database stores embeddings, which are numeric representations of note c
 - **Self-hosted vector DB:** Use Qdrant, Weaviate, Milvus, or LanceDB to manage the embeddings externally [^1_1].
 - **Local-first indexing:** Store vectors in SQLite VSS, DuckDB VSS, or a similar embedded system for an offline workflow [^1_6][^1_3].
 
-
 ## Best fit by goal
 
 | Goal | Good choice | Why |
@@ -39,26 +38,25 @@ Semantic search is not a replacement for Obsidian’s normal search; it compleme
 
 <div align="center">⁂</div>
 
-[^1_1]: https://encore.dev/articles/best-vector-databases
+[^1_1]: <https://encore.dev/articles/best-vector-databases>
 
-[^1_2]: https://github.com/ashwin271/obsidian-vector-search
+[^1_2]: <https://github.com/ashwin271/obsidian-vector-search>
 
-[^1_3]: https://motherduck.com/blog/obsidian-rag-duckdb-motherduck/
+[^1_3]: <https://motherduck.com/blog/obsidian-rag-duckdb-motherduck/>
 
-[^1_4]: https://forum.obsidian.md/t/obsidian-hybrid-search-hybrid-search-mcp-server-cli-for-ai-assistants-bm25-semantic-obsidian-native/112491
+[^1_4]: <https://forum.obsidian.md/t/obsidian-hybrid-search-hybrid-search-mcp-server-cli-for-ai-assistants-bm25-semantic-obsidian-native/112491>
 
-[^1_5]: https://www.obsidianstats.com/plugins/vector-search
+[^1_5]: <https://www.obsidianstats.com/plugins/vector-search>
 
-[^1_6]: https://forum.obsidian.md/t/local-semantic-knowledge-indexer-opt-in-core-layer-optional-mcp-service/107674
+[^1_6]: <https://forum.obsidian.md/t/local-semantic-knowledge-indexer-opt-in-core-layer-optional-mcp-service/107674>
 
-[^1_7]: https://masteringjs.substack.com/p/semantic-search-for-obsidian-ai-powered
+[^1_7]: <https://masteringjs.substack.com/p/semantic-search-for-obsidian-ai-powered>
 
-[^1_8]: https://publish.obsidian.md/followtheidea/Vector+Graph+Database+-+What+it+replaces
+[^1_8]: <https://publish.obsidian.md/followtheidea/Vector+Graph+Database+-+What+it+replaces>
 
-[^1_9]: https://www.reddit.com/r/ObsidianMD/comments/1nyvuql/obsidian_to_vectorstoregraph_database_for_ai/
+[^1_9]: <https://www.reddit.com/r/ObsidianMD/comments/1nyvuql/obsidian_to_vectorstoregraph_database_for_ai/>
 
-[^1_10]: https://www.reddit.com/r/ObsidianMD/comments/18vzbtp/idea_vector_search_plugin_for_obsidian/
-
+[^1_10]: <https://www.reddit.com/r/ObsidianMD/comments/18vzbtp/idea_vector_search_plugin_for_obsidian/>
 
 ---
 
@@ -72,7 +70,6 @@ Local and free is a very workable setup for Obsidian. The strongest low-friction
 - **Fully local semantic search plugins.** Some plugins are explicitly designed to be privacy-first and fully local, which fits your “local and free” preference well [^2_4].
 - **DuckDB-based local RAG/search.** If you want a more DIY system, DuckDB with vector search can keep embeddings and retrieval local in a single file-based workflow [^2_5][^2_6].
 
-
 ## What I’d choose
 
 For most people, start with a **local Obsidian plugin + Ollama** because it is the simplest free path and stays on-device [^2_2][^2_1]. If you want the cleanest “no cloud, no API keys” setup, a fully local plugin such as QMD-based semantic search is the closest match [^2_4]. If you are comfortable with a little setup work and want to build a richer note-search system, DuckDB is a strong local-first backbone [^2_5][^2_6].
@@ -84,28 +81,27 @@ Local semantic search is usually free, private, and fast once indexed, but the i
 
 <div align="center">⁂</div>
 
-[^2_1]: https://obsidian.md/plugins
+[^2_1]: <https://obsidian.md/plugins>
 
-[^2_2]: https://github.com/ashwin271/obsidian-vector-search
+[^2_2]: <https://github.com/ashwin271/obsidian-vector-search>
 
-[^2_3]: https://www.obsidianstats.com/plugins/vector-search
+[^2_3]: <https://www.obsidianstats.com/plugins/vector-search>
 
-[^2_4]: https://github.com/achekulaev/obsidian-qmd
+[^2_4]: <https://github.com/achekulaev/obsidian-qmd>
 
-[^2_5]: https://motherduck.com/blog/obsidian-rag-duckdb-motherduck/
+[^2_5]: <https://motherduck.com/blog/obsidian-rag-duckdb-motherduck/>
 
-[^2_6]: https://github.com/sspaeti/obsidian-note-taking-assistant
+[^2_6]: <https://github.com/sspaeti/obsidian-note-taking-assistant>
 
-[^2_7]: https://encore.dev/articles/best-vector-databases
+[^2_7]: <https://encore.dev/articles/best-vector-databases>
 
-[^2_8]: https://www.reddit.com/r/ObsidianMD/comments/18vzbtp/idea_vector_search_plugin_for_obsidian/
+[^2_8]: <https://www.reddit.com/r/ObsidianMD/comments/18vzbtp/idea_vector_search_plugin_for_obsidian/>
 
-[^2_9]: https://forum.obsidian.md/t/local-semantic-search-indexing-plug-in/69098
+[^2_9]: <https://forum.obsidian.md/t/local-semantic-search-indexing-plug-in/69098>
 
-[^2_10]: https://www.obsidianstats.com/plugins/bbawj-semantic-search
+[^2_10]: <https://www.obsidianstats.com/plugins/bbawj-semantic-search>
 
-[^2_11]: https://dev.to/gaston1balcarce/how-i-built-a-local-ai-assistant-for-obsidian-no-cloud-no-api-keys-a2k
-
+[^2_11]: <https://dev.to/gaston1balcarce/how-i-built-a-local-ai-assistant-for-obsidian-no-cloud-no-api-keys-a2k>
 
 ---
 
@@ -132,34 +128,33 @@ Since you preferred local and free, a good Obsidian path is local embeddings plu
 
 <div align="center">⁂</div>
 
-[^3_1]: https://aws.amazon.com/what-is/retrieval-augmented-generation/
+[^3_1]: <https://aws.amazon.com/what-is/retrieval-augmented-generation/>
 
-[^3_2]: https://www.ibm.com/think/topics/retrieval-augmented-generation
+[^3_2]: <https://www.ibm.com/think/topics/retrieval-augmented-generation>
 
-[^3_3]: https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-retrieval-augmented-generation-rag
+[^3_3]: <https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-retrieval-augmented-generation-rag>
 
-[^3_4]: https://cloud.google.com/use-cases/retrieval-augmented-generation
+[^3_4]: <https://cloud.google.com/use-cases/retrieval-augmented-generation>
 
-[^3_5]: https://www.meilisearch.com/blog/graph-rag-vs-vector-rag
+[^3_5]: <https://www.meilisearch.com/blog/graph-rag-vs-vector-rag>
 
-[^3_6]: https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/
+[^3_6]: <https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/>
 
-[^3_7]: https://www.linkedin.com/posts/vaibhav-misra_llm-rag-obsidian-activity-7318860546349363200-R86G
+[^3_7]: <https://www.linkedin.com/posts/vaibhav-misra_llm-rag-obsidian-activity-7318860546349363200-R86G>
 
-[^3_8]: https://www.reddit.com/r/ObsidianMD/comments/1kd9iu7/lets_make_a_semantic_search_rag_based_chat_with/
+[^3_8]: <https://www.reddit.com/r/ObsidianMD/comments/1kd9iu7/lets_make_a_semantic_search_rag_based_chat_with/>
 
-[^3_9]: https://www.useparagon.com/blog/vector-database-vs-knowledge-graphs-for-rag
+[^3_9]: <https://www.useparagon.com/blog/vector-database-vs-knowledge-graphs-for-rag>
 
-[^3_10]: https://github.com/ashwin271/obsidian-vector-search
+[^3_10]: <https://github.com/ashwin271/obsidian-vector-search>
 
-[^3_11]: https://motherduck.com/blog/obsidian-rag-duckdb-motherduck/
+[^3_11]: <https://motherduck.com/blog/obsidian-rag-duckdb-motherduck/>
 
-[^3_12]: https://github.com/achekulaev/obsidian-qmd
+[^3_12]: <https://github.com/achekulaev/obsidian-qmd>
 
-[^3_13]: https://dev.to/gaston1balcarce/how-i-built-a-local-ai-assistant-for-obsidian-no-cloud-no-api-keys-a2k
+[^3_13]: <https://dev.to/gaston1balcarce/how-i-built-a-local-ai-assistant-for-obsidian-no-cloud-no-api-keys-a2k>
 
-[^3_14]: https://en.wikipedia.org/wiki/Retrieval-augmented_generation
-
+[^3_14]: <https://en.wikipedia.org/wiki/Retrieval-augmented_generation>
 
 ---
 
@@ -173,7 +168,6 @@ For local, free, open-source RAG pipelines, the strongest options are **LlamaInd
 - **Haystack:** Good if you want modular retrievers, rankers, evaluators, and a cleaner pipeline structure for production use [^4_3][^4_4].
 - **LangChain:** Good if you want the widest ecosystem and lots of integrations, especially for quick experimentation and glue code [^4_1][^4_2].
 - **RAGFlow:** Good if you want a more integrated RAG system with document understanding and a more guided setup [^4_3][^4_7].
-
 
 ## Local stack pieces
 
@@ -190,18 +184,18 @@ If you want the shortest path to a working local RAG system, start with **LlamaI
 
 <div align="center">⁂</div>
 
-[^4_1]: https://www.firecrawl.dev/blog/best-open-source-rag-frameworks
+[^4_1]: <https://www.firecrawl.dev/blog/best-open-source-rag-frameworks>
 
-[^4_2]: https://www.morphik.ai/blog/guide-to-oss-rag-frameworks-for-developers
+[^4_2]: <https://www.morphik.ai/blog/guide-to-oss-rag-frameworks-for-developers>
 
-[^4_3]: https://www.meilisearch.com/blog/rag-tools
+[^4_3]: <https://www.meilisearch.com/blog/rag-tools>
 
-[^4_4]: https://dev.to/vectorpodcast/7-ai-open-source-libraries-to-build-rag-agents-ai-search-27bm
+[^4_4]: <https://dev.to/vectorpodcast/7-ai-open-source-libraries-to-build-rag-agents-ai-search-27bm>
 
-[^4_5]: https://developers.llamaindex.ai/python/examples/low_level/oss_ingestion_retrieval/
+[^4_5]: <https://developers.llamaindex.ai/python/examples/low_level/oss_ingestion_retrieval/>
 
-[^4_6]: https://www.reddit.com/r/LocalLLaMA/comments/1eqec8v/an_extensive_open_source_collection_of_rag/
+[^4_6]: <https://www.reddit.com/r/LocalLLaMA/comments/1eqec8v/an_extensive_open_source_collection_of_rag/>
 
-[^4_7]: https://github.com/infiniflow/ragflow
+[^4_7]: <https://github.com/infiniflow/ragflow>
 
-[^4_8]: https://pub.towardsai.net/introduction-to-rag-basics-to-mastery-1-build-your-own-local-rag-pipeline-no-cloud-no-api-keys-162ccf9ebc20
+[^4_8]: <https://pub.towardsai.net/introduction-to-rag-basics-to-mastery-1-build-your-own-local-rag-pipeline-no-cloud-no-api-keys-162ccf9ebc20>
