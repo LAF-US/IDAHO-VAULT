@@ -4,4 +4,4 @@ related:
 - white nationalist
 ---
 
-white nationalist organization 
+white nationalist organization

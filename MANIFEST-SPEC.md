@@ -79,7 +79,6 @@ MCP is a transport/interface layer. Coordination remains manifest-driven.
 }
 ```
 
-
 ## Machine Validation
 
 - Canonical schema file: `manifest.schema.json`
@@ -153,6 +152,7 @@ Soft-locks are advisory but required by protocol.
 When lock contention exists, no parallel writes to same `file_path` are allowed.
 
 Winner priority:
+
 1. Existing active lock holder
 2. If simultaneous creation, lexicographic lowest `lock_id`
 

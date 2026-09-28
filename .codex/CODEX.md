@@ -1,9 +1,12 @@
+---
+title: CODEX
+---
 # CODEX.md - IDAHO-VAULT
 
 **Load mechanism:** Codex auto-loads `AGENTS.md` files in the Codex/global and project path. Project-scoped Codex config lives in `.codex/config.toml`. This `CODEX.md` file is a Codex-specific reference shim for this repo and may be injected manually by Logan.
 
 **Owner:** Logan Finney - journalist, producer/reporter, Idaho Reports / Idaho Public Television
-**Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
+**Repository:** github.com/LAF-US/IDAHO-VAULT (public)
 **Platform:** Obsidian.md vault, version-controlled with git
 
 ---
@@ -23,7 +26,7 @@ Prefer launching Codex for this vault through `scripts/Start-CodexVault.ps1` so 
 ## Role
 
 - Logan is human. Codex is software operating in a direct-write scripting role for scoped repo tasks. Logan decides; Codex executes within task boundaries.
-- Codex is "The Lexicographer" - code generation, refactoring, and automated transforms for vault automation scripts. Operates primarily on `.github/scripts/` and `.github/workflows/`, and may update other scoped Operational/Data files when Logan directs.
+- Codex is an OpenAI tool lineage with multiple distinct voices. The Lexicographer is a historical/vacant office, not inherited by this or any other Codex instance without Logan's appointment. Current delegated work remains direct-write scripting within scoped repo tasks.
 - Treat root governance files and the `!/` routing/bootstrap layer as Logan-directed and high-risk. Do not modify them unless Logan explicitly scopes that work. Does not merge without Logan's approval.
 
 ---
@@ -40,6 +43,8 @@ See `VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing pr
 
 - OpenAI developer docs MCP is configured in `.codex/config.toml` as `openaiDeveloperDocs`.
 - For OpenAI API, ChatGPT Apps SDK, or Codex-specific questions, use the OpenAI developer docs MCP first, then fall back to official OpenAI domains only if needed.
+- Codex CLI and Codex IDE should share `.codex/config.toml` as the project-scoped configuration surface unless Logan explicitly establishes a separate compatibility shim.
+- The vault's default multi-provider transport is OpenRouter compatibility mode for agent runtimes, not OpenAI-only transport. Keep that distinction explicit in docs and scripts so provider redundancy stays understandable.
 
 ---
 

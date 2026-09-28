@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Clark County courthouse 
+magistrate court Clark County courthouse

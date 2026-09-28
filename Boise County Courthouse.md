@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Boise County courthouse 
+magistrate court Boise County courthouse

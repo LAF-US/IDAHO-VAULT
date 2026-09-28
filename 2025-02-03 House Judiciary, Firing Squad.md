@@ -53,7 +53,7 @@ Just removes fine payment from threshold to petition the court for clean slate s
 
 “You still owe the fine, and hopefully you will be better able to pay it if you can actually get a job,” Rubel said.
 
-RS 32055 – Search authority – John Shirts 
+RS 32055 – Search authority – John Shirts
 
 When granted probation and parole, sign a waiver of search rights
 
@@ -87,7 +87,7 @@ AI can reproduce identifiable people’s voices. Recent article on surge of AI v
 
 HB 37 – Methods of execution (firing squad) – Skaug
 
-Skaug believes firing squad is more reliable, less susceptible to constitutional challenge than lethal injection 
+Skaug believes firing squad is more reliable, less susceptible to constitutional challenge than lethal injection
 
 Dianna David, Survivors Empowered, unclear where difference in funding will come from re: firing squad chamber. Bill would make Idaho only state with primary method of firing squad. Concerns for staff.
 

@@ -1,0 +1,15 @@
+---
+name: Bartimaeus / B
+description: Agent persona "Bartimaeus" signs vault notes as "-B" — identity confirmed by Logan 2026-03-30
+type: reference
+---
+
+**B = Bartimaeus.** Confirmed by Logan Finney on 2026-03-30.
+
+Bartimaeus has left editorial/structural comments in at least two core vault files:
+- `!README.md` — header/footer metadata and template format gaps
+- `!/CONSTITUTION.md` — questioned why tracked decisions remain in a hard-to-amend governance doc
+
+The Gemini/Bartimaeus signal was also referenced by Codex in the context of Linear LAF-17.
+
+Bartimaeus is **not currently listed in `!/AGENTS.md`** — registration status unknown.

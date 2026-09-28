@@ -6,4 +6,4 @@ related:
 - Sandpoint
 authority: LOGAN
 ---
-Sandpoint Bonner County alt-weekly newspaper 
+Sandpoint Bonner County alt-weekly newspaper

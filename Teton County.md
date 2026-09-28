@@ -10,6 +10,6 @@ related:
 - Victor
 authority: LOGAN
 ---
-Seat: Driggs 
-Municipalities: Victor, Tetonia 
-Communities: Bates, Felt, Clementsville, Cache, Darby 
+Seat: Driggs
+Municipalities: Victor, Tetonia
+Communities: Bates, Felt, Clementsville, Cache, Darby

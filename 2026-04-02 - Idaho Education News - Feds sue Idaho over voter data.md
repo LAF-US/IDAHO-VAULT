@@ -15,7 +15,7 @@ Idaho has joined other states resisting similar requests from the feds, who have
 
 The justification: ensuring election integrity and verifying voter eligibility.
 
-![](https://www.idahoednews.org/wp-content/uploads/2025/11/IMG_2179-2.jpg)
+![alt text needed](https://www.idahoednews.org/wp-content/uploads/2025/11/IMG_2179-2.jpg)
 
 Secretary of State Phil McGrane shows a ballot to the crowd of observers during a recount on Monday, Nov. 24, 2025, at the Elk’s Lodge in Mountain Home. (Sean Dolan/EdNews)
 

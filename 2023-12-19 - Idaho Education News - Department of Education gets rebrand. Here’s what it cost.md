@@ -45,7 +45,7 @@ The Department of Education paid the group $48,298.21. According to statements o
 - Monthly account and project management — $9,000
 - Research and discovery to better understand the department’s goals, consumers, brand perception and market insight — $5,000
 
-The department budgeted roughly $63,000 for the project but ultimately spent nearly $15,000 less than that, in part because a proposed redesign of the department’s website, estimated to cost about $10,000, did not take place. 
+The department budgeted roughly $63,000 for the project but ultimately spent nearly $15,000 less than that, in part because a proposed redesign of the department’s website, estimated to cost about $10,000, did not take place.
 
 Education department officials “determined that the scope of that work was not going to improve the site’s functionality to the degree that we had hoped,” Graf said.
 

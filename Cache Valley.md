@@ -10,6 +10,6 @@ related:
 - valley
 authority: LOGAN
 ---
-Franklin County, Idaho & Cache County, Utah 
+Franklin County, Idaho & Cache County, Utah
 
-valley 
+valley

@@ -5,4 +5,4 @@ related:
 - initialization
 ---
 
-Logan's initialization 
+Logan's initialization

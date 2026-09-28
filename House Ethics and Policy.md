@@ -4,4 +4,4 @@ related:
 - Idaho House of Representatives
 authority: LOGAN
 ---
-Idaho House of Representatives 
+Idaho House of Representatives

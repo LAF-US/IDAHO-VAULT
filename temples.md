@@ -5,4 +5,4 @@ related:
 - places of worship
 ---
 
-LDS Church places of worship 
+LDS Church places of worship

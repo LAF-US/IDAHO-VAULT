@@ -27,7 +27,7 @@ related:
 - voting
 authority: LOGAN
 ---
-David Pace, Post Register | Oct 27, 2023 Updated Oct 28, 2023 
+David Pace, Post Register | Oct 27, 2023 Updated Oct 28, 2023
 
 Three Bonneville County legislators — Rep. Wendy Horman, Rep. Stephanie Mickelsen, and Sen. Kevin Cook — have been requested to appear before a Legislative District 32 Committee to respond to allegations of violating the Republican Party Platform.
 
@@ -79,4 +79,4 @@ Whatever the committee decides, she said she will continue to represent those wh
 
 “You make the best decisions you can with the information that you have, after doing your homework. … I will continue to use the same process I have now to evaluate bills and make my voting decisions on behalf of all the people in my district,” Horman said.
 
-https://www.postregister.com/news/government/bonneville-gop-calls-state-legislators-on-the-carpet/article_ba17c794-7517-11ee-a8be-37b51c47620b.html
+<https://www.postregister.com/news/government/bonneville-gop-calls-state-legislators-on-the-carpet/article_ba17c794-7517-11ee-a8be-37b51c47620b.html>

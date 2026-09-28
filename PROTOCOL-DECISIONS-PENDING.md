@@ -32,7 +32,7 @@ Six overlaps in `PROTOCOL.md` require LOGAN's direction. For each: the question,
 **Recommendation:** Natural flow. CONSULT is the request; ADVISE is the response. They're a paired action, not competing terms.
 
 | Option | Description |
-|---|---|
+| --- | --- |
 | **A: Paired flow (recommended)** | CONSULT = "I'm asking." ADVISE = "I'm answering." One naturally triggers the other. An agent CONSULTs a source; that source ADVISEs back. Both logged if persistent. |
 | **B: Strict separation** | CONSULT is always information-seeking (no opinion). ADVISE is always opinion-giving (may be unsolicited). An agent can ADVISE without being CONSULTed. |
 | **C: Merge into one term** | Drop CONSULT, keep ADVISE. All advisory interactions are just ADVISE. Simpler vocabulary. |
@@ -48,7 +48,7 @@ Six overlaps in `PROTOCOL.md` require LOGAN's direction. For each: the question,
 **Recommendation:** Distinguish by source type and certainty.
 
 | Option | Description |
-|---|---|
+| --- | --- |
 | **A: Source-type distinction (recommended)** | SEARCH = query against structured data (API, index, database). CONSULT = query against advisory/knowledge source (another agent, documentation, LLM). FIND = successful resolution of either. |
 | **B: Certainty distinction** | SEARCH = I know what I'm looking for. CONSULT = I'm exploring / uncertain what exists. FIND = I got it. |
 | **C: Drop FIND** | FIND is just a successful SEARCH/CONSULT. Don't need a separate term for the outcome — log it as SEARCH (result: found) or SEARCH (result: not found). |
@@ -64,7 +64,7 @@ Six overlaps in `PROTOCOL.md` require LOGAN's direction. For each: the question,
 **Recommendation:** Strict ladder with escalating audit requirements.
 
 | Option | Description |
-|---|---|
+| --- | --- |
 | **A: Strict ladder (recommended)** | DELETE = soft removal, recoverable, minimal audit. SUNSET = scheduled deactivation with transition period, logged with timeline. DESTROY = permanent, irrevocable, requires pre-approval and full audit trail. |
 | **B: Audit trail for all** | All three require audit logging. Differ only in recoverability: DELETE (recoverable) → SUNSET (time-delayed permanent) → DESTROY (immediate permanent). |
 | **C: Merge DELETE and SUNSET** | DELETE = soft. DESTROY = permanent. SUNSET is just a scheduled DELETE — no separate term needed. |
@@ -80,7 +80,7 @@ Six overlaps in `PROTOCOL.md` require LOGAN's direction. For each: the question,
 **Recommendation:** Storage obligation is the bright line.
 
 | Option | Description |
-|---|---|
+| --- | --- |
 | **A: Storage obligation (recommended)** | NOTICE = observation with no storage requirement. May be logged ephemerally (console, Slack) but creates no retrievable record. NOTE = observation with explicit storage requirement. Must produce a file, log entry, or other retrievable artifact. |
 | **B: Formality distinction** | NOTICE = informal, passing. NOTE = formal, deliberate. Both may or may not be stored depending on context. |
 | **C: Drop NOTICE** | Everything worth recording is a NOTE. If it's not worth recording, don't name it. Simpler vocabulary. |
@@ -96,7 +96,7 @@ Six overlaps in `PROTOCOL.md` require LOGAN's direction. For each: the question,
 **Recommendation:** Strict separation by record existence.
 
 | Option | Description |
-|---|---|
+| --- | --- |
 | **A: Existence-based distinction (recommended)** | INGEST = record doesn't exist yet; create it (partial or complete). HYDRATE = record already exists; enrich it with additional data. The question is: "Does the record exist?" If no → INGEST. If yes → HYDRATE. |
 | **B: Completeness-based** | INGEST = create a complete record from external source. HYDRATE = fill in missing fields on an incomplete record. INGEST must be complete; HYDRATE patches gaps. |
 | **C: Merge into INGEST** | INGEST handles both creation and enrichment. Use metadata to distinguish first-time vs. update. Simpler vocabulary. |
@@ -112,7 +112,7 @@ Six overlaps in `PROTOCOL.md` require LOGAN's direction. For each: the question,
 **Recommendation:** Distinguish by agency.
 
 | Option | Description |
-|---|---|
+| --- | --- |
 | **A: Agency distinction (recommended)** | WATCH = agent actively polls or inspects on a schedule (pull). LISTEN = agent passively receives events/signals when they arrive (push). WATCH requires initiative; LISTEN requires registration. |
 | **B: Duration distinction** | WATCH = sustained, continuous. LISTEN = event-triggered, intermittent. Both can be pull or push. |
 | **C: Merge into MONITOR** | Drop both. Use MONITOR for all sustained observation. Distinguish pull vs. push in metadata, not in the term. |
@@ -121,11 +121,29 @@ Six overlaps in `PROTOCOL.md` require LOGAN's direction. For each: the question,
 
 ---
 
+---
+
+## Named But Undefined Protocols
+
+Protocols named in vault discussion or PR commits but lacking a defined surface. Awaiting LOGAN's definition pass.
+
+### PULLMAN
+
+Two distinct referents — both pinned but neither yet defined as protocol:
+
+- **Pullman Company** — railroad car manufacturer; transportation vessel. The reference in PR #227 (`antigravity/pullman-oidc-pipeline`) and the AFFABLE BASTION OIDC pipeline uses this sense — a carrier for sync traffic.
+- **Philip Pullman** — author of *His Dark Materials* (Lyra cosmology, the subtle knife, Dust). Referenced indirectly via existing vault doctrine on threshold-crossing and the subtle-knife intrinsic-fitness model (see `!/THRESHOLD-DOCTRINE-v1-2026-05-21.md`).
+
+Pinned 2026-05-28 by LOGAN. Awaits LOGAN's definition pass when LAF-USB schema work surfaces.
+
+---
+
 ## HOW TO USE THIS DOCUMENT
 
 Logan: for each ambiguity, pick A, B, or C (or propose D). CODE AUTHORITY will update `PROTOCOL.md` with the finalized definitions and remove the corresponding entry from this file. When all 6 are resolved, this file gets archived.
 
 Quick-fire format if you're short on time:
+
 ```
 1: A
 2: A

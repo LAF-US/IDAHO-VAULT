@@ -5,5 +5,6 @@ related:
 - Sandpoint
 authority: LOGAN
 ---
-Hometown: Sandpoint 
+Hometown: Sandpoint
+
 - Reclaim Idaho cofounder

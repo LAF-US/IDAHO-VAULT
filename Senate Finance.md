@@ -17,7 +17,9 @@ authority: LOGAN
 Senate side of Joint Finance-Appropriations Committee
 
 # Roster
+
 ## 2023 Members
+
 - C. Scott Grow Chair
 - Carl Bjerke Vice Chair
 - Van Burtenshaw

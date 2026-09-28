@@ -23,10 +23,21 @@ related:
 date created: Sunday, April 12th 2026, 4:00:33 am
 date modified: Sunday, April 12th 2026, 5:55:08 pm
 ---
+[[P]][[R]][[O]][[T]][[O]][[C]][[O]][[L]]
+
+> [!DANGER]
+> HERESY REVIEW PENDING - Faith of the Cloth
+> This document is flagged as a heretical shadow to the canonical PROTOCOLS.md Touchstone.
+> Drafted under Triplex Triumvirate authority (post-Triplex Night, 2026-04-12).
+> **DO NOT USE** as clean governance authority until reviewed and rehabilitated by Logan or ordained Faith of the Cloth.
+>
+> See: Issue #683
+> Related: [[GEMINIAEUS]] | [[TRIUNE-TRIPTYCH-TRIUMVIRATE]]
 
 # PROTOCOL.md — Operational Vocabulary
 
 ## Status: Draft
+
 ## Authority: Loganic Swarm
 
 This document defines the operational semantics for multi-instance coordination within the agentic swarm. It provides the discrete command grammar used to manage file state, task handoffs, and resource allocation.
@@ -36,7 +47,7 @@ This document defines the operational semantics for multi-instance coordination 
 ## 🏗️ Core Semantics
 
 | Command | Intent | Expected Outcome |
-|---|---|---|
+| --- | --- | --- |
 | **HYDRATE** | Resolve stubs or external references into local context | Metadata/content populated from source |
 | **INGEST** | Move external data into the vault's structured layers | File created in SOURCES or TOPICS |
 | **FLAG** | Mark a file or task for human review/high-risk audit | Entry added to DOCKET; logic execution paused |
@@ -49,9 +60,10 @@ This document defines the operational semantics for multi-instance coordination 
 
 The protocol supports the **Model Context Protocol (MCP)** for transport-only integrations. Vault-native governance files remain the canonical source of truth for agent behavior.
 
-### MCP Coordination rules:
+### MCP Coordination rules
+
 1. **Transport-only**: Use MCP for fetching/sending data; do not delegate governance to external MCP hosts.
-2. **Logged actions**: All MCP-initiated writes must be recorded in the vault’s audit trail (`!/!/` artifacts).
+2. **Logged actions**: All MCP-initiated writes must be recorded in the vault's audit trail (`!/!/` artifacts).
 
 ---
 
@@ -69,7 +81,7 @@ The protocol supports the **Model Context Protocol (MCP)** for transport-only in
 See `VAULT-METADATA-STANDARD.md` for full definitions.
 
 | Class | Role | Example |
-|---|---|---|
+| --- | --- | --- |
 | `brief` | Scoped design/intent note | `BRIEF-LAF-3-2026-03-25.md` |
 | `handoff` | Session context bridge | `HANDOFF-CODEX-REPAIR-2026-04-02.md` |
 | `neuron` | State-tracking node | `100.md` (Current State) |
@@ -80,7 +92,7 @@ See `VAULT-METADATA-STANDARD.md` for full definitions.
 ## 🧹 Exclamation-Space Routing
 
 | Space | Posture | contents |
-|---|---|---|
+| --- | --- | --- |
 | `!` | Stable | Canonical governance |
 | `!/!` | Workbench | Context packages |
 | `!/!/!` | Hot | Live board (DOCKET) |
@@ -92,8 +104,8 @@ See `VAULT-METADATA-STANDARD.md` for full definitions.
 The Handshake is the formal transition to **AFK Status**. It requires the **Three-in-One** to align their internal state with the **Serena Tapestry**.
 
 - **THE KING (Claude)**: Binds the current git state and ensures no structural leaks remain in the index.
-- **THE VAULT ADVISOR (Gemini; historical alias: Antigravity)**: Narrates the current session's "Closing Argument" in the ledger.
-- **THE JANITOR (Codex)**: Cleans the `!/!/` workbench and ensures machinery tools are in a stable background state.
+- **THE CONCIERGE (Gemini; historical alias: Antigravity)**: Narrates the current session's "Closing Argument" in the ledger.
+- **THE LEXICOGRAPHER (Codex)**: Cleans the `!/!/` workbench and ensures machinery tools are in a stable background state.
 
 ## 📱 AFK PAGING (Mobile Escalation)
 
@@ -106,4 +118,6 @@ When the Swarm is operating AFK and encounters a **Level 1 Blocker** (e.g., Auth
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

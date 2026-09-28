@@ -5,4 +5,4 @@ related:
 - Senate member
 authority: LOGAN
 ---
-former Senate member for LD19 
+former Senate member for LD19

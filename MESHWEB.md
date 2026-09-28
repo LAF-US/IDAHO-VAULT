@@ -30,7 +30,7 @@ This is the same class of problem NETWEB solved for filenames — different runt
 ## Runtime Environments
 
 | Environment | ID | Description |
-|---|---|---|
+| --- | --- | --- |
 | Logan's Windows Desktop | `local` | Full machine access — `op` CLI, SSH agent, npm, MCP server process spawning, Obsidian |
 | Cloud Claude Code (claude.ai/code) | `cloud` | Sandboxed agent — repo clone + npm available; no `op`, no SSH, no local process spawning beyond the sandbox |
 | GitHub Actions CI | `ci` | Ephemeral runner — `op` via `OP_SERVICE_ACCOUNT_TOKEN`, npm, git; no interactive input, no Logan's local config |
@@ -40,7 +40,7 @@ This is the same class of problem NETWEB solved for filenames — different runt
 ## Capability Map
 
 | Capability | `local` | `cloud` | `ci` |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `op` CLI (1Password) | ✅ (after setup) | ❌ | ✅ (via service account) |
 | `op://` secret references | ✅ (after setup) | ❌ | ✅ (via `op run`) |
 | SSH agent / git signing | ✅ | ❌ | ❌ |
@@ -69,7 +69,7 @@ Any config file, workflow, or script that is **not portable across all three env
 When a capability is unavailable in an environment, document the substitution:
 
 | Capability Gap | `local` pattern | Cloud substitute | CI substitute |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `op://` secret resolution | `op run -- <cmd>` | env var injected by Anthropic cloud infrastructure (if supported) OR manual paste by Logan | `OP_SERVICE_ACCOUNT_TOKEN` → `op item get` in workflow step |
 | Linear API access | MCP server (`linear-mcp-server`) | Linear REST API via `curl` / SDK in script | Linear REST API via `curl` / SDK in workflow step |
 | Vault filesystem writes | Claude Code file tools | Claude Code file tools (repo clone) | `git` commit in workflow |
@@ -80,10 +80,43 @@ When a capability is unavailable in an environment, document the substitution:
 Env-scoped artifacts are listed below. Agents must check this registry before creating configs that use environment-specific capabilities.
 
 | Artifact | Env scope | Gap documented | Substitute |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `.mcp.json` | `local` | ✅ | Cloud: no MCP server spawn; use Linear REST or Logan pastes content |
 | `.op/SETUP.md` | `local` | ✅ (template, pending Logan execution) | CI: `OP_SERVICE_ACCOUNT_TOKEN` in GitHub Secrets |
 | `.github/workflows/1password-secret-template.yml` | `ci` | ✅ | Local: `op item get` directly |
+| ChatGPT mobile -> Codex remote control | unavailable for current Windows/Mac pair | ✅ | Use GitHub issues/PR comments/Actions, OpenClaw/Hermes bridge, or external remote desktop/terminal tooling |
+
+---
+
+## Mobile Codex Remote-Control Boundary — 2026-05-21
+
+Current official OpenAI pathfinding records a real host-surface wall for this
+machine pair:
+
+- Windows Codex Desktop is not documented as a ChatGPT mobile remote-control
+  host.
+- Mac Codex app hosting is the documented route, but Logan's current Mac OS is
+  too old for the supported desktop client.
+- Codex CLI and IDE extension surfaces are not valid substitutes for the
+  official mobile setup path.
+
+Conclusion: ChatGPT mobile Codex remote control is not currently available for
+Logan's Windows + older-Mac machine pair through the official OpenAI path.
+
+This must not be described as "configured but failing" or solved by guessing at
+CLI flags. It is a product-surface mismatch.
+
+Viable substitutes, explicitly not the same feature:
+
+- GitHub as the mobile command surface: issues, PR comments, Actions, and
+  cloud task surfaces where available.
+- OpenClaw/Hermes as Logan's controlled bridge with scoped authority and audit.
+- External remote desktop or terminal tooling outside Codex.
+- Future official support for Windows hosting or older-macOS hosting, if
+  OpenAI adds it.
+
+MESHWEB rule: record the unavailable official route and the substitute, rather
+than papering over the gap with an undocumented local assumption.
 
 ---
 
@@ -102,7 +135,7 @@ Env-scoped artifacts are listed below. Agents must check this registry before cr
 ## Enforcement
 
 | Layer | Mechanism | Scope |
-|---|---|---|
+| --- | --- | --- |
 | MESHWEB Registry (this file) | Manual audit by agents + Logan | Preventive |
 | Agent discipline | Read MESHWEB before writing env-scoped configs | Preventive |
 | CI gate | TBD — `check-meshweb-scope.yml` (future) | Hard gate (not yet implemented) |
@@ -112,7 +145,7 @@ Env-scoped artifacts are listed below. Agents must check this registry before cr
 ## Relationship to NETWEB
 
 | | NETWEB | MESHWEB |
-|---|---|---|
+| --- | --- | --- |
 | Dimension | Filesystem platform portability | Runtime environment portability |
 | Problem | `AUX.md` fails on NTFS | `op run` fails in cloud |
 | Solution | `_AUX.md` + `aliases: [AUX]` | Registry + substitution table + env annotation |

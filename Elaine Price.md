@@ -10,5 +10,6 @@ related:
 authority: LOGAN
 ---
 Residence: Coeur d'Alene
+
 - House member for Legislative District 4 after redistricting
-- Kootenai County Republican Central Committee treasurer 
+- Kootenai County Republican Central Committee treasurer

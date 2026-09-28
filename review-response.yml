@@ -1,0 +1,63 @@
+name: Agent Review Response
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+permissions:
+  pull-requests: write
+  issues: write
+  # contents: write is required to enable merge-queue auto-merge
+  # (enablePullRequestAutoMerge is gated like resolveReviewThread, #546). The
+  # review-submitted path arms eligible, non-protected-path PRs when a review clears
+  # the last block (#521/#527 reversal, 2026-06-17).
+  contents: write
+
+jobs:
+  sync-review-state:
+    # One run per PR, newest wins. Every review-comment REPLY submits its own
+    # review, so answering N threads fires N `submitted` events, and each run
+    # calls `_fetch_pr` -- `reviewThreads(first: 100) { comments(first: 100) }`,
+    # up to 10k nodes, which GitHub's GraphQL limiter bills by node count. Three
+    # replies on #904 cost three full graph fetches within 27 seconds and all
+    # three failed `RATE_LIMIT` once the account's hourly budget was spent.
+    #
+    # Cancelling is safe because this job RECOMPUTES derived state from the PR
+    # as it currently stands -- it does not consume the review event's payload
+    # as a delta. A cancelled run's work is redone, from fresher input, by the
+    # run that replaced it. That is exactly the shape cancel-in-progress is for.
+    concurrency:
+      group: sync-review-state-${{ github.event.pull_request.number }}
+      cancel-in-progress: true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout trusted workflow surfaces
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Recompute derived review state
+        # The arm actor becomes the future enqueue actor, and GITHUB_TOKEN-actored
+        # events never dispatch workflow runs (GitHub anti-recursion) — prefer the
+        # user-scoped MERGE_QUEUE_TOKEN so armed PRs enqueue with a dispatching actor.
+        env:
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          REVIEW_AUTHOR: ${{ github.event.review.user.login }}
+          REVIEW_ID: ${{ github.event.review.id }}
+          REVIEW_STATE: ${{ github.event.review.state }}
+        run: |
+          python3 .github/scripts/review_feedback_loop.py \
+            review-submitted \
+            --owner "$OWNER" \
+            --repo "$REPO" \
+            --pr-number "$PR_NUMBER" \
+            --pr-author "$PR_AUTHOR" \
+            --pr-url "$PR_URL" \
+            --review-author "$REVIEW_AUTHOR" \
+            --review-id "$REVIEW_ID" \
+            --review-state "$REVIEW_STATE"

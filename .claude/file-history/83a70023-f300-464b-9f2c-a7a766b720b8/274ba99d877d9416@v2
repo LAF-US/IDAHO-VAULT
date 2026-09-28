@@ -1,0 +1,13 @@
+# MEMORY INDEX
+
+Memory for the IDAHO-VAULT Claude Code session. Read relevant files before answering.
+
+| File | Type | Description |
+|---|---|---|
+| [user_logan.md](user_logan.md) | user | Logan Finney — role, profession, collaboration style, what he values |
+| [project_vault_state.md](project_vault_state.md) | project | IDAHO-VAULT architecture, multi-agent ecosystem, current status and blockers |
+| [feedback_operations.md](feedback_operations.md) | feedback | Operational principles, four failure modes (fabrication, confabulation, etc.), rules |
+| [feedback_agent_signatures.md](feedback_agent_signatures.md) | feedback | Agents sign their work in vault files — do not flag or remove signatures |
+| [reference_vault_locations.md](reference_vault_locations.md) | reference | Key file paths, external coordination systems, orientation protocol |
+| [feedback_swarm_lane_boundaries.md](feedback_swarm_lane_boundaries.md) | feedback | Copilot owns PR creation/management; terminal Claude stays in inspect/diagnose/draft lane |
+| [feedback_path_fixes.md](feedback_path_fixes.md) | feedback | PATH issues are a recurring annoyance — fix silently via ~/.bashrc, do not re-diagnose |

@@ -5,4 +5,4 @@ related:
 - Payette County
 authority: LOGAN
 ---
-Fruitland, Payette County 
+Fruitland, Payette County

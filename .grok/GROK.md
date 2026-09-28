@@ -1,3 +1,6 @@
+---
+title: GROK
+---
 # GROK.md — IDAHO-VAULT
 
 **Load mechanism:** This file is NOT officially auto-loaded by any xAI Grok product. It must be manually provided by Logan — pasted into a chat session. Convention follows community practice; treat as manual injection until xAI publishes official CLI dotfolder spec.

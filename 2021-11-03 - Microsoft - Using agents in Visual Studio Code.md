@@ -38,7 +38,7 @@ Screenshot of an agent session in VS Code showing code changes and chat interact
 
 > [!note] Note
 > Tip
-> 
+>
 > Enable agents in your VS Code settings (). Your organization might also disable agents - contact your admin to enable this functionality.
 
 ## Types of agents

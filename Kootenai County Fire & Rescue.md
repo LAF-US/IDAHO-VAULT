@@ -5,4 +5,4 @@ related:
 - fire
 authority: LOGAN
 ---
-fire protection district in Kootenai County 
+fire protection district in Kootenai County

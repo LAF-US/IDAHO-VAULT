@@ -117,7 +117,9 @@ authority: LOGAN
 ---
 State of Idaho affiliate of the U.S. Republican Party
 Chair: Dorothy Moon
+
 ### County Central Committees
+
 - Ada County Republican Central Committee
 - Adams County Republican Central Committee
 - Bannock County Republican Central Committee

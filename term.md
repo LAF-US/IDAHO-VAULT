@@ -5,4 +5,4 @@ related:
 - word
 ---
 
-synonym : word 
+synonym : word

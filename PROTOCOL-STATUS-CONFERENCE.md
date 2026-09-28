@@ -23,6 +23,7 @@ related:
 ---
 
 # PROTOCOL: STATUS CONFERENCE
+
 ## *The Gate Before the Trial*
 
 **Status:** DRAFT — awaiting Logan's review and adoption
@@ -40,7 +41,7 @@ related:
 In civil and criminal court procedure, a **status conference** is a scheduled pre-trial meeting between the judge and parties. It happens *after* a case is filed but *before* trial begins. Its purpose:
 
 | Function | What It Resolves |
-|---|---|
+| --- | --- |
 | Readiness check | Are all parties prepared to proceed? |
 | Issue identification | What procedural disputes must be settled first? |
 | Scope agreement | What will actually be litigated? |
@@ -61,6 +62,7 @@ THE COURTROOM is already named in THE DOCKET:
 > *"Any agent arriving at THE COURTROOM reads this file to orient."*
 
 The vault already operates with courtroom logic:
+
 - Logan is the principal — the judge
 - Agents are parties and officers of the court
 - The DOCKET is the case management board
@@ -77,7 +79,7 @@ What is missing is the **status conference gate** — a structured pre-flight re
 
 A STATUS CONFERENCE must be held before:
 
-1. **AGENT TRIAL** — activating a new agent persona for the first time; giving an advisory agent direct-write access for the first time; onboarding any new agent into the TRIPLEX lane map
+1. **AGENT TRIAL** — activating a new agent persona for the first time; giving an advisory agent direct-write access for the first time; onboarding any new agent into the vault.
 2. **BETA TEST** — running a new automation script (workflow, Python tool, crew) in a live environment for the first time; deploying a new CI pipeline job; activating a new CrewAI crew in production mode
 
 > **Exception:** Read-only discovery, dry-run executions with `--dry-run` flag, and stub/placeholder activations do not require a formal STATUS CONFERENCE. They are pre-conference reconnaissance.
@@ -93,14 +95,14 @@ A STATUS CONFERENCE is complete when all items below are answered in writing bef
 - [ ] What is the name of the agent, crew, or system being trialed?
 - [ ] What is the declared scope of this trial? (What will it do? What will it NOT do?)
 - [ ] What Linear issue or GitHub issue tracks this trial? (Required. No trial without a ticket.)
-- [ ] Which vault lane does this agent/system own? (Per the TRIPLEX lane map in `!/AGENTS.md`)
+- [ ] Which vault lane does this agent/system own? (Per the agent registry in `!/AGENTS.md`)
 
 ### B. Readiness
 
 - [ ] Has the agent's bootstrap record been verified in `swarm.json`?
 - [ ] Is the required context bundle present and readable?
 - [ ] Have all dependencies been confirmed available (API keys, secrets, filesystem access)?
-- [ ] Has a COLLISION CHECK been run against existing workflows? (Per PROTOCOL-XKCD-DRAFT § "Protocol 3: COLLISION CHECK")
+- [ ] Has a collision check been run against existing workflows? (Plain-language requirement: identify overlapping readers/writers before activating new automation.)
 - [ ] Is the git working tree clean, or has the relevant branch been identified?
 
 ### C. Evidence & Observability
@@ -129,11 +131,12 @@ Every STATUS CONFERENCE must produce a written record committed to the vault bef
 
 ### Filename Pattern
 
-```
+```text
 STATUS-CONFERENCE-[SUBJECT]-[YYYY-MM-DD].md
 ```
 
 Example:
+
 ```
 STATUS-CONFERENCE-JFAC-CREW-2026-04-10.md
 STATUS-CONFERENCE-VAULT-CUSTODIAN-BETA-2026-04-12.md
@@ -180,9 +183,9 @@ Status conference records go in the vault root. They are governance artifacts, n
 ## VI. RELATIONSHIP TO EXISTING PROTOCOLS
 
 | Existing Protocol | Relationship to STATUS CONFERENCE |
-|---|---|
+| --- | --- |
 | **AGENT-PROTOCOL** (`AGENT-PROTOCOL.md`) | Defines bootstrap phases for registered agents. STATUS CONFERENCE runs *before* first activation of a new agent. |
-| **XKCD / COLLISION CHECK** | COLLISION CHECK is a required item on the STATUS CONFERENCE checklist. |
+| **Collision check** | A plain-language collision check is a required item on the STATUS CONFERENCE checklist. It does not depend on adopting any XKCD draft. |
 | **MCP Phase Gates** | Phase 0 → 1 gate in MCP-IMPLEMENTATION-PLAN.md is an example of an informal status conference. This protocol formalizes that gate for all trials. |
 | **LEVELSET** | LEVELSET captures state *after* a session. STATUS CONFERENCE captures readiness *before* a trial. They are complements. |
 | **FLAG** | If a STATUS CONFERENCE item cannot be completed, raise a FLAG (severity: MEDIUM or HIGH) and do not proceed to trial. |
@@ -220,4 +223,6 @@ Status conference records go in the vault root. They are governance artifacts, n
 
 ---
 
-###### "The world is quiet here."
+```text
+The world is quiet here．Esto Perpetua!
+```

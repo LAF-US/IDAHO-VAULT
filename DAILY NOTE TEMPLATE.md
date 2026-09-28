@@ -1,30 +1,30 @@
+<%* const d = moment(tp.file.title, "YYYY-MM-DD") -%>
+
 ---
-title: 2026-04-09
+title: <% moment(tp.file.title, "YYYY-MM-DD").format("YYYY-MM-DD") %>
 aliases:
-  - 2026-04-09
-  - April 9, 2026
-  - April 9th, 2026
-  - 9 April 2026
-  - Thursday, April 9, 2026
-linter-yaml-title-alias: 2026-04-09
-yesterday: 2026-04-08
-tomorrow: 2026-04-10
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("YYYY-MM-DD") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("MMMM D, YYYY") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("MMMM Do, YYYY") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("D MMMM YYYY") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("dddd, MMMM D, YYYY") %>
+period: day
+linter-yaml-title-alias: <% moment(tp.file.title, "YYYY-MM-DD").format("YYYY-MM-DD") %>
+yesterday: <% moment(tp.file.title, "YYYY-MM-DD").subtract(1,"d").format("YYYY-MM-DD") %>
+tomorrow: <% moment(tp.file.title, "YYYY-MM-DD").add(1,"d").format("YYYY-MM-DD") %>
 weekday:
-  - Thursday
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("dddd") %>
 cssclasses:
-  - roygbiv-thu
+  - roygbiv-<% moment(tp.file.title, "YYYY-MM-DD").format("ddd").toLowerCase() %>
 tags:
   - today
-  - 2026/04/09
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("YYYY/MM/DD") %>
   - dailynote
-date created: Thursday, April 9th 2026, 12:00:00 am
-date modified: Thursday, April 9th 2026, 12:00:00 am
+date created: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
+date modified: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
+
 ---
 
+## Daily Queue
+
 [[TO DO LIST]]
-- WORK
-- []
-- PERSONAL
-- []
-- VAULT
-- []

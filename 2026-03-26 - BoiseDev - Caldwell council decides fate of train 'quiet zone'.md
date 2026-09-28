@@ -7,7 +7,7 @@ created: 2026-04-07
 ---
 ## Caldwell council decides fate of train ‘quiet zone’
 
-![](https://boisedev.com/wp-content/uploads/2026/03/caldwell-grapples-with-quiet-zones-adding-pedestrian-safety-measures-Screenshot-2026-03-0.jpeg)
+![alt text needed](https://boisedev.com/wp-content/uploads/2026/03/caldwell-grapples-with-quiet-zones-adding-pedestrian-safety-measures-Screenshot-2026-03-0.jpeg)
 
 An image shows one type of pedestrian crossing that could be installed as part of the City of Caldwell's train quiet zone. Screenshot: Via City of Caldwell
 

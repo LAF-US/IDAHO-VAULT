@@ -4,4 +4,4 @@ related:
 - fish
 ---
 
-harvesting fish 
+harvesting fish

@@ -4,4 +4,4 @@ related:
 - Blackfoot
 authority: LOGAN
 ---
-Blackfoot, Bingham County 
+Blackfoot, Bingham County

@@ -4,4 +4,4 @@ related:
 - Fairfield
 authority: LOGAN
 ---
-Fairfield, Camas County 
+Fairfield, Camas County

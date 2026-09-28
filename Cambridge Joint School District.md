@@ -5,4 +5,4 @@ related:
 - Washington County
 authority: LOGAN
 ---
-Cambridge, Washington County 
+Cambridge, Washington County

@@ -1,0 +1,166 @@
+# Plan: Formalize Agent Instruction File Governance
+
+## Context
+
+Logan wants agent instruction files done "by the book" for optimal swarm coherence.
+The three agent-facing files (`CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`)
+have inconsistent structure, duplicated content, and one false claim. This plan
+surgically aligns all three to a standard thin-shim pattern that defers to
+`!/CONSTITUTION.md` as the single source of governance truth.
+
+**CONSTITUTION.md gaps are flagged separately** — they are Constitutional zone and
+require Logan's direct direction, not agent action.
+
+---
+
+## Standard Pattern (applies to all three files)
+
+Every agent instruction file follows this block structure in order:
+
+1. **Load Mechanism** — honest statement of how the file reaches the agent
+2. **Identity Header** — owner / repo / platform (identical across all files)
+3. **Constitutional Reference** — defers to `!/CONSTITUTION.md`; declares capability tier per `!/AGENTS.md`
+4. **Role** — one paragraph: persona name, what agent does, what it does not do
+5. **Operational Pointers** — DOCKET path; pointer to `!/VAULT-CONVENTIONS.md` (not duplicated content)
+6. **See Also** — flat cross-link list
+
+Target: 30–50 lines per file. No content that duplicates `!/VAULT-CONVENTIONS.md`.
+
+---
+
+## Pre-Flight: Conversation Taxonomy
+
+The Conversation Taxonomy table (PERMANENT / PERSISTENT / TASK / STORY / PROJECT /
+ISSUE / INQUIRY prefixes) currently exists **only** in `CLAUDE.md` and `GEMINI.md`.
+It is not in `!/VAULT-CONVENTIONS.md` or `!/PROTOCOL.md`.
+
+Before removing it from both files, it must land in its canonical home:
+**add it to `!/VAULT-CONVENTIONS.md`** under a new `## Conversation Taxonomy` section.
+This is the pre-flight step — execute before touching the agent files.
+
+---
+
+## File 1: `CLAUDE.md`
+
+**Nature:** Genuine auto-load — Claude Code CLI reads this file by filename from repo root.
+
+**Remove:**
+
+- `## Role` section — governance doctrine; belongs in `!/CONSTITUTION.md` and `!/AGENTS.md`
+- `## Conversation Taxonomy` section — moving to `!/VAULT-CONVENTIONS.md` (pre-flight)
+- `## Swarm Coordination` section header — reduce to a single pointer line in Block 5
+- `## Multi-Agent Ecosystem` section — ecosystem doctrine; reduce to See Also list
+
+**Keep unchanged:**
+
+- Auto-load statement (line 4)
+- Owner / repo / platform block
+- `## Governance` block ("when this file conflicts with CONSTITUTION.md, CONSTITUTION.md governs") — promote to Block 3
+- `## Automation` table — genuinely Claude Code-specific; no other agent runs scripts
+
+**Add:**
+
+- Explicit capability tier: "Direct Write capability tier per `!/AGENTS.md`"
+- Tighten auto-load statement: Claude Code CLI auto-loads `CLAUDE.md` by filename from repo root
+
+**Result:** ~40 lines (down from 71)
+
+---
+
+## File 2: `GEMINI.md`
+
+**Nature:** NOT auto-loaded. Gemini has no native equivalent of `CLAUDE.md`.
+Must be manually provided by Logan (pasted into chat or injected via context mechanism).
+
+**Fix (highest priority):** Line 3 falsely claims "loaded automatically by Gemini code
+agent sessions." Replace with honest load mechanism statement.
+
+**Remove** (all duplicate `!/VAULT-CONVENTIONS.md` content):
+
+- `## Vault Structure` — full directory tree
+- `## Naming Conventions` — table
+- `## Frontmatter Conventions` — all four schemas
+- `## Wikilinks`, `## File Types`, `## Automation`, `## Sourcing Protocol`, `## Git Practices` — all duplicates
+- `## Conversation Taxonomy` — moving to `!/VAULT-CONVENTIONS.md` (pre-flight)
+- `## Multi-Agent Ecosystem` — reduce to See Also
+- `## Guiding Principles` — duplicate
+- `## LEVELSET Protocol` and `## Decision Log` — stale paths (`!ADMINISTRATION/` no longer exists)
+
+**Keep:**
+
+- `## Role` — "The Vault Advisor" persona is genuinely Gemini-specific
+- DOCKET pointer — reduce to Block 5 pointer line
+
+**Add:**
+
+- Honest load mechanism (Block 1)
+- Constitutional reference + capability tier: Advisory tier, scope pending Logan's direction
+- Pointer to `!/VAULT-CONVENTIONS.md` (replaces all removed duplicated content)
+- Manual injection note: "If Logan has not pasted relevant vault excerpts, ask — do not invent structure"
+
+**Result:** ~35 lines (down from 225)
+
+---
+
+## File 3: `.github/copilot-instructions.md`
+
+**Nature:** Genuine auto-load — GitHub Copilot reads this file by path natively.
+
+**Keep unchanged:**
+
+- Auto-load statement
+- Owner / repo / platform block
+- `## Role` — "The Clerk" persona is correct and Copilot-specific
+- `## Scope` — can/cannot list is the file's strongest asset; satisfies Decision #10; keep verbatim
+
+**Add:**
+
+- Block 3 Constitutional reference: "When this file and `!/CONSTITUTION.md` conflict, `!/CONSTITUTION.md` governs"
+- Capability tier: "Multi-Repo Admin capability tier per `!/AGENTS.md`"
+
+**Fix:**
+
+- Path to VAULT-CONVENTIONS.md: currently says "repo root" — correct to `!/VAULT-CONVENTIONS.md`
+
+**Result:** ~50 lines (up slightly from 45, gains constitutional reference)
+
+---
+
+## Files Changed
+
+| File | Change type | Lines before → after |
+| --- | --- | --- |
+| `!/VAULT-CONVENTIONS.md` | Add Conversation Taxonomy section | +~15 lines |
+| `CLAUDE.md` | Strip governance doctrine, add tier | 71 → ~40 |
+| `GEMINI.md` | Fix false claim, remove duplicates | 225 → ~35 |
+| `.github/copilot-instructions.md` | Add constitutional reference, fix path | 45 → ~50 |
+
+---
+
+## Execution Order
+
+1. Add Conversation Taxonomy to `!/VAULT-CONVENTIONS.md` (pre-flight)
+2. Edit `.github/copilot-instructions.md` (smallest delta, lowest risk)
+3. Edit `CLAUDE.md` (surgical removals)
+4. Edit `GEMINI.md` (largest change by line count, most clearly justified)
+5. Single commit on `claude/formalize-agent-instruction-files` branch
+
+---
+
+## CONSTITUTION.md Gaps (Logan-Directed Only — Not Part of This Plan)
+
+These require Logan's explicit direction and are flagged for awareness only:
+
+- **Section II:** "NOTE: LIST NEEDS MAJORLY UPDATED" — incomplete Layers and Levels
+- **Section VII:** Lists 14 decisions; DECISIONS.md has 17 confirmed as of 2026-03-24
+- **Status line:** "pending revision-synthesis and congressional adoption" — drafting note left in
+- **Section III protocols:** ARISE, AWAKEN, ORIENT, CONTEXT all listed "awaiting full adoption"
+- **GEMINI.md absent:** Constitution makes no reference to Gemini's role or the file's reframed status
+
+---
+
+## Incidental Finding
+
+`run_state.md`, `stabilization_plan.md`, and `run_state-20260317-101538.md` appear
+to exist directly in `!/` (not in `!/swarm/state/` where they belong after the
+contain-swarm-to-bang PR). Separate housekeeping task — not addressed here.

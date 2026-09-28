@@ -33,11 +33,15 @@ related:
 - state highways
 authority: LOGAN
 ---
-component roads of the State Highway System 
+component roads of the State Highway System
+
 # state highways
+
 -  
-- https://en.wikipedia.org/wiki/List_of_state_highways_in_Idaho
+- <https://en.wikipedia.org/wiki/List_of_state_highways_in_Idaho>
+
 # U.S. highways
+
 - US 2
 - US 10
 - US 12
@@ -55,8 +59,9 @@ component roads of the State Highway System
 - US 630
 
 # U.S. interstates
-- Interstate 15 
-- Interstate 84 
-- Interstate 86 
-- Interstate 90 
-- Interstate 184 
+
+- Interstate 15
+- Interstate 84
+- Interstate 86
+- Interstate 90
+- Interstate 184

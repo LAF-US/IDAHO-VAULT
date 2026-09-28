@@ -5,4 +5,4 @@ related:
 - Nez Perce County
 authority: LOGAN
 ---
-Local Idaho Democratic Party precinct committee for Nez Perce County 
+Local Idaho Democratic Party precinct committee for Nez Perce County

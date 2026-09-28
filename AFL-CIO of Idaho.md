@@ -1,1 +1,1 @@
-labor union 
+labor union

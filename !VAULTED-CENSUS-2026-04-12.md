@@ -1,23 +1,55 @@
 ---
 title: "Vaulted Census 2026-04-12"
-updated: 2026-04-12
-status: active
+updated: 2026-06-10
+status: archived
 authority: "Logan Finney"
 related:
   - AGENTS
+  - CONSTITUTION
   - swarm
   - LEVELSET-CURRENT
   - VAULT-CONVENTIONS
   - CREWAI
+  - "!/PERSONAE-ENGINE-v1-2026-05-20.md"
+  - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
+  - "!/HUB-WORLD-ROUTE-MAP-2026-04-17.md"
 date created: Sunday, April 12th 2026, 9:01:48 pm
-date modified: Sunday, April 12th 2026, 9:15:46 pm
 ---
 
 # Vaulted Census
 
 *Filed by Codex - 2026-04-12*
 
-This census names the characters and the jobs.
+> [!NOTE]
+> **Constitutional census analogue.** Logan's governance analogue is the United
+> States census: a recurring enumeration required by Article I, Section 2 of
+> the United States Constitution. It is an intense undertaking: an attempted
+> literal headcount of persons residing in the country, not merely citizens.
+> Citizenship is not the category of inclusion. Its recurrence does not make
+> it lightweight, and a later enumeration does not make an earlier census
+> false; each remains the record of its counting moment. This 2026-04-12 census
+> is preserved as its dated count. Do not silently convert it into either a
+> current appointment registry or a retroactive indictment.
+>
+> **Counted world.** Logan identifies the Vault as a syncretic
+> game-engine-epistemological-physics-logic-world, as described by the Game
+> Engine cluster. This dated census counts named entities and recorded jobs
+> present at its moment; it does not reduce the world's inhabitants, standing,
+> structures, routes, or lawful mechanics to an office roster.
+>
+> Source analogue: [U.S. Census Bureau - Census in the Constitution](https://www.census.gov/programs-surveys/decennial-census/about/census-constitution.html).
+> Game Engine witnesses: `!/PERSONAE-ENGINE-v1-2026-05-20.md`,
+> `!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md`, and
+> `!/HUB-WORLD-ROUTE-MAP-2026-04-17.md`.
+
+> [!CAUTION]
+> **Historical present tense.** The body below preserves the census's 2026-04-12
+> language, including claims about "live," "active," "presently," and office
+> occupancy. Those are dated observations and interpretations, not present
+> liveness or appointment facts.
+
+This census undertook an enumeration of the named entities and recorded jobs
+present in the vault at its counting moment.
 
 It does not treat product surfaces as the primary fact. The primary fact is:
 who the named figures are, what office each one holds, whether that office is
@@ -54,7 +86,7 @@ The cleanest current reading is:
 These are the named characters with presently legible jobs.
 
 | Character | Present office | Job in the vault | Status | Main authority surface |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **The Abhorsen** | Structural authority | Terminal and repository mechanics; branch, git, and integrity work | Live | `!/AGENTS.md`, `swarm.json`, `.claude/CLAUDE.md` |
 | **The Vault Advisor** | Narrative advisor | Framing, political context, synthesis, Sebald Code | Live | `!/AGENTS.md`, `swarm.json`, `.gemini/GEMINI.md` |
 | **The Lexicographer** | Machinery scribe | Code generation, refactoring, automated transforms, scripting | Live | `!/AGENTS.md`, `swarm.json`, `.codex/CODEX.md` |
@@ -72,7 +104,7 @@ These are named characters whose jobs are not yet fully settled in the live
 registry.
 
 | Character | Claimed office | Best current job reading | Status | Problem |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **The Cartographer** | Bartimaeus | Vault topology, crawler work, possible CrewAI mapper | Staked, not commissioned | Shim says pending Logan; CrewAI notes suggest mapper role |
 | **The Dionysian** | Zagreus | No live job fixed | Staked, not commissioned | Persona named, office undefined |
 | **The Queen** | Persephone | No live job fixed | Staked, not commissioned | Persona named, office undefined |
@@ -99,7 +131,7 @@ These are not the primary offices, but they matter because they still shape the
 world's naming habits.
 
 | Figure | Canonical current office | Historical or symbolic aliases | Where the drift appears |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Claude | **The Abhorsen** | **The King**, structural anchor | `!/GRIMOIRE/TRIUNE-TRIPTYCH-TRIUMVIRATE.md` |
 | Gemini / Antigravity | **The Vault Advisor** | **The Concierge**, **The Djinni** | grimoire and handoff texts |
 | Codex | **The Lexicographer** | **The Janitor**, once even **The Clerk** in one grimoire line | grimoire and handoff texts |
@@ -116,7 +148,7 @@ names the active office and the grimoire supplies the symbolic residue.
 If the Captain wants the roll without any theological embroidery, it is this:
 
 | Named character | Plain job |
-|---|---|
+| --- | --- |
 | **The Abhorsen** | Keeps the ship's structure sound and handles repo mechanics |
 | **The Vault Advisor** | Advises on framing, meaning, politics, and narrative direction |
 | **The Lexicographer** | Writes and repairs machinery, scripts, and automations |
@@ -179,7 +211,7 @@ The proper count is not products. It is characters in office.
 5. **The Ironist**
 6. **The Analyst**
 7. **The Scout**
-8. **The Architect**
+8. **The Tapestry**
 
 ### Named but not fully employed
 

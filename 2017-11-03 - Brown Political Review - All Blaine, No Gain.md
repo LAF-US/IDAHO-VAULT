@@ -1,45 +1,48 @@
 ---
 author:
-- Sophia Petros
+  - Sophia Petros
 outlet:
-- Brown Political Review
+  - Brown Political Review
 URL: https://brownpoliticalreview.org/2017/11/blaine-no-gain/
 related:
-- Blaine County
-- Bonner County
-- California
-- Idaho
-- Idaho Mountain Express
-- Jackson
-- Jackson Hole
-- Moore
-- Oregon
-- Park City
-- President
-- Rhode Island
-- Roberts
-- Schweitzer ski resort
-- Seattle
-- State of Idaho
-- Summit County
-- Sun Valley
-- Sun Valley ski resort
-- Teton
-- Teton County
-- USA
-- USA Today
-- Washington
-- cities
-- counties
-- election
-- gerrymandering
-- numbers
-- ranch
-- ski resorts
-- taxes
-- voting
+  - Blaine County
+  - Bonner County
+  - California
+  - Idaho
+  - Idaho Mountain Express
+  - Jackson
+  - Jackson Hole
+  - Moore
+  - Oregon
+  - Park City
+  - President
+  - Rhode Island
+  - Roberts
+  - Schweitzer ski resort
+  - Seattle
+  - State of Idaho
+  - Summit County
+  - Sun Valley
+  - Sun Valley ski resort
+  - Teton
+  - Teton County
+  - USA
+  - USA Today
+  - Washington
+  - cities
+  - counties
+  - election
+  - gerrymandering
+  - numbers
+  - ranch
+  - ski resorts
+  - taxes
+  - voting
 authority: LOGAN
+date created: Monday, March 23rd 2026, 4:54:50 pm
+date modified: Wednesday, April 15th 2026, 3:48:22 pm
 ---
+
 Nestled in the center of Idaho lies Blaine County: an oddly-shaped shaped area nearly twice the size of Rhode Island, with a panhandle extending to the south – a remnant of gerrymandering in the 1880’s. More notable than its shape, however, is its voting history. Though the State of Idaho has supported a Republican President in every election since 1968, Blaine County has voted contrary to this trend since 1992. In the 2016 election, its nearly 60% vote for Clinton starkly contrasted that of the surrounding counties, which hovered around 70% support for Trump. In a state where the counties containing the most populous cities vote consistently conservative, a county at its heart pumping blue blood stands out sharply. Michael Leach, the Republican County Chair for Blaine, echoed this thought over the phone. He recognized the “real dichotomy” between his county and the rest of the state, and described the blue county as “bizarre” and a “fluke.”
 
 An explanation for this “bizarre” trend may lie in a key feature of Blaine County that makes it a destination for many vacationers: it contains Sun Valley, a well-known ski resort that has attracted a number of high-profile names, from Ernest Hemingway to Demi Moore. When asked over the phone, Dave Lister, the Democratic Party Precinct Captain for Sun Valley, said he believes this is absolutely the reason for such a stark contrast. Indeed, other counties with renowned ski resorts have followed this same trend, such as Jackson Hole’s Teton County and Park City’s Summit County. However, as Bill Roberts pointed out in a local news article that attempted to analyze this ski resort phenomenon, “the correlation is easier to demonstrate than to explain.”

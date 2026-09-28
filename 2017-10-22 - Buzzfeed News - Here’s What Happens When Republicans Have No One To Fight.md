@@ -117,7 +117,7 @@ related:
 - word
 authority: LOGAN
 ---
-### Welcome to Idaho. Now Go Home.
+### Welcome to Idaho. Now Go Home
 
 *The “whiteopia” of North Idaho has become one of the most desirable places in the West for conservatives to relocate. So why is the local GOP tearing itself apart — and who’s responsible?*
 
@@ -147,7 +147,6 @@ In North Idaho, that tent has narrowed to an exclusive and exclusionary group of
 
 ADVERTISEMENT
 In many ways, this is a story of what happens when a two-party system is reduced to one: when a political party becomes so dominant that, without outside opposition, it creates it internally. This particular version of the story is specific to North Idaho, and to the particular type of conservatives who have flocked here to set down roots in its rural soil. Yet its lessons apply across the political spectrum, as battles between the two parties are eclipsed by the destructive and deeply tribalist strife within them.
-
 
 Jim Urquhart for BuzzFeed News
 Downtown Coeur d’Alene
@@ -261,13 +260,11 @@ All of the above became points of contention when, five months later, the term R
 
 The defeat marked the end of Regan’s outward-facing political career. But his true influence had just begun. “He figured out that he’s not really good at being a politician — that when he opens his mouth, he inserts his foot,” one political consultant told me. “He’d rather be the power player, pushing his money and his influence.”
 
-
 Jim Urquhart for BuzzFeed News
 KCRCC chairman Brent Regan (left) and secretary Alex Barron (right).
 
 ADVERTISEMENT
 Everyone in Kootenai County politics knows Regan’s acolytes and enemies, those in his favor and those out of it. But if Regan is the current sun of the far-right conservative system, the planets in his orbit are a varied bunch. Some, like committee secretary and “Bard of the Redoubt” Alex Barron, are traditional Catholics who moved here to be part of the Redoubt community. Bjorn Handeen — who sponsored the committee’s resolution against Russia sanctions — is more of an ideological wild card, an anti-globalist who attempted to create a KCRCC committee that would vet candidates "to determine if they are true Republicans."
-
 
 Jim Urquhart for BuzzFeed News
 Jeremy Morris, who was a leader of Truth North Idaho, at his home in Kootenai County.
@@ -281,7 +278,6 @@ The politics of the members of this group are “conservative” and pay repeate
 
 Jeff Tyler exemplifies this particular political posture, especially as it manifests in Kootenai County. After Obama’s election, Tyler started attending one of the local Pachyderms, and later cofounded the Reagan Republicans. “We started it because we loved Ronald Reagan and wanted a country like that,” he told me over lunch. “One where we pay attention to the Bible and the Constitution.” In 2012, he attempted to run for state representative, but lost the primary by nine votes to a member of the Rally Right. The loss didn’t faze him. “My wife asks me why I’m so involved in all this,” he said, “and I’m like, would you rather I just play golf?”
 
-
 Jim Urquhart for BuzzFeed News
 Kootenai County Republican Central Committee member Don Bradway.
 
@@ -292,14 +288,12 @@ Bradway and Tyler don’t think that talking to liberals takes away your conserv
 
 Tyler and others say the only membership requirement to be in Regan’s camp is to be a true, liberty-loving conservative, but the truth is more complicated. You don’t necessarily need to be a Christian, but you should believe in Christian values — and the ability for Christians to practice their beliefs without restriction, which includes supporting “school choice,” aka using federal funds to support religious schools. You believe that the Johnson Amendment — which forbids nonprofit organizations, including churches, from making political contributions — is unconstitutional. You should be against any increase in “unnecessary” spending, any expensive public works — like the pricey renovation of a lakeside park in Coeur d’Alene, which prompted an attempted recall of the mayor and city council, or the recently proposed transit center, dubbed “a Taj Mahal for government employees” by Alex Barron. You should also oppose the growth of government, especially Obamacare and the “perverse incentives and waste,” as Regan put it to me, that have resulted from it. And you must disaffiliate yourself with those who don’t believe these things.
 
-
 Courtesy Cour d'Alene Press
 Christa Hazel
 
 Christa Hazel’s conservative credentials have been challenged, for example, because she posted pictures to Facebook that included “known” liberals. A far-right blog accused Duane Rasmussen, one of the founders of the North Idaho Pachyderm Club, of “bringing Socialism to Kootenai County” for making friends with Spokesman-Review columnist Dave Oliveria, who often published photos Rasmussen had taken of GOP events. When lieutenant gubernatorial candidate Steve Yates spoke at a recent Central Committee meeting, he was challenged for attending Johns Hopkins, a liberal school.
 
 For many, it’s an exacting, and exhausting, sort of tribalism. As Deborah Rose, a political observer who’s been warring with Regan and his followers in the comments of newspaper articles for months, put it to me, “Here’s what bothers me so much: I agree with them on 95% of this stuff! But then the 5% that I don’t — that’s what makes them call me a liberal.”
-
 
 Jim Urquhart for BuzzFeed News
 A dog named Nalo outside a pub in Coeur d’Alene.
@@ -375,7 +369,6 @@ Both sides of the Kootenai County divide, after all, call the other RINOs. Both 
 “We got along, we all liked each other, we all socialized, we were friends as well as central committee personnel,” Katie Brodie, who served as chairwoman in 1984, told me. “It was a big, big tent — we included anybody we could. And boy, we were in it to win. We had a single focus, and that focus was to elect candidates. Back then, we had 33 precincts. Now there are 75. You’d hope, with that huge group, that it’d be diverse, but it’s not.”
 
 “It was always civil,” she continued. “It was never mean-spirited. But now, there’s no Democrat who’s going to win. So all that energy goes to fighting with each other.”
-
 
 Jim Urquhart for BuzzFeed News
 Observers and members of the Kootenai County Republican Central Committee recite the Pledge of Allegiance.

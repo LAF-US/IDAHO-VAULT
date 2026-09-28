@@ -17,7 +17,7 @@ authority: LOGAN
 ---
 The management of the Valley County EMS District has changed.
 
-Up until now, the district was run by the Valley County Commissioners. In November, voters passed a ballot measure that allowed Valley County Commissioners to create a three-person EMS Commission, with each new commissioner running a subdistrict in the county. 
+Up until now, the district was run by the Valley County Commissioners. In November, voters passed a ballot measure that allowed Valley County Commissioners to create a three-person EMS Commission, with each new commissioner running a subdistrict in the county.
 
 Doctor Gregory Irvine of McCall, Ron Julian of Cascade, and Travis Smith of Donnelly were sworn into these positions on Monday afternoon. This change allows for the new commissioners to meet monthly rather than yearly.
 

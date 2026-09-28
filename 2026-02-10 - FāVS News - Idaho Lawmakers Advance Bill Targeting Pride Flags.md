@@ -71,8 +71,6 @@ Our Sponsors
 
 Idaho legislature (Logan Finney/ FāVS News).
 
-  
-
 **By Logan Finney | FāVS News Reporter**  
 
 Idahoans serenaded the capitol halls Monday morning with a spin on the gospel song “This Little Light of Mine” as lawmakers made their way to the House State Affairs Committee.

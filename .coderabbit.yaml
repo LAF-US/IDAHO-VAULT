@@ -6,7 +6,19 @@ reviews:
     enabled: true
     # drafts: false — skip draft PRs; only review ready-for-review PRs
     drafts: false
-    # Review PRs from all authors, including bots (e.g. github-actions[bot])
+    # Only review new changes on subsequent commits, not entire PR
+    auto_incremental_review: true
+    # Skip PRs with these keywords in title
+    ignore_title_keywords:
+      - "[WIP]"
+      - "[skip review]"
+      - "DO NOT REVIEW"
+    # Skip PRs from these authors (typically bots)
+    ignore_usernames:
+      - "dependabot[bot]"
+      - "renovate[bot]"
+      - "github-actions[bot]"
+    # Review PRs from all other authors, including non-ignored bots
     # Vault governance note: PRs touching !/ require Logan's approval
     # All committed content is on the record (public repo)
   base_branches:

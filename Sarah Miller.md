@@ -4,4 +4,4 @@ related:
 - Idaho Statesman
 authority: LOGAN
 ---
-Idaho Statesman photographer videographer 
+Idaho Statesman photographer videographer

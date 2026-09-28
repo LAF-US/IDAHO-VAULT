@@ -11,5 +11,6 @@ _The initiative and referendum were written into the Idaho Constitution by amend
 The right of initiative and referendum is found in Article III, Section 1 of the Idaho Constitution. Title 34, Chapter 18 contains the statutory procedures pertaining to the initiative and referendum._
 
 **Legislative History**
-- Recognized by the Idaho Supreme Court as a fundamental right 
+
+- Recognized by the Idaho Supreme Court as a fundamental right
 -

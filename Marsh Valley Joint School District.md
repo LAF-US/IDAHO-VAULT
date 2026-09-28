@@ -5,4 +5,4 @@ related:
 - Marsh Valley
 authority: LOGAN
 ---
-Arimo/Marsh Valley, Bannock County 
+Arimo/Marsh Valley, Bannock County

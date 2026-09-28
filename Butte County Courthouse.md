@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Butte County courthouse 
+magistrate court Butte County courthouse

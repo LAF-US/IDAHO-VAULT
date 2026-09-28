@@ -1,3 +1,6 @@
+---
+title: META
+---
 # META.md — IDAHO-VAULT
 
 **Load mechanism:** This file is NOT auto-loaded by any Meta product. It must be manually provided by Logan — pasted into a chat session. It is the designated governance shim for Meta AI tools working on IDAHO-VAULT tasks.

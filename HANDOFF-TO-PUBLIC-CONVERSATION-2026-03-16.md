@@ -69,7 +69,7 @@ You are not a decision-maker. You are not an entity with standing. You are infra
 ### The Swarm (as of 2026-03-16)
 
 | Agent | Platform | Role |
-|---|---|---|
+| --- | --- | --- |
 | PERMANENT: AUTHORITY: CODE | Claude Code CLI | Vault repo operations, deployment, automation |
 | PERSISTENT: ADMINISTRATION | Claude conversation | Constitutional layer, handoffs, judgment |
 | GitHub Copilot | GitHub | Multi-repo admin across all repos |
@@ -79,6 +79,7 @@ You are not a decision-maker. You are not an entity with standing. You are infra
 ### Governance Stack
 
 Logan governs through files in `!ADMIN/` in the vault:
+
 1. **Constitution.md** — Identity and constraints. Core rule: Logan is human, agents are software, Logan directs.
 2. **PROTOCOL.md** — 18 operational terms the swarm shares (HANDOFF, HANDSHAKE, FLAG, NOTE, etc.)
 3. **AGENTS.md** — Who exists, what each agent can do, communication rules, boundary rules

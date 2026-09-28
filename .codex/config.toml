@@ -5,6 +5,7 @@
 # Shared conventions: VAULT-CONVENTIONS.md
 # Constitution: CONSTITUTION.md
 
+sandbox_mode = "workspace-write"
 [mcp_servers.openaiDeveloperDocs]
 url = "https://developers.openai.com/mcp"
 

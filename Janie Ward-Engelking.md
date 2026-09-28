@@ -3,4 +3,4 @@ related:
 - Boise
 authority: LOGAN
 ---
-Residence: Boise 
+Residence: Boise

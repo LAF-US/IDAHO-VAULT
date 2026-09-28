@@ -180,7 +180,7 @@
 		"side": {
 			"matrix": {
 				"collapse": false,
-				"edge_sort_id": {
+				"edge_so***REMOVED***id": {
 					"field": "basename",
 					"order": 1
 				},
@@ -213,7 +213,7 @@
 				"field_group_labels": [
 					"downs"
 				],
-				"edge_sort_id": {
+				"edge_so***REMOVED***id": {
 					"field": "basename",
 					"order": 1
 				},
@@ -247,7 +247,7 @@
 				"link_kind": "wiki",
 				"show_attributes": [],
 				"field_group_labels": [],
-				"edge_sort_id": {
+				"edge_so***REMOVED***id": {
 					"order": 1,
 					"field": "basename"
 				},

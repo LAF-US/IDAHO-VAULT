@@ -19,6 +19,7 @@ Idaho Falls, ID 83401
 Eastern Idaho public health district
 
 Counties:
+
 - Bonneville
 - Madison
 - Jefferson

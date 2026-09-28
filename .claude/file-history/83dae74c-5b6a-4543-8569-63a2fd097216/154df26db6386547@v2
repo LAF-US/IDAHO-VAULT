@@ -1,0 +1,239 @@
+{
+  "// note": "Machine-readable structured registry of all swarm elements. See AGENTS.md (human-readable) and !/AGENTS.md (canonical narrative registry).",
+  "// governance": "!/CONSTITUTION.md",
+  "// conventions": "!/VAULT-CONVENTIONS.md",
+  "principal": "Logan Finney",
+  "vault_authority": "https://github.com/loganfinney27/IDAHO-VAULT",
+
+  "agents": [
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "vendor": "Anthropic",
+      "dotfolder": ".claude",
+      "autoload_file": ".claude/CLAUDE.md",
+      "autoload": true,
+      "capability_tier": "Direct Write",
+      "role": "The Abhorsen — terminal & repository mechanics",
+      "label": "agent:claude-code"
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "vendor": "Google",
+      "dotfolder": ".gemini",
+      "autoload_file": ".gemini/GEMINI.md",
+      "autoload": true,
+      "capability_tier": "Advisory",
+      "role": "The Vault Advisor — narrative lens, political context, Sebald Code",
+      "label": "agent:gemini"
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "vendor": "Microsoft / GitHub",
+      "dotfolder": ".github",
+      "autoload_file": ".github/copilot-instructions.md",
+      "autoload": true,
+      "capability_tier": "Advisory",
+      "role": "The Clerk — inline Obsidian markdown & syntax",
+      "label": "agent:copilot"
+    },
+    {
+      "id": "codex-cli",
+      "name": "OpenAI Codex CLI",
+      "vendor": "OpenAI",
+      "dotfolder": ".codex",
+      "autoload_file": ".codex/config.toml",
+      "autoload": true,
+      "capability_tier": "Advisory",
+      "role": "The Lexicographer — code generation, refactoring, automated transforms",
+      "label": "agent:codex"
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "vendor": "xAI",
+      "dotfolder": ".grok",
+      "autoload_file": ".grok/GROK.md",
+      "autoload": false,
+      "autoload_note": "Manual injection — no confirmed xAI CLI dotfolder spec",
+      "capability_tier": "Advisory",
+      "role": "The Ironist — rapid reasoning, real-time web access",
+      "label": null
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "vendor": "DeepSeek",
+      "dotfolder": ".deepseek",
+      "autoload_file": ".deepseek/DEEPSEEK.md",
+      "autoload": false,
+      "capability_tier": "Advisory",
+      "role": "The Analyst — deep reasoning, code analysis, research synthesis",
+      "label": null
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "vendor": "Perplexity AI",
+      "dotfolder": ".perplexity",
+      "autoload_file": ".perplexity/PERPLEXITY.md",
+      "autoload": false,
+      "capability_tier": "Read/Analysis",
+      "role": "The Scout — web search and research synthesis",
+      "label": null
+    },
+    {
+      "id": "linear-agent",
+      "name": "Linear Agent",
+      "vendor": "Linear",
+      "dotfolder": null,
+      "autoload_file": null,
+      "autoload": false,
+      "config": "cloud — configured in Linear workspace settings",
+      "capability_tier": "Advisory",
+      "role": "Linear workspace AI — context synthesis, issue creation, status tracking",
+      "launched": "2026-03-24",
+      "label": null,
+      "notes": "No local dotfolder. Access via Cmd+J, Slack, Teams, @mentions in Linear."
+    }
+  ],
+
+  "personas": [
+    {
+      "id": "bartimaeus",
+      "name": "Bartimaeus",
+      "dotfolder": ".bartimaeus",
+      "autoload_file": ".bartimaeus/BARTIMAEUS.md",
+      "autoload": false,
+      "role": "TBD — pending Logan's direction"
+    },
+    {
+      "id": "zagreus",
+      "name": "Zagreus",
+      "dotfolder": ".zagreus",
+      "autoload_file": ".zagreus/ZAGREUS.md",
+      "autoload": false,
+      "role": "TBD — pending Logan's direction"
+    },
+    {
+      "id": "persephone",
+      "name": "Persephone",
+      "dotfolder": ".persephone",
+      "autoload_file": ".persephone/PERSEPHONE.md",
+      "autoload": false,
+      "role": "TBD — pending Logan's direction"
+    }
+  ],
+
+  "ecosystems": [
+    {
+      "id": "microsoft",
+      "name": "Microsoft AI ecosystem",
+      "vendor": "Microsoft",
+      "dotfolder": ".microsoft",
+      "shim_file": ".microsoft/MICROSOFT.md",
+      "autoload": false,
+      "scope": ["Microsoft Copilot (personal)", "Microsoft 365 Copilot (IPT enterprise)", "Azure OpenAI", "Bing AI", "Copilot Studio", "Microsoft 365 apps"],
+      "identity_contexts": {
+        "personal": "Logan's personal Microsoft account — Logan controls all settings",
+        "institutional": "Idaho Public Television M365 tenant — subject to IPT IT policy"
+      }
+    },
+    {
+      "id": "google",
+      "name": "Google ecosystem",
+      "vendor": "Google",
+      "dotfolder": ".google",
+      "shim_file": ".google/GOOGLE.md",
+      "autoload": false,
+      "scope": ["Gmail", "Google Calendar", "Google Docs/Sheets/Slides", "Google Drive", "Google Workspace", "Google Pinpoint", "NotebookLM", "Gemini web/API"],
+      "note": "Gemini CLI coding agent is separate — see .gemini/GEMINI.md"
+    },
+    {
+      "id": "meta",
+      "name": "Meta AI ecosystem",
+      "vendor": "Meta Platforms",
+      "dotfolder": ".meta",
+      "shim_file": ".meta/META.md",
+      "autoload": false,
+      "scope": ["Meta AI (WhatsApp/Instagram/Facebook)", "Meta AI Studio", "Llama models"]
+    }
+  ],
+
+  "systems": [
+    {
+      "id": "github",
+      "name": "GitHub",
+      "type": "coordination",
+      "url": "https://github.com/loganfinney27/IDAHO-VAULT",
+      "role": "Code hosting, PRs, Issues, GitHub Actions",
+      "integrations": ["linear"]
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "type": "coordination",
+      "role": "Execution tracking, owners, deadlines (SWARM label)",
+      "config": "cloud-only — no local dotfolder",
+      "github_sync": "Bidirectional: PR lifecycle drives issue state (In Progress → In Review → Done). Branch naming or magic words (closes ENG-123) link PRs to issues.",
+      "ai_agent_ref": "linear-agent"
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "type": "coordination",
+      "dotfolder": ".slack",
+      "shim_file": ".slack/SLACK.md",
+      "role": "Ephemeral coordination — breadcrumbs only. Not the record.",
+      "rule": "Durable decisions must be promoted to vault or Linear."
+    },
+    {
+      "id": "obsidian-sync",
+      "name": "Obsidian Sync",
+      "type": "sync",
+      "role": "Private courier for plugin settings and credentials across devices",
+      "rule": "Plugin data.json files are gitignored — never reach GitHub"
+    }
+  ],
+
+  "protocols": [
+    {
+      "id": "levelset",
+      "name": "LEVELSET",
+      "version": "3.2.6.1",
+      "file": "!/LEVELSET-STEP-0-EXTERNAL-AGENT.md",
+      "status": "active",
+      "flag": "STEP-0 and STEP-1 in active development"
+    },
+    {
+      "id": "arise",
+      "name": "ARISE",
+      "version": "0.0",
+      "file": null,
+      "status": "awaiting adoption"
+    },
+    {
+      "id": "awaken",
+      "name": "AWAKEN",
+      "version": "0.0",
+      "file": null,
+      "status": "awaiting adoption"
+    },
+    {
+      "id": "orient",
+      "name": "ORIENT",
+      "version": "0.0",
+      "file": null,
+      "status": "awaiting adoption"
+    },
+    {
+      "id": "context",
+      "name": "CONTEXT",
+      "version": "0.0",
+      "file": null,
+      "status": "under development"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ related:
 authority: LOGAN
 ---
 Scott Bedke 2023-
+
 - Janice McGeachin 2019-2022
 - Brad Little 2009-2019
 - Jim Risch 2007-2008

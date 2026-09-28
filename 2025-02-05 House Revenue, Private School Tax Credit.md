@@ -48,7 +48,7 @@ related:
 - window
 authority: LOGAN
 ---
-Wendy Horman - private education tax credit 
+Wendy Horman - private education tax credit
 
 Kids and families, not the type of school or type of system
 

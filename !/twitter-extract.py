@@ -1,27 +1,28 @@
 """
 Twitter Archive → IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
-markdown notes in @/ (the social archive folder).
+markdown notes in the tweets/ folder \(social archive\).
 
 Output structure:
-  @/tweets/YYYY/YYYY-MM-DD - @lfinneytweets - <truncated text>.md
+  tweets/YYYY/YYYY-MM-DD - @lfinneytweets - <truncated text>.md
 
 Each note gets YAML frontmatter with metadata and the full tweet text.
 """
 
 import json
-import os
 import re
 import sys
+import tempfile
 from datetime import datetime
 from pathlib import Path
 from html import unescape
 import zipfile
-import shutil
 
 VAULT_ROOT = Path(r"c:\Users\loganf\Documents\IDAHO-VAULT")
-TEMP_DIR = Path(os.environ["TEMP"]) / "twitter-extract"
-OUTPUT_DIR = VAULT_ROOT / "@" / "tweets"
+# Use a private, securely created directory rather than an environment-controlled
+# extraction root. Archive metadata is always written beneath this directory.
+TEMP_DIR = Path(tempfile.mkdtemp(prefix="twitter-extract-"))
+OUTPUT_DIR = VAULT_ROOT / "tweets"
 
 # --- Helpers ---
 
@@ -56,12 +57,21 @@ def extract_metadata_from_zip(zip_path: Path, temp_dir: Path):
     print(f"Extracting metadata from {zip_path.name}...")
     temp_dir.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(zip_path, 'r') as z:
-        for member in z.namelist():
-            if member.endswith(('tweets.js', 'account.js')):
-                # Archive structure is usually data/tweets.js
-                filename = Path(member).name
-                with z.open(member) as source, open(temp_dir / filename, "wb") as target:
-                    shutil.copyfileobj(source, target)
+        # Twitter exports keep the metadata in these fixed archive locations.
+        # Do not select members by an archive-controlled name: a ZIP is
+        # untrusted input, so only these repository-known member names may be
+        # opened or copied.
+        metadata_members = (
+            ("data/tweets.js", "tweets.js"),
+            ("data/account.js", "account.js"),
+        )
+        for archive_member, filename in metadata_members:
+            try:
+                content = z.read(archive_member)
+            except KeyError:
+                continue
+            target_path = temp_dir / filename
+            target_path.write_bytes(content)
 
 
 def parse_date(twitter_date_str: str) -> datetime:
@@ -297,3 +307,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+

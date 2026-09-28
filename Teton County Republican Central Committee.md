@@ -6,4 +6,4 @@ related:
 - Teton County
 authority: LOGAN
 ---
-Local Idaho Republican Party precinct committee for Teton County 
+Local Idaho Republican Party precinct committee for Teton County

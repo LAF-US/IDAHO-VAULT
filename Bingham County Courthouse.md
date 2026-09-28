@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Bingham County courthouse 
+magistrate court Bingham County courthouse

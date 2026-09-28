@@ -35,8 +35,6 @@ Our Sponsors
 
 Pastor Doug Wilson addresses the National Conservatism conference, Thursday, Sept. 4, 2025, in Washington. (RNS photo/Jack Jenkins)
 
-  
-
 **By Tracy Simmons | Religion News Service**
 
 MOSCOW, Idaho ([FāVS News](https://favs.news/)) — Joann Muneta expected to be angry, as she usually is when a major news outlet turns its cameras on pastor Doug Wilson and the Christian nationalist movement growing in her backyard. But after watching CNN’s [latest documentary](https://www.cnn.com/audio/podcasts/the-whole-story-with-anderson-cooper/episodes/10f01a2c-b8ef-11f0-99d9-ebc70f76e43c) air Sunday night (March 22), the 90-year-old Moscow activist felt something she hadn’t expected.

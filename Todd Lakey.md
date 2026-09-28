@@ -6,4 +6,5 @@ related:
 authority: LOGAN
 ---
 Residence: Nampa
-- Senate member, Senate Judiciary and Rules chairman 
+
+- Senate member, Senate Judiciary and Rules chairman

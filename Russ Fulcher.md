@@ -5,4 +5,4 @@ related:
 - U.S. House
 authority: LOGAN
 ---
-U.S. House member for 1st Congressional District 
+U.S. House member for 1st Congressional District

@@ -36,6 +36,7 @@ Its core infrastructure unifies "enterprise memory" across GitHub, Notion, Linea
 In the BIG IFS — UNIFIED SWARM framework, Factory is identified as the **code & system-change limb** of a hypothetical Unified Swarm—high-leverage where modifications to software and infrastructure are required.
 
 Open questions for R&D evaluation:
+
 - Droid configurability: can task scope be constrained to match IDAHO-VAULT's journalism + automation perimeter?
 - Enterprise memory model: how does it interact with vault-native context (Obsidian, GitHub)?
 - Integration surface: CLI, Slack, and Linear connectors directly overlap with current swarm infrastructure.

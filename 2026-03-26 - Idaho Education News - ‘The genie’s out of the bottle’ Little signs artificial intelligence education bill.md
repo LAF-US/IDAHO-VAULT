@@ -47,6 +47,6 @@ Little referred to Moore’s Law, an observation made by former Intel leader Gor
 
 “Everybody thought it wasn’t going to happen,” Little said of Moore’s Law, “and it just continued to happen.”
 
-![](https://www.idahoednews.org/wp-content/uploads/2026/03/AIBill_crichfield.little.jpg)
+![alt text needed](https://www.idahoednews.org/wp-content/uploads/2026/03/AIBill_crichfield.little.jpg)
 
 Idaho Governor Brad Little after signing an AI education bill on March 26, 2026 at the Idaho Capitol. (Kaeden Lincoln/IdahoEdNews)

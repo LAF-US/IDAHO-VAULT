@@ -19,7 +19,7 @@ related:
 - systems
 authority: LOGAN
 ---
-![](https://static.wixstatic.com/media/a52f4c_7ee8beedbf634443b8451d308386f2f7~mv2.jpeg/v1/fill/w_925,h_551,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a52f4c_7ee8beedbf634443b8451d308386f2f7~mv2.jpeg)
+![alt text needed](https://static.wixstatic.com/media/a52f4c_7ee8beedbf634443b8451d308386f2f7~mv2.jpeg/v1/fill/w_925,h_551,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a52f4c_7ee8beedbf634443b8451d308386f2f7~mv2.jpeg)
 
 In October, Meta announced a new [“teen AI safety” approach for Instagram, Facebook, and its other platforms.](https://about.fb.com/news/2025/10/teen-ai-safety-approach/) The headline change is simple but important: parents will soon have a built-in "kill switch" for one-on-one chats between their teens and AI characters. Additionally, it'll provide better insight into what their teens are doing with AI on Meta's apps.
 

@@ -11,6 +11,7 @@ authority: LOGAN
 ---
 Residence: Boise
 Hometown: Burley
-- elected Ada County Commissioner in 2022 
+
+- elected Ada County Commissioner in 2022
 - Idaho Commission for Redistricting 2021 appointed by Speaker Scott Bedke
-- former House member 
+- former House member

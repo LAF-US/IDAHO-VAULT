@@ -41,6 +41,7 @@ authority: LOGAN
 **Purpose:** Pre-packaged context Logan can paste to any external agent (no repo access) to orient them before giving them a task. Update this file when the vault state changes significantly.
 
 **How to use:**
+
 1. Paste `!ADMIN/ORIENT-v0.1.md` first — gives the agent its operating rules.
 2. Then paste this file — gives the agent the vault's current context.
 3. Say "LEVELSET" to confirm they've absorbed the context.
@@ -81,7 +82,7 @@ authority: LOGAN
 
 ### 3. VAULT STRUCTURE
 
-```
+```text
 IDAHO-VAULT/
   !ADMIN/              Session logs, LEVELSET reports, wayback preservation logs
   GOVERNMENTS/         Idaho legislative, executive, judicial + federal + tribal
@@ -97,6 +98,7 @@ IDAHO-VAULT/
 ```
 
 **Root-level governance files:**
+
 - `CONSTITUTION.md` — Core identity and constraints
 - `AGENTS.md` — Agent registry and communication rules
 - `PROTOCOL.md` — 18 operational terms for the swarm
@@ -109,7 +111,7 @@ IDAHO-VAULT/
 ### 4. NAMING CONVENTIONS
 
 | Type | Pattern | Example |
-|---|---|---|
+| --- | --- | --- |
 | Bills | `(YYYY) Bill Type Number.md` | `(2026) House Bill 24.md` |
 | News articles | `YYYY-MM-DD - Outlet - Title.md` | `2024-01-15 - Idaho Statesman - Title.md` |
 | Hearings | `YYYY-MM-DD - Committee or Meeting.md` | `2023-12-19 - GIAC meeting.md` |
@@ -123,7 +125,7 @@ IDAHO-VAULT/
 ### 5. CURRENT KNOWN AGENTS
 
 | Agent | Platform | Capability | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | PERMANENT: AUTHORITY: CODE | Claude Code CLI | Direct repo write | Active |
 | PERSISTENT: ADMINISTRATION | Claude (conversation) | Draft only | Active |
 | GitHub Copilot (ADMIN GitHub) | GitHub Copilot | Multi-repo admin | Active |
@@ -148,7 +150,7 @@ When uncertain: ask Logan.
 ### 7. AUTOMATION PIPELINE
 
 | Schedule | Workflow | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | Daily 1pm UTC | `idaho-leg-scraper.yml` | Scrapes Idaho Legislature bill data |
 | Monday 6am UTC | `sort-audit.yml` | Audits vault structure |
 | Monday 7am UTC | `vault-propose-moves.yml` | Proposes file moves via PR |
@@ -164,6 +166,7 @@ When uncertain: ask Logan.
 ## MAINTENANCE NOTES
 
 Update this bundle when any of the following change:
+
 - Vault structure (new major folders)
 - Agent roster (new agents, removed agents, tier changes)
 - Core principles (CONSTITUTION.md amendments)

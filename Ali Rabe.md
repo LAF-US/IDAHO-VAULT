@@ -10,5 +10,5 @@ related:
 - redistricting
 authority: LOGAN
 ---
-- executive director of Jesse Tree 
-- Senate member, replaced Grant Burgoyne in Legislative District 16 after redistricting 
+- executive director of Jesse Tree
+- Senate member, replaced Grant Burgoyne in Legislative District 16 after redistricting

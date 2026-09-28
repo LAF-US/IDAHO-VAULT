@@ -64,7 +64,7 @@ BOISE — On Friday, Governor Brad Little announced additional executive measure
 
 Idaho statute gives the governor broad authority to direct money from the general fund and other state funds into the disaster emergency account during a declared emergency.
 
-### What is the Tax Relief Fund?           
+### What is the Tax Relief Fund?
 
 The Legislature created the tax relief fund in 2014 as a place for sales taxes collected and paid by retailers who weren’t necessarily required to do so. Idaho lawmakers had discussed collecting taxes on internet sales since the mid-2000s, but precedent from the U.S. Supreme Court at the time said that retailers only had to collect sales tax if the business had a physical presence in the state.
 

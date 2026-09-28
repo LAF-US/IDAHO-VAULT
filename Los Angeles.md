@@ -4,4 +4,4 @@ related:
 - Orange County
 authority: LOGAN
 ---
-Orange County, California 
+Orange County, California

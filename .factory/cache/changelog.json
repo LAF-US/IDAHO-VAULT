@@ -1,0 +1,1 @@
+{"cliVersion":"0.104.0","entry":{"version":"v0.104.0","date":"April 17","features":["Custom ripgrep path - New environment variable to point Factory at a custom ripgrep binary","BYOK config in bug reports - Bug reports now include resolved BYOK configuration to make troubleshooting easier"]},"viewCount":1}

@@ -4,4 +4,4 @@ related:
 - Sandpoint
 authority: LOGAN
 ---
-Sandpoint hospital Bonner County hospital district 
+Sandpoint hospital Bonner County hospital district

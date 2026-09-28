@@ -38,12 +38,17 @@ related:
 
 The local bootstrap path now follows a clear authority chain:
 
-1. `!/AGENTS.md` is the canonical narrative registry.
-2. `swarm.json` is the canonical machine-readable registry.
-3. `!/agents.json` is a generated bootstrap index for local shell use only.
-4. `!/agent.sh` is the executable entrypoint.
+1. `AGENTS.md` is the root auto-load pointer.
+2. `!/WAKEUP.md` is the explicit anti-confusion and conflict-resolution surface.
+3. `!README.md` is the Touchstone orientation surface.
+4. `!/AGENTS.md` is the canonical narrative registry.
+5. `CONSTITUTION.md` is the binding governance layer.
+6. `swarm.json` is the canonical machine-readable registry.
+7. `!/agents.json` is a generated bootstrap index for local shell use only.
+8. `!/agent.sh` is the executable entrypoint.
 
 This protocol is for local agent bootstrap, context loading, git identity setup, and checkpoint logging. It is **not** the place for Linear, Slack, or Hugging Face authentication.
+If you wake disoriented, read `!/WAKEUP.md` before invoking `!/agent.sh`.
 
 ---
 
@@ -79,17 +84,18 @@ The root mirror exists for continuity with older `agents.json` references, but i
 
 `!/agent.sh` requires these files before execution:
 
-- `!/README.md`
-- `!/CONSTITUTION.md`
+- `!/WAKEUP.md`
+- `!README.md`
+- `CONSTITUTION.md`
 - `!/AGENTS.md`
-- `!/DECISIONS.md`
-- `!/VAULT-CONVENTIONS.md`
+- `DECISIONS.md`
+- `VAULT-CONVENTIONS.md`
 
 Optional advisory context:
 
-- `!/LEVELSET.md`
+- `LEVELSET.md`
 
-`!/LEVELSET-CURRENT.md` is **not** required and is no longer a bootstrap gate.
+`LEVELSET-CURRENT.md` is **not** required and is no longer a bootstrap gate.
 
 ---
 
@@ -148,14 +154,19 @@ Use these modes to verify bootstrap facts without changing git config or writing
 
 ## Control-Plane Triptych
 
-For this lane, the swarm control plane is intentionally narrow:
+Within `IDAHO-VAULT`, the connector posture relevant to bootstrap remains
+intentionally narrow:
 
 - **GitHub** handles branches, PRs, workflows, and durable execution transport.
 - **Linear** handles issue state, routing, handoffs, and active coordination.
 - **Slack** is breadcrumb-only and never the durable record.
 - **Hugging Face** is available for research/models/docs/jobs, but remains outside bootstrap and outside live coordination writes in this issue.
 
-This mapping is documented in `swarm.json` under `control_plane` and echoed into `!/agents.json` for local inspection.
+This is a repo-local operating posture, not the whole `LAF-US` world model.
+That broader chamber and team topology lives in `!/AGENTS.md`,
+`!/WAKEUP.md`, and `!/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md`.
+The connector mapping itself is documented in `swarm.json` under
+`control_plane` and echoed into `!/agents.json` for local inspection.
 
 ---
 
@@ -185,9 +196,10 @@ source !/agent.sh --validate copilot
 - `!/agents.json` - generated bootstrap index
 - `agents.json` - root compatibility mirror of `!/agents.json`
 - `swarm.json` - canonical machine-readable registry
+- `!/WAKEUP.md` - explicit wakeup and conflict-resolution surface
 - `!/AGENTS.md` - canonical narrative registry
-- `!/README.md` - orientation anchor
-- `!/VAULT-CONVENTIONS.md` - routing and shared behavior
+- `!README.md` - orientation anchor
+- `VAULT-CONVENTIONS.md` - routing and shared behavior
 - `.github/scripts/generate_agents_bootstrap.py` - generator for `!/agents.json`
 
 ---

@@ -5,4 +5,4 @@ related:
 - St. Maries
 authority: LOGAN
 ---
-St. Maries, Benewah County 
+St. Maries, Benewah County

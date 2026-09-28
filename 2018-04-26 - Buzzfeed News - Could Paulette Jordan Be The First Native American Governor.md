@@ -99,8 +99,6 @@ At 38, after serving just two terms as a state representative, Jordan is not a c
 
 And while the bulk of the Idaho Democratic establishment has endorsed Jordan’s opponent, Boise school board member A.J. Balukoff, Jordan has earned the support of the progressive PAC Democracy for America, Planned Parenthood, Our Revolution, and was among the first five candidates endorsed on the national level by Indivisible. In January, Jordan was asked to speak at the national Women’s March gathering in Las Vegas; while there, she met and was endorsed by Cher.
 
-
-
 John Locher / AP
 Left: Idaho state Rep. Paulette Jordan speaks during a Women's March rally Sunday, Jan. 21, 2018, in Las Vegas. Right: Cher speaks during a Women's March rally in Las Vegas.
 
@@ -117,7 +115,6 @@ Jordan has caught the national eye as a Native woman, and a progressive at that,
 After Roy Moore’s implosion in Alabama, there’s a good argument that Democrats should always try to run a candidate that a majority of voters, not just Democrats, could theoretically stomach voting for, no matter how certain their defeat might seem. And Jordan — who, unlike Balukoff, is not from Boise, and is not a millionaire — thinks she’s the only Democrat in this race who could actually pull out a win in a state that hasn’t had a Democrat in the governor’s office since 1995.
 
 Winning in November might ultimately matter less than what a Jordan candidacy would symbolize to many in Idaho, long accustomed to a certain (white, largely male) type of representation. As Lisa Sánchez, who was recently elected as Boise’s first Latina city council representative, put it, “Paulette offers the promise of a new kind of public servant. Whether you’re a woman, or a Chicana, or an indigenous person, you’ve received these messages for so long: that you don’t belong here, that this sort of work, this sort of power, this sort of position isn’t for you. Whether Paulette wins or loses, she’s sending a message that says: You know what, this is for people like us, as well.”
-
 
 Celia Talbot Tobin for BuzzFeed News
 Paulette Jordan during a podcast interview in Coeur d'Alene, Idaho.
@@ -153,7 +150,6 @@ Jordan had long planned to attend law school, but after graduation, she found he
 Jordan’s job was to communicate the plan — which included shaving off the top layer of soil in many of the affected places — to those who opposed it. One of her first stops was St. Maries, a once-thriving timber town on the edge of the Coeur d’Alene Reservation. Tension has long simmered between the Coeur d’Alene tribe and the townspeople, the vast majority of whom are white; in the early 2000s, many residents were vehemently opposed to both the Superfund designation and cleanup efforts, which they viewed as overly invasive industry killers.
 
 “Back then, they would threaten people if they came into St. Maries,” Jordan said. “My tribe was saying: ‘Don’t go there without a bodyguard.’” (The concern wasn’t without merit: In 2008, the wife of a county commissioner was accused of assaulting a tribal police officer after a jurisdiction disagreement.) “But if I go there with security, it wouldn’t build a line of trust,” Jordan explained. “I knew I needed to go talk to them directly.”
-
 
 Courtesy of Paulette Jordan's campaign
 Jordan campaigning in Idaho.
@@ -196,7 +192,6 @@ Jordan explains her votes, including several where she was the only dissenting v
 
 “I can’t tell you what she’s accomplished in the legislature,” Chuck Malloy, a longtime Idaho political columnist, told me. “But I can’t tell you what any Democrat has accomplished.”
 
-
 Celia Talbot Tobin for BuzzFeed News
 Paulette Jordan prepares to saddle up at her uncle's ranch in Worley, Idaho.
 
@@ -222,7 +217,6 @@ When people meet Jordan, they often assume she’s younger than her 38 years. Bu
 
 “I think we’re done with that,” Jordan said. “This is a generation that says, we’re not going to tolerate old white men telling us to step aside anymore. This is when it’s time for us to take action — and to lead.”
 
-
 Celia Talbot Tobin for BuzzFeed News
 ADVERTISEMENT
 As much as her name, and her campaign, is preceded by “first Native American woman,” Jordan doesn’t see herself uniquely in those terms. “I never really bring it up,” she told me. “Other people do. Maybe they like the idea. Which is fine. I want people to see beyond my race and my color and know that I actually have had a strong career. I want them to understand that when I do make a decision, they might slightly disagree, but they’ll know why I made it.”
@@ -242,7 +236,6 @@ Even if Jordan sees her identity as secondary to her skills, she understands the
 Jordan’s political and field director is a woman named Jennifer Martinez — who, in 2016, waged her own campaign against then nine-term Rep. Mike Simpson. She was the first Latina candidate to run for national office in Idaho, where the Latino population is estimated at 15% and growing. Martinez lost by 33 points, but the next year, she became the campaign manager for Lisa Sánchez, who won her Boise City Council seat by nearly 20 points. Sánchez remembers telling Martinez, “You showed the rest of us, you need to try. You need to be in the game.”
 
 For Sánchez, Jordan’s campaign is a continuation of that idea. “Little by little, people are realizing that they have the license to be in that game,” she said. For her, the current political moment harks back to an experience she had at the Seattle Art Museum, visiting a traveling exhibit of Frida Kahlo's paintings. “There’s these really tiny portraits, and you can’t really appreciate the technique, the patterning she’s done, until you get up close,” Sánchez told me. “But everyone’s standing 10, 15 feet away from them — even though there’s no velvet rope keeping us away. I wanted to see the detail, though, so I stepped forward, just inches away. And pretty soon you saw everyone else doing the same thing. And I realized: We do this all the time. No one is standing in our way, saying we can’t be there. But sometimes we imagine the rope. We put it there. And it takes someone like Paulette, or Jennifer, or me, to say, there’s no rope there. Let’s go.”
-
 
 Celia Talbot Tobin for BuzzFeed News
 Paulette Jordan at her uncle's ranch in Worley, Idaho.

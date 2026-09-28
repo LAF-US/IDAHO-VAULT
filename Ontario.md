@@ -4,4 +4,4 @@ related:
 - Oregon
 authority: LOGAN
 ---
-Malheur County, Oregon 
+Malheur County, Oregon

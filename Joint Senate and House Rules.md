@@ -8,14 +8,15 @@ related:
 - Rules of the Senate
 authority: LOGAN
 ---
-**Idaho Legislature** 
-Rules of the House 
+**Idaho Legislature**
+Rules of the House
+
 - Idaho House of Representatives
 - House members
 Rules of the Senate
 - Idaho Senate
-- Senate members 
+- Senate members
 
---- 
+---
 
-https://legislature.idaho.gov/statutesrules/jointrules/ 
+<https://legislature.idaho.gov/statutesrules/jointrules/>

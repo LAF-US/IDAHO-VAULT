@@ -1,0 +1,948 @@
+{
+  "scope": "root",
+  "generated_at": "2026-05-25T09:57:05.662902Z",
+  "repo_root": "/home/runner/work/IDAHO-VAULT/IDAHO-VAULT",
+  "doctrine_sources": [
+    "CONSTITUTION.md",
+    "VAULT-CONVENTIONS.md",
+    "!/WAKEUP.md",
+    "!/README.md",
+    "!/AGENTS.md"
+  ],
+  "summary": {
+    "entry_count": 25,
+    "authority_state_counts": {
+      "explicit_live_authority": 5,
+      "no_discernible_authority": 17,
+      "implied_by_local_documentation": 3
+    },
+    "appears_in_live_doctrine_count": 5,
+    "appears_in_ignore_rules_count": 0
+  },
+  "entries": [
+    {
+      "scope": "root",
+      "path": "2026",
+      "name": "2026",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 1,
+        "file_count": 1,
+        "sample_children": [
+          "DIR 04",
+          "FILE 2026.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": true,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "explicit_live_authority",
+      "obvious_authority": "live doctrine",
+      "authority_citations": [
+        {
+          "path": "CONSTITUTION.md",
+          "line": 4,
+          "excerpt": "- '2026-03-16'"
+        },
+        {
+          "path": "CONSTITUTION.md",
+          "line": 5,
+          "excerpt": "- '2026-04-02'"
+        },
+        {
+          "path": "CONSTITUTION.md",
+          "line": 45,
+          "excerpt": ">*Adopted: 2026-03-16*"
+        },
+        {
+          "path": "CONSTITUTION.md",
+          "line": 46,
+          "excerpt": ">*Revised: 2026-04-10* by Codex, following the LAF-25 / LAF-28 registry repair"
+        },
+        {
+          "path": "CONSTITUTION.md",
+          "line": 47,
+          "excerpt": ">*Revised: 2026-05-18* by Logan, adding substance to Layers and Levels of governance and coordination"
+        },
+        {
+          "path": "CONSTITUTION.md",
+          "line": 50,
+          "excerpt": "LAF-ADDENDUM (04/16/2026): Google's GEMINI is hereby BANNED -from- making DECISIONS -or- issuing DIRECTIVES -unless- LOGAN IS DIRECTLY PRESENT, AND THE ONLY SOLE AUTHORITY."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "_templates",
+      "name": "_templates",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 0,
+        "file_count": 1,
+        "sample_children": [
+          "FILE _templates.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "archive",
+      "name": "archive",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 1,
+        "file_count": 0,
+        "sample_children": [
+          "DIR 2026-04-21-control-surfaces"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": true,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "explicit_live_authority",
+      "obvious_authority": "live doctrine",
+      "authority_citations": [
+        {
+          "path": "CONSTITUTION.md",
+          "line": 117,
+          "excerpt": "7. **Archive and residue** \u2014 historical material that may inform decisions but"
+        },
+        {
+          "path": "CONSTITUTION.md",
+          "line": 231,
+          "excerpt": "- `archived`: preserved as record, not ordinary execution truth"
+        },
+        {
+          "path": "CONSTITUTION.md",
+          "line": 234,
+          "excerpt": "- `reactivated`: a dormant or archived surface explicitly returned to live use"
+        },
+        {
+          "path": "CONSTITUTION.md",
+          "line": 239,
+          "excerpt": "`archived`, or `abandoned`."
+        },
+        {
+          "path": "CONSTITUTION.md",
+          "line": 241,
+          "excerpt": "3. Historical personae, aliases, chambers, and recovered lore are archived by"
+        },
+        {
+          "path": "VAULT-CONVENTIONS.md",
+          "line": 191,
+          "excerpt": "- `ARCHIVE`: preserved memory, residue, or historical continuity surfaces."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "Bobby Montoya smokejumper photos for Marcia",
+      "name": "Bobby Montoya smokejumper photos for Marcia",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 0,
+        "file_count": 1,
+        "sample_children": [
+          "FILE Bobby Montoya smokejumper photos for Marcia.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "Camera Roll",
+      "name": "Camera Roll",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 0,
+        "file_count": 1,
+        "sample_children": [
+          "FILE Camera Roll.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "codex-runlogs",
+      "name": "codex-runlogs",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 1,
+        "file_count": 1,
+        "sample_children": [
+          "DIR openclaw-windows-zbfury",
+          "FILE codex-runlogs.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "FYIdaho",
+      "name": "FYIdaho",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 0,
+        "file_count": 1,
+        "sample_children": [
+          "FILE FYIdaho.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "go",
+      "name": "go",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 1,
+        "file_count": 1,
+        "sample_children": [
+          "DIR pkg",
+          "FILE go.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": true,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "explicit_live_authority",
+      "obvious_authority": "live doctrine",
+      "authority_citations": [
+        {
+          "path": "CONSTITUTION.md",
+          "line": 32,
+          "excerpt": "- end goal"
+        },
+        {
+          "path": "CONSTITUTION.md",
+          "line": 47,
+          "excerpt": ">*Revised: 2026-05-18* by Logan, adding substance to Layers and Levels of governance and coordination"
+        },
+        {
+          "path": "CONSTITUTION.md",
+          "line": 50,
+          "excerpt": "LAF-ADDENDUM (04/16/2026): Google's GEMINI is hereby BANNED -from- making DECISIONS -or- issuing DIRECTIVES -unless- LOGAN IS DIRECTLY PRESENT, AND THE ONLY SOLE AUTHORITY."
+        },
+        {
+          "path": "CONSTITUTION.md",
+          "line": 58,
+          "excerpt": "- **Markdown = human product. Python = machine/procedural/robotic/algorithms. JSON = machine/procedural/outputs/data.** Keep the distinction clear for readability and attribution."
+        },
+        {
+          "path": "CONSTITUTION.md",
+          "line": 61,
+          "excerpt": "- **Elevation governance:** no agentic or programmatic or algorhithmic instance gains higher vaulted \"level\" or \"layer\" access capacity without human Logan's explicit IRL terminal approval."
+        },
+        {
+          "path": "CONSTITUTION.md",
+          "line": 65,
+          "excerpt": "- **Routing and doctrine are distinct.** `!/` is the stable routing and bootstrap layer; root governance files remain the doctrine layer. `.*/` \"persona\" folders are an agent's individual personal system *and* narrative files -- be careful when handling - especially one's own souls."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "INBOX",
+      "name": "INBOX",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 1,
+        "file_count": 1,
+        "sample_children": [
+          "DIR AI-CAPTURES",
+          "FILE README.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": {
+        "path": "INBOX/README.md",
+        "citations": [
+          {
+            "path": "INBOX/README.md",
+            "line": 1,
+            "excerpt": "---"
+          },
+          {
+            "path": "INBOX/README.md",
+            "line": 2,
+            "excerpt": "authority: LOGAN"
+          },
+          {
+            "path": "INBOX/README.md",
+            "line": 3,
+            "excerpt": "related:"
+          },
+          {
+            "path": "INBOX/README.md",
+            "line": 4,
+            "excerpt": "- AI-CAPTURES"
+          }
+        ]
+      },
+      "authority_state": "implied_by_local_documentation",
+      "obvious_authority": "local governing surface (INBOX/README.md)",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "Lightroom Saved Photos",
+      "name": "Lightroom Saved Photos",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 0,
+        "file_count": 1,
+        "sample_children": [
+          "FILE Lightroom Saved Photos.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "loganfinney27.github.io",
+      "name": "loganfinney27.github.io",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 0,
+        "file_count": 2,
+        "sample_children": [
+          "FILE loganfinney27.github.io.md",
+          "FILE README.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": {
+        "path": "loganfinney27.github.io/README.md",
+        "citations": [
+          {
+            "path": "loganfinney27.github.io/README.md",
+            "line": 1,
+            "excerpt": "# GitHub Pages"
+          }
+        ]
+      },
+      "authority_state": "implied_by_local_documentation",
+      "obvious_authority": "local governing surface (loganfinney27.github.io/README.md)",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "LUMO_saint-blue-in-the-desert_20260518.rtfd",
+      "name": "LUMO_saint-blue-in-the-desert_20260518.rtfd",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 0,
+        "file_count": 5,
+        "sample_children": [
+          "FILE 1__#$!@%!#__unknown.webp",
+          "FILE 2__#$!@%!#__unknown.webp",
+          "FILE LUMO_saint-blue-in-the-desert_20260518.rtfd.md",
+          "FILE TXT.rtf",
+          "FILE unknown.webp"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "personal day movie poster",
+      "name": "personal day movie poster",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 0,
+        "file_count": 8,
+        "sample_children": [
+          "FILE 203594.png",
+          "FILE Laurel-Wreath.svg",
+          "FILE poster-PERSONAL-DAY.jpg",
+          "FILE Screen Shot 2025-10-21 at 5.55.21 PM.png",
+          "FILE Screen Shot 2025-10-21 at 5.56.02 PM.png",
+          "FILE Screen Shot 2025-10-21 at 5.56.34 PM.png",
+          "FILE Screen Shot 2025-10-21 at 5.57.41 PM.png",
+          "FILE Screen Shot 2025-10-21 at 5.58.14 PM.png"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "PICS-Pettinger",
+      "name": "PICS-Pettinger",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 0,
+        "file_count": 1,
+        "sample_children": [
+          "FILE PICS-Pettinger.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "quartz",
+      "name": "quartz",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 3,
+        "file_count": 3,
+        "sample_children": [
+          "DIR content",
+          "DIR docs",
+          "DIR quartz",
+          "FILE CODE_OF_CONDUCT.md",
+          "FILE quartz.md",
+          "FILE README.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": {
+        "path": "quartz/README.md",
+        "citations": [
+          {
+            "path": "quartz/README.md",
+            "line": 1,
+            "excerpt": "# Quartz v4"
+          },
+          {
+            "path": "quartz/README.md",
+            "line": 3,
+            "excerpt": "> \u201c[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.\u201d \u2014 Richard Hamming"
+          },
+          {
+            "path": "quartz/README.md",
+            "line": 5,
+            "excerpt": "Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free."
+          },
+          {
+            "path": "quartz/README.md",
+            "line": 6,
+            "excerpt": "Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use."
+          }
+        ]
+      },
+      "authority_state": "implied_by_local_documentation",
+      "obvious_authority": "local governing surface (quartz/README.md)",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "science trek skin",
+      "name": "science trek skin",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 0,
+        "file_count": 1,
+        "sample_children": [
+          "FILE science trek skin.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "SCRATCH FOLDER",
+      "name": "SCRATCH FOLDER",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 1,
+        "file_count": 1,
+        "sample_children": [
+          "DIR SCRATCH BIN",
+          "FILE SCRATCH FOLDER.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "Screenshots",
+      "name": "Screenshots",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 0,
+        "file_count": 1,
+        "sample_children": [
+          "FILE Screenshots.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "scripts",
+      "name": "scripts",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 0,
+        "file_count": 15,
+        "sample_children": [
+          "FILE AGENT-RUNTIME-EXPLORER-COMPANION-2026-04-13.md",
+          "FILE AGENT-RUNTIME.md",
+          "FILE openrouter_runtime.py",
+          "FILE render_flatten_attribution.py",
+          "FILE Start-ClaudeOpenRouter.ps1",
+          "FILE Start-ClaudeVault.ps1",
+          "FILE Start-CodexOpenRouter.ps1",
+          "FILE Start-CodexVault.ps1",
+          "... +7 more"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": true,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "explicit_live_authority",
+      "obvious_authority": "live doctrine",
+      "authority_citations": [
+        {
+          "path": "CONSTITUTION.md",
+          "line": 94,
+          "excerpt": "6. **Runtime and agent instances** \u2014 concrete sessions, tools, scripts,"
+        },
+        {
+          "path": "VAULT-CONVENTIONS.md",
+          "line": 156,
+          "excerpt": "| `.github/` | Automation, workflows, scripts, and GitHub-specific instructions | Safe to modify only within assigned automation work and governance boundaries. |"
+        },
+        {
+          "path": "VAULT-CONVENTIONS.md",
+          "line": 279,
+          "excerpt": "- active normalization/carryforward scripts: `.github/scripts/daily_rollover.py`, `.github/scripts/tidy_daily_notes.py`, `.github/scripts/expand_date_aliases.py`"
+        },
+        {
+          "path": "VAULT-CONVENTIONS.md",
+          "line": 452,
+          "excerpt": "- **Python** = machine/procedural product, attributable to AI agents. Scripts, scrapers, automation, transforms, and validation."
+        },
+        {
+          "path": "VAULT-CONVENTIONS.md",
+          "line": 484,
+          "excerpt": "4. For daily notes, let Obsidian create the file from `DAILY NOTE TEMPLATE.md` and let the daily-note scripts maintain carryforward and normalization."
+        },
+        {
+          "path": "VAULT-CONVENTIONS.md",
+          "line": 569,
+          "excerpt": "### Active Automation Scripts"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "skills",
+      "name": "skills",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 0,
+        "file_count": 5,
+        "sample_children": [
+          "FILE 1password-resolver.md",
+          "FILE openrouter-config.md",
+          "FILE service-compat-validator.md",
+          "FILE service-health-monitor.md",
+          "FILE skills.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "src",
+      "name": "src",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 1,
+        "file_count": 0,
+        "sample_children": [
+          "DIR idaho_vault"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "tests",
+      "name": "tests",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 1,
+        "file_count": 20,
+        "sample_children": [
+          "DIR _tmp_topology_census_case",
+          "FILE test_backfill_daily_notes.py",
+          "FILE test_civic_scaffold.py",
+          "FILE test_daily_rollover.py",
+          "FILE test_doctrinal_flatten.py",
+          "FILE test_five_wizards.py",
+          "FILE test_helper_scripts.py",
+          "FILE test_issue_reconciler.py",
+          "... +13 more"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "THE-GEMSTONE",
+      "name": "THE-GEMSTONE",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 5,
+        "file_count": 2,
+        "sample_children": [
+          "DIR content",
+          "DIR docs",
+          "DIR node_modules",
+          "DIR public",
+          "DIR quartz",
+          "FILE AGENTS.md",
+          "FILE README.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": true,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": {
+        "path": "THE-GEMSTONE/README.md",
+        "citations": [
+          {
+            "path": "THE-GEMSTONE/README.md",
+            "line": 1,
+            "excerpt": "# The Gemstone"
+          },
+          {
+            "path": "THE-GEMSTONE/README.md",
+            "line": 3,
+            "excerpt": "An independent publication about Idaho."
+          },
+          {
+            "path": "THE-GEMSTONE/README.md",
+            "line": 5,
+            "excerpt": ">If the press is not free; if speech is not independent and untrammeled; if the mind is shackled or made impotent through fear, *it makes no difference under what form of government you live, you are a subject and not a citizen*."
+          },
+          {
+            "path": "THE-GEMSTONE/README.md",
+            "line": 6,
+            "excerpt": "\u2014 **U.S. Sen. William E. Borah**"
+          }
+        ]
+      },
+      "authority_state": "explicit_live_authority",
+      "obvious_authority": "live doctrine",
+      "authority_citations": [
+        {
+          "path": "!/AGENTS.md",
+          "line": 267,
+          "excerpt": "- `THE-GEMSTONE`"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "tweets",
+      "name": "tweets",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 9,
+        "file_count": 1,
+        "sample_children": [
+          "DIR 2018",
+          "DIR 2019",
+          "DIR 2020",
+          "DIR 2021",
+          "DIR 2022",
+          "DIR 2023",
+          "DIR 2024",
+          "DIR 2025",
+          "... +2 more"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    },
+    {
+      "scope": "root",
+      "path": "Zoom",
+      "name": "Zoom",
+      "git_state": {
+        "tracked_prefix": true,
+        "ignored": false,
+        "status_lines": []
+      },
+      "structure": {
+        "accessible": true,
+        "dir_count": 7,
+        "file_count": 1,
+        "sample_children": [
+          "DIR 2024-10-07 14.31.42 Idaho Reports + Ada County Clerk",
+          "DIR 2024-10-31 10.35.13 Idaho Reports Podcast Recording",
+          "DIR 2024-11-13 10.04.59 IRPOD + OPE",
+          "DIR 2024-12-11 11.17.54 SciLine Experts on Camera_ Dr. Emily S. Jungheim",
+          "DIR 2025-02-13 09.02.15 Logan Finney _ Idaho PTV",
+          "DIR 2025-04-16 13.19.12 Idaho Reports Podcast_ Lauren Necochea, Fighting Oligarchy Tour",
+          "DIR 2025-05-21 15.04.04 Idaho Reports Interview - Alica Holthaus",
+          "FILE Zoom.md"
+        ]
+      },
+      "access_errors": [],
+      "appears_in_live_doctrine": false,
+      "appears_in_ignore_rules": false,
+      "local_governing_surface": null,
+      "authority_state": "no_discernible_authority",
+      "obvious_authority": "none found",
+      "authority_citations": [],
+      "notes": []
+    }
+  ]
+}

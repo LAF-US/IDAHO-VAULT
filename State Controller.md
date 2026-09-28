@@ -6,4 +6,5 @@ related:
 authority: LOGAN
 ---
 State Treasurer accepts the money, Controller spends it.
-- Brandon Woolf 
+
+- Brandon Woolf

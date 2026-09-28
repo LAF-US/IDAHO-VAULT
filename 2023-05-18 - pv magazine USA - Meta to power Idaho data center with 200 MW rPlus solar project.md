@@ -61,6 +61,6 @@ In late 2022, Resta told **pv magazine USA** the western states developer is [ac
 
 ### Popular content
 
-[![](https://pv-magazine-usa.com/wp-content/uploads/sites/2/wordpress-popular-posts/128732-featured-1200x800.jpg)](https://pv-magazine-usa.com/2026/03/27/the-theory-and-practice-of-plug-in-solar/)
+[![alt text needed](https://pv-magazine-usa.com/wp-content/uploads/sites/2/wordpress-popular-posts/128732-featured-1200x800.jpg)](https://pv-magazine-usa.com/2026/03/27/the-theory-and-practice-of-plug-in-solar/)
 
 [27 March 2026](https://pv-magazine-usa.com/2026/03/27/the-theory-and-practice-of-plug-in-solar/) [Achieving a system cost of $0.65 per watt through the secondary market and DIY assembly demonstrates a viable pathway for U.S. plug-in solar to provid...](https://pv-magazine-usa.com/2026/03/27/the-theory-and-practice-of-plug-in-solar/)

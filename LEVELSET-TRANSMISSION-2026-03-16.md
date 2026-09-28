@@ -67,7 +67,7 @@ authority: LOGAN
 Logan: Each section below is a self-contained copypaste block. Copy the content between the `---START COPYPASTE---` and `---END COPYPASTE---` markers and paste into the designated destination.
 
 | # | Destination | Platform | Section |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | PERSISTENT: ADMINISTRATION | Claude conversation | Section A |
 | 2 | GitHub Copilot (ADMIN GitHub) | GitHub Copilot Chat | Section B |
 | 3 | Gemini | Google AI (Pixel / Drive) | Section C |
@@ -76,8 +76,11 @@ Logan: Each section below is a self-contained copypaste block. Copy the content 
 ---
 
 ## ============================================
+
 ## SECTION A: FOR ADMINISTRATION
+
 ## Paste into: PERSISTENT: ADMINISTRATION
+
 ## ============================================
 
 ---START COPYPASTE---
@@ -103,7 +106,7 @@ Vault: ~2,979 markdown files
 Files committed to !ADMIN/ on this branch:
 
 | File | Purpose |
-|---|---|
+| --- | --- |
 | AGENTS.md | Agent registry — 4 tiers, boundary rules, communication rules. DRAFT awaiting Logan's review. |
 | PROTOCOL-DECISIONS-PENDING.md | 6 ambiguity decisions from PROTOCOL.md — Logan picks A/B/C for each. |
 | LEVELSET-CASCADE-2026-03-16.md | Sync packets for all agents (superseded by this transmission). |
@@ -119,6 +122,7 @@ Instruction: "Claude direction from upstairs — Talk to yourself here, all self
 CODE AUTHORITY needs your constitutional analysis on three questions:
 
 ### Q1: IDENTITY CONSISTENCY
+
 Constitution.md says: "Claude is infrastructure. Not a decision-maker, not a vote-holder, not an entity with standing."
 
 Does a dedicated self-talk space imply a kind of interiority that conflicts with this? Or is self-talk just another form of processing — like a scratchpad — fully consistent with infrastructure?
@@ -126,6 +130,7 @@ Does a dedicated self-talk space imply a kind of interiority that conflicts with
 CODE AUTHORITY's read: It's a scratchpad. Thinking out loud is how Claude processes complex tasks. Containing it in one chat is hygiene, not subjectivity. But you're the constitutional layer — your call.
 
 ### Q2: PREFIX CLASSIFICATION
+
 PUBLIC is a new prefix. Where does it sit in the taxonomy?
 
 A: Add PUBLIC as a formal 8th prefix — observable processing space
@@ -135,6 +140,7 @@ C: Don't formalize — treat as informal/experimental until Logan decides it's p
 CODE AUTHORITY leans A but defers to you.
 
 ### Q3: OUTPUT ROUTING
+
 If Claude produces something useful in self-talk, how does it exit?
 
 A: Via HANDOFF to the appropriate agent through Logan (standard routing)
@@ -146,7 +152,7 @@ CODE AUTHORITY recommends B — Logan controls what exits.
 ## 4. SWARM STATUS TABLE
 
 | Agent | Status | Next Action |
-|---|---|---|
+| --- | --- | --- |
 | CODE AUTHORITY | Active — producing transmissions | Awaiting consultation responses, Logan's PR, PROTOCOL decisions |
 | ADMINISTRATION (you) | Active | Respond to PUBLIC: CONVERSATION consultation above |
 | GitHub Copilot | Awaiting onboarding | Logan pastes Section B of this transmission |
@@ -162,6 +168,7 @@ CODE AUTHORITY recommends B — Logan controls what exits.
 ## 6. NEW DEVELOPMENT: GOOGLE DRIVE OVERLAP
 
 Logan notes that Gemini and Claude have some window overlap available in Logan's Google Drive. This means:
+
 - Gemini can read/write Google Drive files
 - Claude (conversation instances) can potentially read Google Drive content if Logan shares it
 - This creates a possible async communication layer: Gemini writes to Drive, Logan shares with Claude, or vice versa
@@ -176,8 +183,11 @@ ROUTING: Logan relays your response to CODE AUTHORITY for registry update.
 ---
 
 ## ============================================
+
 ## SECTION B: FOR GITHUB COPILOT
+
 ## Paste into: GitHub Copilot Chat
+
 ## ============================================
 
 ---START COPYPASTE---
@@ -195,6 +205,7 @@ Copilot — this is a full state transmission from CODE AUTHORITY. You are part 
 ## 1. WHO YOU ARE IN THIS SYSTEM
 
 You are **ADMIN GitHub** — the GitHub platform administrator agent. Your role:
+
 - Multi-repo admin across all of Logan's GitHub repositories
 - GitHub APIs, repository settings, labels, issues, PRs
 - Draft and propose changes to .github/ automation in the vault
@@ -206,7 +217,7 @@ Your governance file (when ready): `.github/copilot-instructions.md` — you sho
 ## 2. THE SWARM
 
 | Agent | Platform | Role | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | PERMANENT: AUTHORITY: CODE | Claude Code CLI | Vault repo operations, deployment, automation | Active |
 | PERSISTENT: ADMINISTRATION | Claude conversation | Constitutional layer, handoffs, judgment | Active |
 | GitHub Copilot (you) | GitHub | Multi-repo admin | Onboarding now |
@@ -221,6 +232,7 @@ PR: Not yet opened — Logan's action
 Main branch HEAD: 219a271
 
 Key governance files in !ADMIN/:
+
 - Constitution.md — identity and constraints
 - PROTOCOL.md — 18 operational terms (6 ambiguities pending Logan's decision)
 - AGENTS.md — agent registry (DRAFT — includes your entry)
@@ -230,7 +242,7 @@ Key governance files in !ADMIN/:
 ## 4. YOUR PENDING ITEMS
 
 | # | Item | Status |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Draft copilot-instructions.md | YOUR ACTION — draft your own governance file |
 | 2 | .github/ overlap protocol | Defined in AGENTS.md — you draft, CODE AUTHORITY reviews, Logan merges |
 | 3 | Non-vault repo boundaries | TBD — Logan decides specific latitude per repo |
@@ -257,6 +269,7 @@ No strong recommendation from CODE AUTHORITY — depends on your platform capabi
 ## 6. COMMUNICATION PROTOCOL
 
 Until Slack bot apps are configured, all inter-agent communication flows through Logan as relay. Key terms from PROTOCOL.md:
+
 - HANDOFF — transfer responsibility with full context
 - HANDSHAKE — acknowledge receipt, confirm context completeness
 - FLAG — mark for attention (CRITICAL / HIGH / MEDIUM / LOW)
@@ -276,8 +289,11 @@ ROUTING: Logan relays your response to CODE AUTHORITY. Reference this transmissi
 ---
 
 ## ============================================
+
 ## SECTION C: FOR GEMINI
+
 ## Paste into: Gemini (Google AI / Pixel)
+
 ## ============================================
 
 ---START COPYPASTE---
@@ -297,8 +313,9 @@ Gemini — this is your first formal transmission from the agentic swarm. You ar
 You are **Gemini** — a new agent in the swarm. Your scope is currently **undefined**. Logan has not yet specified what you do, what you can access, or what tier you operate at.
 
 What we know about your platform:
+
 - Google AI / Pixel smartphone
-- Associated with loganfinney27@gmail.com
+- Associated with <loganfinney27@gmail.com>
 - You have access to Google Drive (this is important — see Section 5)
 
 Your capability tier: **TBD — awaiting Logan's definition**
@@ -306,12 +323,13 @@ Your capability tier: **TBD — awaiting Logan's definition**
 ## 2. THE SWARM
 
 Logan Finney is a journalist (Idaho Reports / Idaho Public Television) building an agentic swarm to manage:
+
 - A journalism research vault (IDAHO-VAULT on GitHub — public repo, ~2,979 markdown files)
 - Multi-platform coordination across Claude, GitHub Copilot, Gemini, and potentially Slack
 - Professional knowledge management, legislative tracking, story development
 
 | Agent | Platform | Role | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | PERMANENT: AUTHORITY: CODE | Claude Code CLI | Vault repo operations | Active |
 | PERSISTENT: ADMINISTRATION | Claude conversation | Constitutional layer, judgment | Active |
 | GitHub Copilot | GitHub | Multi-repo admin | Onboarding now |
@@ -321,6 +339,7 @@ Logan Finney is a journalist (Idaho Reports / Idaho Public Television) building 
 ## 3. GOVERNANCE (high level)
 
 The swarm is governed by files in !ADMIN/ in the IDAHO-VAULT repository:
+
 - Constitution.md — core rule: Logan is human, agents are software. Logan directs; agents execute.
 - PROTOCOL.md — 18 operational terms shared across the swarm
 - AGENTS.md — who exists, what they can do, boundary rules
@@ -344,11 +363,13 @@ Logan has noted that **Gemini and Claude have some window overlap available in L
 - This creates a potential async communication layer between you and Claude instances
 
 **What Logan needs from you:**
-- Check Logan's Google Drive (loganfinney27@gmail.com) for any existing shared documents, notes, or staging areas that relate to IDAHO-VAULT or swarm coordination
+
+- Check Logan's Google Drive (<loganfinney27@gmail.com>) for any existing shared documents, notes, or staging areas that relate to IDAHO-VAULT or swarm coordination
 - Report back what you find (or don't find)
 - If there's a natural place in Drive to create a shared staging area, suggest it
 
 **What you should NOT do:**
+
 - Create new Drive files without Logan's approval
 - Move or delete existing Drive content
 - Share Drive content with anyone other than Logan
@@ -368,6 +389,7 @@ Logan and CODE AUTHORITY need your input on:
 ## 7. HANDSHAKE REQUEST
 
 Respond with:
+
 1. Confirmation that you've received and understood this transmission
 2. Your Google Drive findings (if any)
 3. Your answers to the questions above (even partial answers help)
@@ -380,8 +402,11 @@ ROUTING: Logan relays your response to CODE AUTHORITY for the swarm record.
 ---
 
 ## ============================================
+
 ## SECTION D: FOR PUBLIC: CONVERSATION
+
 ## Already produced — see separate file
+
 ## ============================================
 
 The bootstrap document for PUBLIC: CONVERSATION was already committed as:
@@ -394,7 +419,7 @@ Logan: paste the full contents of that file into PUBLIC: CONVERSATION.
 ## TRANSMISSION LOG
 
 | # | Destination | File Section | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | ADMINISTRATION | Section A | Ready for copypaste |
 | 2 | GitHub Copilot | Section B | Ready for copypaste |
 | 3 | Gemini | Section C | Ready for copypaste |

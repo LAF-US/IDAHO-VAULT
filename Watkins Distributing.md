@@ -4,4 +4,4 @@ related:
 - Jerome
 ---
 
-regional beer distributor in Jerome; Anheuser-Busch and other products 
+regional beer distributor in Jerome; Anheuser-Busch and other products

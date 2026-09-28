@@ -6,4 +6,4 @@ related:
 - Twin Falls County
 authority: LOGAN
 ---
-Local Idaho Democratic Party precinct committee for Twin Falls County 
+Local Idaho Democratic Party precinct committee for Twin Falls County

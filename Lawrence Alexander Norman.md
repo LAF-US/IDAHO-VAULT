@@ -4,4 +4,4 @@ related:
 - Patriot Front
 authority: LOGAN
 ---
-Patriot Front member, Oregon resident 
+Patriot Front member, Oregon resident

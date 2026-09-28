@@ -32,7 +32,7 @@ related:
 - website
 authority: LOGAN
 ---
-Shelbie Harris, Idaho State Journal 
+Shelbie Harris, Idaho State Journal
 
 Pocatello — East Idaho conservative leaders and members of local Christian churches held a peaceful sit-in to protest the Reading Time with the Queens event at the Marshall Public Library on Saturday.
 

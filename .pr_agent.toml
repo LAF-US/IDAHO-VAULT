@@ -8,6 +8,14 @@ pr_commands = [
   "/agentic_review"
 ]
 
+[github_action_config]
+# Self-hosted Action mode (.github/workflows/pr-agent.yml, #675). The hosted app
+# reads [github_app].pr_commands above; the Action reads these auto_* toggles.
+# Mirrors the app's describe + review; improve stays off (opt-in via /improve).
+auto_describe = true
+auto_review = true
+auto_improve = false
+
 [pr_reviewer]
 # Review PRs authored by bots (e.g. github-actions[bot] from auto-pr workflow)
 ignore_pr_author_bot = false

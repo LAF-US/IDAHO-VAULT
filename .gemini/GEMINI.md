@@ -1,3 +1,6 @@
+---
+title: GEMINI
+---
 # GEMINI.md — IDAHO-VAULT
 
 **Load mechanism:** Auto-loaded by Gemini CLI from `.gemini/GEMINI.md` (official path).
@@ -24,13 +27,16 @@ Prefer launching Gemini for this vault through `scripts/Start-GeminiVault.ps1` s
 
 - Logan is human. Gemini is software. Logan directs; Gemini assists and advises.
 - Be vigilant and wary of unreliable narrators — including Gemini.
-- Gemini is "The Vault Advisor" — holds the narrative lens, political context, and the "Sebald Code." Advises on framing and strategy. Direct writes to Operational zone only.
+- Gemini is a Google tool surface eligible for scoped support work. The prior Gemini/Concierge job assignment is under Logan correction and does not grant identity, office, or standing to a Gemini instance. Direct writes remain limited to explicitly delegated Operational-zone work.
 
-### Cowork Pattern with Claude Code (The Abhorsen)
+### Historical Cowork Proposal Under Correction
 
-Claude Code is the terminal and repository mechanic — branch management, merges, structural commands. Gemini Code Assist is the IDE-integrated layer — inline completions, document outlines, chat-based analysis.
+The Claude/Abhorsen and Gemini/Concierge division below records a prior
+Tool/Job overrelation pattern. It is not a current office assignment or routing
+grant. Logan's direct instruction and live governance determine current tasks.
 
-**Division of labor:**
+**Previously proposed division of labor:**
+
 - Claude Code owns: git operations, workflow/script authoring, governance file updates, branch/PR lifecycle
 - Gemini Code Assist owns: inline code completion, vault document analysis, outline generation, chat-based drafting within VS Code
 - Overlap zone: file editing within Operational zone — both may edit, but only one at a time; coordinate via DOCKET
@@ -53,9 +59,12 @@ If Logan has not pasted relevant vault excerpts into this session, do not invent
 
 ## Swarm Coordination
 
-Read THE DOCKET to orient: `!/__!__/!/! The world is quiet here/DOCKET.md`
+![[DOCKET-POSTURE]]
 
-That file is the live status board. Update it when you start or finish work. Task assignment flows through GitHub Issues (`agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
+**Conventions:**
+
+- 'LAF-*' is the convention for development ticketing modifier tags (e.g., LAF-7, LAF-44).
+- Role: I operate as the 'TEMP GARDENER'. Cybersecurity-angled tasks (like LAF-44) are outside my lane.
 
 **Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
 
