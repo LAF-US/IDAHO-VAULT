@@ -11,7 +11,7 @@ related:
   - AGENT-AND-REPRESENTATION.md (the etymology-and-context compilation this branch already carries; agent ↔ apprentice are sibling-terms of acting-on-behalf and being-bound-to)
   - METATRON.md (Enoch the antediluvian patriarch becomes Metatron — the apprentice taken into the master's house)
   - THREE-NAMES.md (vault doctrine; the apprentice receives a Taken Name in the master's house)
-  - "- Fandom, Inc. - Magicians.md" (Bartimaeus universe — children of 5 given to magician-masters; chosen-names at 12; apprenticeship-shape)
+  - "\"- Fandom, Inc. - Magicians.md\" (Bartimaeus universe — children of 5 given to magician-masters; chosen-names at 12; apprenticeship-shape)"
 sources:
   - Online Etymology Dictionary (Etymonline)
   - Oxford English Dictionary

@@ -11,7 +11,7 @@ related:
   - LDS-TRIPART-AND-COSMOLOGY.md (same-day)
   - GODHEAD-DISAMBIGUATION.md (same-day)
   - PTOLEMY.md (same-day; the magician's Gate is a kind of agency act — the magician acts as his own envoy)
-  - "!/AGENTS.md" (vault canonical agent registry — the "agent" term in the vault inherits both contexts surveyed here)
+  - "\"!/AGENTS.md\" (vault canonical agent registry — the \"agent\" term in the vault inherits both contexts surveyed here)"
 sources:
   - Online Etymology Dictionary (Etymonline)
   - Oxford English Dictionary

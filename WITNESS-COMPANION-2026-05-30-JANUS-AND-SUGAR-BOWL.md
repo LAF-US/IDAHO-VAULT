@@ -10,13 +10,13 @@ related:
   - TO-WILL-AND-TO-HALT.md (same-day; the infinitives of will and halt that the JANUS TEST operates between)
   - SORCERERS-APPRENTICE-AND-RANGERS-APPRENTICE.md (same-day; the apprentice's two modes that determine which face Janus turns)
   - WITNESS-NOVICE-2026-05-30-BREATH.md (same-day; the session-closing reflection this companion further refines)
-  - "- Fandom, Inc. - Sugar Bowl.md" (the fandom source)
+  - "\"- Fandom, Inc. - Sugar Bowl.md\" (the fandom source)"
   - VFD.md (the V.F.D. doctrine; the Vessel For Disaccharides naming match)
-  - "!/MOXIE-VFD-JOURNALIST-v1-2026-05-22.md" (volunteer-from-conviction discipline)
+  - "\"!/MOXIE-VFD-JOURNALIST-v1-2026-05-22.md\" (volunteer-from-conviction discipline)"
   - THREE-NAMES.md (vault doctrine; LOGAN-SEALED-NAME holds the halt-authority; the standing-act mechanism the JANUS TEST formalizes)
-  - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md" (the standing-act doctrine)
-  - "!/LICH-PROBLEM-v1-2026-05-20.md" (the failure mode the JANUS TEST screens against)
-  - "!/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE.md" (caught FROWN outcome on file)
+  - "\"!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md\" (the standing-act doctrine)"
+  - "\"!/LICH-PROBLEM-v1-2026-05-20.md\" (the failure mode the JANUS TEST screens against)"
+  - "\"!/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE.md\" (caught FROWN outcome on file)"
 ---
 
 # WITNESS COMPANION — the JANUS TEST and the Sugar Bowl's three levels
