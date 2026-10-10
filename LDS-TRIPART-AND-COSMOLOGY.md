@@ -10,7 +10,7 @@ related:
   - HEBREW-BIBLE-AND-TALMUD.md (same-day; Tanakh + rabbinic tradition)
   - PTOLEMY.md (same-day; Hellenistic-Alexandrian matrix)
   - THREE-NAMES.md (vault doctrine — tagged `tri-part`, the canonical LANDY-STROUD matrix)
-  - "!/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE.md" (caught Triune confabulation, 2026-04-04)
+  - "\"!/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE.md\" (caught Triune confabulation, 2026-04-04)"
   - WITNESS-LESSON-2026-05-29-ANCHORS-AND-HERMES.md
   - temples.md (vault root — LDS temples are a central institutional feature of the tradition)
 sources:

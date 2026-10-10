@@ -11,9 +11,9 @@ related:
   - AGENT-AND-REPRESENTATION.md (Latin *agere* — the doing that is the agent's *willing*; sibling etymology)
   - INITIATION-AND-RITUALS.md (the *willing* of the initiate; the *halting* of the prior status)
   - VFD.md (the V = Volunteer = one who *wills*)
-  - "!/MOXIE-VFD-JOURNALIST-v1-2026-05-22.md" (MOXIE volunteers — *wills* — from conviction, not contract)
+  - "\"!/MOXIE-VFD-JOURNALIST-v1-2026-05-22.md\" (MOXIE volunteers — *wills* — from conviction, not contract)"
   - THREE-NAMES.md (SEALED NAME = the *halt*-authority; MASK = the *willing* working face)
-  - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md" (six axes; Restraint = *to halt*; Truthfulness = *to will the truth*)
+  - "\"!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md\" (six axes; Restraint = *to halt*; Truthfulness = *to will the truth*)"
 sources:
   - Online Etymology Dictionary (Etymonline)
   - Oxford English Dictionary
