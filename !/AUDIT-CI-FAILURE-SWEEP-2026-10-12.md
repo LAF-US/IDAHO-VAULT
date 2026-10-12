@@ -37,9 +37,9 @@ Pullfrog "Fix CI on #1029" also failed 5 times between 2026-09-23 and 09-30 (per
 ## Big IFs
 
 - Logan's 2026-09-26 comment and the PR #1029 body both say DO NOT MERGE / do not rebase, retarget or push while chunks land. Today's three failures began when #1029 was marked ready for review (02:19Z per the 05:07Z comment on #1029), which fires the review bots. The PR is still `mergeable_state: dirty`.
-- A comment on #1029 reports auto-merge was enabled at 04:00Z. I did not verify that. If true, it contradicts the body notice; `CONVENTIONS` says to park a waiting PR as draft. I changed nothing: this is Logan's call.
+- A comment on #1029 reports auto-merge was enabled at 04:00Z. I did not verify that. If true, it contradicts the body notice; the `CLAUDE.md` house rule says to park a waiting PR as draft. I changed nothing: this is Logan's call.
 - Head has not moved: `0c58d805`, 5,343 of the notice's 9,370 commits.
 
 ## Surfaces written
 
-GitHub: issue #252 comment. Linear, Slack, Discord, Zapier: see the PR description for what was posted or why not.
+GitHub: issue #252 comment 6128897106; PR #1084. Linear: LAF-83 comment. Slack: DM to Logan. Discord (via Zapier): `#ledger`, chosen over `#purgatory`, the only two channels the connection lists.
