@@ -35,19 +35,19 @@ def test_crlf_frontmatter_parses():
 
 
 def test_empty_frontmatter_is_empty_mapping():
-    """Adjacent fences yield an empty mapping."""
+    """An empty fence pair yields an empty mapping."""
     fm, errors = parse(P, "---\n---\nbody\n")
     assert errors == []
     assert fm == {}
 
 
 def test_unclosed_frontmatter_is_an_error():
-    """A missing closing fence is reported."""
+    """An unclosed frontmatter block produces an error."""
     fm, errors = parse(P, "---\ntitle: A\nbody\n")
     assert fm is None
     assert any("missing closing ---" in e for e in errors)
 
 
 def test_no_frontmatter_is_skipped():
-    """Content without frontmatter is skipped silently."""
+    """Files without frontmatter are not parsed."""
     assert parse(P, "just text\n") == (None, [])
