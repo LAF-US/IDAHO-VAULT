@@ -13,6 +13,7 @@ P = Path("note.md")
 
 
 def test_dashes_inside_value_are_not_a_fence():
+    """A `---` inside a quoted value must not end the frontmatter."""
     content = '---\nsource: "https://x.example/capabilities---securebio"\n---\nbody\n'
     fm, errors = parse(P, content)
     assert errors == []
@@ -20,28 +21,33 @@ def test_dashes_inside_value_are_not_a_fence():
 
 
 def test_plain_frontmatter_parses():
+    """Ordinary frontmatter parses to its mapping."""
     fm, errors = parse(P, "---\ntitle: A\n---\nbody\n")
     assert errors == []
     assert fm == {"title": "A"}
 
 
 def test_crlf_frontmatter_parses():
+    """CRLF line endings are accepted on both fences."""
     fm, errors = parse(P, "---\r\ntitle: A\r\n---\r\nbody\r\n")
     assert errors == []
     assert fm == {"title": "A"}
 
 
 def test_empty_frontmatter_is_empty_mapping():
+    """Adjacent fences yield an empty mapping."""
     fm, errors = parse(P, "---\n---\nbody\n")
     assert errors == []
     assert fm == {}
 
 
 def test_unclosed_frontmatter_is_an_error():
+    """A missing closing fence is reported."""
     fm, errors = parse(P, "---\ntitle: A\nbody\n")
     assert fm is None
     assert any("missing closing ---" in e for e in errors)
 
 
 def test_no_frontmatter_is_skipped():
+    """Content without frontmatter is skipped silently."""
     assert parse(P, "just text\n") == (None, [])
