@@ -3,7 +3,7 @@
 import importlib.util
 from pathlib import Path
 
-_SCRIPT = Path(__file__).parent / "scripts_scripts" / "validate_content.py"
+_SCRIPT = Path(__file__).parents[1] / "scripts_scripts" / "validate_content.py"
 _spec = importlib.util.spec_from_file_location("validate_content", _SCRIPT)
 validate_content = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(validate_content)
