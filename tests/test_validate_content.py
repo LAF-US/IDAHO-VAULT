@@ -1,4 +1,4 @@
-"""Tests for scripts_scripts/validate_content.py::parse_frontmatter (#252)."""
+"""Tests for scripts_scripts/validate_content.py (#252)."""
 
 import importlib.util
 from pathlib import Path
@@ -51,3 +51,19 @@ def test_unclosed_frontmatter_is_an_error():
 def test_no_frontmatter_is_skipped():
     """Files without frontmatter are not parsed."""
     assert parse(P, "just text\n") == (None, [])
+
+
+def _dangerous(text):
+    return any(p.search(text) for p in validate_content.DANGEROUS_PATTERNS)
+
+
+def test_event_handler_attributes_are_still_dangerous():
+    """Real inline handlers keep failing validation."""
+    for text in ('<img src=x onerror=alert(1)>', '<a onclick="x()">', "<p\nonload=x>"):
+        assert _dangerous(text), text
+
+
+def test_words_ending_in_on_equals_are_not_handlers():
+    """`content=`, `month=` and similar mid-word matches are not handlers."""
+    for text in ("https://x.example/?content=1", "month=10", "<video controls=true>"):
+        assert not _dangerous(text), text

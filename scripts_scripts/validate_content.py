@@ -42,7 +42,9 @@ MAX_FILE_SIZE_BYTES = 50 * 1024  # 50 KB
 DANGEROUS_PATTERNS = [
     re.compile(r"<script", re.IGNORECASE),
     re.compile(r"javascript:", re.IGNORECASE),
-    re.compile(r"on\w+=", re.IGNORECASE),  # onclick=, onerror=, etc.
+    # onclick=, onerror=, etc. The leading \b keeps it from matching the tail of
+    # an ordinary word (`content=`, `month=`, `controls=`) in prose and URLs.
+    re.compile(r"\bon\w+=", re.IGNORECASE),
     re.compile(r"<iframe", re.IGNORECASE),
     re.compile(r"<object", re.IGNORECASE),
     re.compile(r"<embed", re.IGNORECASE),
