@@ -5,7 +5,7 @@ backoff==2.2.1
     # via posthog
 blinker==1.9.0
     # via flask
-certifi==2026.7.22
+certifi==2026.10.19
     # via requests
 cffi==2.1.1
     # via pygit2
@@ -75,5 +75,5 @@ tzdata==2026.4
     # via icalendar
 urllib3==2.8.0
     # via requests
-werkzeug==3.1.8
+werkzeug==3.1.9
     # via flask
