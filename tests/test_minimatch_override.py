@@ -7,7 +7,7 @@ _ROOT = Path(__file__).parents[1]
 PACKAGE_JSON = _ROOT / "package.json"
 PACKAGE_LOCK = _ROOT / "package-lock.json"
 
-# GHSA-g3hv-75wg-m249 (ReDoS) affects minimatch 7.0.0 through 11.0.0.
+# GHSA-g3hv-75wg-m249 (CWE-405, globparts amplification DoS) affects minimatch 7.0.0 through 11.0.0.
 PATCHED = (11, 0, 1)
 
 
@@ -21,8 +21,8 @@ def _floor(spec):
     """Return the lowest release a caret, tilde or minimum-range spec allows."""
     for prefix in (">=", "^", "~", "="):
         if spec.startswith(prefix):
-            return _release(spec[len(prefix) :].strip())
-    return _release(spec.strip())
+            return _release(spec[len(prefix) :].strip().split()[0])
+    return _release(spec.strip().split()[0])
 
 
 def test_package_json_pins_minimatch_above_the_advisory():
