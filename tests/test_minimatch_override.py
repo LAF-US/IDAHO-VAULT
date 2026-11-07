@@ -7,7 +7,7 @@ _ROOT = Path(__file__).parents[1]
 PACKAGE_JSON = _ROOT / "package.json"
 PACKAGE_LOCK = _ROOT / "package-lock.json"
 
-# GHSA-g3hv-75wg-m249 (ReDoS) affects minimatch 7.0.0 through 11.0.0.
+# GHSA-g3hv-75wg-m249 (CWE-405, globparts amplification DoS) affects minimatch 7.0.0 through 11.0.0.
 PATCHED = (11, 0, 1)
 
 
@@ -19,10 +19,23 @@ def _release(version):
 
 def _floor(spec):
     """Return the lowest release a caret, tilde or minimum-range spec allows."""
+    if "||" in spec:
+        raise ValueError(f"OR range may allow a vulnerable release: {spec}")
     for prefix in (">=", "^", "~", "="):
         if spec.startswith(prefix):
-            return _release(spec[len(prefix) :].strip())
-    return _release(spec.strip())
+            return _release(spec[len(prefix) :].strip().split()[0])
+    return _release(spec.strip().split()[0])
+
+
+def test_floor_handles_compound_ranges_and_rejects_or_ranges():
+    """A multi-token range uses its first bound; an OR range fails closed."""
+    assert _floor(">=11.0.1 <12") == (11, 0, 1)
+    assert _floor("^11.0.1") == (11, 0, 1)
+    try:
+        _floor("^11.0.1 || ^10.0.0")
+    except ValueError:
+        return
+    raise AssertionError("_floor accepted an OR range that still allows 10.x")
 
 
 def test_package_json_pins_minimatch_above_the_advisory():
