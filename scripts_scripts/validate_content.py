@@ -42,7 +42,9 @@ MAX_FILE_SIZE_BYTES = 50 * 1024  # 50 KB
 DANGEROUS_PATTERNS = [
     re.compile(r"<script", re.IGNORECASE),
     re.compile(r"javascript:", re.IGNORECASE),
-    re.compile(r"on\w+=", re.IGNORECASE),  # onclick=, onerror=, etc.
+    # onclick=, onerror=, etc. The leading \b keeps it from matching the tail of
+    # an ordinary word (`content=`, `month=`, `controls=`) in prose and URLs.
+    re.compile(r"\bon\w+=", re.IGNORECASE),
     re.compile(r"<iframe", re.IGNORECASE),
     re.compile(r"<object", re.IGNORECASE),
     re.compile(r"<embed", re.IGNORECASE),
@@ -68,6 +70,7 @@ PERIOD_VALUES = {"day", "week", "month", "quarter", "year"}
 # The templates themselves are written in this syntax and must never be flagged.
 TEMPLATE_SUFFIX = " NOTE TEMPLATE.md"
 CARRYFORWARD_FILE = "TO DO LIST.md"
+FRONTMATTER_RE = re.compile(r"---[ \t]*\r?\n(.*?)^---[ \t]*\r?$", re.DOTALL | re.MULTILINE)
 FENCE_RE = re.compile(r"^\s*(```|~~~)")
 
 # Sponsor names should be alphabetic with common punctuation
@@ -117,14 +120,15 @@ def parse_frontmatter(path: Path, content: str) -> tuple[dict | None, list[str]]
     if not content.startswith("---"):
         return None, []  # no frontmatter to validate
 
-    parts = content.split("---", 2)
-    if len(parts) < 3:
+    # Fences are whole lines: a `---` inside a value (e.g. a URL) is not a fence.
+    match = FRONTMATTER_RE.match(content)
+    if match is None:
         errors.append(f"{path}: Malformed frontmatter (missing closing ---)")
         return None, errors
 
     import yaml
     try:
-        loaded = yaml.safe_load(parts[1])
+        loaded = yaml.safe_load(match.group(1))
     except yaml.YAMLError as e:
         errors.append(f"{path}: YAML frontmatter parse error: {e}")
         return None, errors
