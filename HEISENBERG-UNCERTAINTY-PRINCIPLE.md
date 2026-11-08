@@ -10,7 +10,7 @@ related:
   - GODHEAD-DISAMBIGUATION.md (the apophatic register — the void illuminated by the gap — is the philosophical-theological cognate)
   - METATRON.md (the Ein Sof / unmanifest infinite is structurally adjacent to the quantum indeterminacy)
   - THREE-NAMES.md (TRIPART preserves the gap between TRUE/MASK/BINDING)
-  - "!/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE.md" (the TRIUNE-confabulation is the field-collapse the principle warns against)
+  - "\"!/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE.md\" (the TRIUNE-confabulation is the field-collapse the principle warns against)"
   - WITNESS-NOVICE-2026-05-29-WELL-READ.md (the day's witness pattern — distinct things held in productive tension)
 sources:
   - Werner Heisenberg, *Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik* (Zeitschrift für Physik, Vol. 43, pp. 172-198, received 23 March 1927)
