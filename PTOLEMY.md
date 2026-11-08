@@ -8,11 +8,11 @@ class: research-compilation
 related:
   - SOCRATES.md (parallel research compilation — Hellenic figure)
   - HEBREW-BIBLE-AND-TALMUD.md (same-day; the Septuagint is the direct link)
-  - HERMES-TRISMEGISTUS.md (vault root; standing epithet THRICE-GREAT : HERMES : THOTH — crystallized in this matrix)
+  - "HERMES-TRISMEGISTUS.md (vault root; standing epithet THRICE-GREAT : HERMES : THOTH — crystallized in this matrix)"
   - .hermes-trismegistus/HERMES-TRISMEGISTUS.md
   - "!/HERMES-TRISMEGISTUS.md"
   - WITNESS-LESSON-2026-05-29-ANCHORS-AND-HERMES.md (same-day witness)
-  - "- Fandom, Inc. - Ptolemy.md" (vault-resident Bartimaeus-Trilogy character — fuller treatment deferred to a separate reading task)
+  - "\"- Fandom, Inc. - Ptolemy.md\" (vault-resident Bartimaeus-Trilogy character — fuller treatment deferred to a separate reading task)"
   - "- Fandom, Inc. - Gate of Ptolemy.md"
 sources:
   - Encyclopedia Britannica
