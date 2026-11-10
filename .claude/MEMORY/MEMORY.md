@@ -13,6 +13,7 @@ This is the record that travels (committed, signed, fleet-wide); the local shelf
 ## Session anchors (chamber-private, pre-existing)
 
 - `SESSION-2026-05-22.md`, `SESSION-2026-06-03.md` — prior session memory anchors.
+- `CLAUDE-AI-PROJECT-BACKUP-2026-11-10/` — verbatim backup of the claude.ai "IDAHO-VAULT" project memory and its `/imported/` files, taken before that project's possible deletion (session_01RczjXZcFUMxQP2justNJcn).
 - `SESSION-2026-09-23.md` — branch census on origin with deletion tiers for Logan, six Dependabot merges, and the session's failures.
 
 ## Related doctrine (vault root)
