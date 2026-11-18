@@ -233,8 +233,8 @@ class _BylineParser(HTMLParser):
 
 _BYLINE_RE = re.compile(
     r"\bby\s+logan\s+(a\.\s*)?finney\b"
-    r"|\blogan\s+(a\.\s*)?finney\s*,?\s+and\s+[A-Z][a-z]+"
-    r"|\bby\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?\s+and\s+logan\s+"
+    r"|\blogan\s+(a\.\s*)?finney\s*,?\s+and\s+(?-i:[A-Z][a-z]+)"
+    r"|\bby\s+(?-i:[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s+and\s+logan\s+"
     r"(a\.\s*)?finney\b"
     r"|\bstory\s+and\s+photos?\s+by\s+logan\s+(a\.\s*)?finney\b"
     r"|\breporter\s+logan\s+(a\.\s*)?finney\b",
@@ -739,9 +739,16 @@ def conform_body(raw_body, notes, logan_photos, img_cache, outlet):
     KEEP = {"p", "h2", "h3", "h4", "blockquote", "ul", "ol", "li",
             "a", "strong", "em", "hr", "br", "cite",
             "figure", "figcaption", "img"}
+    # `input` is void: counting it here would leave drop_depth stuck.
     DROP_CONTENT = {"script", "style", "noscript", "object", "svg",
-                    "form", "input", "select", "textarea", "nav",
+                    "form", "select", "textarea", "nav",
                     "template", "button"}
+    # Only a dropped block tag separates adjacent text runs. Inline tags
+    # (span, sup, i, ...) must not split words such as "1<sup>st</sup>".
+    BLOCK_TAGS = {"p", "div", "h1", "h2", "h3", "h4", "h5", "h6",
+                  "blockquote", "ul", "ol", "li", "table", "tr", "td",
+                  "section", "article", "aside", "header", "footer",
+                  "br", "hr", "figure", "figcaption", "iframe"}
 
     class P(HTMLParser):
         def __init__(self):
@@ -749,15 +756,22 @@ def conform_body(raw_body, notes, logan_photos, img_cache, outlet):
             self.out = []
             self.drop_depth = 0
             self.dead_a_depth = 0  # track <a> without href to skip
+            self.block_gap = False
+
+        def note_dropped(self, tag):
+            if tag in BLOCK_TAGS:
+                self.block_gap = True
 
         def handle_starttag(self, tag, attrs):
             tag = tag.lower()
             if self.drop_depth:
                 if tag in DROP_CONTENT:
                     self.drop_depth += 1
+                self.note_dropped(tag)
                 return
             if tag in DROP_CONTENT:
                 self.drop_depth = 1
+                self.note_dropped(tag)
                 return
             if tag == "iframe":
                 ad = dict(attrs)
@@ -769,6 +783,7 @@ def conform_body(raw_body, notes, logan_photos, img_cache, outlet):
                 elif src.startswith("http"):
                     self.out.append("EMBED::%s::" % src)
                 self.drop_depth = 1
+                self.note_dropped(tag)
                 return
             if tag == "img":
                 ad = dict(attrs)
@@ -801,26 +816,33 @@ def conform_body(raw_body, notes, logan_photos, img_cache, outlet):
                                     % htmlmod.escape(cls, quote=True))
                 else:
                     self.out.append("<%s>" % tag)
+            else:
+                self.note_dropped(tag)
 
         def handle_endtag(self, tag):
             tag = tag.lower()
             if self.drop_depth:
                 if tag in DROP_CONTENT or tag == "iframe":
                     self.drop_depth -= 1
+                self.note_dropped(tag)
                 return
             if tag == "a" and self.dead_a_depth > 0:
                 self.dead_a_depth -= 1
                 return
             if tag in KEEP and tag not in ("hr", "br"):
                 self.out.append("</%s>" % tag)
+            else:
+                self.note_dropped(tag)
 
         def handle_data(self, data):
             if not self.drop_depth:
-                if self.out:
+                if self.block_gap and self.out:
                     last = self.out[-1]
                     if last and last[-1].isalnum() and data and data[0].isalnum():
                         self.out.append(" ")
-                self.out.append(data)
+                self.block_gap = False
+                # Escape text runs here; never unescape serialized markup.
+                self.out.append(htmlmod.escape(data, quote=False))
 
         def handle_entityref(self, name):
             # Preserve entities (&amp; &nbsp; &mdash; ...) instead of
@@ -857,7 +879,6 @@ def conform_body(raw_body, notes, logan_photos, img_cache, outlet):
     h = re.sub(r"<(h[2-4]|blockquote|li)>\s*</\1>", "", h)
     h = re.sub(r'<a\b[^>]*>\s*Read more by.*?</a>', "", h, flags=re.S | re.I)
     h = re.sub(r"<p>\s*</p>", "", h)
-    h = htmlmod.unescape(h)
     h = re.sub(r"[ \t]+", " ", h)
     h = re.sub(r"\n\s*\n\s*\n+", "\n\n", h)
     return h.strip()
@@ -885,7 +906,7 @@ _AP_TENS = {10: "ten", 11: "eleven", 12: "twelve", 13: "thirteen",
             80: "eighty", 90: "ninety"}
 _AP_ABBR = ("St", "Mr", "Mrs", "Ms", "Dr", "Ave", "Blvd", "Rd", "Jan",
             "Feb", "Aug", "Sept", "Oct", "Nov", "Dec", "Sen", "Rep",
-            "Gov", "Mt", "Dist")
+            "Gov", "Mt", "Dist", "U\\.S", "No", "I\\.C")
 
 
 def _spell_small(v):
@@ -940,7 +961,7 @@ def _digit_may_spell(before, after):
         return False
     if re.match(r"\s*[ap]\.m\.", after, re.I):
         return False
-    if before.endswith("$"):
+    if before.endswith("$") or before.endswith("/") or after.startswith("/"):
         return False
     if re.match(r"\s*%", after):
         return False
@@ -980,7 +1001,7 @@ def _ap_block_rules(block, _chg, notes, log):
 
     def _sent_rep(m):
         dot, sp, num = m.group(1), m.group(2), m.group(3)
-        before = h3[max(0, m.start() - 8):m.start() + 1]
+        before = h3[max(0, m.start() - 40):m.start() + 1]
         if _abbr_re.search(before):
             return m.group(0)
         if re.fullmatch(r"(19|20)\d{2}", num):
@@ -989,7 +1010,7 @@ def _ap_block_rules(block, _chg, notes, log):
         # 100+ stays as numerals at sentence start (user 2026-10-16)
         if v >= 100:
             return m.group(0)
-        if v < 10 and not _digit_may_spell("", h3[m.end():m.end() + 40]):
+        if not _digit_may_spell(before, h3[m.end():m.end() + 40]):
             return m.group(0)
         return dot + sp + _chg("sentence-start", num,
                                _spell_small(v).capitalize())
@@ -1004,7 +1025,7 @@ def _ap_block_rules(block, _chg, notes, log):
         # 100+ stays as numerals at sentence start (user 2026-10-16)
         if v >= 100:
             return m.group(0)
-        if v < 10 and not _digit_may_spell("", h3[m.end():m.end() + 40]):
+        if not _digit_may_spell(h3[:m.start(2)], h3[m.end():m.end() + 40]):
             return m.group(0)
         return m.group(1) + _chg("sentence-start", num,
                                  _spell_small(v).capitalize())
@@ -1112,7 +1133,7 @@ def _ap_block_rules(block, _chg, notes, log):
             if not _digit_may_spell(before, after):
                 return m.group(0)
             return _chg("digit", m.group(0), _AP_ONES[m.group(1)])
-        t = re.sub(r"(?<![\d\w\.\$,])([1-9])(?![\d\w]|,(?=\d)|\.\d|:(\d))",
+        t = re.sub(r"(?<![\d\w\.\$,/])([1-9])(?![\d\w/]|,(?=\d)|\.\d|:(\d))",
                    _digit, t)
         parts[i] = t
     return "".join(parts)
@@ -1149,11 +1170,18 @@ def ap_normalize(html, notes):
         notes.append("AP doubled quote fixed: ...%s..." %
                      h[max(0, m.start() - 30):m.end() + 30][:60])
         return q[0]
-    # Fix doubled quote marks (typos) before masking, on raw HTML.
-    h = re.sub(r'"{2,}', _dblq, h)
-    h = re.sub(r"'{2,}", _dblq, h)
-    h = re.sub(r"\u201c{2,}", _dblq, h)
-    h = re.sub(r"\u201d{2,}", _dblq, h)
+    # Fix doubled quote marks (typos) in text only. Tags are masked so
+    # escaped attribute values such as alt="" are left intact.
+    tags = []
+
+    def _tag_m(m):
+        tags.append(m.group(0))
+        return "\ue000H%d\ue001" % (len(tags) - 1)
+    h = re.sub(r"<[^>]+>", _tag_m, h)
+    for pattern in (r'"{2,}', r"'{2,}", r"\u201c{2,}", r"\u201d{2,}"):
+        h = re.sub(pattern, _dblq, h)
+    h = re.sub(r"\ue000H(\d+)\ue001",
+               lambda m: tags[int(m.group(1))], h)
 
     quotes = []
 

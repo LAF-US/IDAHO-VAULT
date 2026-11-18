@@ -67,7 +67,10 @@ def main():
             results = json.load(f)
         log(f"Resuming: {len(results)} already verified")
 
-    done_urls = {r['url'] for r in results}
+    # Only completed checks from this script count as done; errored entries
+    # and entries written by the other verification scripts need a real check.
+    done_urls = {r['url'] for r in results
+                 if not r.get('error') and 'save_pass_capture' in r}
     for i, url in enumerate(urls):
         if url in done_urls:
             continue
