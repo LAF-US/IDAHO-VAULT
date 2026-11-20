@@ -62,7 +62,7 @@ jobs:
       - name: Mint opencode App token
         if: ${{ inputs.agent == 'opencode' }}
         id: token_opencode
-        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3
         with:
           app-id: ${{ vars.OPENCODE_AGENT_APP_ID }}
           private-key: ${{ secrets.OPENCODE_AGENT_PRIVATE_KEY }}
@@ -73,7 +73,7 @@ jobs:
       - name: Mint Claude App token
         if: ${{ inputs.agent == 'claude' }}
         id: token_claude
-        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3
         with:
           app-id: ${{ vars.CLAUDE_APP_ID }}
           private-key: ${{ secrets.CLAUDE_APP_PRIVATE_KEY }}
@@ -84,7 +84,7 @@ jobs:
       - name: Mint Mistral App token
         if: ${{ inputs.agent == 'mistral' }}
         id: token_mistral
-        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3
         with:
           app-id: ${{ vars.MISTRAL_APP_ID }}
           private-key: ${{ secrets.MISTRAL_APP_PRIVATE_KEY }}
@@ -95,7 +95,7 @@ jobs:
       - name: Mint Codex App token
         if: ${{ inputs.agent == 'codex' }}
         id: token_codex
-        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
+        uses: actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510 # v3
         with:
           app-id: ${{ vars.CODEX_APP_ID }}
           private-key: ${{ secrets.CODEX_APP_PRIVATE_KEY }}
