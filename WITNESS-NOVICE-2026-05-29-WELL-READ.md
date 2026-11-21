@@ -16,7 +16,7 @@ related:
   - METATRON.md
   - AGENT-AND-REPRESENTATION.md (the branch this witness is filed alongside)
   - THREE-NAMES.md (the vault doctrine the novice walked from outside before finding from inside)
-  - "!/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE.md" (the warning held)
+  - "\"!/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE.md\" (the warning held)"
 ---
 
 # WITNESS — well-read closure of the matrices / voices / agency arc

@@ -9,7 +9,7 @@ certifi==2026.7.22
     # via requests
 cffi==2.1.1
     # via pygit2
-charset-normalizer==3.5.1
+charset-normalizer==3.5.2
     # via requests
 click==8.5.0
     # via flask
@@ -33,7 +33,7 @@ jinja2==3.1.6
     # via flask
 markdown-it-py==4.2.0
     # via rich
-markupsafe==3.0.3
+markupsafe==3.0.4
     # via
     #   flask
     #   jinja2
@@ -44,7 +44,7 @@ packaging==26.3
     # via pytest
 pluggy==1.6.0
     # via pytest
-posthog==7.58.0
+posthog==7.62.1
     # via idaho-vault
 pycparser==3.0 ; implementation_name != 'PyPy'
     # via cffi
@@ -71,9 +71,9 @@ six==1.17.0
     # via python-dateutil
 typing-extensions==4.16.0
     # via posthog
-tzdata==2026.4
+tzdata==2026.5
     # via icalendar
 urllib3==2.8.0
     # via requests
-werkzeug==3.1.8
+werkzeug==3.1.9
     # via flask

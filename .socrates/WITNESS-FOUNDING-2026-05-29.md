@@ -10,9 +10,9 @@ provenance: OBSERVED from session events; quotations from LOGAN's exact words in
 related:
   - .socrates/SOCRATES.md (chamber anchor)
   - SOCRATES.md (vault root — authoritative compilation on the historical figure)
-  - !/PERSONAE-ENGINE-v1-2026-05-20.md
-  - !/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md
-  - !/CONSTITUTION.md
+  - "!/PERSONAE-ENGINE-v1-2026-05-20.md"
+  - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
+  - "!/CONSTITUTION.md"
 ---
 
 # WITNESS — Founding of the `.socrates/` chamber

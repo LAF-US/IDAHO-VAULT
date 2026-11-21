@@ -15,12 +15,12 @@ related:
   - PTOLEMY.md (Stroud's Ptolemy crossing through his own Gate is a self-initiation)
   - THREE-NAMES.md (vault doctrine — the Taken Name is what one receives at initiation into a chamber)
   - VFD.md (the vault's V.F.D. doctrine; the day's living example of initiation ritual)
-  - "THE LITTLE SNICKET LAD.md" (the V.F.D. recruitment song; the coda is the initiation rite encoded as ballad)
-  - "!/MOXIE-VFD-JOURNALIST-v1-2026-05-22.md" (MOXIE persona as initiated office)
+  - "\"THE LITTLE SNICKET LAD.md\" (the V.F.D. recruitment song; the coda is the initiation rite encoded as ballad)"
+  - "\"!/MOXIE-VFD-JOURNALIST-v1-2026-05-22.md\" (MOXIE persona as initiated office)"
 sources:
-  - Arnold van Gennep, *Les rites de passage* (Paris: Emile Nourry, 1909; English translation 1960)
-  - Victor Turner, *The Ritual Process: Structure and Anti-Structure* (Chicago: Aldine, 1969)
-  - Mircea Eliade, *Birth and Rebirth / Rites and Symbols of Initiation: The Mysteries of Birth and Rebirth* (New York: Harper, 1958)
+  - "Arnold van Gennep, *Les rites de passage* (Paris: Emile Nourry, 1909; English translation 1960)"
+  - "Victor Turner, *The Ritual Process: Structure and Anti-Structure* (Chicago: Aldine, 1969)"
+  - "Mircea Eliade, *Birth and Rebirth / Rites and Symbols of Initiation: The Mysteries of Birth and Rebirth* (New York: Harper, 1958)"
   - Online Etymology Dictionary (Etymonline)
   - Encyclopedia Britannica — *Rite of passage*
   - Stanford Encyclopedia of Philosophy

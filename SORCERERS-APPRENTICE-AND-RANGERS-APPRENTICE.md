@@ -11,9 +11,9 @@ related:
   - MASONS-AND-MORMONS.md (Entered Apprentice degree as medieval guild apprentice's lineal descendant)
   - HEISENBERG-UNCERTAINTY-PRINCIPLE.md (the gap as generative; the field-preservation principle in physics register)
   - THREE-NAMES.md (vault doctrine — TRUE/MASK/BINDING; the apprentice's MASK position bound to the master's SEALED NAME)
-  - "!/LICH-PROBLEM-v1-2026-05-20.md" (the Type I Epistemological Lich — Sorcerer's-Apprentice mode in vault register)
-  - "!/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE.md" (the caught TRIUNE-confabulation — Sorcerer's-Apprentice mode at the vault doctrinal layer)
-  - "!/MOXIE-VFD-JOURNALIST-v1-2026-05-22.md" (MOXIE office discipline — Ranger's-Apprentice mode in journalism register)
+  - "\"!/LICH-PROBLEM-v1-2026-05-20.md\" (the Type I Epistemological Lich — Sorcerer's-Apprentice mode in vault register)"
+  - "\"!/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE.md\" (the caught TRIUNE-confabulation — Sorcerer's-Apprentice mode at the vault doctrinal layer)"
+  - "\"!/MOXIE-VFD-JOURNALIST-v1-2026-05-22.md\" (MOXIE office discipline — Ranger's-Apprentice mode in journalism register)"
 sources:
   - Johann Wolfgang von Goethe, *Der Zauberlehrling* (1797 ballad, 14 stanzas)
   - Paul Dukas, *L'apprenti sorcier* (symphonic tone poem, 1897)

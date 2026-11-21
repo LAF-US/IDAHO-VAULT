@@ -7,9 +7,9 @@ status: outward research
 class: research-compilation
 related:
   - SOCRATES.md (parallel research compilation — historical figure)
-  - "holy book.md" (Logan-authored slot file: Bible / Torah / Quran)
-  - "2026-02-23 - FāVS News - Boise Jewish congregation welcomes new rabbi, restores century-old Torah scrolls" (Logan's own primary-source reporting on sofer Neil Yerman + Rabbi Johanna Hershenson)
-  - "!/BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md" (shibboleth doctrine — the word itself Hebrew, Judges 12:6)
+  - "\"holy book.md\" (Logan-authored slot file: Bible / Torah / Quran)"
+  - "\"2026-02-23 - FāVS News - Boise Jewish congregation welcomes new rabbi, restores century-old Torah scrolls\" (Logan's own primary-source reporting on sofer Neil Yerman + Rabbi Johanna Hershenson)"
+  - "\"!/BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md\" (shibboleth doctrine — the word itself Hebrew, Judges 12:6)"
   - WITNESS-LESSON-2026-05-29-ANCHORS-AND-HERMES.md (same-day witness for lesson-learning context)
 sources:
   - Sefaria.org (primary text references — Pirkei Avot, Bava Metzia, Eruvin)
