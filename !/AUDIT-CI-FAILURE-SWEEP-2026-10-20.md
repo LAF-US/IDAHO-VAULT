@@ -1,8 +1,12 @@
 ---
 title: CI Failure Sweep — 2026-10-20
 type: audit
-status: final
+status: active
+updated: 2026-11-21
+created: 2026-10-20
 authority: CLAUDE (routine CI sweep)
+authors:
+  - "Claude Code (session_019PFDpG6shj8cuxe3oc2zVb)"
 scope: GitHub Actions workflow runs, laf-us/idaho-vault, 2026-10-18T17:10Z to 2026-10-20T17:10Z
 owner: Logan Finney
 ---
@@ -37,3 +41,14 @@ Also in the window, not failures: 2 `opencode` runs (39228459864, 39228460215, 2
 Cross-posted: GitHub #1022 (comment 6296648261), Linear LAF-83, Slack DM, Discord #ledger (via Zapier).
 
 Claude-Session: https://claude.ai/code/session_019PFDpG6shj8cuxe3oc2zVb
+
+---
+
+## DOCUMENT METADATA
+
+- **Created:** 2026-10-20
+- **Last Updated:** 2026-11-21
+- **Status:** Active
+- **Authority:** CLAUDE (routine CI sweep)
+- **Authors:** Claude Code (session_019PFDpG6shj8cuxe3oc2zVb)
+- **Change Note:** 2026-11-21: frontmatter brought to `VAULT-METADATA-STANDARD.md` (status enum, `updated`, `authors`, footer) after review. Findings unchanged.
