@@ -1,0 +1,2725 @@
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2026/02/19/2026-budget-bill-tracker/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2026/01/14/interview-sen-ben-adams-has-an-idea-to-help-keep-public-lands/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2026/01/07/interview-alex-adams-at-the-administration-for-children-and-families/
+IR REST API
+=== Tanner offered Appropriations chair; more House committee shakeups to come [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'January 5' -> 'Jan. 5'
+AP time: 1 change(s)
+  AP '40pm' -> '40 p.m.'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Upcoming budget reductions could undercut Idaho cybersecurity [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure dropped (unknown type)
+figure+image stripped
+figure+image stripped
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'January 12' -> 'Jan. 12'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Fulcher says he would support Epstein petition if House Oversight unsuccessful [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== No Idaho quagga mussels detected yet in early September 2025 [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'September 29' -> 'Sept. 29'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/07/24/3000-idahoans-with-disabilities-on-waitlist-for-voc-rehab-services/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/06/18/idaho-policymakers-confident-parental-rights-fix-will-come/
+IR REST API
+=== Supreme Court: cities cannot limit vacation rentals based on owner occupancy [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/05/05/idaho-reports-best-blog-at-idaho-press-club-awards-3/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/04/15/more-than-12000-idahoans-attend-fighting-oligarchy-rally-in-nampa/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/04/14/little-issues-line-item-veto-to-retain-emergency-fund/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/04/04/idaho-legislature-adjourns-2025-session/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/04/04/responding-to-veto-legislature-passes-new-medical-freedom-bill/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/04/03/outstanding-budgets-extend-the-2025-session/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/04/02/two-versions-of-new-medical-freedom-act-still-alive-after-govs-veto/
+IR REST API
+=== Senate passes bill to update hospital property tax exemption [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/03/31/senate-introduces-new-medical-freedom-bill-after-governors-veto/
+IR REST API
+=== House panel approves power company standard of care for wildfires [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/03/26/committee-introduces-proposed-changes-to-2024-parental-rights-law/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/03/21/north-idaho-legislators-bring-bill-to-add-health-exceptions-to-states-abortion-ban/
+IR REST API
+=== Senate pauses bill to give counties control over hospital tax exemption [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/03/17/house-advances-bill-to-make-lewd-conduct-with-child-12-or-under-punishable-by-death/
+IR REST API
+=== House panel passes bill to take over firefighting on federal lands [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/03/17/house-advances-bill-to-revoke-public-services-for-undocumented-people/
+IR REST API
+=== Senate panel approves power utility property tax change [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/03/11/committee-advances-bill-cutting-services-to-undocumented-immigrants/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/03/05/senate-approves-able-accounts-by-wide-margin/
+IR REST API
+=== Defendants seek to dismiss library lawsuit [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 1 change(s)
+  AP '1' -> 'one'
+AP sentence-start: 1 change(s)
+  AP '36' -> 'Thirty-six'
+AP time: 1 change(s)
+  AP '8 pm' -> '8 p.m.'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/02/27/gov-little-signs-private-school-tax-credit-into-law/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/02/26/idaho-coroner-death-investigation-roles-reform-bill-passes-state-senate/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/02/25/with-budget-shortfall-idaho-disability-job-aid-agency-faces-scrutiny-from-federal-state-government/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/02/19/senate-committee-advances-firing-squad-execution-bill/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/02/19/private-education-tax-credit-heads-to-governor/
+IR REST API
+=== Limited official data available on statewide fire risk [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== "Complete fabrications:" Lawmakers receive fake constituent emails regarding grocery tax legislation [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/02/06/house-moves-firing-squad-bill-forward-to-senate/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/02/03/senates-private-school-choice-bill-narrowly-clears-committee/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/02/03/idaho-bill-to-make-firing-squad-main-death-penalty-method-heads-to-full-house/
+IR REST API
+=== Idaho Supreme Court reverts child porn case over unconstitutional car search [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/01/31/fourth-initiative-bill-introduced-with-focus-on-fiscal-impact/
+IR REST API
+=== Senate once again passes anti-swatting bill [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/01/29/bill-introduced-to-give-governor-veto-power-on-citizens-initiatives/
+IR REST API
+=== Idaho grant recipients scrambling for clarity after federal freeze [Idaho Reports] ===
+author bio stripped
+author bio stripped
+figure+image stripped
+AP gov: 1 change(s)
+  AP 'Governor B' -> 'Gov. B'
+AP time: 1 change(s)
+  AP '3 pm' -> '3 p.m.'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== House leaders want to preserve lawmaker pay raise [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP ordinal-date: 1 change(s)
+  AP 'January 30th' -> 'Jan. 30'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/01/17/doj-idaho-violating-ada-with-lack-of-services-for-people-with-physical-disabilities/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2025/01/15/legislators-advance-300-mandatory-minimum-fine-for-pot/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/12/05/lawmakers-assigned-committees-for-2025/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/10/17/ninth-circuit-sides-with-thomas-creech-same-day-idaho-issues-death-warrant/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/10/15/new-execution-plan-allows-idoc-to-access-central-vein-without-in-person-witnesses/
+IR REST API
+=== Judge: Labrador's evidence shows open primaries campaign was not misleading [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP proposition: 2 change(s)
+  AP 'Proposition 1' -> 'Proposition One'
+  AP 'Proposition 1' -> 'Proposition One'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== AG: Open primaries initiative campaigned on 'objective falsehood' [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP proposition: 1 change(s)
+  AP 'Proposition 1' -> 'Proposition One'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/08/28/idaho-governor-signs-executive-order-opposing-title-ix-protections-for-lgbtq-athletes/
+IR REST API
+=== State Street property lawsuit dismissed [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'August 26' -> 'Aug. 26'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/07/25/with-7-7-million-on-the-line-lawsuit-challenges-wording-in-school-facilities-law/
+IR REST API
+=== Supreme Court pauses Idaho abortion ban in emergency rooms [Idaho Reports] ===
+author bio stripped
+author bio stripped
+figure+image stripped
+figure+image stripped
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Moon reelected as Idaho GOP chair: "We are not the fringe" [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure dropped (unknown type)
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== GOP platform changes include opposition to workforce training funding, embryo destruction [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Proposed platform amendment opposes taxpayer-funded higher education [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== GOP to consider strengthening anti-abortion platform [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Ballot initiative colors GOP debate on candidate nominations [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== No major audit findings, election results finalized [Idaho Reports] ===
+author bio stripped
+embed->link: w.soundcloud.com
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP ordinal-date: 1 change(s)
+  AP 'May 21st' -> 'May 21'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Board of Examiners to file new Hawkins lawsuit documents [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== House says ITD land sale was improper, accuses "collusion" in lawsuit [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP ordinal-date: 1 change(s)
+  AP 'May 29th' -> 'May 29'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/05/29/legislative-services-sees-5-comments-on-constitution-change/
+IR REST API
+=== State offers divided response to ITD lawsuit [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Primary no bump in the road for established Idaho Democrats [Idaho Reports] ===
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP ordinal-date: 1 change(s)
+  AP 'November 5th' -> 'Nov. 5'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/05/22/2024-idaho-legislative-primary-results/
+IR REST API
+=== Woodward overtakes Herndon; McCann and Foreman survive [Idaho Reports] ===
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Freedom candidates sweep District 8 [Idaho Reports] ===
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/05/20/legislative-primaries-to-watch-outside-treasure-valley/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/05/06/idaho-reports-best-blog-at-idaho-press-club-awards-2/
+IR REST API
+=== State Street buyers: unconstitutional budgets 'cannot amend a statute' [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Preston library restricts public access after library law passage [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/04/19/legislative-counsel-says-medicaid-waiver-bill-wont-disrupt-services/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/04/15/u-s-supreme-court-allows-idaho-to-enforce-gender-care-ban-while-lawsuit-plays-out/
+IR REST API
+=== Budget writers unable to decipher fiscal issues [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: videopress.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/04/12/medicaid-waiver-bill-alarms-idahoans-with-disabilities-stakeholders/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/04/11/bill-over-medicaid-waivers-may-be-problematic/
+IR REST API
+=== Idaho Supreme Court upholds elimination of student IDs for voting [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Little lets lawmakers block ITD campus sale [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Gov. Little signs library bill regarding 'obscene content' [Idaho Reports] ===
+author bio stripped
+author bio stripped
+figure+image stripped
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Little draws the line at precious metals, water utilities [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP time: 4 change(s)
+  AP '11am' -> '11 a.m.'
+  AP '12pm' -> 'noon'
+  AP '17am' -> '17 a.m.'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== ITD budget saga closes out session [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/04/03/library-obscene-content-bill-clears-legislature/
+IR REST API
+=== Vocational rehab budget hole comes to light [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Judicial retirement incentive passes Senate [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/04/02/jfac-puts-out-new-itd-budget-but-keeps-state-street-language/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/03/29/house-passes-texas-style-immigration-bill/
+IR REST API
+=== Open meetings law questioned with tense budget season [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP time: 1 change(s)
+  AP '2pm' -> '2 p.m.'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Anti-racism resolution passes following call of the Senate [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/03/28/bill-to-deport-undocumented-immigrants-moves-to-the-floor/
+IR REST API
+=== Senate panel introduces condemnation of racist incident in CDA [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Budgets resurface halting State Street land sale [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: w.soundcloud.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== State entity to oversee Phoenix deal fails in Senate [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Conflicting changes advance for school modernization bill [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP r-cda: 1 change(s)
+  AP 'R-CDA' -> 'R-Coeur d'Alene'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/03/26/senate-committee-advances-bill-that-could-move-university-of-phoenix-deal/
+IR REST API
+=== Noncitizen voting amendment to appear on Idaho 2024 ballot [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Tallying the scores before the final quarter [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/03/21/house-passes-funding-for-idaho-launch-program/
+IR REST API
+=== Bill to support local EMS passes Senate [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/03/18/house-passes-bill-to-establish-child-protection-ombudsman/
+IR REST API
+=== Senate passes resolution to seek Medicaid expansion work requirements [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/03/15/senate-committee-holds-bill-to-make-child-rape-punishable-by-death/
+IR REST API
+=== Idaho to join list of states requiring age verification on pornography sites [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 2 change(s)
+  AP 'February 14' -> 'Feb. 14'
+  AP 'February 13' -> 'Feb. 13'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/03/13/house-passes-library-obscene-content-bill/
+IR REST API
+=== Legislature approves new maternal mortality review panel [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== House committee kills private school tax credit [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 1 change(s)
+  AP '8' -> 'eight'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Senate pushes to re-adopt JFAC rules [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/03/11/house-passes-no-public-funds-for-transgender-care-bill/
+IR REST API
+=== Swatting bill moves to Senate floor [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 1 change(s)
+  AP '1' -> 'one'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== School facilities bill – excuse me, taxation bill – moves through Senate committee [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/03/05/house-passes-resolution-against-uis-purchase-of-phoenix/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/03/04/resolution-seeking-work-requirements-for-medicaid-advances/
+IR REST API
+=== Senate rejects first anti-SLAPP proposal [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/02/28/state-unsuccessful-in-attempt-to-execute-creech/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/02/27/senate-passes-bill-on-wrongful-eviction-shielding-cases/
+IR REST API
+=== House passes wolf and grizzly depredation bill [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Senate OKs new charge for aggravated driving while reckless [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 2 change(s)
+  AP '6' -> 'six'
+  AP '5' -> 'five'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== House panel passes bill to forbid pelvic exams on unconscious patients [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Senate sends voter guide bill to House [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Rent regulation preemption bill highlights partisan divide on housing [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Senate kills compromise library bill [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/02/21/house-judiciary-and-rules-advances-human-trafficking-law-rewrite/
+IR REST API
+=== House unanimously supports legalizing fentanyl testing strips [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/02/21/bill-introduced-to-repeal-idahos-needle-exchange-program/
+IR REST API
+=== School facilities bill clears first hurdle [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/02/20/bill-introduced-to-fund-indigent-defense-for-cps-cases/
+IR REST API
+=== Bill gives guidance to funeral homes on unclaimed ashes [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/02/19/idaho-house-kills-anti-bullying-bill-in-narrow-vote/
+IR REST API
+=== Bill would require legislative approval for future Medicaid waivers [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/02/15/committee-introduces-another-ai-bill-on-explicit-deep-fakes/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/02/15/lawmakers-threaten-lawsuit-to-stop-phoenix-purchase/
+IR REST API
+=== Age verification bill for porn sites passes House [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== House committees adjusted after leadership change [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Tax committee considers opening MSAs to health care sharing ministries [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/02/13/house-approves-death-penalty-child-sex-crimes/
+IR REST API
+=== House passes bill to allow prosecution of AI-generated child pornography [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/02/12/senate-passes-bill-to-prevent-children-accessing-porn/
+IR REST API
+=== Bill to address 'swatting' introduced in Senate committee [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 3 change(s)
+  AP '6' -> 'six'
+  AP '6' -> 'six'
+  AP '1' -> 'one'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/02/12/house-republicans-elect-monks-as-majority-leader/
+IR REST API
+=== House unveils its take on Little's school facilities pitch [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP percent: 2 change(s)
+  AP '5.8 percent' -> '5.8%'
+  AP '5.695 percent' -> '5.695%'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/02/07/bill-advances-on-death-penalty-punishment-in-child-sexual-abuse-cases/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/02/07/bill-would-limit-remote-work-for-state-employees/
+IR REST API
+=== Bills printed on illegal advertising, foreign governments, local elections [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Bill to protect public land and water access clears Senate panel [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Senate passes electioneering boundary bill [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/01/30/adding-lewd-conduct-with-a-child-as-a-crime-punishable-by-death-could-be-problematic/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/01/29/commission-of-pardons-and-parole-denies-creech-a-commutation-recommendation/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/01/23/bill-would-deem-sex-and-gender-a-biological-truth/
+IR REST API
+=== Bill would move electioneering boundary to 250 feet [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Bills printed to limit Medicaid Expansion, expand physician training [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Idahoans weigh fentanyl mandatory minimum sentences [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 1 change(s)
+  AP '4' -> 'four'
+AP percent: 1 change(s)
+  AP '49 percent' -> '49%'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/01/19/emotional-commutation-hearing-for-idahos-longest-serving-man-on-death-row/
+IR REST API
+=== Bill printed to prevent quorum loss on school boards [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/01/17/idaho-chief-justice-courts-need-funding-for-long-term-success/
+IR REST API
+=== Bill introduced to strengthen homeowner's exemption enforcement [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Basic state budgets advance over trepidation from Democrats [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure dropped (unknown type)
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/01/15/new-state-public-defense-may-omit-child-protection-defense-cases/
+IR REST API
+=== JFAC to use new budget process in 2024 [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/01/06/the-issues-facing-idaho-county-jails/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/01/03/podcast-idaho-cities-prepare-for-2024-legislative-session/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2024/01/03/idaho-among-several-states-that-received-nonspecific-state-capitol-bomb-threats/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/12/13/podcast-imprisoned-for-having-a-mental-illness/
+IR REST API
+=== State poised to switch insurance provider for state employees [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/12/06/podcast-measuring-mercury-in-snake-river-smallmouth/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/12/01/podcast-lawmakers-prepare-for-2024/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/11/15/podcast-finding-financing-to-support-building-homes/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/11/09/podcast-how-counties-manage-overcrowded-jails/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/11/09/divided-medicaid-managed-care-task-force-nears-finalizing-recommendations/
+IR REST API
+=== Chronic wasting disease detected in New Meadows mule deer [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/10/27/podcast-state-financial-forecast/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/10/18/podcast-the-rising-cost-of-highway-right-of-way/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/10/12/death-warrant-issued-for-thomas-creech-execution-set-for-nov-8/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/10/11/podcast-early-endorsements-for-the-idaho-legislature/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/10/04/podcast-ready-set-idaho-launch/
+IR REST API
+=== Dispute continues between state and county GOP [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/09/27/podcast-quagga-mussels-detected-in-snake-river/
+IR REST API
+=== Update: Idaho GOP not hearing Bingham County appeal on Saturday [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/09/19/innocence/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/09/15/council-on-indian-affairs-discusses-legislative-error-impacting-tribes/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/09/08/state-ordered-to-pay-more-than-319000-to-wrongfully-incarcerated-man/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/09/06/podcast-an-idaho-labor-market-snapshot/
+IR REST API
+=== Idaho Senate reaches special session threshold; awaits House action [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/08/31/disability-advocates-stress-need-for-more-medicaid-staff-direct-care-workers/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/08/30/podcast-west-bonner-school-trustees-recalled/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/08/30/idaho-legislators-circulating-petitions-to-call-special-session-to-address-primary/
+IR REST API
+=== Legislators build their case for higher PILT payments [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP sen-rep: 1 change(s)
+  AP 'Senator L' -> 'Sen. L'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Organizers begin signature drive to overhaul Idaho election system [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP time: 1 change(s)
+  AP '9am' -> '9 a.m.'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Appeals court keeps transgender athlete law on pause [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Labrador submits new "top-four primary" initiative titles [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Idaho Supreme Court gives AG one day to rewrite initiative titles [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/08/09/podcast-a-water-supply-snapshot/
+IR REST API
+=== Meridian man faces federal charges for gunshots on Hells Canyon power stations [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'August 8' -> 'Aug. 8'
+AP sentence-start: 1 change(s)
+  AP '95' -> 'Ninety-five'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Where did Idaho get $300 million for property tax relief? [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 1 change(s)
+  AP '8' -> 'eight'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/08/03/podcast-exiting-idahos-criminal-justice-system/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/07/26/podcast-back-at-the-west-bonner-school-district/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/07/20/podcast-moving-folks-and-freight-side-by-side/
+IR REST API
+=== Northwest leaders look toward decarbonization, energy transition [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 1 change(s)
+  AP '9' -> 'nine'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Simplot to spend $150 million on fertilizer process upgrades under settlement [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/07/11/advocacy-groups-file-lawsuit-against-idahos-abortion-trafficking-law/
+IR REST API
+=== Parties prep for presidential caucus; special session not likely [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure dropped (unknown type)
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Residency requirements cause confusion registering voters [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 1 change(s)
+  AP '7' -> 'seven'
+AP ordinal-date: 1 change(s)
+  AP 'July 4th' -> 'July 4'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/06/23/ag-labrador-lawsuit-challenges-closed-door-u-of-i-phoenix-purchase-discussions/
+IR REST API
+=== Idaho GOP to consider platform enforcement, presidential options [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 1 change(s)
+  AP '1' -> 'one'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/06/22/podcast-university-of-idaho-patents-research-into-nutrient-capture/
+IR REST API
+=== Idaho to receive another $76 million in opioid settlement [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Fish and Game reminds hunters of grizzly range [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP skipped block (stray quote): Q6https://idfg.idaho.gov/article/grizzly-bear-mistakenly-s...
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/06/15/podcast-shots-fired-at-hells-canyon-dam/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/06/08/reservoirs-across-idaho-nearing-or-at-capacity/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/06/07/may-revenues-for-state-17-3-million-ahead-of-projections/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/06/07/podcast-swimmers-stay-out/
+IR REST API
+=== Election initiative violates single-subject rule, AG advises [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP skipped block (stray quote): Q13 that was found to be constitutional by the Alaska Supr...
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP sentence-start: 1 change(s)
+  AP '7' -> 'Seven'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/06/02/podcast-help-idaho-address-the-opioid-crisis/
+IR REST API
+=== Hispanic parents grateful for Idaho schools but need cultural awareness from staff, study finds [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: www.youtube.com
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== EPA powers limited to surface waters, SCOTUS rules in Priest Lake case [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP gov: 1 change(s)
+  AP 'Governor B' -> 'Gov. B'
+AP sentence-start: 2 change(s)
+  AP '27,' -> 'Twenty-seven'
+  AP '21' -> 'Twenty-one'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Idahoans receiving TurboTax settlement payments [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP state: 1 change(s)
+  AP ', ID' -> ', Idaho'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/05/24/podcast-education-to-employment/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/05/18/podcast-back-at-the-boundary-county-library/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/05/10/podcast-episode-rewriting-election-rules/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/05/01/idaho-reports-best-blog-at-idaho-press-club-awards/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/04/19/podcast-episode-abortion-pills-in-the-courts/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/04/15/what-did-lawmakers-do-with-elections-this-year/
+IR REST API
+=== Little vetoes historic theater liquor license bill [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Idaho Legislature adjourns 2023 session [Idaho Reports] ===
+author bio stripped
+author bio stripped
+figure+image stripped
+figure+image stripped
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/04/06/podcast-episode-sorting-out-surrogacy-rights/
+IR REST API
+=== Questions arise on Idaho's place in 2024 presidential campaign [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure dropped (unknown type)
+figure+image stripped
+figure+image stripped
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/04/05/abortion-trafficking-bill-signed-despite-washington-governors-plea/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/04/04/governor-signs-snap-work-requirement-bill-but-urges-caution/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/30/senate-passes-library-obscenity-bill/
+IR REST API
+=== Bill passed to exclude data center from urban renewal area [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/30/constitutional-referendum-change-fails-in-house/
+IR REST API
+=== Property tax veto overturned [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP double-title: 1 change(s)
+  AP 'Senate Minority Leader Sen. ' -> 'Senate Minority Leader '
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Idaho 'life of the mother' bill advances [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Senate quickly pushes out new property tax bill [Idaho Reports] ===
+author bio stripped
+twitter->inline
+twitter->inline
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Little vetoes property tax bill over election date, transportation bonds [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: www.youtube.com
+figure+image stripped
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP gov: 2 change(s)
+  AP 'Governor B' -> 'Gov. B'
+  AP 'Governor B' -> 'Gov. B'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/27/senate-state-affairs-advances-abortion-trafficking-bill-for-amendments/
+IR REST API
+=== Legislature approves public defense overhaul [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/23/idaho-college-universities-budget-passes-the-house/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/23/house-approves-funding-to-build-a-firing-squad-execution-facility/
+IR REST API
+=== Porn filter bill narrowly rejected by Senate [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP digit: 1 change(s)
+  AP '5' -> 'five'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/23/senate-state-affairs-reviews-more-library-restriction-bills/
+IR REST API
+=== Idaho Launch bill heads to Gov. Little [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP doubled quote fixed: ...nts, families, and businesses!””</p>
+
+<hr>...
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/22/library-obscenity-bill-faces-senate-amendments/
+IR REST API
+=== Senate approves bill to allow killing rattlesnakes [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/21/gov-little-vetoes-bill-to-allow-parental-driving-instruction/
+IR REST API
+=== Higher education budget passes Senate [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Firing squad bill heads to governor's desk [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/20/abortion-law-amendments-to-clarify-medical-exemptions-introduced/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/18/gender-affirming-care-for-minors-bill-sent-for-amendments/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/16/house-passes-school-bathroom-bill/
+IR REST API
+=== Property tax bill moves to Senate [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Data center bill advancing to House (again) [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/14/legislative-council-appoints-jloc-members-making-possible-workforce-report-release/
+IR REST API
+=== ESA push hits House Education roadblock; advisory question possible [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP r-cda: 2 change(s)
+  AP 'R-CDA' -> 'R-Coeur d'Alene'
+  AP 'R-CDA' -> 'R-Coeur d'Alene'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/14/new-library-protection-bill-introduced-on-obscene-materials/
+IR REST API
+=== House unanimously opposes Lava Ridge Wind Project [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: w.soundcloud.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/13/bill-to-bring-back-firing-squad-advances-to-senate/
+IR REST API
+=== Property tax relief moves to House floor [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/13/house-kills-bill-to-limit-absentee-ballot-access/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/09/senate-passes-bill-to-mandate-separate-school-bathrooms/
+IR REST API
+=== Public defense bill passes House [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== House introduces long-awaited property tax bill [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Idaho Launch bill sidetracked, for now [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Fish and Game cutting deer density to reduce CWD risk [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 1 change(s)
+  AP '3' -> 'three'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/07/bill-banning-minors-from-sexual-exhibitions-passes-house/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/03/house-passes-bill-bringing-back-the-firing-squad-for-executions/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/03/committee-moves-forward-bill-on-abortion-trafficking/
+IR REST API
+=== Lawmakers asked to settle delinquent property tax dispute [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/01/executions/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/03/01/podcast-episode-opening-the-gates-of-innovation/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/28/public-defense-funding-overhaul-bill-introduced/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/27/senate-passes-resolution-to-ask-voters-to-amend-constitution-on-initiatives/
+IR REST API
+=== Data center urban renewal bill dies in committee [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: w.soundcloud.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/27/house-state-affairs-introduces-bill-on-erotic-performances/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/23/school-bathrooms-bill-passes-senate-education/
+IR REST API
+=== Bill introduced to tax vaping products like tobacco [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Marriage certificate bill amended in Senate [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'January 1' -> 'Jan. 1'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/23/committee-moves-forward-bill-to-limit-absentee-ballot-voting/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/22/legislators-target-public-assistance-eligibility-medicaid-unwinding/
+IR REST API
+=== ESG bills introduced in House State Affairs [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Senate passes resolution to support EMS coordination plan [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/20/sex-education-ban-before-5th-grade-moves-forward/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/18/choices-for-parents/
+IR REST API
+=== Bill to prohibit student IDs at polls clears committee [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Education savings accounts bill clears Senate Education [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/15/podcast-episode-controlling-the-uncontrollable/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/15/bill-introduced-limiting-governors-powers-on-disaster-orders/
+IR REST API
+=== Lengthy testimony on ESAs; committee vote expected Wednesday [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Coronavirus Stop Act introduced; mirrors previously vetoed bill [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/14/idaho-house-passes-bill-to-prohibit-gender-affirming-medical-treatment-in-kids/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/13/bill-to-repeal-faith-healing-exemption-introduced/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/13/bill-regarding-obscene-materials-in-libraries-introduced/
+IR REST API
+=== Property tax transparency bill moves forward [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'January 1' -> 'Jan. 1'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/13/bill-to-do-away-with-marriage-licenses-headed-for-amendments/
+IR REST API
+=== Senators itching to work on property taxes, school choice [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Daycare immunization notice bill passes Senate unanimously [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/09/bill-introduced-to-change-unemployment-benefits-absentee-ballot-bill-held/
+IR REST API
+=== Committee passes bill to manage city council vacancies [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Impact fees for schools introduced in Senate committee [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/08/financial-literacy-bill-passes-house-education/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/08/podcast-episode-capitol-streets-control/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/07/bill-introduced-to-criminalize-assisting-a-minor-seeking-an-abortion/
+IR REST API
+=== House tax committee introduces two property tax changes [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'October 31' -> 'Oct. 31'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Priest Lake siphon bill passes Senate committee [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/06/house-approves-idaho-launch-expansion-by-one-vote/
+IR REST API
+=== Lawmakers ready to tackle property taxes [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/02/house-committee-temporarily-holds-licensure-bill-to-address-stakeholders-wide-ranging-concerns/
+IR REST API
+=== OSHA: Amazon exposed Nampa workers to unsafe warehouse conditions [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Bills printed on vaccine passports, Greater Idaho, OPE control [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/02/01/podcast-episode-serving-idaho-veterans/
+IR REST API
+=== Education savings accounts bill introduced in Senate Education [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/01/31/bill-introduced-to-add-fentanyl-to-trafficking-laws/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/01/30/resolution-introduced-to-repeal-amendment-prohibiting-public-funds-for-religious-schools/
+IR REST API
+=== Local governments felony enforcement bill passes House [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 1 change(s)
+  AP '2' -> 'two'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Bill introduced to slow Priest Lake Siphon project [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/01/26/bill-introduced-to-prohibit-investigations-into-a-childs-vaccine-status/
+IR REST API
+=== Tax penalty advances for local govt's that refuse felony enforcement [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/01/19/committee-prints-bill-to-prohibit-state-from-funding-non-governmental-events/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/01/18/idhw-director-faces-scrutiny-over-medicaid-budget/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/01/18/abortion-bill-moves-out-of-committee-to-penalize-cities-that-wont-comply/
+IR REST API
+=== Hand-count requirement for election audits passes House State Affairs [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Bills on abortion, public contracts, self-defense introduced in Senate State Affairs [Idaho Reports] ===
+author bio stripped
+author bio stripped
+figure+image stripped
+figure+image stripped
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2023/01/11/new-podcast-episode-what-is-a-lobbyist/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2022/12/07/podcast-episode-studying-the-silver-valley/
+IR REST API
+=== Little allocates $1 million for UI murders investigation [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP gov: 1 change(s)
+  AP 'Governor B' -> 'Gov. B'
+AP month-abbr: 1 change(s)
+  AP 'November 13' -> 'Nov. 13'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2022/12/01/podcast-episode-getting-organized/
+IR REST API
+=== Senate committees assigned; Grow to co-chair JFAC [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Mountain West economy strong coming out of pandemic [Idaho Reports] ===
+author bio stripped
+twitter->inline
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== IDOC serves Pizzuto death warrant [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP time: 2 change(s)
+  AP '05 PM' -> '05 p.m.'
+  AP '18 AM' -> '18 a.m.'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== How does Idaho get unofficial election results out so quickly? [Idaho Reports] ===
+author bio stripped
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'November 8' -> 'Nov. 8'
+AP toward: 1 change(s)
+  AP 'towards' -> 'toward'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== 2022 ANALYSIS: Nature abhors a power vacuum [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP percent: 1 change(s)
+  AP '47.6 percent' -> '47.6%'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Idaho politicos rally support and opposition for constitutional amendment [Idaho Reports] ===
+author bio stripped
+embed->link: www.youtube.com
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 2 change(s)
+  AP 'November 2' -> 'Nov. 2'
+  AP 'November 4' -> 'Nov. 4'
+AP state: 1 change(s)
+  AP ', ID' -> ', Idaho'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2022/11/02/podcast-episode-hispanic-voters-in-idaho/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2022/10/26/podcast-episode-judges-on-the-ballot/
+IR REST API
+=== Fish and Game detects first chronic wasting disease of 2022 hunting season [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 1 change(s)
+  AP '6' -> 'six'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2022/10/13/podcast-episode-what-water-counts-as-wetlands/
+IR REST API
+=== Time to check the mail: Tax rebates and voter pamphlets arriving to Idahoans [Idaho Reports] ===
+author bio stripped
+twitter->inline
+twitter->inline
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'October 4' -> 'Oct. 4'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Special session tax bill passed into law [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP percent: 1 change(s)
+  AP '10 percent' -> '10%'
+AP proposition: 2 change(s)
+  AP 'Proposition 1' -> 'Proposition One'
+  AP 'Proposition 1' -> 'Proposition One'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Ada County revives challenge to redistricting plan [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'August 11' -> 'Aug. 11'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Idaho Democrats prepare for general election and beyond [Idaho Reports] ===
+figure+image stripped
+embed->link: w.soundcloud.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Arguments approved for and against measure to let Legislature call itself into session [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== White nationalists from 12 states arrested in Coeur d'Alene [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: w.soundcloud.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP sentence-start: 1 change(s)
+  AP '31' -> 'Thirty-one'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Idaho Supreme Court weighs who has final say on commutation [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Gas prices, property taxes, and inflation. Is a special session on the table? [Idaho Reports] ===
+author bio stripped
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 2 change(s)
+  AP '6' -> 'six'
+  AP '6' -> 'six'
+AP percent: 2 change(s)
+  AP '60 percent' -> '60%'
+  AP '50 percent' -> '50%'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== A mix of fresh and familiar: most legislative incumbents survived, but most of the party nominees are new [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 6 change(s)
+  AP '9' -> 'nine'
+  AP '2' -> 'two'
+  AP '9' -> 'nine'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Most Idaho lawmakers seek reelection, but face challengers along the way [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2022/05/03/idaho-reports-earns-idaho-press-club-awards/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2022/05/02/reclaim-idaho-submits-final-signatures-for-education-ballot-initiative/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2022/03/11/friday-was-the-filing-deadline-here-are-our-takeaways/
+IR REST API
+=== What's this "Wayfair Fund" I keep hearing about? [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: www.youtube.com
+AP gov: 1 change(s)
+  AP 'Governor C' -> 'Gov. C'
+AP month-abbr: 1 change(s)
+  AP 'January 22' -> 'Jan. 22'
+AP percent: 1 change(s)
+  AP '1.36 percent' -> '1.36%'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Final redistricting challenge shot down by Idaho Supreme Court [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== House panel approves upping Idaho's grocery tax credit [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== So, about those property taxes… [Idaho Reports] ===
+author bio stripped
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'January 1' -> 'Jan. 1'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Income tax cut clears the legislature amid debates over grocery tax [Idaho Reports] ===
+author bio stripped
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP sentence-start: 1 change(s)
+  AP '37' -> 'Thirty-seven'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Increased food credit before House committee [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Legislative redistricting maps approved by Idaho Supreme Court [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Idaho Supreme Court hears congressional redistricting arguments [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'August 12' -> 'Aug. 12'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Senate GOP refutes ethics allegations [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== House passes tax cut and rebate bill [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Rejected bill leads to confrontation between senator and superintendent candidate [Idaho Reports] ===
+author bio stripped
+twitter->inline
+twitter->inline
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'January 18' -> 'Jan. 18'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Income tax bill moves to House floor [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+embed->link: www.youtube.com
+figure dropped (unknown type)
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2022/01/14/idaho-supreme-court-hears-oral-arguments-over-redistricting-challenges/
+IR REST API
+=== House committee prepares to replace education standards [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Tax relief bill introduced in House committee [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure dropped (unknown type)
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP percent: 2 change(s)
+  AP '6.5 percent' -> '6.5%'
+  AP '6 percent' -> '6%'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Chronic wasting disease surveillance underway in central Idaho [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Pizzuto asks for mercy in death row hearing [Idaho Reports] ===
+author bio stripped
+author bio stripped
+figure+image stripped
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Senate moving methodically on COVID legislation [Idaho Reports] ===
+author bio stripped
+twitter->inline
+twitter->inline
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'November 15' -> 'Nov. 15'
+AP time: 1 change(s)
+  AP '8am' -> '8 a.m.'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Outside of normal session, legislators introduce 36 potential bills [Idaho Reports] ===
+author bio stripped
+author bio stripped
+figure+image stripped
+AP time: 6 change(s)
+  AP '6pm' -> '6 p.m.'
+  AP '8am' -> '8 a.m.'
+  AP '8am' -> '8 a.m.'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Budget committee shoots down federal overreach fund [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Sandpoint mayor announces governor campaign [Idaho Reports] ===
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP ordinal-date: 3 change(s)
+  AP 'November 8th' -> 'Nov. 8'
+  AP 'November 8th' -> 'Nov. 8'
+  AP 'November 8th' -> 'Nov. 8'
+AP state: 1 change(s)
+  AP ', ID' -> ', Idaho'
+AP time: 2 change(s)
+  AP '4:00pm' -> '4 p.m.'
+  AP '5:00pm' -> '5 p.m.'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Idaho's final redistricting maps approved [Idaho Reports] ===
+figure+image stripped
+embed->link: w.soundcloud.com
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Draft bill would dramatically redirect online sales tax [Idaho Reports] ===
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'October 29' -> 'Oct. 29'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== One person, one vote, forty-four counties [Idaho Reports] ===
+figure+image stripped
+figure+image stripped
+figure dropped (unknown type)
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP percent: 1 change(s)
+  AP '10 percent' -> '10%'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Dozens of water quality projects before CDA lake committee [Idaho Reports] ===
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP gov: 1 change(s)
+  AP 'Governor L' -> 'Gov. L'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Lt. Gov. McGeachin issues executive order while Little leaves Idaho [Idaho Reports] ===
+twitter->inline
+twitter->inline
+twitter->inline
+twitter->inline
+figure+image stripped
+AP month-abbr: 2 change(s)
+  AP 'October 5' -> 'Oct. 5'
+  AP 'October 5' -> 'Oct. 5'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Upcoming SCOTUS case could reshape Idaho abortion law [Idaho Reports] ===
+figure+image stripped
+embed->link: www.youtube.com
+embed->link: www.youtube.com
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 2 change(s)
+  AP '6' -> 'six'
+  AP '6' -> 'six'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Redistricting commission headed to eastern Idaho [Idaho Reports] ===
+figure+image stripped
+figure dropped (unknown type)
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== "We don't want to be with them. We'd like to be with these folks instead." [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Magic Valley next stops for redistricting tour [Idaho Reports] ===
+figure+image stripped
+figure dropped (unknown type)
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Redistricting commission touring north Idaho [Idaho Reports] ===
+figure dropped (unknown type)
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Canyon, Ada residents consider communities of interest [Idaho Reports] ===
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== "Time has come for a southwestern Idaho congressional district." [Idaho Reports] ===
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP percent: 2 change(s)
+  AP '0.1 percent' -> '0.1%'
+  AP '0.04 percent' -> '0.04%'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Funding available for Lake CDA phosphorus reduction [Idaho Reports] ===
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Treasure Valley public input sought in redistricting meetings [Idaho Reports] ===
+figure+image stripped
+figure dropped (unknown type)
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 3 change(s)
+  AP 'September 19' -> 'Sept. 19'
+  AP 'September 26' -> 'Sept. 26'
+  AP 'October 3' -> 'Oct. 3'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Redistricting commission takes first crack at redrawing maps [Idaho Reports] ===
+figure+image stripped
+figure dropped (unknown type)
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Redistricting commission builds foundation for next 90 days [Idaho Reports] ===
+figure+image stripped
+embed->link: w.soundcloud.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP ordinal-date: 5 change(s)
+  AP 'September 13th' -> 'Sept. 13'
+  AP 'September 20th' -> 'Sept. 20'
+  AP 'September 27th' -> 'Sept. 27'
+AP percent: 1 change(s)
+  AP '10 percent' -> '10%'
+AP state: 1 change(s)
+  AP ', ID' -> ', Idaho'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== IDHW clarifies policies on COVID-19 'booster' shots [Idaho Reports] ===
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 2 change(s)
+  AP 'August 23' -> 'Aug. 23'
+  AP 'August 30' -> 'Aug. 30'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Analysis: Are ethics complaint responses subject to public disclosure? [Idaho Reports] ===
+figure+image stripped
+figure+image stripped
+embed->link: videopress.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 4 change(s)
+  AP 'Aug 2' -> 'Aug. 2'
+  AP 'August 2' -> 'Aug. 2'
+  AP 'August 4' -> 'Aug. 4'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Some Idaho hospitals delay non-emergency procedures as hospitalizations, ICU admissions rise [Idaho Reports] ===
+figure+image stripped
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Committee recommends censure for Giddings ethics violations [Idaho Reports] ===
+figure+image stripped
+figure+image stripped
+figure+image stripped
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Giddings combative as lawmakers question conduct [Idaho Reports] ===
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'August 2' -> 'Aug. 2'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== What to expect in the Giddings ethics hearing [Idaho Reports] ===
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'August 2' -> 'Aug. 2'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Governor, law enforcement say growing fentanyl trade threatens 'Idaho way of life' [Idaho Reports] ===
+twitter->inline
+twitter->inline
+figure+image stripped
+figure+image stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 1 change(s)
+  AP '5' -> 'five'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Education funding ballot initiative delayed after "premature" start [Idaho Reports] ===
+figure+image stripped
+embed->link: w.soundcloud.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'January 1' -> 'Jan. 1'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2021/06/11/where-to-find-idaho-reports-content-over-the-summer/
+IR REST API
+=== Speaker Bedke joins lieutenant governor race [Idaho Reports] ===
+figure+image stripped
+figure+image stripped
+embed->link: www.youtube.com
+embed->link: www.youtube.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Former Senator Dean Mortimer hospitalized with COVID-19 [Idaho Reports] ===
+figure+image stripped
+embed->link: videopress.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2021/04/12/ui-president-asks-alumni-business-leaders-to-counter-attacks-on-higher-ed/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2021/02/12/in-county-budgeting-population-growth-outpaces-tax-increases-says-ope/
+IR REST API
+=== Just Say Never: Proposed constitutional amendment on drug policy would set Idaho apart even more [Idaho Reports] ===
+figure+image stripped
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Vaccine rollout continues with low supply and high demand [Idaho Reports] ===
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP digit: 1 change(s)
+  AP '1' -> 'one'
+AP gov: 2 change(s)
+  AP 'Governor B' -> 'Gov. B'
+  AP 'Governor L' -> 'Gov. L'
+AP percent: 2 change(s)
+  AP '51 percent' -> '51%'
+  AP '53 percent' -> '53%'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2021/01/26/idaho-supreme-court-backs-bedke-hill-in-treasurer-fight/
+IR REST API
+=== House committee considers formalizing gallery rules [Idaho Reports] ===
+figure+image stripped
+figure+image stripped
+embed->link: videopress.com
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== As hospitals struggle, Gov. Little mobilizes Idaho National Guard [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP gov: 1 change(s)
+  AP 'Governor B' -> 'Gov. B'
+AP time: 1 change(s)
+  AP '8 pm' -> '8 p.m.'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Idaho Reports analysis: Jordan results show GOP benefitted from record turnout [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure dropped (unknown type)
+figure dropped (unknown type)
+figure dropped (unknown type)
+AP percent: 5 change(s)
+  AP '85 percent' -> '85%'
+  AP '80.46 percent' -> '80.46%'
+  AP '77.3 percent' -> '77.3%'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== No shakeups in District 5 legislative results [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure dropped (unknown type)
+AP percent: 6 change(s)
+  AP '50.76 percent' -> '50.76%'
+  AP '49.24 percent' -> '49.24%'
+  AP '43.94 percent' -> '43.94%'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== 35 legislative districts amendment approved by voters [Idaho Reports] ===
+author bio stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+embed->link: w.soundcloud.com
+AP sentence-start: 1 change(s)
+  AP '13' -> 'Thirteen'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+=== Election Night Preview: Statewide legislative races to watch [Idaho Reports] ===
+author bio stripped
+AP percent: 2 change(s)
+  AP '49 percent' -> '49%'
+  AP '3 Percent' -> '3%'
+feature: outlet filler -> filler-idaho-reports.jpg
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2020/11/02/election-night-preview-ada-and-canyon-counties/
+IR REST API
+excluded (not a byline): https://blog.idahoreports.idahoptv.org/2020/01/02/a-few-changes-at-idaho-reports/
+IPR REST API
+=== "The ACLU will see the governor in court." [Idaho Public Radio] ===
+truncated at -END-
+AP gov: 3 change(s)
+  AP 'Governor B' -> 'Gov. B'
+  AP 'Governor L' -> 'Gov. L'
+  AP 'Governor L' -> 'Gov. L'
+AP month-abbr: 1 change(s)
+  AP 'February 28' -> 'Feb. 28'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+=== Governor Little Processes Final Bills [Idaho Public Radio] ===
+truncated at -END-
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP gov: 2 change(s)
+  AP 'Governor B' -> 'Gov. B'
+  AP 'Governor L' -> 'Gov. L'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+=== Idaho Tax Relief Funds Directed to COVID-19 Response [Idaho Public Radio] ===
+truncated at -END-
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP gov: 2 change(s)
+  AP 'Governor B' -> 'Gov. B'
+  AP 'Governor C' -> 'Gov. C'
+AP month-abbr: 1 change(s)
+  AP 'January 22' -> 'Jan. 22'
+AP percent: 1 change(s)
+  AP '1.36 percent' -> '1.36%'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+=== Idaho State Legislature– A Few Highlights [Idaho Public Radio] ===
+AP gov: 1 change(s)
+  AP 'Governor B' -> 'Gov. B'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+excluded (not a byline): https://idahopublicradio.wordpress.com/2020/03/22/idaho-state-legislature-week-11-3/
+IPR REST API
+=== Statehouse Roundup: March Madness [Idaho Public Radio] ===
+truncated at -END-
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP gov: 3 change(s)
+  AP 'Governor B' -> 'Gov. B'
+  AP 'Governor L' -> 'Gov. L'
+  AP 'Governor L' -> 'Gov. L'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+=== Idaho Legislature aims to refine initiative process [Idaho Public Radio] ===
+truncated at -END-
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+excluded (not a byline): https://idahopublicradio.wordpress.com/2020/03/01/idaho-state-legislature-week-8-2/
+IPR REST API
+excluded (not a byline): https://idahopublicradio.wordpress.com/2020/02/23/idaho-state-legislature-week-7-2/
+IPR REST API
+=== Updated: Idaho House Mulls Tax Freeze and More [Idaho Public Radio] ===
+truncated at -END-
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP gov: 1 change(s)
+  AP 'Governor B' -> 'Gov. B'
+AP month-abbr: 1 change(s)
+  AP 'February 23' -> 'Feb. 23'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+=== 4-H Students Gather for Government Conference [Idaho Public Radio] ===
+truncated at -END-
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP gov: 1 change(s)
+  AP 'Governor B' -> 'Gov. B'
+AP month-abbr: 2 change(s)
+  AP 'February 21' -> 'Feb. 21'
+  AP 'February 21' -> 'Feb. 21'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+=== Idaho State Legislature– Week 6 [Idaho Public Radio] ===
+truncated at -END-
+AP digit: 1 change(s)
+  AP '7' -> 'seven'
+AP gov: 1 change(s)
+  AP 'Governor D' -> 'Gov. D'
+AP month-abbr: 5 change(s)
+  AP 'February 11' -> 'Feb. 11'
+  AP 'February 11' -> 'Feb. 11'
+  AP 'February 22' -> 'Feb. 22'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+=== Idaho House Mulls Tax Freeze and More [Idaho Public Radio] ===
+truncated at -END-
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'February 18' -> 'Feb. 18'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+=== Lawmaker Seeks to Remove Party Affiliation for Fish and Game Commission [Idaho Public Radio] ===
+truncated at -END-
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP gov: 2 change(s)
+  AP 'Governor B' -> 'Gov. B'
+  AP 'Governor B' -> 'Gov. B'
+AP month-abbr: 1 change(s)
+  AP 'February 14' -> 'Feb. 14'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+excluded (not a byline): https://idahopublicradio.wordpress.com/2020/02/09/idaho-state-legislature-week-5-2/
+IPR REST API
+=== Idaho Lawmakers Consider Two Bills to Limit Bond Elections [Idaho Public Radio] ===
+truncated at -END-
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'February 5' -> 'Feb. 5'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+=== Idaho State Legislature– Week 4 [Idaho Public Radio] ===
+truncated at -END-
+AP digit: 2 change(s)
+  AP '5' -> 'five'
+  AP '5' -> 'five'
+AP month-abbr: 4 change(s)
+  AP 'December 5' -> 'Dec. 5'
+  AP 'January 30' -> 'Jan. 30'
+  AP 'February 3' -> 'Feb. 3'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+=== Religious Freedom Day Resolution Held in Committee [Idaho Public Radio] ===
+truncated at -END-
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 2 change(s)
+  AP 'January 16' -> 'Jan. 16'
+  AP 'January 30' -> 'Jan. 30'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+=== Idaho State Legislature– Week 3 [Idaho Public Radio] ===
+truncated at -END-
+AP digit: 2 change(s)
+  AP '3' -> 'three'
+  AP '4' -> 'four'
+AP month-abbr: 1 change(s)
+  AP 'January 27' -> 'Jan. 27'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+=== House Committee Hears Tax Proposals [Idaho Public Radio] ===
+truncated at -END-
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP dollars: 3 change(s)
+  AP '120 dollars' -> '$120'
+  AP '135 dollars' -> '$135'
+  AP '100-dollar' -> '$100'
+AP gov: 2 change(s)
+  AP 'Governor B' -> 'Gov. B'
+  AP 'Governor B' -> 'Gov. B'
+AP month-abbr: 1 change(s)
+  AP 'January 25' -> 'Jan. 25'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+=== Idaho State Legislature– Week 2 [Idaho Public Radio] ===
+truncated at -END-
+AP digit: 3 change(s)
+  AP '2' -> 'two'
+  AP '5' -> 'five'
+  AP '3' -> 'three'
+AP month-abbr: 3 change(s)
+  AP 'January 16' -> 'Jan. 16'
+  AP 'January 20' -> 'Jan. 20'
+  AP 'January 19' -> 'Jan. 19'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+=== Bill Aims to Shift Drug Policy from Arrest to Treatment [Idaho Public Radio] ===
+truncated at -END-
+AP byline-cap: 1 change(s)
+  AP 'by Logan Finney' -> 'By Logan Finney'
+AP month-abbr: 1 change(s)
+  AP 'January 19' -> 'Jan. 19'
+feature: outlet filler -> filler-ipr.jpg
+IPR REST API
+excluded (not a byline): https://idahopublicradio.wordpress.com/2020/01/12/idaho-state-legislature-week-1-2/
+FāVS REST API
+excluded (not a byline): https://favs.news/coeur-dalene-idaho-eucharistic-procession-catholics/
+FāVS REST API
+excluded (not a byline): https://favs.news/thrive-international-financial-refugee-housing-spokane/
+FāVS REST API
+=== Church trespass bill moves to Idaho House for consideration [FāVS News] ===
+embed->link: www.youtube.com
+promo stripped
+AP digit: 1 change(s)
+  AP '2' -> 'two'
+feature: outlet filler -> filler-favs.jpg
+FāVS REST API
+=== Idaho bill to label products made with fetal cells dies in Senate committee [FāVS News] ===
+embed->link: www.youtube.com
+promo stripped
+AP digit: 1 change(s)
+  AP '3' -> 'three'
+AP proposition: 1 change(s)
+  AP 'Prop 65' -> 'Prop Sixty-five'
+feature: outlet filler -> filler-favs.jpg
+FāVS REST API
+=== Boise Jewish congregation welcomes new rabbi, restores century-old Torah scrolls [FāVS News] ===
+his photo kept: photo-6253a0feb75e.jpeg
+his photo kept: photo-59babf52b351.jpeg
+promo stripped
+AP doubled quote fixed: ...5e.jpeg" class="kg-image" alt=""><figcaption>The congregatio...
+AP doubled quote fixed: ...51.jpeg" class="kg-image" alt=""><figcaption>Neil Yerman, a ...
+AP digit: 1 change(s)
+  AP '5' -> 'five'
+feature: outlet filler -> filler-favs.jpg
+FāVS REST API
+=== Idaho bill would fine cities $2,000 daily for flying unapproved flags [FāVS News] ===
+his photo kept: photo-6ee00fbffeab.jpg
+his photo kept: photo-b00abfb53558.jpg
+promo stripped
+AP digit: 1 change(s)
+  AP '6' -> 'six'
+feature: outlet filler -> filler-favs.jpg
+FāVS REST API
+excluded (not a byline): https://favs.news/windfall-thrift-store-invests-spokane-teens/
+FāVS REST API
+=== Faith leaders protest Idaho Legislature's "misuse of Christianity" at Capitol worship service [FāVS News] ===
+his photo kept: photo-fa53c5cb02a6.jpg
+promo stripped
+AP digit: 1 change(s)
+  AP '3' -> 'three'
+feature: outlet filler -> filler-favs.jpg
+FāVS REST API
+excluded (not a byline): https://favs.news/spokane-nonprofit-48-unit-affordable-housing-refugees/
+FāVS REST API
+excluded (not a byline): https://favs.news/when-democracy-finds-her-voice/
+FāVS REST API
+excluded (not a byline): https://favs.news/whats-next-spokanes-refugee-agencies-rising-uncertainty/
+FāVS REST API
+excluded (not a byline): https://favs.news/200-attend-rally-thrive-show-solidarity-ukraine/
+FāVS REST API
+excluded (not a byline): https://favs.news/spokanes-haitian-community-looming-deportation/
+FāVS REST API
+excluded (not a byline): https://favs.news/protest-residents-day-march-spokane/
+FāVS REST API
+excluded (not a byline): https://favs.news/thrive-international-pushes-forward-despite-federal-cuts/
+FāVS REST API
+excluded (not a byline): https://favs.news/favs-religion-news-roundup-jan-24/
+FāVS REST API
+excluded (not a byline): https://favs.news/protected-status-extension-ukrainians-spokane/
+FāVS REST API
+excluded (not a byline): https://favs.news/emmaus-pastors-mark-becky-finney-honored-clergy-appreciation-month/
+FāVS REST API
+excluded (not a byline): https://favs.news/its-not-time-to-gloat-over-your-candidates-win-its-time-to-build-bridges/
+FāVS REST API
+excluded (not a byline): https://favs.news/spokane-area-unlikely-to-see-refugees-from-palestine-or-israel-local-organizations-say/
+FāVS REST API
+excluded (not a byline): https://favs.news/faith-leaders-spark-city-council-vote-to-censure-woodward-for-anti-lgbtq-event-appearance/
+FāVS REST API
+excluded (not a byline): https://favs.news/letter-to-the-editor-civic-leaders-must-reject-christian-nationalism-and-white-supremacy/
+FāVS REST API
+excluded (not a byline): https://favs.news/local-faith-leaders-react-to-mayor-woodward-attending-controversial-worship-event/
+FāVS REST API
+excluded (not a byline): https://favs.news/thrive-international-offers-housing-resettlement-support-for-ukrainian-refugees/
+FāVS REST API
+excluded (not a byline): https://favs.news/nonprofit-empowering-local-refugees-and-immigrants-officially-launches/
+FāVS REST API
+excluded (not a byline): https://favs.news/wartime-doubts-and-faith-communities/
+FāVS REST API
+excluded (not a byline): https://favs.news/april-2-coffee-talk-to-focus-on-ukraine-democracy/
+FāVS REST API
+excluded (not a byline): https://favs.news/letter-to-the-editor-a-note-to-spokanes-jewish-community/
+FāVS REST API
+excluded (not a byline): https://favs.news/mark-finney-resigns-from-world-relief/
+FāVS REST API
+excluded (not a byline): https://favs.news/spokane-non-profits-and-community-leaders-welcome-new-arrivals-from-afghanistan/
+FāVS REST API
+excluded (not a byline): https://favs.news/in-the-days-before-the-presidential-election-some-spokane-ministers-encourage-crossing-the-line-between-faith-and-politics/
+FāVS REST API
+excluded (not a byline): https://favs.news/world-relief-spokane-hosts-prayer-event-for-refugees/
+FāVS REST API
+excluded (not a byline): https://favs.news/stories-from-world-relief-a-million-refugees-in-bangladesh/
+FāVS REST API
+excluded (not a byline): https://favs.news/whitworth-institute-of-ministry-conference-set-for-july-23-27/
+FāVS REST API
+excluded (not a byline): https://favs.news/since-election-anti-semitic-and-racist-vandalism-has-plagued-region/
+FāVS REST API
+excluded (not a byline): https://favs.news/solidarity-strikes-a-chord-with-spokane-for-rally-with-refugees/
+=== Changing snow and rain patterns challenge Idaho farmers and water managers [Project FARE] ===
+figure+image stripped
+figure+image stripped
+figure+image stripped
+figure+image stripped
+feature: outlet filler -> fare-header-v3-defringe.jpg
