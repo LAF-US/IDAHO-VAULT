@@ -19,15 +19,15 @@ owner: Logan Finney
 | **What** | 3 failed runs, all targeting PR #1029: `Review #1029 [0plph]` (38195304637), `Fix CI on #1029 [sadlq]` (38195347778), `Running Copilot Code Review` (38195296886). |
 | **When** | 2026-10-12, dispatched 02:18:59Z to 02:19:48Z (the #1029 ready time of 02:19Z is as reported in a comment there, unverified); failed 02:19:37Z (Copilot), 02:41:56Z (Fix CI), 02:57:56Z (Review). |
 | **Where** | `.github/workflows/pullfrog.yml` (job `pullfrog`); Copilot reviewer job `copilot-pull-request-reviewer`. |
-| **Why** | See Failures table. All three runs target PR #1029 (head `0c58d805`, 5,343 commits). Rows 1 and 2 name size-related causes in their logs; row 3's dirty-tree refusal is a separate, unexplained workspace-state cause. None names a repo script or test. |
+| **Why** | See Failures table. All three runs target PR #1029 (head `0c58d805`, 5,343 commits). Each row records what its log shows; the underlying causes are not established and need investigation. No log names a repo script or test. |
 | **How** | `actions_list` (100 newest runs, 2026-10-07T21:35Z to 2026-10-12T05:07Z, so the window is fully covered): 84 skipped, 11 success, 3 failure, 2 cancelled. Job logs read with `get_job_logs`. |
 
 ## Failures
 
 | # | Failure | Category | Root cause (from log) | Next step |
 |---|---|---|---|---|
-| 1 | Copilot Code Review, #1029 | External service limit | `HttpError: The diff is taking too long to generate` fetching `827811e3...0c58d805` | None possible in-repo. Goes away only when the diff is reviewable. |
-| 2 | Pullfrog `Fix CI on #1029` | Timeout | `pullfrog_checkout_pr #1029 exceeded 570s`, then `activity timeout: no output for 1170s` | Do not retry; the checkout cannot finish on this history. |
+| 1 | Copilot Code Review, #1029 | External service limit | `HttpError: The diff is taking too long to generate` fetching `827811e3...0c58d805` | Cause of the slow diff not investigated; the error is raised by GitHub's compare API, not by repo code. |
+| 2 | Pullfrog `Fix CI on #1029` | Timeout | `pullfrog_checkout_pr #1029 exceeded 570s`, then `activity timeout: no output for 1170s` | Not established. The log shows only the timeout; whether the 5,343-commit history is the cause was not investigated, and I did not test a retry. |
 | 3 | Pullfrog `Review #1029` | Workspace state, then timeout | `cannot checkout PR #1029 while the working tree has uncommitted changes` (`node_modules/`, `src/`), then `activity timeout` after 904s. The log does not say what left those paths uncommitted. | Not established. Clearing the paths is the remedy the log itself names (`git restore`/`git clean`); I did not verify that retrying would pass. |
 
 Run 2's checkout timed out after 570s. Runs 2 and 3 were `workflow_dispatch` runs on `main`. `pullfrog.yml` only receives dispatches (inputs `prompt`, `name`); the dispatcher is the Pullfrog app, not a repo file, so no repo-side guard exists to edit.
