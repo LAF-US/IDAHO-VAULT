@@ -1,0 +1,2 @@
+- This project was upgraded from a classic claude.ai project on 2026-10-02. Its earlier chats and Cowork tasks were not copied here; the original-project tools list them and read the ones they can.
+- Memory imported from the claude.ai project this project was upgraded from is under /imported/ (legacy-memory.md and files under files/): read it for earlier context.
